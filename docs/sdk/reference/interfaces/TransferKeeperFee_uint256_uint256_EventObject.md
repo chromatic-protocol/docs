@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:484](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L484)
+[src/gen/contracts/core/ChromaticVault.ts:484](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L484)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:483](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L483)
+[src/gen/contracts/core/ChromaticVault.ts:483](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L483)

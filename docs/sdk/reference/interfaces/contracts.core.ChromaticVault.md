@@ -185,7 +185,7 @@ BaseContract.callStatic
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:1014](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L1014)
+[src/gen/contracts/core/ChromaticVault.ts:1014](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L1014)
 
 ___
 
@@ -246,7 +246,7 @@ BaseContract.estimateGas
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:1383](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L1383)
+[src/gen/contracts/core/ChromaticVault.ts:1383](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L1383)
 
 ___
 
@@ -287,7 +287,7 @@ BaseContract.filters
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:1249](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L1249)
+[src/gen/contracts/core/ChromaticVault.ts:1249](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L1249)
 
 ___
 
@@ -334,7 +334,7 @@ BaseContract.functions
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:546](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L546)
+[src/gen/contracts/core/ChromaticVault.ts:546](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L546)
 
 ___
 
@@ -348,7 +348,7 @@ BaseContract.interface
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:525](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L525)
+[src/gen/contracts/core/ChromaticVault.ts:525](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L525)
 
 ___
 
@@ -362,7 +362,7 @@ BaseContract.off
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:541](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L541)
+[src/gen/contracts/core/ChromaticVault.ts:541](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L541)
 
 ___
 
@@ -376,7 +376,7 @@ BaseContract.on
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:542](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L542)
+[src/gen/contracts/core/ChromaticVault.ts:542](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L542)
 
 ___
 
@@ -390,7 +390,7 @@ BaseContract.once
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:543](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L543)
+[src/gen/contracts/core/ChromaticVault.ts:543](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L543)
 
 ___
 
@@ -437,7 +437,7 @@ BaseContract.populateTransaction
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:1618](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L1618)
+[src/gen/contracts/core/ChromaticVault.ts:1618](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L1618)
 
 ___
 
@@ -465,7 +465,7 @@ BaseContract.removeListener
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:544](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L544)
+[src/gen/contracts/core/ChromaticVault.ts:544](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L544)
 
 ___
 
@@ -591,7 +591,7 @@ BaseContract.attach
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:522](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L522)
+[src/gen/contracts/core/ChromaticVault.ts:522](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L522)
 
 ___
 
@@ -611,7 +611,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:781](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L781)
+[src/gen/contracts/core/ChromaticVault.ts:781](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L781)
 
 ___
 
@@ -634,7 +634,7 @@ Cancels a maker earning distribution task for a token.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:787](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L787)
+[src/gen/contracts/core/ChromaticVault.ts:787](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L787)
 
 ___
 
@@ -657,7 +657,7 @@ Cancels a market earning distribution task for a market.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:796](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L796)
+[src/gen/contracts/core/ChromaticVault.ts:796](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L796)
 
 ___
 
@@ -681,7 +681,7 @@ BaseContract.connect
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:521](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L521)
+[src/gen/contracts/core/ChromaticVault.ts:521](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L521)
 
 ___
 
@@ -704,7 +704,7 @@ Creates a maker earning distribution task for a token.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:805](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L805)
+[src/gen/contracts/core/ChromaticVault.ts:805](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L805)
 
 ___
 
@@ -727,7 +727,7 @@ Creates a market earning distribution task for a market.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:814](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L814)
+[src/gen/contracts/core/ChromaticVault.ts:814](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L814)
 
 ___
 
@@ -747,7 +747,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:819](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L819)
+[src/gen/contracts/core/ChromaticVault.ts:819](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L819)
 
 ___
 
@@ -765,7 +765,7 @@ BaseContract.deployed
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:523](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L523)
+[src/gen/contracts/core/ChromaticVault.ts:523](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L523)
 
 ___
 
@@ -788,7 +788,7 @@ Distributes the maker earning for a token to the each markets.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:825](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L825)
+[src/gen/contracts/core/ChromaticVault.ts:825](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L825)
 
 ___
 
@@ -811,7 +811,7 @@ Distributes the market earning for a market to the each bins.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:834](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L834)
+[src/gen/contracts/core/ChromaticVault.ts:834](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L834)
 
 ___
 
@@ -886,7 +886,7 @@ Executes a flash loan.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:846](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L846)
+[src/gen/contracts/core/ChromaticVault.ts:846](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L846)
 
 ___
 
@@ -911,7 +911,7 @@ Retrieves the pending share of earnings for a specific bin (subset) of funds in 
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:860](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L860)
+[src/gen/contracts/core/ChromaticVault.ts:860](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L860)
 
 ___
 
@@ -965,7 +965,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:533](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L533)
+[src/gen/contracts/core/ChromaticVault.ts:533](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L533)
 
 ▸ **listeners**(`eventName?`): `Listener`[]
 
@@ -985,7 +985,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:536](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L536)
+[src/gen/contracts/core/ChromaticVault.ts:536](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L536)
 
 ___
 
@@ -1006,7 +1006,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:866](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L866)
+[src/gen/contracts/core/ChromaticVault.ts:866](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L866)
 
 ___
 
@@ -1027,7 +1027,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:871](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L871)
+[src/gen/contracts/core/ChromaticVault.ts:871](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L871)
 
 ___
 
@@ -1048,7 +1048,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:876](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L876)
+[src/gen/contracts/core/ChromaticVault.ts:876](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L876)
 
 ___
 
@@ -1069,7 +1069,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:881](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L881)
+[src/gen/contracts/core/ChromaticVault.ts:881](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L881)
 
 ___
 
@@ -1093,7 +1093,7 @@ Called when liquidity is added to the vault by a market contract.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:891](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L891)
+[src/gen/contracts/core/ChromaticVault.ts:891](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L891)
 
 ___
 
@@ -1120,7 +1120,7 @@ Called when a position is claimed by a market contract.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:904](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L904)
+[src/gen/contracts/core/ChromaticVault.ts:904](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L904)
 
 ___
 
@@ -1147,7 +1147,7 @@ Called when a position is opened by a market contract.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:920](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L920)
+[src/gen/contracts/core/ChromaticVault.ts:920](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L920)
 
 ___
 
@@ -1172,7 +1172,7 @@ Called when pending liquidity is settled in the vault by a market contract.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:934](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L934)
+[src/gen/contracts/core/ChromaticVault.ts:934](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L934)
 
 ___
 
@@ -1197,7 +1197,7 @@ Called when liquidity is withdrawn from the vault by a market contract.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:946](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L946)
+[src/gen/contracts/core/ChromaticVault.ts:946](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L946)
 
 ___
 
@@ -1218,7 +1218,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:952](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L952)
+[src/gen/contracts/core/ChromaticVault.ts:952](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L952)
 
 ___
 
@@ -1239,7 +1239,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:957](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L957)
+[src/gen/contracts/core/ChromaticVault.ts:957](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L957)
 
 ___
 
@@ -1260,7 +1260,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:962](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L962)
+[src/gen/contracts/core/ChromaticVault.ts:962](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L962)
 
 ___
 
@@ -1281,7 +1281,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:967](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L967)
+[src/gen/contracts/core/ChromaticVault.ts:967](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L967)
 
 ___
 
@@ -1313,7 +1313,7 @@ BaseContract.queryFilter
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:527](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L527)
+[src/gen/contracts/core/ChromaticVault.ts:527](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L527)
 
 ___
 
@@ -1343,7 +1343,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:537](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L537)
+[src/gen/contracts/core/ChromaticVault.ts:537](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L537)
 
 ▸ **removeAllListeners**(`eventName?`): [`ChromaticVault`](contracts.core.ChromaticVault.md)
 
@@ -1363,7 +1363,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:540](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L540)
+[src/gen/contracts/core/ChromaticVault.ts:540](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L540)
 
 ___
 
@@ -1386,7 +1386,7 @@ Resolves the maker earning distribution for a specific token.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:976](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L976)
+[src/gen/contracts/core/ChromaticVault.ts:976](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L976)
 
 ___
 
@@ -1409,7 +1409,7 @@ Resolves the market earning distribution for a market.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:985](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L985)
+[src/gen/contracts/core/ChromaticVault.ts:985](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L985)
 
 ___
 
@@ -1430,7 +1430,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:990](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L990)
+[src/gen/contracts/core/ChromaticVault.ts:990](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L990)
 
 ___
 
@@ -1451,7 +1451,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:995](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L995)
+[src/gen/contracts/core/ChromaticVault.ts:995](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L995)
 
 ___
 
@@ -1477,4 +1477,4 @@ Transfers the keeper fee from the market to the specified keeper.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:1007](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/ChromaticVault.ts#L1007)
+[src/gen/contracts/core/ChromaticVault.ts:1007](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticVault.ts#L1007)

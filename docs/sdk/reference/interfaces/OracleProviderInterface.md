@@ -117,7 +117,7 @@ utils.Interface.events
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:95](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/OracleProvider.ts#L95)
+[src/gen/contracts/core/OracleProvider.ts:95](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L95)
 
 ___
 
@@ -156,7 +156,7 @@ utils.Interface.functions
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:41](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/OracleProvider.ts#L41)
+[src/gen/contracts/core/OracleProvider.ts:41](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L41)
 
 ___
 
@@ -325,7 +325,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:82](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/OracleProvider.ts#L82)
+[src/gen/contracts/core/OracleProvider.ts:82](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L82)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -346,7 +346,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:83](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/OracleProvider.ts#L83)
+[src/gen/contracts/core/OracleProvider.ts:83](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L83)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -367,7 +367,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:84](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/OracleProvider.ts#L84)
+[src/gen/contracts/core/OracleProvider.ts:84](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L84)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -388,7 +388,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:85](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/OracleProvider.ts#L85)
+[src/gen/contracts/core/OracleProvider.ts:85](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L85)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -409,7 +409,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:89](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/OracleProvider.ts#L89)
+[src/gen/contracts/core/OracleProvider.ts:89](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L89)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -430,7 +430,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:93](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/OracleProvider.ts#L93)
+[src/gen/contracts/core/OracleProvider.ts:93](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L93)
 
 ___
 
@@ -559,7 +559,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:60](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/OracleProvider.ts#L60)
+[src/gen/contracts/core/OracleProvider.ts:60](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L60)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -580,7 +580,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:64](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/OracleProvider.ts#L64)
+[src/gen/contracts/core/OracleProvider.ts:64](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L64)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -601,7 +601,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:68](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/OracleProvider.ts#L68)
+[src/gen/contracts/core/OracleProvider.ts:68](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L68)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values?`): `string`
 
@@ -622,7 +622,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:72](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/OracleProvider.ts#L72)
+[src/gen/contracts/core/OracleProvider.ts:72](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L72)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values?`): `string`
 
@@ -643,7 +643,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:76](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/OracleProvider.ts#L76)
+[src/gen/contracts/core/OracleProvider.ts:76](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L76)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values?`): `string`
 
@@ -664,7 +664,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:80](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/OracleProvider.ts#L80)
+[src/gen/contracts/core/OracleProvider.ts:80](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L80)
 
 ___
 
@@ -809,7 +809,7 @@ utils.Interface.getFunction
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:50](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/contracts/core/OracleProvider.ts#L50)
+[src/gen/contracts/core/OracleProvider.ts:50](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L50)
 
 ___
 

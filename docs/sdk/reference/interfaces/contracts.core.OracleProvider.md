@@ -141,7 +141,7 @@ BaseContract.callStatic
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:218](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L218)
+[src/gen/contracts/core/OracleProvider.ts:218](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/OracleProvider.ts#L218)
 
 ___
 
@@ -180,7 +180,7 @@ BaseContract.estimateGas
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:262](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L262)
+[src/gen/contracts/core/OracleProvider.ts:262](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/OracleProvider.ts#L262)
 
 ___
 
@@ -194,7 +194,7 @@ BaseContract.filters
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:260](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L260)
+[src/gen/contracts/core/OracleProvider.ts:260](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/OracleProvider.ts#L260)
 
 ___
 
@@ -219,7 +219,7 @@ BaseContract.functions
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:124](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L124)
+[src/gen/contracts/core/OracleProvider.ts:124](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/OracleProvider.ts#L124)
 
 ___
 
@@ -233,7 +233,7 @@ BaseContract.interface
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:103](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L103)
+[src/gen/contracts/core/OracleProvider.ts:103](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/OracleProvider.ts#L103)
 
 ___
 
@@ -247,7 +247,7 @@ BaseContract.off
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:119](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L119)
+[src/gen/contracts/core/OracleProvider.ts:119](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/OracleProvider.ts#L119)
 
 ___
 
@@ -261,7 +261,7 @@ BaseContract.on
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:120](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L120)
+[src/gen/contracts/core/OracleProvider.ts:120](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/OracleProvider.ts#L120)
 
 ___
 
@@ -275,7 +275,7 @@ BaseContract.once
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:121](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L121)
+[src/gen/contracts/core/OracleProvider.ts:121](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/OracleProvider.ts#L121)
 
 ___
 
@@ -300,7 +300,7 @@ BaseContract.populateTransaction
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:302](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L302)
+[src/gen/contracts/core/OracleProvider.ts:302](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/OracleProvider.ts#L302)
 
 ___
 
@@ -328,7 +328,7 @@ BaseContract.removeListener
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:122](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L122)
+[src/gen/contracts/core/OracleProvider.ts:122](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/OracleProvider.ts#L122)
 
 ___
 
@@ -450,7 +450,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:178](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L178)
+[src/gen/contracts/core/OracleProvider.ts:178](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/OracleProvider.ts#L178)
 
 ___
 
@@ -473,7 +473,7 @@ Returns the current oracle version
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:184](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L184)
+[src/gen/contracts/core/OracleProvider.ts:184](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/OracleProvider.ts#L184)
 
 ___
 
@@ -496,7 +496,7 @@ Retrieves the Oracle Version instances at the specified versions.
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:193](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L193)
+[src/gen/contracts/core/OracleProvider.ts:193](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/OracleProvider.ts#L193)
 
 ___
 
@@ -520,7 +520,7 @@ BaseContract.attach
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:100](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L100)
+[src/gen/contracts/core/OracleProvider.ts:100](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/OracleProvider.ts#L100)
 
 ___
 
@@ -544,7 +544,7 @@ BaseContract.connect
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:99](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L99)
+[src/gen/contracts/core/OracleProvider.ts:99](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/OracleProvider.ts#L99)
 
 ___
 
@@ -566,7 +566,7 @@ Returns the current oracle version
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:201](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L201)
+[src/gen/contracts/core/OracleProvider.ts:201](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/OracleProvider.ts#L201)
 
 ___
 
@@ -584,7 +584,7 @@ BaseContract.deployed
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:101](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L101)
+[src/gen/contracts/core/OracleProvider.ts:101](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/OracleProvider.ts#L101)
 
 ___
 
@@ -606,7 +606,7 @@ Retrieves the description of the Oracle Provider.
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:208](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L208)
+[src/gen/contracts/core/OracleProvider.ts:208](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/OracleProvider.ts#L208)
 
 ___
 
@@ -709,7 +709,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:111](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L111)
+[src/gen/contracts/core/OracleProvider.ts:111](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/OracleProvider.ts#L111)
 
 ▸ **listeners**(`eventName?`): `Listener`[]
 
@@ -729,7 +729,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:114](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L114)
+[src/gen/contracts/core/OracleProvider.ts:114](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/OracleProvider.ts#L114)
 
 ___
 
@@ -761,7 +761,7 @@ BaseContract.queryFilter
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:105](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L105)
+[src/gen/contracts/core/OracleProvider.ts:105](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/OracleProvider.ts#L105)
 
 ___
 
@@ -791,7 +791,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:115](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L115)
+[src/gen/contracts/core/OracleProvider.ts:115](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/OracleProvider.ts#L115)
 
 ▸ **removeAllListeners**(`eventName?`): [`OracleProvider`](contracts.core.OracleProvider.md)
 
@@ -811,7 +811,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:118](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L118)
+[src/gen/contracts/core/OracleProvider.ts:118](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/OracleProvider.ts#L118)
 
 ___
 
@@ -834,4 +834,4 @@ Checks for a new price and updates the internal phase annotation state according
 
 #### Defined in
 
-[src/gen/contracts/core/OracleProvider.ts:214](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/OracleProvider.ts#L214)
+[src/gen/contracts/core/OracleProvider.ts:214](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/OracleProvider.ts#L214)

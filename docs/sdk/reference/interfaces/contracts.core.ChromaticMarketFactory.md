@@ -58,7 +58,7 @@
 - [getMarket](contracts.core.ChromaticMarketFactory.md#getmarket)
 - [getMarkets](contracts.core.ChromaticMarketFactory.md#getmarkets)
 - [getMarketsBySettlmentToken](contracts.core.ChromaticMarketFactory.md#getmarketsbysettlmenttoken)
-- [getMinimumTakerMargin](contracts.core.ChromaticMarketFactory.md#getminimumtakermargin)
+- [getMinimumMargin](contracts.core.ChromaticMarketFactory.md#getminimummargin)
 - [getUniswapFeeTier](contracts.core.ChromaticMarketFactory.md#getuniswapfeetier)
 - [isRegisteredMarket](contracts.core.ChromaticMarketFactory.md#isregisteredmarket)
 - [isRegisteredOracleProvider](contracts.core.ChromaticMarketFactory.md#isregisteredoracleprovider)
@@ -79,7 +79,7 @@
 - [setFlashLoanFeeRate](contracts.core.ChromaticMarketFactory.md#setflashloanfeerate)
 - [setKeeperFeePayer](contracts.core.ChromaticMarketFactory.md#setkeeperfeepayer)
 - [setLiquidator](contracts.core.ChromaticMarketFactory.md#setliquidator)
-- [setMinimumTakerMargin](contracts.core.ChromaticMarketFactory.md#setminimumtakermargin)
+- [setMinimumMargin](contracts.core.ChromaticMarketFactory.md#setminimummargin)
 - [setUniswapFeeTier](contracts.core.ChromaticMarketFactory.md#setuniswapfeetier)
 - [setVault](contracts.core.ChromaticMarketFactory.md#setvault)
 - [treasury](contracts.core.ChromaticMarketFactory.md#treasury)
@@ -177,7 +177,7 @@ ___
 | `getMarket` | (`oracleProvider`: `PromiseOrValue`<`string`\>, `settlementToken`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`string`\> |
 | `getMarkets` | (`overrides?`: `CallOverrides`) => `Promise`<`string`[]\> |
 | `getMarketsBySettlmentToken` | (`settlementToken`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`string`[]\> |
-| `getMinimumTakerMargin` | (`token`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
+| `getMinimumMargin` | (`token`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
 | `getUniswapFeeTier` | (`token`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`number`\> |
 | `isRegisteredMarket` | (`market`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`boolean`\> |
 | `isRegisteredOracleProvider` | (`oracleProvider`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`boolean`\> |
@@ -186,7 +186,7 @@ ___
 | `liquidator` | (`overrides?`: `CallOverrides`) => `Promise`<`string`\> |
 | `parameters` | (`overrides?`: `CallOverrides`) => `Promise`<[`string`, `string`] & { `oracleProvider`: `string` ; `settlementToken`: `string`  }\> |
 | `registerOracleProvider` | (`oracleProvider`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`void`\> |
-| `registerSettlementToken` | (`token`: `PromiseOrValue`<`string`\>, `minimumTakerMargin`: `PromiseOrValue`<`BigNumberish`\>, `interestRate`: `PromiseOrValue`<`BigNumberish`\>, `flashLoanFeeRate`: `PromiseOrValue`<`BigNumberish`\>, `earningDistributionThreshold`: `PromiseOrValue`<`BigNumberish`\>, `uniswapFeeTier`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `CallOverrides`) => `Promise`<`void`\> |
+| `registerSettlementToken` | (`token`: `PromiseOrValue`<`string`\>, `minimumMargin`: `PromiseOrValue`<`BigNumberish`\>, `interestRate`: `PromiseOrValue`<`BigNumberish`\>, `flashLoanFeeRate`: `PromiseOrValue`<`BigNumberish`\>, `earningDistributionThreshold`: `PromiseOrValue`<`BigNumberish`\>, `uniswapFeeTier`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `CallOverrides`) => `Promise`<`void`\> |
 | `registeredOracleProviders` | (`overrides?`: `CallOverrides`) => `Promise`<`string`[]\> |
 | `registeredSettlementTokens` | (`overrides?`: `CallOverrides`) => `Promise`<`string`[]\> |
 | `removeLastInterestRateRecord` | (`token`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`void`\> |
@@ -194,7 +194,7 @@ ___
 | `setFlashLoanFeeRate` | (`token`: `PromiseOrValue`<`string`\>, `flashLoanFeeRate`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `CallOverrides`) => `Promise`<`void`\> |
 | `setKeeperFeePayer` | (`_keeperFeePayer`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`void`\> |
 | `setLiquidator` | (`_liquidator`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`void`\> |
-| `setMinimumTakerMargin` | (`token`: `PromiseOrValue`<`string`\>, `minimumTakerMargin`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `CallOverrides`) => `Promise`<`void`\> |
+| `setMinimumMargin` | (`token`: `PromiseOrValue`<`string`\>, `minimumMargin`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `CallOverrides`) => `Promise`<`void`\> |
 | `setUniswapFeeTier` | (`token`: `PromiseOrValue`<`string`\>, `uniswapFeeTier`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `CallOverrides`) => `Promise`<`void`\> |
 | `setVault` | (`_vault`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`void`\> |
 | `treasury` | (`overrides?`: `CallOverrides`) => `Promise`<`string`\> |
@@ -209,7 +209,7 @@ BaseContract.callStatic
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1423](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1423)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1425](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1425)
 
 ___
 
@@ -250,7 +250,7 @@ ___
 | `getMarket` | (`oracleProvider`: `PromiseOrValue`<`string`\>, `settlementToken`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
 | `getMarkets` | (`overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
 | `getMarketsBySettlmentToken` | (`settlementToken`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
-| `getMinimumTakerMargin` | (`token`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
+| `getMinimumMargin` | (`token`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
 | `getUniswapFeeTier` | (`token`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
 | `isRegisteredMarket` | (`market`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
 | `isRegisteredOracleProvider` | (`oracleProvider`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
@@ -259,7 +259,7 @@ ___
 | `liquidator` | (`overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
 | `parameters` | (`overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
 | `registerOracleProvider` | (`oracleProvider`: `PromiseOrValue`<`string`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
-| `registerSettlementToken` | (`token`: `PromiseOrValue`<`string`\>, `minimumTakerMargin`: `PromiseOrValue`<`BigNumberish`\>, `interestRate`: `PromiseOrValue`<`BigNumberish`\>, `flashLoanFeeRate`: `PromiseOrValue`<`BigNumberish`\>, `earningDistributionThreshold`: `PromiseOrValue`<`BigNumberish`\>, `uniswapFeeTier`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
+| `registerSettlementToken` | (`token`: `PromiseOrValue`<`string`\>, `minimumMargin`: `PromiseOrValue`<`BigNumberish`\>, `interestRate`: `PromiseOrValue`<`BigNumberish`\>, `flashLoanFeeRate`: `PromiseOrValue`<`BigNumberish`\>, `earningDistributionThreshold`: `PromiseOrValue`<`BigNumberish`\>, `uniswapFeeTier`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
 | `registeredOracleProviders` | (`overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
 | `registeredSettlementTokens` | (`overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
 | `removeLastInterestRateRecord` | (`token`: `PromiseOrValue`<`string`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
@@ -267,7 +267,7 @@ ___
 | `setFlashLoanFeeRate` | (`token`: `PromiseOrValue`<`string`\>, `flashLoanFeeRate`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
 | `setKeeperFeePayer` | (`_keeperFeePayer`: `PromiseOrValue`<`string`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
 | `setLiquidator` | (`_liquidator`: `PromiseOrValue`<`string`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
-| `setMinimumTakerMargin` | (`token`: `PromiseOrValue`<`string`\>, `minimumTakerMargin`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
+| `setMinimumMargin` | (`token`: `PromiseOrValue`<`string`\>, `minimumMargin`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
 | `setUniswapFeeTier` | (`token`: `PromiseOrValue`<`string`\>, `uniswapFeeTier`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
 | `setVault` | (`_vault`: `PromiseOrValue`<`string`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
 | `treasury` | (`overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
@@ -282,7 +282,7 @@ BaseContract.estimateGas
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1937](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1937)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1940](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1940)
 
 ___
 
@@ -312,14 +312,14 @@ ___
 | `SetKeeperFeePayer(address)` | (`keeperFeePayer?`: `PromiseOrValue`<`string`\>) => [`SetKeeperFeePayerEventFilter`](../modules.md#setkeeperfeepayereventfilter) |
 | `SetLiquidator` | (`liquidator?`: `PromiseOrValue`<`string`\>) => [`SetLiquidatorEventFilter`](../modules.md#setliquidatoreventfilter) |
 | `SetLiquidator(address)` | (`liquidator?`: `PromiseOrValue`<`string`\>) => [`SetLiquidatorEventFilter`](../modules.md#setliquidatoreventfilter) |
-| `SetMinimumTakerMargin` | (`token?`: `PromiseOrValue`<`string`\>, `minimumTakerMargin?`: `PromiseOrValue`<`BigNumberish`\>) => [`SetMinimumTakerMarginEventFilter`](../modules.md#setminimumtakermargineventfilter) |
-| `SetMinimumTakerMargin(address,uint256)` | (`token?`: `PromiseOrValue`<`string`\>, `minimumTakerMargin?`: `PromiseOrValue`<`BigNumberish`\>) => [`SetMinimumTakerMarginEventFilter`](../modules.md#setminimumtakermargineventfilter) |
+| `SetMinimumMargin` | (`token?`: `PromiseOrValue`<`string`\>, `minimumMargin?`: `PromiseOrValue`<`BigNumberish`\>) => [`SetMinimumMarginEventFilter`](../modules.md#setminimummargineventfilter) |
+| `SetMinimumMargin(address,uint256)` | (`token?`: `PromiseOrValue`<`string`\>, `minimumMargin?`: `PromiseOrValue`<`BigNumberish`\>) => [`SetMinimumMarginEventFilter`](../modules.md#setminimummargineventfilter) |
 | `SetUniswapFeeTier` | (`token?`: `PromiseOrValue`<`string`\>, `uniswapFeeTier?`: `PromiseOrValue`<`BigNumberish`\>) => [`SetUniswapFeeTierEventFilter`](../modules.md#setuniswapfeetiereventfilter) |
 | `SetUniswapFeeTier(address,uint24)` | (`token?`: `PromiseOrValue`<`string`\>, `uniswapFeeTier?`: `PromiseOrValue`<`BigNumberish`\>) => [`SetUniswapFeeTierEventFilter`](../modules.md#setuniswapfeetiereventfilter) |
 | `SetVault` | (`vault?`: `PromiseOrValue`<`string`\>) => [`SetVaultEventFilter`](../modules.md#setvaulteventfilter) |
 | `SetVault(address)` | (`vault?`: `PromiseOrValue`<`string`\>) => [`SetVaultEventFilter`](../modules.md#setvaulteventfilter) |
-| `SettlementTokenRegistered` | (`token?`: `PromiseOrValue`<`string`\>, `minimumTakerMargin?`: `PromiseOrValue`<`BigNumberish`\>, `interestRate?`: `PromiseOrValue`<`BigNumberish`\>, `flashLoanFeeRate?`: ``null``, `earningDistributionThreshold?`: ``null``, `uniswapFeeTier?`: ``null``) => [`SettlementTokenRegisteredEventFilter`](../modules.md#settlementtokenregisteredeventfilter) |
-| `SettlementTokenRegistered(address,uint256,uint256,uint256,uint256,uint24)` | (`token?`: `PromiseOrValue`<`string`\>, `minimumTakerMargin?`: `PromiseOrValue`<`BigNumberish`\>, `interestRate?`: `PromiseOrValue`<`BigNumberish`\>, `flashLoanFeeRate?`: ``null``, `earningDistributionThreshold?`: ``null``, `uniswapFeeTier?`: ``null``) => [`SettlementTokenRegisteredEventFilter`](../modules.md#settlementtokenregisteredeventfilter) |
+| `SettlementTokenRegistered` | (`token?`: `PromiseOrValue`<`string`\>, `minimumMargin?`: `PromiseOrValue`<`BigNumberish`\>, `interestRate?`: `PromiseOrValue`<`BigNumberish`\>, `flashLoanFeeRate?`: ``null``, `earningDistributionThreshold?`: ``null``, `uniswapFeeTier?`: ``null``) => [`SettlementTokenRegisteredEventFilter`](../modules.md#settlementtokenregisteredeventfilter) |
+| `SettlementTokenRegistered(address,uint256,uint256,uint256,uint256,uint24)` | (`token?`: `PromiseOrValue`<`string`\>, `minimumMargin?`: `PromiseOrValue`<`BigNumberish`\>, `interestRate?`: `PromiseOrValue`<`BigNumberish`\>, `flashLoanFeeRate?`: ``null``, `earningDistributionThreshold?`: ``null``, `uniswapFeeTier?`: ``null``) => [`SettlementTokenRegisteredEventFilter`](../modules.md#settlementtokenregisteredeventfilter) |
 | `UpdateDao` | (`dao?`: `PromiseOrValue`<`string`\>) => [`UpdateDaoEventFilter`](../modules.md#updatedaoeventfilter) |
 | `UpdateDao(address)` | (`dao?`: `PromiseOrValue`<`string`\>) => [`UpdateDaoEventFilter`](../modules.md#updatedaoeventfilter) |
 | `UpdateTreasury` | (`treasury?`: `PromiseOrValue`<`string`\>) => [`UpdateTreasuryEventFilter`](../modules.md#updatetreasuryeventfilter) |
@@ -331,7 +331,7 @@ BaseContract.filters
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1804](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1804)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1807](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1807)
 
 ___
 
@@ -358,7 +358,7 @@ ___
 | `getMarket` | (`oracleProvider`: `PromiseOrValue`<`string`\>, `settlementToken`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<[`string`]\> |
 | `getMarkets` | (`overrides?`: `CallOverrides`) => `Promise`<[`string`[]]\> |
 | `getMarketsBySettlmentToken` | (`settlementToken`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<[`string`[]]\> |
-| `getMinimumTakerMargin` | (`token`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<[`BigNumber`]\> |
+| `getMinimumMargin` | (`token`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<[`BigNumber`]\> |
 | `getUniswapFeeTier` | (`token`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<[`number`]\> |
 | `isRegisteredMarket` | (`market`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<[`boolean`]\> |
 | `isRegisteredOracleProvider` | (`oracleProvider`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<[`boolean`]\> |
@@ -367,7 +367,7 @@ ___
 | `liquidator` | (`overrides?`: `CallOverrides`) => `Promise`<[`string`]\> |
 | `parameters` | (`overrides?`: `CallOverrides`) => `Promise`<[`string`, `string`] & { `oracleProvider`: `string` ; `settlementToken`: `string`  }\> |
 | `registerOracleProvider` | (`oracleProvider`: `PromiseOrValue`<`string`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
-| `registerSettlementToken` | (`token`: `PromiseOrValue`<`string`\>, `minimumTakerMargin`: `PromiseOrValue`<`BigNumberish`\>, `interestRate`: `PromiseOrValue`<`BigNumberish`\>, `flashLoanFeeRate`: `PromiseOrValue`<`BigNumberish`\>, `earningDistributionThreshold`: `PromiseOrValue`<`BigNumberish`\>, `uniswapFeeTier`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
+| `registerSettlementToken` | (`token`: `PromiseOrValue`<`string`\>, `minimumMargin`: `PromiseOrValue`<`BigNumberish`\>, `interestRate`: `PromiseOrValue`<`BigNumberish`\>, `flashLoanFeeRate`: `PromiseOrValue`<`BigNumberish`\>, `earningDistributionThreshold`: `PromiseOrValue`<`BigNumberish`\>, `uniswapFeeTier`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
 | `registeredOracleProviders` | (`overrides?`: `CallOverrides`) => `Promise`<[`string`[]]\> |
 | `registeredSettlementTokens` | (`overrides?`: `CallOverrides`) => `Promise`<[`string`[]]\> |
 | `removeLastInterestRateRecord` | (`token`: `PromiseOrValue`<`string`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
@@ -375,7 +375,7 @@ ___
 | `setFlashLoanFeeRate` | (`token`: `PromiseOrValue`<`string`\>, `flashLoanFeeRate`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
 | `setKeeperFeePayer` | (`_keeperFeePayer`: `PromiseOrValue`<`string`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
 | `setLiquidator` | (`_liquidator`: `PromiseOrValue`<`string`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
-| `setMinimumTakerMargin` | (`token`: `PromiseOrValue`<`string`\>, `minimumTakerMargin`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
+| `setMinimumMargin` | (`token`: `PromiseOrValue`<`string`\>, `minimumMargin`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
 | `setUniswapFeeTier` | (`token`: `PromiseOrValue`<`string`\>, `uniswapFeeTier`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
 | `setVault` | (`_vault`: `PromiseOrValue`<`string`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
 | `treasury` | (`overrides?`: `CallOverrides`) => `Promise`<[`string`]\> |
@@ -390,7 +390,7 @@ BaseContract.functions
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:663](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L663)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:663](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L663)
 
 ___
 
@@ -404,7 +404,7 @@ BaseContract.interface
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:642](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L642)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:642](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L642)
 
 ___
 
@@ -418,7 +418,7 @@ BaseContract.off
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:658](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L658)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:658](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L658)
 
 ___
 
@@ -432,7 +432,7 @@ BaseContract.on
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:659](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L659)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:659](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L659)
 
 ___
 
@@ -446,7 +446,7 @@ BaseContract.once
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:660](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L660)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:660](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L660)
 
 ___
 
@@ -473,7 +473,7 @@ ___
 | `getMarket` | (`oracleProvider`: `PromiseOrValue`<`string`\>, `settlementToken`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
 | `getMarkets` | (`overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
 | `getMarketsBySettlmentToken` | (`settlementToken`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
-| `getMinimumTakerMargin` | (`token`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
+| `getMinimumMargin` | (`token`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
 | `getUniswapFeeTier` | (`token`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
 | `isRegisteredMarket` | (`market`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
 | `isRegisteredOracleProvider` | (`oracleProvider`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
@@ -482,7 +482,7 @@ ___
 | `liquidator` | (`overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
 | `parameters` | (`overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
 | `registerOracleProvider` | (`oracleProvider`: `PromiseOrValue`<`string`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
-| `registerSettlementToken` | (`token`: `PromiseOrValue`<`string`\>, `minimumTakerMargin`: `PromiseOrValue`<`BigNumberish`\>, `interestRate`: `PromiseOrValue`<`BigNumberish`\>, `flashLoanFeeRate`: `PromiseOrValue`<`BigNumberish`\>, `earningDistributionThreshold`: `PromiseOrValue`<`BigNumberish`\>, `uniswapFeeTier`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
+| `registerSettlementToken` | (`token`: `PromiseOrValue`<`string`\>, `minimumMargin`: `PromiseOrValue`<`BigNumberish`\>, `interestRate`: `PromiseOrValue`<`BigNumberish`\>, `flashLoanFeeRate`: `PromiseOrValue`<`BigNumberish`\>, `earningDistributionThreshold`: `PromiseOrValue`<`BigNumberish`\>, `uniswapFeeTier`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
 | `registeredOracleProviders` | (`overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
 | `registeredSettlementTokens` | (`overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
 | `removeLastInterestRateRecord` | (`token`: `PromiseOrValue`<`string`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
@@ -490,7 +490,7 @@ ___
 | `setFlashLoanFeeRate` | (`token`: `PromiseOrValue`<`string`\>, `flashLoanFeeRate`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
 | `setKeeperFeePayer` | (`_keeperFeePayer`: `PromiseOrValue`<`string`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
 | `setLiquidator` | (`_liquidator`: `PromiseOrValue`<`string`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
-| `setMinimumTakerMargin` | (`token`: `PromiseOrValue`<`string`\>, `minimumTakerMargin`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
+| `setMinimumMargin` | (`token`: `PromiseOrValue`<`string`\>, `minimumMargin`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
 | `setUniswapFeeTier` | (`token`: `PromiseOrValue`<`string`\>, `uniswapFeeTier`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
 | `setVault` | (`_vault`: `PromiseOrValue`<`string`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
 | `treasury` | (`overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
@@ -505,7 +505,7 @@ BaseContract.populateTransaction
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:2314](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L2314)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:2318](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L2318)
 
 ___
 
@@ -533,7 +533,7 @@ BaseContract.removeListener
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:661](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L661)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:661](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L661)
 
 ___
 
@@ -661,7 +661,7 @@ Appends an interest rate record for a settlement token.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1051](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1051)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1052](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1052)
 
 ___
 
@@ -685,7 +685,7 @@ BaseContract.attach
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:639](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L639)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:639](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L639)
 
 ___
 
@@ -711,7 +711,7 @@ Calculates the interest accrued for a given token and amount within a specified 
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1065](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1065)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1066](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1066)
 
 ___
 
@@ -735,7 +735,7 @@ Cancels a Maker earning distribution task for a token.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1078](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1078)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1079](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1079)
 
 ___
 
@@ -759,7 +759,7 @@ Cancels a market earning distribution task for a market.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1088](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1088)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1089](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1089)
 
 ___
 
@@ -783,7 +783,7 @@ BaseContract.connect
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:638](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L638)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:638](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L638)
 
 ___
 
@@ -807,7 +807,7 @@ Creates a Maker earning distribution task for a token.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1098](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1098)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1099](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1099)
 
 ___
 
@@ -831,7 +831,7 @@ Creates a new market associated with an oracle provider and settlement token.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1108](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1108)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1109](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1109)
 
 ___
 
@@ -855,7 +855,7 @@ Creates a market earning distribution task for a market.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1119](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1119)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1120](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1120)
 
 ___
 
@@ -878,7 +878,7 @@ Gets the current interest rate for a settlement token.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1128](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1128)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1129](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1129)
 
 ___
 
@@ -900,7 +900,7 @@ Returns the address of the DAO.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1136](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1136)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1137](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1137)
 
 ___
 
@@ -918,7 +918,7 @@ BaseContract.deployed
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:640](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L640)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:640](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L640)
 
 ___
 
@@ -990,7 +990,7 @@ Gets the earning distribution threshold for a settlement token.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1142](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1142)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1143](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1143)
 
 ___
 
@@ -1013,7 +1013,7 @@ Gets the flash loan fee rate for a settlement token.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1151](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1151)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1152](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1152)
 
 ___
 
@@ -1036,7 +1036,7 @@ Gets all the interest rate records for a settlement token.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1160](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1160)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1161](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1161)
 
 ___
 
@@ -1060,7 +1060,7 @@ Returns the address of a market associated with an oracle provider and settlemen
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1170](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1170)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1171](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1171)
 
 ___
 
@@ -1082,7 +1082,7 @@ Returns an array of all market addresses.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1179](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1179)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1180](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1180)
 
 ___
 
@@ -1105,15 +1105,16 @@ Returns an array of market addresses associated with a settlement token.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1185](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1185)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1186](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1186)
 
 ___
 
-### getMinimumTakerMargin
+### getMinimumMargin
 
-▸ **getMinimumTakerMargin**(`token`, `overrides?`): `Promise`<`BigNumber`\>
+▸ **getMinimumMargin**(`token`, `overrides?`): `Promise`<`BigNumber`\>
 
-Gets the minimum taker margin for a settlement token.
+The minimumMargin is used as the minimum value for the taker margin of a position      or as the minimum value for the maker margin of each bin.
+Gets the minimum margin for a settlement token.
 
 #### Parameters
 
@@ -1128,7 +1129,7 @@ Gets the minimum taker margin for a settlement token.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1194](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1194)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1196](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1196)
 
 ___
 
@@ -1151,7 +1152,7 @@ Gets the Uniswap fee tier for a settlement token.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1203](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1203)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1205](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1205)
 
 ___
 
@@ -1174,7 +1175,7 @@ Checks if a market is registered.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1212](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1212)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1214](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1214)
 
 ___
 
@@ -1197,7 +1198,7 @@ Checks if an oracle provider is registered.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1221](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1221)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1223](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1223)
 
 ___
 
@@ -1220,7 +1221,7 @@ Checks if a settlement token is registered.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1230](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1230)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1232](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1232)
 
 ___
 
@@ -1242,7 +1243,7 @@ Returns the address of the keeper fee payer.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1238](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1238)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1240](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1240)
 
 ___
 
@@ -1264,7 +1265,7 @@ Returns the address of the liquidator.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1243](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1243)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1245](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1245)
 
 ___
 
@@ -1318,7 +1319,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:650](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L650)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:650](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L650)
 
 ▸ **listeners**(`eventName?`): `Listener`[]
 
@@ -1338,7 +1339,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:653](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L653)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:653](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L653)
 
 ___
 
@@ -1361,7 +1362,7 @@ Get the parameters to be used in constructing the market, set transiently during
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1249](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1249)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1251](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1251)
 
 ___
 
@@ -1393,7 +1394,7 @@ BaseContract.queryFilter
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:644](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L644)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:644](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L644)
 
 ___
 
@@ -1417,13 +1418,13 @@ Registers an oracle provider.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1260](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1260)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1262](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1262)
 
 ___
 
 ### registerSettlementToken
 
-▸ **registerSettlementToken**(`token`, `minimumTakerMargin`, `interestRate`, `flashLoanFeeRate`, `earningDistributionThreshold`, `uniswapFeeTier`, `overrides?`): `Promise`<`ContractTransaction`\>
+▸ **registerSettlementToken**(`token`, `minimumMargin`, `interestRate`, `flashLoanFeeRate`, `earningDistributionThreshold`, `uniswapFeeTier`, `overrides?`): `Promise`<`ContractTransaction`\>
 
 This function can only be called by the DAO address.
 Registers a new settlement token.
@@ -1433,7 +1434,7 @@ Registers a new settlement token.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `token` | `PromiseOrValue`<`string`\> | The address of the settlement token to register. |
-| `minimumTakerMargin` | `PromiseOrValue`<`BigNumberish`\> | The minimum taker margin for the settlement token. |
+| `minimumMargin` | `PromiseOrValue`<`BigNumberish`\> | The minimum margin for the settlement token. |
 | `interestRate` | `PromiseOrValue`<`BigNumberish`\> | The interest rate for the settlement token. |
 | `flashLoanFeeRate` | `PromiseOrValue`<`BigNumberish`\> | The flash loan fee rate for the settlement token. |
 | `earningDistributionThreshold` | `PromiseOrValue`<`BigNumberish`\> | The earning distribution threshold for the settlement token. |
@@ -1446,7 +1447,7 @@ Registers a new settlement token.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1275](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1275)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1277](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1277)
 
 ___
 
@@ -1468,7 +1469,7 @@ Gets the registered oracle providers.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1288](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1288)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1290](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1290)
 
 ___
 
@@ -1490,7 +1491,7 @@ Gets the list of registered settlement tokens.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1293](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1293)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1295](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1295)
 
 ___
 
@@ -1520,7 +1521,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:654](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L654)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:654](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L654)
 
 ▸ **removeAllListeners**(`eventName?`): [`ChromaticMarketFactory`](contracts.core.ChromaticMarketFactory.md)
 
@@ -1540,7 +1541,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:657](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L657)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:657](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L657)
 
 ___
 
@@ -1564,7 +1565,7 @@ Removes the last interest rate record for a settlement token.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1300](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1300)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1302](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1302)
 
 ___
 
@@ -1589,7 +1590,7 @@ Sets the earning distribution threshold for a settlement token.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1311](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1311)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1313](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1313)
 
 ___
 
@@ -1614,7 +1615,7 @@ Sets the flash loan fee rate for a settlement token.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1323](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1323)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1325](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1325)
 
 ___
 
@@ -1638,7 +1639,7 @@ Sets the keeper fee payer address.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1334](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1334)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1336](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1336)
 
 ___
 
@@ -1662,23 +1663,23 @@ Sets the liquidator address.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1344](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1344)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1346](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1346)
 
 ___
 
-### setMinimumTakerMargin
+### setMinimumMargin
 
-▸ **setMinimumTakerMargin**(`token`, `minimumTakerMargin`, `overrides?`): `Promise`<`ContractTransaction`\>
+▸ **setMinimumMargin**(`token`, `minimumMargin`, `overrides?`): `Promise`<`ContractTransaction`\>
 
 This function can only be called by the DAO address.
-Sets the minimum taker margin for a settlement token.
+Sets the minimum margin for a settlement token.
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `token` | `PromiseOrValue`<`string`\> | The address of the settlement token. |
-| `minimumTakerMargin` | `PromiseOrValue`<`BigNumberish`\> | The new minimum taker margin for the settlement token. |
+| `minimumMargin` | `PromiseOrValue`<`BigNumberish`\> | The new minimum margin for the settlement token. |
 | `overrides?` | `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  } | - |
 
 #### Returns
@@ -1687,7 +1688,7 @@ Sets the minimum taker margin for a settlement token.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1355](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1355)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1357](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1357)
 
 ___
 
@@ -1712,7 +1713,7 @@ Sets the Uniswap fee tier for a settlement token.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1367](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1367)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1369](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1369)
 
 ___
 
@@ -1736,7 +1737,7 @@ Sets the vault address.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1378](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1378)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1380](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1380)
 
 ___
 
@@ -1758,7 +1759,7 @@ Returns the address of the DAO treasury.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1386](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1386)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1388](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1388)
 
 ___
 
@@ -1782,7 +1783,7 @@ Unregisters an oracle provider.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1393](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1393)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1395](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1395)
 
 ___
 
@@ -1806,7 +1807,7 @@ Updates the DAO address.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1403](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1403)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1405](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1405)
 
 ___
 
@@ -1830,7 +1831,7 @@ Updates the DAO treasury address.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1413](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1413)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1415](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1415)
 
 ___
 
@@ -1852,4 +1853,4 @@ Returns the address of the vault.
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:1421](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarketFactory.ts#L1421)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:1423](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarketFactory.ts#L1423)

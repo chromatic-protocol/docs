@@ -123,7 +123,7 @@ utils.Interface.events
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:383](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L383)
+[src/gen/contracts/periphery/ChromaticRouter.ts:383](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L383)
 
 ___
 
@@ -180,7 +180,7 @@ utils.Interface.functions
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:103](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L103)
+[src/gen/contracts/periphery/ChromaticRouter.ts:103](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L103)
 
 ___
 
@@ -349,7 +349,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:295](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L295)
+[src/gen/contracts/periphery/ChromaticRouter.ts:295](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L295)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -370,7 +370,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:299](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L299)
+[src/gen/contracts/periphery/ChromaticRouter.ts:299](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L299)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -391,7 +391,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:303](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L303)
+[src/gen/contracts/periphery/ChromaticRouter.ts:303](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L303)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -412,7 +412,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:307](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L307)
+[src/gen/contracts/periphery/ChromaticRouter.ts:307](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L307)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -433,7 +433,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:311](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L311)
+[src/gen/contracts/periphery/ChromaticRouter.ts:311](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L311)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -454,7 +454,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:315](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L315)
+[src/gen/contracts/periphery/ChromaticRouter.ts:315](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L315)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -475,7 +475,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:319](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L319)
+[src/gen/contracts/periphery/ChromaticRouter.ts:319](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L319)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -496,7 +496,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:323](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L323)
+[src/gen/contracts/periphery/ChromaticRouter.ts:323](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L323)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -517,7 +517,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:327](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L327)
+[src/gen/contracts/periphery/ChromaticRouter.ts:327](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L327)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -538,7 +538,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:331](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L331)
+[src/gen/contracts/periphery/ChromaticRouter.ts:331](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L331)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -559,7 +559,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:335](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L335)
+[src/gen/contracts/periphery/ChromaticRouter.ts:335](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L335)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -580,7 +580,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:336](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L336)
+[src/gen/contracts/periphery/ChromaticRouter.ts:336](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L336)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -601,7 +601,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:340](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L340)
+[src/gen/contracts/periphery/ChromaticRouter.ts:340](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L340)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -622,7 +622,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:341](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L341)
+[src/gen/contracts/periphery/ChromaticRouter.ts:341](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L341)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -643,7 +643,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:345](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L345)
+[src/gen/contracts/periphery/ChromaticRouter.ts:345](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L345)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -664,7 +664,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:346](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L346)
+[src/gen/contracts/periphery/ChromaticRouter.ts:346](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L346)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -685,7 +685,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:350](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L350)
+[src/gen/contracts/periphery/ChromaticRouter.ts:350](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L350)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -706,7 +706,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:354](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L354)
+[src/gen/contracts/periphery/ChromaticRouter.ts:354](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L354)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -727,7 +727,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:358](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L358)
+[src/gen/contracts/periphery/ChromaticRouter.ts:358](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L358)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -748,7 +748,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:362](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L362)
+[src/gen/contracts/periphery/ChromaticRouter.ts:362](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L362)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -769,7 +769,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:366](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L366)
+[src/gen/contracts/periphery/ChromaticRouter.ts:366](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L366)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -790,7 +790,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:370](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L370)
+[src/gen/contracts/periphery/ChromaticRouter.ts:370](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L370)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -811,7 +811,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:374](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L374)
+[src/gen/contracts/periphery/ChromaticRouter.ts:374](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L374)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -832,7 +832,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:378](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L378)
+[src/gen/contracts/periphery/ChromaticRouter.ts:378](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L378)
 
 ___
 
@@ -961,7 +961,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:158](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L158)
+[src/gen/contracts/periphery/ChromaticRouter.ts:158](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L158)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -982,7 +982,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:167](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L167)
+[src/gen/contracts/periphery/ChromaticRouter.ts:167](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L167)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1003,7 +1003,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:176](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L176)
+[src/gen/contracts/periphery/ChromaticRouter.ts:176](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L176)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1024,7 +1024,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:184](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L184)
+[src/gen/contracts/periphery/ChromaticRouter.ts:184](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L184)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1045,7 +1045,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:192](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L192)
+[src/gen/contracts/periphery/ChromaticRouter.ts:192](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L192)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1066,7 +1066,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:200](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L200)
+[src/gen/contracts/periphery/ChromaticRouter.ts:200](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L200)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1087,7 +1087,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:204](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L204)
+[src/gen/contracts/periphery/ChromaticRouter.ts:204](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L204)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1108,7 +1108,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:208](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L208)
+[src/gen/contracts/periphery/ChromaticRouter.ts:208](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L208)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1129,7 +1129,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:212](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L212)
+[src/gen/contracts/periphery/ChromaticRouter.ts:212](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L212)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1150,7 +1150,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:216](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L216)
+[src/gen/contracts/periphery/ChromaticRouter.ts:216](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L216)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values?`): `string`
 
@@ -1171,7 +1171,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:220](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L220)
+[src/gen/contracts/periphery/ChromaticRouter.ts:220](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L220)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1192,7 +1192,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:224](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L224)
+[src/gen/contracts/periphery/ChromaticRouter.ts:224](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L224)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1213,7 +1213,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:228](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L228)
+[src/gen/contracts/periphery/ChromaticRouter.ts:228](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L228)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1234,7 +1234,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:232](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L232)
+[src/gen/contracts/periphery/ChromaticRouter.ts:232](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L232)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values?`): `string`
 
@@ -1255,7 +1255,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:243](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L243)
+[src/gen/contracts/periphery/ChromaticRouter.ts:243](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L243)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1276,7 +1276,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:244](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L244)
+[src/gen/contracts/periphery/ChromaticRouter.ts:244](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L244)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1297,7 +1297,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:253](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L253)
+[src/gen/contracts/periphery/ChromaticRouter.ts:253](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L253)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1318,7 +1318,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:262](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L262)
+[src/gen/contracts/periphery/ChromaticRouter.ts:262](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L262)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values?`): `string`
 
@@ -1339,7 +1339,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:270](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L270)
+[src/gen/contracts/periphery/ChromaticRouter.ts:270](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L270)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1360,7 +1360,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:274](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L274)
+[src/gen/contracts/periphery/ChromaticRouter.ts:274](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L274)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1381,7 +1381,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:278](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L278)
+[src/gen/contracts/periphery/ChromaticRouter.ts:278](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L278)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1402,7 +1402,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:282](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L282)
+[src/gen/contracts/periphery/ChromaticRouter.ts:282](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L282)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1423,7 +1423,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:286](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L286)
+[src/gen/contracts/periphery/ChromaticRouter.ts:286](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L286)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1444,7 +1444,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:290](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L290)
+[src/gen/contracts/periphery/ChromaticRouter.ts:290](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L290)
 
 ___
 
@@ -1541,7 +1541,7 @@ utils.Interface.getEvent
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:387](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L387)
+[src/gen/contracts/periphery/ChromaticRouter.ts:387](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L387)
 
 ___
 
@@ -1589,7 +1589,7 @@ utils.Interface.getFunction
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:130](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/periphery/ChromaticRouter.ts#L130)
+[src/gen/contracts/periphery/ChromaticRouter.ts:130](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L130)
 
 ___
 

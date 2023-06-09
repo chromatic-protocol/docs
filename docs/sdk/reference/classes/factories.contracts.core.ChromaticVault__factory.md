@@ -33,7 +33,7 @@
 
 #### Defined in
 
-[src/gen/factories/contracts/core/ChromaticVault__factory.ts:920](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/factories/contracts/core/ChromaticVault__factory.ts#L920)
+[src/gen/factories/contracts/core/ChromaticVault__factory.ts:920](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/factories/contracts/core/ChromaticVault__factory.ts#L920)
 
 ## Methods
 
@@ -54,7 +54,7 @@
 
 #### Defined in
 
-[src/gen/factories/contracts/core/ChromaticVault__factory.ts:924](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/factories/contracts/core/ChromaticVault__factory.ts#L924)
+[src/gen/factories/contracts/core/ChromaticVault__factory.ts:924](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/factories/contracts/core/ChromaticVault__factory.ts#L924)
 
 ___
 
@@ -68,4 +68,4 @@ ___
 
 #### Defined in
 
-[src/gen/factories/contracts/core/ChromaticVault__factory.ts:921](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/factories/contracts/core/ChromaticVault__factory.ts#L921)
+[src/gen/factories/contracts/core/ChromaticVault__factory.ts:921](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/factories/contracts/core/ChromaticVault__factory.ts#L921)

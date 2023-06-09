@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:447](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarket.ts#L447)
+[src/gen/contracts/core/ChromaticMarket.ts:447](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarket.ts#L447)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:448](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarket.ts#L448)
+[src/gen/contracts/core/ChromaticMarket.ts:448](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarket.ts#L448)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:446](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/contracts/core/ChromaticMarket.ts#L446)
+[src/gen/contracts/core/ChromaticMarket.ts:446](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/core/ChromaticMarket.ts#L446)

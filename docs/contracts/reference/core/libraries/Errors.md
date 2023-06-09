@@ -1,0 +1,136 @@
+# Solidity API
+
+## Errors
+
+### ONLY_DAO_CAN_ACCESS
+
+```solidity
+string ONLY_DAO_CAN_ACCESS
+```
+
+### ONLY_VAULT_CAN_ACCESS
+
+```solidity
+string ONLY_VAULT_CAN_ACCESS
+```
+
+### ONLY_DEDICATED_MSG_SENDER_CAN_ACCESS
+
+```solidity
+string ONLY_DEDICATED_MSG_SENDER_CAN_ACCESS
+```
+
+### ONLY_LIQUIDATOR_CAN_ACCESS
+
+```solidity
+string ONLY_LIQUIDATOR_CAN_ACCESS
+```
+
+### ONLY_FUNDS_OWNER_CAN_WITHDRAW_FUNDS
+
+```solidity
+string ONLY_FUNDS_OWNER_CAN_WITHDRAW_FUNDS
+```
+
+### ETH_TRANSFER_FAILED
+
+```solidity
+string ETH_TRANSFER_FAILED
+```
+
+### INVALID_SWAP_VALUE
+
+```solidity
+string INVALID_SWAP_VALUE
+```
+
+### NOT_ENOUGH_FREE_LIQUIDITY
+
+```solidity
+string NOT_ENOUGH_FREE_LIQUIDITY
+```
+
+### TOO_SMALL_AMOUNT
+
+```solidity
+string TOO_SMALL_AMOUNT
+```
+
+### INVALID_ORACLE_VERSION
+
+```solidity
+string INVALID_ORACLE_VERSION
+```
+
+### EXCEED_MARGIN_RANGE
+
+```solidity
+string EXCEED_MARGIN_RANGE
+```
+
+### UNSUPPORTED_TRADING_FEE_RATE
+
+```solidity
+string UNSUPPORTED_TRADING_FEE_RATE
+```
+
+### ALREADY_REGISTERED_ORACLE_PROVIDER
+
+```solidity
+string ALREADY_REGISTERED_ORACLE_PROVIDER
+```
+
+### ALREADY_REGISTERED_TOKEN
+
+```solidity
+string ALREADY_REGISTERED_TOKEN
+```
+
+### UNREGISTERED_TOKEN
+
+```solidity
+string UNREGISTERED_TOKEN
+```
+
+### INTEREST_RATE_NOT_INITIALIZED
+
+```solidity
+string INTEREST_RATE_NOT_INITIALIZED
+```
+
+### INTEREST_RATE_OVERFLOW
+
+```solidity
+string INTEREST_RATE_OVERFLOW
+```
+
+### INTEREST_RATE_PAST_TIMESTAMP
+
+```solidity
+string INTEREST_RATE_PAST_TIMESTAMP
+```
+
+### INTEREST_RATE_NOT_APPENDABLE
+
+```solidity
+string INTEREST_RATE_NOT_APPENDABLE
+```
+
+### INTEREST_RATE_ALREADY_APPLIED
+
+```solidity
+string INTEREST_RATE_ALREADY_APPLIED
+```
+
+### UNSETTLED_POSITION
+
+```solidity
+string UNSETTLED_POSITION
+```
+
+### INVALID_POSITION_QTY
+
+```solidity
+string INVALID_POSITION_QTY
+```
+

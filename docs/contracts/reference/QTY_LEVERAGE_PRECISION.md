@@ -1,0 +1,8 @@
+# Solidity API
+
+## QTY_LEVERAGE_PRECISION
+
+```solidity
+uint256 QTY_LEVERAGE_PRECISION
+```
+

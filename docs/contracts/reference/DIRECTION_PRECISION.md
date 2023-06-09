@@ -1,0 +1,8 @@
+# Solidity API
+
+## DIRECTION_PRECISION
+
+```solidity
+uint256 DIRECTION_PRECISION
+```
+

@@ -64,3 +64,24 @@ Handles the claiming of a position.
 | ctx | struct LpContext | The LpContext. |
 | param | struct PositionParam | The position parameters. |
 
+### currentInterest
+
+```solidity
+function currentInterest(struct BinClosingPosition self, struct LpContext ctx) internal view returns (uint256)
+```
+
+Calculates the current accrued interest of the closing position.
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| self | struct BinClosingPosition | The BinClosingPosition storage. |
+| ctx | struct LpContext | The LpContext. |
+
+#### Return Values
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| [0] | uint256 | uint256 The current accrued interest. |
+

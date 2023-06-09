@@ -33,7 +33,7 @@
 
 #### Defined in
 
-[src/gen/factories/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata__factory.ts:238](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/factories/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata__factory.ts#L238)
+[src/gen/factories/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata__factory.ts:238](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/factories/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata__factory.ts#L238)
 
 ## Methods
 
@@ -54,7 +54,7 @@
 
 #### Defined in
 
-[src/gen/factories/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata__factory.ts:242](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/factories/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata__factory.ts#L242)
+[src/gen/factories/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata__factory.ts:242](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/factories/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata__factory.ts#L242)
 
 ___
 
@@ -68,4 +68,4 @@ ___
 
 #### Defined in
 
-[src/gen/factories/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata__factory.ts:239](https://github.com/chromatic-protocol/sdk/blob/5e51723/src/gen/factories/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata__factory.ts#L239)
+[src/gen/factories/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata__factory.ts:239](https://github.com/chromatic-protocol/sdk/blob/27c8c90/src/gen/factories/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata__factory.ts#L239)

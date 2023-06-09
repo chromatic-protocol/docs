@@ -1,3 +1,4 @@
+import { useColorMode } from '@docusaurus/theme-common'
 import clsx from 'clsx'
 import React from 'react'
 import styles from './styles.module.css'
@@ -42,10 +43,11 @@ const FeatureList: FeatureItem[] = [
 ]
 
 function Feature({ title, Svg, description }: FeatureItem) {
+  const { isDarkTheme } = useColorMode()
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <Svg className={styles.featureSvg} fill={isDarkTheme ? '#ffffff' : '#000000'} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>

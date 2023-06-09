@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  Release-publish:
+  publish-preview:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
@@ -27,9 +27,14 @@ jobs:
         run: |
           yarn install
           yarn build
+      - uses: chromatic-protocol/action-github-app-token@v1
+        id: generate-token
+        with:
+          app_id: ${{ secrets.PR_ACTION_APP_ID }}
+          private_key: ${{ secrets.PR_ACTION_PRIVATE }}
       - name: publish gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ steps.generate-token.outputs.token }}
           publish_dir: ./build
           external_repository: chromatic-protocol/docs-preview

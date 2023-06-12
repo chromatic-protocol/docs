@@ -98,45 +98,17 @@ _Withdraws liquidity from a liquidity receipt._
 | receiptId | uint256 | The ID of the liquidity receipt. |
 | data | bytes | Additional data for the liquidity callback. |
 
-### getBinLiquidities
+### getBinLiquidity
 
 ```solidity
-function getBinLiquidities(int16[] tradingFeeRates) external view returns (uint256[] amounts)
+function getBinLiquidity(int16 tradingFeeRate) external view returns (uint256 amount)
 ```
 
-_Retrieves the bin liquidities for the given trading fee rates._
-
-#### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| tradingFeeRates | int16[] | The trading fee rates to retrieve bin liquidities for. |
-
-#### Return Values
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| amounts | uint256[] | An array of bin liquidities corresponding to the trading fee rates. |
-
-### getBinFreeLiquidities
+### getBinFreeLiquidity
 
 ```solidity
-function getBinFreeLiquidities(int16[] tradingFeeRates) external view returns (uint256[] amounts)
+function getBinFreeLiquidity(int16 tradingFeeRate) external view returns (uint256 amount)
 ```
-
-_Retrieves the bin free liquidities for the given trading fee rates._
-
-#### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| tradingFeeRates | int16[] | The trading fee rates to retrieve bin free liquidities for. |
-
-#### Return Values
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| amounts | uint256[] | An array of bin free liquidities corresponding to the trading fee rates. |
 
 ### distributeEarningToBins
 
@@ -152,6 +124,12 @@ _Distributes earning to the liquidity bins._
 | ---- | ---- | ----------- |
 | earning | uint256 | The amount of earning to distribute. |
 | marketBalance | uint256 | The balance of the market. |
+
+### getBinValue
+
+```solidity
+function getBinValue(int16 tradingFeeRate) external view returns (uint256 value)
+```
 
 ### calculateCLBTokenMinting
 
@@ -266,4 +244,16 @@ https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section
 to learn more about how these ids are created.
 
 This function call must use less than 30 000 gas._
+
+### getLpReceipt
+
+```solidity
+function getLpReceipt(uint256 receiptId) external view returns (struct LpReceipt receipt)
+```
+
+### getClaimBurning
+
+```solidity
+function getClaimBurning(struct LpReceipt receipt) external view returns (uint256 clbTokenAmount, uint256 burningAmount, uint256 tokenAmount)
+```
 

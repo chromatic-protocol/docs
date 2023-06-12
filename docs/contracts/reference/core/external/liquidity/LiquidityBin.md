@@ -336,3 +336,9 @@ _This function calculates the value of the specified amount of CLB tokens
 | ---- | ---- | ----------- |
 | [0] | uint256 | The value of the specified amount of CLB tokens. |
 
+### getClaimBurning
+
+```solidity
+function getClaimBurning(struct LiquidityBin self, uint256 oracleVersion) internal view returns (uint256 clbTokenAmount, uint256 burningAmount, uint256 tokenAmount)
+```
+

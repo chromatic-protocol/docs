@@ -42,8 +42,6 @@
 - [addLiquidityBatch](contracts.periphery.ChromaticRouter.md#addliquiditybatch)
 - [addLiquidityCallback](contracts.periphery.ChromaticRouter.md#addliquiditycallback)
 - [attach](contracts.periphery.ChromaticRouter.md#attach)
-- [calculateCLBTokenMintingBatch](contracts.periphery.ChromaticRouter.md#calculateclbtokenmintingbatch)
-- [calculateCLBTokenValueBatch](contracts.periphery.ChromaticRouter.md#calculateclbtokenvaluebatch)
 - [claimLiquidity](contracts.periphery.ChromaticRouter.md#claimliquidity)
 - [claimLiquidityBatch](contracts.periphery.ChromaticRouter.md#claimliquiditybatch)
 - [claimLiquidityCallback](contracts.periphery.ChromaticRouter.md#claimliquiditycallback)
@@ -66,7 +64,6 @@
 - [removeLiquidityBatch](contracts.periphery.ChromaticRouter.md#removeliquiditybatch)
 - [removeLiquidityCallback](contracts.periphery.ChromaticRouter.md#removeliquiditycallback)
 - [renounceOwnership](contracts.periphery.ChromaticRouter.md#renounceownership)
-- [totalSupplies](contracts.periphery.ChromaticRouter.md#totalsupplies)
 - [transferOwnership](contracts.periphery.ChromaticRouter.md#transferownership)
 - [withdrawLiquidity](contracts.periphery.ChromaticRouter.md#withdrawliquidity)
 - [withdrawLiquidityBatch](contracts.periphery.ChromaticRouter.md#withdrawliquiditybatch)
@@ -149,8 +146,6 @@ ___
 | `addLiquidity` | (`market`: `PromiseOrValue`<`string`\>, `feeRate`: `PromiseOrValue`<`BigNumberish`\>, `amount`: `PromiseOrValue`<`BigNumberish`\>, `recipient`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`LpReceiptStructOutput`\> |
 | `addLiquidityBatch` | (`market`: `PromiseOrValue`<`string`\>, `feeRates`: `PromiseOrValue`<`BigNumberish`\>[], `amounts`: `PromiseOrValue`<`BigNumberish`\>[], `recipients`: `PromiseOrValue`<`string`\>[], `overrides?`: `CallOverrides`) => `Promise`<`LpReceiptStructOutput`[]\> |
 | `addLiquidityCallback` | (`settlementToken`: `PromiseOrValue`<`string`\>, `vault`: `PromiseOrValue`<`string`\>, `data`: `PromiseOrValue`<`BytesLike`\>, `overrides?`: `CallOverrides`) => `Promise`<`void`\> |
-| `calculateCLBTokenMintingBatch` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `amounts`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`[]\> |
-| `calculateCLBTokenValueBatch` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `clbTokenAmounts`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`[]\> |
 | `claimLiquidity` | (`market`: `PromiseOrValue`<`string`\>, `receiptId`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `CallOverrides`) => `Promise`<`void`\> |
 | `claimLiquidityBatch` | (`market`: `PromiseOrValue`<`string`\>, `_receiptIds`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`void`\> |
 | `claimLiquidityCallback` | (`receiptId`: `PromiseOrValue`<`BigNumberish`\>, `data`: `PromiseOrValue`<`BytesLike`\>, `overrides?`: `CallOverrides`) => `Promise`<`void`\> |
@@ -165,7 +160,6 @@ ___
 | `removeLiquidityBatch` | (`market`: `PromiseOrValue`<`string`\>, `feeRates`: `PromiseOrValue`<`BigNumberish`\>[], `clbTokenAmounts`: `PromiseOrValue`<`BigNumberish`\>[], `recipients`: `PromiseOrValue`<`string`\>[], `overrides?`: `CallOverrides`) => `Promise`<`LpReceiptStructOutput`[]\> |
 | `removeLiquidityCallback` | (`clbToken`: `PromiseOrValue`<`string`\>, `clbTokenId`: `PromiseOrValue`<`BigNumberish`\>, `data`: `PromiseOrValue`<`BytesLike`\>, `overrides?`: `CallOverrides`) => `Promise`<`void`\> |
 | `renounceOwnership` | (`overrides?`: `CallOverrides`) => `Promise`<`void`\> |
-| `totalSupplies` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`[]\> |
 | `transferOwnership` | (`newOwner`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`void`\> |
 | `withdrawLiquidity` | (`market`: `PromiseOrValue`<`string`\>, `receiptId`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `CallOverrides`) => `Promise`<`void`\> |
 | `withdrawLiquidityBatch` | (`market`: `PromiseOrValue`<`string`\>, `_receiptIds`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`void`\> |
@@ -177,7 +171,7 @@ BaseContract.callStatic
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:980](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L980)
+[src/gen/contracts/periphery/ChromaticRouter.ts:868](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L868)
 
 ___
 
@@ -206,8 +200,6 @@ ___
 | `addLiquidity` | (`market`: `PromiseOrValue`<`string`\>, `feeRate`: `PromiseOrValue`<`BigNumberish`\>, `amount`: `PromiseOrValue`<`BigNumberish`\>, `recipient`: `PromiseOrValue`<`string`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
 | `addLiquidityBatch` | (`market`: `PromiseOrValue`<`string`\>, `feeRates`: `PromiseOrValue`<`BigNumberish`\>[], `amounts`: `PromiseOrValue`<`BigNumberish`\>[], `recipients`: `PromiseOrValue`<`string`\>[], `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
 | `addLiquidityCallback` | (`settlementToken`: `PromiseOrValue`<`string`\>, `vault`: `PromiseOrValue`<`string`\>, `data`: `PromiseOrValue`<`BytesLike`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
-| `calculateCLBTokenMintingBatch` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `amounts`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
-| `calculateCLBTokenValueBatch` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `clbTokenAmounts`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
 | `claimLiquidity` | (`market`: `PromiseOrValue`<`string`\>, `receiptId`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
 | `claimLiquidityBatch` | (`market`: `PromiseOrValue`<`string`\>, `_receiptIds`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
 | `claimLiquidityCallback` | (`receiptId`: `PromiseOrValue`<`BigNumberish`\>, `data`: `PromiseOrValue`<`BytesLike`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
@@ -222,7 +214,6 @@ ___
 | `removeLiquidityBatch` | (`market`: `PromiseOrValue`<`string`\>, `feeRates`: `PromiseOrValue`<`BigNumberish`\>[], `clbTokenAmounts`: `PromiseOrValue`<`BigNumberish`\>[], `recipients`: `PromiseOrValue`<`string`\>[], `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
 | `removeLiquidityCallback` | (`clbToken`: `PromiseOrValue`<`string`\>, `clbTokenId`: `PromiseOrValue`<`BigNumberish`\>, `data`: `PromiseOrValue`<`BytesLike`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
 | `renounceOwnership` | (`overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
-| `totalSupplies` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
 | `transferOwnership` | (`newOwner`: `PromiseOrValue`<`string`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
 | `withdrawLiquidity` | (`market`: `PromiseOrValue`<`string`\>, `receiptId`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
 | `withdrawLiquidityBatch` | (`market`: `PromiseOrValue`<`string`\>, `_receiptIds`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
@@ -234,7 +225,7 @@ BaseContract.estimateGas
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:1266](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L1266)
+[src/gen/contracts/periphery/ChromaticRouter.ts:1117](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L1117)
 
 ___
 
@@ -255,7 +246,7 @@ BaseContract.filters
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:1255](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L1255)
+[src/gen/contracts/periphery/ChromaticRouter.ts:1106](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L1106)
 
 ___
 
@@ -270,8 +261,6 @@ ___
 | `addLiquidity` | (`market`: `PromiseOrValue`<`string`\>, `feeRate`: `PromiseOrValue`<`BigNumberish`\>, `amount`: `PromiseOrValue`<`BigNumberish`\>, `recipient`: `PromiseOrValue`<`string`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
 | `addLiquidityBatch` | (`market`: `PromiseOrValue`<`string`\>, `feeRates`: `PromiseOrValue`<`BigNumberish`\>[], `amounts`: `PromiseOrValue`<`BigNumberish`\>[], `recipients`: `PromiseOrValue`<`string`\>[], `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
 | `addLiquidityCallback` | (`settlementToken`: `PromiseOrValue`<`string`\>, `vault`: `PromiseOrValue`<`string`\>, `data`: `PromiseOrValue`<`BytesLike`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
-| `calculateCLBTokenMintingBatch` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `amounts`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<[`BigNumber`[]] & { `results`: `BigNumber`[]  }\> |
-| `calculateCLBTokenValueBatch` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `clbTokenAmounts`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<[`BigNumber`[]] & { `results`: `BigNumber`[]  }\> |
 | `claimLiquidity` | (`market`: `PromiseOrValue`<`string`\>, `receiptId`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
 | `claimLiquidityBatch` | (`market`: `PromiseOrValue`<`string`\>, `_receiptIds`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
 | `claimLiquidityCallback` | (`receiptId`: `PromiseOrValue`<`BigNumberish`\>, `data`: `PromiseOrValue`<`BytesLike`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
@@ -286,7 +275,6 @@ ___
 | `removeLiquidityBatch` | (`market`: `PromiseOrValue`<`string`\>, `feeRates`: `PromiseOrValue`<`BigNumberish`\>[], `clbTokenAmounts`: `PromiseOrValue`<`BigNumberish`\>[], `recipients`: `PromiseOrValue`<`string`\>[], `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
 | `removeLiquidityCallback` | (`clbToken`: `PromiseOrValue`<`string`\>, `clbTokenId`: `PromiseOrValue`<`BigNumberish`\>, `data`: `PromiseOrValue`<`BytesLike`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
 | `renounceOwnership` | (`overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
-| `totalSupplies` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<[`BigNumber`[]] & { `supplies`: `BigNumber`[]  }\> |
 | `transferOwnership` | (`newOwner`: `PromiseOrValue`<`string`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
 | `withdrawLiquidity` | (`market`: `PromiseOrValue`<`string`\>, `receiptId`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
 | `withdrawLiquidityBatch` | (`market`: `PromiseOrValue`<`string`\>, `_receiptIds`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
@@ -298,7 +286,7 @@ BaseContract.functions
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:428](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L428)
+[src/gen/contracts/periphery/ChromaticRouter.ts:390](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L390)
 
 ___
 
@@ -312,7 +300,7 @@ BaseContract.interface
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:407](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L407)
+[src/gen/contracts/periphery/ChromaticRouter.ts:369](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L369)
 
 ___
 
@@ -326,7 +314,7 @@ BaseContract.off
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:423](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L423)
+[src/gen/contracts/periphery/ChromaticRouter.ts:385](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L385)
 
 ___
 
@@ -340,7 +328,7 @@ BaseContract.on
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:424](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L424)
+[src/gen/contracts/periphery/ChromaticRouter.ts:386](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L386)
 
 ___
 
@@ -354,7 +342,7 @@ BaseContract.once
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:425](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L425)
+[src/gen/contracts/periphery/ChromaticRouter.ts:387](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L387)
 
 ___
 
@@ -369,8 +357,6 @@ ___
 | `addLiquidity` | (`market`: `PromiseOrValue`<`string`\>, `feeRate`: `PromiseOrValue`<`BigNumberish`\>, `amount`: `PromiseOrValue`<`BigNumberish`\>, `recipient`: `PromiseOrValue`<`string`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
 | `addLiquidityBatch` | (`market`: `PromiseOrValue`<`string`\>, `feeRates`: `PromiseOrValue`<`BigNumberish`\>[], `amounts`: `PromiseOrValue`<`BigNumberish`\>[], `recipients`: `PromiseOrValue`<`string`\>[], `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
 | `addLiquidityCallback` | (`settlementToken`: `PromiseOrValue`<`string`\>, `vault`: `PromiseOrValue`<`string`\>, `data`: `PromiseOrValue`<`BytesLike`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
-| `calculateCLBTokenMintingBatch` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `amounts`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
-| `calculateCLBTokenValueBatch` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `clbTokenAmounts`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
 | `claimLiquidity` | (`market`: `PromiseOrValue`<`string`\>, `receiptId`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
 | `claimLiquidityBatch` | (`market`: `PromiseOrValue`<`string`\>, `_receiptIds`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
 | `claimLiquidityCallback` | (`receiptId`: `PromiseOrValue`<`BigNumberish`\>, `data`: `PromiseOrValue`<`BytesLike`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
@@ -385,7 +371,6 @@ ___
 | `removeLiquidityBatch` | (`market`: `PromiseOrValue`<`string`\>, `feeRates`: `PromiseOrValue`<`BigNumberish`\>[], `clbTokenAmounts`: `PromiseOrValue`<`BigNumberish`\>[], `recipients`: `PromiseOrValue`<`string`\>[], `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
 | `removeLiquidityCallback` | (`clbToken`: `PromiseOrValue`<`string`\>, `clbTokenId`: `PromiseOrValue`<`BigNumberish`\>, `data`: `PromiseOrValue`<`BytesLike`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
 | `renounceOwnership` | (`overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
-| `totalSupplies` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
 | `transferOwnership` | (`newOwner`: `PromiseOrValue`<`string`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
 | `withdrawLiquidity` | (`market`: `PromiseOrValue`<`string`\>, `receiptId`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
 | `withdrawLiquidityBatch` | (`market`: `PromiseOrValue`<`string`\>, `_receiptIds`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
@@ -397,7 +382,7 @@ BaseContract.populateTransaction
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:1543](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L1543)
+[src/gen/contracts/periphery/ChromaticRouter.ts:1357](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L1357)
 
 ___
 
@@ -425,7 +410,7 @@ BaseContract.removeListener
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:426](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L426)
+[src/gen/contracts/periphery/ChromaticRouter.ts:388](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L388)
 
 ___
 
@@ -553,7 +538,7 @@ Adds liquidity to a ChromaticMarket contract.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:712](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L712)
+[src/gen/contracts/periphery/ChromaticRouter.ts:637](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L637)
 
 ___
 
@@ -579,7 +564,7 @@ Adds liquidity to multiple ChromaticMarket contracts in a batch.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:727](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L727)
+[src/gen/contracts/periphery/ChromaticRouter.ts:652](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L652)
 
 ___
 
@@ -604,7 +589,7 @@ Handles the callback after adding liquidity to the Chromatic protocol.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:741](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L741)
+[src/gen/contracts/periphery/ChromaticRouter.ts:666](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L666)
 
 ___
 
@@ -628,57 +613,7 @@ BaseContract.attach
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:404](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L404)
-
-___
-
-### calculateCLBTokenMintingBatch
-
-▸ **calculateCLBTokenMintingBatch**(`market`, `tradingFeeRates`, `amounts`, `overrides?`): `Promise`<`BigNumber`[]\>
-
-Calculates the amount of CLB tokens to mint for multiple trading amounts in a batch.
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `market` | `PromiseOrValue`<`string`\> | The address of the ChromaticMarket contract. |
-| `tradingFeeRates` | `PromiseOrValue`<`BigNumberish`\>[] | An array of trading fee rates for each liquidity provider. |
-| `amounts` | `PromiseOrValue`<`BigNumberish`\>[] | An array of trading amounts for each provider. |
-| `overrides?` | `CallOverrides` | - |
-
-#### Returns
-
-`Promise`<`BigNumber`[]\>
-
-#### Defined in
-
-[src/gen/contracts/periphery/ChromaticRouter.ts:754](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L754)
-
-___
-
-### calculateCLBTokenValueBatch
-
-▸ **calculateCLBTokenValueBatch**(`market`, `tradingFeeRates`, `clbTokenAmounts`, `overrides?`): `Promise`<`BigNumber`[]\>
-
-Calculates the value of CLB tokens for multiple liquidity amounts in a batch.
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `market` | `PromiseOrValue`<`string`\> | The address of the ChromaticMarket contract. |
-| `tradingFeeRates` | `PromiseOrValue`<`BigNumberish`\>[] | An array of trading fee rates for each liquidity provider. |
-| `clbTokenAmounts` | `PromiseOrValue`<`BigNumberish`\>[] | An array of CLB token amounts for each provider. |
-| `overrides?` | `CallOverrides` | - |
-
-#### Returns
-
-`Promise`<`BigNumber`[]\>
-
-#### Defined in
-
-[src/gen/contracts/periphery/ChromaticRouter.ts:767](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L767)
+[src/gen/contracts/periphery/ChromaticRouter.ts:366](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L366)
 
 ___
 
@@ -702,7 +637,7 @@ Claims liquidity from a ChromaticMarket contract.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:779](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L779)
+[src/gen/contracts/periphery/ChromaticRouter.ts:678](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L678)
 
 ___
 
@@ -726,7 +661,7 @@ Claims liquidity from multiple ChromaticMarket contracts in a batch.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:790](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L790)
+[src/gen/contracts/periphery/ChromaticRouter.ts:689](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L689)
 
 ___
 
@@ -750,7 +685,7 @@ Handles the callback after claiming liquidity from the Chromatic protocol.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:801](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L801)
+[src/gen/contracts/periphery/ChromaticRouter.ts:700](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L700)
 
 ___
 
@@ -774,7 +709,7 @@ Claims a position from a ChromaticMarket contract.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:812](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L812)
+[src/gen/contracts/periphery/ChromaticRouter.ts:711](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L711)
 
 ___
 
@@ -798,7 +733,7 @@ Closes a position in a ChromaticMarket contract.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:823](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L823)
+[src/gen/contracts/periphery/ChromaticRouter.ts:722](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L722)
 
 ___
 
@@ -822,7 +757,7 @@ BaseContract.connect
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:403](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L403)
+[src/gen/contracts/periphery/ChromaticRouter.ts:365](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L365)
 
 ___
 
@@ -840,7 +775,7 @@ BaseContract.deployed
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:405](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L405)
+[src/gen/contracts/periphery/ChromaticRouter.ts:367](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L367)
 
 ___
 
@@ -911,7 +846,7 @@ Retrieves the account of the caller.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:832](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L832)
+[src/gen/contracts/periphery/ChromaticRouter.ts:731](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L731)
 
 ___
 
@@ -934,7 +869,7 @@ Retrieves the LP receipt IDs of the caller for the specified market.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:838](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L838)
+[src/gen/contracts/periphery/ChromaticRouter.ts:737](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L737)
 
 ___
 
@@ -958,7 +893,7 @@ Initializes the ChromaticRouter contract.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:848](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L848)
+[src/gen/contracts/periphery/ChromaticRouter.ts:747](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L747)
 
 ___
 
@@ -1012,7 +947,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:415](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L415)
+[src/gen/contracts/periphery/ChromaticRouter.ts:377](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L377)
 
 ▸ **listeners**(`eventName?`): `Listener`[]
 
@@ -1032,7 +967,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:418](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L418)
+[src/gen/contracts/periphery/ChromaticRouter.ts:380](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L380)
 
 ___
 
@@ -1060,7 +995,7 @@ Opens a new position in a ChromaticMarket contract.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:863](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L863)
+[src/gen/contracts/periphery/ChromaticRouter.ts:762](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L762)
 
 ___
 
@@ -1082,7 +1017,7 @@ Returns the address of the current owner.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:876](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L876)
+[src/gen/contracts/periphery/ChromaticRouter.ts:775](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L775)
 
 ___
 
@@ -1114,7 +1049,7 @@ BaseContract.queryFilter
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:409](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L409)
+[src/gen/contracts/periphery/ChromaticRouter.ts:371](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L371)
 
 ___
 
@@ -1144,7 +1079,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:419](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L419)
+[src/gen/contracts/periphery/ChromaticRouter.ts:381](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L381)
 
 ▸ **removeAllListeners**(`eventName?`): [`ChromaticRouter`](contracts.periphery.ChromaticRouter.md)
 
@@ -1164,7 +1099,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:422](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L422)
+[src/gen/contracts/periphery/ChromaticRouter.ts:384](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L384)
 
 ___
 
@@ -1190,7 +1125,7 @@ Removes liquidity from a ChromaticMarket contract.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:885](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L885)
+[src/gen/contracts/periphery/ChromaticRouter.ts:784](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L784)
 
 ___
 
@@ -1216,7 +1151,7 @@ Removes liquidity from multiple ChromaticMarket contracts in a batch.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:900](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L900)
+[src/gen/contracts/periphery/ChromaticRouter.ts:799](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L799)
 
 ___
 
@@ -1241,7 +1176,7 @@ Handles the callback after removing liquidity from the Chromatic protocol.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:914](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L914)
+[src/gen/contracts/periphery/ChromaticRouter.ts:813](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L813)
 
 ___
 
@@ -1263,31 +1198,7 @@ Leaves the contract without owner. It will not be possible to call `onlyOwner` f
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:924](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L924)
-
-___
-
-### totalSupplies
-
-▸ **totalSupplies**(`market`, `tradingFeeRates`, `overrides?`): `Promise`<`BigNumber`[]\>
-
-Retrieves the total supplies of CLB tokens for multiple trading fee rates in a batch.
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `market` | `PromiseOrValue`<`string`\> | The address of the ChromaticMarket contract. |
-| `tradingFeeRates` | `PromiseOrValue`<`BigNumberish`\>[] | An array of trading fee rates to retrieve total supplies for. |
-| `overrides?` | `CallOverrides` | - |
-
-#### Returns
-
-`Promise`<`BigNumber`[]\>
-
-#### Defined in
-
-[src/gen/contracts/periphery/ChromaticRouter.ts:933](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L933)
+[src/gen/contracts/periphery/ChromaticRouter.ts:823](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L823)
 
 ___
 
@@ -1310,7 +1221,7 @@ Transfers ownership of the contract to a new account (`newOwner`). Can only be c
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:942](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L942)
+[src/gen/contracts/periphery/ChromaticRouter.ts:830](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L830)
 
 ___
 
@@ -1334,7 +1245,7 @@ Withdraws liquidity from a ChromaticMarket contract.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:952](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L952)
+[src/gen/contracts/periphery/ChromaticRouter.ts:840](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L840)
 
 ___
 
@@ -1358,7 +1269,7 @@ Withdraws liquidity from multiple ChromaticMarket contracts in a batch.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:963](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L963)
+[src/gen/contracts/periphery/ChromaticRouter.ts:851](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L851)
 
 ___
 
@@ -1382,4 +1293,4 @@ Handles the callback after withdrawing liquidity from the Chromatic protocol.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:974](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/ChromaticRouter.ts#L974)
+[src/gen/contracts/periphery/ChromaticRouter.ts:862](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/ChromaticRouter.ts#L862)

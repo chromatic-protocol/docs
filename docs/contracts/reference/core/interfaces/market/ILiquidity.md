@@ -223,6 +223,6 @@ function getLpReceipt(uint256 receiptId) external view returns (struct LpReceipt
 ### getClaimBurning
 
 ```solidity
-function getClaimBurning(struct LpReceipt reciept) external view returns (uint256 clbTokenAmount, uint256 burningAmount, uint256 tokenAmount)
+function getClaimBurning(int16 tradingFeeRate, uint256 oracleVersion) external view returns (uint256 clbTokenAmount, uint256 burningAmount, uint256 tokenAmount)
 ```
 

@@ -117,7 +117,7 @@ utils.Interface.events
 
 #### Defined in
 
-[src/gen/contracts/periphery/Account.ts:190](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/Account.ts#L190)
+[src/gen/contracts/periphery/Account.ts:190](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/Account.ts#L190)
 
 ___
 
@@ -160,7 +160,7 @@ utils.Interface.functions
 
 #### Defined in
 
-[src/gen/contracts/periphery/Account.ts:74](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/Account.ts#L74)
+[src/gen/contracts/periphery/Account.ts:74](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/Account.ts#L74)
 
 ___
 
@@ -329,7 +329,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/Account.ts:158](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/Account.ts#L158)
+[src/gen/contracts/periphery/Account.ts:158](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/Account.ts#L158)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -350,7 +350,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/Account.ts:159](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/Account.ts#L159)
+[src/gen/contracts/periphery/Account.ts:159](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/Account.ts#L159)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -371,7 +371,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/Account.ts:163](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/Account.ts#L163)
+[src/gen/contracts/periphery/Account.ts:163](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/Account.ts#L163)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -392,7 +392,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/Account.ts:167](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/Account.ts#L167)
+[src/gen/contracts/periphery/Account.ts:167](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/Account.ts#L167)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -413,7 +413,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/Account.ts:171](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/Account.ts#L171)
+[src/gen/contracts/periphery/Account.ts:171](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/Account.ts#L171)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -434,7 +434,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/Account.ts:175](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/Account.ts#L175)
+[src/gen/contracts/periphery/Account.ts:175](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/Account.ts#L175)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -455,7 +455,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/Account.ts:179](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/Account.ts#L179)
+[src/gen/contracts/periphery/Account.ts:179](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/Account.ts#L179)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -476,7 +476,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/Account.ts:180](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/Account.ts#L180)
+[src/gen/contracts/periphery/Account.ts:180](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/Account.ts#L180)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -497,7 +497,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/Account.ts:184](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/Account.ts#L184)
+[src/gen/contracts/periphery/Account.ts:184](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/Account.ts#L184)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -518,7 +518,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/periphery/Account.ts:188](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/Account.ts#L188)
+[src/gen/contracts/periphery/Account.ts:188](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/Account.ts#L188)
 
 ___
 
@@ -647,7 +647,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/Account.ts:101](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/Account.ts#L101)
+[src/gen/contracts/periphery/Account.ts:101](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/Account.ts#L101)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -668,7 +668,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/Account.ts:105](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/Account.ts#L105)
+[src/gen/contracts/periphery/Account.ts:105](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/Account.ts#L105)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -689,7 +689,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/Account.ts:109](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/Account.ts#L109)
+[src/gen/contracts/periphery/Account.ts:109](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/Account.ts#L109)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -710,7 +710,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/Account.ts:113](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/Account.ts#L113)
+[src/gen/contracts/periphery/Account.ts:113](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/Account.ts#L113)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -731,7 +731,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/Account.ts:117](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/Account.ts#L117)
+[src/gen/contracts/periphery/Account.ts:117](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/Account.ts#L117)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -752,7 +752,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/Account.ts:121](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/Account.ts#L121)
+[src/gen/contracts/periphery/Account.ts:121](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/Account.ts#L121)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -773,7 +773,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/Account.ts:125](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/Account.ts#L125)
+[src/gen/contracts/periphery/Account.ts:125](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/Account.ts#L125)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -794,7 +794,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/Account.ts:133](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/Account.ts#L133)
+[src/gen/contracts/periphery/Account.ts:133](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/Account.ts#L133)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -815,7 +815,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/Account.ts:144](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/Account.ts#L144)
+[src/gen/contracts/periphery/Account.ts:144](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/Account.ts#L144)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -836,7 +836,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/periphery/Account.ts:153](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/Account.ts#L153)
+[src/gen/contracts/periphery/Account.ts:153](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/Account.ts#L153)
 
 ___
 
@@ -981,7 +981,7 @@ utils.Interface.getFunction
 
 #### Defined in
 
-[src/gen/contracts/periphery/Account.ts:87](https://github.com/chromatic-protocol/sdk/blob/10aa618/src/gen/contracts/periphery/Account.ts#L87)
+[src/gen/contracts/periphery/Account.ts:87](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/contracts/periphery/Account.ts#L87)
 
 ___
 

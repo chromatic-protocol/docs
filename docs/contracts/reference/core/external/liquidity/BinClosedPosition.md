@@ -83,3 +83,24 @@ _If the closeVersion is equal to the BinClosingPosition's closeVersion, the clai
 | ctx | struct LpContext | The LpContext memory. |
 | param | struct PositionParam | The PositionParam memory. |
 
+### currentInterest
+
+```solidity
+function currentInterest(struct BinClosedPosition self, struct LpContext ctx) internal view returns (uint256)
+```
+
+_Calculates the current interest for a liquidity bin closed position._
+
+#### Parameters
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| self | struct BinClosedPosition | The BinClosedPosition storage struct. |
+| ctx | struct LpContext | The LpContext data struct. |
+
+#### Return Values
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| [0] | uint256 | uint256 The current interest. |
+

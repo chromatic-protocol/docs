@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: IMarketState
+title: IMarketState.sol
+---
+# [IMarketState.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/interfaces/market/IMarketState.sol)
 
 ## IMarketState
 
@@ -12,8 +16,6 @@ function factory() external view returns (contract IChromaticMarketFactory)
 
 _Returns the factory contract for the market._
 
-#### Return Values
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | [0] | contract IChromaticMarketFactory | The factory contract. |
@@ -25,8 +27,6 @@ function settlementToken() external view returns (contract IERC20Metadata)
 ```
 
 _Returns the settlement token of the market._
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -40,8 +40,6 @@ function oracleProvider() external view returns (contract IOracleProvider)
 
 _Returns the oracle provider contract for the market._
 
-#### Return Values
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | [0] | contract IOracleProvider | The oracle provider contract. |
@@ -53,8 +51,6 @@ function clbToken() external view returns (contract ICLBToken)
 ```
 
 _Returns the CLB token contract for the market._
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -68,8 +64,6 @@ function liquidator() external view returns (contract IChromaticLiquidator)
 
 _Returns the liquidator contract for the market._
 
-#### Return Values
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | [0] | contract IChromaticLiquidator | The liquidator contract. |
@@ -82,8 +76,6 @@ function vault() external view returns (contract IChromaticVault)
 
 _Returns the vault contract for the market._
 
-#### Return Values
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | [0] | contract IChromaticVault | The vault contract. |
@@ -95,8 +87,6 @@ function keeperFeePayer() external view returns (contract IKeeperFeePayer)
 ```
 
 _Returns the keeper fee payer contract for the market._
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

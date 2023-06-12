@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: VerifyCallback
+title: VerifyCallback.sol
+---
+# [VerifyCallback.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/periphery/base/VerifyCallback.sol)
 
 ## VerifyCallback
 

@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: ChromaticLiquidator
+title: ChromaticLiquidator.sol
+---
+# [ChromaticLiquidator.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/ChromaticLiquidator.sol)
 
 ## ChromaticLiquidator
 
@@ -12,8 +16,6 @@ constructor(contract IChromaticMarketFactory _factory, address _automate, addres
 ```
 
 _Constructor function._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -29,8 +31,6 @@ function getAutomate() internal view returns (contract IAutomate)
 
 _Retrieves the IAutomate contract instance._
 
-#### Return Values
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | [0] | contract IAutomate | IAutomate The IAutomate contract instance. |
@@ -44,8 +44,6 @@ function liquidate(address market, uint256 positionId) external
 Liquidates a position in a market.
 
 _Can only be called by the dedicated message sender._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -61,8 +59,6 @@ function claimPosition(address market, uint256 positionId) external
 Claims a position in a market.
 
 _Can only be called by the dedicated message sender._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

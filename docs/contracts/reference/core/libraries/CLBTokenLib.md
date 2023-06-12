@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: CLBTokenLib
+title: CLBTokenLib.sol
+---
+# [CLBTokenLib.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/libraries/CLBTokenLib.sol)
 
 ## DIRECTION_PRECISION
 
@@ -21,8 +25,6 @@ Encode the CLB token ID of ERC1155 token type
 _If `tradingFeeRate` is negative, it adds `DIRECTION_PRECISION` to the absolute fee rate.
      Otherwise it returns the fee rate directly._
 
-#### Return Values
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | id | uint256 | The ID of ERC1155 token |
@@ -39,8 +41,6 @@ _If `id` is greater than or equal to `DIRECTION_PRECISION`,
      then it substracts `DIRECTION_PRECISION` from `id`
      and returns the negation of the substracted value.
      Otherwise it returns `id` directly._
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

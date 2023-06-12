@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: IOracleProviderRegistry
+title: IOracleProviderRegistry.sol
+---
+# [IOracleProviderRegistry.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/interfaces/factory/IOracleProviderRegistry.sol)
 
 ## IOracleProviderRegistry
 
@@ -12,8 +16,6 @@ event OracleProviderRegistered(address oracleProvider)
 
 _Emitted when a new oracle provider is registered._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | oracleProvider | address | The address of the registered oracle provider. |
@@ -25,8 +27,6 @@ event OracleProviderUnregistered(address oracleProvider)
 ```
 
 _Emitted when an oracle provider is unregistered._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -40,8 +40,6 @@ function registerOracleProvider(address oracleProvider) external
 
 Registers an oracle provider.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | oracleProvider | address | The address of the oracle provider to register. |
@@ -53,8 +51,6 @@ function unregisterOracleProvider(address oracleProvider) external
 ```
 
 Unregisters an oracle provider.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -68,8 +64,6 @@ function registeredOracleProviders() external view returns (address[])
 
 Gets the registered oracle providers.
 
-#### Return Values
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | [0] | address[] | An array of registered oracle provider addresses. |
@@ -82,13 +76,9 @@ function isRegisteredOracleProvider(address oracleProvider) external view return
 
 Checks if an oracle provider is registered.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | oracleProvider | address | The address of the oracle provider to check. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

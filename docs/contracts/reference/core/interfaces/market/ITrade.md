@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: ITrade
+title: ITrade.sol
+---
+# [ITrade.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/interfaces/market/ITrade.sol)
 
 ## ITrade
 
@@ -66,8 +70,6 @@ event OpenPosition(address account, struct Position position)
 
 _Emitted when a position is opened._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | account | address | The address of the account opening the position. |
@@ -81,8 +83,6 @@ event ClosePosition(address account, struct Position position)
 
 _Emitted when a position is closed._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | account | address | The address of the account closing the position. |
@@ -95,8 +95,6 @@ event ClaimPosition(address account, int256 pnl, uint256 interest, struct Positi
 ```
 
 _Emitted when a position is claimed._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -113,8 +111,6 @@ event TransferProtocolFee(uint256 positionId, uint256 amount)
 
 _Emitted when protocol fees are transferred._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | positionId | uint256 | The ID of the position for which the fees are transferred. |
@@ -127,8 +123,6 @@ event Liquidate(address account, uint256 usedKeeperFee, struct Position position
 ```
 
 _Emitted when a position is liquidated._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -144,8 +138,6 @@ function openPosition(int224 qty, uint32 leverage, uint256 takerMargin, uint256 
 
 _Opens a new position in the market._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | qty | int224 | The quantity of the position. |
@@ -154,8 +146,6 @@ _Opens a new position in the market._
 | makerMargin | uint256 | The margin amount provided by the maker. |
 | maxAllowableTradingFee | uint256 | The maximum allowable trading fee for the position. |
 | data | bytes | Additional data for the position callback. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -169,8 +159,6 @@ function closePosition(uint256 positionId) external
 
 _Closes a position in the market._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | positionId | uint256 | The ID of the position to close. |
@@ -182,8 +170,6 @@ function claimPosition(uint256 positionId, address recipient, bytes data) extern
 ```
 
 _Claims a closed position in the market._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -199,13 +185,9 @@ function getPositions(uint256[] positionIds) external view returns (struct Posit
 
 _Retrieves multiple positions by their IDs._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | positionIds | uint256[] | The IDs of the positions to retrieve. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: Errors
+title: Errors.sol
+---
+# [Errors.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/libraries/Errors.sol)
 
 ## Errors
 

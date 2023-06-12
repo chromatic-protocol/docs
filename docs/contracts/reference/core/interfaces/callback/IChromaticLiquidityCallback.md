@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: IChromaticLiquidityCallback
+title: IChromaticLiquidityCallback.sol
+---
+# [IChromaticLiquidityCallback.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/interfaces/callback/IChromaticLiquidityCallback.sol)
 
 ## IChromaticLiquidityCallback
 
@@ -14,8 +18,6 @@ function addLiquidityCallback(address settlementToken, address vault, bytes data
 
 Handles the callback after adding liquidity to the Chromatic protocol.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | settlementToken | address | The address of the settlement token used for adding liquidity. |
@@ -30,8 +32,6 @@ function claimLiquidityCallback(uint256 receiptId, bytes data) external
 
 Handles the callback after claiming liquidity from the Chromatic protocol.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | receiptId | uint256 | The ID of the liquidity claim receipt. |
@@ -44,8 +44,6 @@ function removeLiquidityCallback(address clbToken, uint256 clbTokenId, bytes dat
 ```
 
 Handles the callback after removing liquidity from the Chromatic protocol.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -60,8 +58,6 @@ function withdrawLiquidityCallback(uint256 receiptId, bytes data) external
 ```
 
 Handles the callback after withdrawing liquidity from the Chromatic protocol.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: LpContext
+title: LpContext.sol
+---
+# [LpContext.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/libraries/LpContext.sol)
 
 ## LpContext
 
@@ -27,8 +31,6 @@ function syncOracleVersion(struct LpContext self) internal
 
 Syncs the oracle version used by the market.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct LpContext | The memory instance of `LpContext` struct |
@@ -46,13 +48,9 @@ _If the `_currentVersionCache` has been initialized, then returns it.
      to fetch the current version and stores it in the cache,
      and then returns the current version._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct LpContext | The memory instance of `LpContext` struct |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -70,14 +68,10 @@ _If the `_currentVersionCache` matches the requested version, then returns it.
      Otherwise, it calls the `atVersion` function on the `oracleProvider` of the market
      to fetch the desired version._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct LpContext | The memory instance of `LpContext` struct |
 | version | uint256 | The requested version number |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -94,16 +88,12 @@ Calculates the interest accrued for a given amount of settlement tokens
 
 _This function internally calls the `calculateInterest` function on the `interestCalculator` contract._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct LpContext | The memory instance of the `LpContext` struct. |
 | amount | uint256 | The amount of settlement tokens for which the interest needs to be calculated. |
 | from | uint256 | The starting timestamp of the time range (inclusive). |
 | to | uint256 | The ending timestamp of the time range (exclusive). |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

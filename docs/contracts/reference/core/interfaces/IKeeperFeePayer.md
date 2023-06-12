@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: IKeeperFeePayer
+title: IKeeperFeePayer.sol
+---
+# [IKeeperFeePayer.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/interfaces/IKeeperFeePayer.sol)
 
 ## IKeeperFeePayer
 
@@ -11,8 +15,6 @@ function approveToRouter(address token, bool approve) external
 ```
 
 Approves or revokes approval to the Uniswap router for a given token.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -27,15 +29,11 @@ function payKeeperFee(address tokenIn, uint256 amountOut, address keeperAddress)
 
 Pays the keeper fee using Uniswap swaps.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | tokenIn | address | The address of the token being swapped. |
 | amountOut | uint256 | The desired amount of output tokens. |
 | keeperAddress | address | The address of the keeper to receive the fee. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

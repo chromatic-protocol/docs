@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: ChromaticRouter
+title: ChromaticRouter.sol
+---
+# [ChromaticRouter.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/periphery/ChromaticRouter.sol)
 
 ## ChromaticRouter
 
@@ -58,8 +62,6 @@ function initialize(contract AccountFactory _accountFactory, address _marketFact
 
 _Initializes the ChromaticRouter contract._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | _accountFactory | contract AccountFactory | The address of the AccountFactory contract. |
@@ -72,8 +74,6 @@ function addLiquidityCallback(address settlementToken, address vault, bytes data
 ```
 
 Handles the callback after adding liquidity to the Chromatic protocol.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -89,8 +89,6 @@ function claimLiquidityCallback(uint256 receiptId, bytes data) external
 
 Handles the callback after claiming liquidity from the Chromatic protocol.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | receiptId | uint256 | The ID of the liquidity claim receipt. |
@@ -103,8 +101,6 @@ function removeLiquidityCallback(address clbToken, uint256 clbTokenId, bytes dat
 ```
 
 Handles the callback after removing liquidity from the Chromatic protocol.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -120,8 +116,6 @@ function withdrawLiquidityCallback(uint256 receiptId, bytes data) external
 
 Handles the callback after withdrawing liquidity from the Chromatic protocol.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | receiptId | uint256 | The ID of the liquidity withdrawal receipt. |
@@ -135,8 +129,6 @@ function openPosition(address market, int224 qty, uint32 leverage, uint256 taker
 
 _Opens a new position in a ChromaticMarket contract._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the ChromaticMarket contract. |
@@ -145,8 +137,6 @@ _Opens a new position in a ChromaticMarket contract._
 | takerMargin | uint256 | The margin amount for the taker. |
 | makerMargin | uint256 | The margin amount for the maker. |
 | maxAllowableTradingFee | uint256 | The maximum allowable trading fee. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -159,8 +149,6 @@ function closePosition(address market, uint256 positionId) external
 ```
 
 Closes a position in a ChromaticMarket contract.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -175,8 +163,6 @@ function claimPosition(address market, uint256 positionId) external
 
 Claims a position from a ChromaticMarket contract.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the ChromaticMarket contract. |
@@ -190,16 +176,12 @@ function addLiquidity(address market, int16 feeRate, uint256 amount, address rec
 
 Adds liquidity to a ChromaticMarket contract.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the ChromaticMarket contract. |
 | feeRate | int16 | The fee rate of the liquidity bin. |
 | amount | uint256 | The amount to add as liquidity. |
 | recipient | address | The recipient address. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -212,8 +194,6 @@ function claimLiquidity(address market, uint256 receiptId) public
 ```
 
 Claims liquidity from a ChromaticMarket contract.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -228,16 +208,12 @@ function removeLiquidity(address market, int16 feeRate, uint256 clbTokenAmount, 
 
 Removes liquidity from a ChromaticMarket contract.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the ChromaticMarket contract. |
 | feeRate | int16 | The fee rate of the liquidity bin. |
 | clbTokenAmount | uint256 | The amount of CLB tokens to remove as liquidity. |
 | recipient | address | The recipient address. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -250,8 +226,6 @@ function withdrawLiquidity(address market, uint256 receiptId) public
 ```
 
 Withdraws liquidity from a ChromaticMarket contract.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -266,8 +240,6 @@ function getAccount() external view returns (address)
 
 Retrieves the account of the caller.
 
-#### Return Values
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | [0] | address | The account address. |
@@ -280,13 +252,9 @@ function _getAccount(address owner) internal view returns (contract Account)
 
 _Retrieves the account of the specified owner._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | owner | address | The owner of the account. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -300,13 +268,9 @@ function getLpReceiptIds(address market) external view returns (uint256[])
 
 Retrieves the LP receipt IDs of the caller for the specified market.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the ChromaticMarket contract. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -320,16 +284,12 @@ function addLiquidityBatch(address market, int16[] feeRates, uint256[] amounts, 
 
 Adds liquidity to multiple ChromaticMarket contracts in a batch.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the ChromaticMarket contract. |
 | feeRates | int16[] | An array of fee rates for each liquidity bin. |
 | amounts | uint256[] | An array of amounts to add as liquidity for each bin. |
 | recipients | address[] | An array of recipient addresses. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -342,8 +302,6 @@ function claimLiquidityBatch(address market, uint256[] _receiptIds) external
 ```
 
 Claims liquidity from multiple ChromaticMarket contracts in a batch.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -358,16 +316,12 @@ function removeLiquidityBatch(address market, int16[] feeRates, uint256[] clbTok
 
 Removes liquidity from multiple ChromaticMarket contracts in a batch.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the ChromaticMarket contract. |
 | feeRates | int16[] | An array of fee rates for each liquidity bin. |
 | clbTokenAmounts | uint256[] | An array of CLB token amounts to remove as liquidity for each bin. |
 | recipients | address[] | An array of recipient addresses. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -380,8 +334,6 @@ function withdrawLiquidityBatch(address market, uint256[] _receiptIds) external
 ```
 
 Withdraws liquidity from multiple ChromaticMarket contracts in a batch.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

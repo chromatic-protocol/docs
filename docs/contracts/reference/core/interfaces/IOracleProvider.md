@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: IOracleProvider
+title: IOracleProvider.sol
+---
+# [IOracleProvider.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/interfaces/IOracleProvider.sol)
 
 ## IOracleProvider
 
@@ -12,8 +16,6 @@ function description() external view returns (string)
 
 Retrieves the description of the Oracle Provider.
 
-#### Return Values
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | [0] | string | A string representing the description of the Oracle Provider. |
@@ -26,13 +28,9 @@ function atVersions(uint256[] versions) external view returns (struct IOraclePro
 
 Retrieves the Oracle Version instances at the specified versions.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | versions | uint256[] | An array of versions for which to retrieve the Oracle Versions. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

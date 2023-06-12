@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: IChromaticTradeCallback
+title: IChromaticTradeCallback.sol
+---
+# [IChromaticTradeCallback.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/interfaces/callback/IChromaticTradeCallback.sol)
 
 ## IChromaticTradeCallback
 
@@ -11,8 +15,6 @@ function openPositionCallback(address settlementToken, address vault, uint256 ma
 ```
 
 Callback function called after opening a position.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -28,8 +30,6 @@ function claimPositionCallback(uint256 positionId, bytes data) external
 ```
 
 Callback function called after claiming a position.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

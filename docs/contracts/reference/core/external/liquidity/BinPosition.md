@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: BinPosition
+title: BinPosition.sol
+---
+# [BinPosition.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/external/liquidity/BinPosition.sol)
 
 ## BinPosition
 
@@ -25,8 +29,6 @@ function settlePendingPosition(struct BinPosition self, struct LpContext ctx) in
 
 Settles pending positions for a liquidity bin position.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct BinPosition | The BinPosition storage struct. |
@@ -39,8 +41,6 @@ function onOpenPosition(struct BinPosition self, struct LpContext ctx, struct Po
 ```
 
 Handles the opening of a position for a liquidity bin.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -56,8 +56,6 @@ function onClosePosition(struct BinPosition self, struct LpContext ctx, struct P
 
 Handles the closing of a position for a liquidity bin.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct BinPosition | The BinPosition storage struct. |
@@ -72,13 +70,9 @@ function totalMakerMargin(struct BinPosition self) internal view returns (uint25
 
 Returns the total maker margin for a liquidity bin position.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct BinPosition | The BinPosition storage struct. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -92,13 +86,9 @@ function totalTakerMargin(struct BinPosition self) internal view returns (uint25
 
 Returns the total taker margin for a liquidity bin position.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct BinPosition | The BinPosition storage struct. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -112,14 +102,10 @@ function unrealizedPnl(struct BinPosition self, struct LpContext ctx) internal v
 
 Calculates the unrealized profit or loss for a liquidity bin position.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct BinPosition | The BinPosition storage struct. |
 | ctx | struct LpContext | The LpContext data struct. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -133,14 +119,10 @@ function currentInterest(struct BinPosition self, struct LpContext ctx) internal
 
 _Calculates the current interest for a liquidity bin position._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct BinPosition | The BinPosition storage struct. |
 | ctx | struct LpContext | The LpContext data struct. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: InterestRate
+title: InterestRate.sol
+---
+# [InterestRate.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/libraries/InterestRate.sol)
 
 ## InterestRate
 
@@ -33,8 +37,6 @@ function initialize(struct InterestRate.Record[] self, uint256 initialInterestRa
 
 Initialize the interest rate records.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct InterestRate.Record[] | The stored record array |
@@ -50,8 +52,6 @@ Add a new interest rate record to the array.
 
 _Annual rate is not greater than the maximum rate and that the begin timestamp is in the future,
      and the new record's begin timestamp is greater than the previous record's timestamp._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -71,13 +71,9 @@ _The current time must be less than the begin timestamp of the last record.
      If the array has only one record, it returns false along with an empty record.
      Otherwise, it removes the last record from the array and returns true along with the removed record._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct InterestRate.Record[] | The stored record array |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -95,14 +91,10 @@ Find the interest rate record that applies to a given timestamp.
 _It iterates through the array from the end to the beginning
      and returns the first record with a begin timestamp less than or equal to the provided timestamp._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct InterestRate.Record[] | The stored record array |
 | timestamp | uint256 | Given timestamp |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -116,8 +108,6 @@ function calculateInterest(struct InterestRate.Record[] self, uint256 amount, ui
 ```
 
 Calculate the interest
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

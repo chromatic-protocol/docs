@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: IChromaticLiquidator
+title: IChromaticLiquidator.sol
+---
+# [IChromaticLiquidator.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/interfaces/IChromaticLiquidator.sol)
 
 ## IChromaticLiquidator
 
@@ -20,8 +24,6 @@ function createLiquidationTask(uint256 positionId) external
 
 Creates a liquidation task for a given position.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | positionId | uint256 | The ID of the position to be liquidated. |
@@ -33,8 +35,6 @@ function cancelLiquidationTask(uint256 positionId) external
 ```
 
 Cancels a liquidation task for a given position.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -50,14 +50,10 @@ Resolves the liquidation of a position.
 
 _This function is called by the Gelato automation system._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the market contract. |
 | positionId | uint256 | The ID of the position to be liquidated. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -72,8 +68,6 @@ function liquidate(address market, uint256 positionId) external
 
 Liquidates a position in a market.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the market contract. |
@@ -87,8 +81,6 @@ function createClaimPositionTask(uint256 positionId) external
 
 Creates a claim position task for a given position.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | positionId | uint256 | The ID of the position to be claimed. |
@@ -100,8 +92,6 @@ function cancelClaimPositionTask(uint256 positionId) external
 ```
 
 Cancels a claim position task for a given position.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -117,14 +107,10 @@ Resolves the claim of a position.
 
 _This function is called by the Gelato automation system._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the market contract. |
 | positionId | uint256 | The ID of the position to be claimed. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -138,8 +124,6 @@ function claimPosition(address market, uint256 positionId) external
 ```
 
 Claims a position in a market.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

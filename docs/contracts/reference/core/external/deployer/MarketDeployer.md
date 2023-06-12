@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: MarketDeployer
+title: MarketDeployer.sol
+---
+# [MarketDeployer.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/external/deployer/MarketDeployer.sol)
 
 ## MarketDeployer
 
@@ -29,15 +33,11 @@ function deploy(struct MarketDeployer self, address oracleProvider, address sett
 
 Deploys a ChromaticMarket contract
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct MarketDeployer | The MarketDeployer storage |
 | oracleProvider | address | The address of the oracle provider |
 | settlementToken | address | The address of the settlement token |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: ISettlementTokenRegistry
+title: ISettlementTokenRegistry.sol
+---
+# [ISettlementTokenRegistry.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/interfaces/factory/ISettlementTokenRegistry.sol)
 
 ## ISettlementTokenRegistry
 
@@ -11,8 +15,6 @@ event SettlementTokenRegistered(address token, uint256 minimumMargin, uint256 in
 ```
 
 _Emitted when a new settlement token is registered._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -31,8 +33,6 @@ event SetMinimumMargin(address token, uint256 minimumMargin)
 
 _Emitted when the minimum margin for a settlement token is set._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
@@ -45,8 +45,6 @@ event SetFlashLoanFeeRate(address token, uint256 flashLoanFeeRate)
 ```
 
 _Emitted when the flash loan fee rate for a settlement token is set._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -61,8 +59,6 @@ event SetEarningDistributionThreshold(address token, uint256 earningDistribution
 
 _Emitted when the earning distribution threshold for a settlement token is set._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
@@ -76,8 +72,6 @@ event SetUniswapFeeTier(address token, uint24 uniswapFeeTier)
 
 _Emitted when the Uniswap fee tier for a settlement token is set._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
@@ -90,8 +84,6 @@ event InterestRateRecordAppended(address token, uint256 annualRateBPS, uint256 b
 ```
 
 _Emitted when an interest rate record is appended for a settlement token._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -107,8 +99,6 @@ event LastInterestRateRecordRemoved(address token, uint256 annualRateBPS, uint25
 
 _Emitted when the last interest rate record is removed for a settlement token._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
@@ -122,8 +112,6 @@ function registerSettlementToken(address token, uint256 minimumMargin, uint256 i
 ```
 
 Registers a new settlement token.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -142,8 +130,6 @@ function registeredSettlementTokens() external view returns (address[])
 
 Gets the list of registered settlement tokens.
 
-#### Return Values
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | [0] | address[] | An array of addresses representing the registered settlement tokens. |
@@ -156,13 +142,9 @@ function isRegisteredSettlementToken(address token) external view returns (bool)
 
 Checks if a settlement token is registered.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token to check. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -179,13 +161,9 @@ Gets the minimum margin for a settlement token.
 _The minimumMargin is used as the minimum value for the taker margin of a position
      or as the minimum value for the maker margin of each bin._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -198,8 +176,6 @@ function setMinimumMargin(address token, uint256 minimumMargin) external
 ```
 
 Sets the minimum margin for a settlement token.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -214,13 +190,9 @@ function getFlashLoanFeeRate(address token) external view returns (uint256)
 
 Gets the flash loan fee rate for a settlement token.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -233,8 +205,6 @@ function setFlashLoanFeeRate(address token, uint256 flashLoanFeeRate) external
 ```
 
 Sets the flash loan fee rate for a settlement token.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -249,13 +219,9 @@ function getEarningDistributionThreshold(address token) external view returns (u
 
 Gets the earning distribution threshold for a settlement token.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -268,8 +234,6 @@ function setEarningDistributionThreshold(address token, uint256 earningDistribut
 ```
 
 Sets the earning distribution threshold for a settlement token.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -284,13 +248,9 @@ function getUniswapFeeTier(address token) external view returns (uint24)
 
 Gets the Uniswap fee tier for a settlement token.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -304,8 +264,6 @@ function setUniswapFeeTier(address token, uint24 uniswapFeeTier) external
 
 Sets the Uniswap fee tier for a settlement token.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
@@ -318,8 +276,6 @@ function appendInterestRateRecord(address token, uint256 annualRateBPS, uint256 
 ```
 
 Appends an interest rate record for a settlement token.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -335,8 +291,6 @@ function removeLastInterestRateRecord(address token) external
 
 Removes the last interest rate record for a settlement token.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
@@ -349,13 +303,9 @@ function currentInterestRate(address token) external view returns (uint256)
 
 Gets the current interest rate for a settlement token.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -369,13 +319,9 @@ function getInterestRateRecords(address token) external view returns (struct Int
 
 Gets all the interest rate records for a settlement token.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

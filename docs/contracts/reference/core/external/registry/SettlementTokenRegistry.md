@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: SettlementTokenRegistry
+title: SettlementTokenRegistry.sol
+---
+# [SettlementTokenRegistry.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/external/registry/SettlementTokenRegistry.sol)
 
 ## SettlementTokenRegistry
 
@@ -27,8 +31,6 @@ Modifier to check if a token is registered in the settlement token registry.
 
 _Throws an error if the token is not registered._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct SettlementTokenRegistry | The SettlementTokenRegistry storage. |
@@ -43,8 +45,6 @@ function register(struct SettlementTokenRegistry self, address token, uint256 mi
 Registers a token in the settlement token registry.
 
 _Throws an error if the token is already registered._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -64,13 +64,9 @@ function settlementTokens(struct SettlementTokenRegistry self) external view ret
 
 Returns an array of all registered settlement tokens.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct SettlementTokenRegistry | The SettlementTokenRegistry storage. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -84,14 +80,10 @@ function isRegistered(struct SettlementTokenRegistry self, address token) extern
 
 Checks if a token is registered in the settlement token registry.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct SettlementTokenRegistry | The SettlementTokenRegistry storage. |
 | token | address | The address of the token to check. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -105,14 +97,10 @@ function getMinimumMargin(struct SettlementTokenRegistry self, address token) ex
 
 Retrieves the minimum margin for a asettlement token.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct SettlementTokenRegistry | The SettlementTokenRegistry storage. |
 | token | address | The address of the asettlement token. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -125,8 +113,6 @@ function setMinimumMargin(struct SettlementTokenRegistry self, address token, ui
 ```
 
 Sets the minimum margin for asettlement token.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -142,14 +128,10 @@ function getFlashLoanFeeRate(struct SettlementTokenRegistry self, address token)
 
 Retrieves the flash loan fee rate for a settlement token.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct SettlementTokenRegistry | The SettlementTokenRegistry storage. |
 | token | address | The address of the settlement token. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -162,8 +144,6 @@ function setFlashLoanFeeRate(struct SettlementTokenRegistry self, address token,
 ```
 
 Sets the flash loan fee rate for a settlement token.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -179,14 +159,10 @@ function getEarningDistributionThreshold(struct SettlementTokenRegistry self, ad
 
 Retrieves the earning distribution threshold for a settlement token.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct SettlementTokenRegistry | The SettlementTokenRegistry storage. |
 | token | address | The address of the settlement token. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -199,8 +175,6 @@ function setEarningDistributionThreshold(struct SettlementTokenRegistry self, ad
 ```
 
 Sets the earning distribution threshold for a settlement token.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -216,14 +190,10 @@ function getUniswapFeeTier(struct SettlementTokenRegistry self, address token) e
 
 Retrieves the Uniswap fee tier for a settlement token.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct SettlementTokenRegistry | The SettlementTokenRegistry storage. |
 | token | address | The address of the settlement token. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -236,8 +206,6 @@ function setUniswapFeeTier(struct SettlementTokenRegistry self, address token, u
 ```
 
 Sets the Uniswap fee tier for a settlement token.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -254,8 +222,6 @@ function appendInterestRateRecord(struct SettlementTokenRegistry self, address t
 Appends an interest rate record for a settlement token.
 
 _Throws an error if the settlement token is not registered._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -276,14 +242,10 @@ _The current time must be less than the begin timestamp of the last record.
      Otherwise throws an error with the message `INTEREST_RATE_ALREADY_APPLIED`.
 Throws an error if the settlement token is not registered._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct SettlementTokenRegistry | The SettlementTokenRegistry storage. |
 | token | address | The address of the settlement token. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -300,14 +262,10 @@ Retrieves the current interest rate for a settlement token.
 
 _Throws an error if the settlement token is not registered._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct SettlementTokenRegistry | The SettlementTokenRegistry storage. |
 | token | address | The address of the settlement token. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -323,8 +281,6 @@ Calculates the interest accrued for a settlement token within a specified time r
 
 _Throws an error if the token is not registered._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct SettlementTokenRegistry | The SettlementTokenRegistry storage. |
@@ -332,8 +288,6 @@ _Throws an error if the token is not registered._
 | amount | uint256 | The amount of settlement tokens to calculate interest for. |
 | from | uint256 | The starting timestamp of the interest calculation (inclusive). |
 | to | uint256 | The ending timestamp of the interest calculation (exclusive). |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -347,14 +301,10 @@ function getInterestRateRecords(struct SettlementTokenRegistry self, address tok
 
 Retrieves the array of interest rate records for a settlement token.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct SettlementTokenRegistry | The SettlementTokenRegistry storage. |
 | token | address | The address of the settlement token. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

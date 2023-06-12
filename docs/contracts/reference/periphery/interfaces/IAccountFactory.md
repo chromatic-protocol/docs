@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: IAccountFactory
+title: IAccountFactory.sol
+---
+# [IAccountFactory.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/periphery/interfaces/IAccountFactory.sol)
 
 ## IAccountFactory
 
@@ -11,8 +15,6 @@ event AccountCreated(address account, address owner)
 ```
 
 _Emitted when a new account is created._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -35,13 +37,9 @@ function getAccount(address accountAddress) external view returns (address)
 
 Retrieves the address of a user's account.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | accountAddress | address | The address of the user's account. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -54,8 +52,6 @@ function getAccount() external view returns (address)
 ```
 
 Retrieves the address of the caller's account.
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

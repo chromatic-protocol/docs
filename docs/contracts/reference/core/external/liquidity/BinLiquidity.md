@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: BinLiquidity
+title: BinLiquidity.sol
+---
+# [BinLiquidity.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/external/liquidity/BinLiquidity.sol)
 
 ## BinLiquidity
 
@@ -79,8 +83,6 @@ _This function settles pending liquidity in the BinLiquidity storage by performi
      And the CLB tokens are minted or burned accordingly.
      The pending deposit and withdrawal amounts are passed to the vault for further processing._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct BinLiquidity | The BinLiquidity storage. |
@@ -101,8 +103,6 @@ _Sets the pending liquidity with the specified amount and oracle version.
      If the amount is less than the minimum amount, it reverts with an error.
      If there is already pending liquidity with a different oracle version, it reverts with an error._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct BinLiquidity | The BinLiquidity storage. |
@@ -122,15 +122,11 @@ _Retrieves the minting details for the specified oracle version
      Updates the claim minting details and returns the CLB token amount to be claimed.
      If there are no more tokens remaining for the claim, it is removed from the mapping._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct BinLiquidity | The BinLiquidity storage. |
 | amount | uint256 | The amount of tokens to claim. |
 | oracleVersion | uint256 | The oracle version associated with the claim. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -146,8 +142,6 @@ Removes liquidity from the BinLiquidity by setting pending CLB token amount.
 
 _Sets the pending liquidity with the specified CLB token amount and oracle version.
      If there is already pending liquidity with a different oracle version, it reverts with an error._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -168,15 +162,11 @@ _Retrieves the burning details for the specified oracle version
      Updates the claim burning details and returns the token amount to withdraw and the burned CLB token amount.
      If there are no more CLB tokens remaining for the claim, it is removed from the mapping._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct BinLiquidity | The BinLiquidity storage. |
 | clbTokenAmount | uint256 | The amount of CLB tokens to withdraw. |
 | oracleVersion | uint256 | The oracle version associated with the claim. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -196,15 +186,11 @@ _If the CLB token total supply is zero, returns the token amount as is.
      Otherwise, calculates the minting amount
      based on the token amount, bin value, and CLB token total supply._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | amount | uint256 | The amount of tokens to be minted. |
 | binValue | uint256 | The current bin value. |
 | clbTokenTotalSupply | uint256 | The total supply of CLB tokens. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -222,15 +208,11 @@ Calculates the value of CLB tokens
 _If the CLB token total supply is zero, returns zero.
      Otherwise, calculates the value based on the CLB token amount, bin value, and CLB token total supply._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | clbTokenAmount | uint256 | The amount of CLB tokens. |
 | binValue | uint256 | The current bin value. |
 | clbTokenTotalSupply | uint256 | The total supply of CLB tokens. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

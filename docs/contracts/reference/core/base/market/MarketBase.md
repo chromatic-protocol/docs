@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: MarketBase
+title: MarketBase.sol
+---
+# [MarketBase.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/base/market/MarketBase.sol)
 
 ## MarketBase
 
@@ -12,8 +16,6 @@ contract IChromaticMarketFactory factory
 
 _Returns the factory contract for the market._
 
-#### Return Values
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 
@@ -24,8 +26,6 @@ contract IOracleProvider oracleProvider
 ```
 
 _Returns the oracle provider contract for the market._
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -38,8 +38,6 @@ contract IERC20Metadata settlementToken
 
 _Returns the settlement token of the market._
 
-#### Return Values
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 
@@ -50,8 +48,6 @@ contract ICLBToken clbToken
 ```
 
 _Returns the CLB token contract for the market._
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -64,8 +60,6 @@ contract IChromaticLiquidator liquidator
 
 _Returns the liquidator contract for the market._
 
-#### Return Values
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 
@@ -77,8 +71,6 @@ contract IChromaticVault vault
 
 _Returns the vault contract for the market._
 
-#### Return Values
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 
@@ -89,8 +81,6 @@ contract IKeeperFeePayer keeperFeePayer
 ```
 
 _Returns the keeper fee payer contract for the market._
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -136,8 +126,6 @@ function newLpContext() internal view returns (struct LpContext)
 ```
 
 _Creates a new LP context._
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

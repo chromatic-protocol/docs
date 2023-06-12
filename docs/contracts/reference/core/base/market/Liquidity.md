@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: Liquidity
+title: Liquidity.sol
+---
+# [Liquidity.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/base/market/Liquidity.sol)
 
 ## Liquidity
 
@@ -32,15 +36,11 @@ function addLiquidity(address recipient, int16 tradingFeeRate, bytes data) exter
 
 _Adds liquidity to the market._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | recipient | address | The address to receive the liquidity tokens. |
 | tradingFeeRate | int16 | The trading fee rate for the liquidity. |
 | data | bytes | Additional data for the liquidity callback. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -53,8 +53,6 @@ function claimLiquidity(uint256 receiptId, bytes data) external
 ```
 
 _Claims liquidity from a liquidity receipt._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -69,15 +67,11 @@ function removeLiquidity(address recipient, int16 tradingFeeRate, bytes data) ex
 
 _Removes liquidity from the market._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | recipient | address | The address to receive the removed liquidity. |
 | tradingFeeRate | int16 | The trading fee rate for the liquidity. |
 | data | bytes | Additional data for the liquidity callback. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -90,8 +84,6 @@ function withdrawLiquidity(uint256 receiptId, bytes data) external
 ```
 
 _Withdraws liquidity from a liquidity receipt._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -118,8 +110,6 @@ function distributeEarningToBins(uint256 earning, uint256 marketBalance) externa
 
 _Distributes earning to the liquidity bins._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | earning | uint256 | The amount of earning to distribute. |
@@ -139,14 +129,10 @@ function calculateCLBTokenMinting(int16 tradingFeeRate, uint256 amount) external
 
 _Calculates the amount of CLB tokens to mint for the given parameters._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | tradingFeeRate | int16 | The trading fee rate. |
 | amount | uint256 | The amount of liquidity. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -160,14 +146,10 @@ function calculateCLBTokenValue(int16 tradingFeeRate, uint256 clbTokenAmount) ex
 
 _Calculates the value of CLB tokens for the given parameters._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | tradingFeeRate | int16 | The trading fee rate. |
 | clbTokenAmount | uint256 | The amount of CLB tokens. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -186,8 +168,6 @@ NOTE: To accept the transfer, this must return
 `bytes4(keccak256("onERC1155Received(address,address,uint256,uint256,bytes)"))`
 (i.e. 0xf23a6e61, or its own function selector)._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | operator | address | The address which initiated the transfer (i.e. msg.sender) |
@@ -195,8 +175,6 @@ NOTE: To accept the transfer, this must return
 | id | uint256 | The ID of the token being transferred |
 | value | uint256 | The amount of tokens being transferred |
 | data | bytes | Additional data with no specified format |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -216,8 +194,6 @@ NOTE: To accept the transfer(s), this must return
 `bytes4(keccak256("onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"))`
 (i.e. 0xbc197c81, or its own function selector)._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | operator | address | The address which initiated the batch transfer (i.e. msg.sender) |
@@ -225,8 +201,6 @@ NOTE: To accept the transfer(s), this must return
 | ids | uint256[] | An array containing ids of each token being transferred (order and length must match values array) |
 | values | uint256[] | An array containing amounts of each token being transferred (order and length must match ids array) |
 | data | bytes | Additional data with no specified format |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

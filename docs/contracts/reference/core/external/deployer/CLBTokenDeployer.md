@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: CLBTokenDeployer
+title: CLBTokenDeployer.sol
+---
+# [CLBTokenDeployer.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/external/deployer/CLBTokenDeployer.sol)
 
 ## CLBTokenDeployerLib
 
@@ -11,8 +15,6 @@ function deploy() external returns (address clbToken)
 ```
 
 Deploys a new CLB token
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: AccountFactory
+title: AccountFactory.sol
+---
+# [AccountFactory.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/periphery/AccountFactory.sol)
 
 ## AccountFactory
 
@@ -11,8 +15,6 @@ constructor(address _router, address _marketFactory) public
 ```
 
 _Initializes the AccountFactory contract with the provided router and market factory addresses._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -46,13 +48,9 @@ function getAccount(address accountAddress) external view returns (address)
 
 Retrieves the address of a user's account.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | accountAddress | address | The address of the user's account. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -65,8 +63,6 @@ function getAccount() external view returns (address)
 ```
 
 Retrieves the address of the caller's account.
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

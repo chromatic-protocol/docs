@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: IMarketLiquidate
+title: IMarketLiquidate.sol
+---
+# [IMarketLiquidate.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/interfaces/market/IMarketLiquidate.sol)
 
 ## IMarketLiquidate
 
@@ -12,13 +16,9 @@ function checkLiquidation(uint256 positionId) external view returns (bool)
 
 _Checks if a position is eligible for liquidation._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | positionId | uint256 | The ID of the position to check. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -31,8 +31,6 @@ function liquidate(uint256 positionId, address keeper, uint256 keeperFee) extern
 ```
 
 _Liquidates a position._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -48,13 +46,9 @@ function checkClaimPosition(uint256 positionId) external view returns (bool)
 
 _Checks if a position is eligible for claim._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | positionId | uint256 | The ID of the position to check. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -67,8 +61,6 @@ function claimPosition(uint256 positionId, address keeper, uint256 keeperFee) ex
 ```
 
 _Claims a closed position on behalf of a keeper._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

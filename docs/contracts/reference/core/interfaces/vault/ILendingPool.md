@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: ILendingPool
+title: ILendingPool.sol
+---
+# [ILendingPool.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/interfaces/vault/ILendingPool.sol)
 
 ## ILendingPool
 
@@ -11,8 +15,6 @@ event FlashLoan(address sender, address recipient, uint256 amount, uint256 paid,
 ```
 
 _Emitted when a flash loan is executed._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -31,8 +33,6 @@ function flashLoan(address token, uint256 amount, address recipient, bytes data)
 
 _Executes a flash loan._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the token for the flash loan. |
@@ -48,14 +48,10 @@ function getPendingBinShare(address market, uint256 binBalance) external view re
 
 Retrieves the pending share of earnings for a specific bin (subset) of funds in a market.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the market. |
 | binBalance | uint256 | The balance of funds in the bin. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: IWETH9
+title: IWETH9.sol
+---
+# [IWETH9.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/interfaces/IWETH9.sol)
 
 ## IWETH9
 

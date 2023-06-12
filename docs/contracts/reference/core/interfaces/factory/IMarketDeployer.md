@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: IMarketDeployer
+title: IMarketDeployer.sol
+---
+# [IMarketDeployer.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/interfaces/factory/IMarketDeployer.sol)
 
 ## IMarketDeployer
 

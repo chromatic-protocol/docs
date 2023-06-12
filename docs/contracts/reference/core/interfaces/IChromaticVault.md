@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: IChromaticVault
+title: IChromaticVault.sol
+---
+# [IChromaticVault.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/interfaces/IChromaticVault.sol)
 
 ## IChromaticVault
 
@@ -11,8 +15,6 @@ event MarketEarningAccumulated(address market, uint256 earning)
 ```
 
 _Emitted when market earning is accumulated._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -27,8 +29,6 @@ event MakerEarningDistributed(address token, uint256 earning, uint256 usedKeeper
 
 _Emitted when maker earning is distributed._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
@@ -42,8 +42,6 @@ event MarketEarningDistributed(address market, uint256 earning, uint256 usedKeep
 ```
 
 _Emitted when market earning is distributed._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -60,8 +58,6 @@ function createMakerEarningDistributionTask(address token) external
 
 Creates a maker earning distribution task for a token.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
@@ -73,8 +69,6 @@ function cancelMakerEarningDistributionTask(address token) external
 ```
 
 Cancels a maker earning distribution task for a token.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -88,8 +82,6 @@ function createMarketEarningDistributionTask(address market) external
 
 Creates a market earning distribution task for a market.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the market. |
@@ -101,8 +93,6 @@ function cancelMarketEarningDistributionTask(address market) external
 ```
 
 Cancels a market earning distribution task for a market.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

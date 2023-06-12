@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: AutomateReady
+title: AutomateReady.sol
+---
+# [AutomateReady.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/base/gelato/AutomateReady.sol)
 
 ## AutomateReady
 

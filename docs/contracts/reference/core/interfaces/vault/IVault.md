@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: IVault
+title: IVault.sol
+---
+# [IVault.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/interfaces/vault/IVault.sol)
 
 ## IVault
 
@@ -11,8 +15,6 @@ event OnOpenPosition(address market, uint256 positionId, uint256 takerMargin, ui
 ```
 
 Emitted when a position is opened.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -30,8 +32,6 @@ event OnClaimPosition(address market, uint256 positionId, address recipient, uin
 
 Emitted when a position is claimed.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the market. |
@@ -48,8 +48,6 @@ event OnAddLiquidity(address market, uint256 amount)
 
 Emitted when liquidity is added to the vault.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the market. |
@@ -62,8 +60,6 @@ event OnSettlePendingLiquidity(address market, uint256 pendingDeposit, uint256 p
 ```
 
 Emitted when pending liquidity is settled.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -79,8 +75,6 @@ event OnWithdrawLiquidity(address market, uint256 amount, address recipient)
 
 Emitted when liquidity is withdrawn from the vault.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the market. |
@@ -95,8 +89,6 @@ event TransferKeeperFee(uint256 fee, uint256 amount)
 
 Emitted when the keeper fee is transferred.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | fee | uint256 | The amount of the transferred keeper fee as native token. |
@@ -109,8 +101,6 @@ event TransferKeeperFee(address market, uint256 fee, uint256 amount)
 ```
 
 Emitted when the keeper fee is transferred for a specific market.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -126,8 +116,6 @@ event TransferProtocolFee(address market, uint256 positionId, uint256 amount)
 
 Emitted when the protocol fee is transferred for a specific position.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the market. |
@@ -141,8 +129,6 @@ function onOpenPosition(uint256 positionId, uint256 takerMargin, uint256 trading
 ```
 
 Called when a position is opened by a market contract.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -159,8 +145,6 @@ function onClaimPosition(uint256 positionId, address recipient, uint256 takerMar
 
 Called when a position is claimed by a market contract.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | positionId | uint256 | The ID of the claimed position. |
@@ -176,8 +160,6 @@ function onAddLiquidity(uint256 amount) external
 
 Called when liquidity is added to the vault by a market contract.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | amount | uint256 | The amount of liquidity being added. |
@@ -189,8 +171,6 @@ function onSettlePendingLiquidity(uint256 pendingDeposit, uint256 pendingWithdra
 ```
 
 Called when pending liquidity is settled in the vault by a market contract.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -205,8 +185,6 @@ function onWithdrawLiquidity(address recipient, uint256 amount) external
 
 Called when liquidity is withdrawn from the vault by a market contract.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | recipient | address | The address that will receive the withdrawn liquidity. |
@@ -220,15 +198,11 @@ function transferKeeperFee(address keeper, uint256 fee, uint256 margin) external
 
 Transfers the keeper fee from the market to the specified keeper.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | keeper | address | The address of the keeper to receive the fee. |
 | fee | uint256 | The amount of the fee to transfer as native token. |
 | margin | uint256 | The margin amount used for the fee payment. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

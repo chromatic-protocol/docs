@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: ChromaticMarketFactory
+title: ChromaticMarketFactory.sol
+---
+# [ChromaticMarketFactory.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/ChromaticMarketFactory.sol)
 
 ## ChromaticMarketFactory
 
@@ -12,8 +16,6 @@ address dao
 
 Returns the address of the DAO.
 
-#### Return Values
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 
@@ -24,8 +26,6 @@ address liquidator
 ```
 
 Returns the address of the liquidator.
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -38,8 +38,6 @@ address vault
 
 Returns the address of the vault.
 
-#### Return Values
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 
@@ -51,8 +49,6 @@ address keeperFeePayer
 
 Returns the address of the keeper fee payer.
 
-#### Return Values
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 
@@ -63,8 +59,6 @@ address treasury
 ```
 
 Returns the address of the DAO treasury.
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -137,8 +131,6 @@ Updates the DAO address.
 
 _This function can only be called by the DAO address._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | _dao | address |  |
@@ -152,8 +144,6 @@ function updateTreasury(address _treasury) external
 Updates the DAO treasury address.
 
 _This function can only be called by the DAO address._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -169,8 +159,6 @@ Sets the liquidator address.
 
 _This function can only be called by the DAO address._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | _liquidator | address |  |
@@ -184,8 +172,6 @@ function setVault(address _vault) external
 Sets the vault address.
 
 _This function can only be called by the DAO address._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -201,8 +187,6 @@ Sets the keeper fee payer address.
 
 _This function can only be called by the DAO address._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | _keeperFeePayer | address |  |
@@ -214,8 +198,6 @@ function getMarkets() external view returns (address[])
 ```
 
 Returns an array of all market addresses.
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -229,13 +211,9 @@ function getMarketsBySettlmentToken(address settlementToken) external view retur
 
 Returns an array of market addresses associated with a settlement token.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | settlementToken | address | The address of the settlement token. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -249,14 +227,10 @@ function getMarket(address oracleProvider, address settlementToken) external vie
 
 Returns the address of a market associated with an oracle provider and settlement token.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | oracleProvider | address | The address of the oracle provider. |
 | settlementToken | address | The address of the settlement token. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -270,13 +244,9 @@ function isRegisteredMarket(address market) external view returns (bool)
 
 Checks if a market is registered.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the market. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -289,8 +259,6 @@ function createMarket(address oracleProvider, address settlementToken) external
 ```
 
 Creates a new market associated with an oracle provider and settlement token.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -321,8 +289,6 @@ Registers an oracle provider.
 
 _This function can only be called by the DAO address._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | oracleProvider | address | The address of the oracle provider to register. |
@@ -337,8 +303,6 @@ Unregisters an oracle provider.
 
 _This function can only be called by the DAO address._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | oracleProvider | address | The address of the oracle provider to unregister. |
@@ -350,8 +314,6 @@ function registeredOracleProviders() external view returns (address[])
 ```
 
 Gets the registered oracle providers.
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -365,13 +327,9 @@ function isRegisteredOracleProvider(address oracleProvider) external view return
 
 Checks if an oracle provider is registered.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | oracleProvider | address | The address of the oracle provider to check. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -386,8 +344,6 @@ function registerSettlementToken(address token, uint256 minimumMargin, uint256 i
 Registers a new settlement token.
 
 _This function can only be called by the DAO address._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -406,8 +362,6 @@ function registeredSettlementTokens() external view returns (address[])
 
 Gets the list of registered settlement tokens.
 
-#### Return Values
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | [0] | address[] | An array of addresses representing the registered settlement tokens. |
@@ -420,13 +374,9 @@ function isRegisteredSettlementToken(address token) external view returns (bool)
 
 Checks if a settlement token is registered.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token to check. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -443,13 +393,9 @@ Gets the minimum margin for a settlement token.
 _The minimumMargin is used as the minimum value for the taker margin of a position
      or as the minimum value for the maker margin of each bin._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -465,8 +411,6 @@ Sets the minimum margin for a settlement token.
 
 _This function can only be called by the DAO address._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
@@ -480,13 +424,9 @@ function getFlashLoanFeeRate(address token) external view returns (uint256)
 
 Gets the flash loan fee rate for a settlement token.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -502,8 +442,6 @@ Sets the flash loan fee rate for a settlement token.
 
 _This function can only be called by the DAO address._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
@@ -517,13 +455,9 @@ function getEarningDistributionThreshold(address token) external view returns (u
 
 Gets the earning distribution threshold for a settlement token.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -539,8 +473,6 @@ Sets the earning distribution threshold for a settlement token.
 
 _This function can only be called by the DAO address._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
@@ -554,13 +486,9 @@ function getUniswapFeeTier(address token) external view returns (uint24)
 
 Gets the Uniswap fee tier for a settlement token.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -576,8 +504,6 @@ Sets the Uniswap fee tier for a settlement token.
 
 _This function can only be called by the DAO address._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
@@ -592,8 +518,6 @@ function appendInterestRateRecord(address token, uint256 annualRateBPS, uint256 
 Appends an interest rate record for a settlement token.
 
 _This function can only be called by the DAO address._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -611,8 +535,6 @@ Removes the last interest rate record for a settlement token.
 
 _This function can only be called by the DAO address._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
@@ -625,13 +547,9 @@ function getInterestRateRecords(address token) external view returns (struct Int
 
 Gets all the interest rate records for a settlement token.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -645,13 +563,9 @@ function currentInterestRate(address token) external view returns (uint256 annua
 
 Gets the current interest rate for a settlement token.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -665,16 +579,12 @@ function calculateInterest(address token, uint256 amount, uint256 from, uint256 
 
 Calculates the interest accrued for a given token and amount within a specified time range.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the token. |
 | amount | uint256 | The amount of the token. |
 | from | uint256 | The starting timestamp (inclusive) of the time range. |
 | to | uint256 | The ending timestamp (exclusive) of the time range. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -690,8 +600,6 @@ Creates a Maker earning distribution task for a token.
 
 _This function can only be called by the DAO address._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the token. |
@@ -705,8 +613,6 @@ function cancelMakerEarningDistributionTask(address token) external
 Cancels a Maker earning distribution task for a token.
 
 _This function can only be called by the DAO address._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -722,8 +628,6 @@ Creates a market earning distribution task for a market.
 
 _This function can only be called by the DAO address._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the market. |
@@ -737,8 +641,6 @@ function cancelMarketEarningDistributionTask(address market) external
 Cancels a market earning distribution task for a market.
 
 _This function can only be called by the DAO address._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

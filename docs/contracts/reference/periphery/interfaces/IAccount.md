@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: IAccount
+title: IAccount.sol
+---
+# [IAccount.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/periphery/interfaces/IAccount.sol)
 
 ## IAccount
 
@@ -12,13 +16,9 @@ function balance(address token) external view returns (uint256)
 
 Returns the balance of the specified token for the account.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the token. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -32,8 +32,6 @@ function withdraw(address token, uint256 amount) external
 
 Withdraws the specified amount of tokens from the account.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the token to withdraw. |
@@ -46,8 +44,6 @@ function initialize(address _owner, address _router, address _marketFactory) ext
 ```
 
 Initializes the account with the specified owner, router, and market factory addresses.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -63,14 +59,10 @@ function hasPositionId(address marketAddress, uint256 positionId) external view 
 
 Checks if the specified market has the specified position ID.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | marketAddress | address | The address of the market. |
 | positionId | uint256 | The ID of the position. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -84,13 +76,9 @@ function getPositionIds(address marketAddress) external view returns (uint256[])
 
 Retrieves an array of position IDs owned by this account for the specified market.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | marketAddress | address | The address of the market. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -104,8 +92,6 @@ function openPosition(address marketAddress, int224 qty, uint32 leverage, uint25
 
 Opens a new position in the specified market.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | marketAddress | address | The address of the market. |
@@ -114,8 +100,6 @@ Opens a new position in the specified market.
 | takerMargin | uint256 | The margin required for the taker. |
 | makerMargin | uint256 | The margin required for the maker. |
 | maxAllowableTradingFee | uint256 | The maximum allowable trading fee. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -129,8 +113,6 @@ function closePosition(address marketAddress, uint256 positionId) external
 
 Closes the specified position in the specified market.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | marketAddress | address | The address of the market. |
@@ -143,8 +125,6 @@ function claimPosition(address marketAddress, uint256 positionId) external
 ```
 
 Claims the specified position in the specified market.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

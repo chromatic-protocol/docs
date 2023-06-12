@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: Account
+title: Account.sol
+---
+# [Account.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/periphery/Account.sol)
 
 ## Account
 
@@ -70,8 +74,6 @@ function initialize(address _owner, address _router, address _marketFactory) ext
 
 Initializes the account with the specified owner, router, and market factory addresses.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | _owner | address | The address of the account owner. |
@@ -86,13 +88,9 @@ function balance(address token) public view returns (uint256)
 
 Returns the balance of the specified token for the account.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the token. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -105,8 +103,6 @@ function withdraw(address token, uint256 amount) external
 ```
 
 Withdraws the specified amount of tokens from the account.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -133,14 +129,10 @@ function hasPositionId(address market, uint256 id) public view returns (bool)
 
 Checks if the specified market has the specified position ID.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address |  |
 | id | uint256 |  |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -154,13 +146,9 @@ function getPositionIds(address market) external view returns (uint256[])
 
 Retrieves an array of position IDs owned by this account for the specified market.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address |  |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -174,8 +162,6 @@ function openPosition(address marketAddress, int224 qty, uint32 leverage, uint25
 
 Opens a new position in the specified market.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | marketAddress | address | The address of the market. |
@@ -184,8 +170,6 @@ Opens a new position in the specified market.
 | takerMargin | uint256 | The margin required for the taker. |
 | makerMargin | uint256 | The margin required for the maker. |
 | maxAllowableTradingFee | uint256 | The maximum allowable trading fee. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -198,8 +182,6 @@ function closePosition(address marketAddress, uint256 positionId) external
 ```
 
 Closes the specified position in the specified market.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -214,8 +196,6 @@ function claimPosition(address marketAddress, uint256 positionId) external
 
 Claims the specified position in the specified market.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | marketAddress | address | The address of the market. |
@@ -228,8 +208,6 @@ function openPositionCallback(address settlementToken, address vault, uint256 ma
 ```
 
 Callback function called after opening a position.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -245,8 +223,6 @@ function claimPositionCallback(uint256 positionId, bytes data) external
 ```
 
 Callback function called after claiming a position.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

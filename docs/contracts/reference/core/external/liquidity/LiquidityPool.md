@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: LiquidityPool
+title: LiquidityPool.sol
+---
+# [LiquidityPool.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/external/liquidity/LiquidityPool.sol)
 
 ## LiquidityPool
 
@@ -20,8 +24,6 @@ event LiquidityBinEarningAccumulated(uint16 feeRate, bytes1 binType, uint256 ear
 ```
 
 Emitted when earning is accumulated for a liquidity bin.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -46,8 +48,6 @@ modifier _validTradingFeeRate(int16 tradingFeeRate)
 
 Modifier to validate the trading fee rate.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | tradingFeeRate | int16 | The trading fee rate to validate. |
@@ -60,8 +60,6 @@ function initialize(struct LiquidityPool self) external
 
 Initializes the LiquidityPool.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct LiquidityPool | The reference to the LiquidityPool. |
@@ -73,8 +71,6 @@ function settle(struct LiquidityPool self, struct LpContext ctx) external
 ```
 
 Settles the liquidity bins in the LiquidityPool.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -100,16 +96,12 @@ _This function prepares bin margins by performing the following steps:
      4. Creates an array of BinMargin structs
         containing the trading fee rate and corresponding margin amount for each bin._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct LiquidityPool | The reference to the LiquidityPool. |
 | qty | int224 | The quantity of the position. |
 | makerMargin | uint256 | The maker margin of the position. |
 | minimumBinMargin | uint256 |  |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -126,8 +118,6 @@ Accepts an open position and opens corresponding liquidity bins.
 _This function calculates the target liquidity bins based on the position quantity.
      It prepares the bin margins and divides the position parameters accordingly.
      Then, it opens the liquidity bins with the corresponding parameters and trading fees._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -147,8 +137,6 @@ _This function calculates the target liquidity bins based on the position quanti
      It retrieves the maker margin and bin margins from the position.
      Then, it divides the position parameters to match the bin margins.
      Finally, it closes the liquidity bins with the provided parameters._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -171,8 +159,6 @@ _This function verifies if the absolute value of the realized position pnl is wi
      Depending on the value of the realized position pnl, it either claims the position fully or partially.
      The claimed pnl is distributed among the liquidity bins according to their respective margins._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct LiquidityPool | The reference to the LiquidityPool storage. |
@@ -191,8 +177,6 @@ Accepts an add liquidity request
 
 _This function validates the trading fee rate
      and calls the acceptAddLiquidity function on the target liquidity bin._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -213,8 +197,6 @@ Accepts a claim liquidity request
 _This function validates the trading fee rate
      and calls the acceptClaimLiquidity function on the target liquidity bin._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct LiquidityPool | The reference to the LiquidityPool storage. |
@@ -222,8 +204,6 @@ _This function validates the trading fee rate
 | tradingFeeRate | int16 | The trading fee rate associated with the liquidity bin. |
 | amount | uint256 | The amount of liquidity to claim.        (should be the same as the one used in acceptAddLiquidity) |
 | oracleVersion | uint256 | The oracle version used for the claim.        (should be the oracle version when call acceptAddLiquidity) |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -240,8 +220,6 @@ Accepts a remove liquidity request
 
 _This function validates the trading fee rate
      and calls the acceptRemoveLiquidity function on the target liquidity bin._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -262,8 +240,6 @@ Accepts a withdraw liquidity request
 _This function validates the trading fee rate
      and calls the acceptWithdrawLiquidity function on the target liquidity bin._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct LiquidityPool | The reference to the LiquidityPool storage. |
@@ -271,8 +247,6 @@ _This function validates the trading fee rate
 | tradingFeeRate | int16 | The trading fee rate associated with the liquidity bin. |
 | clbTokenAmount | uint256 | The amount of CLB tokens to withdraw.        (should be the same as the one used in acceptRemoveLiquidity) |
 | oracleVersion | uint256 | The oracle version used for the withdrawal.        (should be the oracle version when call acceptRemoveLiquidity) |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -290,16 +264,12 @@ Calculates the amount of CLB tokens to be minted for the given amount of base to
 _This function validates the trading fee rate
      and calls the calculateCLBTokenMinting function on the target liquidity bin._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct LiquidityPool | The reference to the LiquidityPool storage. |
 | ctx | struct LpContext | The LpContext object. |
 | tradingFeeRate | int16 | The trading fee rate associated with the liquidity bin. |
 | amount | uint256 | The amount of base tokens. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -316,16 +286,12 @@ Calculates the value of the given amount of CLB tokens for the specified trading
 _This function validates the trading fee rate
      and calls the calculateCLBTokenValue function on the target liquidity bin._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct LiquidityPool | The reference to the LiquidityPool storage. |
 | ctx | struct LpContext | The LpContext object. |
 | tradingFeeRate | int16 | The trading fee rate associated with the liquidity bin. |
 | clbTokenAmount | uint256 | The amount of CLB tokens. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -342,14 +308,10 @@ Retrieves the total liquidity amount in base tokens for the specified trading fe
 _This function retrieves the liquidity bin based on the trading fee rate
      and calls the liquidity function on it._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct LiquidityPool | The reference to the LiquidityPool storage. |
 | tradingFeeRate | int16 | The trading fee rate associated with the liquidity bin. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -366,14 +328,10 @@ Retrieves the free liquidity amount in base tokens for the specified trading fee
 _This function retrieves the liquidity bin based on the trading fee rate
      and calls the freeLiquidity function on it._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct LiquidityPool | The reference to the LiquidityPool storage. |
 | tradingFeeRate | int16 | The trading fee rate associated with the liquidity bin. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -392,8 +350,6 @@ _This function distributes the earnings among the liquidity bins,
      It iterates through the trading fee rates
      and distributes the proportional amount of earnings to each bin
      based on its total balance relative to the market balance._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

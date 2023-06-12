@@ -165,45 +165,23 @@ _Withdraws liquidity from a liquidity receipt._
 | receiptId | uint256 | The ID of the liquidity receipt. |
 | data | bytes | Additional data for the liquidity callback. |
 
-### getBinLiquidities
+### getBinLiquidity
 
 ```solidity
-function getBinLiquidities(int16[] tradingFeeRates) external returns (uint256[] amounts)
+function getBinLiquidity(int16 tradingFeeRate) external view returns (uint256 amount)
 ```
 
-_Retrieves the bin liquidities for the given trading fee rates._
-
-#### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| tradingFeeRates | int16[] | The trading fee rates to retrieve bin liquidities for. |
-
-#### Return Values
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| amounts | uint256[] | An array of bin liquidities corresponding to the trading fee rates. |
-
-### getBinFreeLiquidities
+### getBinFreeLiquidity
 
 ```solidity
-function getBinFreeLiquidities(int16[] tradingFeeRates) external returns (uint256[] amounts)
+function getBinFreeLiquidity(int16 tradingFeeRate) external view returns (uint256 amount)
 ```
 
-_Retrieves the bin free liquidities for the given trading fee rates._
+### getBinValue
 
-#### Parameters
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| tradingFeeRates | int16[] | The trading fee rates to retrieve bin free liquidities for. |
-
-#### Return Values
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| amounts | uint256[] | An array of bin free liquidities corresponding to the trading fee rates. |
+```solidity
+function getBinValue(int16 tradingFeeRate) external view returns (uint256 value)
+```
 
 ### distributeEarningToBins
 
@@ -261,4 +239,16 @@ _Calculates the value of CLB tokens for the given parameters._
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | [0] | uint256 | The value of CLB tokens. |
+
+### getLpReceipt
+
+```solidity
+function getLpReceipt(uint256 receiptId) external view returns (struct LpReceipt)
+```
+
+### getClaimBurning
+
+```solidity
+function getClaimBurning(struct LpReceipt reciept) external view returns (uint256 clbTokenAmount, uint256 burningAmount, uint256 tokenAmount)
+```
 

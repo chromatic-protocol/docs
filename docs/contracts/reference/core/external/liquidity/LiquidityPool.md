@@ -401,3 +401,15 @@ _This function distributes the earnings among the liquidity bins,
 | earning | uint256 | The total earnings to be distributed. |
 | marketBalance | uint256 | The market balance. |
 
+### binValue
+
+```solidity
+function binValue(struct LiquidityPool self, int16 _tradingFeeRate, struct LpContext ctx) external view returns (uint256 value)
+```
+
+### getClaimBurning
+
+```solidity
+function getClaimBurning(struct LiquidityPool self, int16 tradingFeeRate, uint256 oracleVersion) external view returns (uint256 clbTokenAmount, uint256 burningAmount, uint256 tokenAmount)
+```
+

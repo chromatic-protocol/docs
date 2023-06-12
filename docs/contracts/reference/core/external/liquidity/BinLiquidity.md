@@ -236,3 +236,9 @@ _If the CLB token total supply is zero, returns zero.
 | ---- | ---- | ----------- |
 | [0] | uint256 | The value of the CLB tokens. |
 
+### getClaimBurning
+
+```solidity
+function getClaimBurning(struct BinLiquidity self, uint256 oracleVersion) internal view returns (uint256 clbTokenAmount, uint256 burningAmount, uint256 tokenAmount)
+```
+

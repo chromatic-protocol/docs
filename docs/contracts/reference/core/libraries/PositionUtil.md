@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: PositionUtil
+title: PositionUtil.sol
+---
+# [PositionUtil.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/libraries/PositionUtil.sol)
 
 ## QTY_DECIMALS
 
@@ -47,13 +51,9 @@ _It adds 1 to the `oracleVersion`
      If the `oracleVersion` is not valid,
      it will trigger an error with the message `INVALID_ORACLE_VERSION`._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | oracleVersion | uint256 | Input oracle version |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -71,14 +71,10 @@ _It calls another overloaded `settlePrice` function
      with an additional `OracleVersion` parameter,
      passing the `currentVersion` obtained from the `provider`_
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | provider | contract IOracleProvider | The oracle provider |
 | oracleVersion | uint256 | The oracle version of position |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -99,15 +95,11 @@ _It calculates the price by considering the `settleVersion`
      It retrieves the corresponding `OracleVersion` using `atVersion` from the `IOracleProvider`,
      and then calls `oraclePrice` to obtain the price._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | provider | contract IOracleProvider | The oracle provider |
 | oracleVersion | uint256 | The oracle version of position |
 | currentVersion | struct IOracleProvider.OracleVersion | The current oracle version |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -123,13 +115,9 @@ Extracts the price value from an `OracleVersion` struct
 
 _If the price is less than 0, it returns 0_
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | oracleVersion | struct IOracleProvider.OracleVersion | The memory instance of `OracleVersion` struct |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -153,15 +141,11 @@ _It first calculates the price difference (`delta`) between the exit price and t
      Finally, if `delta` is negative, indicating a loss,
      the absolute PnL is negated to represent a negative value._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | leveragedQty | int256 | The leveraged quantity of the position |
 | _entryPrice | UFixed18 | The entry price of the position |
 | _exitPrice | UFixed18 | The exit price of the position |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -178,8 +162,6 @@ Verifies the validity of a position quantity added to the bin
 _It ensures that the sign of the current quantity of the bin's position
      and the added quantity are same or zero.
      If the condition is not met, it triggers an error with the message `INVALID_POSITION_QTY`._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -199,8 +181,6 @@ _It ensures that the sign of the current quantity of the bin's position
      and the absolute removed quantity is not greater than the absolute current quantity.
      If the condition is not met, it triggers an error with the message `INVALID_POSITION_QTY`._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | currentQty | int256 | The current quantity of the bin's position |
@@ -214,14 +194,10 @@ function transactionAmount(int256 leveragedQty, UFixed18 price) internal pure re
 
 Calculates the transaction amount based on the leveraged quantity and price
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | leveragedQty | int256 | The leveraged quantity of the position |
 | price | UFixed18 | The price of the position |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

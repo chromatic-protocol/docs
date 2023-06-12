@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: ChromaticVault
+title: ChromaticVault.sol
+---
+# [ChromaticVault.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/ChromaticVault.sol)
 
 ## ChromaticVault
 
@@ -131,8 +135,6 @@ constructor(contract IChromaticMarketFactory _factory, address _automate, addres
 
 _Constructs a new ChromaticVault instance._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | _factory | contract IChromaticMarketFactory | The address of the Chromatic Market Factory contract. |
@@ -148,8 +150,6 @@ function onOpenPosition(uint256 positionId, uint256 takerMargin, uint256 trading
 Called when a position is opened by a market contract.
 
 _This function can only be called by a market contract._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -168,8 +168,6 @@ Called when a position is claimed by a market contract.
 
 _This function can only be called by a market contract._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | positionId | uint256 | The ID of the claimed position. |
@@ -187,8 +185,6 @@ Called when liquidity is added to the vault by a market contract.
 
 _This function can only be called by a market contract._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | amount | uint256 | The amount of liquidity being added. |
@@ -202,8 +198,6 @@ function onSettlePendingLiquidity(uint256 pendingDeposit, uint256 pendingWithdra
 Called when pending liquidity is settled in the vault by a market contract.
 
 _This function can only be called by a market contract._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -220,8 +214,6 @@ Called when liquidity is withdrawn from the vault by a market contract.
 
 _This function can only be called by a market contract._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | recipient | address | The address that will receive the withdrawn liquidity. |
@@ -237,15 +229,11 @@ Transfers the keeper fee from the market to the specified keeper.
 
 _This function can only be called by a market contract._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | keeper | address | The address of the keeper to receive the fee. |
 | fee | uint256 | The amount of the fee to transfer as native token. |
 | margin | uint256 | The margin amount used for the fee payment. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -259,16 +247,12 @@ function _transferKeeperFee(address token, address keeper, uint256 fee, uint256 
 
 Internal function to transfer the keeper fee.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
 | keeper | address | The address of the keeper to receive the fee. |
 | fee | uint256 | The amount of the fee to transfer as native token. |
 | margin | uint256 | The margin amount used for the fee payment. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -281,8 +265,6 @@ function transferProtocolFee(address market, address settlementToken, uint256 po
 ```
 
 Transfers the protocol fee to the DAO treasury address.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -298,8 +280,6 @@ function flashLoan(address token, uint256 amount, address recipient, bytes data)
 ```
 
 _Executes a flash loan._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -318,14 +298,10 @@ Retrieves the pending share of earnings for a specific bin (subset) of funds in 
 
 _The pending share of earnings is calculated based on the bin balance, maker balances, and market balances._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the market. |
 | binBalance | uint256 | The balance of funds in the bin. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -339,13 +315,9 @@ function resolveMakerEarningDistribution(address token) external view returns (b
 
 Resolves the maker earning distribution for a specific token.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -360,8 +332,6 @@ function distributeMakerEarning(address token) external
 
 Distributes the maker earning for a token to the each markets.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
@@ -373,8 +343,6 @@ function createMakerEarningDistributionTask(address token) external virtual
 ```
 
 Creates a maker earning distribution task for a token.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -388,8 +356,6 @@ function cancelMakerEarningDistributionTask(address token) external virtual
 
 Cancels a maker earning distribution task for a token.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | token | address | The address of the settlement token. |
@@ -401,8 +367,6 @@ function _distributeMakerEarning(address token, uint256 fee) internal
 ```
 
 _Internal function to distribute the maker earning for a token to the each markets._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -417,13 +381,9 @@ function resolveMarketEarningDistribution(address market) external view returns 
 
 Resolves the market earning distribution for a market.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the market. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -438,8 +398,6 @@ function distributeMarketEarning(address market) external
 
 Distributes the market earning for a market to the each bins.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the market. |
@@ -451,8 +409,6 @@ function createMarketEarningDistributionTask(address market) external virtual
 ```
 
 Creates a market earning distribution task for a market.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -466,8 +422,6 @@ function cancelMarketEarningDistributionTask(address market) external virtual
 
 Cancels a market earning distribution task for a market.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the market. |
@@ -479,8 +433,6 @@ function _distributeMarketEarning(address market, uint256 fee) internal
 ```
 
 _Internal function to distribute the market earning for a market to the each bins._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

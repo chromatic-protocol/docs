@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: LpReceipt
+title: LpReceipt.sol
+---
+# [LpReceipt.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/libraries/LpReceipt.sol)
 
 ## LpAction
 
@@ -34,13 +38,9 @@ function clbTokenId(struct LpReceipt self) internal pure returns (uint256)
 
 Computes the ID of the CLBToken contract based on the trading fee rate.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct LpReceipt | The LpReceipt struct. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

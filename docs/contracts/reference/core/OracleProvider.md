@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: OracleProvider
+title: OracleProvider.sol
+---
+# [OracleProvider.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/OracleProvider.sol)
 
 ## OracleProvider
 
@@ -12,8 +16,6 @@ constructor(address aggregator) public
 
 _Constructs an instance of the OracleProvider contract._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | aggregator | address | The address of the Chainlink aggregator contract. |
@@ -25,8 +27,6 @@ function description() external view returns (string)
 ```
 
 Retrieves the description of the Oracle Provider.
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -40,13 +40,9 @@ function atVersions(uint256[] versions) external view returns (struct IOraclePro
 
 Retrieves the Oracle Version instances at the specified versions.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | versions | uint256[] | An array of versions for which to retrieve the Oracle Versions. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

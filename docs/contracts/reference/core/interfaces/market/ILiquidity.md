@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: ILiquidity
+title: ILiquidity.sol
+---
+# [ILiquidity.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/interfaces/market/ILiquidity.sol)
 
 ## ILiquidity
 
@@ -36,8 +40,6 @@ event AddLiquidity(address recipient, struct LpReceipt receipt)
 
 _Emitted when liquidity is added to the market._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | recipient | address | The address to receive the CLB tokens. |
@@ -50,8 +52,6 @@ event ClaimLiquidity(address recipient, uint256 clbTokenAmount, struct LpReceipt
 ```
 
 _Emitted when liquidity is claimed from the market._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -67,8 +67,6 @@ event RemoveLiquidity(address recipient, struct LpReceipt receipt)
 
 _Emitted when liquidity is removed from the market._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | recipient | address | The address that receives the removed liquidity. |
@@ -81,8 +79,6 @@ event WithdrawLiquidity(address recipient, uint256 amount, uint256 burnedCLBToke
 ```
 
 _Emitted when liquidity is withdrawn from the market._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -99,15 +95,11 @@ function addLiquidity(address recipient, int16 tradingFeeRate, bytes data) exter
 
 _Adds liquidity to the market._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | recipient | address | The address to receive the liquidity tokens. |
 | tradingFeeRate | int16 | The trading fee rate for the liquidity. |
 | data | bytes | Additional data for the liquidity callback. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -120,8 +112,6 @@ function claimLiquidity(uint256 receiptId, bytes data) external
 ```
 
 _Claims liquidity from a liquidity receipt._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -136,15 +126,11 @@ function removeLiquidity(address recipient, int16 tradingFeeRate, bytes data) ex
 
 _Removes liquidity from the market._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | recipient | address | The address to receive the removed liquidity. |
 | tradingFeeRate | int16 | The trading fee rate for the liquidity. |
 | data | bytes | Additional data for the liquidity callback. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -157,8 +143,6 @@ function withdrawLiquidity(uint256 receiptId, bytes data) external
 ```
 
 _Withdraws liquidity from a liquidity receipt._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -191,8 +175,6 @@ function distributeEarningToBins(uint256 earning, uint256 marketBalance) externa
 
 _Distributes earning to the liquidity bins._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | earning | uint256 | The amount of earning to distribute. |
@@ -206,14 +188,10 @@ function calculateCLBTokenMinting(int16 tradingFeeRate, uint256 amount) external
 
 _Calculates the amount of CLB tokens to mint for the given parameters._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | tradingFeeRate | int16 | The trading fee rate. |
 | amount | uint256 | The amount of liquidity. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -227,14 +205,10 @@ function calculateCLBTokenValue(int16 tradingFeeRate, uint256 clbTokenAmount) ex
 
 _Calculates the value of CLB tokens for the given parameters._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | tradingFeeRate | int16 | The trading fee rate. |
 | clbTokenAmount | uint256 | The amount of CLB tokens. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: AccruedInterest
+title: AccruedInterest.sol
+---
+# [AccruedInterest.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/external/liquidity/AccruedInterest.sol)
 
 ## AccruedInterest
 
@@ -21,8 +25,6 @@ function accumulate(struct AccruedInterest self, struct LpContext ctx, uint256 t
 
 Accumulates interest for a given token amount and period of time
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct AccruedInterest | The AccruedInterest storage |
@@ -38,8 +40,6 @@ function deduct(struct AccruedInterest self, uint256 amount) internal
 
 Deducts interest from the accumulated interest.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct AccruedInterest | The AccruedInterest storage. |
@@ -53,16 +53,12 @@ function calculateInterest(struct AccruedInterest self, struct LpContext ctx, ui
 
 Calculates the accumulated interest for a given token amount and period of time
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct AccruedInterest | The AccruedInterest storage |
 | ctx | struct LpContext | The LpContext instance for interest calculation |
 | tokenAmount | uint256 | The amount of tokens to calculate interest for |
 | until | uint256 | The timestamp until which interest should be accumulated |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

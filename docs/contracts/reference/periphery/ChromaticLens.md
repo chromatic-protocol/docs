@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: ChromaticLens
+title: ChromaticLens.sol
+---
+# [ChromaticLens.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/periphery/ChromaticLens.sol)
 
 ## ChromaticLens
 

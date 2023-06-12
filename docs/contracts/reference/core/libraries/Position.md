@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: Position
+title: Position.sol
+---
+# [Position.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/libraries/Position.sol)
 
 ## Position
 
@@ -29,13 +33,9 @@ function entryVersion(struct Position self) internal pure returns (uint256)
 
 Calculates the settle version for the position's entry
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct Position | The memory instance of the `Position` struct |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -49,13 +49,9 @@ function exitVersion(struct Position self) internal pure returns (uint256)
 
 Calculates the settle version for the position's exit
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct Position | The memory instance of the `Position` struct |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -70,14 +66,10 @@ function leveragedQty(struct Position self, struct LpContext ctx) internal pure 
 Calculates the leveraged quantity of the position
         based on the position's quantity and leverage
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct Position | The memory instance of the `Position` struct |
 | ctx | struct LpContext | The context object for this transaction |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -94,14 +86,10 @@ Calculates the entry price of the position based on the position's open oracle v
 _It fetches oracle price from `IOracleProvider`
      at the settle version calculated based on the position's open oracle version_
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct Position | The memory instance of the `Position` struct |
 | ctx | struct LpContext | The context object for this transaction |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -118,14 +106,10 @@ Calculates the exit price of the position based on the position's close oracle v
 _It fetches oracle price from `IOracleProvider`
      at the settle version calculated based on the position's close oracle version_
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct Position | The memory instance of the `Position` struct |
 | ctx | struct LpContext | The context object for this transaction |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -140,14 +124,10 @@ function pnl(struct Position self, struct LpContext ctx) internal view returns (
 Calculates the profit or loss of the position
         based on the close oracle version and the leveraged quantity
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct Position | The memory instance of the `Position` struct |
 | ctx | struct LpContext | The context object for this transaction |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -164,13 +144,9 @@ Calculates the total margin required for the makers of the position
 _The maker margin is calculated by summing up the amounts of all bin margins
      in the `_binMargins` array_
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct Position | The memory instance of the `Position` struct |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -187,13 +163,9 @@ Calculates the total trading fee for the position
 _The trading fee is calculated by summing up the trading fees of all bin margins
      in the `_binMargins` array_
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct Position | The memory instance of the `Position` struct |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -208,13 +180,9 @@ function binMargins(struct Position self) internal pure returns (struct BinMargi
 Returns an array of BinMargin instances
         representing the bin margins for the position
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct Position | The memory instance of the `Position` struct |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -228,8 +196,6 @@ function setBinMargins(struct Position self, struct BinMargin[] margins) interna
 
 Sets the `_binMargins` array for the position
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct Position | The memory instance of the `Position` struct |
@@ -242,8 +208,6 @@ function storeTo(struct Position self, struct Position storedPosition) internal
 ```
 
 Stores the memory values of the `Position` struct to the storage
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

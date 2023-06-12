@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: Liquidator
+title: Liquidator.sol
+---
+# [Liquidator.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/base/Liquidator.sol)
 
 ## Liquidator
 
@@ -26,8 +30,6 @@ constructor(contract IChromaticMarketFactory _factory) internal
 
 _Initializes the Liquidator contract._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | _factory | contract IChromaticMarketFactory | The address of the ChromaticMarketFactory contract. |
@@ -39,8 +41,6 @@ function getAutomate() internal view virtual returns (contract IAutomate)
 ```
 
 _Retrieves the IAutomate contract instance._
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -56,8 +56,6 @@ Creates a liquidation task for a given position.
 
 _Can only be called by a registered market._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | positionId | uint256 | The ID of the position to be liquidated. |
@@ -71,8 +69,6 @@ function cancelLiquidationTask(uint256 positionId) external
 Cancels a liquidation task for a given position.
 
 _Can only be called by a registered market._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -88,14 +84,10 @@ Resolves the liquidation of a position.
 
 _This function is called by the Gelato automation system._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | _market | address |  |
 | positionId | uint256 | The ID of the position to be liquidated. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -109,8 +101,6 @@ function _liquidate(address _market, uint256 positionId, uint256 fee) internal
 ```
 
 _Internal function to perform the liquidation of a position._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -128,8 +118,6 @@ Creates a claim position task for a given position.
 
 _Can only be called by a registered market._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | positionId | uint256 | The ID of the position to be claimed. |
@@ -143,8 +131,6 @@ function cancelClaimPositionTask(uint256 positionId) external
 Cancels a claim position task for a given position.
 
 _Can only be called by a registered market._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -160,14 +146,10 @@ Resolves the claim of a position.
 
 _This function is called by the Gelato automation system._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | _market | address |  |
 | positionId | uint256 | The ID of the position to be claimed. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -181,8 +163,6 @@ function _claimPosition(address _market, uint256 positionId, uint256 fee) intern
 ```
 
 _Internal function to perform the claim of a position._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -198,8 +178,6 @@ function _createTask(mapping(address => mapping(uint256 => bytes32)) registry, u
 
 _Internal function to create a Gelato task for liquidation or claim position._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | registry | mapping(address &#x3D;&gt; mapping(uint256 &#x3D;&gt; bytes32)) | The mapping to store task IDs. |
@@ -214,8 +192,6 @@ function _cancelTask(mapping(address => mapping(uint256 => bytes32)) registry, u
 ```
 
 _Internal function to cancel a Gelato task._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: BinMargin
+title: BinMargin.sol
+---
+# [BinMargin.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/libraries/BinMargin.sol)
 
 ## BinMargin
 
@@ -27,13 +31,9 @@ function tradingFee(struct BinMargin self) internal pure returns (uint256)
 
 Calculates the trading fee based on the margin amount and the trading fee rate.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct BinMargin | The BinMargin struct |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: Trade
+title: Trade.sol
+---
+# [Trade.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/base/market/Trade.sol)
 
 ## Trade
 
@@ -18,8 +22,6 @@ function openPosition(int224 qty, uint32 leverage, uint256 takerMargin, uint256 
 
 _Opens a new position in the market._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | qty | int224 | The quantity of the position. |
@@ -28,8 +30,6 @@ _Opens a new position in the market._
 | makerMargin | uint256 | The margin amount provided by the maker. |
 | maxAllowableTradingFee | uint256 | The maximum allowable trading fee for the position. |
 | data | bytes | Additional data for the position callback. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -43,8 +43,6 @@ function closePosition(uint256 positionId) external
 
 _Closes a position in the market._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | positionId | uint256 | The ID of the position to close. |
@@ -56,8 +54,6 @@ function claimPosition(uint256 positionId, address recipient, bytes data) extern
 ```
 
 _Claims a closed position in the market._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -73,8 +69,6 @@ function claimPosition(uint256 positionId, address keeper, uint256 keeperFee) ex
 
 _Claims a closed position on behalf of a keeper._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | positionId | uint256 | The ID of the position to claim. |
@@ -89,8 +83,6 @@ function liquidate(uint256 positionId, address keeper, uint256 keeperFee) extern
 
 _Liquidates a position._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | positionId | uint256 | The ID of the position to liquidate. |
@@ -104,8 +96,6 @@ function _claimPosition(struct LpContext ctx, struct Position position, int256 p
 ```
 
 _Internal function for claiming a position._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -124,13 +114,9 @@ function checkLiquidation(uint256 positionId) external view returns (bool _liqui
 
 _Checks if a position is eligible for liquidation._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | positionId | uint256 | The ID of the position to check. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -144,14 +130,10 @@ function _checkLiquidation(struct LpContext ctx, struct Position position) inter
 
 _Internal function for checking if a position should be liquidated._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | ctx | struct LpContext | The LpContext containing the current oracle version and synchronization information. |
 | position | struct Position | The Position object representing the position to be checked. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -166,13 +148,9 @@ function checkClaimPosition(uint256 positionId) external view returns (bool)
 
 _Checks if a position is eligible for claim._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | positionId | uint256 | The ID of the position to check. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -186,14 +164,10 @@ function _checkClaimPosition(struct Position position, struct LpContext ctx) int
 
 _Internal function for checking if a position can be claimed._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | position | struct Position | The Position object representing the position to be checked. |
 | ctx | struct LpContext | The LpContext containing the current oracle version and synchronization information. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -213,13 +187,9 @@ function getPositions(uint256[] positionIds) external view returns (struct Posit
 
 _Retrieves multiple positions by their IDs._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | positionIds | uint256[] | The IDs of the positions to retrieve. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

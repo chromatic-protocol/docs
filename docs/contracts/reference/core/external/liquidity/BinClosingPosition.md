@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: BinClosingPosition
+title: BinClosingPosition.sol
+---
+# [BinClosingPosition.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/external/liquidity/BinClosingPosition.sol)
 
 ## BinClosingPosition
 
@@ -25,8 +29,6 @@ function settleAccruedInterest(struct BinClosingPosition self, struct LpContext 
 
 Settles the accumulated interest of the closing position.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct BinClosingPosition | The BinClosingPosition storage. |
@@ -39,8 +41,6 @@ function onClosePosition(struct BinClosingPosition self, struct LpContext ctx, s
 ```
 
 Handles the closing of a position.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -56,8 +56,6 @@ function onClaimPosition(struct BinClosingPosition self, struct LpContext ctx, s
 
 Handles the claiming of a position.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct BinClosingPosition | The BinPendingPosition storage. |
@@ -72,14 +70,10 @@ function currentInterest(struct BinClosingPosition self, struct LpContext ctx) i
 
 Calculates the current accrued interest of the closing position.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct BinClosingPosition | The BinClosingPosition storage. |
 | ctx | struct LpContext | The LpContext. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

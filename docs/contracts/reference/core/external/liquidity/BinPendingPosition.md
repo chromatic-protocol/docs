@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: BinPendingPosition
+title: BinPendingPosition.sol
+---
+# [BinPendingPosition.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/external/liquidity/BinPendingPosition.sol)
 
 ## BinPendingPosition
 
@@ -24,8 +28,6 @@ function settleAccruedInterest(struct BinPendingPosition self, struct LpContext 
 
 Settles the accumulated interest of the pending position.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct BinPendingPosition | The BinPendingPosition storage. |
@@ -38,8 +40,6 @@ function onOpenPosition(struct BinPendingPosition self, struct LpContext ctx, st
 ```
 
 Handles the opening of a position.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -55,8 +55,6 @@ function onClosePosition(struct BinPendingPosition self, struct LpContext ctx, s
 
 Handles the closing of a position.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct BinPendingPosition | The BinPendingPosition storage. |
@@ -71,14 +69,10 @@ function unrealizedPnl(struct BinPendingPosition self, struct LpContext ctx) int
 
 Calculates the unrealized profit or loss (PnL) of the pending position.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct BinPendingPosition | The BinPendingPosition storage. |
 | ctx | struct LpContext | The LpContext. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -92,14 +86,10 @@ function currentInterest(struct BinPendingPosition self, struct LpContext ctx) i
 
 Calculates the current accrued interest of the pending position.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct BinPendingPosition | The BinPendingPosition storage. |
 | ctx | struct LpContext | The LpContext. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -113,14 +103,10 @@ function entryPrice(struct BinPendingPosition self, struct LpContext ctx) intern
 
 Calculates the entry price of the pending position.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct BinPendingPosition | The BinPendingPosition storage. |
 | ctx | struct LpContext | The LpContext. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

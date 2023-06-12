@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: ICLBToken
+title: ICLBToken.sol
+---
+# [ICLBToken.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/interfaces/ICLBToken.sol)
 
 ## ICLBToken
 
@@ -12,13 +16,9 @@ function totalSupply(uint256 id) external view returns (uint256)
 
 _Retrieves the total supply of tokens for a given token ID._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | id | uint256 | The token ID for which to retrieve the total supply. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -31,8 +31,6 @@ function mint(address to, uint256 id, uint256 amount, bytes data) external
 ```
 
 _Mints new tokens and assigns them to the specified address._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -49,8 +47,6 @@ function burn(address from, uint256 id, uint256 amount) external
 
 _Burns tokens from a specified address._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | from | address | The address from which to burn tokens. |
@@ -65,8 +61,6 @@ function decimals() external view returns (uint8)
 
 _Retrieves the number of decimals used for token amounts._
 
-#### Return Values
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | [0] | uint8 | The number of decimals used for token amounts. |
@@ -79,13 +73,9 @@ function name(uint256 id) external view returns (string)
 
 _Retrieves the name of a token._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | id | uint256 | The token ID for which to retrieve the name. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -99,13 +89,9 @@ function description(uint256 id) external view returns (string)
 
 _Retrieves the description of a token._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | id | uint256 | The token ID for which to retrieve the description. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -119,13 +105,9 @@ function image(uint256 id) external view returns (string)
 
 _Retrieves the image URI of a token._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | id | uint256 | The token ID for which to retrieve the image URI. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

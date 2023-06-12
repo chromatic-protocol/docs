@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: Types
+title: Types.sol
+---
+# [Types.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/base/gelato/Types.sol)
 
 ## Module
 

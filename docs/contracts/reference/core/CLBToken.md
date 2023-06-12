@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: CLBToken
+title: CLBToken.sol
+---
+# [CLBToken.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/CLBToken.sol)
 
 ## CLBToken
 
@@ -12,8 +16,6 @@ uint8 decimals
 ```
 
 _Retrieves the number of decimals used for token amounts._
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -57,13 +59,9 @@ function totalSupply(uint256 id) public view virtual returns (uint256)
 
 _Retrieves the total supply of tokens for a given token ID._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | id | uint256 | The token ID for which to retrieve the total supply. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -76,8 +74,6 @@ function mint(address to, uint256 id, uint256 amount, bytes data) external
 ```
 
 _This function can only be called by the Chromatic Market contract._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -94,8 +90,6 @@ function burn(address from, uint256 id, uint256 amount) external
 
 _This function can only be called by the Chromatic Market contract._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | from | address | The address from which to burn tokens. |
@@ -110,13 +104,9 @@ function name(uint256 id) public view returns (string)
 
 _Retrieves the name of a token._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | id | uint256 | The token ID for which to retrieve the name. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -130,13 +120,9 @@ function description(uint256 id) public view returns (string)
 
 _Retrieves the description of a token._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | id | uint256 | The token ID for which to retrieve the description. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -150,13 +136,9 @@ function image(uint256 id) public view returns (string)
 
 _Retrieves the image URI of a token._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | id | uint256 | The token ID for which to retrieve the image URI. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -181,13 +163,9 @@ function encodeId(int16 tradingFeeRate) internal pure returns (uint256 id)
 
 _Encodes a trading fee rate into a token ID._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | tradingFeeRate | int16 | The trading fee rate to encode. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -201,13 +179,9 @@ function decodeId(uint256 id) internal pure returns (int16 tradingFeeRate)
 
 _Decodes a token ID into a trading fee rate._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | id | uint256 | The token ID to decode. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: ChromaticMarket
+title: ChromaticMarket.sol
+---
+# [ChromaticMarket.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/ChromaticMarket.sol)
 
 ## ChromaticMarket
 

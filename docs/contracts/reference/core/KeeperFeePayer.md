@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: KeeperFeePayer
+title: KeeperFeePayer.sol
+---
+# [KeeperFeePayer.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/KeeperFeePayer.sol)
 
 ## KeeperFeePayer
 
@@ -52,8 +56,6 @@ constructor(contract IChromaticMarketFactory _factory, contract ISwapRouter _uni
 
 _Constructor function._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | _factory | contract IChromaticMarketFactory | The address of the ChromaticMarketFactory contract. |
@@ -70,8 +72,6 @@ Only the DAO can call this function.
 
 _Sets the Uniswap router address._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | _uniswapRouter | contract ISwapRouter | The address of the Uniswap router contract. |
@@ -85,8 +85,6 @@ function approveToRouter(address token, bool approve) external
 Approves or revokes approval to the Uniswap router for a given token.
 
 _Only the DAO can call this function._
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -103,15 +101,11 @@ Pays the keeper fee using Uniswap swaps.
 
 _Only the Vault can call this function._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | tokenIn | address | The address of the token being swapped. |
 | amountOut | uint256 | The desired amount of output tokens. |
 | keeperAddress | address | The address of the keeper to receive the fee. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -125,16 +119,12 @@ function swapExactOutput(address tokenIn, address recipient, uint256 amountOut, 
 
 _Executes a Uniswap swap with exact output amount._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | tokenIn | address | The address of the input token. |
 | recipient | address | The address that will receive the output tokens. |
 | amountOut | uint256 | The desired amount of output tokens. |
 | amountInMaximum | uint256 | The maximum amount of input tokens allowed for the swap. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: OracleProviderRegistry
+title: OracleProviderRegistry.sol
+---
+# [OracleProviderRegistry.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/external/registry/OracleProviderRegistry.sol)
 
 ## OracleProviderRegistry
 
@@ -22,8 +26,6 @@ Registers an oracle provider in the registry.
 
 _Throws an error if the oracle provider is already registered._
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct OracleProviderRegistry | The OracleProviderRegistry storage. |
@@ -36,8 +38,6 @@ function unregister(struct OracleProviderRegistry self, address oracleProvider) 
 ```
 
 Unregisters an oracle provider from the registry.
-
-#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -52,13 +52,9 @@ function oracleProviders(struct OracleProviderRegistry self) external view retur
 
 Returns an array of all registered oracle providers.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct OracleProviderRegistry | The OracleProviderRegistry storage. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -72,14 +68,10 @@ function isRegistered(struct OracleProviderRegistry self, address oracleProvider
 
 Checks if an oracle provider is registered in the registry.
 
-#### Parameters
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct OracleProviderRegistry | The OracleProviderRegistry storage. |
 | oracleProvider | address | The address of the oracle provider to check. |
-
-#### Return Values
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

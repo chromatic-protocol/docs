@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: AutomateTaskCreator
+title: AutomateTaskCreator.sol
+---
+# [AutomateTaskCreator.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/base/gelato/AutomateTaskCreator.sol)
 
 ## AutomateTaskCreator
 

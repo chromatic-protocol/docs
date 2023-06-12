@@ -1,4 +1,8 @@
-# Solidity API
+---
+id: IChromaticMarket
+title: IChromaticMarket.sol
+---
+# [IChromaticMarket.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/interfaces/IChromaticMarket.sol)
 
 ## IChromaticMarket
 

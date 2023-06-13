@@ -16,9 +16,6 @@ contract IChromaticMarketFactory factory
 
 _Returns the factory contract for the market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-
 ### oracleProvider
 
 ```solidity
@@ -26,9 +23,6 @@ contract IOracleProvider oracleProvider
 ```
 
 _Returns the oracle provider contract for the market._
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
 
 ### settlementToken
 
@@ -38,9 +32,6 @@ contract IERC20Metadata settlementToken
 
 _Returns the settlement token of the market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-
 ### clbToken
 
 ```solidity
@@ -48,9 +39,6 @@ contract ICLBToken clbToken
 ```
 
 _Returns the CLB token contract for the market._
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
 
 ### liquidator
 
@@ -60,9 +48,6 @@ contract IChromaticLiquidator liquidator
 
 _Returns the liquidator contract for the market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-
 ### vault
 
 ```solidity
@@ -71,9 +56,6 @@ contract IChromaticVault vault
 
 _Returns the vault contract for the market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-
 ### keeperFeePayer
 
 ```solidity
@@ -81,9 +63,6 @@ contract IKeeperFeePayer keeperFeePayer
 ```
 
 _Returns the keeper fee payer contract for the market._
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
 
 ### liquidityPool
 

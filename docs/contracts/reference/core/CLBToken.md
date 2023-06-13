@@ -17,9 +17,6 @@ uint8 decimals
 
 _Retrieves the number of decimals used for token amounts._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-
 ### market
 
 ```solidity

@@ -135,7 +135,7 @@ BaseContract.callStatic
 
 #### Defined in
 
-[src/gen/contracts/periphery/AccountFactory.ts:159](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/contracts/periphery/AccountFactory.ts#L159)
+[src/gen/contracts/periphery/AccountFactory.ts:159](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/periphery/AccountFactory.ts#L159)
 
 ___
 
@@ -171,7 +171,7 @@ BaseContract.estimateGas
 
 #### Defined in
 
-[src/gen/contracts/periphery/AccountFactory.ts:192](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/contracts/periphery/AccountFactory.ts#L192)
+[src/gen/contracts/periphery/AccountFactory.ts:192](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/periphery/AccountFactory.ts#L192)
 
 ___
 
@@ -192,7 +192,7 @@ BaseContract.filters
 
 #### Defined in
 
-[src/gen/contracts/periphery/AccountFactory.ts:181](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/contracts/periphery/AccountFactory.ts#L181)
+[src/gen/contracts/periphery/AccountFactory.ts:181](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/periphery/AccountFactory.ts#L181)
 
 ___
 
@@ -214,7 +214,7 @@ BaseContract.functions
 
 #### Defined in
 
-[src/gen/contracts/periphery/AccountFactory.ts:113](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/contracts/periphery/AccountFactory.ts#L113)
+[src/gen/contracts/periphery/AccountFactory.ts:113](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/periphery/AccountFactory.ts#L113)
 
 ___
 
@@ -228,7 +228,7 @@ BaseContract.interface
 
 #### Defined in
 
-[src/gen/contracts/periphery/AccountFactory.ts:92](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/contracts/periphery/AccountFactory.ts#L92)
+[src/gen/contracts/periphery/AccountFactory.ts:92](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/periphery/AccountFactory.ts#L92)
 
 ___
 
@@ -242,7 +242,7 @@ BaseContract.off
 
 #### Defined in
 
-[src/gen/contracts/periphery/AccountFactory.ts:108](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/contracts/periphery/AccountFactory.ts#L108)
+[src/gen/contracts/periphery/AccountFactory.ts:108](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/periphery/AccountFactory.ts#L108)
 
 ___
 
@@ -256,7 +256,7 @@ BaseContract.on
 
 #### Defined in
 
-[src/gen/contracts/periphery/AccountFactory.ts:109](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/contracts/periphery/AccountFactory.ts#L109)
+[src/gen/contracts/periphery/AccountFactory.ts:109](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/periphery/AccountFactory.ts#L109)
 
 ___
 
@@ -270,7 +270,7 @@ BaseContract.once
 
 #### Defined in
 
-[src/gen/contracts/periphery/AccountFactory.ts:110](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/contracts/periphery/AccountFactory.ts#L110)
+[src/gen/contracts/periphery/AccountFactory.ts:110](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/periphery/AccountFactory.ts#L110)
 
 ___
 
@@ -292,7 +292,7 @@ BaseContract.populateTransaction
 
 #### Defined in
 
-[src/gen/contracts/periphery/AccountFactory.ts:216](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/contracts/periphery/AccountFactory.ts#L216)
+[src/gen/contracts/periphery/AccountFactory.ts:216](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/periphery/AccountFactory.ts#L216)
 
 ___
 
@@ -320,7 +320,7 @@ BaseContract.removeListener
 
 #### Defined in
 
-[src/gen/contracts/periphery/AccountFactory.ts:111](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/contracts/periphery/AccountFactory.ts#L111)
+[src/gen/contracts/periphery/AccountFactory.ts:111](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/periphery/AccountFactory.ts#L111)
 
 ___
 
@@ -446,7 +446,7 @@ BaseContract.attach
 
 #### Defined in
 
-[src/gen/contracts/periphery/AccountFactory.ts:89](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/contracts/periphery/AccountFactory.ts#L89)
+[src/gen/contracts/periphery/AccountFactory.ts:89](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/periphery/AccountFactory.ts#L89)
 
 ___
 
@@ -470,7 +470,7 @@ BaseContract.connect
 
 #### Defined in
 
-[src/gen/contracts/periphery/AccountFactory.ts:88](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/contracts/periphery/AccountFactory.ts#L88)
+[src/gen/contracts/periphery/AccountFactory.ts:88](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/periphery/AccountFactory.ts#L88)
 
 ___
 
@@ -493,7 +493,7 @@ Creates a new user account.
 
 #### Defined in
 
-[src/gen/contracts/periphery/AccountFactory.ts:141](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/contracts/periphery/AccountFactory.ts#L141)
+[src/gen/contracts/periphery/AccountFactory.ts:141](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/periphery/AccountFactory.ts#L141)
 
 ___
 
@@ -511,7 +511,7 @@ BaseContract.deployed
 
 #### Defined in
 
-[src/gen/contracts/periphery/AccountFactory.ts:90](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/contracts/periphery/AccountFactory.ts#L90)
+[src/gen/contracts/periphery/AccountFactory.ts:90](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/periphery/AccountFactory.ts#L90)
 
 ___
 
@@ -582,7 +582,7 @@ Retrieves the address of the caller's account.
 
 #### Defined in
 
-[src/gen/contracts/periphery/AccountFactory.ts:148](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/contracts/periphery/AccountFactory.ts#L148)
+[src/gen/contracts/periphery/AccountFactory.ts:148](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/periphery/AccountFactory.ts#L148)
 
 ___
 
@@ -605,7 +605,7 @@ Retrieves the address of a user's account.
 
 #### Defined in
 
-[src/gen/contracts/periphery/AccountFactory.ts:154](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/contracts/periphery/AccountFactory.ts#L154)
+[src/gen/contracts/periphery/AccountFactory.ts:154](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/periphery/AccountFactory.ts#L154)
 
 ___
 
@@ -659,7 +659,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[src/gen/contracts/periphery/AccountFactory.ts:100](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/contracts/periphery/AccountFactory.ts#L100)
+[src/gen/contracts/periphery/AccountFactory.ts:100](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/periphery/AccountFactory.ts#L100)
 
 ▸ **listeners**(`eventName?`): `Listener`[]
 
@@ -679,7 +679,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[src/gen/contracts/periphery/AccountFactory.ts:103](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/contracts/periphery/AccountFactory.ts#L103)
+[src/gen/contracts/periphery/AccountFactory.ts:103](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/periphery/AccountFactory.ts#L103)
 
 ___
 
@@ -711,7 +711,7 @@ BaseContract.queryFilter
 
 #### Defined in
 
-[src/gen/contracts/periphery/AccountFactory.ts:94](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/contracts/periphery/AccountFactory.ts#L94)
+[src/gen/contracts/periphery/AccountFactory.ts:94](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/periphery/AccountFactory.ts#L94)
 
 ___
 
@@ -741,7 +741,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[src/gen/contracts/periphery/AccountFactory.ts:104](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/contracts/periphery/AccountFactory.ts#L104)
+[src/gen/contracts/periphery/AccountFactory.ts:104](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/periphery/AccountFactory.ts#L104)
 
 ▸ **removeAllListeners**(`eventName?`): [`AccountFactory`](contracts.periphery.AccountFactory.md)
 
@@ -761,4 +761,4 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[src/gen/contracts/periphery/AccountFactory.ts:107](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/contracts/periphery/AccountFactory.ts#L107)
+[src/gen/contracts/periphery/AccountFactory.ts:107](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/periphery/AccountFactory.ts#L107)

@@ -33,7 +33,7 @@
 
 #### Defined in
 
-[src/gen/factories/contracts/periphery/ChromaticLens__factory.ts:299](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/factories/contracts/periphery/ChromaticLens__factory.ts#L299)
+[src/gen/factories/contracts/periphery/ChromaticLens__factory.ts:299](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/factories/contracts/periphery/ChromaticLens__factory.ts#L299)
 
 ## Methods
 
@@ -54,7 +54,7 @@
 
 #### Defined in
 
-[src/gen/factories/contracts/periphery/ChromaticLens__factory.ts:303](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/factories/contracts/periphery/ChromaticLens__factory.ts#L303)
+[src/gen/factories/contracts/periphery/ChromaticLens__factory.ts:303](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/factories/contracts/periphery/ChromaticLens__factory.ts#L303)
 
 ___
 
@@ -68,4 +68,4 @@ ___
 
 #### Defined in
 
-[src/gen/factories/contracts/periphery/ChromaticLens__factory.ts:300](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/factories/contracts/periphery/ChromaticLens__factory.ts#L300)
+[src/gen/factories/contracts/periphery/ChromaticLens__factory.ts:300](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/factories/contracts/periphery/ChromaticLens__factory.ts#L300)

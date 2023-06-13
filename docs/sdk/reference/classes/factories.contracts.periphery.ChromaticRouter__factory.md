@@ -33,7 +33,7 @@
 
 #### Defined in
 
-[src/gen/factories/contracts/periphery/ChromaticRouter__factory.ts:690](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/factories/contracts/periphery/ChromaticRouter__factory.ts#L690)
+[src/gen/factories/contracts/periphery/ChromaticRouter__factory.ts:690](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/factories/contracts/periphery/ChromaticRouter__factory.ts#L690)
 
 ## Methods
 
@@ -54,7 +54,7 @@
 
 #### Defined in
 
-[src/gen/factories/contracts/periphery/ChromaticRouter__factory.ts:694](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/factories/contracts/periphery/ChromaticRouter__factory.ts#L694)
+[src/gen/factories/contracts/periphery/ChromaticRouter__factory.ts:694](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/factories/contracts/periphery/ChromaticRouter__factory.ts#L694)
 
 ___
 
@@ -68,4 +68,4 @@ ___
 
 #### Defined in
 
-[src/gen/factories/contracts/periphery/ChromaticRouter__factory.ts:691](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/factories/contracts/periphery/ChromaticRouter__factory.ts#L691)
+[src/gen/factories/contracts/periphery/ChromaticRouter__factory.ts:691](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/factories/contracts/periphery/ChromaticRouter__factory.ts#L691)

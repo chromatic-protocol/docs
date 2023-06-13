@@ -141,7 +141,7 @@ BaseContract.callStatic
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:253](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L253)
+[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:253](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L253)
 
 ___
 
@@ -180,7 +180,7 @@ BaseContract.estimateGas
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:329](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L329)
+[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:329](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L329)
 
 ___
 
@@ -203,7 +203,7 @@ BaseContract.filters
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:305](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L305)
+[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:305](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L305)
 
 ___
 
@@ -228,7 +228,7 @@ BaseContract.functions
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:151](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L151)
+[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:151](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L151)
 
 ___
 
@@ -242,7 +242,7 @@ BaseContract.interface
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:130](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L130)
+[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:130](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L130)
 
 ___
 
@@ -256,7 +256,7 @@ BaseContract.off
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:146](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L146)
+[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:146](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L146)
 
 ___
 
@@ -270,7 +270,7 @@ BaseContract.on
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:147](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L147)
+[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:147](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L147)
 
 ___
 
@@ -284,7 +284,7 @@ BaseContract.once
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:148](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L148)
+[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:148](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L148)
 
 ___
 
@@ -309,7 +309,7 @@ BaseContract.populateTransaction
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:381](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L381)
+[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:381](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L381)
 
 ___
 
@@ -337,7 +337,7 @@ BaseContract.removeListener
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:149](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L149)
+[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:149](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L149)
 
 ___
 
@@ -463,7 +463,7 @@ Returns the remaining number of tokens that `spender` will be allowed to spend o
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:206](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L206)
+[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:206](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L206)
 
 ___
 
@@ -487,7 +487,7 @@ Sets `amount` as the allowance of `spender` over the caller's tokens. Returns a 
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:215](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L215)
+[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:215](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L215)
 
 ___
 
@@ -511,7 +511,7 @@ BaseContract.attach
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:127](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L127)
+[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:127](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L127)
 
 ___
 
@@ -534,7 +534,7 @@ Returns the amount of tokens owned by `account`.
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:224](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L224)
+[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:224](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L224)
 
 ___
 
@@ -558,7 +558,7 @@ BaseContract.connect
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:126](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L126)
+[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:126](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L126)
 
 ___
 
@@ -576,7 +576,7 @@ BaseContract.deployed
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:128](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L128)
+[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:128](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L128)
 
 ___
 
@@ -679,7 +679,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:138](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L138)
+[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:138](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L138)
 
 ▸ **listeners**(`eventName?`): `Listener`[]
 
@@ -699,7 +699,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:141](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L141)
+[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:141](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L141)
 
 ___
 
@@ -731,7 +731,7 @@ BaseContract.queryFilter
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:132](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L132)
+[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:132](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L132)
 
 ___
 
@@ -761,7 +761,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:142](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L142)
+[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:142](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L142)
 
 ▸ **removeAllListeners**(`eventName?`): [`IERC20`](openzeppelin.contracts.token.erc20.IERC20.md)
 
@@ -781,7 +781,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:145](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L145)
+[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:145](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L145)
 
 ___
 
@@ -803,7 +803,7 @@ Returns the amount of tokens in existence.
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:232](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L232)
+[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:232](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L232)
 
 ___
 
@@ -827,7 +827,7 @@ Moves `amount` tokens from the caller's account to `to`. Returns a boolean value
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:237](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L237)
+[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:237](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L237)
 
 ___
 
@@ -852,4 +852,4 @@ Moves `amount` tokens from `from` to `to` using the allowance mechanism. `amount
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:246](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L246)
+[src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts:246](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/@openzeppelin/contracts/token/ERC20/IERC20.ts#L246)

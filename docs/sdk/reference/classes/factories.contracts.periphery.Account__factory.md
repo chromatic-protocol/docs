@@ -33,7 +33,7 @@
 
 #### Defined in
 
-[src/gen/factories/contracts/periphery/Account__factory.ts:339](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/factories/contracts/periphery/Account__factory.ts#L339)
+[src/gen/factories/contracts/periphery/Account__factory.ts:339](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/factories/contracts/periphery/Account__factory.ts#L339)
 
 ## Methods
 
@@ -54,7 +54,7 @@
 
 #### Defined in
 
-[src/gen/factories/contracts/periphery/Account__factory.ts:343](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/factories/contracts/periphery/Account__factory.ts#L343)
+[src/gen/factories/contracts/periphery/Account__factory.ts:343](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/factories/contracts/periphery/Account__factory.ts#L343)
 
 ___
 
@@ -68,4 +68,4 @@ ___
 
 #### Defined in
 
-[src/gen/factories/contracts/periphery/Account__factory.ts:340](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/factories/contracts/periphery/Account__factory.ts#L340)
+[src/gen/factories/contracts/periphery/Account__factory.ts:340](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/factories/contracts/periphery/Account__factory.ts#L340)

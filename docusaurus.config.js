@@ -148,9 +148,16 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['solidity'],
+        additionalLanguages: ['solidity']
+      },
+      mermaid: {
+        theme: { light: 'neutral', dark: 'dark' }
       }
-    })
+    }),
+  markdown: {
+    mermaid: true
+  },
+  themes: ['@docusaurus/theme-mermaid']
 }
 
 module.exports = config

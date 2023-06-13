@@ -155,17 +155,48 @@ _Withdraws liquidity from a liquidity receipt._
 function getBinLiquidity(int16 tradingFeeRate) external view returns (uint256 amount)
 ```
 
+_Retrieves the total liquidity amount for a specific trading fee rate in the liquidity pool._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| tradingFeeRate | int16 | The trading fee rate for which to retrieve the liquidity amount. |
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| amount | uint256 | The total liquidity amount for the specified trading fee rate. |
+
 ### getBinFreeLiquidity
 
 ```solidity
 function getBinFreeLiquidity(int16 tradingFeeRate) external view returns (uint256 amount)
 ```
 
+_Retrieves the available (free) liquidity amount for a specific trading fee rate in the liquidity pool._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| tradingFeeRate | int16 | The trading fee rate for which to retrieve the available liquidity amount. |
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| amount | uint256 | The available (free) liquidity amount for the specified trading fee rate. |
+
 ### getBinValue
 
 ```solidity
 function getBinValue(int16 tradingFeeRate) external view returns (uint256 value)
 ```
+
+_Retrieves the value of a specific trading fee rate's bin in the liquidity pool.
+     The value of a bin represents the total valuation of the liquidity in the bin._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| tradingFeeRate | int16 | The trading fee rate for which to retrieve the bin value. |
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| value | uint256 | The value of the bin for the specified trading fee rate. |
 
 ### distributeEarningToBins
 
@@ -186,16 +217,17 @@ _Distributes earning to the liquidity bins._
 function calculateCLBTokenMinting(int16 tradingFeeRate, uint256 amount) external view returns (uint256)
 ```
 
-_Calculates the amount of CLB tokens to mint for the given parameters._
+_Calculates the amount of CLB tokens to be minted for a given amount of liquidity and trading fee rate.
+     The CLB token minting amount represents the number of CLB tokens that will be minted when providing liquidity._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| tradingFeeRate | int16 | The trading fee rate. |
-| amount | uint256 | The amount of liquidity. |
+| tradingFeeRate | int16 | The trading fee rate for which to calculate the CLB token minting. |
+| amount | uint256 | The amount of liquidity for which to calculate the CLB token minting. |
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| [0] | uint256 | The amount of CLB tokens to mint. |
+| [0] | uint256 | The amount of CLB tokens to be minted for the specified liquidity amount and trading fee rate. |
 
 ### calculateCLBTokenValue
 
@@ -220,9 +252,33 @@ _Calculates the value of CLB tokens for the given parameters._
 function getLpReceipt(uint256 receiptId) external view returns (struct LpReceipt)
 ```
 
+_Retrieves the liquidity receipt with the given receipt ID.
+     It throws NotExistLpReceipt if the specified receipt ID does not exist._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| receiptId | uint256 | The ID of the liquidity receipt to retrieve. |
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| [0] | struct LpReceipt | receipt The liquidity receipt with the specified ID. |
+
 ### getClaimBurning
 
 ```solidity
 function getClaimBurning(int16 tradingFeeRate, uint256 oracleVersion) external view returns (uint256 clbTokenAmount, uint256 burningAmount, uint256 tokenAmount)
 ```
+
+_Retrieves the claim burning details for a given liquidity receipt._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| tradingFeeRate | int16 | The trading fee rate for which to retrieve the claim burning details. |
+| oracleVersion | uint256 | The oracle version for which to retrieve the claim burning details. |
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| clbTokenAmount | uint256 | The total amount of CLB tokens waiting to be burned for the specified trading fee rate and oracle version. |
+| burningAmount | uint256 | The amount of CLB tokens that can be claimed after being burnt for the specified trading fee rate and oracle version. |
+| tokenAmount | uint256 | The corresponding amount of tokens obtained when claiming liquidity. |
 

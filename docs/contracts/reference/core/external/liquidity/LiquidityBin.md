@@ -300,3 +300,17 @@ _This function calculates the value of the specified amount of CLB tokens
 function getClaimBurning(struct LiquidityBin self, uint256 oracleVersion) internal view returns (uint256 clbTokenAmount, uint256 burningAmount, uint256 tokenAmount)
 ```
 
+_Retrieves the claim burning details for a specific oracle version from the LiquidityBin storage.
+Claim burning details represent the total amount of CLB tokens waiting to be burned, the amount that can be claimed after being burnt, and the corresponding amount of tokens obtained when claiming liquidity._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| self | struct LiquidityBin | The reference to the LiquidityBin storage. |
+| oracleVersion | uint256 | The oracle version for which to retrieve the claim burning details. |
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| clbTokenAmount | uint256 | The total amount of CLB tokens waiting to be burned for the specified oracle version. |
+| burningAmount | uint256 | The amount of CLB tokens that can be claimed after being burnt for the specified oracle version. |
+| tokenAmount | uint256 | The corresponding amount of tokens obtained when claiming liquidity for the specified oracle version. |
+

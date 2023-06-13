@@ -363,9 +363,35 @@ _This function distributes the earnings among the liquidity bins,
 function binValue(struct LiquidityPool self, int16 _tradingFeeRate, struct LpContext ctx) external view returns (uint256 value)
 ```
 
+_Retrieves the value of a specific bin in the LiquidityPool storage for the provided trading fee rate._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| self | struct LiquidityPool | The reference to the LiquidityPool storage. |
+| _tradingFeeRate | int16 | The trading fee rate for which to calculate the bin value. |
+| ctx | struct LpContext | The LP context containing relevant information for the calculation. |
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| value | uint256 | The value of the specified bin. |
+
 ### getClaimBurning
 
 ```solidity
 function getClaimBurning(struct LiquidityPool self, int16 tradingFeeRate, uint256 oracleVersion) external view returns (uint256 clbTokenAmount, uint256 burningAmount, uint256 tokenAmount)
 ```
+
+_Retrieves the claim burning details for a specific trading fee rate and oracle version from the LiquidityPool storage._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| self | struct LiquidityPool | The reference to the LiquidityPool storage. |
+| tradingFeeRate | int16 | The trading fee rate for which to retrieve the claim burning details. |
+| oracleVersion | uint256 | The oracle version for which to retrieve the claim burning details. |
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| clbTokenAmount | uint256 | The total amount of CLB tokens waiting to be burned for the specified trading fee rate and oracle version. |
+| burningAmount | uint256 | The amount of CLB tokens that can be claimed after being burnt for the specified trading fee rate and oracle version. |
+| tokenAmount | uint256 | The corresponding amount of tokens obtained when claiming liquidity for the specified trading fee rate and oracle version. |
 

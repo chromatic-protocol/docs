@@ -16,9 +16,6 @@ address dao
 
 Returns the address of the DAO.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-
 ### liquidator
 
 ```solidity
@@ -26,9 +23,6 @@ address liquidator
 ```
 
 Returns the address of the liquidator.
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
 
 ### vault
 
@@ -38,9 +32,6 @@ address vault
 
 Returns the address of the vault.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-
 ### keeperFeePayer
 
 ```solidity
@@ -49,9 +40,6 @@ address keeperFeePayer
 
 Returns the address of the keeper fee payer.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-
 ### treasury
 
 ```solidity
@@ -59,9 +47,6 @@ address treasury
 ```
 
 Returns the address of the DAO treasury.
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
 
 ### AlreadySetLiquidator
 

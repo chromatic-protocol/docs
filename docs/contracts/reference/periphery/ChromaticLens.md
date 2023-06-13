@@ -6,30 +6,21 @@ title: ChromaticLens.sol
 
 ## ChromaticLens
 
-### EntryPriceStruct
-
-```solidity
-struct EntryPriceStruct {
-  uint256 positionId;
-  Fixed18 price;
-}
-```
-
-### CLBValue
-
-```solidity
-struct CLBValue {
-  int16 tradingFeeRate;
-  UFixed18 value;
-}
-```
-
 ### LiquidityBinValue
 
 ```solidity
 struct LiquidityBinValue {
   int16 tradingFeeRate;
-  UFixed18 value;
+  uint256 value;
+}
+```
+
+### LiquidityBinsParam
+
+```solidity
+struct LiquidityBinsParam {
+  int16 tradingFeeRate;
+  uint256 oracleVersion;
 }
 ```
 
@@ -40,19 +31,16 @@ struct LiquidityBin {
   int16 tradingFeeRate;
   uint256 liquidity;
   uint256 freeVolume;
+  uint256 clbTokenAmount;
+  uint256 burningAmount;
+  uint256 tokenAmount;
 }
 ```
 
-### eachEntryPrice
+### oracleAtVersions
 
 ```solidity
-function eachEntryPrice(contract IChromaticMarket market, uint256[] positionIds) external view returns (struct ChromaticLens.EntryPriceStruct[] results)
-```
-
-### getCLBValues
-
-```solidity
-function getCLBValues(contract IChromaticMarket market, int16[] tradingFeeRates) external view returns (struct ChromaticLens.CLBValue[] results)
+function oracleAtVersions(contract IChromaticMarket market, uint256[] oracleVersions) external view returns (struct IOracleProvider.OracleVersion[] results)
 ```
 
 ### liquidityBinValue
@@ -64,7 +52,7 @@ function liquidityBinValue(contract IChromaticMarket market, int16[] tradingFeeR
 ### liquidityBins
 
 ```solidity
-function liquidityBins(contract IChromaticMarket market, int16[] tradingFeeRates) external view returns (struct ChromaticLens.LiquidityBin[] results)
+function liquidityBins(contract IChromaticMarket market, struct ChromaticLens.LiquidityBinsParam[] params) external view returns (struct ChromaticLens.LiquidityBin[] results)
 ```
 
 get Liquidity information for each slot
@@ -73,24 +61,6 @@ get Liquidity information for each slot
 
 ```solidity
 function lpReceipts(contract IChromaticMarket market, uint256[] receiptIds) public view returns (struct LpReceipt[] result)
-```
-
-### RemoveLiquidityInfo
-
-```solidity
-struct RemoveLiquidityInfo {
-  uint256 receiptId;
-  int16 tradingFeeRate;
-  uint256 clbTokenAmount;
-  uint256 burningAmount;
-  uint256 tokenAmount;
-}
-```
-
-### removableLiquidity
-
-```solidity
-function removableLiquidity(contract IChromaticMarket market, uint256[] receiptIds) external view returns (struct ChromaticLens.RemoveLiquidityInfo[] results)
 ```
 
 ### calculateCLBTokenValueBatch

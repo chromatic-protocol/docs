@@ -33,7 +33,7 @@
 
 #### Defined in
 
-[src/gen/factories/@openzeppelin/contracts/token/ERC1155/IERC1155__factory.ts:309](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/factories/@openzeppelin/contracts/token/ERC1155/IERC1155__factory.ts#L309)
+[src/gen/factories/@openzeppelin/contracts/token/ERC1155/IERC1155__factory.ts:309](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/factories/@openzeppelin/contracts/token/ERC1155/IERC1155__factory.ts#L309)
 
 ## Methods
 
@@ -54,7 +54,7 @@
 
 #### Defined in
 
-[src/gen/factories/@openzeppelin/contracts/token/ERC1155/IERC1155__factory.ts:313](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/factories/@openzeppelin/contracts/token/ERC1155/IERC1155__factory.ts#L313)
+[src/gen/factories/@openzeppelin/contracts/token/ERC1155/IERC1155__factory.ts:313](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/factories/@openzeppelin/contracts/token/ERC1155/IERC1155__factory.ts#L313)
 
 ___
 
@@ -68,4 +68,4 @@ ___
 
 #### Defined in
 
-[src/gen/factories/@openzeppelin/contracts/token/ERC1155/IERC1155__factory.ts:310](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/factories/@openzeppelin/contracts/token/ERC1155/IERC1155__factory.ts#L310)
+[src/gen/factories/@openzeppelin/contracts/token/ERC1155/IERC1155__factory.ts:310](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/factories/@openzeppelin/contracts/token/ERC1155/IERC1155__factory.ts#L310)

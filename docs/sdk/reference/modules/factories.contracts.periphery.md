@@ -10,4 +10,5 @@
 
 - [AccountFactory\_\_factory](../classes/factories.contracts.periphery.AccountFactory__factory.md)
 - [Account\_\_factory](../classes/factories.contracts.periphery.Account__factory.md)
+- [ChromaticLens\_\_factory](../classes/factories.contracts.periphery.ChromaticLens__factory.md)
 - [ChromaticRouter\_\_factory](../classes/factories.contracts.periphery.ChromaticRouter__factory.md)

@@ -33,7 +33,7 @@
 
 #### Defined in
 
-[src/gen/factories/contracts/core/OracleProvider__factory.ts:195](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/factories/contracts/core/OracleProvider__factory.ts#L195)
+[src/gen/factories/contracts/core/OracleProvider__factory.ts:195](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/factories/contracts/core/OracleProvider__factory.ts#L195)
 
 ## Methods
 
@@ -54,7 +54,7 @@
 
 #### Defined in
 
-[src/gen/factories/contracts/core/OracleProvider__factory.ts:199](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/factories/contracts/core/OracleProvider__factory.ts#L199)
+[src/gen/factories/contracts/core/OracleProvider__factory.ts:199](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/factories/contracts/core/OracleProvider__factory.ts#L199)
 
 ___
 
@@ -68,4 +68,4 @@ ___
 
 #### Defined in
 
-[src/gen/factories/contracts/core/OracleProvider__factory.ts:196](https://github.com/chromatic-protocol/sdk/blob/f027fff/src/gen/factories/contracts/core/OracleProvider__factory.ts#L196)
+[src/gen/factories/contracts/core/OracleProvider__factory.ts:196](https://github.com/chromatic-protocol/sdk/blob/9f6a4e3/src/gen/factories/contracts/core/OracleProvider__factory.ts#L196)

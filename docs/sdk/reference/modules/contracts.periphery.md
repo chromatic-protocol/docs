@@ -12,7 +12,6 @@
 
 ### Interfaces
 
-- [Account](../interfaces/contracts.periphery.Account.md)
-- [AccountFactory](../interfaces/contracts.periphery.AccountFactory.md)
+- [ChromaticAccount](../interfaces/contracts.periphery.ChromaticAccount.md)
 - [ChromaticLens](../interfaces/contracts.periphery.ChromaticLens-1.md)
 - [ChromaticRouter](../interfaces/contracts.periphery.ChromaticRouter.md)

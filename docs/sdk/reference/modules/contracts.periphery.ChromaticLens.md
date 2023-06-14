@@ -27,24 +27,24 @@
 | :------ | :------ |
 | `burningAmount` | `PromiseOrValue`<`BigNumberish`\> |
 | `clbTokenAmount` | `PromiseOrValue`<`BigNumberish`\> |
-| `freeVolume` | `PromiseOrValue`<`BigNumberish`\> |
+| `freeLiquidity` | `PromiseOrValue`<`BigNumberish`\> |
 | `liquidity` | `PromiseOrValue`<`BigNumberish`\> |
 | `tokenAmount` | `PromiseOrValue`<`BigNumberish`\> |
 | `tradingFeeRate` | `PromiseOrValue`<`BigNumberish`\> |
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:70](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/periphery/ChromaticLens.ts#L70)
+[src/gen/contracts/periphery/ChromaticLens.ts:70](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticLens.ts#L70)
 
 ___
 
 ### LiquidityBinStructOutput
 
-Ƭ **LiquidityBinStructOutput**: [`number`, `BigNumber`, `BigNumber`, `BigNumber`, `BigNumber`, `BigNumber`] & { `burningAmount`: `BigNumber` ; `clbTokenAmount`: `BigNumber` ; `freeVolume`: `BigNumber` ; `liquidity`: `BigNumber` ; `tokenAmount`: `BigNumber` ; `tradingFeeRate`: `number`  }
+Ƭ **LiquidityBinStructOutput**: [`number`, `BigNumber`, `BigNumber`, `BigNumber`, `BigNumber`, `BigNumber`] & { `burningAmount`: `BigNumber` ; `clbTokenAmount`: `BigNumber` ; `freeLiquidity`: `BigNumber` ; `liquidity`: `BigNumber` ; `tokenAmount`: `BigNumber` ; `tradingFeeRate`: `number`  }
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:79](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/periphery/ChromaticLens.ts#L79)
+[src/gen/contracts/periphery/ChromaticLens.ts:79](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticLens.ts#L79)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:50](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/periphery/ChromaticLens.ts#L50)
+[src/gen/contracts/periphery/ChromaticLens.ts:50](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticLens.ts#L50)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:55](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/periphery/ChromaticLens.ts#L55)
+[src/gen/contracts/periphery/ChromaticLens.ts:55](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticLens.ts#L55)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:60](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/periphery/ChromaticLens.ts#L60)
+[src/gen/contracts/periphery/ChromaticLens.ts:60](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticLens.ts#L60)
 
 ___
 
@@ -98,4 +98,4 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:65](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/periphery/ChromaticLens.ts#L65)
+[src/gen/contracts/periphery/ChromaticLens.ts:65](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticLens.ts#L65)

@@ -1,6 +1,6 @@
 {
-  "label": "Periphery",
-  "position": 4,
+  "label": "Setup Environment",
+  "position": 1,
   "link": {
     "type": "generated-index"
   }

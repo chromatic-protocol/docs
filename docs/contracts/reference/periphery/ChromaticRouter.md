@@ -42,29 +42,22 @@ struct WithdrawLiquidityCallbackData {
 }
 ```
 
-### accountFactory
-
-```solidity
-contract AccountFactory accountFactory
-```
-
 ### NotExistLpReceipt
 
 ```solidity
 error NotExistLpReceipt()
 ```
 
-### initialize
+### constructor
 
 ```solidity
-function initialize(contract AccountFactory _accountFactory, address _marketFactory) external
+constructor(address _marketFactory) public
 ```
 
 _Initializes the ChromaticRouter contract._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| _accountFactory | contract AccountFactory | The address of the AccountFactory contract. |
 | _marketFactory | address | The address of the ChromaticMarketFactory contract. |
 
 ### addLiquidityCallback
@@ -232,22 +225,10 @@ Withdraws liquidity from a ChromaticMarket contract.
 | market | address | The address of the ChromaticMarket contract. |
 | receiptId | uint256 | The ID of the LP receipt. |
 
-### getAccount
-
-```solidity
-function getAccount() external view returns (address)
-```
-
-Retrieves the account of the caller.
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | address | The account address. |
-
 ### _getAccount
 
 ```solidity
-function _getAccount(address owner) internal view returns (contract Account)
+function _getAccount(address owner) internal view returns (contract ChromaticAccount)
 ```
 
 _Retrieves the account of the specified owner._
@@ -258,7 +239,7 @@ _Retrieves the account of the specified owner._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| [0] | contract Account | The account address. |
+| [0] | contract ChromaticAccount | The account address. |
 
 ### getLpReceiptIds
 

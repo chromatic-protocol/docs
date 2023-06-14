@@ -171,7 +171,7 @@ BaseContract.callStatic
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:878](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L878)
+[src/gen/contracts/periphery/ChromaticRouter.ts:878](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L878)
 
 ___
 
@@ -225,7 +225,7 @@ BaseContract.estimateGas
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:1131](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L1131)
+[src/gen/contracts/periphery/ChromaticRouter.ts:1131](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L1131)
 
 ___
 
@@ -248,7 +248,7 @@ BaseContract.filters
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:1111](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L1111)
+[src/gen/contracts/periphery/ChromaticRouter.ts:1111](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L1111)
 
 ___
 
@@ -288,7 +288,7 @@ BaseContract.functions
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:406](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L406)
+[src/gen/contracts/periphery/ChromaticRouter.ts:406](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L406)
 
 ___
 
@@ -302,7 +302,7 @@ BaseContract.interface
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:385](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L385)
+[src/gen/contracts/periphery/ChromaticRouter.ts:385](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L385)
 
 ___
 
@@ -316,7 +316,7 @@ BaseContract.off
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:401](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L401)
+[src/gen/contracts/periphery/ChromaticRouter.ts:401](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L401)
 
 ___
 
@@ -330,7 +330,7 @@ BaseContract.on
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:402](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L402)
+[src/gen/contracts/periphery/ChromaticRouter.ts:402](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L402)
 
 ___
 
@@ -344,7 +344,7 @@ BaseContract.once
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:403](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L403)
+[src/gen/contracts/periphery/ChromaticRouter.ts:403](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L403)
 
 ___
 
@@ -384,7 +384,7 @@ BaseContract.populateTransaction
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:1368](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L1368)
+[src/gen/contracts/periphery/ChromaticRouter.ts:1368](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L1368)
 
 ___
 
@@ -412,7 +412,7 @@ BaseContract.removeListener
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:404](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L404)
+[src/gen/contracts/periphery/ChromaticRouter.ts:404](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L404)
 
 ___
 
@@ -540,7 +540,7 @@ Adds liquidity to a ChromaticMarket contract.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:650](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L650)
+[src/gen/contracts/periphery/ChromaticRouter.ts:650](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L650)
 
 ___
 
@@ -566,7 +566,7 @@ Adds liquidity to multiple ChromaticMarket contracts in a batch.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:665](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L665)
+[src/gen/contracts/periphery/ChromaticRouter.ts:665](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L665)
 
 ___
 
@@ -591,7 +591,7 @@ Handles the callback after adding liquidity to the Chromatic protocol.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:679](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L679)
+[src/gen/contracts/periphery/ChromaticRouter.ts:679](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L679)
 
 ___
 
@@ -615,7 +615,7 @@ BaseContract.attach
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:382](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L382)
+[src/gen/contracts/periphery/ChromaticRouter.ts:382](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L382)
 
 ___
 
@@ -639,7 +639,7 @@ Claims liquidity from a ChromaticMarket contract.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:691](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L691)
+[src/gen/contracts/periphery/ChromaticRouter.ts:691](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L691)
 
 ___
 
@@ -663,7 +663,7 @@ Claims liquidity from multiple ChromaticMarket contracts in a batch.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:702](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L702)
+[src/gen/contracts/periphery/ChromaticRouter.ts:702](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L702)
 
 ___
 
@@ -687,7 +687,7 @@ Handles the callback after claiming liquidity from the Chromatic protocol.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:713](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L713)
+[src/gen/contracts/periphery/ChromaticRouter.ts:713](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L713)
 
 ___
 
@@ -711,7 +711,7 @@ Claims a position from a ChromaticMarket contract.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:724](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L724)
+[src/gen/contracts/periphery/ChromaticRouter.ts:724](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L724)
 
 ___
 
@@ -735,7 +735,7 @@ Closes a position in a ChromaticMarket contract.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:735](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L735)
+[src/gen/contracts/periphery/ChromaticRouter.ts:735](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L735)
 
 ___
 
@@ -759,7 +759,7 @@ BaseContract.connect
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:381](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L381)
+[src/gen/contracts/periphery/ChromaticRouter.ts:381](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L381)
 
 ___
 
@@ -782,7 +782,7 @@ Creates a new user account.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:745](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L745)
+[src/gen/contracts/periphery/ChromaticRouter.ts:745](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L745)
 
 ___
 
@@ -800,7 +800,7 @@ BaseContract.deployed
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:383](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L383)
+[src/gen/contracts/periphery/ChromaticRouter.ts:383](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L383)
 
 ___
 
@@ -871,7 +871,7 @@ Retrieves the account of the caller.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:752](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L752)
+[src/gen/contracts/periphery/ChromaticRouter.ts:752](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L752)
 
 ___
 
@@ -894,7 +894,7 @@ Retrieves the LP receipt IDs of the caller for the specified market.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:758](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L758)
+[src/gen/contracts/periphery/ChromaticRouter.ts:758](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L758)
 
 ___
 
@@ -948,7 +948,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:393](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L393)
+[src/gen/contracts/periphery/ChromaticRouter.ts:393](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L393)
 
 ▸ **listeners**(`eventName?`): `Listener`[]
 
@@ -968,7 +968,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:396](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L396)
+[src/gen/contracts/periphery/ChromaticRouter.ts:396](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L396)
 
 ___
 
@@ -996,7 +996,7 @@ Opens a new position in a ChromaticMarket contract.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:772](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L772)
+[src/gen/contracts/periphery/ChromaticRouter.ts:772](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L772)
 
 ___
 
@@ -1018,7 +1018,7 @@ Returns the address of the current owner.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:785](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L785)
+[src/gen/contracts/periphery/ChromaticRouter.ts:785](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L785)
 
 ___
 
@@ -1050,7 +1050,7 @@ BaseContract.queryFilter
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:387](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L387)
+[src/gen/contracts/periphery/ChromaticRouter.ts:387](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L387)
 
 ___
 
@@ -1080,7 +1080,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:397](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L397)
+[src/gen/contracts/periphery/ChromaticRouter.ts:397](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L397)
 
 ▸ **removeAllListeners**(`eventName?`): [`ChromaticRouter`](contracts.periphery.ChromaticRouter.md)
 
@@ -1100,7 +1100,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:400](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L400)
+[src/gen/contracts/periphery/ChromaticRouter.ts:400](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L400)
 
 ___
 
@@ -1126,7 +1126,7 @@ Removes liquidity from a ChromaticMarket contract.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:794](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L794)
+[src/gen/contracts/periphery/ChromaticRouter.ts:794](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L794)
 
 ___
 
@@ -1152,7 +1152,7 @@ Removes liquidity from multiple ChromaticMarket contracts in a batch.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:809](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L809)
+[src/gen/contracts/periphery/ChromaticRouter.ts:809](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L809)
 
 ___
 
@@ -1177,7 +1177,7 @@ Handles the callback after removing liquidity from the Chromatic protocol.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:823](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L823)
+[src/gen/contracts/periphery/ChromaticRouter.ts:823](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L823)
 
 ___
 
@@ -1199,7 +1199,7 @@ Leaves the contract without owner. It will not be possible to call `onlyOwner` f
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:833](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L833)
+[src/gen/contracts/periphery/ChromaticRouter.ts:833](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L833)
 
 ___
 
@@ -1222,7 +1222,7 @@ Transfers ownership of the contract to a new account (`newOwner`). Can only be c
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:840](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L840)
+[src/gen/contracts/periphery/ChromaticRouter.ts:840](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L840)
 
 ___
 
@@ -1246,7 +1246,7 @@ Withdraws liquidity from a ChromaticMarket contract.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:850](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L850)
+[src/gen/contracts/periphery/ChromaticRouter.ts:850](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L850)
 
 ___
 
@@ -1270,7 +1270,7 @@ Withdraws liquidity from multiple ChromaticMarket contracts in a batch.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:861](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L861)
+[src/gen/contracts/periphery/ChromaticRouter.ts:861](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L861)
 
 ___
 
@@ -1294,4 +1294,4 @@ Handles the callback after withdrawing liquidity from the Chromatic protocol.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:872](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/periphery/ChromaticRouter.ts#L872)
+[src/gen/contracts/periphery/ChromaticRouter.ts:872](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticRouter.ts#L872)

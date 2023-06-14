@@ -8,6 +8,19 @@ title: IChromaticRouter.sol
 
 _Interface for the ChromaticRouter contract._
 
+### AccountCreated
+
+```solidity
+event AccountCreated(address account, address owner)
+```
+
+_Emitted when a new account is created._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| account | address | The address of the created account. |
+| owner | address | The address of the owner of the created account. |
+
 ### openPosition
 
 ```solidity
@@ -118,6 +131,17 @@ Withdraws liquidity from a ChromaticMarket contract.
 | ---- | ---- | ----------- |
 | market | address | The address of the ChromaticMarket contract. |
 | receiptId | uint256 | The ID of the LP receipt. |
+
+### createAccount
+
+```solidity
+function createAccount() external
+```
+
+Creates a new user account.
+
+_Only one account can be created per user.
+     Emits an `AccountCreated` event upon successful creation._
 
 ### getAccount
 

@@ -32,7 +32,7 @@ struct LiquidityBinsParam {
 struct LiquidityBin {
   int16 tradingFeeRate;
   uint256 liquidity;
-  uint256 freeVolume;
+  uint256 freeLiquidity;
   uint256 clbTokenAmount;
   uint256 burningAmount;
   uint256 tokenAmount;

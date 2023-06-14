@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:225](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/core/CLBToken.ts#L225)
+[src/gen/contracts/core/CLBToken.ts:225](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/core/CLBToken.ts#L225)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:227](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/core/CLBToken.ts#L227)
+[src/gen/contracts/core/CLBToken.ts:227](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/core/CLBToken.ts#L227)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:224](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/core/CLBToken.ts#L224)
+[src/gen/contracts/core/CLBToken.ts:224](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/core/CLBToken.ts#L224)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:226](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/core/CLBToken.ts#L226)
+[src/gen/contracts/core/CLBToken.ts:226](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/core/CLBToken.ts#L226)
 
 ___
 
@@ -60,4 +60,4 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:228](https://github.com/chromatic-protocol/sdk/blob/30fc1f3/src/gen/contracts/core/CLBToken.ts#L228)
+[src/gen/contracts/core/CLBToken.ts:228](https://github.com/chromatic-protocol/sdk/blob/ded0de0/src/gen/contracts/core/CLBToken.ts#L228)

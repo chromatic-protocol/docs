@@ -34,7 +34,7 @@
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:70](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticLens.ts#L70)
+[src/gen/contracts/periphery/ChromaticLens.ts:70](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/periphery/ChromaticLens.ts#L70)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:79](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticLens.ts#L79)
+[src/gen/contracts/periphery/ChromaticLens.ts:79](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/periphery/ChromaticLens.ts#L79)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:50](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticLens.ts#L50)
+[src/gen/contracts/periphery/ChromaticLens.ts:50](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/periphery/ChromaticLens.ts#L50)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:55](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticLens.ts#L55)
+[src/gen/contracts/periphery/ChromaticLens.ts:55](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/periphery/ChromaticLens.ts#L55)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:60](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticLens.ts#L60)
+[src/gen/contracts/periphery/ChromaticLens.ts:60](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/periphery/ChromaticLens.ts#L60)
 
 ___
 
@@ -98,4 +98,4 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:65](https://github.com/chromatic-protocol/sdk/blob/11a9f76/src/gen/contracts/periphery/ChromaticLens.ts#L65)
+[src/gen/contracts/periphery/ChromaticLens.ts:65](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/periphery/ChromaticLens.ts#L65)

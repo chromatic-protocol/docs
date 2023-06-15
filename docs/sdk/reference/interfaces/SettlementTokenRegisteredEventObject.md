@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:609](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticMarketFactory.ts#L609)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:609](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarketFactory.ts#L609)
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:608](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticMarketFactory.ts#L608)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:608](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarketFactory.ts#L608)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:607](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticMarketFactory.ts#L607)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:607](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarketFactory.ts#L607)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:606](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticMarketFactory.ts#L606)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:606](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarketFactory.ts#L606)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:605](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticMarketFactory.ts#L605)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:605](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarketFactory.ts#L605)
 
 ___
 
@@ -71,4 +71,4 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarketFactory.ts:610](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticMarketFactory.ts#L610)
+[src/gen/contracts/core/ChromaticMarketFactory.ts:610](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarketFactory.ts#L610)

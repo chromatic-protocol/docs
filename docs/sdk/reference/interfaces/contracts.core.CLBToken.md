@@ -163,7 +163,7 @@ BaseContract.callStatic
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:597](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L597)
+[src/gen/contracts/core/CLBToken.ts:597](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L597)
 
 ___
 
@@ -213,7 +213,7 @@ BaseContract.estimateGas
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:803](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L803)
+[src/gen/contracts/core/CLBToken.ts:803](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L803)
 
 ___
 
@@ -240,7 +240,7 @@ BaseContract.filters
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:754](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L754)
+[src/gen/contracts/core/CLBToken.ts:754](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L754)
 
 ___
 
@@ -276,7 +276,7 @@ BaseContract.functions
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:285](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L285)
+[src/gen/contracts/core/CLBToken.ts:285](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L285)
 
 ___
 
@@ -290,7 +290,7 @@ BaseContract.interface
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:264](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L264)
+[src/gen/contracts/core/CLBToken.ts:264](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L264)
 
 ___
 
@@ -304,7 +304,7 @@ BaseContract.off
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:280](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L280)
+[src/gen/contracts/core/CLBToken.ts:280](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L280)
 
 ___
 
@@ -318,7 +318,7 @@ BaseContract.on
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:281](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L281)
+[src/gen/contracts/core/CLBToken.ts:281](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L281)
 
 ___
 
@@ -332,7 +332,7 @@ BaseContract.once
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:282](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L282)
+[src/gen/contracts/core/CLBToken.ts:282](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L282)
 
 ___
 
@@ -368,7 +368,7 @@ BaseContract.populateTransaction
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:960](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L960)
+[src/gen/contracts/core/CLBToken.ts:960](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L960)
 
 ___
 
@@ -396,7 +396,7 @@ BaseContract.removeListener
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:283](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L283)
+[src/gen/contracts/core/CLBToken.ts:283](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L283)
 
 ___
 
@@ -522,7 +522,7 @@ BaseContract.attach
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:261](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L261)
+[src/gen/contracts/core/CLBToken.ts:261](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L261)
 
 ___
 
@@ -546,7 +546,7 @@ See {IERC1155-balanceOf}. Requirements: - `account` cannot be the zero address.
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:445](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L445)
+[src/gen/contracts/core/CLBToken.ts:445](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L445)
 
 ___
 
@@ -570,7 +570,7 @@ See {IERC1155-balanceOfBatch}. Requirements: - `accounts` and `ids` must have th
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:454](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L454)
+[src/gen/contracts/core/CLBToken.ts:454](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L454)
 
 ___
 
@@ -595,7 +595,7 @@ This function can only be called by the Chromatic Market contract.
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:466](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L466)
+[src/gen/contracts/core/CLBToken.ts:466](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L466)
 
 ___
 
@@ -619,7 +619,7 @@ BaseContract.connect
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:260](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L260)
+[src/gen/contracts/core/CLBToken.ts:260](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L260)
 
 ___
 
@@ -641,7 +641,7 @@ Retrieves the number of decimals used for token amounts.
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:476](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L476)
+[src/gen/contracts/core/CLBToken.ts:476](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L476)
 
 ___
 
@@ -659,7 +659,7 @@ BaseContract.deployed
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:262](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L262)
+[src/gen/contracts/core/CLBToken.ts:262](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L262)
 
 ___
 
@@ -682,7 +682,7 @@ Retrieves the description of a token.
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:482](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L482)
+[src/gen/contracts/core/CLBToken.ts:482](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L482)
 
 ___
 
@@ -730,7 +730,7 @@ Indicates whether any token exist with a given id, or not.
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:490](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L490)
+[src/gen/contracts/core/CLBToken.ts:490](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L490)
 
 ___
 
@@ -777,7 +777,7 @@ Retrieves the image URI of a token.
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:499](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L499)
+[src/gen/contracts/core/CLBToken.ts:499](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L499)
 
 ___
 
@@ -801,7 +801,7 @@ See {IERC1155-isApprovedForAll}.
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:507](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L507)
+[src/gen/contracts/core/CLBToken.ts:507](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L507)
 
 ___
 
@@ -855,7 +855,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:272](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L272)
+[src/gen/contracts/core/CLBToken.ts:272](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L272)
 
 ▸ **listeners**(`eventName?`): `Listener`[]
 
@@ -875,7 +875,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:275](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L275)
+[src/gen/contracts/core/CLBToken.ts:275](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L275)
 
 ___
 
@@ -895,7 +895,7 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:513](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L513)
+[src/gen/contracts/core/CLBToken.ts:513](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L513)
 
 ___
 
@@ -921,7 +921,7 @@ This function can only be called by the Chromatic Market contract.
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:522](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L522)
+[src/gen/contracts/core/CLBToken.ts:522](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L522)
 
 ___
 
@@ -944,7 +944,7 @@ Retrieves the name of a token.
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:534](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L534)
+[src/gen/contracts/core/CLBToken.ts:534](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L534)
 
 ___
 
@@ -976,7 +976,7 @@ BaseContract.queryFilter
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:266](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L266)
+[src/gen/contracts/core/CLBToken.ts:266](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L266)
 
 ___
 
@@ -1006,7 +1006,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:276](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L276)
+[src/gen/contracts/core/CLBToken.ts:276](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L276)
 
 ▸ **removeAllListeners**(`eventName?`): [`CLBToken`](contracts.core.CLBToken.md)
 
@@ -1026,7 +1026,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:279](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L279)
+[src/gen/contracts/core/CLBToken.ts:279](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L279)
 
 ___
 
@@ -1053,7 +1053,7 @@ See {IERC1155-safeBatchTransferFrom}.
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:542](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L542)
+[src/gen/contracts/core/CLBToken.ts:542](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L542)
 
 ___
 
@@ -1080,7 +1080,7 @@ See {IERC1155-safeTransferFrom}.
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:554](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L554)
+[src/gen/contracts/core/CLBToken.ts:554](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L554)
 
 ___
 
@@ -1104,7 +1104,7 @@ See {IERC1155-setApprovalForAll}.
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:566](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L566)
+[src/gen/contracts/core/CLBToken.ts:566](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L566)
 
 ___
 
@@ -1127,7 +1127,7 @@ See {IERC165-supportsInterface}.
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:575](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L575)
+[src/gen/contracts/core/CLBToken.ts:575](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L575)
 
 ___
 
@@ -1150,7 +1150,7 @@ Retrieves the total supply of tokens for a given token ID.
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:584](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L584)
+[src/gen/contracts/core/CLBToken.ts:584](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L584)
 
 ___
 
@@ -1173,4 +1173,4 @@ Returns the URI for token type `id`. If the `\{id\}` substring is present in the
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:592](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L592)
+[src/gen/contracts/core/CLBToken.ts:592](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L592)

@@ -9,4 +9,5 @@
 ### Namespaces
 
 - [core](factories.contracts.core.md)
+- [oracle](factories.contracts.oracle.md)
 - [periphery](factories.contracts.periphery.md)

@@ -7,4 +7,5 @@
 ### Namespaces
 
 - [core](contracts.core.md)
+- [oracle](contracts.oracle.md)
 - [periphery](contracts.periphery.md)

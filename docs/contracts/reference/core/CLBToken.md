@@ -9,14 +9,6 @@ title: CLBToken.sol
 _CLBToken is an ERC1155 token contract that represents Liquidity Bin tokens.
      CLBToken allows minting and burning of tokens by the Chromatic Market contract._
 
-### decimals
-
-```solidity
-uint8 decimals
-```
-
-_Retrieves the number of decimals used for token amounts._
-
 ### market
 
 ```solidity
@@ -47,6 +39,18 @@ constructor() public
 
 _Initializes the CLBToken contract.
      The constructor sets the market contract address as the caller._
+
+### decimals
+
+```solidity
+function decimals() public view returns (uint8)
+```
+
+_Retrieves the number of decimals used for token amounts._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| [0] | uint8 | The number of decimals used for token amounts. |
 
 ### totalSupply
 

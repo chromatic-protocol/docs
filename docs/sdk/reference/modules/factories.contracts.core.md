@@ -6,10 +6,13 @@
 
 ## Table of contents
 
+### Namespaces
+
+- [interfaces](factories.contracts.core.interfaces.md)
+
 ### Classes
 
 - [CLBToken\_\_factory](../classes/factories.contracts.core.CLBToken__factory.md)
 - [ChromaticMarketFactory\_\_factory](../classes/factories.contracts.core.ChromaticMarketFactory__factory.md)
 - [ChromaticMarket\_\_factory](../classes/factories.contracts.core.ChromaticMarket__factory.md)
 - [ChromaticVault\_\_factory](../classes/factories.contracts.core.ChromaticVault__factory.md)
-- [OracleProvider\_\_factory](../classes/factories.contracts.core.OracleProvider__factory.md)

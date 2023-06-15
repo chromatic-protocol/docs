@@ -126,7 +126,7 @@ utils.Interface.events
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:198](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L198)
+[src/gen/contracts/core/CLBToken.ts:198](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L198)
 
 ___
 
@@ -176,7 +176,7 @@ utils.Interface.functions
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:31](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L31)
+[src/gen/contracts/core/CLBToken.ts:31](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L31)
 
 ___
 
@@ -345,7 +345,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:156](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L156)
+[src/gen/contracts/core/CLBToken.ts:156](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L156)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -366,7 +366,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:157](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L157)
+[src/gen/contracts/core/CLBToken.ts:157](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L157)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -387,7 +387,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:161](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L161)
+[src/gen/contracts/core/CLBToken.ts:161](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L161)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -408,7 +408,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:162](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L162)
+[src/gen/contracts/core/CLBToken.ts:162](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L162)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -429,7 +429,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:163](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L163)
+[src/gen/contracts/core/CLBToken.ts:163](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L163)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -450,7 +450,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:167](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L167)
+[src/gen/contracts/core/CLBToken.ts:167](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L167)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -471,7 +471,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:168](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L168)
+[src/gen/contracts/core/CLBToken.ts:168](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L168)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -492,7 +492,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:169](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L169)
+[src/gen/contracts/core/CLBToken.ts:169](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L169)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -513,7 +513,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:173](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L173)
+[src/gen/contracts/core/CLBToken.ts:173](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L173)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -534,7 +534,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:174](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L174)
+[src/gen/contracts/core/CLBToken.ts:174](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L174)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -555,7 +555,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:175](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L175)
+[src/gen/contracts/core/CLBToken.ts:175](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L175)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -576,7 +576,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:176](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L176)
+[src/gen/contracts/core/CLBToken.ts:176](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L176)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -597,7 +597,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:180](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L180)
+[src/gen/contracts/core/CLBToken.ts:180](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L180)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -618,7 +618,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:184](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L184)
+[src/gen/contracts/core/CLBToken.ts:184](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L184)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -639,7 +639,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:188](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L188)
+[src/gen/contracts/core/CLBToken.ts:188](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L188)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -660,7 +660,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:192](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L192)
+[src/gen/contracts/core/CLBToken.ts:192](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L192)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -681,7 +681,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:196](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L196)
+[src/gen/contracts/core/CLBToken.ts:196](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L196)
 
 ___
 
@@ -810,7 +810,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:72](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L72)
+[src/gen/contracts/core/CLBToken.ts:72](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L72)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -831,7 +831,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:76](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L76)
+[src/gen/contracts/core/CLBToken.ts:76](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L76)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -852,7 +852,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:80](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L80)
+[src/gen/contracts/core/CLBToken.ts:80](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L80)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values?`): `string`
 
@@ -873,7 +873,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:88](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L88)
+[src/gen/contracts/core/CLBToken.ts:88](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L88)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -894,7 +894,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:89](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L89)
+[src/gen/contracts/core/CLBToken.ts:89](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L89)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -915,7 +915,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:93](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L93)
+[src/gen/contracts/core/CLBToken.ts:93](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L93)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -936,7 +936,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:97](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L97)
+[src/gen/contracts/core/CLBToken.ts:97](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L97)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -957,7 +957,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:101](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L101)
+[src/gen/contracts/core/CLBToken.ts:101](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L101)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values?`): `string`
 
@@ -978,7 +978,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:105](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L105)
+[src/gen/contracts/core/CLBToken.ts:105](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L105)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -999,7 +999,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:106](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L106)
+[src/gen/contracts/core/CLBToken.ts:106](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L106)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1020,7 +1020,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:115](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L115)
+[src/gen/contracts/core/CLBToken.ts:115](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L115)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1041,7 +1041,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:119](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L119)
+[src/gen/contracts/core/CLBToken.ts:119](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L119)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1062,7 +1062,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:129](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L129)
+[src/gen/contracts/core/CLBToken.ts:129](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L129)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1083,7 +1083,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:139](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L139)
+[src/gen/contracts/core/CLBToken.ts:139](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L139)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1104,7 +1104,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:143](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L143)
+[src/gen/contracts/core/CLBToken.ts:143](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L143)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1125,7 +1125,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:147](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L147)
+[src/gen/contracts/core/CLBToken.ts:147](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L147)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1146,7 +1146,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:151](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L151)
+[src/gen/contracts/core/CLBToken.ts:151](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L151)
 
 ___
 
@@ -1243,7 +1243,7 @@ utils.Interface.getEvent
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:205](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L205)
+[src/gen/contracts/core/CLBToken.ts:205](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L205)
 
 ▸ **getEvent**(`nameOrSignatureOrTopic`): `EventFragment`
 
@@ -1263,7 +1263,7 @@ utils.Interface.getEvent
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:206](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L206)
+[src/gen/contracts/core/CLBToken.ts:206](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L206)
 
 ▸ **getEvent**(`nameOrSignatureOrTopic`): `EventFragment`
 
@@ -1283,7 +1283,7 @@ utils.Interface.getEvent
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:207](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L207)
+[src/gen/contracts/core/CLBToken.ts:207](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L207)
 
 ▸ **getEvent**(`nameOrSignatureOrTopic`): `EventFragment`
 
@@ -1303,7 +1303,7 @@ utils.Interface.getEvent
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:208](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L208)
+[src/gen/contracts/core/CLBToken.ts:208](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L208)
 
 ___
 
@@ -1351,7 +1351,7 @@ utils.Interface.getFunction
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:51](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L51)
+[src/gen/contracts/core/CLBToken.ts:51](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L51)
 
 ___
 

@@ -143,7 +143,7 @@ BaseContract.callStatic
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:344](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L344)
+[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:344](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L344)
 
 ___
 
@@ -183,7 +183,7 @@ BaseContract.estimateGas
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:463](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L463)
+[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:463](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L463)
 
 ___
 
@@ -210,7 +210,7 @@ BaseContract.filters
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:414](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L414)
+[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:414](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L414)
 
 ___
 
@@ -236,7 +236,7 @@ BaseContract.functions
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:206](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L206)
+[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:206](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L206)
 
 ___
 
@@ -250,7 +250,7 @@ BaseContract.interface
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:185](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L185)
+[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:185](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L185)
 
 ___
 
@@ -264,7 +264,7 @@ BaseContract.off
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:201](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L201)
+[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:201](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L201)
 
 ___
 
@@ -278,7 +278,7 @@ BaseContract.on
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:202](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L202)
+[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:202](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L202)
 
 ___
 
@@ -292,7 +292,7 @@ BaseContract.once
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:203](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L203)
+[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:203](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L203)
 
 ___
 
@@ -318,7 +318,7 @@ BaseContract.populateTransaction
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:533](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L533)
+[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:533](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L533)
 
 ___
 
@@ -346,7 +346,7 @@ BaseContract.removeListener
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:204](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L204)
+[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:204](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L204)
 
 ___
 
@@ -472,7 +472,7 @@ BaseContract.attach
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:182](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L182)
+[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:182](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L182)
 
 ___
 
@@ -496,7 +496,7 @@ Returns the amount of tokens of token type `id` owned by `account`. Requirements
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:279](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L279)
+[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:279](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L279)
 
 ___
 
@@ -520,7 +520,7 @@ xref:ROOT:erc1155.adoc#batch-operations[Batched] version of {balanceOf}. Require
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:288](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L288)
+[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:288](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L288)
 
 ___
 
@@ -544,7 +544,7 @@ BaseContract.connect
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:181](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L181)
+[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:181](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L181)
 
 ___
 
@@ -562,7 +562,7 @@ BaseContract.deployed
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:183](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L183)
+[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:183](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L183)
 
 ___
 
@@ -635,7 +635,7 @@ Returns true if `operator` is approved to transfer ``account``'s tokens. See {se
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:297](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L297)
+[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:297](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L297)
 
 ___
 
@@ -689,7 +689,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:193](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L193)
+[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:193](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L193)
 
 ▸ **listeners**(`eventName?`): `Listener`[]
 
@@ -709,7 +709,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:196](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L196)
+[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:196](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L196)
 
 ___
 
@@ -741,7 +741,7 @@ BaseContract.queryFilter
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:187](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L187)
+[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:187](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L187)
 
 ___
 
@@ -771,7 +771,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:197](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L197)
+[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:197](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L197)
 
 ▸ **removeAllListeners**(`eventName?`): [`IERC1155`](openzeppelin.contracts.token.erc1155.IERC1155.md)
 
@@ -791,7 +791,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:200](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L200)
+[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:200](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L200)
 
 ___
 
@@ -818,7 +818,7 @@ xref:ROOT:erc1155.adoc#batch-operations[Batched] version of {safeTransferFrom}. 
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:306](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L306)
+[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:306](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L306)
 
 ___
 
@@ -845,7 +845,7 @@ Transfers `amount` tokens of token type `id` from `from` to `to`. Emits a {Trans
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:318](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L318)
+[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:318](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L318)
 
 ___
 
@@ -869,7 +869,7 @@ Grants or revokes permission to `operator` to transfer the caller's tokens, acco
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:330](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L330)
+[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:330](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L330)
 
 ___
 
@@ -892,4 +892,4 @@ Returns true if this contract implements the interface defined by `interfaceId`.
 
 #### Defined in
 
-[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:339](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L339)
+[src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts:339](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/@openzeppelin/contracts/token/ERC1155/IERC1155.ts#L339)

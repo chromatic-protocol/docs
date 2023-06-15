@@ -134,7 +134,7 @@ utils.Interface.events
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:330](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L330)
+[src/gen/contracts/core/ChromaticVault.ts:330](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L330)
 
 ___
 
@@ -195,7 +195,7 @@ utils.Interface.functions
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:31](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L31)
+[src/gen/contracts/core/ChromaticVault.ts:31](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L31)
 
 ___
 
@@ -364,7 +364,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:223](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L223)
+[src/gen/contracts/core/ChromaticVault.ts:223](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L223)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -385,7 +385,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:224](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L224)
+[src/gen/contracts/core/ChromaticVault.ts:224](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L224)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -406,7 +406,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:228](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L228)
+[src/gen/contracts/core/ChromaticVault.ts:228](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L228)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -427,7 +427,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:232](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L232)
+[src/gen/contracts/core/ChromaticVault.ts:232](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L232)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -448,7 +448,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:236](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L236)
+[src/gen/contracts/core/ChromaticVault.ts:236](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L236)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -469,7 +469,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:240](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L240)
+[src/gen/contracts/core/ChromaticVault.ts:240](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L240)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -490,7 +490,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:244](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L244)
+[src/gen/contracts/core/ChromaticVault.ts:244](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L244)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -511,7 +511,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:248](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L248)
+[src/gen/contracts/core/ChromaticVault.ts:248](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L248)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -532,7 +532,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:252](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L252)
+[src/gen/contracts/core/ChromaticVault.ts:252](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L252)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -553,7 +553,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:253](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L253)
+[src/gen/contracts/core/ChromaticVault.ts:253](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L253)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -574,7 +574,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:257](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L257)
+[src/gen/contracts/core/ChromaticVault.ts:257](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L257)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -595,7 +595,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:261](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L261)
+[src/gen/contracts/core/ChromaticVault.ts:261](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L261)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -616,7 +616,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:265](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L265)
+[src/gen/contracts/core/ChromaticVault.ts:265](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L265)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -637,7 +637,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:269](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L269)
+[src/gen/contracts/core/ChromaticVault.ts:269](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L269)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -658,7 +658,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:273](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L273)
+[src/gen/contracts/core/ChromaticVault.ts:273](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L273)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -679,7 +679,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:277](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L277)
+[src/gen/contracts/core/ChromaticVault.ts:277](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L277)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -700,7 +700,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:281](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L281)
+[src/gen/contracts/core/ChromaticVault.ts:281](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L281)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -721,7 +721,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:285](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L285)
+[src/gen/contracts/core/ChromaticVault.ts:285](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L285)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -742,7 +742,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:289](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L289)
+[src/gen/contracts/core/ChromaticVault.ts:289](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L289)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -763,7 +763,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:293](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L293)
+[src/gen/contracts/core/ChromaticVault.ts:293](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L293)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -784,7 +784,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:297](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L297)
+[src/gen/contracts/core/ChromaticVault.ts:297](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L297)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -805,7 +805,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:301](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L301)
+[src/gen/contracts/core/ChromaticVault.ts:301](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L301)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -826,7 +826,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:305](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L305)
+[src/gen/contracts/core/ChromaticVault.ts:305](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L305)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -847,7 +847,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:309](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L309)
+[src/gen/contracts/core/ChromaticVault.ts:309](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L309)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -868,7 +868,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:313](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L313)
+[src/gen/contracts/core/ChromaticVault.ts:313](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L313)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -889,7 +889,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:317](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L317)
+[src/gen/contracts/core/ChromaticVault.ts:317](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L317)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -910,7 +910,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:321](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L321)
+[src/gen/contracts/core/ChromaticVault.ts:321](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L321)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -931,7 +931,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:325](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L325)
+[src/gen/contracts/core/ChromaticVault.ts:325](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L325)
 
 ___
 
@@ -1060,7 +1060,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:94](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L94)
+[src/gen/contracts/core/ChromaticVault.ts:94](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L94)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1081,7 +1081,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:95](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L95)
+[src/gen/contracts/core/ChromaticVault.ts:95](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L95)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1102,7 +1102,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:99](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L99)
+[src/gen/contracts/core/ChromaticVault.ts:99](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L99)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1123,7 +1123,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:103](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L103)
+[src/gen/contracts/core/ChromaticVault.ts:103](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L103)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1144,7 +1144,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:107](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L107)
+[src/gen/contracts/core/ChromaticVault.ts:107](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L107)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values?`): `string`
 
@@ -1165,7 +1165,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:111](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L111)
+[src/gen/contracts/core/ChromaticVault.ts:111](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L111)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1186,7 +1186,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:115](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L115)
+[src/gen/contracts/core/ChromaticVault.ts:115](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L115)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1207,7 +1207,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:119](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L119)
+[src/gen/contracts/core/ChromaticVault.ts:119](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L119)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1228,7 +1228,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:123](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L123)
+[src/gen/contracts/core/ChromaticVault.ts:123](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L123)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1249,7 +1249,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:132](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L132)
+[src/gen/contracts/core/ChromaticVault.ts:132](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L132)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1270,7 +1270,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:136](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L136)
+[src/gen/contracts/core/ChromaticVault.ts:136](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L136)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1291,7 +1291,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:140](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L140)
+[src/gen/contracts/core/ChromaticVault.ts:140](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L140)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1312,7 +1312,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:144](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L144)
+[src/gen/contracts/core/ChromaticVault.ts:144](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L144)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1333,7 +1333,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:148](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L148)
+[src/gen/contracts/core/ChromaticVault.ts:148](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L148)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1354,7 +1354,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:152](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L152)
+[src/gen/contracts/core/ChromaticVault.ts:152](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L152)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1375,7 +1375,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:156](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L156)
+[src/gen/contracts/core/ChromaticVault.ts:156](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L156)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1396,7 +1396,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:165](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L165)
+[src/gen/contracts/core/ChromaticVault.ts:165](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L165)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1417,7 +1417,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:174](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L174)
+[src/gen/contracts/core/ChromaticVault.ts:174](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L174)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1438,7 +1438,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:178](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L178)
+[src/gen/contracts/core/ChromaticVault.ts:178](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L178)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1459,7 +1459,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:182](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L182)
+[src/gen/contracts/core/ChromaticVault.ts:182](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L182)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1480,7 +1480,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:186](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L186)
+[src/gen/contracts/core/ChromaticVault.ts:186](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L186)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1501,7 +1501,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:190](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L190)
+[src/gen/contracts/core/ChromaticVault.ts:190](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L190)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1522,7 +1522,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:194](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L194)
+[src/gen/contracts/core/ChromaticVault.ts:194](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L194)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1543,7 +1543,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:198](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L198)
+[src/gen/contracts/core/ChromaticVault.ts:198](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L198)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1564,7 +1564,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:202](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L202)
+[src/gen/contracts/core/ChromaticVault.ts:202](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L202)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1585,7 +1585,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:206](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L206)
+[src/gen/contracts/core/ChromaticVault.ts:206](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L206)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1606,7 +1606,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:210](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L210)
+[src/gen/contracts/core/ChromaticVault.ts:210](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L210)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1627,7 +1627,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:214](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L214)
+[src/gen/contracts/core/ChromaticVault.ts:214](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L214)
 
 ___
 
@@ -1724,7 +1724,7 @@ utils.Interface.getEvent
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:345](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L345)
+[src/gen/contracts/core/ChromaticVault.ts:345](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L345)
 
 ▸ **getEvent**(`nameOrSignatureOrTopic`): `EventFragment`
 
@@ -1744,7 +1744,7 @@ utils.Interface.getEvent
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:346](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L346)
+[src/gen/contracts/core/ChromaticVault.ts:346](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L346)
 
 ▸ **getEvent**(`nameOrSignatureOrTopic`): `EventFragment`
 
@@ -1764,7 +1764,7 @@ utils.Interface.getEvent
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:347](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L347)
+[src/gen/contracts/core/ChromaticVault.ts:347](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L347)
 
 ▸ **getEvent**(`nameOrSignatureOrTopic`): `EventFragment`
 
@@ -1784,7 +1784,7 @@ utils.Interface.getEvent
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:348](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L348)
+[src/gen/contracts/core/ChromaticVault.ts:348](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L348)
 
 ▸ **getEvent**(`nameOrSignatureOrTopic`): `EventFragment`
 
@@ -1804,7 +1804,7 @@ utils.Interface.getEvent
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:349](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L349)
+[src/gen/contracts/core/ChromaticVault.ts:349](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L349)
 
 ▸ **getEvent**(`nameOrSignatureOrTopic`): `EventFragment`
 
@@ -1824,7 +1824,7 @@ utils.Interface.getEvent
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:350](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L350)
+[src/gen/contracts/core/ChromaticVault.ts:350](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L350)
 
 ▸ **getEvent**(`nameOrSignatureOrTopic`): `EventFragment`
 
@@ -1844,7 +1844,7 @@ utils.Interface.getEvent
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:351](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L351)
+[src/gen/contracts/core/ChromaticVault.ts:351](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L351)
 
 ▸ **getEvent**(`nameOrSignatureOrTopic`): `EventFragment`
 
@@ -1864,7 +1864,7 @@ utils.Interface.getEvent
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:352](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L352)
+[src/gen/contracts/core/ChromaticVault.ts:352](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L352)
 
 ▸ **getEvent**(`nameOrSignatureOrTopic`): `EventFragment`
 
@@ -1884,7 +1884,7 @@ utils.Interface.getEvent
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:353](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L353)
+[src/gen/contracts/core/ChromaticVault.ts:353](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L353)
 
 ▸ **getEvent**(`nameOrSignatureOrTopic`): `EventFragment`
 
@@ -1904,7 +1904,7 @@ utils.Interface.getEvent
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:354](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L354)
+[src/gen/contracts/core/ChromaticVault.ts:354](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L354)
 
 ▸ **getEvent**(`nameOrSignatureOrTopic`): `EventFragment`
 
@@ -1924,7 +1924,7 @@ utils.Interface.getEvent
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:357](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L357)
+[src/gen/contracts/core/ChromaticVault.ts:357](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L357)
 
 ▸ **getEvent**(`nameOrSignatureOrTopic`): `EventFragment`
 
@@ -1944,7 +1944,7 @@ utils.Interface.getEvent
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:360](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L360)
+[src/gen/contracts/core/ChromaticVault.ts:360](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L360)
 
 ___
 
@@ -1992,7 +1992,7 @@ utils.Interface.getFunction
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticVault.ts:62](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/ChromaticVault.ts#L62)
+[src/gen/contracts/core/ChromaticVault.ts:62](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticVault.ts#L62)
 
 ___
 

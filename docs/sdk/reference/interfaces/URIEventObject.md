@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:253](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L253)
+[src/gen/contracts/core/CLBToken.ts:253](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L253)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/core/CLBToken.ts:252](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/contracts/core/CLBToken.ts#L252)
+[src/gen/contracts/core/CLBToken.ts:252](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/CLBToken.ts#L252)

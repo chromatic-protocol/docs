@@ -33,7 +33,7 @@
 
 #### Defined in
 
-[src/gen/factories/contracts/core/CLBToken__factory.ts:510](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/factories/contracts/core/CLBToken__factory.ts#L510)
+[src/gen/factories/contracts/core/CLBToken__factory.ts:510](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/factories/contracts/core/CLBToken__factory.ts#L510)
 
 ## Methods
 
@@ -54,7 +54,7 @@
 
 #### Defined in
 
-[src/gen/factories/contracts/core/CLBToken__factory.ts:514](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/factories/contracts/core/CLBToken__factory.ts#L514)
+[src/gen/factories/contracts/core/CLBToken__factory.ts:514](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/factories/contracts/core/CLBToken__factory.ts#L514)
 
 ___
 
@@ -68,4 +68,4 @@ ___
 
 #### Defined in
 
-[src/gen/factories/contracts/core/CLBToken__factory.ts:511](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/factories/contracts/core/CLBToken__factory.ts#L511)
+[src/gen/factories/contracts/core/CLBToken__factory.ts:511](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/factories/contracts/core/CLBToken__factory.ts#L511)

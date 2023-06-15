@@ -33,7 +33,7 @@
 
 #### Defined in
 
-[src/gen/factories/contracts/core/ChromaticMarket__factory.ts:1574](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/factories/contracts/core/ChromaticMarket__factory.ts#L1574)
+[src/gen/factories/contracts/core/ChromaticMarket__factory.ts:1574](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/factories/contracts/core/ChromaticMarket__factory.ts#L1574)
 
 ## Methods
 
@@ -54,7 +54,7 @@
 
 #### Defined in
 
-[src/gen/factories/contracts/core/ChromaticMarket__factory.ts:1578](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/factories/contracts/core/ChromaticMarket__factory.ts#L1578)
+[src/gen/factories/contracts/core/ChromaticMarket__factory.ts:1578](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/factories/contracts/core/ChromaticMarket__factory.ts#L1578)
 
 ___
 
@@ -68,4 +68,4 @@ ___
 
 #### Defined in
 
-[src/gen/factories/contracts/core/ChromaticMarket__factory.ts:1575](https://github.com/chromatic-protocol/sdk/blob/7230d6e/src/gen/factories/contracts/core/ChromaticMarket__factory.ts#L1575)
+[src/gen/factories/contracts/core/ChromaticMarket__factory.ts:1575](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/factories/contracts/core/ChromaticMarket__factory.ts#L1575)

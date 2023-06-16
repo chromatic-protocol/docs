@@ -33,7 +33,7 @@
 
 #### Defined in
 
-[src/gen/factories/contracts/core/interfaces/factory/IOracleProviderRegistry__factory.ts:100](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/factories/contracts/core/interfaces/factory/IOracleProviderRegistry__factory.ts#L100)
+[src/gen/factories/contracts/core/interfaces/factory/IOracleProviderRegistry__factory.ts:100](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/factories/contracts/core/interfaces/factory/IOracleProviderRegistry__factory.ts#L100)
 
 ## Methods
 
@@ -54,7 +54,7 @@
 
 #### Defined in
 
-[src/gen/factories/contracts/core/interfaces/factory/IOracleProviderRegistry__factory.ts:104](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/factories/contracts/core/interfaces/factory/IOracleProviderRegistry__factory.ts#L104)
+[src/gen/factories/contracts/core/interfaces/factory/IOracleProviderRegistry__factory.ts:104](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/factories/contracts/core/interfaces/factory/IOracleProviderRegistry__factory.ts#L104)
 
 ___
 
@@ -68,4 +68,4 @@ ___
 
 #### Defined in
 
-[src/gen/factories/contracts/core/interfaces/factory/IOracleProviderRegistry__factory.ts:101](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/factories/contracts/core/interfaces/factory/IOracleProviderRegistry__factory.ts#L101)
+[src/gen/factories/contracts/core/interfaces/factory/IOracleProviderRegistry__factory.ts:101](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/factories/contracts/core/interfaces/factory/IOracleProviderRegistry__factory.ts#L101)

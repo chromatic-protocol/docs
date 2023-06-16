@@ -117,7 +117,7 @@ utils.Interface.events
 
 #### Defined in
 
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:88](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L88)
+[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:81](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L81)
 
 ___
 
@@ -144,7 +144,6 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `atVersion(uint256)` | `FunctionFragment` |
-| `atVersions(uint256[])` | `FunctionFragment` |
 | `currentVersion()` | `FunctionFragment` |
 | `description()` | `FunctionFragment` |
 | `sync()` | `FunctionFragment` |
@@ -155,7 +154,7 @@ utils.Interface.functions
 
 #### Defined in
 
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:41](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L41)
+[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:41](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L41)
 
 ___
 
@@ -324,28 +323,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:76](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L76)
-
-▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `functionFragment` | ``"atVersions"`` |
-| `data` | `BytesLike` |
-
-#### Returns
-
-`Result`
-
-#### Overrides
-
-utils.Interface.decodeFunctionResult
-
-#### Defined in
-
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:77](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L77)
+[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:70](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L70)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -366,7 +344,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:78](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L78)
+[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:71](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L71)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -387,7 +365,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:82](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L82)
+[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:75](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L75)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -408,7 +386,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:86](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L86)
+[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:79](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L79)
 
 ___
 
@@ -537,28 +515,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:58](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L58)
-
-▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `functionFragment` | ``"atVersions"`` |
-| `values` | [`PromiseOrValue`<`BigNumberish`\>[]] |
-
-#### Returns
-
-`string`
-
-#### Overrides
-
-utils.Interface.encodeFunctionData
-
-#### Defined in
-
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:62](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L62)
+[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:56](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L56)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values?`): `string`
 
@@ -579,7 +536,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:66](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L66)
+[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:60](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L60)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values?`): `string`
 
@@ -600,7 +557,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:70](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L70)
+[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:64](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L64)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values?`): `string`
 
@@ -621,7 +578,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:74](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L74)
+[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:68](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L68)
 
 ___
 
@@ -754,7 +711,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `nameOrSignatureOrTopic` | ``"description"`` \| ``"atVersion"`` \| ``"atVersions"`` \| ``"currentVersion"`` \| ``"sync"`` |
+| `nameOrSignatureOrTopic` | ``"description"`` \| ``"atVersion"`` \| ``"currentVersion"`` \| ``"sync"`` |
 
 #### Returns
 
@@ -766,7 +723,7 @@ utils.Interface.getFunction
 
 #### Defined in
 
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:49](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L49)
+[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:48](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L48)
 
 ___
 

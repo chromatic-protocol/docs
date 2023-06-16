@@ -27,7 +27,7 @@
 
 #### Defined in
 
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:27](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L27)
+[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:27](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L27)
 
 ___
 
@@ -37,4 +37,4 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:33](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L33)
+[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:33](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L33)

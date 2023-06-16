@@ -131,7 +131,7 @@ utils.Interface.events
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:441](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L441)
+[src/gen/contracts/core/ChromaticMarket.ts:474](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L474)
 
 ___
 
@@ -158,27 +158,26 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `addLiquidity(address,int16,bytes)` | `FunctionFragment` |
-| `calculateCLBTokenMinting(int16,uint256)` | `FunctionFragment` |
-| `calculateCLBTokenValue(int16,uint256)` | `FunctionFragment` |
 | `checkClaimPosition(uint256)` | `FunctionFragment` |
 | `checkLiquidation(uint256)` | `FunctionFragment` |
 | `claimLiquidity(uint256,bytes)` | `FunctionFragment` |
 | `claimPosition(uint256,address,bytes)` | `FunctionFragment` |
 | `claimPosition(uint256,address,uint256)` | `FunctionFragment` |
+| `claimableLiquidity(int16,uint256)` | `FunctionFragment` |
 | `clbToken()` | `FunctionFragment` |
 | `closePosition(uint256)` | `FunctionFragment` |
 | `distributeEarningToBins(uint256,uint256)` | `FunctionFragment` |
 | `factory()` | `FunctionFragment` |
 | `getBinFreeLiquidity(int16)` | `FunctionFragment` |
 | `getBinLiquidity(int16)` | `FunctionFragment` |
-| `getBinValue(int16)` | `FunctionFragment` |
-| `getClaimBurning(int16,uint256)` | `FunctionFragment` |
+| `getBinValues(int16[])` | `FunctionFragment` |
 | `getLpReceipt(uint256)` | `FunctionFragment` |
 | `getPositions(uint256[])` | `FunctionFragment` |
 | `getProtocolFee(uint256)` | `FunctionFragment` |
 | `keeperFeePayer()` | `FunctionFragment` |
 | `liquidate(uint256,address,uint256)` | `FunctionFragment` |
 | `liquidator()` | `FunctionFragment` |
+| `liquidityBinStatuses()` | `FunctionFragment` |
 | `onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)` | `FunctionFragment` |
 | `onERC1155Received(address,address,uint256,uint256,bytes)` | `FunctionFragment` |
 | `openPosition(int224,uint32,uint256,uint256,uint256,bytes)` | `FunctionFragment` |
@@ -196,7 +195,7 @@ utils.Interface.functions
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:103](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L103)
+[src/gen/contracts/core/ChromaticMarket.ts:146](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L146)
 
 ___
 
@@ -365,49 +364,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:330](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L330)
-
-▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `functionFragment` | ``"calculateCLBTokenMinting"`` |
-| `data` | `BytesLike` |
-
-#### Returns
-
-`Result`
-
-#### Overrides
-
-utils.Interface.decodeFunctionResult
-
-#### Defined in
-
-[src/gen/contracts/core/ChromaticMarket.ts:334](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L334)
-
-▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `functionFragment` | ``"calculateCLBTokenValue"`` |
-| `data` | `BytesLike` |
-
-#### Returns
-
-`Result`
-
-#### Overrides
-
-utils.Interface.decodeFunctionResult
-
-#### Defined in
-
-[src/gen/contracts/core/ChromaticMarket.ts:338](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L338)
+[src/gen/contracts/core/ChromaticMarket.ts:367](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L367)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -428,7 +385,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:342](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L342)
+[src/gen/contracts/core/ChromaticMarket.ts:371](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L371)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -449,7 +406,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:346](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L346)
+[src/gen/contracts/core/ChromaticMarket.ts:375](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L375)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -470,7 +427,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:350](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L350)
+[src/gen/contracts/core/ChromaticMarket.ts:379](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L379)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -491,7 +448,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:354](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L354)
+[src/gen/contracts/core/ChromaticMarket.ts:383](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L383)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -512,7 +469,28 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:358](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L358)
+[src/gen/contracts/core/ChromaticMarket.ts:387](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L387)
+
+▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `functionFragment` | ``"claimableLiquidity"`` |
+| `data` | `BytesLike` |
+
+#### Returns
+
+`Result`
+
+#### Overrides
+
+utils.Interface.decodeFunctionResult
+
+#### Defined in
+
+[src/gen/contracts/core/ChromaticMarket.ts:391](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L391)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -533,7 +511,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:362](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L362)
+[src/gen/contracts/core/ChromaticMarket.ts:395](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L395)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -554,7 +532,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:363](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L363)
+[src/gen/contracts/core/ChromaticMarket.ts:396](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L396)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -575,7 +553,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:367](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L367)
+[src/gen/contracts/core/ChromaticMarket.ts:400](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L400)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -596,7 +574,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:371](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L371)
+[src/gen/contracts/core/ChromaticMarket.ts:404](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L404)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -617,7 +595,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:372](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L372)
+[src/gen/contracts/core/ChromaticMarket.ts:405](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L405)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -638,7 +616,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:376](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L376)
+[src/gen/contracts/core/ChromaticMarket.ts:409](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L409)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -646,7 +624,7 @@ utils.Interface.decodeFunctionResult
 
 | Name | Type |
 | :------ | :------ |
-| `functionFragment` | ``"getBinValue"`` |
+| `functionFragment` | ``"getBinValues"`` |
 | `data` | `BytesLike` |
 
 #### Returns
@@ -659,28 +637,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:380](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L380)
-
-▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `functionFragment` | ``"getClaimBurning"`` |
-| `data` | `BytesLike` |
-
-#### Returns
-
-`Result`
-
-#### Overrides
-
-utils.Interface.decodeFunctionResult
-
-#### Defined in
-
-[src/gen/contracts/core/ChromaticMarket.ts:384](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L384)
+[src/gen/contracts/core/ChromaticMarket.ts:413](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L413)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -701,7 +658,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:388](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L388)
+[src/gen/contracts/core/ChromaticMarket.ts:417](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L417)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -722,7 +679,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:392](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L392)
+[src/gen/contracts/core/ChromaticMarket.ts:421](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L421)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -743,7 +700,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:396](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L396)
+[src/gen/contracts/core/ChromaticMarket.ts:425](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L425)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -764,7 +721,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:400](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L400)
+[src/gen/contracts/core/ChromaticMarket.ts:429](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L429)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -785,7 +742,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:404](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L404)
+[src/gen/contracts/core/ChromaticMarket.ts:433](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L433)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -806,7 +763,28 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:405](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L405)
+[src/gen/contracts/core/ChromaticMarket.ts:434](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L434)
+
+▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `functionFragment` | ``"liquidityBinStatuses"`` |
+| `data` | `BytesLike` |
+
+#### Returns
+
+`Result`
+
+#### Overrides
+
+utils.Interface.decodeFunctionResult
+
+#### Defined in
+
+[src/gen/contracts/core/ChromaticMarket.ts:435](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L435)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -827,7 +805,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:406](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L406)
+[src/gen/contracts/core/ChromaticMarket.ts:439](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L439)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -848,7 +826,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:410](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L410)
+[src/gen/contracts/core/ChromaticMarket.ts:443](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L443)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -869,7 +847,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:414](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L414)
+[src/gen/contracts/core/ChromaticMarket.ts:447](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L447)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -890,7 +868,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:418](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L418)
+[src/gen/contracts/core/ChromaticMarket.ts:451](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L451)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -911,7 +889,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:422](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L422)
+[src/gen/contracts/core/ChromaticMarket.ts:455](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L455)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -932,7 +910,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:426](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L426)
+[src/gen/contracts/core/ChromaticMarket.ts:459](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L459)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -953,7 +931,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:427](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L427)
+[src/gen/contracts/core/ChromaticMarket.ts:460](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L460)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -974,7 +952,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:431](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L431)
+[src/gen/contracts/core/ChromaticMarket.ts:464](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L464)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -995,7 +973,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:435](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L435)
+[src/gen/contracts/core/ChromaticMarket.ts:468](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L468)
 
 ▸ **decodeFunctionResult**(`functionFragment`, `data`): `Result`
 
@@ -1016,7 +994,7 @@ utils.Interface.decodeFunctionResult
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:436](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L436)
+[src/gen/contracts/core/ChromaticMarket.ts:469](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L469)
 
 ___
 
@@ -1145,49 +1123,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:174](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L174)
-
-▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `functionFragment` | ``"calculateCLBTokenMinting"`` |
-| `values` | [`PromiseOrValue`<`BigNumberish`\>, `PromiseOrValue`<`BigNumberish`\>] |
-
-#### Returns
-
-`string`
-
-#### Overrides
-
-utils.Interface.encodeFunctionData
-
-#### Defined in
-
-[src/gen/contracts/core/ChromaticMarket.ts:182](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L182)
-
-▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `functionFragment` | ``"calculateCLBTokenValue"`` |
-| `values` | [`PromiseOrValue`<`BigNumberish`\>, `PromiseOrValue`<`BigNumberish`\>] |
-
-#### Returns
-
-`string`
-
-#### Overrides
-
-utils.Interface.encodeFunctionData
-
-#### Defined in
-
-[src/gen/contracts/core/ChromaticMarket.ts:186](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L186)
+[src/gen/contracts/core/ChromaticMarket.ts:215](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L215)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1208,7 +1144,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:190](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L190)
+[src/gen/contracts/core/ChromaticMarket.ts:223](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L223)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1229,7 +1165,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:194](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L194)
+[src/gen/contracts/core/ChromaticMarket.ts:227](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L227)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1250,7 +1186,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:198](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L198)
+[src/gen/contracts/core/ChromaticMarket.ts:231](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L231)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1271,7 +1207,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:202](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L202)
+[src/gen/contracts/core/ChromaticMarket.ts:235](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L235)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1292,7 +1228,28 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:210](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L210)
+[src/gen/contracts/core/ChromaticMarket.ts:243](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L243)
+
+▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `functionFragment` | ``"claimableLiquidity"`` |
+| `values` | [`PromiseOrValue`<`BigNumberish`\>, `PromiseOrValue`<`BigNumberish`\>] |
+
+#### Returns
+
+`string`
+
+#### Overrides
+
+utils.Interface.encodeFunctionData
+
+#### Defined in
+
+[src/gen/contracts/core/ChromaticMarket.ts:251](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L251)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values?`): `string`
 
@@ -1313,7 +1270,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:218](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L218)
+[src/gen/contracts/core/ChromaticMarket.ts:255](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L255)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1334,7 +1291,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:219](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L219)
+[src/gen/contracts/core/ChromaticMarket.ts:256](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L256)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1355,7 +1312,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:223](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L223)
+[src/gen/contracts/core/ChromaticMarket.ts:260](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L260)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values?`): `string`
 
@@ -1376,7 +1333,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:227](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L227)
+[src/gen/contracts/core/ChromaticMarket.ts:264](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L264)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1397,7 +1354,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:228](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L228)
+[src/gen/contracts/core/ChromaticMarket.ts:265](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L265)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1418,7 +1375,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:232](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L232)
+[src/gen/contracts/core/ChromaticMarket.ts:269](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L269)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1426,8 +1383,8 @@ utils.Interface.encodeFunctionData
 
 | Name | Type |
 | :------ | :------ |
-| `functionFragment` | ``"getBinValue"`` |
-| `values` | [`PromiseOrValue`<`BigNumberish`\>] |
+| `functionFragment` | ``"getBinValues"`` |
+| `values` | [`PromiseOrValue`<`BigNumberish`\>[]] |
 
 #### Returns
 
@@ -1439,28 +1396,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:236](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L236)
-
-▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `functionFragment` | ``"getClaimBurning"`` |
-| `values` | [`PromiseOrValue`<`BigNumberish`\>, `PromiseOrValue`<`BigNumberish`\>] |
-
-#### Returns
-
-`string`
-
-#### Overrides
-
-utils.Interface.encodeFunctionData
-
-#### Defined in
-
-[src/gen/contracts/core/ChromaticMarket.ts:240](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L240)
+[src/gen/contracts/core/ChromaticMarket.ts:273](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L273)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1481,7 +1417,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:244](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L244)
+[src/gen/contracts/core/ChromaticMarket.ts:277](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L277)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1502,7 +1438,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:248](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L248)
+[src/gen/contracts/core/ChromaticMarket.ts:281](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L281)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1523,7 +1459,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:252](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L252)
+[src/gen/contracts/core/ChromaticMarket.ts:285](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L285)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values?`): `string`
 
@@ -1544,7 +1480,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:256](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L256)
+[src/gen/contracts/core/ChromaticMarket.ts:289](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L289)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1565,7 +1501,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:260](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L260)
+[src/gen/contracts/core/ChromaticMarket.ts:293](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L293)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values?`): `string`
 
@@ -1586,7 +1522,28 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:268](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L268)
+[src/gen/contracts/core/ChromaticMarket.ts:301](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L301)
+
+▸ **encodeFunctionData**(`functionFragment`, `values?`): `string`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `functionFragment` | ``"liquidityBinStatuses"`` |
+| `values?` | `undefined` |
+
+#### Returns
+
+`string`
+
+#### Overrides
+
+utils.Interface.encodeFunctionData
+
+#### Defined in
+
+[src/gen/contracts/core/ChromaticMarket.ts:305](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L305)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1607,7 +1564,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:272](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L272)
+[src/gen/contracts/core/ChromaticMarket.ts:309](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L309)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1628,7 +1585,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:282](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L282)
+[src/gen/contracts/core/ChromaticMarket.ts:319](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L319)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1649,7 +1606,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:292](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L292)
+[src/gen/contracts/core/ChromaticMarket.ts:329](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L329)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values?`): `string`
 
@@ -1670,7 +1627,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:303](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L303)
+[src/gen/contracts/core/ChromaticMarket.ts:340](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L340)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1691,7 +1648,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:307](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L307)
+[src/gen/contracts/core/ChromaticMarket.ts:344](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L344)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values?`): `string`
 
@@ -1712,7 +1669,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:315](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L315)
+[src/gen/contracts/core/ChromaticMarket.ts:352](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L352)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values?`): `string`
 
@@ -1733,7 +1690,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:316](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L316)
+[src/gen/contracts/core/ChromaticMarket.ts:353](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L353)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1754,7 +1711,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:320](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L320)
+[src/gen/contracts/core/ChromaticMarket.ts:357](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L357)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values?`): `string`
 
@@ -1775,7 +1732,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:324](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L324)
+[src/gen/contracts/core/ChromaticMarket.ts:361](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L361)
 
 ▸ **encodeFunctionData**(`functionFragment`, `values`): `string`
 
@@ -1796,7 +1753,7 @@ utils.Interface.encodeFunctionData
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:325](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L325)
+[src/gen/contracts/core/ChromaticMarket.ts:362](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L362)
 
 ___
 
@@ -1893,7 +1850,7 @@ utils.Interface.getEvent
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:453](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L453)
+[src/gen/contracts/core/ChromaticMarket.ts:486](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L486)
 
 ▸ **getEvent**(`nameOrSignatureOrTopic`): `EventFragment`
 
@@ -1913,7 +1870,7 @@ utils.Interface.getEvent
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:454](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L454)
+[src/gen/contracts/core/ChromaticMarket.ts:487](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L487)
 
 ▸ **getEvent**(`nameOrSignatureOrTopic`): `EventFragment`
 
@@ -1933,7 +1890,7 @@ utils.Interface.getEvent
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:455](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L455)
+[src/gen/contracts/core/ChromaticMarket.ts:488](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L488)
 
 ▸ **getEvent**(`nameOrSignatureOrTopic`): `EventFragment`
 
@@ -1953,7 +1910,7 @@ utils.Interface.getEvent
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:456](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L456)
+[src/gen/contracts/core/ChromaticMarket.ts:489](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L489)
 
 ▸ **getEvent**(`nameOrSignatureOrTopic`): `EventFragment`
 
@@ -1973,7 +1930,7 @@ utils.Interface.getEvent
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:457](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L457)
+[src/gen/contracts/core/ChromaticMarket.ts:490](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L490)
 
 ▸ **getEvent**(`nameOrSignatureOrTopic`): `EventFragment`
 
@@ -1993,7 +1950,7 @@ utils.Interface.getEvent
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:458](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L458)
+[src/gen/contracts/core/ChromaticMarket.ts:491](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L491)
 
 ▸ **getEvent**(`nameOrSignatureOrTopic`): `EventFragment`
 
@@ -2013,7 +1970,7 @@ utils.Interface.getEvent
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:459](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L459)
+[src/gen/contracts/core/ChromaticMarket.ts:492](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L492)
 
 ▸ **getEvent**(`nameOrSignatureOrTopic`): `EventFragment`
 
@@ -2033,7 +1990,7 @@ utils.Interface.getEvent
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:460](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L460)
+[src/gen/contracts/core/ChromaticMarket.ts:493](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L493)
 
 ▸ **getEvent**(`nameOrSignatureOrTopic`): `EventFragment`
 
@@ -2053,7 +2010,7 @@ utils.Interface.getEvent
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:461](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L461)
+[src/gen/contracts/core/ChromaticMarket.ts:494](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L494)
 
 ___
 
@@ -2089,7 +2046,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `nameOrSignatureOrTopic` | ``"supportsInterface"`` \| ``"claimPosition(uint256,address,bytes)"`` \| ``"claimPosition(uint256,address,uint256)"`` \| ``"addLiquidity"`` \| ``"calculateCLBTokenMinting"`` \| ``"calculateCLBTokenValue"`` \| ``"checkClaimPosition"`` \| ``"checkLiquidation"`` \| ``"claimLiquidity"`` \| ``"clbToken"`` \| ``"closePosition"`` \| ``"distributeEarningToBins"`` \| ``"factory"`` \| ``"getBinFreeLiquidity"`` \| ``"getBinLiquidity"`` \| ``"getBinValue"`` \| ``"getClaimBurning"`` \| ``"getLpReceipt"`` \| ``"getPositions"`` \| ``"getProtocolFee"`` \| ``"keeperFeePayer"`` \| ``"liquidate"`` \| ``"liquidator"`` \| ``"onERC1155BatchReceived"`` \| ``"onERC1155Received"`` \| ``"openPosition"`` \| ``"oracleProvider"`` \| ``"removeLiquidity"`` \| ``"settle"`` \| ``"settlementToken"`` \| ``"vault"`` \| ``"withdrawLiquidity"`` |
+| `nameOrSignatureOrTopic` | ``"supportsInterface"`` \| ``"claimPosition(uint256,address,bytes)"`` \| ``"claimPosition(uint256,address,uint256)"`` \| ``"addLiquidity"`` \| ``"checkClaimPosition"`` \| ``"checkLiquidation"`` \| ``"claimLiquidity"`` \| ``"claimableLiquidity"`` \| ``"clbToken"`` \| ``"closePosition"`` \| ``"distributeEarningToBins"`` \| ``"factory"`` \| ``"getBinFreeLiquidity"`` \| ``"getBinLiquidity"`` \| ``"getBinValues"`` \| ``"getLpReceipt"`` \| ``"getPositions"`` \| ``"getProtocolFee"`` \| ``"keeperFeePayer"`` \| ``"liquidate"`` \| ``"liquidator"`` \| ``"liquidityBinStatuses"`` \| ``"onERC1155BatchReceived"`` \| ``"onERC1155Received"`` \| ``"openPosition"`` \| ``"oracleProvider"`` \| ``"removeLiquidity"`` \| ``"settle"`` \| ``"settlementToken"`` \| ``"vault"`` \| ``"withdrawLiquidity"`` |
 
 #### Returns
 
@@ -2101,7 +2058,7 @@ utils.Interface.getFunction
 
 #### Defined in
 
-[src/gen/contracts/core/ChromaticMarket.ts:138](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/core/ChromaticMarket.ts#L138)
+[src/gen/contracts/core/ChromaticMarket.ts:180](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/core/ChromaticMarket.ts#L180)
 
 ___
 

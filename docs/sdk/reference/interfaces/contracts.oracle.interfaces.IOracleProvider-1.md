@@ -1,8 +1,11 @@
-[@chromatic-protocol/sdk](../README.md) / [Exports](../modules.md) / [contracts](../modules/contracts.md) / [oracle](../modules/contracts.oracle.md) / [interfaces](../modules/contracts.oracle.interfaces.md) / IOracleProvider
+---
+id: "contracts.oracle.interfaces.IOracleProvider-1"
+title: "Interface: IOracleProvider"
+sidebar_label: "IOracleProvider"
+custom_edit_url: null
+---
 
-# Interface: IOracleProvider
-
-[oracle](../modules/contracts.oracle.md).[interfaces](../modules/contracts.oracle.interfaces.md).IOracleProvider
+[oracle](../namespaces/contracts.oracle.md).[interfaces](../namespaces/contracts.oracle.interfaces.md).IOracleProvider
 
 ## Hierarchy
 
@@ -10,423 +13,11 @@
 
   ↳ **`IOracleProvider`**
 
-## Table of contents
-
-### Properties
-
-- [\_deployedPromise](contracts.oracle.interfaces.IOracleProvider-1.md#_deployedpromise)
-- [\_runningEvents](contracts.oracle.interfaces.IOracleProvider-1.md#_runningevents)
-- [\_wrappedEmits](contracts.oracle.interfaces.IOracleProvider-1.md#_wrappedemits)
-- [address](contracts.oracle.interfaces.IOracleProvider-1.md#address)
-- [callStatic](contracts.oracle.interfaces.IOracleProvider-1.md#callstatic)
-- [deployTransaction](contracts.oracle.interfaces.IOracleProvider-1.md#deploytransaction)
-- [estimateGas](contracts.oracle.interfaces.IOracleProvider-1.md#estimategas)
-- [filters](contracts.oracle.interfaces.IOracleProvider-1.md#filters)
-- [functions](contracts.oracle.interfaces.IOracleProvider-1.md#functions)
-- [interface](contracts.oracle.interfaces.IOracleProvider-1.md#interface)
-- [off](contracts.oracle.interfaces.IOracleProvider-1.md#off)
-- [on](contracts.oracle.interfaces.IOracleProvider-1.md#on)
-- [once](contracts.oracle.interfaces.IOracleProvider-1.md#once)
-- [populateTransaction](contracts.oracle.interfaces.IOracleProvider-1.md#populatetransaction)
-- [provider](contracts.oracle.interfaces.IOracleProvider-1.md#provider)
-- [removeListener](contracts.oracle.interfaces.IOracleProvider-1.md#removelistener)
-- [resolvedAddress](contracts.oracle.interfaces.IOracleProvider-1.md#resolvedaddress)
-- [signer](contracts.oracle.interfaces.IOracleProvider-1.md#signer)
-
-### Methods
-
-- [\_checkRunningEvents](contracts.oracle.interfaces.IOracleProvider-1.md#_checkrunningevents)
-- [\_deployed](contracts.oracle.interfaces.IOracleProvider-1.md#_deployed)
-- [\_wrapEvent](contracts.oracle.interfaces.IOracleProvider-1.md#_wrapevent)
-- [atVersion](contracts.oracle.interfaces.IOracleProvider-1.md#atversion)
-- [attach](contracts.oracle.interfaces.IOracleProvider-1.md#attach)
-- [connect](contracts.oracle.interfaces.IOracleProvider-1.md#connect)
-- [currentVersion](contracts.oracle.interfaces.IOracleProvider-1.md#currentversion)
-- [deployed](contracts.oracle.interfaces.IOracleProvider-1.md#deployed)
-- [description](contracts.oracle.interfaces.IOracleProvider-1.md#description)
-- [emit](contracts.oracle.interfaces.IOracleProvider-1.md#emit)
-- [fallback](contracts.oracle.interfaces.IOracleProvider-1.md#fallback)
-- [listenerCount](contracts.oracle.interfaces.IOracleProvider-1.md#listenercount)
-- [listeners](contracts.oracle.interfaces.IOracleProvider-1.md#listeners)
-- [queryFilter](contracts.oracle.interfaces.IOracleProvider-1.md#queryfilter)
-- [removeAllListeners](contracts.oracle.interfaces.IOracleProvider-1.md#removealllisteners)
-- [sync](contracts.oracle.interfaces.IOracleProvider-1.md#sync)
-
-## Properties
-
-### \_deployedPromise
-
-• **\_deployedPromise**: `Promise`<`Contract`\>
-
-#### Inherited from
-
-BaseContract.\_deployedPromise
-
-#### Defined in
-
-node_modules/@ethersproject/contracts/lib/index.d.ts:100
-
-___
-
-### \_runningEvents
-
-• **\_runningEvents**: `Object`
-
-#### Index signature
-
-▪ [eventTag: `string`]: `RunningEvent`
-
-#### Inherited from
-
-BaseContract.\_runningEvents
-
-#### Defined in
-
-node_modules/@ethersproject/contracts/lib/index.d.ts:101
-
-___
-
-### \_wrappedEmits
-
-• **\_wrappedEmits**: `Object`
-
-#### Index signature
-
-▪ [eventTag: `string`]: (...`args`: `any`[]) => `void`
-
-#### Inherited from
-
-BaseContract.\_wrappedEmits
-
-#### Defined in
-
-node_modules/@ethersproject/contracts/lib/index.d.ts:104
-
-___
-
-### address
-
-• `Readonly` **address**: `string`
-
-#### Inherited from
-
-BaseContract.address
-
-#### Defined in
-
-node_modules/@ethersproject/contracts/lib/index.d.ts:79
-
-___
-
-### callStatic
-
-• **callStatic**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `atVersion` | (`version`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `CallOverrides`) => `Promise`<[`OracleVersionStructOutput`](../modules/contracts.oracle.interfaces.IOracleProvider.md#oracleversionstructoutput)\> |
-| `currentVersion` | (`overrides?`: `CallOverrides`) => `Promise`<[`OracleVersionStructOutput`](../modules/contracts.oracle.interfaces.IOracleProvider.md#oracleversionstructoutput)\> |
-| `description` | (`overrides?`: `CallOverrides`) => `Promise`<`string`\> |
-| `sync` | (`overrides?`: `CallOverrides`) => `Promise`<[`OracleVersionStructOutput`](../modules/contracts.oracle.interfaces.IOracleProvider.md#oracleversionstructoutput)\> |
-
-#### Overrides
-
-BaseContract.callStatic
-
-#### Defined in
-
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:170](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L170)
-
-___
-
-### deployTransaction
-
-• `Readonly` **deployTransaction**: `TransactionResponse`
-
-#### Inherited from
-
-BaseContract.deployTransaction
-
-#### Defined in
-
-node_modules/@ethersproject/contracts/lib/index.d.ts:99
-
-___
-
-### estimateGas
-
-• **estimateGas**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `atVersion` | (`version`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
-| `currentVersion` | (`overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
-| `description` | (`overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
-| `sync` | (`overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
-
-#### Overrides
-
-BaseContract.estimateGas
-
-#### Defined in
-
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:203](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L203)
-
-___
-
-### filters
-
-• **filters**: `Object`
-
-#### Overrides
-
-BaseContract.filters
-
-#### Defined in
-
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:201](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L201)
-
-___
-
-### functions
-
-• **functions**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `atVersion` | (`version`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `CallOverrides`) => `Promise`<[[`OracleVersionStructOutput`](../modules/contracts.oracle.interfaces.IOracleProvider.md#oracleversionstructoutput)]\> |
-| `currentVersion` | (`overrides?`: `CallOverrides`) => `Promise`<[[`OracleVersionStructOutput`](../modules/contracts.oracle.interfaces.IOracleProvider.md#oracleversionstructoutput)]\> |
-| `description` | (`overrides?`: `CallOverrides`) => `Promise`<[`string`]\> |
-| `sync` | (`overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
-
-#### Overrides
-
-BaseContract.functions
-
-#### Defined in
-
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:110](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L110)
-
-___
-
-### interface
-
-• **interface**: [`IOracleProviderInterface`](IOracleProviderInterface.md)
-
-#### Overrides
-
-BaseContract.interface
-
-#### Defined in
-
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:89](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L89)
-
-___
-
-### off
-
-• **off**: `OnEvent`<[`IOracleProvider`](contracts.oracle.interfaces.IOracleProvider-1.md)\>
-
-#### Overrides
-
-BaseContract.off
-
-#### Defined in
-
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:105](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L105)
-
-___
-
-### on
-
-• **on**: `OnEvent`<[`IOracleProvider`](contracts.oracle.interfaces.IOracleProvider-1.md)\>
-
-#### Overrides
-
-BaseContract.on
-
-#### Defined in
-
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:106](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L106)
-
-___
-
-### once
-
-• **once**: `OnEvent`<[`IOracleProvider`](contracts.oracle.interfaces.IOracleProvider-1.md)\>
-
-#### Overrides
-
-BaseContract.once
-
-#### Defined in
-
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:107](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L107)
-
-___
-
-### populateTransaction
-
-• **populateTransaction**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `atVersion` | (`version`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
-| `currentVersion` | (`overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
-| `description` | (`overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
-| `sync` | (`overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
-
-#### Overrides
-
-BaseContract.populateTransaction
-
-#### Defined in
-
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:232](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L232)
-
-___
-
-### provider
-
-• `Readonly` **provider**: `Provider`
-
-#### Inherited from
-
-BaseContract.provider
-
-#### Defined in
-
-node_modules/@ethersproject/contracts/lib/index.d.ts:82
-
-___
-
-### removeListener
-
-• **removeListener**: `OnEvent`<[`IOracleProvider`](contracts.oracle.interfaces.IOracleProvider-1.md)\>
-
-#### Overrides
-
-BaseContract.removeListener
-
-#### Defined in
-
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:108](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L108)
-
-___
-
-### resolvedAddress
-
-• `Readonly` **resolvedAddress**: `Promise`<`string`\>
-
-#### Inherited from
-
-BaseContract.resolvedAddress
-
-#### Defined in
-
-node_modules/@ethersproject/contracts/lib/index.d.ts:98
-
-___
-
-### signer
-
-• `Readonly` **signer**: `Signer`
-
-#### Inherited from
-
-BaseContract.signer
-
-#### Defined in
-
-node_modules/@ethersproject/contracts/lib/index.d.ts:81
-
 ## Methods
-
-### \_checkRunningEvents
-
-▸ **_checkRunningEvents**(`runningEvent`): `void`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `runningEvent` | `RunningEvent` |
-
-#### Returns
-
-`void`
-
-#### Inherited from
-
-BaseContract.\_checkRunningEvents
-
-#### Defined in
-
-node_modules/@ethersproject/contracts/lib/index.d.ts:121
-
-___
-
-### \_deployed
-
-▸ **_deployed**(`blockTag?`): `Promise`<`Contract`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `blockTag?` | `BlockTag` |
-
-#### Returns
-
-`Promise`<`Contract`\>
-
-#### Inherited from
-
-BaseContract.\_deployed
-
-#### Defined in
-
-node_modules/@ethersproject/contracts/lib/index.d.ts:114
-
-___
-
-### \_wrapEvent
-
-▸ **_wrapEvent**(`runningEvent`, `log`, `listener`): `Event`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `runningEvent` | `RunningEvent` |
-| `log` | `Log` |
-| `listener` | `Listener` |
-
-#### Returns
-
-`Event`
-
-#### Inherited from
-
-BaseContract.\_wrapEvent
-
-#### Defined in
-
-node_modules/@ethersproject/contracts/lib/index.d.ts:122
-
-___
 
 ### atVersion
 
-▸ **atVersion**(`version`, `overrides?`): `Promise`<[`OracleVersionStructOutput`](../modules/contracts.oracle.interfaces.IOracleProvider.md#oracleversionstructoutput)\>
+▸ **atVersion**(`version`, `overrides?`): `Promise`<[`OracleVersionStructOutput`](../namespaces/contracts.oracle.interfaces.IOracleProvider.md#oracleversionstructoutput)\>
 
 Returns the current oracle version
 
@@ -439,11 +30,11 @@ Returns the current oracle version
 
 #### Returns
 
-`Promise`<[`OracleVersionStructOutput`](../modules/contracts.oracle.interfaces.IOracleProvider.md#oracleversionstructoutput)\>
+`Promise`<[`OracleVersionStructOutput`](../namespaces/contracts.oracle.interfaces.IOracleProvider.md#oracleversionstructoutput)\>
 
 #### Defined in
 
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:145](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L145)
+[gen/contracts/oracle/interfaces/IOracleProvider.ts:145](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L145)
 
 ___
 
@@ -467,7 +58,7 @@ BaseContract.attach
 
 #### Defined in
 
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:86](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L86)
+[gen/contracts/oracle/interfaces/IOracleProvider.ts:86](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L86)
 
 ___
 
@@ -491,13 +82,13 @@ BaseContract.connect
 
 #### Defined in
 
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:85](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L85)
+[gen/contracts/oracle/interfaces/IOracleProvider.ts:85](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L85)
 
 ___
 
 ### currentVersion
 
-▸ **currentVersion**(`overrides?`): `Promise`<[`OracleVersionStructOutput`](../modules/contracts.oracle.interfaces.IOracleProvider.md#oracleversionstructoutput)\>
+▸ **currentVersion**(`overrides?`): `Promise`<[`OracleVersionStructOutput`](../namespaces/contracts.oracle.interfaces.IOracleProvider.md#oracleversionstructoutput)\>
 
 Returns the current oracle version
 
@@ -509,11 +100,11 @@ Returns the current oracle version
 
 #### Returns
 
-`Promise`<[`OracleVersionStructOutput`](../modules/contracts.oracle.interfaces.IOracleProvider.md#oracleversionstructoutput)\>
+`Promise`<[`OracleVersionStructOutput`](../namespaces/contracts.oracle.interfaces.IOracleProvider.md#oracleversionstructoutput)\>
 
 #### Defined in
 
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:153](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L153)
+[gen/contracts/oracle/interfaces/IOracleProvider.ts:153](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L153)
 
 ___
 
@@ -531,7 +122,7 @@ BaseContract.deployed
 
 #### Defined in
 
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:87](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L87)
+[gen/contracts/oracle/interfaces/IOracleProvider.ts:87](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L87)
 
 ___
 
@@ -553,80 +144,7 @@ Retrieves the description of the Oracle Provider.
 
 #### Defined in
 
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:160](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L160)
-
-___
-
-### emit
-
-▸ **emit**(`eventName`, `...args`): `boolean`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `eventName` | `string` \| `EventFilter` |
-| `...args` | `any`[] |
-
-#### Returns
-
-`boolean`
-
-#### Inherited from
-
-BaseContract.emit
-
-#### Defined in
-
-node_modules/@ethersproject/contracts/lib/index.d.ts:127
-
-___
-
-### fallback
-
-▸ **fallback**(`overrides?`): `Promise`<`TransactionResponse`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `overrides?` | `TransactionRequest` |
-
-#### Returns
-
-`Promise`<`TransactionResponse`\>
-
-#### Inherited from
-
-BaseContract.fallback
-
-#### Defined in
-
-node_modules/@ethersproject/contracts/lib/index.d.ts:115
-
-___
-
-### listenerCount
-
-▸ **listenerCount**(`eventName?`): `number`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `eventName?` | `string` \| `EventFilter` |
-
-#### Returns
-
-`number`
-
-#### Inherited from
-
-BaseContract.listenerCount
-
-#### Defined in
-
-node_modules/@ethersproject/contracts/lib/index.d.ts:128
+[gen/contracts/oracle/interfaces/IOracleProvider.ts:160](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L160)
 
 ___
 
@@ -656,7 +174,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:97](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L97)
+[gen/contracts/oracle/interfaces/IOracleProvider.ts:97](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L97)
 
 ▸ **listeners**(`eventName?`): `Listener`[]
 
@@ -676,7 +194,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:100](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L100)
+[gen/contracts/oracle/interfaces/IOracleProvider.ts:100](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L100)
 
 ___
 
@@ -708,7 +226,7 @@ BaseContract.queryFilter
 
 #### Defined in
 
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:91](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L91)
+[gen/contracts/oracle/interfaces/IOracleProvider.ts:91](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L91)
 
 ___
 
@@ -738,7 +256,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:101](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L101)
+[gen/contracts/oracle/interfaces/IOracleProvider.ts:101](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L101)
 
 ▸ **removeAllListeners**(`eventName?`): [`IOracleProvider`](contracts.oracle.interfaces.IOracleProvider-1.md)
 
@@ -758,7 +276,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:104](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L104)
+[gen/contracts/oracle/interfaces/IOracleProvider.ts:104](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L104)
 
 ___
 
@@ -781,4 +299,4 @@ Checks for a new price and updates the internal phase annotation state according
 
 #### Defined in
 
-[src/gen/contracts/oracle/interfaces/IOracleProvider.ts:166](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L166)
+[gen/contracts/oracle/interfaces/IOracleProvider.ts:166](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L166)

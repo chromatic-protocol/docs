@@ -32,7 +32,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[gen/factories/contracts/core/ChromaticVault__factory.ts:924](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/factories/contracts/core/ChromaticVault__factory.ts#L924)
+[gen/factories/contracts/core/ChromaticVault__factory.ts:924](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/factories/contracts/core/ChromaticVault__factory.ts#L924)
 
 ___
 
@@ -46,4 +46,4 @@ ___
 
 #### Defined in
 
-[gen/factories/contracts/core/ChromaticVault__factory.ts:921](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/factories/contracts/core/ChromaticVault__factory.ts#L921)
+[gen/factories/contracts/core/ChromaticVault__factory.ts:921](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/factories/contracts/core/ChromaticVault__factory.ts#L921)

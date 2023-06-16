@@ -36,7 +36,7 @@ Adds liquidity to the market.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:916](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L916)
+[gen/contracts/core/ChromaticMarket.ts:916](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L916)
 
 ___
 
@@ -60,7 +60,7 @@ BaseContract.attach
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:606](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L606)
+[gen/contracts/core/ChromaticMarket.ts:606](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L606)
 
 ___
 
@@ -83,7 +83,7 @@ Checks if a position is eligible for claim.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:927](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L927)
+[gen/contracts/core/ChromaticMarket.ts:927](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L927)
 
 ___
 
@@ -106,7 +106,7 @@ Checks if a position is eligible for liquidation.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:936](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L936)
+[gen/contracts/core/ChromaticMarket.ts:936](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L936)
 
 ___
 
@@ -130,7 +130,7 @@ Claims liquidity from a liquidity receipt.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:946](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L946)
+[gen/contracts/core/ChromaticMarket.ts:946](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L946)
 
 ___
 
@@ -155,7 +155,7 @@ Claims a closed position in the market.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:958](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L958)
+[gen/contracts/core/ChromaticMarket.ts:958](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L958)
 
 ___
 
@@ -180,7 +180,7 @@ Claims a closed position on behalf of a keeper.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:971](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L971)
+[gen/contracts/core/ChromaticMarket.ts:971](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L971)
 
 ___
 
@@ -204,7 +204,7 @@ Retrieves the claimable liquidity information for a specific trading fee rate an
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:983](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L983)
+[gen/contracts/core/ChromaticMarket.ts:983](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L983)
 
 ___
 
@@ -224,7 +224,7 @@ ___
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:989](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L989)
+[gen/contracts/core/ChromaticMarket.ts:989](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L989)
 
 ___
 
@@ -247,7 +247,7 @@ Closes a position in the market.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:995](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L995)
+[gen/contracts/core/ChromaticMarket.ts:995](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L995)
 
 ___
 
@@ -271,7 +271,7 @@ BaseContract.connect
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:605](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L605)
+[gen/contracts/core/ChromaticMarket.ts:605](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L605)
 
 ___
 
@@ -289,7 +289,7 @@ BaseContract.deployed
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:607](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L607)
+[gen/contracts/core/ChromaticMarket.ts:607](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L607)
 
 ___
 
@@ -313,7 +313,7 @@ Distributes earning to the liquidity bins.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:1005](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L1005)
+[gen/contracts/core/ChromaticMarket.ts:1005](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L1005)
 
 ___
 
@@ -333,7 +333,7 @@ ___
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:1011](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L1011)
+[gen/contracts/core/ChromaticMarket.ts:1011](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L1011)
 
 ___
 
@@ -356,7 +356,7 @@ Retrieves the available (free) liquidity amount for a specific trading fee rate 
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:1017](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L1017)
+[gen/contracts/core/ChromaticMarket.ts:1017](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L1017)
 
 ___
 
@@ -379,7 +379,7 @@ Retrieves the total liquidity amount for a specific trading fee rate in the liqu
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:1026](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L1026)
+[gen/contracts/core/ChromaticMarket.ts:1026](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L1026)
 
 ___
 
@@ -402,7 +402,7 @@ Retrieves the values of a specific trading fee rate's bins in the liquidity pool
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:1035](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L1035)
+[gen/contracts/core/ChromaticMarket.ts:1035](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L1035)
 
 ___
 
@@ -425,7 +425,7 @@ Retrieves the liquidity receipt with the given receipt ID.      It throws NotExi
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:1044](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L1044)
+[gen/contracts/core/ChromaticMarket.ts:1044](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L1044)
 
 ___
 
@@ -448,7 +448,7 @@ Retrieves multiple positions by their IDs.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:1053](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L1053)
+[gen/contracts/core/ChromaticMarket.ts:1053](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L1053)
 
 ___
 
@@ -469,7 +469,7 @@ ___
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:1058](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L1058)
+[gen/contracts/core/ChromaticMarket.ts:1058](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L1058)
 
 ___
 
@@ -489,7 +489,7 @@ ___
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:1063](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L1063)
+[gen/contracts/core/ChromaticMarket.ts:1063](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L1063)
 
 ___
 
@@ -514,7 +514,7 @@ Liquidates a position.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:1071](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L1071)
+[gen/contracts/core/ChromaticMarket.ts:1071](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L1071)
 
 ___
 
@@ -534,7 +534,7 @@ ___
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:1078](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L1078)
+[gen/contracts/core/ChromaticMarket.ts:1078](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L1078)
 
 ___
 
@@ -556,7 +556,7 @@ Retrieves the liquidity bin statuses for the caller's liquidity pool.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:1083](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L1083)
+[gen/contracts/core/ChromaticMarket.ts:1083](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L1083)
 
 ___
 
@@ -586,7 +586,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:617](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L617)
+[gen/contracts/core/ChromaticMarket.ts:617](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L617)
 
 ▸ **listeners**(`eventName?`): `Listener`[]
 
@@ -606,7 +606,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:620](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L620)
+[gen/contracts/core/ChromaticMarket.ts:620](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L620)
 
 ___
 
@@ -633,7 +633,7 @@ Handles the receipt of a multiple ERC1155 token types. This function is called a
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:1095](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L1095)
+[gen/contracts/core/ChromaticMarket.ts:1095](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L1095)
 
 ___
 
@@ -660,7 +660,7 @@ Handles the receipt of a single ERC1155 token type. This function is called at t
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:1112](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L1112)
+[gen/contracts/core/ChromaticMarket.ts:1112](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L1112)
 
 ___
 
@@ -688,7 +688,7 @@ Opens a new position in the market.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:1130](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L1130)
+[gen/contracts/core/ChromaticMarket.ts:1130](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L1130)
 
 ___
 
@@ -708,7 +708,7 @@ ___
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:1140](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L1140)
+[gen/contracts/core/ChromaticMarket.ts:1140](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L1140)
 
 ___
 
@@ -740,7 +740,7 @@ BaseContract.queryFilter
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:611](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L611)
+[gen/contracts/core/ChromaticMarket.ts:611](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L611)
 
 ___
 
@@ -770,7 +770,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:621](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L621)
+[gen/contracts/core/ChromaticMarket.ts:621](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L621)
 
 ▸ **removeAllListeners**(`eventName?`): [`ChromaticMarket`](contracts.core.ChromaticMarket.md)
 
@@ -790,7 +790,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:624](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L624)
+[gen/contracts/core/ChromaticMarket.ts:624](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L624)
 
 ___
 
@@ -815,7 +815,7 @@ Removes liquidity from the market.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:1148](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L1148)
+[gen/contracts/core/ChromaticMarket.ts:1148](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L1148)
 
 ___
 
@@ -838,7 +838,7 @@ Executes the settlement process for the Chromatic market.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:1159](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L1159)
+[gen/contracts/core/ChromaticMarket.ts:1159](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L1159)
 
 ___
 
@@ -858,7 +858,7 @@ ___
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:1163](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L1163)
+[gen/contracts/core/ChromaticMarket.ts:1163](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L1163)
 
 ___
 
@@ -881,7 +881,7 @@ Returns true if this contract implements the interface defined by `interfaceId`.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:1168](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L1168)
+[gen/contracts/core/ChromaticMarket.ts:1168](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L1168)
 
 ___
 
@@ -901,7 +901,7 @@ ___
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:1173](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L1173)
+[gen/contracts/core/ChromaticMarket.ts:1173](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L1173)
 
 ___
 
@@ -925,4 +925,4 @@ Withdraws liquidity from a liquidity receipt.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarket.ts:1180](https://github.com/chromatic-protocol/sdk/blob/a45d886/src/gen/contracts/core/ChromaticMarket.ts#L1180)
+[gen/contracts/core/ChromaticMarket.ts:1180](https://github.com/chromatic-protocol/sdk/blob/7f95662/src/gen/contracts/core/ChromaticMarket.ts#L1180)

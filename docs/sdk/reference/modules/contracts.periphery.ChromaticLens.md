@@ -8,94 +8,34 @@
 
 ### Type Aliases
 
-- [LiquidityBinStruct](contracts.periphery.ChromaticLens.md#liquiditybinstruct)
-- [LiquidityBinStructOutput](contracts.periphery.ChromaticLens.md#liquiditybinstructoutput)
-- [LiquidityBinValueStruct](contracts.periphery.ChromaticLens.md#liquiditybinvaluestruct)
-- [LiquidityBinValueStructOutput](contracts.periphery.ChromaticLens.md#liquiditybinvaluestructoutput)
-- [LiquidityBinsParamStruct](contracts.periphery.ChromaticLens.md#liquiditybinsparamstruct)
-- [LiquidityBinsParamStructOutput](contracts.periphery.ChromaticLens.md#liquiditybinsparamstructoutput)
+- [CLBBalanceStruct](contracts.periphery.ChromaticLens.md#clbbalancestruct)
+- [CLBBalanceStructOutput](contracts.periphery.ChromaticLens.md#clbbalancestructoutput)
 
 ## Type Aliases
 
-### LiquidityBinStruct
+### CLBBalanceStruct
 
-Ƭ **LiquidityBinStruct**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `burningAmount` | `PromiseOrValue`<`BigNumberish`\> |
-| `clbTokenAmount` | `PromiseOrValue`<`BigNumberish`\> |
-| `freeLiquidity` | `PromiseOrValue`<`BigNumberish`\> |
-| `liquidity` | `PromiseOrValue`<`BigNumberish`\> |
-| `tokenAmount` | `PromiseOrValue`<`BigNumberish`\> |
-| `tradingFeeRate` | `PromiseOrValue`<`BigNumberish`\> |
-
-#### Defined in
-
-[src/gen/contracts/periphery/ChromaticLens.ts:70](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L70)
-
-___
-
-### LiquidityBinStructOutput
-
-Ƭ **LiquidityBinStructOutput**: [`number`, `BigNumber`, `BigNumber`, `BigNumber`, `BigNumber`, `BigNumber`] & { `burningAmount`: `BigNumber` ; `clbTokenAmount`: `BigNumber` ; `freeLiquidity`: `BigNumber` ; `liquidity`: `BigNumber` ; `tokenAmount`: `BigNumber` ; `tradingFeeRate`: `number`  }
-
-#### Defined in
-
-[src/gen/contracts/periphery/ChromaticLens.ts:79](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L79)
-
-___
-
-### LiquidityBinValueStruct
-
-Ƭ **LiquidityBinValueStruct**: `Object`
+Ƭ **CLBBalanceStruct**: `Object`
 
 #### Type declaration
 
 | Name | Type |
 | :------ | :------ |
-| `tradingFeeRate` | `PromiseOrValue`<`BigNumberish`\> |
-| `value` | `PromiseOrValue`<`BigNumberish`\> |
+| `balance` | `PromiseOrValue`<`BigNumberish`\> |
+| `binValue` | `PromiseOrValue`<`BigNumberish`\> |
+| `tokenId` | `PromiseOrValue`<`BigNumberish`\> |
+| `totalSupply` | `PromiseOrValue`<`BigNumberish`\> |
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:50](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L50)
+[src/gen/contracts/periphery/ChromaticLens.ts:95](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticLens.ts#L95)
 
 ___
 
-### LiquidityBinValueStructOutput
+### CLBBalanceStructOutput
 
-Ƭ **LiquidityBinValueStructOutput**: [`number`, `BigNumber`] & { `tradingFeeRate`: `number` ; `value`: `BigNumber`  }
-
-#### Defined in
-
-[src/gen/contracts/periphery/ChromaticLens.ts:55](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L55)
-
-___
-
-### LiquidityBinsParamStruct
-
-Ƭ **LiquidityBinsParamStruct**: `Object`
-
-#### Type declaration
-
-| Name | Type |
-| :------ | :------ |
-| `oracleVersion` | `PromiseOrValue`<`BigNumberish`\> |
-| `tradingFeeRate` | `PromiseOrValue`<`BigNumberish`\> |
+Ƭ **CLBBalanceStructOutput**: [`BigNumber`, `BigNumber`, `BigNumber`, `BigNumber`] & { `balance`: `BigNumber` ; `binValue`: `BigNumber` ; `tokenId`: `BigNumber` ; `totalSupply`: `BigNumber`  }
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:60](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L60)
-
-___
-
-### LiquidityBinsParamStructOutput
-
-Ƭ **LiquidityBinsParamStructOutput**: [`number`, `BigNumber`] & { `oracleVersion`: `BigNumber` ; `tradingFeeRate`: `number`  }
-
-#### Defined in
-
-[src/gen/contracts/periphery/ChromaticLens.ts:65](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L65)
+[src/gen/contracts/periphery/ChromaticLens.ts:102](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticLens.ts#L102)

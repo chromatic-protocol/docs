@@ -39,21 +39,20 @@
 - [\_deployed](contracts.periphery.ChromaticLens-1.md#_deployed)
 - [\_wrapEvent](contracts.periphery.ChromaticLens-1.md#_wrapevent)
 - [attach](contracts.periphery.ChromaticLens-1.md#attach)
-- [calculateCLBTokenMintingBatch](contracts.periphery.ChromaticLens-1.md#calculateclbtokenmintingbatch)
-- [calculateCLBTokenValueBatch](contracts.periphery.ChromaticLens-1.md#calculateclbtokenvaluebatch)
+- [claimableLiquidity](contracts.periphery.ChromaticLens-1.md#claimableliquidity)
+- [clbBalanceOf](contracts.periphery.ChromaticLens-1.md#clbbalanceof)
 - [connect](contracts.periphery.ChromaticLens-1.md#connect)
 - [deployed](contracts.periphery.ChromaticLens-1.md#deployed)
 - [emit](contracts.periphery.ChromaticLens-1.md#emit)
 - [fallback](contracts.periphery.ChromaticLens-1.md#fallback)
-- [liquidityBinValue](contracts.periphery.ChromaticLens-1.md#liquiditybinvalue)
-- [liquidityBins](contracts.periphery.ChromaticLens-1.md#liquiditybins)
+- [liquidityBinStatuses](contracts.periphery.ChromaticLens-1.md#liquiditybinstatuses)
 - [listenerCount](contracts.periphery.ChromaticLens-1.md#listenercount)
 - [listeners](contracts.periphery.ChromaticLens-1.md#listeners)
 - [lpReceipts](contracts.periphery.ChromaticLens-1.md#lpreceipts)
-- [oracleAtVersions](contracts.periphery.ChromaticLens-1.md#oracleatversions)
+- [multicall](contracts.periphery.ChromaticLens-1.md#multicall)
+- [oracleVersion](contracts.periphery.ChromaticLens-1.md#oracleversion)
 - [queryFilter](contracts.periphery.ChromaticLens-1.md#queryfilter)
 - [removeAllListeners](contracts.periphery.ChromaticLens-1.md#removealllisteners)
-- [totalSupplies](contracts.periphery.ChromaticLens-1.md#totalsupplies)
 
 ## Properties
 
@@ -129,13 +128,12 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `calculateCLBTokenMintingBatch` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `amounts`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`[]\> |
-| `calculateCLBTokenValueBatch` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `clbTokenAmounts`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`[]\> |
-| `liquidityBinValue` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<[`LiquidityBinValueStructOutput`](../modules/contracts.periphery.ChromaticLens.md#liquiditybinvaluestructoutput)[]\> |
-| `liquidityBins` | (`market`: `PromiseOrValue`<`string`\>, `params`: [`LiquidityBinsParamStruct`](../modules/contracts.periphery.ChromaticLens.md#liquiditybinsparamstruct)[], `overrides?`: `CallOverrides`) => `Promise`<[`LiquidityBinStructOutput`](../modules/contracts.periphery.ChromaticLens.md#liquiditybinstructoutput)[]\> |
-| `lpReceipts` | (`market`: `PromiseOrValue`<`string`\>, `receiptIds`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`LpReceiptStructOutput`[]\> |
-| `oracleAtVersions` | (`market`: `PromiseOrValue`<`string`\>, `oracleVersions`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`OracleVersionStructOutput`[]\> |
-| `totalSupplies` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`[]\> |
+| `claimableLiquidity` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRate`: `PromiseOrValue`<`BigNumberish`\>, `_oracleVersion`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `CallOverrides`) => `Promise`<`ClaimableLiquidityStructOutput`\> |
+| `clbBalanceOf` | (`market`: `PromiseOrValue`<`string`\>, `owner`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<[`CLBBalanceStructOutput`](../modules/contracts.periphery.ChromaticLens.md#clbbalancestructoutput)[]\> |
+| `liquidityBinStatuses` | (`market`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`LiquidityBinStatusStructOutput`[]\> |
+| `lpReceipts` | (`market`: `PromiseOrValue`<`string`\>, `owner`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`LpReceiptStructOutput`[]\> |
+| `multicall` | (`data`: `PromiseOrValue`<`BytesLike`\>[], `overrides?`: `CallOverrides`) => `Promise`<`string`[]\> |
+| `oracleVersion` | (`market`: `PromiseOrValue`<`string`\>, `version`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `CallOverrides`) => `Promise`<`OracleVersionStructOutput`\> |
 
 #### Overrides
 
@@ -143,7 +141,7 @@ BaseContract.callStatic
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:390](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L390)
+[src/gen/contracts/periphery/ChromaticLens.ts:354](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticLens.ts#L354)
 
 ___
 
@@ -169,13 +167,12 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `calculateCLBTokenMintingBatch` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `amounts`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
-| `calculateCLBTokenValueBatch` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `clbTokenAmounts`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
-| `liquidityBinValue` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
-| `liquidityBins` | (`market`: `PromiseOrValue`<`string`\>, `params`: [`LiquidityBinsParamStruct`](../modules/contracts.periphery.ChromaticLens.md#liquiditybinsparamstruct)[], `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
-| `lpReceipts` | (`market`: `PromiseOrValue`<`string`\>, `receiptIds`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
-| `oracleAtVersions` | (`market`: `PromiseOrValue`<`string`\>, `oracleVersions`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
-| `totalSupplies` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
+| `claimableLiquidity` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRate`: `PromiseOrValue`<`BigNumberish`\>, `_oracleVersion`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
+| `clbBalanceOf` | (`market`: `PromiseOrValue`<`string`\>, `owner`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
+| `liquidityBinStatuses` | (`market`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
+| `lpReceipts` | (`market`: `PromiseOrValue`<`string`\>, `owner`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
+| `multicall` | (`data`: `PromiseOrValue`<`BytesLike`\>[], `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
+| `oracleVersion` | (`market`: `PromiseOrValue`<`string`\>, `version`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
 
 #### Overrides
 
@@ -183,7 +180,7 @@ BaseContract.estimateGas
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:470](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L470)
+[src/gen/contracts/periphery/ChromaticLens.ts:421](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticLens.ts#L421)
 
 ___
 
@@ -197,7 +194,7 @@ BaseContract.filters
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:468](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L468)
+[src/gen/contracts/periphery/ChromaticLens.ts:419](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticLens.ts#L419)
 
 ___
 
@@ -209,13 +206,12 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `calculateCLBTokenMintingBatch` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `amounts`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<[`BigNumber`[]] & { `results`: `BigNumber`[]  }\> |
-| `calculateCLBTokenValueBatch` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `clbTokenAmounts`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<[`BigNumber`[]] & { `results`: `BigNumber`[]  }\> |
-| `liquidityBinValue` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<[[`LiquidityBinValueStructOutput`](../modules/contracts.periphery.ChromaticLens.md#liquiditybinvaluestructoutput)[]] & { `results`: [`LiquidityBinValueStructOutput`](../modules/contracts.periphery.ChromaticLens.md#liquiditybinvaluestructoutput)[]  }\> |
-| `liquidityBins` | (`market`: `PromiseOrValue`<`string`\>, `params`: [`LiquidityBinsParamStruct`](../modules/contracts.periphery.ChromaticLens.md#liquiditybinsparamstruct)[], `overrides?`: `CallOverrides`) => `Promise`<[[`LiquidityBinStructOutput`](../modules/contracts.periphery.ChromaticLens.md#liquiditybinstructoutput)[]] & { `results`: [`LiquidityBinStructOutput`](../modules/contracts.periphery.ChromaticLens.md#liquiditybinstructoutput)[]  }\> |
-| `lpReceipts` | (`market`: `PromiseOrValue`<`string`\>, `receiptIds`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<[`LpReceiptStructOutput`[]] & { `result`: `LpReceiptStructOutput`[]  }\> |
-| `oracleAtVersions` | (`market`: `PromiseOrValue`<`string`\>, `oracleVersions`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<[`OracleVersionStructOutput`[]] & { `results`: `OracleVersionStructOutput`[]  }\> |
-| `totalSupplies` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<[`BigNumber`[]] & { `supplies`: `BigNumber`[]  }\> |
+| `claimableLiquidity` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRate`: `PromiseOrValue`<`BigNumberish`\>, `_oracleVersion`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `CallOverrides`) => `Promise`<[`ClaimableLiquidityStructOutput`]\> |
+| `clbBalanceOf` | (`market`: `PromiseOrValue`<`string`\>, `owner`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<[[`CLBBalanceStructOutput`](../modules/contracts.periphery.ChromaticLens.md#clbbalancestructoutput)[]]\> |
+| `liquidityBinStatuses` | (`market`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<[`LiquidityBinStatusStructOutput`[]]\> |
+| `lpReceipts` | (`market`: `PromiseOrValue`<`string`\>, `owner`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<[`LpReceiptStructOutput`[]] & { `result`: `LpReceiptStructOutput`[]  }\> |
+| `multicall` | (`data`: `PromiseOrValue`<`BytesLike`\>[], `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
+| `oracleVersion` | (`market`: `PromiseOrValue`<`string`\>, `version`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `CallOverrides`) => `Promise`<[`OracleVersionStructOutput`]\> |
 
 #### Overrides
 
@@ -223,7 +219,7 @@ BaseContract.functions
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:224](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L224)
+[src/gen/contracts/periphery/ChromaticLens.ts:226](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticLens.ts#L226)
 
 ___
 
@@ -237,7 +233,7 @@ BaseContract.interface
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:203](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L203)
+[src/gen/contracts/periphery/ChromaticLens.ts:205](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticLens.ts#L205)
 
 ___
 
@@ -251,7 +247,7 @@ BaseContract.off
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:219](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L219)
+[src/gen/contracts/periphery/ChromaticLens.ts:221](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticLens.ts#L221)
 
 ___
 
@@ -265,7 +261,7 @@ BaseContract.on
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:220](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L220)
+[src/gen/contracts/periphery/ChromaticLens.ts:222](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticLens.ts#L222)
 
 ___
 
@@ -279,7 +275,7 @@ BaseContract.once
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:221](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L221)
+[src/gen/contracts/periphery/ChromaticLens.ts:223](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticLens.ts#L223)
 
 ___
 
@@ -291,13 +287,12 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `calculateCLBTokenMintingBatch` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `amounts`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
-| `calculateCLBTokenValueBatch` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `clbTokenAmounts`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
-| `liquidityBinValue` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
-| `liquidityBins` | (`market`: `PromiseOrValue`<`string`\>, `params`: [`LiquidityBinsParamStruct`](../modules/contracts.periphery.ChromaticLens.md#liquiditybinsparamstruct)[], `overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
-| `lpReceipts` | (`market`: `PromiseOrValue`<`string`\>, `receiptIds`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
-| `oracleAtVersions` | (`market`: `PromiseOrValue`<`string`\>, `oracleVersions`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
-| `totalSupplies` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRates`: `PromiseOrValue`<`BigNumberish`\>[], `overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
+| `claimableLiquidity` | (`market`: `PromiseOrValue`<`string`\>, `tradingFeeRate`: `PromiseOrValue`<`BigNumberish`\>, `_oracleVersion`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
+| `clbBalanceOf` | (`market`: `PromiseOrValue`<`string`\>, `owner`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
+| `liquidityBinStatuses` | (`market`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
+| `lpReceipts` | (`market`: `PromiseOrValue`<`string`\>, `owner`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
+| `multicall` | (`data`: `PromiseOrValue`<`BytesLike`\>[], `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
+| `oracleVersion` | (`market`: `PromiseOrValue`<`string`\>, `version`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
 
 #### Overrides
 
@@ -305,7 +300,7 @@ BaseContract.populateTransaction
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:548](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L548)
+[src/gen/contracts/periphery/ChromaticLens.ts:486](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticLens.ts#L486)
 
 ___
 
@@ -333,7 +328,7 @@ BaseContract.removeListener
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:222](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L222)
+[src/gen/contracts/periphery/ChromaticLens.ts:224](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticLens.ts#L224)
 
 ___
 
@@ -459,57 +454,56 @@ BaseContract.attach
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:200](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L200)
+[src/gen/contracts/periphery/ChromaticLens.ts:202](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticLens.ts#L202)
 
 ___
 
-### calculateCLBTokenMintingBatch
+### claimableLiquidity
 
-▸ **calculateCLBTokenMintingBatch**(`market`, `tradingFeeRates`, `amounts`, `overrides?`): `Promise`<`BigNumber`[]\>
+▸ **claimableLiquidity**(`market`, `tradingFeeRate`, `_oracleVersion`, `overrides?`): `Promise`<`ClaimableLiquidityStructOutput`\>
 
-Calculates the amount of CLB tokens to be minted for each trading fee rate and specified amount in the given Chromatic market.
+Retrieves the claimable liquidity information for a specific trading fee rate and oracle version from the given Chromatic Market.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `market` | `PromiseOrValue`<`string`\> | The Chromatic Market from which to retrieve the claimable liquidity information. |
+| `tradingFeeRate` | `PromiseOrValue`<`BigNumberish`\> | The trading fee rate for which to retrieve the claimable liquidity. |
+| `_oracleVersion` | `PromiseOrValue`<`BigNumberish`\> | The oracle version for which to retrieve the claimable liquidity. |
+| `overrides?` | `CallOverrides` | - |
+
+#### Returns
+
+`Promise`<`ClaimableLiquidityStructOutput`\>
+
+#### Defined in
+
+[src/gen/contracts/periphery/ChromaticLens.ts:297](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticLens.ts#L297)
+
+___
+
+### clbBalanceOf
+
+▸ **clbBalanceOf**(`market`, `owner`, `overrides?`): `Promise`<[`CLBBalanceStructOutput`](../modules/contracts.periphery.ChromaticLens.md#clbbalancestructoutput)[]\>
+
+Retrieves the CLB token balances for the specified owner in the given Chromatic market.
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `market` | `PromiseOrValue`<`string`\> | The address of the Chromatic market contract. |
-| `tradingFeeRates` | `PromiseOrValue`<`BigNumberish`\>[] | An array of trading fee rates. |
-| `amounts` | `PromiseOrValue`<`BigNumberish`\>[] | An array of specified amounts. |
+| `owner` | `PromiseOrValue`<`string`\> | The address of the CLB token owner. |
 | `overrides?` | `CallOverrides` | - |
 
 #### Returns
 
-`Promise`<`BigNumber`[]\>
+`Promise`<[`CLBBalanceStructOutput`](../modules/contracts.periphery.ChromaticLens.md#clbbalancestructoutput)[]\>
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:320](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L320)
-
-___
-
-### calculateCLBTokenValueBatch
-
-▸ **calculateCLBTokenValueBatch**(`market`, `tradingFeeRates`, `clbTokenAmounts`, `overrides?`): `Promise`<`BigNumber`[]\>
-
-Calculates the value of CLB tokens for each trading fee rate and CLB token amount in the given Chromatic market.
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `market` | `PromiseOrValue`<`string`\> | The address of the Chromatic market contract. |
-| `tradingFeeRates` | `PromiseOrValue`<`BigNumberish`\>[] | An array of trading fee rates. |
-| `clbTokenAmounts` | `PromiseOrValue`<`BigNumberish`\>[] | An array of CLB token amounts. |
-| `overrides?` | `CallOverrides` | - |
-
-#### Returns
-
-`Promise`<`BigNumber`[]\>
-
-#### Defined in
-
-[src/gen/contracts/periphery/ChromaticLens.ts:333](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L333)
+[src/gen/contracts/periphery/ChromaticLens.ts:309](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticLens.ts#L309)
 
 ___
 
@@ -533,7 +527,7 @@ BaseContract.connect
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:199](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L199)
+[src/gen/contracts/periphery/ChromaticLens.ts:201](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticLens.ts#L201)
 
 ___
 
@@ -551,7 +545,7 @@ BaseContract.deployed
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:201](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L201)
+[src/gen/contracts/periphery/ChromaticLens.ts:203](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticLens.ts#L203)
 
 ___
 
@@ -604,49 +598,26 @@ node_modules/@ethersproject/contracts/lib/index.d.ts:115
 
 ___
 
-### liquidityBinValue
+### liquidityBinStatuses
 
-▸ **liquidityBinValue**(`market`, `tradingFeeRates`, `overrides?`): `Promise`<[`LiquidityBinValueStructOutput`](../modules/contracts.periphery.ChromaticLens.md#liquiditybinvaluestructoutput)[]\>
+▸ **liquidityBinStatuses**(`market`, `overrides?`): `Promise`<`LiquidityBinStatusStructOutput`[]\>
 
-Retrieves the liquidity bin values for the specified trading fee rates in the given Chromatic market.
+Retrieves the liquidity bin statuses for the specified Chromatic Market.
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `market` | `PromiseOrValue`<`string`\> | The address of the Chromatic market contract. |
-| `tradingFeeRates` | `PromiseOrValue`<`BigNumberish`\>[] | An array of trading fee rates. |
+| `market` | `PromiseOrValue`<`string`\> | The Chromatic Market contract for which liquidity bin statuses are retrieved. |
 | `overrides?` | `CallOverrides` | - |
 
 #### Returns
 
-`Promise`<[`LiquidityBinValueStructOutput`](../modules/contracts.periphery.ChromaticLens.md#liquiditybinvaluestructoutput)[]\>
+`Promise`<`LiquidityBinStatusStructOutput`[]\>
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:345](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L345)
-
-___
-
-### liquidityBins
-
-▸ **liquidityBins**(`market`, `params`, `overrides?`): `Promise`<[`LiquidityBinStructOutput`](../modules/contracts.periphery.ChromaticLens.md#liquiditybinstructoutput)[]\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `market` | `PromiseOrValue`<`string`\> |
-| `params` | [`LiquidityBinsParamStruct`](../modules/contracts.periphery.ChromaticLens.md#liquiditybinsparamstruct)[] |
-| `overrides?` | `CallOverrides` |
-
-#### Returns
-
-`Promise`<[`LiquidityBinStructOutput`](../modules/contracts.periphery.ChromaticLens.md#liquiditybinstructoutput)[]\>
-
-#### Defined in
-
-[src/gen/contracts/periphery/ChromaticLens.ts:351](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L351)
+[src/gen/contracts/periphery/ChromaticLens.ts:319](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticLens.ts#L319)
 
 ___
 
@@ -700,7 +671,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:211](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L211)
+[src/gen/contracts/periphery/ChromaticLens.ts:213](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticLens.ts#L213)
 
 ▸ **listeners**(`eventName?`): `Listener`[]
 
@@ -720,22 +691,22 @@ BaseContract.listeners
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:214](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L214)
+[src/gen/contracts/periphery/ChromaticLens.ts:216](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticLens.ts#L216)
 
 ___
 
 ### lpReceipts
 
-▸ **lpReceipts**(`market`, `receiptIds`, `overrides?`): `Promise`<`LpReceiptStructOutput`[]\>
+▸ **lpReceipts**(`market`, `owner`, `overrides?`): `Promise`<`LpReceiptStructOutput`[]\>
 
-Retrieves the LP receipts for the specified receipt IDs in the given Chromatic market.
+Retrieves the LP receipts for the specified owner in the given Chromatic market.
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `market` | `PromiseOrValue`<`string`\> | The address of the Chromatic market contract. |
-| `receiptIds` | `PromiseOrValue`<`BigNumberish`\>[] | An array of receipt IDs. |
+| `owner` | `PromiseOrValue`<`string`\> | The address of the LP token owner. |
 | `overrides?` | `CallOverrides` | - |
 
 #### Returns
@@ -744,31 +715,54 @@ Retrieves the LP receipts for the specified receipt IDs in the given Chromatic m
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:362](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L362)
+[src/gen/contracts/periphery/ChromaticLens.ts:329](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticLens.ts#L329)
 
 ___
 
-### oracleAtVersions
+### multicall
 
-▸ **oracleAtVersions**(`market`, `oracleVersions`, `overrides?`): `Promise`<`OracleVersionStructOutput`[]\>
+▸ **multicall**(`data`, `overrides?`): `Promise`<`ContractTransaction`\>
 
-Retrieves the Oracle versions for the specified oracle versions in the given Chromatic market.
+Receives and executes a batch of function calls on this contract.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `data` | `PromiseOrValue`<`BytesLike`\>[] |
+| `overrides?` | `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  } |
+
+#### Returns
+
+`Promise`<`ContractTransaction`\>
+
+#### Defined in
+
+[src/gen/contracts/periphery/ChromaticLens.ts:338](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticLens.ts#L338)
+
+___
+
+### oracleVersion
+
+▸ **oracleVersion**(`market`, `version`, `overrides?`): `Promise`<`OracleVersionStructOutput`\>
+
+Retrieves the OracleVersion for the specified oracle version in the given Chromatic market.
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `market` | `PromiseOrValue`<`string`\> | The address of the Chromatic market contract. |
-| `oracleVersions` | `PromiseOrValue`<`BigNumberish`\>[] | An array of Oracle versions. |
+| `version` | `PromiseOrValue`<`BigNumberish`\> | An oracle versions. |
 | `overrides?` | `CallOverrides` | - |
 
 #### Returns
 
-`Promise`<`OracleVersionStructOutput`[]\>
+`Promise`<`OracleVersionStructOutput`\>
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:373](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L373)
+[src/gen/contracts/periphery/ChromaticLens.ts:348](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticLens.ts#L348)
 
 ___
 
@@ -800,7 +794,7 @@ BaseContract.queryFilter
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:205](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L205)
+[src/gen/contracts/periphery/ChromaticLens.ts:207](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticLens.ts#L207)
 
 ___
 
@@ -830,7 +824,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:215](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L215)
+[src/gen/contracts/periphery/ChromaticLens.ts:217](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticLens.ts#L217)
 
 ▸ **removeAllListeners**(`eventName?`): [`ChromaticLens`](contracts.periphery.ChromaticLens-1.md)
 
@@ -850,28 +844,4 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticLens.ts:218](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L218)
-
-___
-
-### totalSupplies
-
-▸ **totalSupplies**(`market`, `tradingFeeRates`, `overrides?`): `Promise`<`BigNumber`[]\>
-
-Retrieves the total supply of CLB tokens for each trading fee rate in the given Chromatic market.
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `market` | `PromiseOrValue`<`string`\> | The address of the Chromatic market contract. |
-| `tradingFeeRates` | `PromiseOrValue`<`BigNumberish`\>[] | An array of trading fee rates. |
-| `overrides?` | `CallOverrides` | - |
-
-#### Returns
-
-`Promise`<`BigNumber`[]\>
-
-#### Defined in
-
-[src/gen/contracts/periphery/ChromaticLens.ts:384](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticLens.ts#L384)
+[src/gen/contracts/periphery/ChromaticLens.ts:220](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticLens.ts#L220)

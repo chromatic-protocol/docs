@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:370](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L370)
+[src/gen/contracts/periphery/ChromaticRouter.ts:380](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L380)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:369](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L369)
+[src/gen/contracts/periphery/ChromaticRouter.ts:379](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L379)

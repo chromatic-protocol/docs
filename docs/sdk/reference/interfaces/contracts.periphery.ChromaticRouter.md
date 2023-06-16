@@ -53,7 +53,8 @@
 - [emit](contracts.periphery.ChromaticRouter.md#emit)
 - [fallback](contracts.periphery.ChromaticRouter.md#fallback)
 - [getAccount](contracts.periphery.ChromaticRouter.md#getaccount)
-- [getLpReceiptIds](contracts.periphery.ChromaticRouter.md#getlpreceiptids)
+- [getLpReceiptIds(address)](contracts.periphery.ChromaticRouter.md#getlpreceiptids(address))
+- [getLpReceiptIds(address,address)](contracts.periphery.ChromaticRouter.md#getlpreceiptids(address,address))
 - [listenerCount](contracts.periphery.ChromaticRouter.md#listenercount)
 - [listeners](contracts.periphery.ChromaticRouter.md#listeners)
 - [openPosition](contracts.periphery.ChromaticRouter.md#openposition)
@@ -153,7 +154,8 @@ ___
 | `closePosition` | (`market`: `PromiseOrValue`<`string`\>, `positionId`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `CallOverrides`) => `Promise`<`void`\> |
 | `createAccount` | (`overrides?`: `CallOverrides`) => `Promise`<`void`\> |
 | `getAccount` | (`overrides?`: `CallOverrides`) => `Promise`<`string`\> |
-| `getLpReceiptIds` | (`market`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`[]\> |
+| `getLpReceiptIds(address)` | (`market`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`[]\> |
+| `getLpReceiptIds(address,address)` | (`market`: `PromiseOrValue`<`string`\>, `owner`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`[]\> |
 | `openPosition` | (`market`: `PromiseOrValue`<`string`\>, `qty`: `PromiseOrValue`<`BigNumberish`\>, `leverage`: `PromiseOrValue`<`BigNumberish`\>, `takerMargin`: `PromiseOrValue`<`BigNumberish`\>, `makerMargin`: `PromiseOrValue`<`BigNumberish`\>, `maxAllowableTradingFee`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `CallOverrides`) => `Promise`<`PositionStructOutput`\> |
 | `owner` | (`overrides?`: `CallOverrides`) => `Promise`<`string`\> |
 | `removeLiquidity` | (`market`: `PromiseOrValue`<`string`\>, `feeRate`: `PromiseOrValue`<`BigNumberish`\>, `clbTokenAmount`: `PromiseOrValue`<`BigNumberish`\>, `recipient`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`LpReceiptStructOutput`\> |
@@ -171,7 +173,7 @@ BaseContract.callStatic
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:878](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L878)
+[src/gen/contracts/periphery/ChromaticRouter.ts:900](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L900)
 
 ___
 
@@ -207,7 +209,8 @@ ___
 | `closePosition` | (`market`: `PromiseOrValue`<`string`\>, `positionId`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
 | `createAccount` | (`overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
 | `getAccount` | (`overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
-| `getLpReceiptIds` | (`market`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
+| `getLpReceiptIds(address)` | (`market`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
+| `getLpReceiptIds(address,address)` | (`market`: `PromiseOrValue`<`string`\>, `owner`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
 | `openPosition` | (`market`: `PromiseOrValue`<`string`\>, `qty`: `PromiseOrValue`<`BigNumberish`\>, `leverage`: `PromiseOrValue`<`BigNumberish`\>, `takerMargin`: `PromiseOrValue`<`BigNumberish`\>, `makerMargin`: `PromiseOrValue`<`BigNumberish`\>, `maxAllowableTradingFee`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
 | `owner` | (`overrides?`: `CallOverrides`) => `Promise`<`BigNumber`\> |
 | `removeLiquidity` | (`market`: `PromiseOrValue`<`string`\>, `feeRate`: `PromiseOrValue`<`BigNumberish`\>, `clbTokenAmount`: `PromiseOrValue`<`BigNumberish`\>, `recipient`: `PromiseOrValue`<`string`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`BigNumber`\> |
@@ -225,7 +228,7 @@ BaseContract.estimateGas
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:1131](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L1131)
+[src/gen/contracts/periphery/ChromaticRouter.ts:1159](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L1159)
 
 ___
 
@@ -248,7 +251,7 @@ BaseContract.filters
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:1111](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L1111)
+[src/gen/contracts/periphery/ChromaticRouter.ts:1139](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L1139)
 
 ___
 
@@ -270,7 +273,8 @@ ___
 | `closePosition` | (`market`: `PromiseOrValue`<`string`\>, `positionId`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
 | `createAccount` | (`overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
 | `getAccount` | (`overrides?`: `CallOverrides`) => `Promise`<[`string`]\> |
-| `getLpReceiptIds` | (`market`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<[`BigNumber`[]]\> |
+| `getLpReceiptIds(address)` | (`market`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<[`BigNumber`[]]\> |
+| `getLpReceiptIds(address,address)` | (`market`: `PromiseOrValue`<`string`\>, `owner`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<[`BigNumber`[]]\> |
 | `openPosition` | (`market`: `PromiseOrValue`<`string`\>, `qty`: `PromiseOrValue`<`BigNumberish`\>, `leverage`: `PromiseOrValue`<`BigNumberish`\>, `takerMargin`: `PromiseOrValue`<`BigNumberish`\>, `makerMargin`: `PromiseOrValue`<`BigNumberish`\>, `maxAllowableTradingFee`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
 | `owner` | (`overrides?`: `CallOverrides`) => `Promise`<[`string`]\> |
 | `removeLiquidity` | (`market`: `PromiseOrValue`<`string`\>, `feeRate`: `PromiseOrValue`<`BigNumberish`\>, `clbTokenAmount`: `PromiseOrValue`<`BigNumberish`\>, `recipient`: `PromiseOrValue`<`string`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`ContractTransaction`\> |
@@ -288,7 +292,7 @@ BaseContract.functions
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:406](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L406)
+[src/gen/contracts/periphery/ChromaticRouter.ts:416](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L416)
 
 ___
 
@@ -302,7 +306,7 @@ BaseContract.interface
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:385](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L385)
+[src/gen/contracts/periphery/ChromaticRouter.ts:395](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L395)
 
 ___
 
@@ -316,7 +320,7 @@ BaseContract.off
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:401](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L401)
+[src/gen/contracts/periphery/ChromaticRouter.ts:411](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L411)
 
 ___
 
@@ -330,7 +334,7 @@ BaseContract.on
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:402](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L402)
+[src/gen/contracts/periphery/ChromaticRouter.ts:412](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L412)
 
 ___
 
@@ -344,7 +348,7 @@ BaseContract.once
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:403](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L403)
+[src/gen/contracts/periphery/ChromaticRouter.ts:413](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L413)
 
 ___
 
@@ -366,7 +370,8 @@ ___
 | `closePosition` | (`market`: `PromiseOrValue`<`string`\>, `positionId`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
 | `createAccount` | (`overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
 | `getAccount` | (`overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
-| `getLpReceiptIds` | (`market`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
+| `getLpReceiptIds(address)` | (`market`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
+| `getLpReceiptIds(address,address)` | (`market`: `PromiseOrValue`<`string`\>, `owner`: `PromiseOrValue`<`string`\>, `overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
 | `openPosition` | (`market`: `PromiseOrValue`<`string`\>, `qty`: `PromiseOrValue`<`BigNumberish`\>, `leverage`: `PromiseOrValue`<`BigNumberish`\>, `takerMargin`: `PromiseOrValue`<`BigNumberish`\>, `makerMargin`: `PromiseOrValue`<`BigNumberish`\>, `maxAllowableTradingFee`: `PromiseOrValue`<`BigNumberish`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
 | `owner` | (`overrides?`: `CallOverrides`) => `Promise`<`PopulatedTransaction`\> |
 | `removeLiquidity` | (`market`: `PromiseOrValue`<`string`\>, `feeRate`: `PromiseOrValue`<`BigNumberish`\>, `clbTokenAmount`: `PromiseOrValue`<`BigNumberish`\>, `recipient`: `PromiseOrValue`<`string`\>, `overrides?`: `Overrides` & { `from?`: `PromiseOrValue`<`string`\>  }) => `Promise`<`PopulatedTransaction`\> |
@@ -384,7 +389,7 @@ BaseContract.populateTransaction
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:1368](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L1368)
+[src/gen/contracts/periphery/ChromaticRouter.ts:1402](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L1402)
 
 ___
 
@@ -412,7 +417,7 @@ BaseContract.removeListener
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:404](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L404)
+[src/gen/contracts/periphery/ChromaticRouter.ts:414](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L414)
 
 ___
 
@@ -540,7 +545,7 @@ Adds liquidity to a ChromaticMarket contract.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:650](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L650)
+[src/gen/contracts/periphery/ChromaticRouter.ts:666](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L666)
 
 ___
 
@@ -566,7 +571,7 @@ Adds liquidity to multiple ChromaticMarket contracts in a batch.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:665](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L665)
+[src/gen/contracts/periphery/ChromaticRouter.ts:681](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L681)
 
 ___
 
@@ -591,7 +596,7 @@ Handles the callback after adding liquidity to the Chromatic protocol.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:679](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L679)
+[src/gen/contracts/periphery/ChromaticRouter.ts:695](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L695)
 
 ___
 
@@ -615,7 +620,7 @@ BaseContract.attach
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:382](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L382)
+[src/gen/contracts/periphery/ChromaticRouter.ts:392](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L392)
 
 ___
 
@@ -639,7 +644,7 @@ Claims liquidity from a ChromaticMarket contract.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:691](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L691)
+[src/gen/contracts/periphery/ChromaticRouter.ts:707](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L707)
 
 ___
 
@@ -663,7 +668,7 @@ Claims liquidity from multiple ChromaticMarket contracts in a batch.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:702](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L702)
+[src/gen/contracts/periphery/ChromaticRouter.ts:718](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L718)
 
 ___
 
@@ -687,7 +692,7 @@ Handles the callback after claiming liquidity from the Chromatic protocol.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:713](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L713)
+[src/gen/contracts/periphery/ChromaticRouter.ts:729](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L729)
 
 ___
 
@@ -711,7 +716,7 @@ Claims a position from a ChromaticMarket contract.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:724](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L724)
+[src/gen/contracts/periphery/ChromaticRouter.ts:740](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L740)
 
 ___
 
@@ -735,7 +740,7 @@ Closes a position in a ChromaticMarket contract.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:735](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L735)
+[src/gen/contracts/periphery/ChromaticRouter.ts:751](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L751)
 
 ___
 
@@ -759,7 +764,7 @@ BaseContract.connect
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:381](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L381)
+[src/gen/contracts/periphery/ChromaticRouter.ts:391](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L391)
 
 ___
 
@@ -782,7 +787,7 @@ Creates a new user account.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:745](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L745)
+[src/gen/contracts/periphery/ChromaticRouter.ts:761](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L761)
 
 ___
 
@@ -800,7 +805,7 @@ BaseContract.deployed
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:383](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L383)
+[src/gen/contracts/periphery/ChromaticRouter.ts:393](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L393)
 
 ___
 
@@ -871,13 +876,13 @@ Retrieves the account of the caller.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:752](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L752)
+[src/gen/contracts/periphery/ChromaticRouter.ts:768](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L768)
 
 ___
 
-### getLpReceiptIds
+### getLpReceiptIds(address)
 
-▸ **getLpReceiptIds**(`market`, `overrides?`): `Promise`<`BigNumber`[]\>
+▸ **getLpReceiptIds(address)**(`market`, `overrides?`): `Promise`<`BigNumber`[]\>
 
 Retrieves the LP receipt IDs of the caller for the specified market.
 
@@ -894,7 +899,29 @@ Retrieves the LP receipt IDs of the caller for the specified market.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:758](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L758)
+[src/gen/contracts/periphery/ChromaticRouter.ts:780](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L780)
+
+___
+
+### getLpReceiptIds(address,address)
+
+▸ **getLpReceiptIds(address,address)**(`market`, `owner`, `overrides?`): `Promise`<`BigNumber`[]\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `market` | `PromiseOrValue`<`string`\> |
+| `owner` | `PromiseOrValue`<`string`\> |
+| `overrides?` | `CallOverrides` |
+
+#### Returns
+
+`Promise`<`BigNumber`[]\>
+
+#### Defined in
+
+[src/gen/contracts/periphery/ChromaticRouter.ts:770](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L770)
 
 ___
 
@@ -948,7 +975,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:393](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L393)
+[src/gen/contracts/periphery/ChromaticRouter.ts:403](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L403)
 
 ▸ **listeners**(`eventName?`): `Listener`[]
 
@@ -968,7 +995,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:396](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L396)
+[src/gen/contracts/periphery/ChromaticRouter.ts:406](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L406)
 
 ___
 
@@ -996,7 +1023,7 @@ Opens a new position in a ChromaticMarket contract.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:772](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L772)
+[src/gen/contracts/periphery/ChromaticRouter.ts:794](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L794)
 
 ___
 
@@ -1018,7 +1045,7 @@ Returns the address of the current owner.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:785](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L785)
+[src/gen/contracts/periphery/ChromaticRouter.ts:807](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L807)
 
 ___
 
@@ -1050,7 +1077,7 @@ BaseContract.queryFilter
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:387](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L387)
+[src/gen/contracts/periphery/ChromaticRouter.ts:397](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L397)
 
 ___
 
@@ -1080,7 +1107,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:397](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L397)
+[src/gen/contracts/periphery/ChromaticRouter.ts:407](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L407)
 
 ▸ **removeAllListeners**(`eventName?`): [`ChromaticRouter`](contracts.periphery.ChromaticRouter.md)
 
@@ -1100,7 +1127,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:400](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L400)
+[src/gen/contracts/periphery/ChromaticRouter.ts:410](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L410)
 
 ___
 
@@ -1126,7 +1153,7 @@ Removes liquidity from a ChromaticMarket contract.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:794](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L794)
+[src/gen/contracts/periphery/ChromaticRouter.ts:816](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L816)
 
 ___
 
@@ -1152,7 +1179,7 @@ Removes liquidity from multiple ChromaticMarket contracts in a batch.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:809](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L809)
+[src/gen/contracts/periphery/ChromaticRouter.ts:831](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L831)
 
 ___
 
@@ -1177,7 +1204,7 @@ Handles the callback after removing liquidity from the Chromatic protocol.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:823](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L823)
+[src/gen/contracts/periphery/ChromaticRouter.ts:845](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L845)
 
 ___
 
@@ -1199,7 +1226,7 @@ Leaves the contract without owner. It will not be possible to call `onlyOwner` f
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:833](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L833)
+[src/gen/contracts/periphery/ChromaticRouter.ts:855](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L855)
 
 ___
 
@@ -1222,7 +1249,7 @@ Transfers ownership of the contract to a new account (`newOwner`). Can only be c
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:840](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L840)
+[src/gen/contracts/periphery/ChromaticRouter.ts:862](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L862)
 
 ___
 
@@ -1246,7 +1273,7 @@ Withdraws liquidity from a ChromaticMarket contract.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:850](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L850)
+[src/gen/contracts/periphery/ChromaticRouter.ts:872](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L872)
 
 ___
 
@@ -1270,7 +1297,7 @@ Withdraws liquidity from multiple ChromaticMarket contracts in a batch.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:861](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L861)
+[src/gen/contracts/periphery/ChromaticRouter.ts:883](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L883)
 
 ___
 
@@ -1294,4 +1321,4 @@ Handles the callback after withdrawing liquidity from the Chromatic protocol.
 
 #### Defined in
 
-[src/gen/contracts/periphery/ChromaticRouter.ts:872](https://github.com/chromatic-protocol/sdk/blob/ff89bc3/src/gen/contracts/periphery/ChromaticRouter.ts#L872)
+[src/gen/contracts/periphery/ChromaticRouter.ts:894](https://github.com/chromatic-protocol/sdk/blob/e3e1a39/src/gen/contracts/periphery/ChromaticRouter.ts#L894)

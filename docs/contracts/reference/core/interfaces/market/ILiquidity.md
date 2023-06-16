@@ -8,6 +8,29 @@ title: ILiquidity.sol
 
 _The interface for liquidity operations in a market._
 
+### ClaimableLiquidity
+
+```solidity
+struct ClaimableLiquidity {
+  uint256 mintingTokenAmountRequested;
+  uint256 mintingCLBTokenAmount;
+  uint256 burningCLBTokenAmountRequested;
+  uint256 burningCLBTokenAmount;
+  uint256 burningTokenAmount;
+}
+```
+
+### LiquidityBinStatus
+
+```solidity
+struct LiquidityBinStatus {
+  uint256 liquidity;
+  uint256 freeLiquidity;
+  uint256 binValue;
+  int16 tradingFeeRate;
+}
+```
+
 ### TooSmallAmount
 
 ```solidity
@@ -181,22 +204,22 @@ _Retrieves the available (free) liquidity amount for a specific trading fee rate
 | ---- | ---- | ----------- |
 | amount | uint256 | The available (free) liquidity amount for the specified trading fee rate. |
 
-### getBinValue
+### getBinValues
 
 ```solidity
-function getBinValue(int16 tradingFeeRate) external view returns (uint256 value)
+function getBinValues(int16[] tradingFeeRates) external view returns (uint256[] values)
 ```
 
-_Retrieves the value of a specific trading fee rate's bin in the liquidity pool.
+_Retrieves the values of a specific trading fee rate's bins in the liquidity pool.
      The value of a bin represents the total valuation of the liquidity in the bin._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| tradingFeeRate | int16 | The trading fee rate for which to retrieve the bin value. |
+| tradingFeeRates | int16[] | The list of trading fee rate for which to retrieve the bin value. |
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| value | uint256 | The value of the bin for the specified trading fee rate. |
+| values | uint256[] | The value list of the bins for the specified trading fee rates. |
 
 ### distributeEarningToBins
 
@@ -210,41 +233,6 @@ _Distributes earning to the liquidity bins._
 | ---- | ---- | ----------- |
 | earning | uint256 | The amount of earning to distribute. |
 | marketBalance | uint256 | The balance of the market. |
-
-### calculateCLBTokenMinting
-
-```solidity
-function calculateCLBTokenMinting(int16 tradingFeeRate, uint256 amount) external view returns (uint256)
-```
-
-_Calculates the amount of CLB tokens to be minted for a given amount of liquidity and trading fee rate.
-     The CLB token minting amount represents the number of CLB tokens that will be minted when providing liquidity._
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| tradingFeeRate | int16 | The trading fee rate for which to calculate the CLB token minting. |
-| amount | uint256 | The amount of liquidity for which to calculate the CLB token minting. |
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | The amount of CLB tokens to be minted for the specified liquidity amount and trading fee rate. |
-
-### calculateCLBTokenValue
-
-```solidity
-function calculateCLBTokenValue(int16 tradingFeeRate, uint256 clbTokenAmount) external view returns (uint256)
-```
-
-_Calculates the value of CLB tokens for the given parameters._
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| tradingFeeRate | int16 | The trading fee rate. |
-| clbTokenAmount | uint256 | The amount of CLB tokens. |
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | The value of CLB tokens. |
 
 ### getLpReceipt
 
@@ -263,22 +251,32 @@ _Retrieves the liquidity receipt with the given receipt ID.
 | ---- | ---- | ----------- |
 | [0] | struct LpReceipt | receipt The liquidity receipt with the specified ID. |
 
-### getClaimBurning
+### claimableLiquidity
 
 ```solidity
-function getClaimBurning(int16 tradingFeeRate, uint256 oracleVersion) external view returns (uint256 clbTokenAmount, uint256 burningAmount, uint256 tokenAmount)
+function claimableLiquidity(int16 tradingFeeRate, uint256 oracleVersion) external view returns (struct ILiquidity.ClaimableLiquidity)
 ```
 
-_Retrieves the claim burning details for a given liquidity receipt._
+_Retrieves the claimable liquidity information for a specific trading fee rate and oracle version from the associated LiquidityPool._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| tradingFeeRate | int16 | The trading fee rate for which to retrieve the claim burning details. |
-| oracleVersion | uint256 | The oracle version for which to retrieve the claim burning details. |
+| tradingFeeRate | int16 | The trading fee rate for which to retrieve the claimable liquidity. |
+| oracleVersion | uint256 | The oracle version for which to retrieve the claimable liquidity. |
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| clbTokenAmount | uint256 | The total amount of CLB tokens waiting to be burned for the specified trading fee rate and oracle version. |
-| burningAmount | uint256 | The amount of CLB tokens that can be claimed after being burnt for the specified trading fee rate and oracle version. |
-| tokenAmount | uint256 | The corresponding amount of tokens obtained when claiming liquidity. |
+| [0] | struct ILiquidity.ClaimableLiquidity | claimableLiquidity An instance of ClaimableLiquidity representing the claimable liquidity information. |
+
+### liquidityBinStatuses
+
+```solidity
+function liquidityBinStatuses() external view returns (struct ILiquidity.LiquidityBinStatus[])
+```
+
+_Retrieves the liquidity bin statuses for the caller's liquidity pool._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| [0] | struct ILiquidity.LiquidityBinStatus[] | statuses An array of LiquidityBinStatus representing the liquidity bin statuses. |
 

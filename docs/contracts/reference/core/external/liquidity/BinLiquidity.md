@@ -30,8 +30,8 @@ struct _PendingLiquidity {
 
 ```solidity
 struct _ClaimMinting {
-  uint256 tokenAmount;
-  uint256 mintingAmount;
+  uint256 tokenAmountRequested;
+  uint256 clbTokenAmount;
 }
 ```
 
@@ -39,8 +39,8 @@ struct _ClaimMinting {
 
 ```solidity
 struct _ClaimBurning {
+  uint256 clbTokenAmountRequested;
   uint256 clbTokenAmount;
-  uint256 burningAmount;
   uint256 tokenAmount;
 }
 ```
@@ -218,23 +218,20 @@ _If the CLB token total supply is zero, returns zero.
 | ---- | ---- | ----------- |
 | [0] | uint256 | The value of the CLB tokens. |
 
-### getClaimBurning
+### claimableLiquidity
 
 ```solidity
-function getClaimBurning(struct BinLiquidity self, uint256 oracleVersion) internal view returns (uint256 clbTokenAmount, uint256 burningAmount, uint256 tokenAmount)
+function claimableLiquidity(struct BinLiquidity self, uint256 oracleVersion) internal view returns (struct ILiquidity.ClaimableLiquidity)
 ```
 
-_Retrieves the claim burning details for a specific oracle version from the BinLiquidity storage.
-     Claim burning details represent the total amount of CLB tokens waiting to be burned, the amount that can be claimed after being burnt, and the corresponding amount of tokens obtained when claiming liquidity._
+_Retrieves the claimable liquidity information for a specific oracle version._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| self | struct BinLiquidity | The reference to the BinLiquidity storage. |
-| oracleVersion | uint256 | The oracle version for which to retrieve the claim burning details. |
+| self | struct BinLiquidity | The reference to the BinLiquidity struct. |
+| oracleVersion | uint256 | The oracle version for which to retrieve the claimable liquidity. |
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| clbTokenAmount | uint256 | The total amount of CLB tokens waiting to be burned for the specified oracle version. |
-| burningAmount | uint256 | The amount of CLB tokens that can be claimed after being burnt for the specified oracle version. |
-| tokenAmount | uint256 | The corresponding amount of tokens obtained when claiming liquidity for the specified oracle version. |
+| [0] | struct ILiquidity.ClaimableLiquidity | claimableLiquidity An instance of ILiquidity.ClaimableLiquidity representing the claimable liquidity information. |
 

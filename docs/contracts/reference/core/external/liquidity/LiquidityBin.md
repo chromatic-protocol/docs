@@ -252,65 +252,20 @@ _This function withdraws liquidity from the bin by calling the `onWithdrawLiquid
 | amount | uint256 | The amount of liquidity withdrawn |
 | burnedCLBTokenAmount | uint256 | The amount of CLB tokens burned during the withdrawal. |
 
-### calculateCLBTokenMinting
+### claimableLiquidity
 
 ```solidity
-function calculateCLBTokenMinting(struct LiquidityBin self, struct LpContext ctx, uint256 amount) internal view returns (uint256)
+function claimableLiquidity(struct LiquidityBin self, uint256 oracleVersion) internal view returns (struct ILiquidity.ClaimableLiquidity)
 ```
 
-Calculates the amount of CLB tokens to be minted when adding liquidity.
-
-_This function calculates the number of CLB tokens to be minted
-     based on the specified amount of liquidity, the bin's current value, and the total supply of CLB tokens._
+_Retrieves the claimable liquidity information for a specific oracle version from a LiquidityBin._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| self | struct LiquidityBin | The LiquidityBin storage. |
-| ctx | struct LpContext | The LpContext memory. |
-| amount | uint256 | The amount of liquidity to be added. |
+| self | struct LiquidityBin | The reference to the LiquidityBin struct. |
+| oracleVersion | uint256 | The oracle version for which to retrieve the claimable liquidity. |
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| [0] | uint256 | The amount of CLB tokens to be minted. |
-
-### calculateCLBTokenValue
-
-```solidity
-function calculateCLBTokenValue(struct LiquidityBin self, struct LpContext ctx, uint256 clbTokenAmount) internal view returns (uint256)
-```
-
-Calculates the value of the specified amount of CLB tokens.
-
-_This function calculates the value of the specified amount of CLB tokens
-     based on the bin's current value and the total supply of CLB tokens._
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct LiquidityBin | The LiquidityBin storage. |
-| ctx | struct LpContext | The LpContext memory. |
-| clbTokenAmount | uint256 | The amount of CLB tokens. |
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | The value of the specified amount of CLB tokens. |
-
-### getClaimBurning
-
-```solidity
-function getClaimBurning(struct LiquidityBin self, uint256 oracleVersion) internal view returns (uint256 clbTokenAmount, uint256 burningAmount, uint256 tokenAmount)
-```
-
-_Retrieves the claim burning details for a specific oracle version from the LiquidityBin storage.
-Claim burning details represent the total amount of CLB tokens waiting to be burned, the amount that can be claimed after being burnt, and the corresponding amount of tokens obtained when claiming liquidity._
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct LiquidityBin | The reference to the LiquidityBin storage. |
-| oracleVersion | uint256 | The oracle version for which to retrieve the claim burning details. |
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| clbTokenAmount | uint256 | The total amount of CLB tokens waiting to be burned for the specified oracle version. |
-| burningAmount | uint256 | The amount of CLB tokens that can be claimed after being burnt for the specified oracle version. |
-| tokenAmount | uint256 | The corresponding amount of tokens obtained when claiming liquidity for the specified oracle version. |
+| [0] | struct ILiquidity.ClaimableLiquidity | claimableLiquidity An instance of ILiquidity.ClaimableLiquidity representing the claimable liquidity information. |
 

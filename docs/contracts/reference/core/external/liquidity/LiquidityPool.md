@@ -253,50 +253,6 @@ _This function validates the trading fee rate
 | amount | uint256 | The amount of base tokens withdrawn |
 | burnedCLBTokenAmount | uint256 | the amount of CLB tokens burned. |
 
-### calculateCLBTokenMinting
-
-```solidity
-function calculateCLBTokenMinting(struct LiquidityPool self, struct LpContext ctx, int16 tradingFeeRate, uint256 amount) external view returns (uint256)
-```
-
-Calculates the amount of CLB tokens to be minted for the given amount of base tokens and trading fee rate.
-
-_This function validates the trading fee rate
-     and calls the calculateCLBTokenMinting function on the target liquidity bin._
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct LiquidityPool | The reference to the LiquidityPool storage. |
-| ctx | struct LpContext | The LpContext object. |
-| tradingFeeRate | int16 | The trading fee rate associated with the liquidity bin. |
-| amount | uint256 | The amount of base tokens. |
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | The amount of CLB tokens to be minted. |
-
-### calculateCLBTokenValue
-
-```solidity
-function calculateCLBTokenValue(struct LiquidityPool self, struct LpContext ctx, int16 tradingFeeRate, uint256 clbTokenAmount) external view returns (uint256 amount)
-```
-
-Calculates the value of the given amount of CLB tokens for the specified trading fee rate.
-
-_This function validates the trading fee rate
-     and calls the calculateCLBTokenValue function on the target liquidity bin._
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct LiquidityPool | The reference to the LiquidityPool storage. |
-| ctx | struct LpContext | The LpContext object. |
-| tradingFeeRate | int16 | The trading fee rate associated with the liquidity bin. |
-| clbTokenAmount | uint256 | The amount of CLB tokens. |
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| amount | uint256 | The value of the CLB tokens in base tokens. |
-
 ### getBinLiquidity
 
 ```solidity
@@ -375,23 +331,38 @@ _Retrieves the value of a specific bin in the LiquidityPool storage for the prov
 | ---- | ---- | ----------- |
 | value | uint256 | The value of the specified bin. |
 
-### getClaimBurning
+### claimableLiquidity
 
 ```solidity
-function getClaimBurning(struct LiquidityPool self, int16 tradingFeeRate, uint256 oracleVersion) external view returns (uint256 clbTokenAmount, uint256 burningAmount, uint256 tokenAmount)
+function claimableLiquidity(struct LiquidityPool self, int16 tradingFeeRate, uint256 oracleVersion) external view returns (struct ILiquidity.ClaimableLiquidity)
 ```
 
-_Retrieves the claim burning details for a specific trading fee rate and oracle version from the LiquidityPool storage._
+_Retrieves the claimable liquidity information for a specific trading fee rate and oracle version from a LiquidityPool._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| self | struct LiquidityPool | The reference to the LiquidityPool storage. |
-| tradingFeeRate | int16 | The trading fee rate for which to retrieve the claim burning details. |
-| oracleVersion | uint256 | The oracle version for which to retrieve the claim burning details. |
+| self | struct LiquidityPool | The reference to the LiquidityPool struct. |
+| tradingFeeRate | int16 | The trading fee rate for which to retrieve the claimable liquidity. |
+| oracleVersion | uint256 | The oracle version for which to retrieve the claimable liquidity. |
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| clbTokenAmount | uint256 | The total amount of CLB tokens waiting to be burned for the specified trading fee rate and oracle version. |
-| burningAmount | uint256 | The amount of CLB tokens that can be claimed after being burnt for the specified trading fee rate and oracle version. |
-| tokenAmount | uint256 | The corresponding amount of tokens obtained when claiming liquidity for the specified trading fee rate and oracle version. |
+| [0] | struct ILiquidity.ClaimableLiquidity | claimableLiquidity An instance of ILiquidity.ClaimableLiquidity representing the claimable liquidity information. |
+
+### liquidityBinStatuses
+
+```solidity
+function liquidityBinStatuses(struct LiquidityPool self, struct LpContext ctx) external view returns (struct ILiquidity.LiquidityBinStatus[])
+```
+
+_Retrieves the liquidity bin statuses for the LiquidityPool using the provided context._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| self | struct LiquidityPool | The LiquidityPool storage instance. |
+| ctx | struct LpContext | The LpContext containing the necessary context for calculating the bin statuses. |
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| [0] | struct ILiquidity.LiquidityBinStatus[] | stats An array of ILiquidity.LiquidityBinStatus representing the liquidity bin statuses. |
 

@@ -4,12 +4,6 @@ title: CLBTokenLib.sol
 ---
 # [CLBTokenLib.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/libraries/CLBTokenLib.sol)
 
-## DIRECTION_PRECISION
-
-```solidity
-uint256 DIRECTION_PRECISION
-```
-
 ## CLBTokenLib
 
 Provides utility functions for working with CLB tokens.
@@ -17,7 +11,7 @@ Provides utility functions for working with CLB tokens.
 ### encodeId
 
 ```solidity
-function encodeId(int16 tradingFeeRate) internal pure returns (uint256 id)
+function encodeId(int16 tradingFeeRate) internal pure returns (uint256)
 ```
 
 Encode the CLB token ID of ERC1155 token type
@@ -27,7 +21,7 @@ _If `tradingFeeRate` is negative, it adds `DIRECTION_PRECISION` to the absolute 
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| id | uint256 | The ID of ERC1155 token |
+| [0] | uint256 | id The ID of ERC1155 token |
 
 ### decodeId
 
@@ -45,4 +39,25 @@ _If `id` is greater than or equal to `DIRECTION_PRECISION`,
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | tradingFeeRate | int16 | The trading fee rate |
+
+### tradingFeeRates
+
+```solidity
+function tradingFeeRates() internal pure returns (uint16[36])
+```
+
+Retrieves the array of supported trading fee rates.
+
+_This function returns the array of supported trading fee rates,
+     ranging from the minimum fee rate to the maximum fee rate with step increments._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| [0] | uint16[36] | tradingFeeRates The array of supported trading fee rates. |
+
+### tokenIds
+
+```solidity
+function tokenIds() internal pure returns (uint256[])
+```
 

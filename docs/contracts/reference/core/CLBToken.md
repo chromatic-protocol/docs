@@ -58,7 +58,7 @@ _Retrieves the number of decimals used for token amounts._
 function totalSupply(uint256 id) public view virtual returns (uint256)
 ```
 
-_Retrieves the total supply of tokens for a given token ID._
+_Total amount of tokens in with a given id._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -67,6 +67,22 @@ _Retrieves the total supply of tokens for a given token ID._
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | [0] | uint256 | The total supply of tokens for the given token ID. |
+
+### totalSupplyBatch
+
+```solidity
+function totalSupplyBatch(uint256[] ids) public view virtual returns (uint256[])
+```
+
+_Total amounts of tokens in with the given ids._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| ids | uint256[] | The token IDs for which to retrieve the total supply. |
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| [0] | uint256[] | The total supples of tokens for the given token IDs. |
 
 ### mint
 

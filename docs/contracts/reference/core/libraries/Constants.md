@@ -10,3 +10,9 @@ title: Constants.sol
 uint256 BPS
 ```
 
+## FEE_RATES_LENGTH
+
+```solidity
+uint256 FEE_RATES_LENGTH
+```
+

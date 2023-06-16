@@ -257,6 +257,12 @@ Retrieves the LP receipt IDs of the caller for the specified market.
 | ---- | ---- | ----------- |
 | [0] | uint256[] | An array of LP receipt IDs. |
 
+### getLpReceiptIds
+
+```solidity
+function getLpReceiptIds(address market, address owner) public view returns (uint256[])
+```
+
 ### addLiquidityBatch
 
 ```solidity

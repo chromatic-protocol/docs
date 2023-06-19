@@ -32,7 +32,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[gen/factories/contracts/core/interfaces/factory/IOracleProviderRegistry__factory.ts:104](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/factories/contracts/core/interfaces/factory/IOracleProviderRegistry__factory.ts#L104)
+[gen/factories/contracts/core/interfaces/factory/IOracleProviderRegistry__factory.ts:160](https://github.com/chromatic-protocol/sdk/blob/8dc63ae/src/gen/factories/contracts/core/interfaces/factory/IOracleProviderRegistry__factory.ts#L160)
 
 ___
 
@@ -46,4 +46,4 @@ ___
 
 #### Defined in
 
-[gen/factories/contracts/core/interfaces/factory/IOracleProviderRegistry__factory.ts:101](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/factories/contracts/core/interfaces/factory/IOracleProviderRegistry__factory.ts#L101)
+[gen/factories/contracts/core/interfaces/factory/IOracleProviderRegistry__factory.ts:157](https://github.com/chromatic-protocol/sdk/blob/8dc63ae/src/gen/factories/contracts/core/interfaces/factory/IOracleProviderRegistry__factory.ts#L157)

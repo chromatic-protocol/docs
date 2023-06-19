@@ -23,7 +23,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[gen/contracts/oracle/interfaces/IOracleProvider.ts:27](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L27)
+[gen/contracts/oracle/interfaces/IOracleProvider.ts:27](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L27)
 
 ___
 
@@ -33,4 +33,4 @@ ___
 
 #### Defined in
 
-[gen/contracts/oracle/interfaces/IOracleProvider.ts:33](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L33)
+[gen/contracts/oracle/interfaces/IOracleProvider.ts:33](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L33)

@@ -37,7 +37,7 @@ Appends an interest rate record for a settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1052](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1052)
+[gen/contracts/core/ChromaticMarketFactory.ts:1052](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1052)
 
 ___
 
@@ -61,7 +61,7 @@ BaseContract.attach
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:639](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L639)
+[gen/contracts/core/ChromaticMarketFactory.ts:639](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L639)
 
 ___
 
@@ -87,7 +87,7 @@ Calculates the interest accrued for a given token and amount within a specified 
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1066](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1066)
+[gen/contracts/core/ChromaticMarketFactory.ts:1066](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1066)
 
 ___
 
@@ -111,7 +111,7 @@ Cancels a Maker earning distribution task for a token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1079](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1079)
+[gen/contracts/core/ChromaticMarketFactory.ts:1079](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1079)
 
 ___
 
@@ -135,7 +135,7 @@ Cancels a market earning distribution task for a market.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1089](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1089)
+[gen/contracts/core/ChromaticMarketFactory.ts:1089](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1089)
 
 ___
 
@@ -159,7 +159,7 @@ BaseContract.connect
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:638](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L638)
+[gen/contracts/core/ChromaticMarketFactory.ts:638](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L638)
 
 ___
 
@@ -183,7 +183,7 @@ Creates a Maker earning distribution task for a token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1099](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1099)
+[gen/contracts/core/ChromaticMarketFactory.ts:1099](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1099)
 
 ___
 
@@ -207,7 +207,7 @@ Creates a new market associated with an oracle provider and settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1109](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1109)
+[gen/contracts/core/ChromaticMarketFactory.ts:1109](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1109)
 
 ___
 
@@ -231,7 +231,7 @@ Creates a market earning distribution task for a market.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1120](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1120)
+[gen/contracts/core/ChromaticMarketFactory.ts:1120](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1120)
 
 ___
 
@@ -254,7 +254,7 @@ Gets the current interest rate for a settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1129](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1129)
+[gen/contracts/core/ChromaticMarketFactory.ts:1129](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1129)
 
 ___
 
@@ -276,7 +276,7 @@ Returns the address of the DAO.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1137](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1137)
+[gen/contracts/core/ChromaticMarketFactory.ts:1137](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1137)
 
 ___
 
@@ -294,7 +294,7 @@ BaseContract.deployed
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:640](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L640)
+[gen/contracts/core/ChromaticMarketFactory.ts:640](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L640)
 
 ___
 
@@ -317,7 +317,7 @@ Gets the earning distribution threshold for a settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1143](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1143)
+[gen/contracts/core/ChromaticMarketFactory.ts:1143](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1143)
 
 ___
 
@@ -340,7 +340,7 @@ Gets the flash loan fee rate for a settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1152](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1152)
+[gen/contracts/core/ChromaticMarketFactory.ts:1152](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1152)
 
 ___
 
@@ -363,7 +363,7 @@ Gets all the interest rate records for a settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1161](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1161)
+[gen/contracts/core/ChromaticMarketFactory.ts:1161](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1161)
 
 ___
 
@@ -387,7 +387,7 @@ Returns the address of a market associated with an oracle provider and settlemen
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1171](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1171)
+[gen/contracts/core/ChromaticMarketFactory.ts:1171](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1171)
 
 ___
 
@@ -409,7 +409,7 @@ Returns an array of all market addresses.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1180](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1180)
+[gen/contracts/core/ChromaticMarketFactory.ts:1180](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1180)
 
 ___
 
@@ -432,7 +432,7 @@ Returns an array of market addresses associated with a settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1186](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1186)
+[gen/contracts/core/ChromaticMarketFactory.ts:1186](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1186)
 
 ___
 
@@ -456,7 +456,7 @@ Gets the minimum margin for a settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1196](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1196)
+[gen/contracts/core/ChromaticMarketFactory.ts:1196](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1196)
 
 ___
 
@@ -479,7 +479,7 @@ Gets the Uniswap fee tier for a settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1205](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1205)
+[gen/contracts/core/ChromaticMarketFactory.ts:1205](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1205)
 
 ___
 
@@ -502,7 +502,7 @@ Checks if a market is registered.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1214](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1214)
+[gen/contracts/core/ChromaticMarketFactory.ts:1214](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1214)
 
 ___
 
@@ -525,7 +525,7 @@ Checks if an oracle provider is registered.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1223](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1223)
+[gen/contracts/core/ChromaticMarketFactory.ts:1223](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1223)
 
 ___
 
@@ -548,7 +548,7 @@ Checks if a settlement token is registered.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1232](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1232)
+[gen/contracts/core/ChromaticMarketFactory.ts:1232](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1232)
 
 ___
 
@@ -570,7 +570,7 @@ Returns the address of the keeper fee payer.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1240](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1240)
+[gen/contracts/core/ChromaticMarketFactory.ts:1240](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1240)
 
 ___
 
@@ -592,7 +592,7 @@ Returns the address of the liquidator.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1245](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1245)
+[gen/contracts/core/ChromaticMarketFactory.ts:1245](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1245)
 
 ___
 
@@ -622,7 +622,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:650](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L650)
+[gen/contracts/core/ChromaticMarketFactory.ts:650](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L650)
 
 ▸ **listeners**(`eventName?`): `Listener`[]
 
@@ -642,7 +642,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:653](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L653)
+[gen/contracts/core/ChromaticMarketFactory.ts:653](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L653)
 
 ___
 
@@ -665,7 +665,7 @@ Get the parameters to be used in constructing the market, set transiently during
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1251](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1251)
+[gen/contracts/core/ChromaticMarketFactory.ts:1251](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1251)
 
 ___
 
@@ -697,7 +697,7 @@ BaseContract.queryFilter
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:644](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L644)
+[gen/contracts/core/ChromaticMarketFactory.ts:644](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L644)
 
 ___
 
@@ -721,7 +721,7 @@ Registers an oracle provider.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1262](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1262)
+[gen/contracts/core/ChromaticMarketFactory.ts:1262](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1262)
 
 ___
 
@@ -750,7 +750,7 @@ Registers a new settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1277](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1277)
+[gen/contracts/core/ChromaticMarketFactory.ts:1277](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1277)
 
 ___
 
@@ -772,7 +772,7 @@ Gets the registered oracle providers.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1290](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1290)
+[gen/contracts/core/ChromaticMarketFactory.ts:1290](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1290)
 
 ___
 
@@ -794,7 +794,7 @@ Gets the list of registered settlement tokens.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1295](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1295)
+[gen/contracts/core/ChromaticMarketFactory.ts:1295](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1295)
 
 ___
 
@@ -824,7 +824,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:654](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L654)
+[gen/contracts/core/ChromaticMarketFactory.ts:654](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L654)
 
 ▸ **removeAllListeners**(`eventName?`): [`ChromaticMarketFactory`](contracts.core.ChromaticMarketFactory.md)
 
@@ -844,7 +844,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:657](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L657)
+[gen/contracts/core/ChromaticMarketFactory.ts:657](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L657)
 
 ___
 
@@ -868,7 +868,7 @@ Removes the last interest rate record for a settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1302](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1302)
+[gen/contracts/core/ChromaticMarketFactory.ts:1302](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1302)
 
 ___
 
@@ -893,7 +893,7 @@ Sets the earning distribution threshold for a settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1313](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1313)
+[gen/contracts/core/ChromaticMarketFactory.ts:1313](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1313)
 
 ___
 
@@ -918,7 +918,7 @@ Sets the flash loan fee rate for a settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1325](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1325)
+[gen/contracts/core/ChromaticMarketFactory.ts:1325](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1325)
 
 ___
 
@@ -942,7 +942,7 @@ Sets the keeper fee payer address.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1336](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1336)
+[gen/contracts/core/ChromaticMarketFactory.ts:1336](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1336)
 
 ___
 
@@ -966,7 +966,7 @@ Sets the liquidator address.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1346](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1346)
+[gen/contracts/core/ChromaticMarketFactory.ts:1346](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1346)
 
 ___
 
@@ -991,7 +991,7 @@ Sets the minimum margin for a settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1357](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1357)
+[gen/contracts/core/ChromaticMarketFactory.ts:1357](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1357)
 
 ___
 
@@ -1016,7 +1016,7 @@ Sets the Uniswap fee tier for a settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1369](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1369)
+[gen/contracts/core/ChromaticMarketFactory.ts:1369](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1369)
 
 ___
 
@@ -1040,7 +1040,7 @@ Sets the vault address.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1380](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1380)
+[gen/contracts/core/ChromaticMarketFactory.ts:1380](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1380)
 
 ___
 
@@ -1062,7 +1062,7 @@ Returns the address of the DAO treasury.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1388](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1388)
+[gen/contracts/core/ChromaticMarketFactory.ts:1388](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1388)
 
 ___
 
@@ -1086,7 +1086,7 @@ Unregisters an oracle provider.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1395](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1395)
+[gen/contracts/core/ChromaticMarketFactory.ts:1395](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1395)
 
 ___
 
@@ -1110,7 +1110,7 @@ Updates the DAO address.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1405](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1405)
+[gen/contracts/core/ChromaticMarketFactory.ts:1405](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1405)
 
 ___
 
@@ -1134,7 +1134,7 @@ Updates the DAO treasury address.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1415](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1415)
+[gen/contracts/core/ChromaticMarketFactory.ts:1415](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1415)
 
 ___
 
@@ -1156,4 +1156,4 @@ Returns the address of the vault.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1423](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/contracts/core/ChromaticMarketFactory.ts#L1423)
+[gen/contracts/core/ChromaticMarketFactory.ts:1423](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/contracts/core/ChromaticMarketFactory.ts#L1423)

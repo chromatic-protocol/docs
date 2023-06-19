@@ -98,6 +98,19 @@ modifier onlyDao()
 
 _Modifier to restrict access to only the DAO address_
 
+### onlyRegisteredOracleProvider
+
+```solidity
+modifier onlyRegisteredOracleProvider(address oracleProvider)
+```
+
+_Modifier to ensure that the caller is a registered oracle provider.
+     Throws a 'NotRegisteredOracleProvider' error if the oracle provider is not registered._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| oracleProvider | address | The address of the oracle provider. |
+
 ### constructor
 
 ```solidity
@@ -319,6 +332,37 @@ Checks if an oracle provider is registered.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | [0] | bool | A boolean indicating if the oracle provider is registered. |
+
+### getOracleProviderLevel
+
+```solidity
+function getOracleProviderLevel(address oracleProvider) external view returns (uint8)
+```
+
+Retrieves the level of an oracle provider in the registry.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| oracleProvider | address | The address of the oracle provider. |
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| [0] | uint8 | The level of the oracle provider. |
+
+### setOracleProviderLevel
+
+```solidity
+function setOracleProviderLevel(address oracleProvider, uint8 level) external
+```
+
+Sets the level of an oracle provider in the registry.
+
+_This function can only be called by the DAO and registered oracle providers._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| oracleProvider | address | The address of the oracle provider. |
+| level | uint8 | The new level to be set for the oracle provider. |
 
 ### registerSettlementToken
 

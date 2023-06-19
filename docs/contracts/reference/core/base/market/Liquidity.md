@@ -201,7 +201,7 @@ _Retrieves the liquidity bin statuses for the caller's liquidity pool._
 ### onERC1155Received
 
 ```solidity
-function onERC1155Received(address operator, address from, uint256 id, uint256 value, bytes data) external pure returns (bytes4)
+function onERC1155Received(address, address, uint256, uint256, bytes) external pure returns (bytes4)
 ```
 
 _Handles the receipt of a single ERC1155 token type. This function is
@@ -213,11 +213,11 @@ NOTE: To accept the transfer, this must return
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| operator | address | The address which initiated the transfer (i.e. msg.sender) |
-| from | address | The address which previously owned the token |
-| id | uint256 | The ID of the token being transferred |
-| value | uint256 | The amount of tokens being transferred |
-| data | bytes | Additional data with no specified format |
+|  | address |  |
+|  | address |  |
+|  | uint256 |  |
+|  | uint256 |  |
+|  | bytes |  |
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -226,7 +226,7 @@ NOTE: To accept the transfer, this must return
 ### onERC1155BatchReceived
 
 ```solidity
-function onERC1155BatchReceived(address operator, address from, uint256[] ids, uint256[] values, bytes data) external pure returns (bytes4)
+function onERC1155BatchReceived(address, address, uint256[], uint256[], bytes) external pure returns (bytes4)
 ```
 
 _Handles the receipt of a multiple ERC1155 token types. This function
@@ -239,11 +239,11 @@ NOTE: To accept the transfer(s), this must return
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| operator | address | The address which initiated the batch transfer (i.e. msg.sender) |
-| from | address | The address which previously owned the token |
-| ids | uint256[] | An array containing ids of each token being transferred (order and length must match values array) |
-| values | uint256[] | An array containing amounts of each token being transferred (order and length must match ids array) |
-| data | bytes | Additional data with no specified format |
+|  | address |  |
+|  | address |  |
+|  | uint256[] |  |
+|  | uint256[] |  |
+|  | bytes |  |
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -252,7 +252,7 @@ NOTE: To accept the transfer(s), this must return
 ### supportsInterface
 
 ```solidity
-function supportsInterface(bytes4 interfaceID) external view returns (bool)
+function supportsInterface(bytes4 interfaceID) external pure returns (bool)
 ```
 
 _Returns true if this contract implements the interface defined by

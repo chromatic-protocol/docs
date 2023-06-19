@@ -16,6 +16,8 @@ _Error for invalid oracle round_
 
 ### OracleVersion
 
+_A singular oracle version with its corresponding data_
+
 ```solidity
 struct OracleVersion {
   uint256 version;

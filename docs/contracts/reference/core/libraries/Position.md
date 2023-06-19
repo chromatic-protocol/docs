@@ -6,6 +6,8 @@ title: Position.sol
 
 ## Position
 
+_The Position struct represents a trading position._
+
 ```solidity
 struct Position {
   uint256 id;
@@ -18,6 +20,7 @@ struct Position {
   uint256 takerMargin;
   address owner;
   struct BinMargin[] _binMargins;
+  uint8 _feeProtocol;
 }
 ```
 
@@ -170,6 +173,22 @@ _The trading fee is calculated by summing up the trading fees of all bin margins
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | fee | uint256 | The trading fee |
+
+### protocolFee
+
+```solidity
+function protocolFee(struct Position self) internal pure returns (uint256 fee)
+```
+
+Calculates the total protocol fee for a position.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| self | struct Position | The Position struct representing the position. |
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| fee | uint256 | The total protocol fee amount. |
 
 ### binMargins
 

@@ -173,12 +173,6 @@ _Internal function for checking if a position can be claimed._
 | ---- | ---- | ----------- |
 | [0] | bool | A boolean indicating whether the position can be claimed. |
 
-### getProtocolFee
-
-```solidity
-function getProtocolFee(uint256 margin) public view returns (uint16)
-```
-
 ### getPositions
 
 ```solidity
@@ -194,4 +188,16 @@ _Retrieves multiple positions by their IDs._
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | _positions | struct Position[] |  |
+
+### setFeeProtocol
+
+```solidity
+function setFeeProtocol(uint8 feeProtocol) external
+```
+
+Set the denominator of the protocol's % share of the fees
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| feeProtocol | uint8 | new protocol fee for the market |
 

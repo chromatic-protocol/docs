@@ -130,6 +130,19 @@ _Emitted when a position is liquidated._
 | usedKeeperFee | uint256 | The amount of keeper fee used for the liquidation. |
 | position | struct Position | The liquidated position. |
 
+### SetFeeProtocol
+
+```solidity
+event SetFeeProtocol(uint8 feeProtocolOld, uint8 feeProtocolNew)
+```
+
+Emitted when the protocol fee is changed by the market
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| feeProtocolOld | uint8 | The previous value of the protocol fee |
+| feeProtocolNew | uint8 | The updated value of the protocol fee |
+
 ### openPosition
 
 ```solidity
@@ -192,4 +205,16 @@ _Retrieves multiple positions by their IDs._
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | positions | struct Position[] | An array of retrieved positions. |
+
+### setFeeProtocol
+
+```solidity
+function setFeeProtocol(uint8 feeProtocol) external
+```
+
+Set the denominator of the protocol's % share of the fees
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| feeProtocol | uint8 | new protocol fee for the market |
 

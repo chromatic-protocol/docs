@@ -82,6 +82,14 @@ mapping(uint256 => struct Position) positions
 mapping(uint256 => struct LpReceipt) lpReceipts
 ```
 
+### onlyDao
+
+```solidity
+modifier onlyDao()
+```
+
+_Modifier to restrict access to only the DAO._
+
 ### onlyLiquidator
 
 ```solidity

@@ -32,7 +32,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[gen/factories/contracts/core/CLBToken__factory.ts:533](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/factories/contracts/core/CLBToken__factory.ts#L533)
+[gen/factories/contracts/core/CLBToken__factory.ts:533](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/factories/contracts/core/CLBToken__factory.ts#L533)
 
 ___
 
@@ -46,4 +46,4 @@ ___
 
 #### Defined in
 
-[gen/factories/contracts/core/CLBToken__factory.ts:530](https://github.com/chromatic-protocol/sdk/blob/83d4e3f/src/gen/factories/contracts/core/CLBToken__factory.ts#L530)
+[gen/factories/contracts/core/CLBToken__factory.ts:530](https://github.com/chromatic-protocol/sdk/blob/933dfc6/src/gen/factories/contracts/core/CLBToken__factory.ts#L530)

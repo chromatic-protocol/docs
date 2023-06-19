@@ -283,10 +283,21 @@ Retrieves the LP receipt IDs of the caller for the specified market.
 function getLpReceiptIds(address market, address owner) public view returns (uint256[])
 ```
 
+Get the LP receipt IDs associated with a specific market and owner.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| market | address | The address of the ChromaticMarket contract. |
+| owner | address | The address of the owner. |
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| [0] | uint256[] | An array of LP receipt IDs. |
+
 ### addLiquidityBatch
 
 ```solidity
-function addLiquidityBatch(address market, int16[] feeRates, uint256[] amounts, address[] recipients) external returns (struct LpReceipt[] lpReceipts)
+function addLiquidityBatch(address market, address recipient, int16[] feeRates, uint256[] amounts) external returns (struct LpReceipt[] lpReceipts)
 ```
 
 Adds liquidity to multiple ChromaticMarket contracts in a batch.
@@ -294,9 +305,9 @@ Adds liquidity to multiple ChromaticMarket contracts in a batch.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the ChromaticMarket contract. |
+| recipient | address | The address of the recipient for each liquidity bin. |
 | feeRates | int16[] | An array of fee rates for each liquidity bin. |
 | amounts | uint256[] | An array of amounts to add as liquidity for each bin. |
-| recipients | address[] | An array of recipient addresses. |
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -318,7 +329,7 @@ Claims liquidity from multiple ChromaticMarket contracts in a batch.
 ### removeLiquidityBatch
 
 ```solidity
-function removeLiquidityBatch(address market, int16[] feeRates, uint256[] clbTokenAmounts, address[] recipients) external returns (struct LpReceipt[] lpReceipts)
+function removeLiquidityBatch(address market, address recipient, int16[] feeRates, uint256[] clbTokenAmounts) external returns (struct LpReceipt[] lpReceipts)
 ```
 
 Removes liquidity from multiple ChromaticMarket contracts in a batch.
@@ -326,9 +337,9 @@ Removes liquidity from multiple ChromaticMarket contracts in a batch.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the ChromaticMarket contract. |
+| recipient | address | The address of the recipient for each liquidity bin. |
 | feeRates | int16[] | An array of fee rates for each liquidity bin. |
 | clbTokenAmounts | uint256[] | An array of CLB token amounts to remove as liquidity for each bin. |
-| recipients | address[] | An array of recipient addresses. |
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

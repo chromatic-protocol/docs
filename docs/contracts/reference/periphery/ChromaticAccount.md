@@ -204,7 +204,7 @@ Claims the specified position in the specified market.
 ### openPositionCallback
 
 ```solidity
-function openPositionCallback(address settlementToken, address vault, uint256 marginRequired, bytes data) external
+function openPositionCallback(address settlementToken, address vault, uint256 marginRequired, bytes) external
 ```
 
 Callback function called after opening a position.
@@ -214,12 +214,12 @@ Callback function called after opening a position.
 | settlementToken | address | The address of the settlement token used in the position. |
 | vault | address | The address of the vault contract. |
 | marginRequired | uint256 | The amount of margin required for the position. |
-| data | bytes | Additional data related to the callback. |
+|  | bytes |  |
 
 ### claimPositionCallback
 
 ```solidity
-function claimPositionCallback(uint256 positionId, bytes data) external
+function claimPositionCallback(uint256 positionId, bytes) external
 ```
 
 Callback function called after claiming a position.
@@ -227,5 +227,5 @@ Callback function called after claiming a position.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | positionId | uint256 | The ID of the claimed position. |
-| data | bytes | Additional data related to the callback. |
+|  | bytes |  |
 

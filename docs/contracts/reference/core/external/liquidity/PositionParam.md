@@ -6,6 +6,8 @@ title: PositionParam.sol
 
 ## PositionParam
 
+_A struct representing the parameters of a position._
+
 ```solidity
 struct PositionParam {
   uint256 openVersion;

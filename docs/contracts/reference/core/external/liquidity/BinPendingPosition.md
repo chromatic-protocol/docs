@@ -6,6 +6,8 @@ title: BinPendingPosition.sol
 
 ## BinPendingPosition
 
+Represents a pending position within the LiquidityBin
+
 ```solidity
 struct BinPendingPosition {
   uint256 openVersion;

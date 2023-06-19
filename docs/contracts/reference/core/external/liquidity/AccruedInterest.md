@@ -6,6 +6,8 @@ title: AccruedInterest.sol
 
 ## AccruedInterest
 
+Structure for tracking accumulated interest
+
 ```solidity
 struct AccruedInterest {
   uint256 accumulatedAt;

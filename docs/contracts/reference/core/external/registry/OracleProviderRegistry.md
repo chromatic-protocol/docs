@@ -6,9 +6,12 @@ title: OracleProviderRegistry.sol
 
 ## OracleProviderRegistry
 
+_A registry for managing oracle providers._
+
 ```solidity
 struct OracleProviderRegistry {
   struct EnumerableSet.AddressSet _oracleProviders;
+  mapping(address => uint8) _oracleProviderLevels;
 }
 ```
 
@@ -76,4 +79,37 @@ Checks if an oracle provider is registered in the registry.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | [0] | bool | bool Whether the oracle provider is registered. |
+
+### getOracleProviderLevel
+
+```solidity
+function getOracleProviderLevel(struct OracleProviderRegistry self, address oracleProvider) external view returns (uint8)
+```
+
+Retrieves the level of an oracle provider in the registry.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| self | struct OracleProviderRegistry | The storage reference to the OracleProviderRegistry. |
+| oracleProvider | address | The address of the oracle provider. |
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| [0] | uint8 | The level of the oracle provider. |
+
+### setOracleProviderLevel
+
+```solidity
+function setOracleProviderLevel(struct OracleProviderRegistry self, address oracleProvider, uint8 level) external
+```
+
+Sets the level of an oracle provider in the registry.
+
+_The level must be either 0 or 1, and the max leverage must be x10 for level 0 or x20 for level 1._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| self | struct OracleProviderRegistry | The storage reference to the OracleProviderRegistry. |
+| oracleProvider | address | The address of the oracle provider. |
+| level | uint8 | The new level to be set for the oracle provider. |
 

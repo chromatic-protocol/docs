@@ -6,6 +6,8 @@ title: LpContext.sol
 
 ## LpContext
 
+Represents the context information required for LP bin operations.
+
 ```solidity
 struct LpContext {
   contract IOracleProvider oracleProvider;

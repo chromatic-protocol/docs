@@ -56,6 +56,12 @@ error NotClaimablePosition()
 error ExceedMaxAllowableTradingFee()
 ```
 
+### ExceedMaxAllowableLeverage
+
+```solidity
+error ExceedMaxAllowableLeverage()
+```
+
 ### ClaimPositionCallbackError
 
 ```solidity

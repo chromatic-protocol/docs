@@ -35,7 +35,7 @@ BaseContract.attach
 
 #### Defined in
 
-[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:147](https://github.com/chromatic-protocol/sdk/blob/8dc63ae/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L147)
+[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:147](https://github.com/chromatic-protocol/sdk/blob/b0470e8/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L147)
 
 ___
 
@@ -59,7 +59,7 @@ BaseContract.connect
 
 #### Defined in
 
-[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:146](https://github.com/chromatic-protocol/sdk/blob/8dc63ae/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L146)
+[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:146](https://github.com/chromatic-protocol/sdk/blob/b0470e8/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L146)
 
 ___
 
@@ -77,7 +77,7 @@ BaseContract.deployed
 
 #### Defined in
 
-[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:148](https://github.com/chromatic-protocol/sdk/blob/8dc63ae/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L148)
+[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:148](https://github.com/chromatic-protocol/sdk/blob/b0470e8/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L148)
 
 ___
 
@@ -100,7 +100,7 @@ Retrieves the level of an oracle provider in the registry.
 
 #### Defined in
 
-[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:230](https://github.com/chromatic-protocol/sdk/blob/8dc63ae/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L230)
+[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:230](https://github.com/chromatic-protocol/sdk/blob/b0470e8/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L230)
 
 ___
 
@@ -123,7 +123,7 @@ Checks if an oracle provider is registered.
 
 #### Defined in
 
-[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:239](https://github.com/chromatic-protocol/sdk/blob/8dc63ae/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L239)
+[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:239](https://github.com/chromatic-protocol/sdk/blob/b0470e8/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L239)
 
 ___
 
@@ -153,7 +153,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:158](https://github.com/chromatic-protocol/sdk/blob/8dc63ae/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L158)
+[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:158](https://github.com/chromatic-protocol/sdk/blob/b0470e8/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L158)
 
 ▸ **listeners**(`eventName?`): `Listener`[]
 
@@ -173,7 +173,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:161](https://github.com/chromatic-protocol/sdk/blob/8dc63ae/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L161)
+[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:161](https://github.com/chromatic-protocol/sdk/blob/b0470e8/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L161)
 
 ___
 
@@ -205,7 +205,7 @@ BaseContract.queryFilter
 
 #### Defined in
 
-[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:152](https://github.com/chromatic-protocol/sdk/blob/8dc63ae/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L152)
+[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:152](https://github.com/chromatic-protocol/sdk/blob/b0470e8/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L152)
 
 ___
 
@@ -228,7 +228,7 @@ Registers an oracle provider.
 
 #### Defined in
 
-[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:248](https://github.com/chromatic-protocol/sdk/blob/8dc63ae/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L248)
+[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:248](https://github.com/chromatic-protocol/sdk/blob/b0470e8/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L248)
 
 ___
 
@@ -250,7 +250,7 @@ Gets the registered oracle providers.
 
 #### Defined in
 
-[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:256](https://github.com/chromatic-protocol/sdk/blob/8dc63ae/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L256)
+[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:256](https://github.com/chromatic-protocol/sdk/blob/b0470e8/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L256)
 
 ___
 
@@ -280,7 +280,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:162](https://github.com/chromatic-protocol/sdk/blob/8dc63ae/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L162)
+[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:162](https://github.com/chromatic-protocol/sdk/blob/b0470e8/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L162)
 
 ▸ **removeAllListeners**(`eventName?`): [`IOracleProviderRegistry`](contracts.core.interfaces.factory.IOracleProviderRegistry.md)
 
@@ -300,7 +300,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:165](https://github.com/chromatic-protocol/sdk/blob/8dc63ae/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L165)
+[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:165](https://github.com/chromatic-protocol/sdk/blob/b0470e8/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L165)
 
 ___
 
@@ -325,7 +325,7 @@ Sets the level of an oracle provider in the registry.
 
 #### Defined in
 
-[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:264](https://github.com/chromatic-protocol/sdk/blob/8dc63ae/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L264)
+[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:264](https://github.com/chromatic-protocol/sdk/blob/b0470e8/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L264)
 
 ___
 
@@ -348,4 +348,4 @@ Unregisters an oracle provider.
 
 #### Defined in
 
-[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:274](https://github.com/chromatic-protocol/sdk/blob/8dc63ae/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L274)
+[gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts:274](https://github.com/chromatic-protocol/sdk/blob/b0470e8/src/gen/contracts/core/interfaces/factory/IOracleProviderRegistry.ts#L274)

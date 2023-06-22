@@ -1,11 +1,11 @@
 ---
-id: "contracts.periphery.ChromaticRouter"
+id: "deployed.arbitrumGoerli.ChromaticRouter"
 title: "Interface: ChromaticRouter"
 sidebar_label: "ChromaticRouter"
 custom_edit_url: null
 ---
 
-[contracts](../namespaces/contracts.md).[periphery](../namespaces/contracts.periphery.md).ChromaticRouter
+[deployed](../namespaces/deployed.md).[arbitrumGoerli](../namespaces/deployed.arbitrumGoerli.md).ChromaticRouter
 
 ## Hierarchy
 
@@ -37,7 +37,7 @@ Adds liquidity to a ChromaticMarket contract.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:674](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L674)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:674](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L674)
 
 ___
 
@@ -63,7 +63,7 @@ Adds liquidity to multiple ChromaticMarket contracts in a batch.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:689](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L689)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:689](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L689)
 
 ___
 
@@ -88,13 +88,13 @@ Handles the callback after adding liquidity to the Chromatic protocol.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:703](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L703)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:703](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L703)
 
 ___
 
 ### attach
 
-▸ **attach**(`addressOrName`): [`ChromaticRouter`](contracts.periphery.ChromaticRouter.md)
+▸ **attach**(`addressOrName`): [`ChromaticRouter`](deployed.arbitrumGoerli.ChromaticRouter.md)
 
 #### Parameters
 
@@ -104,7 +104,7 @@ ___
 
 #### Returns
 
-[`ChromaticRouter`](contracts.periphery.ChromaticRouter.md)
+[`ChromaticRouter`](deployed.arbitrumGoerli.ChromaticRouter.md)
 
 #### Overrides
 
@@ -112,7 +112,7 @@ BaseContract.attach
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:395](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L395)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:395](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L395)
 
 ___
 
@@ -136,7 +136,7 @@ Claims liquidity from a ChromaticMarket contract.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:715](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L715)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:715](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L715)
 
 ___
 
@@ -160,7 +160,7 @@ Claims liquidity from multiple ChromaticMarket contracts in a batch.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:726](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L726)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:726](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L726)
 
 ___
 
@@ -184,7 +184,7 @@ Handles the callback after claiming liquidity from the Chromatic protocol.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:737](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L737)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:737](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L737)
 
 ___
 
@@ -208,7 +208,7 @@ Claims a position from a ChromaticMarket contract.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:748](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L748)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:748](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L748)
 
 ___
 
@@ -232,13 +232,13 @@ Closes a position in a ChromaticMarket contract.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:759](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L759)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:759](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L759)
 
 ___
 
 ### connect
 
-▸ **connect**(`signerOrProvider`): [`ChromaticRouter`](contracts.periphery.ChromaticRouter.md)
+▸ **connect**(`signerOrProvider`): [`ChromaticRouter`](deployed.arbitrumGoerli.ChromaticRouter.md)
 
 #### Parameters
 
@@ -248,7 +248,7 @@ ___
 
 #### Returns
 
-[`ChromaticRouter`](contracts.periphery.ChromaticRouter.md)
+[`ChromaticRouter`](deployed.arbitrumGoerli.ChromaticRouter.md)
 
 #### Overrides
 
@@ -256,7 +256,7 @@ BaseContract.connect
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:394](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L394)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:394](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L394)
 
 ___
 
@@ -279,17 +279,17 @@ Creates a new user account.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:769](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L769)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:769](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L769)
 
 ___
 
 ### deployed
 
-▸ **deployed**(): `Promise`<[`ChromaticRouter`](contracts.periphery.ChromaticRouter.md)\>
+▸ **deployed**(): `Promise`<[`ChromaticRouter`](deployed.arbitrumGoerli.ChromaticRouter.md)\>
 
 #### Returns
 
-`Promise`<[`ChromaticRouter`](contracts.periphery.ChromaticRouter.md)\>
+`Promise`<[`ChromaticRouter`](deployed.arbitrumGoerli.ChromaticRouter.md)\>
 
 #### Overrides
 
@@ -297,7 +297,7 @@ BaseContract.deployed
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:396](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L396)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:396](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L396)
 
 ___
 
@@ -319,7 +319,7 @@ Retrieves the account of the caller.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:776](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L776)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:776](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L776)
 
 ___
 
@@ -342,7 +342,7 @@ Retrieves the LP receipt IDs of the caller for the specified market.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:793](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L793)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:793](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L793)
 
 ___
 
@@ -366,7 +366,7 @@ Get the LP receipt IDs associated with a specific market and owner.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:783](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L783)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:783](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L783)
 
 ___
 
@@ -396,7 +396,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:406](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L406)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:406](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L406)
 
 ▸ **listeners**(`eventName?`): `Listener`[]
 
@@ -416,7 +416,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:409](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L409)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:409](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L409)
 
 ___
 
@@ -444,7 +444,7 @@ Opens a new position in a ChromaticMarket contract.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:807](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L807)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:807](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L807)
 
 ___
 
@@ -466,7 +466,7 @@ Returns the address of the current owner.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:820](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L820)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:820](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L820)
 
 ___
 
@@ -498,13 +498,13 @@ BaseContract.queryFilter
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:400](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L400)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:400](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L400)
 
 ___
 
 ### removeAllListeners
 
-▸ **removeAllListeners**<`TEvent`\>(`eventFilter`): [`ChromaticRouter`](contracts.periphery.ChromaticRouter.md)
+▸ **removeAllListeners**<`TEvent`\>(`eventFilter`): [`ChromaticRouter`](deployed.arbitrumGoerli.ChromaticRouter.md)
 
 #### Type parameters
 
@@ -520,7 +520,7 @@ ___
 
 #### Returns
 
-[`ChromaticRouter`](contracts.periphery.ChromaticRouter.md)
+[`ChromaticRouter`](deployed.arbitrumGoerli.ChromaticRouter.md)
 
 #### Overrides
 
@@ -528,9 +528,9 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:410](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L410)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:410](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L410)
 
-▸ **removeAllListeners**(`eventName?`): [`ChromaticRouter`](contracts.periphery.ChromaticRouter.md)
+▸ **removeAllListeners**(`eventName?`): [`ChromaticRouter`](deployed.arbitrumGoerli.ChromaticRouter.md)
 
 #### Parameters
 
@@ -540,7 +540,7 @@ BaseContract.removeAllListeners
 
 #### Returns
 
-[`ChromaticRouter`](contracts.periphery.ChromaticRouter.md)
+[`ChromaticRouter`](deployed.arbitrumGoerli.ChromaticRouter.md)
 
 #### Overrides
 
@@ -548,7 +548,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:413](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L413)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:413](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L413)
 
 ___
 
@@ -574,7 +574,7 @@ Removes liquidity from a ChromaticMarket contract.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:829](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L829)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:829](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L829)
 
 ___
 
@@ -600,7 +600,7 @@ Removes liquidity from multiple ChromaticMarket contracts in a batch.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:844](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L844)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:844](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L844)
 
 ___
 
@@ -625,7 +625,7 @@ Handles the callback after removing liquidity from the Chromatic protocol.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:858](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L858)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:858](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L858)
 
 ___
 
@@ -647,7 +647,7 @@ Leaves the contract without owner. It will not be possible to call `onlyOwner` f
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:868](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L868)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:868](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L868)
 
 ___
 
@@ -670,7 +670,7 @@ Transfers ownership of the contract to a new account (`newOwner`). Can only be c
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:875](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L875)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:875](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L875)
 
 ___
 
@@ -694,7 +694,7 @@ Withdraws liquidity from a ChromaticMarket contract.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:885](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L885)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:885](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L885)
 
 ___
 
@@ -718,7 +718,7 @@ Withdraws liquidity from multiple ChromaticMarket contracts in a batch.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:896](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L896)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:896](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L896)
 
 ___
 
@@ -742,4 +742,4 @@ Handles the callback after withdrawing liquidity from the Chromatic protocol.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticRouter.ts:907](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticRouter.ts#L907)
+[gen/deployed/arbitrum_goerli/ChromaticRouter.ts:907](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticRouter.ts#L907)

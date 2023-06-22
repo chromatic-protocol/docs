@@ -34,7 +34,7 @@ Returns the current oracle version
 
 #### Defined in
 
-[gen/contracts/oracle/interfaces/IOracleProvider.ts:145](https://github.com/chromatic-protocol/sdk/blob/b0470e8/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L145)
+[gen/contracts/oracle/interfaces/IOracleProvider.ts:145](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L145)
 
 ___
 
@@ -58,7 +58,7 @@ BaseContract.attach
 
 #### Defined in
 
-[gen/contracts/oracle/interfaces/IOracleProvider.ts:86](https://github.com/chromatic-protocol/sdk/blob/b0470e8/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L86)
+[gen/contracts/oracle/interfaces/IOracleProvider.ts:86](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L86)
 
 ___
 
@@ -82,7 +82,7 @@ BaseContract.connect
 
 #### Defined in
 
-[gen/contracts/oracle/interfaces/IOracleProvider.ts:85](https://github.com/chromatic-protocol/sdk/blob/b0470e8/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L85)
+[gen/contracts/oracle/interfaces/IOracleProvider.ts:85](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L85)
 
 ___
 
@@ -104,7 +104,7 @@ Returns the current oracle version
 
 #### Defined in
 
-[gen/contracts/oracle/interfaces/IOracleProvider.ts:153](https://github.com/chromatic-protocol/sdk/blob/b0470e8/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L153)
+[gen/contracts/oracle/interfaces/IOracleProvider.ts:153](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L153)
 
 ___
 
@@ -122,7 +122,7 @@ BaseContract.deployed
 
 #### Defined in
 
-[gen/contracts/oracle/interfaces/IOracleProvider.ts:87](https://github.com/chromatic-protocol/sdk/blob/b0470e8/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L87)
+[gen/contracts/oracle/interfaces/IOracleProvider.ts:87](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L87)
 
 ___
 
@@ -144,7 +144,7 @@ Retrieves the description of the Oracle Provider.
 
 #### Defined in
 
-[gen/contracts/oracle/interfaces/IOracleProvider.ts:160](https://github.com/chromatic-protocol/sdk/blob/b0470e8/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L160)
+[gen/contracts/oracle/interfaces/IOracleProvider.ts:160](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L160)
 
 ___
 
@@ -174,7 +174,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[gen/contracts/oracle/interfaces/IOracleProvider.ts:97](https://github.com/chromatic-protocol/sdk/blob/b0470e8/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L97)
+[gen/contracts/oracle/interfaces/IOracleProvider.ts:97](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L97)
 
 ▸ **listeners**(`eventName?`): `Listener`[]
 
@@ -194,7 +194,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[gen/contracts/oracle/interfaces/IOracleProvider.ts:100](https://github.com/chromatic-protocol/sdk/blob/b0470e8/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L100)
+[gen/contracts/oracle/interfaces/IOracleProvider.ts:100](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L100)
 
 ___
 
@@ -226,7 +226,7 @@ BaseContract.queryFilter
 
 #### Defined in
 
-[gen/contracts/oracle/interfaces/IOracleProvider.ts:91](https://github.com/chromatic-protocol/sdk/blob/b0470e8/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L91)
+[gen/contracts/oracle/interfaces/IOracleProvider.ts:91](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L91)
 
 ___
 
@@ -256,7 +256,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[gen/contracts/oracle/interfaces/IOracleProvider.ts:101](https://github.com/chromatic-protocol/sdk/blob/b0470e8/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L101)
+[gen/contracts/oracle/interfaces/IOracleProvider.ts:101](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L101)
 
 ▸ **removeAllListeners**(`eventName?`): [`IOracleProvider`](contracts.oracle.interfaces.IOracleProvider-1.md)
 
@@ -276,7 +276,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[gen/contracts/oracle/interfaces/IOracleProvider.ts:104](https://github.com/chromatic-protocol/sdk/blob/b0470e8/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L104)
+[gen/contracts/oracle/interfaces/IOracleProvider.ts:104](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L104)
 
 ___
 
@@ -299,4 +299,4 @@ Checks for a new price and updates the internal phase annotation state according
 
 #### Defined in
 
-[gen/contracts/oracle/interfaces/IOracleProvider.ts:166](https://github.com/chromatic-protocol/sdk/blob/b0470e8/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L166)
+[gen/contracts/oracle/interfaces/IOracleProvider.ts:166](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/oracle/interfaces/IOracleProvider.ts#L166)

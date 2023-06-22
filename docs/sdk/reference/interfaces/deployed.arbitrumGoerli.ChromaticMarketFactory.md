@@ -1,11 +1,11 @@
 ---
-id: "contracts.core.ChromaticMarketFactory"
+id: "deployed.arbitrumGoerli.ChromaticMarketFactory"
 title: "Interface: ChromaticMarketFactory"
 sidebar_label: "ChromaticMarketFactory"
 custom_edit_url: null
 ---
 
-[contracts](../namespaces/contracts.md).[core](../namespaces/contracts.core.md).ChromaticMarketFactory
+[deployed](../namespaces/deployed.md).[arbitrumGoerli](../namespaces/deployed.arbitrumGoerli.md).ChromaticMarketFactory
 
 ## Hierarchy
 
@@ -37,13 +37,13 @@ Appends an interest rate record for a settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1107](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1107)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1107](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1107)
 
 ___
 
 ### attach
 
-▸ **attach**(`addressOrName`): [`ChromaticMarketFactory`](contracts.core.ChromaticMarketFactory.md)
+▸ **attach**(`addressOrName`): [`ChromaticMarketFactory`](deployed.arbitrumGoerli.ChromaticMarketFactory.md)
 
 #### Parameters
 
@@ -53,7 +53,7 @@ ___
 
 #### Returns
 
-[`ChromaticMarketFactory`](contracts.core.ChromaticMarketFactory.md)
+[`ChromaticMarketFactory`](deployed.arbitrumGoerli.ChromaticMarketFactory.md)
 
 #### Overrides
 
@@ -61,7 +61,7 @@ BaseContract.attach
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:673](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L673)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:673](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L673)
 
 ___
 
@@ -87,7 +87,7 @@ Calculates the interest accrued for a given token and amount within a specified 
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1121](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1121)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1121](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1121)
 
 ___
 
@@ -111,7 +111,7 @@ Cancels a Maker earning distribution task for a token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1134](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1134)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1134](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1134)
 
 ___
 
@@ -135,13 +135,13 @@ Cancels a market earning distribution task for a market.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1144](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1144)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1144](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1144)
 
 ___
 
 ### connect
 
-▸ **connect**(`signerOrProvider`): [`ChromaticMarketFactory`](contracts.core.ChromaticMarketFactory.md)
+▸ **connect**(`signerOrProvider`): [`ChromaticMarketFactory`](deployed.arbitrumGoerli.ChromaticMarketFactory.md)
 
 #### Parameters
 
@@ -151,7 +151,7 @@ ___
 
 #### Returns
 
-[`ChromaticMarketFactory`](contracts.core.ChromaticMarketFactory.md)
+[`ChromaticMarketFactory`](deployed.arbitrumGoerli.ChromaticMarketFactory.md)
 
 #### Overrides
 
@@ -159,7 +159,7 @@ BaseContract.connect
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:672](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L672)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:672](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L672)
 
 ___
 
@@ -183,7 +183,7 @@ Creates a Maker earning distribution task for a token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1154](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1154)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1154](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1154)
 
 ___
 
@@ -207,7 +207,7 @@ Creates a new market associated with an oracle provider and settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1164](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1164)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1164](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1164)
 
 ___
 
@@ -231,7 +231,7 @@ Creates a market earning distribution task for a market.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1175](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1175)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1175](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1175)
 
 ___
 
@@ -254,7 +254,7 @@ Gets the current interest rate for a settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1184](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1184)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1184](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1184)
 
 ___
 
@@ -276,17 +276,17 @@ Returns the address of the DAO.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1192](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1192)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1192](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1192)
 
 ___
 
 ### deployed
 
-▸ **deployed**(): `Promise`<[`ChromaticMarketFactory`](contracts.core.ChromaticMarketFactory.md)\>
+▸ **deployed**(): `Promise`<[`ChromaticMarketFactory`](deployed.arbitrumGoerli.ChromaticMarketFactory.md)\>
 
 #### Returns
 
-`Promise`<[`ChromaticMarketFactory`](contracts.core.ChromaticMarketFactory.md)\>
+`Promise`<[`ChromaticMarketFactory`](deployed.arbitrumGoerli.ChromaticMarketFactory.md)\>
 
 #### Overrides
 
@@ -294,7 +294,7 @@ BaseContract.deployed
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:674](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L674)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:674](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L674)
 
 ___
 
@@ -317,7 +317,7 @@ Gets the earning distribution threshold for a settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1198](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1198)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1198](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1198)
 
 ___
 
@@ -340,7 +340,7 @@ Gets the flash loan fee rate for a settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1207](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1207)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1207](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1207)
 
 ___
 
@@ -363,7 +363,7 @@ Gets all the interest rate records for a settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1216](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1216)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1216](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1216)
 
 ___
 
@@ -387,7 +387,7 @@ Returns the address of a market associated with an oracle provider and settlemen
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1226](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1226)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1226](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1226)
 
 ___
 
@@ -409,7 +409,7 @@ Returns an array of all market addresses.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1235](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1235)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1235](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1235)
 
 ___
 
@@ -432,7 +432,7 @@ Returns an array of market addresses associated with a settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1241](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1241)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1241](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1241)
 
 ___
 
@@ -456,7 +456,7 @@ Gets the minimum margin for a settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1251](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1251)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1251](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1251)
 
 ___
 
@@ -479,7 +479,7 @@ Retrieves the level of an oracle provider in the registry.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1260](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1260)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1260](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1260)
 
 ___
 
@@ -502,7 +502,7 @@ Gets the Uniswap fee tier for a settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1269](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1269)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1269](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1269)
 
 ___
 
@@ -525,7 +525,7 @@ Checks if a market is registered.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1278](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1278)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1278](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1278)
 
 ___
 
@@ -548,7 +548,7 @@ Checks if an oracle provider is registered.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1287](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1287)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1287](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1287)
 
 ___
 
@@ -571,7 +571,7 @@ Checks if a settlement token is registered.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1296](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1296)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1296](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1296)
 
 ___
 
@@ -593,7 +593,7 @@ Returns the address of the keeper fee payer.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1304](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1304)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1304](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1304)
 
 ___
 
@@ -615,7 +615,7 @@ Returns the address of the liquidator.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1309](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1309)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1309](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1309)
 
 ___
 
@@ -645,7 +645,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:684](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L684)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:684](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L684)
 
 ▸ **listeners**(`eventName?`): `Listener`[]
 
@@ -665,7 +665,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:687](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L687)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:687](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L687)
 
 ___
 
@@ -688,7 +688,7 @@ Get the parameters to be used in constructing the market, set transiently during
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1315](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1315)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1315](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1315)
 
 ___
 
@@ -720,7 +720,7 @@ BaseContract.queryFilter
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:678](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L678)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:678](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L678)
 
 ___
 
@@ -744,7 +744,7 @@ Registers an oracle provider.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1326](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1326)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1326](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1326)
 
 ___
 
@@ -773,7 +773,7 @@ Registers a new settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1341](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1341)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1341](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1341)
 
 ___
 
@@ -795,7 +795,7 @@ Gets the registered oracle providers.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1354](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1354)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1354](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1354)
 
 ___
 
@@ -817,13 +817,13 @@ Gets the list of registered settlement tokens.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1359](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1359)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1359](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1359)
 
 ___
 
 ### removeAllListeners
 
-▸ **removeAllListeners**<`TEvent`\>(`eventFilter`): [`ChromaticMarketFactory`](contracts.core.ChromaticMarketFactory.md)
+▸ **removeAllListeners**<`TEvent`\>(`eventFilter`): [`ChromaticMarketFactory`](deployed.arbitrumGoerli.ChromaticMarketFactory.md)
 
 #### Type parameters
 
@@ -839,7 +839,7 @@ ___
 
 #### Returns
 
-[`ChromaticMarketFactory`](contracts.core.ChromaticMarketFactory.md)
+[`ChromaticMarketFactory`](deployed.arbitrumGoerli.ChromaticMarketFactory.md)
 
 #### Overrides
 
@@ -847,9 +847,9 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:688](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L688)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:688](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L688)
 
-▸ **removeAllListeners**(`eventName?`): [`ChromaticMarketFactory`](contracts.core.ChromaticMarketFactory.md)
+▸ **removeAllListeners**(`eventName?`): [`ChromaticMarketFactory`](deployed.arbitrumGoerli.ChromaticMarketFactory.md)
 
 #### Parameters
 
@@ -859,7 +859,7 @@ BaseContract.removeAllListeners
 
 #### Returns
 
-[`ChromaticMarketFactory`](contracts.core.ChromaticMarketFactory.md)
+[`ChromaticMarketFactory`](deployed.arbitrumGoerli.ChromaticMarketFactory.md)
 
 #### Overrides
 
@@ -867,7 +867,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:691](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L691)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:691](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L691)
 
 ___
 
@@ -891,7 +891,7 @@ Removes the last interest rate record for a settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1366](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1366)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1366](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1366)
 
 ___
 
@@ -916,7 +916,7 @@ Sets the earning distribution threshold for a settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1377](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1377)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1377](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1377)
 
 ___
 
@@ -941,7 +941,7 @@ Sets the flash loan fee rate for a settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1389](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1389)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1389](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1389)
 
 ___
 
@@ -965,7 +965,7 @@ Sets the keeper fee payer address.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1400](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1400)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1400](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1400)
 
 ___
 
@@ -989,7 +989,7 @@ Sets the liquidator address.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1410](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1410)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1410](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1410)
 
 ___
 
@@ -1014,7 +1014,7 @@ Sets the minimum margin for a settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1421](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1421)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1421](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1421)
 
 ___
 
@@ -1039,7 +1039,7 @@ Sets the level of an oracle provider in the registry.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1433](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1433)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1433](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1433)
 
 ___
 
@@ -1064,7 +1064,7 @@ Sets the Uniswap fee tier for a settlement token.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1445](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1445)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1445](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1445)
 
 ___
 
@@ -1088,7 +1088,7 @@ Sets the vault address.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1456](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1456)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1456](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1456)
 
 ___
 
@@ -1110,7 +1110,7 @@ Returns the address of the DAO treasury.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1464](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1464)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1464](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1464)
 
 ___
 
@@ -1134,7 +1134,7 @@ Unregisters an oracle provider.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1471](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1471)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1471](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1471)
 
 ___
 
@@ -1158,7 +1158,7 @@ Updates the DAO address.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1481](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1481)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1481](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1481)
 
 ___
 
@@ -1182,7 +1182,7 @@ Updates the DAO treasury address.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1491](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1491)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1491](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1491)
 
 ___
 
@@ -1204,4 +1204,4 @@ Returns the address of the vault.
 
 #### Defined in
 
-[gen/contracts/core/ChromaticMarketFactory.ts:1499](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/core/ChromaticMarketFactory.ts#L1499)
+[gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts:1499](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/deployed/arbitrum_goerli/ChromaticMarketFactory.ts#L1499)

@@ -31,7 +31,7 @@ ContractFactory.constructor
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts:749](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts#L749)
+[gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts:749](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts#L749)
 
 ## Methods
 
@@ -55,7 +55,7 @@ ContractFactory.attach
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts:772](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts#L772)
+[gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts:772](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts#L772)
 
 ___
 
@@ -79,7 +79,7 @@ ContractFactory.connect
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts:775](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts#L775)
+[gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts:775](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts#L775)
 
 ___
 
@@ -104,7 +104,7 @@ ContractFactory.deploy
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts:757](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts#L757)
+[gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts:757](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts#L757)
 
 ___
 
@@ -129,7 +129,7 @@ ContractFactory.getDeployTransaction
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts:766](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts#L766)
+[gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts:766](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts#L766)
 
 ___
 
@@ -150,7 +150,7 @@ ___
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts:784](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts#L784)
+[gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts:784](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts#L784)
 
 ___
 
@@ -164,4 +164,4 @@ ___
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts:781](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts#L781)
+[gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts:781](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticRouter__factory.ts#L781)

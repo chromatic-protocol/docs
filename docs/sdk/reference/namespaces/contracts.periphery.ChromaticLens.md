@@ -24,7 +24,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticLens.ts:93](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticLens.ts#L93)
+[gen/contracts/periphery/ChromaticLens.ts:93](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/contracts/periphery/ChromaticLens.ts#L93)
 
 ___
 
@@ -34,4 +34,4 @@ ___
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticLens.ts:100](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/contracts/periphery/ChromaticLens.ts#L100)
+[gen/contracts/periphery/ChromaticLens.ts:100](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/contracts/periphery/ChromaticLens.ts#L100)

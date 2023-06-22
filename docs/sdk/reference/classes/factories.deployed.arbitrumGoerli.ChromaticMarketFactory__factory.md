@@ -31,7 +31,7 @@ ContractFactory.constructor
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts:1097](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts#L1097)
+[gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts:1097](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts#L1097)
 
 ## Methods
 
@@ -55,7 +55,7 @@ ContractFactory.attach
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts:1115](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts#L1115)
+[gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts:1115](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts#L1115)
 
 ___
 
@@ -79,7 +79,7 @@ ContractFactory.connect
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts:1118](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts#L1118)
+[gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts:1118](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts#L1118)
 
 ___
 
@@ -103,7 +103,7 @@ ContractFactory.deploy
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts:1105](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts#L1105)
+[gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts:1105](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts#L1105)
 
 ___
 
@@ -127,7 +127,7 @@ ContractFactory.getDeployTransaction
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts:1110](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts#L1110)
+[gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts:1110](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts#L1110)
 
 ___
 
@@ -148,7 +148,7 @@ ___
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts:1127](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts#L1127)
+[gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts:1127](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts#L1127)
 
 ___
 
@@ -162,4 +162,4 @@ ___
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts:1124](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts#L1124)
+[gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts:1124](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticMarketFactory__factory.ts#L1124)

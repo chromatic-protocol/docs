@@ -13,7 +13,6 @@ custom_edit_url: null
 
 ## Interfaces
 
-- [ChainlinkFeedOracle](../interfaces/deployed.arbitrumGoerli.ChainlinkFeedOracle.md)
 - [ChromaticLens](../interfaces/deployed.arbitrumGoerli.ChromaticLens-1.md)
 - [ChromaticLiquidator](../interfaces/deployed.arbitrumGoerli.ChromaticLiquidator.md)
 - [ChromaticMarketFactory](../interfaces/deployed.arbitrumGoerli.ChromaticMarketFactory.md)

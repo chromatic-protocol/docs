@@ -31,7 +31,7 @@ ContractFactory.constructor
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts:931](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts#L931)
+[gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts:931](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts#L931)
 
 ## Methods
 
@@ -55,7 +55,7 @@ ContractFactory.attach
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts:965](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts#L965)
+[gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts:965](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts#L965)
 
 ___
 
@@ -79,7 +79,7 @@ ContractFactory.connect
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts:968](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts#L968)
+[gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts:968](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts#L968)
 
 ___
 
@@ -106,7 +106,7 @@ ContractFactory.deploy
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts:939](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts#L939)
+[gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts:939](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts#L939)
 
 ___
 
@@ -133,7 +133,7 @@ ContractFactory.getDeployTransaction
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts:952](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts#L952)
+[gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts:952](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts#L952)
 
 ___
 
@@ -154,7 +154,7 @@ ___
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts:977](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts#L977)
+[gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts:977](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts#L977)
 
 ___
 
@@ -168,4 +168,4 @@ ___
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts:974](https://github.com/chromatic-protocol/sdk/blob/f81a674/src/gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts#L974)
+[gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts:974](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticVault__factory.ts#L974)

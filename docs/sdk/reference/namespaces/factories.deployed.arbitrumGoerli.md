@@ -9,7 +9,6 @@ custom_edit_url: null
 
 ## Classes
 
-- [ChainlinkFeedOracle\_\_factory](../classes/factories.deployed.arbitrumGoerli.ChainlinkFeedOracle__factory.md)
 - [ChromaticLens\_\_factory](../classes/factories.deployed.arbitrumGoerli.ChromaticLens__factory.md)
 - [ChromaticLiquidator\_\_factory](../classes/factories.deployed.arbitrumGoerli.ChromaticLiquidator__factory.md)
 - [ChromaticMarketFactory\_\_factory](../classes/factories.deployed.arbitrumGoerli.ChromaticMarketFactory__factory.md)

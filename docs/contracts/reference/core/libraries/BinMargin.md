@@ -6,8 +6,6 @@ title: BinMargin.sol
 
 ## BinMargin
 
-_The BinMargin struct represents the margin information for an LP bin._
-
 ```solidity
 struct BinMargin {
   uint16 tradingFeeRate;

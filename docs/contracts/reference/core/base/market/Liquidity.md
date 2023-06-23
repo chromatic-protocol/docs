@@ -155,7 +155,7 @@ _Retrieves the values of a specific trading fee rate's bins in the liquidity poo
 ### getLpReceipt
 
 ```solidity
-function getLpReceipt(uint256 receiptId) external view returns (struct LpReceipt receipt)
+function getLpReceipt(uint256 receiptId) public view returns (struct LpReceipt receipt)
 ```
 
 _Retrieves the liquidity receipt with the given receipt ID.

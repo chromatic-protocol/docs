@@ -6,8 +6,6 @@ title: LpReceipt.sol
 
 ## LpAction
 
-_The LpAction enum represents the types of LP actions that can be performed._
-
 ```solidity
 enum LpAction {
   ADD_LIQUIDITY,
@@ -16,8 +14,6 @@ enum LpAction {
 ```
 
 ## LpReceipt
-
-The LpReceipt struct represents a receipt of an LP action performed.
 
 ```solidity
 struct LpReceipt {

@@ -13,8 +13,6 @@ _The library allows for the initialization, appending, and removal of interest r
 
 ### Record
 
-_Record type_
-
 ```solidity
 struct Record {
   uint256 annualRateBPS;

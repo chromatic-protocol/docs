@@ -156,23 +156,6 @@ _Checks if a position is eligible for claim._
 | ---- | ---- | ----------- |
 | [0] | bool | A boolean indicating if the position is eligible for claim. |
 
-### _checkClaimPosition
-
-```solidity
-function _checkClaimPosition(struct Position position, struct LpContext ctx) internal view returns (bool)
-```
-
-_Internal function for checking if a position can be claimed._
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| position | struct Position | The Position object representing the position to be checked. |
-| ctx | struct LpContext | The LpContext containing the current oracle version and synchronization information. |
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | bool | A boolean indicating whether the position can be claimed. |
-
 ### getPositions
 
 ```solidity

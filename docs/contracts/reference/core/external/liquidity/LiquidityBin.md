@@ -6,8 +6,6 @@ title: LiquidityBin.sol
 
 ## LiquidityBin
 
-Structure representing a liquidity bin
-
 ```solidity
 struct LiquidityBin {
   uint256 clbTokenId;

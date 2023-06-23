@@ -6,8 +6,6 @@ title: BinLiquidity.sol
 
 ## BinLiquidity
 
-Represents the liquidity information within an LiquidityBin.
-
 ```solidity
 struct BinLiquidity {
   uint256 total;
@@ -20,8 +18,6 @@ struct BinLiquidity {
 
 ## _PendingLiquidity
 
-Represents the pending liquidity details within BinLiquidity.
-
 ```solidity
 struct _PendingLiquidity {
   uint256 oracleVersion;
@@ -32,9 +28,6 @@ struct _PendingLiquidity {
 
 ## _ClaimMinting
 
-Represents the accumulated values of minting claims
-        for a specific oracle version within BinLiquidity.
-
 ```solidity
 struct _ClaimMinting {
   uint256 tokenAmountRequested;
@@ -43,9 +36,6 @@ struct _ClaimMinting {
 ```
 
 ## _ClaimBurning
-
-Represents the accumulated values of burning claims
-        for a specific oracle version within BinLiquidity.
 
 ```solidity
 struct _ClaimBurning {

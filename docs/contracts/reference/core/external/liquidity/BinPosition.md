@@ -6,8 +6,6 @@ title: BinPosition.sol
 
 ## BinPosition
 
-Represents a position in the LiquidityBin
-
 ```solidity
 struct BinPosition {
   int256 totalLeveragedQty;

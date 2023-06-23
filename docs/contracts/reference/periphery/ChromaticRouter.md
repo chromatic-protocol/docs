@@ -10,11 +10,6 @@ _A router contract that facilitates liquidity provision and trading on Chromatic
 
 ### AddLiquidityCallbackData
 
-_Struct representing the data for an addLiquidity callback._
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-
 ```solidity
 struct AddLiquidityCallbackData {
   address provider;
@@ -24,11 +19,6 @@ struct AddLiquidityCallbackData {
 
 ### ClaimLiquidityCallbackData
 
-_Struct representing the data for a claimLiquidity callback._
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-
 ```solidity
 struct ClaimLiquidityCallbackData {
   address provider;
@@ -36,11 +26,6 @@ struct ClaimLiquidityCallbackData {
 ```
 
 ### RemoveLiquidityCallbackData
-
-_Struct representing the data for a removeLiquidity callback._
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
 
 ```solidity
 struct RemoveLiquidityCallbackData {
@@ -50,11 +35,6 @@ struct RemoveLiquidityCallbackData {
 ```
 
 ### WithdrawLiquidityCallbackData
-
-_Struct representing the data for a withdrawLiquidity callback._
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
 
 ```solidity
 struct WithdrawLiquidityCallbackData {

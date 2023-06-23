@@ -31,7 +31,7 @@ ContractFactory.constructor
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts:297](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts#L297)
+[gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts:297](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts#L297)
 
 ## Methods
 
@@ -55,7 +55,7 @@ ContractFactory.attach
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts:317](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts#L317)
+[gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts:317](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts#L317)
 
 ___
 
@@ -79,7 +79,7 @@ ContractFactory.connect
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts:320](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts#L320)
+[gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts:320](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts#L320)
 
 ___
 
@@ -104,7 +104,7 @@ ContractFactory.deploy
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts:305](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts#L305)
+[gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts:305](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts#L305)
 
 ___
 
@@ -129,7 +129,7 @@ ContractFactory.getDeployTransaction
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts:311](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts#L311)
+[gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts:311](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts#L311)
 
 ___
 
@@ -150,7 +150,7 @@ ___
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts:329](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts#L329)
+[gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts:329](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts#L329)
 
 ___
 
@@ -164,4 +164,4 @@ ___
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts:326](https://github.com/chromatic-protocol/sdk/blob/27a986d/src/gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts#L326)
+[gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts:326](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/factories/deployed/arbitrum_goerli/ChromaticLens__factory.ts#L326)

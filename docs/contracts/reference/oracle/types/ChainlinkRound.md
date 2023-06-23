@@ -6,8 +6,6 @@ title: ChainlinkRound.sol
 
 ## ChainlinkRound
 
-_ChainlinkRound type_
-
 ```solidity
 struct ChainlinkRound {
   uint256 timestamp;

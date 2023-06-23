@@ -6,8 +6,6 @@ title: OracleProviderRegistry.sol
 
 ## OracleProviderRegistry
 
-_A registry for managing oracle providers._
-
 ```solidity
 struct OracleProviderRegistry {
   struct EnumerableSet.AddressSet _oracleProviders;

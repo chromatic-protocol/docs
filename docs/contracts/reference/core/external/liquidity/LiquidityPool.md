@@ -6,8 +6,6 @@ title: LiquidityPool.sol
 
 ## LiquidityPool
 
-Represents a collection of long and short liquidity bins
-
 ```solidity
 struct LiquidityPool {
   mapping(uint16 => struct LiquidityBin) _longBins;

@@ -6,8 +6,6 @@ title: Position.sol
 
 ## Position
 
-_The Position struct represents a trading position._
-
 ```solidity
 struct Position {
   uint256 id;

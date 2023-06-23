@@ -10,8 +10,6 @@ _The interface for liquidity operations in a market._
 
 ### ClaimableLiquidity
 
-_A struct representing claimable liquidity information._
-
 ```solidity
 struct ClaimableLiquidity {
   uint256 mintingTokenAmountRequested;
@@ -49,6 +47,18 @@ error OnlyAccessableByVault()
 
 ```solidity
 error NotExistLpReceipt()
+```
+
+### NotClaimableLpReceipt
+
+```solidity
+error NotClaimableLpReceipt()
+```
+
+### NotWithdrawableLpReceipt
+
+```solidity
+error NotWithdrawableLpReceipt()
 ```
 
 ### InvalidLpReceiptAction

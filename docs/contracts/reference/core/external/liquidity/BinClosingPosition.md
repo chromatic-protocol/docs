@@ -6,8 +6,6 @@ title: BinClosingPosition.sol
 
 ## BinClosingPosition
 
-_Represents the closing position within an LiquidityBin._
-
 ```solidity
 struct BinClosingPosition {
   uint256 closeVersion;

@@ -6,8 +6,6 @@ title: LpContext.sol
 
 ## LpContext
 
-Represents the context information required for LP bin operations.
-
 ```solidity
 struct LpContext {
   contract IOracleProvider oracleProvider;
@@ -100,4 +98,21 @@ _This function internally calls the `calculateInterest` function on the `interes
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | [0] | uint256 | The accrued interest as a `uint256` value. |
+
+### isPastVersion
+
+```solidity
+function isPastVersion(struct LpContext self, uint256 oracleVersion) internal view returns (bool)
+```
+
+Checks if an oracle version is in the past.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| self | struct LpContext | The memory instance of the `LpContext` struct. |
+| oracleVersion | uint256 | The oracle version to check. |
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| [0] | bool | A boolean value indicating whether the oracle version is in the past. |
 

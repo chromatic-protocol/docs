@@ -6,8 +6,6 @@ title: MarketDeployer.sol
 
 ## MarketDeployer
 
-Storage struct for deploying a ChromaticMarket contract
-
 ```solidity
 struct MarketDeployer {
   struct Parameters parameters;
@@ -15,8 +13,6 @@ struct MarketDeployer {
 ```
 
 ## Parameters
-
-Struct for storing deployment parameters
 
 ```solidity
 struct Parameters {

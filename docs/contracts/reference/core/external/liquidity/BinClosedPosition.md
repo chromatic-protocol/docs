@@ -6,8 +6,6 @@ title: BinClosedPosition.sol
 
 ## BinClosedPosition
 
-Represents a closed position within an LiquidityBin.
-
 ```solidity
 struct BinClosedPosition {
   uint256 _totalMakerMargin;
@@ -19,9 +17,6 @@ struct BinClosedPosition {
 ```
 
 ## _ClaimWaitingPosition
-
-Represents the accumulated values of the waiting positions to be claimed
-     for a specific version within BinClosedPosition.
 
 ```solidity
 struct _ClaimWaitingPosition {

@@ -6,8 +6,6 @@ title: SettlementTokenRegistry.sol
 
 ## SettlementTokenRegistry
 
-_A registry for managing settlement tokens and their associated parameters._
-
 ```solidity
 struct SettlementTokenRegistry {
   struct EnumerableSet.AddressSet _tokens;

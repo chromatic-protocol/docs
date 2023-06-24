@@ -31,7 +31,7 @@ ContractFactory.constructor
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts:225](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts#L225)
+[gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts:225](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts#L225)
 
 ## Methods
 
@@ -55,7 +55,7 @@ ContractFactory.attach
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts:259](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts#L259)
+[gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts:259](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts#L259)
 
 ___
 
@@ -79,7 +79,7 @@ ContractFactory.connect
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts:262](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts#L262)
+[gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts:262](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts#L262)
 
 ___
 
@@ -106,7 +106,7 @@ ContractFactory.deploy
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts:233](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts#L233)
+[gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts:233](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts#L233)
 
 ___
 
@@ -133,7 +133,7 @@ ContractFactory.getDeployTransaction
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts:246](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts#L246)
+[gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts:246](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts#L246)
 
 ___
 
@@ -154,7 +154,7 @@ ___
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts:271](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts#L271)
+[gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts:271](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts#L271)
 
 ___
 
@@ -168,4 +168,4 @@ ___
 
 #### Defined in
 
-[gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts:268](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts#L268)
+[gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts:268](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/factories/deployed/arbitrum_goerli/ChromaticLiquidator__factory.ts#L268)

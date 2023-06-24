@@ -24,7 +24,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticLens.ts:93](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticLens.ts#L93)
+[gen/deployed/arbitrum_goerli/ChromaticLens.ts:93](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticLens.ts#L93)
 
 ___
 
@@ -34,4 +34,4 @@ ___
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticLens.ts:100](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticLens.ts#L100)
+[gen/deployed/arbitrum_goerli/ChromaticLens.ts:100](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticLens.ts#L100)

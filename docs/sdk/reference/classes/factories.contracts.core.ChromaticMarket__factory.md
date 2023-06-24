@@ -32,7 +32,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[gen/factories/contracts/core/ChromaticMarket__factory.ts:1640](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/factories/contracts/core/ChromaticMarket__factory.ts#L1640)
+[gen/factories/contracts/core/ChromaticMarket__factory.ts:1650](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/factories/contracts/core/ChromaticMarket__factory.ts#L1650)
 
 ___
 
@@ -46,4 +46,4 @@ ___
 
 #### Defined in
 
-[gen/factories/contracts/core/ChromaticMarket__factory.ts:1637](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/factories/contracts/core/ChromaticMarket__factory.ts#L1637)
+[gen/factories/contracts/core/ChromaticMarket__factory.ts:1647](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/factories/contracts/core/ChromaticMarket__factory.ts#L1647)

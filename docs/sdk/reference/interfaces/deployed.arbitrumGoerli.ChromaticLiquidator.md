@@ -35,7 +35,7 @@ BaseContract.attach
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:132](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L132)
+[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:132](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L132)
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:250](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L250)
+[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:250](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L250)
 
 ___
 
@@ -79,7 +79,7 @@ Cancels a claim position task for a given position.
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:257](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L257)
+[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:257](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L257)
 
 ___
 
@@ -103,7 +103,7 @@ Cancels a liquidation task for a given position.
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:267](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L267)
+[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:267](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L267)
 
 ___
 
@@ -128,7 +128,7 @@ Claims a position in a market.
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:278](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L278)
+[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:278](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L278)
 
 ___
 
@@ -152,7 +152,7 @@ BaseContract.connect
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:131](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L131)
+[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:131](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L131)
 
 ___
 
@@ -176,7 +176,7 @@ Creates a claim position task for a given position.
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:289](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L289)
+[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:289](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L289)
 
 ___
 
@@ -200,7 +200,7 @@ Creates a liquidation task for a given position.
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:299](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L299)
+[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:299](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L299)
 
 ___
 
@@ -220,7 +220,7 @@ ___
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:304](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L304)
+[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:304](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L304)
 
 ___
 
@@ -238,7 +238,7 @@ BaseContract.deployed
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:133](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L133)
+[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:133](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L133)
 
 ___
 
@@ -263,7 +263,7 @@ Liquidates a position in a market.
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:312](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L312)
+[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:312](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L312)
 
 ___
 
@@ -293,7 +293,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:143](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L143)
+[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:143](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L143)
 
 ▸ **listeners**(`eventName?`): `Listener`[]
 
@@ -313,7 +313,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:146](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L146)
+[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:146](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L146)
 
 ___
 
@@ -345,7 +345,7 @@ BaseContract.queryFilter
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:137](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L137)
+[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:137](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L137)
 
 ___
 
@@ -375,7 +375,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:147](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L147)
+[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:147](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L147)
 
 ▸ **removeAllListeners**(`eventName?`): [`ChromaticLiquidator`](deployed.arbitrumGoerli.ChromaticLiquidator.md)
 
@@ -395,7 +395,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:150](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L150)
+[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:150](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L150)
 
 ___
 
@@ -420,7 +420,7 @@ Resolves the claim of a position.
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:324](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L324)
+[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:324](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L324)
 
 ___
 
@@ -445,4 +445,4 @@ Resolves the liquidation of a position.
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:336](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L336)
+[gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts:336](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticLiquidator.ts#L336)

@@ -35,7 +35,7 @@ BaseContract.attach
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:522](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L522)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:522](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L522)
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:781](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L781)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:781](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L781)
 
 ___
 
@@ -78,7 +78,7 @@ Cancels a maker earning distribution task for a token.
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:787](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L787)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:787](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L787)
 
 ___
 
@@ -101,7 +101,7 @@ Cancels a market earning distribution task for a market.
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:796](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L796)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:796](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L796)
 
 ___
 
@@ -125,7 +125,7 @@ BaseContract.connect
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:521](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L521)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:521](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L521)
 
 ___
 
@@ -148,7 +148,7 @@ Creates a maker earning distribution task for a token.
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:805](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L805)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:805](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L805)
 
 ___
 
@@ -171,7 +171,7 @@ Creates a market earning distribution task for a market.
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:814](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L814)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:814](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L814)
 
 ___
 
@@ -191,7 +191,7 @@ ___
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:819](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L819)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:819](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L819)
 
 ___
 
@@ -209,7 +209,7 @@ BaseContract.deployed
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:523](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L523)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:523](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L523)
 
 ___
 
@@ -232,7 +232,7 @@ Distributes the maker earning for a token to the each markets.
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:825](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L825)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:825](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L825)
 
 ___
 
@@ -255,7 +255,7 @@ Distributes the market earning for a market to the each bins.
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:834](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L834)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:834](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L834)
 
 ___
 
@@ -281,7 +281,7 @@ Executes a flash loan.
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:846](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L846)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:846](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L846)
 
 ___
 
@@ -306,7 +306,7 @@ Retrieves the pending share of earnings for a specific bin (subset) of funds in 
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:860](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L860)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:860](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L860)
 
 ___
 
@@ -336,7 +336,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:533](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L533)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:533](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L533)
 
 ▸ **listeners**(`eventName?`): `Listener`[]
 
@@ -356,7 +356,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:536](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L536)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:536](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L536)
 
 ___
 
@@ -377,7 +377,7 @@ ___
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:866](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L866)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:866](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L866)
 
 ___
 
@@ -398,7 +398,7 @@ ___
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:871](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L871)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:871](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L871)
 
 ___
 
@@ -419,7 +419,7 @@ ___
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:876](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L876)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:876](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L876)
 
 ___
 
@@ -440,7 +440,7 @@ ___
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:881](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L881)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:881](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L881)
 
 ___
 
@@ -464,7 +464,7 @@ Called when liquidity is added to the vault by a market contract.
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:891](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L891)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:891](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L891)
 
 ___
 
@@ -491,7 +491,7 @@ Called when a position is claimed by a market contract.
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:904](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L904)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:904](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L904)
 
 ___
 
@@ -518,7 +518,7 @@ Called when a position is opened by a market contract.
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:920](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L920)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:920](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L920)
 
 ___
 
@@ -543,7 +543,7 @@ Called when pending liquidity is settled in the vault by a market contract.
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:934](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L934)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:934](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L934)
 
 ___
 
@@ -568,7 +568,7 @@ Called when liquidity is withdrawn from the vault by a market contract.
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:946](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L946)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:946](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L946)
 
 ___
 
@@ -589,7 +589,7 @@ ___
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:952](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L952)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:952](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L952)
 
 ___
 
@@ -610,7 +610,7 @@ ___
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:957](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L957)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:957](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L957)
 
 ___
 
@@ -631,7 +631,7 @@ ___
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:962](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L962)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:962](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L962)
 
 ___
 
@@ -652,7 +652,7 @@ ___
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:967](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L967)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:967](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L967)
 
 ___
 
@@ -684,7 +684,7 @@ BaseContract.queryFilter
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:527](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L527)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:527](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L527)
 
 ___
 
@@ -714,7 +714,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:537](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L537)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:537](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L537)
 
 ▸ **removeAllListeners**(`eventName?`): [`ChromaticVault`](deployed.arbitrumGoerli.ChromaticVault.md)
 
@@ -734,7 +734,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:540](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L540)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:540](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L540)
 
 ___
 
@@ -757,7 +757,7 @@ Resolves the maker earning distribution for a specific token.
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:976](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L976)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:976](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L976)
 
 ___
 
@@ -780,7 +780,7 @@ Resolves the market earning distribution for a market.
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:985](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L985)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:985](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L985)
 
 ___
 
@@ -801,7 +801,7 @@ ___
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:990](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L990)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:990](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L990)
 
 ___
 
@@ -822,7 +822,7 @@ ___
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:995](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L995)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:995](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L995)
 
 ___
 
@@ -848,4 +848,4 @@ Transfers the keeper fee from the market to the specified keeper.
 
 #### Defined in
 
-[gen/deployed/arbitrum_goerli/ChromaticVault.ts:1007](https://github.com/chromatic-protocol/sdk/blob/8bcb0f6/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L1007)
+[gen/deployed/arbitrum_goerli/ChromaticVault.ts:1007](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/deployed/arbitrum_goerli/ChromaticVault.ts#L1007)

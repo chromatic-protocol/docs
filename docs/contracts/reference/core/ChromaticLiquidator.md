@@ -9,6 +9,20 @@ title: ChromaticLiquidator.sol
 _A contract that handles the liquidation and claiming of positions in Chromatic markets.
      It extends the Liquidator and AutomateReady contracts and implements the IChromaticLiquidator interface._
 
+### OnlyAccessableByDedicatedMsgSenderOrDao
+
+```solidity
+error OnlyAccessableByDedicatedMsgSenderOrDao()
+```
+
+### onlyDedicatedMsgSenderOrDao
+
+```solidity
+modifier onlyDedicatedMsgSenderOrDao()
+```
+
+_Modifier to restrict access to only the dedicated message sender or the DAO._
+
 ### constructor
 
 ```solidity

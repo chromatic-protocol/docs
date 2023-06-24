@@ -82,6 +82,18 @@ mapping(uint256 => struct Position) positions
 mapping(uint256 => struct LpReceipt) lpReceipts
 ```
 
+### OnlyAccessableByDao
+
+```solidity
+error OnlyAccessableByDao()
+```
+
+### OnlyAccessableByLiquidator
+
+```solidity
+error OnlyAccessableByLiquidator()
+```
+
 ### onlyDao
 
 ```solidity

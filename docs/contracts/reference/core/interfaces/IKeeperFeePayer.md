@@ -8,6 +8,12 @@ title: IKeeperFeePayer.sol
 
 _Interface for a contract that pays keeper fees._
 
+### SetRouter
+
+```solidity
+event SetRouter(address)
+```
+
 ### approveToRouter
 
 ```solidity

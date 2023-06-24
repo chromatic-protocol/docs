@@ -81,16 +81,22 @@ mapping(address => bytes32) makerEarningDistributionTaskIds
 mapping(address => bytes32) marketEarningDistributionTaskIds
 ```
 
-### OnlyAccessableByFactory
+### OnlyAccessableByFactoryOrDao
 
 ```solidity
-error OnlyAccessableByFactory()
+error OnlyAccessableByFactoryOrDao()
 ```
 
 ### OnlyAccessableByMarket
 
 ```solidity
 error OnlyAccessableByMarket()
+```
+
+### OnlyAccessableByDedicatedMsgSenderOrDao
+
+```solidity
+error OnlyAccessableByDedicatedMsgSenderOrDao()
 ```
 
 ### NotEnoughBalance
@@ -111,13 +117,13 @@ error NotEnoughFeePaid()
 error ExistMarketEarningDistributionTask()
 ```
 
-### onlyFactory
+### onlyFactoryOrDao
 
 ```solidity
-modifier onlyFactory()
+modifier onlyFactoryOrDao()
 ```
 
-_Modifier to restrict access to only the Factory contract._
+_Modifier to restrict access to only the factory or the DAO._
 
 ### onlyMarket
 
@@ -126,6 +132,14 @@ modifier onlyMarket()
 ```
 
 _Modifier to restrict access to only the Market contract._
+
+### onlyDedicatedMsgSenderOrDao
+
+```solidity
+modifier onlyDedicatedMsgSenderOrDao()
+```
+
+_Modifier to restrict access to only the dedicated message sender or the DAO._
 
 ### constructor
 

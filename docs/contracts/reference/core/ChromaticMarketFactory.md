@@ -48,6 +48,12 @@ address treasury
 
 Returns the address of the DAO treasury.
 
+### OnlyAccessableByDao
+
+```solidity
+error OnlyAccessableByDao()
+```
+
 ### AlreadySetLiquidator
 
 ```solidity
@@ -618,60 +624,4 @@ Calculates the interest accrued for a given token and amount within a specified 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | [0] | uint256 | The accrued interest for the specified token and amount within the given time range. |
-
-### createMakerEarningDistributionTask
-
-```solidity
-function createMakerEarningDistributionTask(address token) external
-```
-
-Creates a Maker earning distribution task for a token.
-
-_This function can only be called by the DAO address._
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the token. |
-
-### cancelMakerEarningDistributionTask
-
-```solidity
-function cancelMakerEarningDistributionTask(address token) external
-```
-
-Cancels a Maker earning distribution task for a token.
-
-_This function can only be called by the DAO address._
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the token. |
-
-### createMarketEarningDistributionTask
-
-```solidity
-function createMarketEarningDistributionTask(address market) external
-```
-
-Creates a market earning distribution task for a market.
-
-_This function can only be called by the DAO address._
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the market. |
-
-### cancelMarketEarningDistributionTask
-
-```solidity
-function cancelMarketEarningDistributionTask(address market) external
-```
-
-Cancels a market earning distribution task for a market.
-
-_This function can only be called by the DAO address._
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the market. |
 

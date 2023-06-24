@@ -6,48 +6,6 @@ title: Errors.sol
 
 ## Errors
 
-### ONLY_DAO_CAN_ACCESS
-
-```solidity
-string ONLY_DAO_CAN_ACCESS
-```
-
-### ONLY_VAULT_CAN_ACCESS
-
-```solidity
-string ONLY_VAULT_CAN_ACCESS
-```
-
-### ONLY_DEDICATED_MSG_SENDER_CAN_ACCESS
-
-```solidity
-string ONLY_DEDICATED_MSG_SENDER_CAN_ACCESS
-```
-
-### ONLY_LIQUIDATOR_CAN_ACCESS
-
-```solidity
-string ONLY_LIQUIDATOR_CAN_ACCESS
-```
-
-### ONLY_FUNDS_OWNER_CAN_WITHDRAW_FUNDS
-
-```solidity
-string ONLY_FUNDS_OWNER_CAN_WITHDRAW_FUNDS
-```
-
-### ETH_TRANSFER_FAILED
-
-```solidity
-string ETH_TRANSFER_FAILED
-```
-
-### INVALID_SWAP_VALUE
-
-```solidity
-string INVALID_SWAP_VALUE
-```
-
 ### NOT_ENOUGH_FREE_LIQUIDITY
 
 ```solidity

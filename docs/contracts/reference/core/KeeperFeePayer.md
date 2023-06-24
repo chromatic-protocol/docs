@@ -26,10 +26,28 @@ contract ISwapRouter uniswapRouter
 contract IWETH9 WETH9
 ```
 
-### SetRouter
+### OnlyAccessableByDao
 
 ```solidity
-event SetRouter(address)
+error OnlyAccessableByDao()
+```
+
+### OnlyAccessableByVault
+
+```solidity
+error OnlyAccessableByVault()
+```
+
+### KeeperFeeTransferFailure
+
+```solidity
+error KeeperFeeTransferFailure()
+```
+
+### InvalidSwapValue
+
+```solidity
+error InvalidSwapValue()
 ```
 
 ### onlyDao

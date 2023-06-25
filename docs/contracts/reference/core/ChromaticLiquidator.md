@@ -9,20 +9,6 @@ title: ChromaticLiquidator.sol
 _A contract that handles the liquidation and claiming of positions in Chromatic markets.
      It extends the Liquidator and AutomateReady contracts and implements the IChromaticLiquidator interface._
 
-### OnlyAccessableByDedicatedMsgSenderOrDao
-
-```solidity
-error OnlyAccessableByDedicatedMsgSenderOrDao()
-```
-
-### onlyDedicatedMsgSenderOrDao
-
-```solidity
-modifier onlyDedicatedMsgSenderOrDao()
-```
-
-_Modifier to restrict access to only the dedicated message sender or the DAO._
-
 ### constructor
 
 ```solidity
@@ -57,8 +43,6 @@ function liquidate(address market, uint256 positionId) external
 
 Liquidates a position in a market.
 
-_Can only be called by the dedicated message sender._
-
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the market contract. |
@@ -71,8 +55,6 @@ function claimPosition(address market, uint256 positionId) external
 ```
 
 Claims a position in a market.
-
-_Can only be called by the dedicated message sender._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

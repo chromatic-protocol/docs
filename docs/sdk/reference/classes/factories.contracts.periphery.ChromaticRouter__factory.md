@@ -32,7 +32,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[gen/factories/contracts/periphery/ChromaticRouter__factory.ts:742](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/factories/contracts/periphery/ChromaticRouter__factory.ts#L742)
+[gen/factories/contracts/periphery/ChromaticRouter__factory.ts:742](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/factories/contracts/periphery/ChromaticRouter__factory.ts#L742)
 
 ___
 
@@ -46,4 +46,4 @@ ___
 
 #### Defined in
 
-[gen/factories/contracts/periphery/ChromaticRouter__factory.ts:739](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/factories/contracts/periphery/ChromaticRouter__factory.ts#L739)
+[gen/factories/contracts/periphery/ChromaticRouter__factory.ts:739](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/factories/contracts/periphery/ChromaticRouter__factory.ts#L739)

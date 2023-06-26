@@ -9,4 +9,3 @@ custom_edit_url: null
 ## Namespaces
 
 - [contracts](factories.contracts.md)
-- [deployed](factories.deployed.md)

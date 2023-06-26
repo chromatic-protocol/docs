@@ -32,7 +32,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[gen/factories/contracts/periphery/ChromaticAccount__factory.ts:348](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/factories/contracts/periphery/ChromaticAccount__factory.ts#L348)
+[gen/factories/contracts/periphery/ChromaticAccount__factory.ts:348](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/factories/contracts/periphery/ChromaticAccount__factory.ts#L348)
 
 ___
 
@@ -46,4 +46,4 @@ ___
 
 #### Defined in
 
-[gen/factories/contracts/periphery/ChromaticAccount__factory.ts:345](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/factories/contracts/periphery/ChromaticAccount__factory.ts#L345)
+[gen/factories/contracts/periphery/ChromaticAccount__factory.ts:345](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/factories/contracts/periphery/ChromaticAccount__factory.ts#L345)

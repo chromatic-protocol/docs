@@ -35,7 +35,7 @@ BaseContract.attach
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticAccount.ts:198](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticAccount.ts#L198)
+[gen/contracts/periphery/ChromaticAccount.ts:198](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticAccount.ts#L198)
 
 ___
 
@@ -58,7 +58,7 @@ Returns the balance of the specified token for the account.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticAccount.ts:348](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticAccount.ts#L348)
+[gen/contracts/periphery/ChromaticAccount.ts:348](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticAccount.ts#L348)
 
 ___
 
@@ -82,7 +82,7 @@ Claims the specified position in the specified market.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticAccount.ts:358](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticAccount.ts#L358)
+[gen/contracts/periphery/ChromaticAccount.ts:358](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticAccount.ts#L358)
 
 ___
 
@@ -106,7 +106,7 @@ Callback function called after claiming a position.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticAccount.ts:369](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticAccount.ts#L369)
+[gen/contracts/periphery/ChromaticAccount.ts:369](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticAccount.ts#L369)
 
 ___
 
@@ -130,7 +130,7 @@ Closes the specified position in the specified market.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticAccount.ts:380](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticAccount.ts#L380)
+[gen/contracts/periphery/ChromaticAccount.ts:380](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticAccount.ts#L380)
 
 ___
 
@@ -154,7 +154,7 @@ BaseContract.connect
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticAccount.ts:197](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticAccount.ts#L197)
+[gen/contracts/periphery/ChromaticAccount.ts:197](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticAccount.ts#L197)
 
 ___
 
@@ -172,7 +172,7 @@ BaseContract.deployed
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticAccount.ts:199](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticAccount.ts#L199)
+[gen/contracts/periphery/ChromaticAccount.ts:199](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticAccount.ts#L199)
 
 ___
 
@@ -195,7 +195,7 @@ Retrieves an array of position IDs owned by this account for the specified marke
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticAccount.ts:390](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticAccount.ts#L390)
+[gen/contracts/periphery/ChromaticAccount.ts:390](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticAccount.ts#L390)
 
 ___
 
@@ -219,7 +219,7 @@ Checks if the specified market has the specified position ID.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticAccount.ts:400](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticAccount.ts#L400)
+[gen/contracts/periphery/ChromaticAccount.ts:400](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticAccount.ts#L400)
 
 ___
 
@@ -244,7 +244,7 @@ Initializes the account with the specified owner, router, and market factory add
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticAccount.ts:412](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticAccount.ts#L412)
+[gen/contracts/periphery/ChromaticAccount.ts:412](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticAccount.ts#L412)
 
 ___
 
@@ -274,7 +274,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticAccount.ts:209](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticAccount.ts#L209)
+[gen/contracts/periphery/ChromaticAccount.ts:209](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticAccount.ts#L209)
 
 ▸ **listeners**(`eventName?`): `Listener`[]
 
@@ -294,7 +294,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticAccount.ts:212](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticAccount.ts#L212)
+[gen/contracts/periphery/ChromaticAccount.ts:212](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticAccount.ts#L212)
 
 ___
 
@@ -322,7 +322,7 @@ Opens a new position in the specified market.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticAccount.ts:428](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticAccount.ts#L428)
+[gen/contracts/periphery/ChromaticAccount.ts:428](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticAccount.ts#L428)
 
 ___
 
@@ -348,7 +348,7 @@ Callback function called after opening a position.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticAccount.ts:445](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticAccount.ts#L445)
+[gen/contracts/periphery/ChromaticAccount.ts:445](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticAccount.ts#L445)
 
 ___
 
@@ -380,7 +380,7 @@ BaseContract.queryFilter
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticAccount.ts:203](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticAccount.ts#L203)
+[gen/contracts/periphery/ChromaticAccount.ts:203](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticAccount.ts#L203)
 
 ___
 
@@ -410,7 +410,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticAccount.ts:213](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticAccount.ts#L213)
+[gen/contracts/periphery/ChromaticAccount.ts:213](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticAccount.ts#L213)
 
 ▸ **removeAllListeners**(`eventName?`): [`ChromaticAccount`](contracts.periphery.ChromaticAccount.md)
 
@@ -430,7 +430,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticAccount.ts:216](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticAccount.ts#L216)
+[gen/contracts/periphery/ChromaticAccount.ts:216](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticAccount.ts#L216)
 
 ___
 
@@ -454,4 +454,4 @@ Withdraws the specified amount of tokens from the account.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticAccount.ts:458](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticAccount.ts#L458)
+[gen/contracts/periphery/ChromaticAccount.ts:458](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticAccount.ts#L458)

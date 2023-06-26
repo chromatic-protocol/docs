@@ -32,10 +32,10 @@ contract IWETH9 WETH9
 error OnlyAccessableByDao()
 ```
 
-### OnlyAccessableByVault
+### OnlyAccessableByFactoryOrDao
 
 ```solidity
-error OnlyAccessableByVault()
+error OnlyAccessableByFactoryOrDao()
 ```
 
 ### KeeperFeeTransferFailure
@@ -58,13 +58,13 @@ modifier onlyDao()
 
 _Modifier to restrict access to only the DAO._
 
-### onlyVault
+### onlyFactoryOrDao
 
 ```solidity
-modifier onlyVault()
+modifier onlyFactoryOrDao()
 ```
 
-_Modifier to restrict access to only the Vault._
+_Modifier to restrict access to only the factory or the DAO._
 
 ### constructor
 
@@ -102,7 +102,7 @@ function approveToRouter(address token, bool approve) external
 
 Approves or revokes approval to the Uniswap router for a given token.
 
-_Only the DAO can call this function._
+_Only the factory or the DAO can call this function._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

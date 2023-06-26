@@ -93,12 +93,6 @@ error OnlyAccessableByFactoryOrDao()
 error OnlyAccessableByMarket()
 ```
 
-### OnlyAccessableByDedicatedMsgSenderOrDao
-
-```solidity
-error OnlyAccessableByDedicatedMsgSenderOrDao()
-```
-
 ### NotEnoughBalance
 
 ```solidity
@@ -132,14 +126,6 @@ modifier onlyMarket()
 ```
 
 _Modifier to restrict access to only the Market contract._
-
-### onlyDedicatedMsgSenderOrDao
-
-```solidity
-modifier onlyDedicatedMsgSenderOrDao()
-```
-
-_Modifier to restrict access to only the dedicated message sender or the DAO._
 
 ### constructor
 

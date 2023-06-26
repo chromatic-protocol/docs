@@ -28,11 +28,15 @@ address dedicatedMsgSender
 address ETH
 ```
 
-### EtherTransferFailure
+### onlyDedicatedMsgSender
 
 ```solidity
-error EtherTransferFailure()
+modifier onlyDedicatedMsgSender()
 ```
+
+@dev
+Only tasks created by _taskCreator defined in constructor can call
+the functions with this modifier.
 
 ### constructor
 

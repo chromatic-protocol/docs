@@ -2,7 +2,6 @@ import Link from '@docusaurus/Link'
 import isInternalUrl from '@docusaurus/isInternalUrl'
 import { isRegexpStringMatch, useColorMode } from '@docusaurus/theme-common'
 import useBaseUrl from '@docusaurus/useBaseUrl'
-import IconExternalLink from '@theme/Icon/ExternalLink'
 import React from 'react'
 
 const Svgs = {
@@ -46,9 +45,9 @@ export default function NavbarNavLink({
             )}
             {label}
             {description && <p>{description}</p>}
-            {isExternalLink && (
+            {/* {isExternalLink && (
               <IconExternalLink {...(isDropdownLink && { width: 12, height: 12 })} />
-            )}
+            )} */}
           </>
         )
       }

@@ -35,7 +35,7 @@ BaseContract.attach
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticLens.ts:200](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticLens.ts#L200)
+[gen/contracts/periphery/ChromaticLens.ts:200](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticLens.ts#L200)
 
 ___
 
@@ -60,7 +60,7 @@ Retrieves the claimable liquidity information for a specific trading fee rate an
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticLens.ts:292](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticLens.ts#L292)
+[gen/contracts/periphery/ChromaticLens.ts:292](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticLens.ts#L292)
 
 ___
 
@@ -84,7 +84,7 @@ Retrieves the CLB token balances for the specified owner in the given Chromatic 
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticLens.ts:304](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticLens.ts#L304)
+[gen/contracts/periphery/ChromaticLens.ts:304](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticLens.ts#L304)
 
 ___
 
@@ -108,7 +108,7 @@ BaseContract.connect
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticLens.ts:199](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticLens.ts#L199)
+[gen/contracts/periphery/ChromaticLens.ts:199](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticLens.ts#L199)
 
 ___
 
@@ -126,7 +126,7 @@ BaseContract.deployed
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticLens.ts:201](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticLens.ts#L201)
+[gen/contracts/periphery/ChromaticLens.ts:201](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticLens.ts#L201)
 
 ___
 
@@ -149,7 +149,7 @@ Retrieves the liquidity bin statuses for the specified Chromatic Market.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticLens.ts:314](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticLens.ts#L314)
+[gen/contracts/periphery/ChromaticLens.ts:314](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticLens.ts#L314)
 
 ___
 
@@ -179,7 +179,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticLens.ts:211](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticLens.ts#L211)
+[gen/contracts/periphery/ChromaticLens.ts:211](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticLens.ts#L211)
 
 ▸ **listeners**(`eventName?`): `Listener`[]
 
@@ -199,7 +199,7 @@ BaseContract.listeners
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticLens.ts:214](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticLens.ts#L214)
+[gen/contracts/periphery/ChromaticLens.ts:214](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticLens.ts#L214)
 
 ___
 
@@ -223,7 +223,7 @@ Retrieves the LP receipts for the specified owner in the given Chromatic market.
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticLens.ts:324](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticLens.ts#L324)
+[gen/contracts/periphery/ChromaticLens.ts:324](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticLens.ts#L324)
 
 ___
 
@@ -244,7 +244,7 @@ ___
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticLens.ts:330](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticLens.ts#L330)
+[gen/contracts/periphery/ChromaticLens.ts:330](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticLens.ts#L330)
 
 ___
 
@@ -268,7 +268,7 @@ Retrieves the OracleVersion for the specified oracle version in the given Chroma
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticLens.ts:340](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticLens.ts#L340)
+[gen/contracts/periphery/ChromaticLens.ts:340](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticLens.ts#L340)
 
 ___
 
@@ -300,7 +300,7 @@ BaseContract.queryFilter
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticLens.ts:205](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticLens.ts#L205)
+[gen/contracts/periphery/ChromaticLens.ts:205](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticLens.ts#L205)
 
 ___
 
@@ -330,7 +330,7 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticLens.ts:215](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticLens.ts#L215)
+[gen/contracts/periphery/ChromaticLens.ts:215](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticLens.ts#L215)
 
 ▸ **removeAllListeners**(`eventName?`): [`ChromaticLens`](contracts.periphery.ChromaticLens-1.md)
 
@@ -350,4 +350,4 @@ BaseContract.removeAllListeners
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticLens.ts:218](https://github.com/chromatic-protocol/sdk/blob/32da7ee/src/gen/contracts/periphery/ChromaticLens.ts#L218)
+[gen/contracts/periphery/ChromaticLens.ts:218](https://github.com/chromatic-protocol/sdk/blob/096ebb3/src/gen/contracts/periphery/ChromaticLens.ts#L218)

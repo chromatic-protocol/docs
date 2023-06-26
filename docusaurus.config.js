@@ -72,24 +72,48 @@ const config = {
         },
         items: [
           {
-            to: '/governance',
-            label: 'Governance',
-            position: 'left'
-          },
-          {
             type: 'dropdown',
-            label: 'Developers',
-            position: 'left',
+            label: 'Development',
+            position: 'right',
             items: [
+              {
+                label: 'Github',
+                href: 'https://github.com',
+                icon: 'img/icons/github.svg'
+              },
               {
                 type: 'docSidebar',
                 sidebarId: 'contractsSidebar',
-                label: 'Contract'
+                label: 'Contract',
+                icon: 'img/icons/contract.svg'
               },
               {
                 type: 'docSidebar',
                 sidebarId: 'sdkSidebar',
-                label: 'SDK'
+                label: 'SDK',
+                icon: 'img/icons/sdk.svg'
+              }
+            ]
+          },
+          {
+            type: 'dropdown',
+            label: 'Articles',
+            position: 'right',
+            items: [
+              {
+                label: 'Twitter',
+                href: 'https://twitter.com',
+                icon: 'img/icons/twitter.svg'
+              },
+              {
+                label: 'Gitbook',
+                href: 'https://gitbook.com',
+                icon: 'img/icons/gitbook.svg'
+              },
+              {
+                label: 'Medium',
+                href: 'https://Medium.com',
+                icon: 'img/icons/medium.svg'
               }
             ]
           },

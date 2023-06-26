@@ -81,17 +81,20 @@ const config = {
             items: [
               {
                 label: 'Github',
+                description: 'external link to github',
                 href: 'https://github.com',
                 icon: 'github'
               },
               {
                 type: 'docSidebar',
+                description: 'contract reference',
                 sidebarId: 'contractsSidebar',
                 label: 'Contract',
                 icon: 'contract'
               },
               {
                 type: 'docSidebar',
+                description: 'SDK reference',
                 sidebarId: 'sdkSidebar',
                 label: 'SDK',
                 icon: 'sdk'
@@ -105,16 +108,19 @@ const config = {
             items: [
               {
                 label: 'Twitter',
+                description: 'external link to twitter',
                 href: 'https://twitter.com',
                 icon: 'twitter'
               },
               {
                 label: 'Gitbook',
+                description: 'external link to gitbook',
                 href: 'https://gitbook.com',
                 icon: 'gitbook'
               },
               {
                 label: 'Medium',
+                description: 'external link to medium',
                 href: 'https://Medium.com',
                 icon: 'medium'
               }

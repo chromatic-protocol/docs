@@ -21,7 +21,8 @@ export default function NavbarNavLink({
   href,
   label,
   html,
-  icon,
+  icon, // customized, See Svgs
+  description, // customized (type: string)
   isDropdownLink,
   prependBaseUrlToHref,
   ...props
@@ -44,6 +45,7 @@ export default function NavbarNavLink({
               <Svg fill={isDarkTheme ? '#ffffff' : '#000000'} role="img" src={useBaseUrl(icon)} />
             )}
             {label}
+            {description && <p>{description}</p>}
             {isExternalLink && (
               <IconExternalLink {...(isDropdownLink && { width: 12, height: 12 })} />
             )}

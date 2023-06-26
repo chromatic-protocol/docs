@@ -1,11 +1,11 @@
 ---
-id: "contracts.periphery.ChromaticLens"
+id: "deployed.arbitrumGoerli.ChromaticLens"
 title: "Namespace: ChromaticLens"
 sidebar_label: "ChromaticLens"
 custom_edit_url: null
 ---
 
-[contracts](contracts.md).[periphery](contracts.periphery.md).ChromaticLens
+[deployed](deployed.md).[arbitrumGoerli](deployed.arbitrumGoerli.md).ChromaticLens
 
 ## Type Aliases
 
@@ -24,7 +24,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticLens.ts:93](https://github.com/chromatic-protocol/sdk/blob/beec14f/src/gen/contracts/periphery/ChromaticLens.ts#L93)
+[gen/deployed/arbitrum_goerli/ChromaticLens.ts:93](https://github.com/chromatic-protocol/sdk/blob/beec14f/src/gen/deployed/arbitrum_goerli/ChromaticLens.ts#L93)
 
 ___
 
@@ -34,4 +34,4 @@ ___
 
 #### Defined in
 
-[gen/contracts/periphery/ChromaticLens.ts:100](https://github.com/chromatic-protocol/sdk/blob/beec14f/src/gen/contracts/periphery/ChromaticLens.ts#L100)
+[gen/deployed/arbitrum_goerli/ChromaticLens.ts:100](https://github.com/chromatic-protocol/sdk/blob/beec14f/src/gen/deployed/arbitrum_goerli/ChromaticLens.ts#L100)

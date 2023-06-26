@@ -19,7 +19,14 @@ function isItemActive(item, localPathname) {
 function containsActiveItems(items, localPathname) {
   return items.some((item) => isItemActive(item, localPathname))
 }
-function DropdownNavbarItemDesktop({ items, position, className, onClick, ...props }) {
+function DropdownNavbarItemDesktop({
+  items,
+  position,
+  className,
+  description, // custom prop
+  onClick,
+  ...props
+}) {
   const dropdownRef = useRef(null)
   const [showDropdown, setShowDropdown] = useState(false)
   useEffect(() => {
@@ -64,6 +71,7 @@ function DropdownNavbarItemDesktop({ items, position, className, onClick, ...pro
         {props.children ?? props.label}
       </NavbarNavLink>
       <ul className="dropdown__menu">
+        {description && <p>{description}</p>}
         {items.map((childItemProps, i) => (
           <NavbarItem
             isDropdownItem
@@ -81,6 +89,7 @@ function DropdownNavbarItemMobile({
   className,
   position, // Need to destructure position from props so that it doesn't get passed on.
   onClick,
+  description, // custom prop
   ...props
 }) {
   const localPathname = useLocalPathname()

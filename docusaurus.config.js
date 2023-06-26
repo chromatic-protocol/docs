@@ -77,6 +77,7 @@ const config = {
           {
             type: 'dropdown',
             label: 'Development',
+            description: 'for developers', // customized prop
             position: 'right',
             items: [
               {
@@ -104,6 +105,7 @@ const config = {
           {
             type: 'dropdown',
             label: 'Articles',
+            description: 'for detail explanation', // customized prop
             position: 'right',
             items: [
               {

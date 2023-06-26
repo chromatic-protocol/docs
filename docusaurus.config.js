@@ -79,19 +79,19 @@ const config = {
               {
                 label: 'Github',
                 href: 'https://github.com',
-                icon: 'img/icons/github.svg'
+                icon: 'github'
               },
               {
                 type: 'docSidebar',
                 sidebarId: 'contractsSidebar',
                 label: 'Contract',
-                icon: 'img/icons/contract.svg'
+                icon: 'contract'
               },
               {
                 type: 'docSidebar',
                 sidebarId: 'sdkSidebar',
                 label: 'SDK',
-                icon: 'img/icons/sdk.svg'
+                icon: 'sdk'
               }
             ]
           },
@@ -103,17 +103,17 @@ const config = {
               {
                 label: 'Twitter',
                 href: 'https://twitter.com',
-                icon: 'img/icons/twitter.svg'
+                icon: 'twitter'
               },
               {
                 label: 'Gitbook',
                 href: 'https://gitbook.com',
-                icon: 'img/icons/gitbook.svg'
+                icon: 'gitbook'
               },
               {
                 label: 'Medium',
                 href: 'https://Medium.com',
-                icon: 'img/icons/medium.svg'
+                icon: 'medium'
               }
             ]
           },

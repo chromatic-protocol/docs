@@ -8,138 +8,26 @@ custom_edit_url: null
 
 ## Namespaces
 
-- [contracts](namespaces/contracts.md)
-- [deployed](namespaces/deployed.md)
-- [factories](namespaces/factories.md)
+- [utils](namespaces/utils.md)
 
-## Variables
+## Classes
 
-### deployedAddress
+- [ChromaticLens](classes/ChromaticLens.md)
+- [ChromaticMarket](classes/ChromaticMarket.md)
+- [ChromaticMarketFactory](classes/ChromaticMarketFactory.md)
+- [ChromaticPosition](classes/ChromaticPosition.md)
+- [ChromaticRouter](classes/ChromaticRouter.md)
+- [Client](classes/Client.md)
 
-• `Const` **deployedAddress**: `DeployedAddress`
+## Interfaces
 
-Deployed Address of contracts
-mapping of "chainName" to collection of contract name to deployed address
-
-**`Remarks`**
-
-use with helper functions using this constant object
-
-[getDeployedAddress](modules.md#getdeployedaddress)
-[getDeployedContract](modules.md#getdeployedcontract)
-[getAllDeployedContracts](modules.md#getalldeployedcontracts)
-[getDeployedContractNames](modules.md#getdeployedcontractnames)
-[getChainNames](modules.md#getchainnames)
-
-#### Defined in
-
-[gen/deployedAddress.ts:23](https://github.com/chromatic-protocol/sdk/blob/beec14f/src/gen/deployedAddress.ts#L23)
-
-## Functions
-
-### getAllDeployedContracts
-
-▸ **getAllDeployedContracts**(`chainName`): `Contracts`
-
-Returns a map of contractName to deployed contract instance
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `chainName` | `string` | deployed network name |
-
-#### Returns
-
-`Contracts`
-
-#### Defined in
-
-[gen/index.ts:69](https://github.com/chromatic-protocol/sdk/blob/beec14f/src/gen/index.ts#L69)
-
-___
-
-### getChainNames
-
-▸ **getChainNames**(): `string`[]
-
-Returns chainNames in deployed addresses
-
-#### Returns
-
-`string`[]
-
-#### Defined in
-
-[gen/index.ts:91](https://github.com/chromatic-protocol/sdk/blob/beec14f/src/gen/index.ts#L91)
-
-___
-
-### getDeployedAddress
-
-▸ **getDeployedAddress**(`contractName`, `chainName`): `string`
-
-Returns the deployed address of given contractName and chainName if exist
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `contractName` | `string` | deployed contract name |
-| `chainName` | `string` | deployed network name |
-
-#### Returns
-
-`string`
-
-address of deployed contract or undefined
-
-#### Defined in
-
-[gen/index.ts:23](https://github.com/chromatic-protocol/sdk/blob/beec14f/src/gen/index.ts#L23)
-
-___
-
-### getDeployedContract
-
-▸ **getDeployedContract**(`contractName`, `chainName`, `signerOrProvider?`): `BaseContract` \| `undefined`
-
-Returns an instance of contract interface of deployed
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `contractName` | `string` | deployed contract name |
-| `chainName` | `string` | deployed network name |
-| `signerOrProvider?` | `Signer` \| `Provider` | provider or signer. |
-
-#### Returns
-
-`BaseContract` \| `undefined`
-
-#### Defined in
-
-[gen/index.ts:34](https://github.com/chromatic-protocol/sdk/blob/beec14f/src/gen/index.ts#L34)
-
-___
-
-### getDeployedContractNames
-
-▸ **getDeployedContractNames**(`chainName`): `string`[]
-
-Returns deployed contractNames in chainName
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `chainName` | `string` | deployed network name |
-
-#### Returns
-
-`string`[]
-
-#### Defined in
-
-[gen/index.ts:82](https://github.com/chromatic-protocol/sdk/blob/beec14f/src/gen/index.ts#L82)
+- [ClaimableLiquidityResult](interfaces/ClaimableLiquidityResult.md)
+- [IPosition](interfaces/IPosition.md)
+- [LiquidityBinResult](interfaces/LiquidityBinResult.md)
+- [OwnedLiquidityBinResult](interfaces/OwnedLiquidityBinResult.md)
+- [PositionParam](interfaces/PositionParam.md)
+- [RouterAddLiquidityParam](interfaces/RouterAddLiquidityParam.md)
+- [RouterClosePositionParam](interfaces/RouterClosePositionParam.md)
+- [RouterOpenPositionParam](interfaces/RouterOpenPositionParam.md)
+- [RouterRemoveLiquidityParam](interfaces/RouterRemoveLiquidityParam.md)
+- [SettlementToken](interfaces/SettlementToken.md)

@@ -61,6 +61,9 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/tiwtter-card.png',
+      colorMode: {
+        disableSwitch: true
+      },
       navbar: {
         title: 'CHROMATIC',
         logo: {
@@ -72,24 +75,56 @@ const config = {
         },
         items: [
           {
-            to: '/governance',
-            label: 'Governance',
-            position: 'left'
-          },
-          {
             type: 'dropdown',
-            label: 'Developers',
-            position: 'left',
+            label: 'Development',
+            description: 'for developers', // customized prop
+            position: 'right',
             items: [
               {
-                type: 'docSidebar',
-                sidebarId: 'contractsSidebar',
-                label: 'Contract'
+                label: 'Github',
+                description: 'external link to github',
+                href: 'https://github.com',
+                icon: 'github'
               },
               {
                 type: 'docSidebar',
+                description: 'contract reference',
+                sidebarId: 'contractsSidebar',
+                label: 'Contract',
+                icon: 'contract'
+              },
+              {
+                type: 'docSidebar',
+                description: 'SDK reference',
                 sidebarId: 'sdkSidebar',
-                label: 'SDK'
+                label: 'SDK',
+                icon: 'sdk'
+              }
+            ]
+          },
+          {
+            type: 'dropdown',
+            label: 'Articles',
+            description: 'for detail explanation', // customized prop
+            position: 'right',
+            items: [
+              {
+                label: 'Twitter',
+                description: 'external link to twitter',
+                href: 'https://twitter.com',
+                icon: 'twitter'
+              },
+              {
+                label: 'Gitbook',
+                description: 'external link to gitbook',
+                href: 'https://gitbook.com',
+                icon: 'gitbook'
+              },
+              {
+                label: 'Medium',
+                description: 'external link to medium',
+                href: 'https://Medium.com',
+                icon: 'medium'
               }
             ]
           },

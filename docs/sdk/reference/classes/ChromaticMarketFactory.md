@@ -25,7 +25,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:25](https://github.com/chromatic-protocol/sdk/blob/7ef2c67/src/entities/ChromaticMarketFactory.ts#L25)
+[entities/ChromaticMarketFactory.ts:25](https://github.com/chromatic-protocol/sdk/blob/fef9ef9/src/entities/ChromaticMarketFactory.ts#L25)
 
 ## Methods
 
@@ -45,7 +45,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:51](https://github.com/chromatic-protocol/sdk/blob/7ef2c67/src/entities/ChromaticMarketFactory.ts#L51)
+[entities/ChromaticMarketFactory.ts:51](https://github.com/chromatic-protocol/sdk/blob/fef9ef9/src/entities/ChromaticMarketFactory.ts#L51)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:55](https://github.com/chromatic-protocol/sdk/blob/7ef2c67/src/entities/ChromaticMarketFactory.ts#L55)
+[entities/ChromaticMarketFactory.ts:55](https://github.com/chromatic-protocol/sdk/blob/fef9ef9/src/entities/ChromaticMarketFactory.ts#L55)
 
 ___
 
@@ -79,4 +79,4 @@ ___
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:29](https://github.com/chromatic-protocol/sdk/blob/7ef2c67/src/entities/ChromaticMarketFactory.ts#L29)
+[entities/ChromaticMarketFactory.ts:29](https://github.com/chromatic-protocol/sdk/blob/fef9ef9/src/entities/ChromaticMarketFactory.ts#L29)

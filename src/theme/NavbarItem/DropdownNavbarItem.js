@@ -58,7 +58,7 @@ function DropdownNavbarItemDesktop({
         aria-expanded={showDropdown}
         role="button"
         href={props.to ? undefined : '#'}
-        className={clsx('navbar__link flex items-center', className)}
+        className={clsx('navbar__link flex items-center gap-1', className)}
         {...props}
         onClick={props.to ? undefined : (e) => e.preventDefault()}
         onKeyDown={(e) => {

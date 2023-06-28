@@ -81,7 +81,7 @@ const config = {
       navbar: {
         // title: 'CHROMATIC',
         logo: {
-          alt: 'Site Logo',
+          alt: 'Chromatic Protocol',
           src: 'img/chromatic-logo-full-row.svg',
           srcDark: 'img/chromatic-logo-full-row-white.svg',
           width: 200,
@@ -147,6 +147,7 @@ const config = {
             href: 'https://github.com/facebook/chromatic-protocol',
             label: 'Launch App',
             class: 'btn btn-black btn-lg',
+            style: { marginLeft: '40px', width: '168px' },
             position: 'right'
           }
         ]

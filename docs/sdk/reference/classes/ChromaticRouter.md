@@ -20,25 +20,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:30](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/entities/ChromaticRouter.ts#L30)
-
-## Accessors
-
-### contracts
-
-• `get` **contracts**(): `Object`
-
-#### Returns
-
-`Object`
-
-| Name | Type |
-| :------ | :------ |
-| `router` | `ChromaticRouter` |
-
-#### Defined in
-
-[entities/ChromaticRouter.ts:34](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/entities/ChromaticRouter.ts#L34)
+[entities/ChromaticRouter.ts:31](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticRouter.ts#L31)
 
 ## Methods
 
@@ -60,7 +42,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:97](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/entities/ChromaticRouter.ts#L97)
+[entities/ChromaticRouter.ts:109](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticRouter.ts#L109)
 
 ___
 
@@ -82,7 +64,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:84](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/entities/ChromaticRouter.ts#L84)
+[entities/ChromaticRouter.ts:94](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticRouter.ts#L94)
 
 ___
 
@@ -102,7 +84,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:57](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/entities/ChromaticRouter.ts#L57)
+[entities/ChromaticRouter.ts:67](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticRouter.ts#L67)
 
 ___
 
@@ -122,7 +104,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:70](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/entities/ChromaticRouter.ts#L70)
+[entities/ChromaticRouter.ts:80](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticRouter.ts#L80)
 
 ___
 
@@ -143,7 +125,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:173](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/entities/ChromaticRouter.ts#L173)
+[entities/ChromaticRouter.ts:193](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticRouter.ts#L193)
 
 ___
 
@@ -164,7 +146,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:162](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/entities/ChromaticRouter.ts#L162)
+[entities/ChromaticRouter.ts:180](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticRouter.ts#L180)
 
 ___
 
@@ -185,7 +167,25 @@ ___
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:52](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/entities/ChromaticRouter.ts#L52)
+[entities/ChromaticRouter.ts:60](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticRouter.ts#L60)
+
+___
+
+### contracts
+
+▸ **contracts**(): `Object`
+
+#### Returns
+
+`Object`
+
+| Name | Type |
+| :------ | :------ |
+| `router` | (`signerOrProvider?`: `Signer` \| `Provider`) => `ChromaticRouter` |
+
+#### Defined in
+
+[entities/ChromaticRouter.ts:35](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticRouter.ts#L35)
 
 ___
 
@@ -206,7 +206,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:40](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/entities/ChromaticRouter.ts#L40)
+[entities/ChromaticRouter.ts:46](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticRouter.ts#L46)
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:132](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/entities/ChromaticRouter.ts#L132)
+[entities/ChromaticRouter.ts:148](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticRouter.ts#L148)
 
 ___
 
@@ -249,7 +249,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:118](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/entities/ChromaticRouter.ts#L118)
+[entities/ChromaticRouter.ts:132](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticRouter.ts#L132)
 
 ___
 
@@ -270,4 +270,4 @@ ___
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:178](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/entities/ChromaticRouter.ts#L178)
+[entities/ChromaticRouter.ts:198](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticRouter.ts#L198)

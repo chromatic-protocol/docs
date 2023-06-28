@@ -20,13 +20,13 @@ custom_edit_url: null
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:42](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/entities/ChromaticPosition.ts#L42)
+[entities/ChromaticPosition.ts:42](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticPosition.ts#L42)
 
-## Accessors
+## Methods
 
 ### contracts
 
-• `get` **contracts**(): `Object`
+▸ **contracts**(): `Object`
 
 #### Returns
 
@@ -40,9 +40,9 @@ custom_edit_url: null
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:46](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/entities/ChromaticPosition.ts#L46)
+[entities/ChromaticPosition.ts:46](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticPosition.ts#L46)
 
-## Methods
+___
 
 ### getBpsRecords
 
@@ -60,7 +60,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:86](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/entities/ChromaticPosition.ts#L86)
+[entities/ChromaticPosition.ts:85](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticPosition.ts#L85)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:100](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/entities/ChromaticPosition.ts#L100)
+[entities/ChromaticPosition.ts:99](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticPosition.ts#L99)
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:147](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/entities/ChromaticPosition.ts#L147)
+[entities/ChromaticPosition.ts:146](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticPosition.ts#L146)
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:129](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/entities/ChromaticPosition.ts#L129)
+[entities/ChromaticPosition.ts:128](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticPosition.ts#L128)
 
 ___
 
@@ -149,7 +149,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:53](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/entities/ChromaticPosition.ts#L53)
+[entities/ChromaticPosition.ts:53](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticPosition.ts#L53)
 
 ___
 
@@ -171,7 +171,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:185](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/entities/ChromaticPosition.ts#L185)
+[entities/ChromaticPosition.ts:184](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticPosition.ts#L184)
 
 ___
 
@@ -193,4 +193,4 @@ ___
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:175](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/entities/ChromaticPosition.ts#L175)
+[entities/ChromaticPosition.ts:174](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticPosition.ts#L174)

@@ -6,10 +6,6 @@ sidebar_position: 0
 custom_edit_url: null
 ---
 
-## Implements
-
-- `IChromaticMarketFactory`
-
 ## Constructors
 
 ### constructor
@@ -25,7 +21,25 @@ custom_edit_url: null
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:25](https://github.com/chromatic-protocol/sdk/blob/fef9ef9/src/entities/ChromaticMarketFactory.ts#L25)
+[entities/ChromaticMarketFactory.ts:21](https://github.com/chromatic-protocol/sdk/blob/b3e228c/src/entities/ChromaticMarketFactory.ts#L21)
+
+## Accessors
+
+### contracts
+
+• `get` **contracts**(): `Object`
+
+#### Returns
+
+`Object`
+
+| Name | Type |
+| :------ | :------ |
+| `marketFactory` | `ChromaticMarketFactory` |
+
+#### Defined in
+
+[entities/ChromaticMarketFactory.ts:31](https://github.com/chromatic-protocol/sdk/blob/b3e228c/src/entities/ChromaticMarketFactory.ts#L31)
 
 ## Methods
 
@@ -45,7 +59,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:51](https://github.com/chromatic-protocol/sdk/blob/fef9ef9/src/entities/ChromaticMarketFactory.ts#L51)
+[entities/ChromaticMarketFactory.ts:60](https://github.com/chromatic-protocol/sdk/blob/b3e228c/src/entities/ChromaticMarketFactory.ts#L60)
 
 ___
 
@@ -65,7 +79,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:55](https://github.com/chromatic-protocol/sdk/blob/fef9ef9/src/entities/ChromaticMarketFactory.ts#L55)
+[entities/ChromaticMarketFactory.ts:64](https://github.com/chromatic-protocol/sdk/blob/b3e228c/src/entities/ChromaticMarketFactory.ts#L64)
 
 ___
 
@@ -79,4 +93,4 @@ ___
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:29](https://github.com/chromatic-protocol/sdk/blob/fef9ef9/src/entities/ChromaticMarketFactory.ts#L29)
+[entities/ChromaticMarketFactory.ts:37](https://github.com/chromatic-protocol/sdk/blob/b3e228c/src/entities/ChromaticMarketFactory.ts#L37)

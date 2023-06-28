@@ -58,7 +58,7 @@ function DropdownNavbarItemDesktop({
         aria-expanded={showDropdown}
         role="button"
         href={props.to ? undefined : '#'}
-        className={clsx('navbar__link', className)}
+        className={clsx('navbar__link flex items-center gap-1', className)}
         {...props}
         onClick={props.to ? undefined : (e) => e.preventDefault()}
         onKeyDown={(e) => {
@@ -70,16 +70,25 @@ function DropdownNavbarItemDesktop({
       >
         {props.children ?? props.label}
       </NavbarNavLink>
-      <ul className="dropdown__menu">
-        {description && <p>{description}</p>}
-        {items.map((childItemProps, i) => (
-          <NavbarItem
-            isDropdownItem
-            activeClassName="dropdown__link--active"
-            {...childItemProps}
-            key={i}
-          />
-        ))}
+      <ul
+        className="flex items-stretch font-mono !font-semibold dropdown__menu p-5 rounded-xl"
+        style={{ border: '2px solid #030303' }}
+      >
+        <div className="pt-4 pl-2 w-[220px]">
+          {props.label && <p className="m-0 text-lg uppercase">{props.label}</p>}
+          {description && <p className="mt-4 text-base text-black/50">{description}</p>}
+        </div>
+        <div className="flex flex-col gap-2 pl-4 ml-10" style={{ borderLeft: '1px solid #EEEEEE' }}>
+          {items.map((childItemProps, i) => (
+            <NavbarItem
+              isDropdownItem
+              activeClassName="dropdown__link--active"
+              className="px-3 py-2 rounded-xl"
+              {...childItemProps}
+              key={i}
+            />
+          ))}
+        </div>
       </ul>
     </div>
   )

@@ -32,3 +32,26 @@
   --ifm-color-primary-lightest: #afafaf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.btn {
+  @apply font-mono font-semibold inline-flex items-center justify-center rounded-full h-[38px] hover:no-underline;
+  @apply px-5;
+  &.btn-black {
+    @apply bg-black text-white;
+  }
+  &.btn-lg {
+    @apply h-[48px];
+  }
+}
+
+/* Header Navbar */
+.dropdown > .navbar__link {
+  @apply flex items-center h-12;
+  &::after {
+    @apply border-0 inline-block w-4 h-4 top-auto transform-none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m13 5.5-5 5-5-5'/%3E%3C/svg%3E");
+  }
+}
+.navbar__items--right > :last-child {
+  @apply px-5;
+}

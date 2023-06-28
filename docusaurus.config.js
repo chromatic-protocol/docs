@@ -79,13 +79,13 @@ const config = {
         disableSwitch: true
       },
       navbar: {
-        title: 'CHROMATIC',
+        // title: 'CHROMATIC',
         logo: {
-          alt: 'Site Logo',
-          src: 'img/chromatic-logo.svg',
-          srcDark: 'img/chromatic-logo-white.svg',
-          width: 32,
-          height: 32
+          alt: 'Chromatic Protocol',
+          src: 'img/chromatic-logo-full-row.svg',
+          srcDark: 'img/chromatic-logo-full-row-white.svg',
+          width: 200,
+          height: 'auto'
         },
         items: [
           {
@@ -146,6 +146,8 @@ const config = {
           {
             href: 'https://github.com/facebook/chromatic-protocol',
             label: 'Launch App',
+            class: 'btn btn-black btn-lg',
+            style: { marginLeft: '40px', width: '168px' },
             position: 'right'
           }
         ]

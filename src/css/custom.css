@@ -55,3 +55,26 @@
 .navbar__items--right > :last-child {
   @apply px-5;
 }
+
+/* Footer */
+.footer {
+  @apply font-mono font-medium py-20;
+  .footer__col {
+    @apply w-[16%];
+    &:first-child {
+      @apply min-w-[32%];
+    }
+  }
+  .footer__title {
+    @apply h-5 font-bold text-lg font-mono text-white mb-10 mt-1;
+  }
+  .footer__items {
+    @apply flex flex-col gap-6;
+  }
+  .footer__link-item {
+    @apply text-white text-base;
+  }
+  .footer-logo {
+    padding: 0 var(--ifm-spacing-horizontal);
+  }
+}

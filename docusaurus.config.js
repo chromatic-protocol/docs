@@ -154,7 +154,29 @@ const config = {
       },
       footer: {
         style: 'dark',
+        logo: {
+          // href: '#',
+          alt: 'Chromatic Protocol',
+          src: 'img/chromatic-logo-row-white.svg',
+          srcDark: 'img/chromatic-logo-row.svg',
+          width: 200,
+          height: 'auto',
+          style: { margin: '0' }
+        },
         links: [
+          {
+            // title: 'Apps',
+            items: [
+              {
+                label: 'Trade',
+                href: '#'
+              },
+              {
+                label: 'Pools',
+                href: '#'
+              }
+            ]
+          },
           {
             title: 'Community',
             items: [

@@ -14,6 +14,38 @@ _An abstract contract for liquidation functionality in the Chromatic protocol._
 contract IChromaticMarketFactory factory
 ```
 
+### liquidationInterval
+
+```solidity
+uint256 liquidationInterval
+```
+
+### claimInterval
+
+```solidity
+uint256 claimInterval
+```
+
+### OnlyAccessableByDao
+
+```solidity
+error OnlyAccessableByDao()
+```
+
+### OnlyAccessableByMarket
+
+```solidity
+error OnlyAccessableByMarket()
+```
+
+### onlyDao
+
+```solidity
+modifier onlyDao()
+```
+
+_Modifier to restrict access to only the DAO._
+
 ### onlyMarket
 
 ```solidity
@@ -45,6 +77,34 @@ _Retrieves the IAutomate contract instance._
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | [0] | contract IAutomate | IAutomate The IAutomate contract instance. |
+
+### updateLiquidationInterval
+
+```solidity
+function updateLiquidationInterval(uint256 interval) external
+```
+
+Updates the liquidation task interval.
+
+_Can only be called by the DAO_
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| interval | uint256 | The new liquidation task interval. |
+
+### updateClaimInterval
+
+```solidity
+function updateClaimInterval(uint256 interval) external
+```
+
+Updates the claim task interval.
+
+_Can only be called by the DAO_
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| interval | uint256 | The new claim task interval. |
 
 ### createLiquidationTask
 

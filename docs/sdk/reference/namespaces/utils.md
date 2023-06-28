@@ -14,7 +14,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[utils/helpers.ts:5](https://github.com/chromatic-protocol/sdk/blob/b3e228c/src/utils/helpers.ts#L5)
+[utils/helpers.ts:5](https://github.com/chromatic-protocol/sdk/blob/ef2dd0c/src/utils/helpers.ts#L5)
 
 ## Functions
 
@@ -34,7 +34,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[utils/helpers.ts:7](https://github.com/chromatic-protocol/sdk/blob/b3e228c/src/utils/helpers.ts#L7)
+[utils/helpers.ts:7](https://github.com/chromatic-protocol/sdk/blob/ef2dd0c/src/utils/helpers.ts#L7)
 
 ___
 
@@ -55,4 +55,4 @@ ___
 
 #### Defined in
 
-[utils/helpers.ts:15](https://github.com/chromatic-protocol/sdk/blob/b3e228c/src/utils/helpers.ts#L15)
+[utils/helpers.ts:15](https://github.com/chromatic-protocol/sdk/blob/ef2dd0c/src/utils/helpers.ts#L15)

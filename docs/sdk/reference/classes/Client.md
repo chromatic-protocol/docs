@@ -21,7 +21,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[Client.ts:46](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/Client.ts#L46)
+[Client.ts:38](https://github.com/chromatic-protocol/sdk/blob/6709577/src/Client.ts#L38)
 
 ## Accessors
 
@@ -35,7 +35,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[Client.ts:32](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/Client.ts#L32)
+[Client.ts:24](https://github.com/chromatic-protocol/sdk/blob/6709577/src/Client.ts#L24)
 
 • `set` **provider**(`provider`): `void`
 
@@ -51,7 +51,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[Client.ts:41](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/Client.ts#L41)
+[Client.ts:33](https://github.com/chromatic-protocol/sdk/blob/6709577/src/Client.ts#L33)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[Client.ts:28](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/Client.ts#L28)
+[Client.ts:20](https://github.com/chromatic-protocol/sdk/blob/6709577/src/Client.ts#L20)
 
 • `set` **signer**(`signer`): `void`
 
@@ -81,21 +81,21 @@ ___
 
 #### Defined in
 
-[Client.ts:37](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/Client.ts#L37)
+[Client.ts:29](https://github.com/chromatic-protocol/sdk/blob/6709577/src/Client.ts#L29)
 
 ## Methods
 
 ### account
 
-▸ **account**(): `ChromaticAccount`
+▸ **account**(): [`ChromaticAccount`](ChromaticAccount.md)
 
 #### Returns
 
-`ChromaticAccount`
+[`ChromaticAccount`](ChromaticAccount.md)
 
 #### Defined in
 
-[Client.ts:99](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/Client.ts#L99)
+[Client.ts:72](https://github.com/chromatic-protocol/sdk/blob/6709577/src/Client.ts#L72)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-[Client.ts:104](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/Client.ts#L104)
+[Client.ts:76](https://github.com/chromatic-protocol/sdk/blob/6709577/src/Client.ts#L76)
 
 ___
 
@@ -123,7 +123,7 @@ ___
 
 #### Defined in
 
-[Client.ts:57](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/Client.ts#L57)
+[Client.ts:49](https://github.com/chromatic-protocol/sdk/blob/6709577/src/Client.ts#L49)
 
 ___
 
@@ -137,7 +137,7 @@ ___
 
 #### Defined in
 
-[Client.ts:69](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/Client.ts#L69)
+[Client.ts:60](https://github.com/chromatic-protocol/sdk/blob/6709577/src/Client.ts#L60)
 
 ___
 
@@ -151,7 +151,7 @@ ___
 
 #### Defined in
 
-[Client.ts:61](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/Client.ts#L61)
+[Client.ts:53](https://github.com/chromatic-protocol/sdk/blob/6709577/src/Client.ts#L53)
 
 ___
 
@@ -165,7 +165,7 @@ ___
 
 #### Defined in
 
-[Client.ts:74](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/Client.ts#L74)
+[Client.ts:64](https://github.com/chromatic-protocol/sdk/blob/6709577/src/Client.ts#L64)
 
 ___
 
@@ -179,21 +179,7 @@ ___
 
 #### Defined in
 
-[Client.ts:86](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/Client.ts#L86)
-
-___
-
-### routerContract
-
-▸ **routerContract**(): `ChromaticRouter`
-
-#### Returns
-
-`ChromaticRouter`
-
-#### Defined in
-
-[Client.ts:91](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/Client.ts#L91)
+[Client.ts:68](https://github.com/chromatic-protocol/sdk/blob/6709577/src/Client.ts#L68)
 
 ___
 
@@ -213,4 +199,4 @@ ___
 
 #### Defined in
 
-[Client.ts:36](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/Client.ts#L36)
+[Client.ts:28](https://github.com/chromatic-protocol/sdk/blob/6709577/src/Client.ts#L28)

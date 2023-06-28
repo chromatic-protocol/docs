@@ -14,9 +14,35 @@ custom_edit_url: null
 
 #### Defined in
 
-[utils/helpers.ts:5](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/utils/helpers.ts#L5)
+[utils/helpers.ts:5](https://github.com/chromatic-protocol/sdk/blob/6709577/src/utils/helpers.ts#L5)
 
 ## Functions
+
+### PromiseOnlySuccess
+
+▸ **PromiseOnlySuccess**<`T`\>(`values`): `Promise`<`T`[]\>
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `values` | `Iterable`<`T` \| `PromiseLike`<`T`\>\> |
+
+#### Returns
+
+`Promise`<`T`[]\>
+
+#### Defined in
+
+[utils/helpers.ts:21](https://github.com/chromatic-protocol/sdk/blob/6709577/src/utils/helpers.ts#L21)
+
+___
 
 ### decodeTokenId
 
@@ -34,7 +60,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[utils/helpers.ts:7](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/utils/helpers.ts#L7)
+[utils/helpers.ts:7](https://github.com/chromatic-protocol/sdk/blob/6709577/src/utils/helpers.ts#L7)
 
 ___
 
@@ -55,4 +81,4 @@ ___
 
 #### Defined in
 
-[utils/helpers.ts:15](https://github.com/chromatic-protocol/sdk/blob/f9c6d1a/src/utils/helpers.ts#L15)
+[utils/helpers.ts:15](https://github.com/chromatic-protocol/sdk/blob/6709577/src/utils/helpers.ts#L15)

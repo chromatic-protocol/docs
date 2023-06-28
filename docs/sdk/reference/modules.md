@@ -12,6 +12,7 @@ custom_edit_url: null
 
 ## Classes
 
+- [ChromaticAccount](classes/ChromaticAccount.md)
 - [ChromaticLens](classes/ChromaticLens.md)
 - [ChromaticMarket](classes/ChromaticMarket.md)
 - [ChromaticMarketFactory](classes/ChromaticMarketFactory.md)
@@ -31,3 +32,4 @@ custom_edit_url: null
 - [RouterOpenPositionParam](interfaces/RouterOpenPositionParam.md)
 - [RouterRemoveLiquidityParam](interfaces/RouterRemoveLiquidityParam.md)
 - [SettlementToken](interfaces/SettlementToken.md)
+- [TokenBalancesResult](interfaces/TokenBalancesResult.md)

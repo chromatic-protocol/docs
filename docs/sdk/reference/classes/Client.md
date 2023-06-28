@@ -21,7 +21,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[Client.ts:45](https://github.com/chromatic-protocol/sdk/blob/fef9ef9/src/Client.ts#L45)
+[Client.ts:46](https://github.com/chromatic-protocol/sdk/blob/b3e228c/src/Client.ts#L46)
 
 ## Accessors
 
@@ -35,7 +35,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[Client.ts:31](https://github.com/chromatic-protocol/sdk/blob/fef9ef9/src/Client.ts#L31)
+[Client.ts:32](https://github.com/chromatic-protocol/sdk/blob/b3e228c/src/Client.ts#L32)
 
 • `set` **provider**(`provider`): `void`
 
@@ -51,7 +51,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[Client.ts:40](https://github.com/chromatic-protocol/sdk/blob/fef9ef9/src/Client.ts#L40)
+[Client.ts:41](https://github.com/chromatic-protocol/sdk/blob/b3e228c/src/Client.ts#L41)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[Client.ts:27](https://github.com/chromatic-protocol/sdk/blob/fef9ef9/src/Client.ts#L27)
+[Client.ts:28](https://github.com/chromatic-protocol/sdk/blob/b3e228c/src/Client.ts#L28)
 
 • `set` **signer**(`signer`): `void`
 
@@ -81,9 +81,23 @@ ___
 
 #### Defined in
 
-[Client.ts:36](https://github.com/chromatic-protocol/sdk/blob/fef9ef9/src/Client.ts#L36)
+[Client.ts:37](https://github.com/chromatic-protocol/sdk/blob/b3e228c/src/Client.ts#L37)
 
 ## Methods
+
+### account
+
+▸ **account**(): `ChromaticAccount`
+
+#### Returns
+
+`ChromaticAccount`
+
+#### Defined in
+
+[Client.ts:99](https://github.com/chromatic-protocol/sdk/blob/b3e228c/src/Client.ts#L99)
+
+___
 
 ### contracts
 
@@ -95,21 +109,7 @@ ___
 
 #### Defined in
 
-[Client.ts:112](https://github.com/chromatic-protocol/sdk/blob/fef9ef9/src/Client.ts#L112)
-
-___
-
-### currentMarket
-
-▸ **currentMarket**(): [`ChromaticMarket`](ChromaticMarket.md)
-
-#### Returns
-
-[`ChromaticMarket`](ChromaticMarket.md)
-
-#### Defined in
-
-[Client.ts:81](https://github.com/chromatic-protocol/sdk/blob/fef9ef9/src/Client.ts#L81)
+[Client.ts:104](https://github.com/chromatic-protocol/sdk/blob/b3e228c/src/Client.ts#L104)
 
 ___
 
@@ -123,7 +123,7 @@ ___
 
 #### Defined in
 
-[Client.ts:56](https://github.com/chromatic-protocol/sdk/blob/fef9ef9/src/Client.ts#L56)
+[Client.ts:57](https://github.com/chromatic-protocol/sdk/blob/b3e228c/src/Client.ts#L57)
 
 ___
 
@@ -137,7 +137,7 @@ ___
 
 #### Defined in
 
-[Client.ts:75](https://github.com/chromatic-protocol/sdk/blob/fef9ef9/src/Client.ts#L75)
+[Client.ts:69](https://github.com/chromatic-protocol/sdk/blob/b3e228c/src/Client.ts#L69)
 
 ___
 
@@ -151,7 +151,7 @@ ___
 
 #### Defined in
 
-[Client.ts:67](https://github.com/chromatic-protocol/sdk/blob/fef9ef9/src/Client.ts#L67)
+[Client.ts:61](https://github.com/chromatic-protocol/sdk/blob/b3e228c/src/Client.ts#L61)
 
 ___
 
@@ -165,7 +165,7 @@ ___
 
 #### Defined in
 
-[Client.ts:85](https://github.com/chromatic-protocol/sdk/blob/fef9ef9/src/Client.ts#L85)
+[Client.ts:74](https://github.com/chromatic-protocol/sdk/blob/b3e228c/src/Client.ts#L74)
 
 ___
 
@@ -179,7 +179,7 @@ ___
 
 #### Defined in
 
-[Client.ts:97](https://github.com/chromatic-protocol/sdk/blob/fef9ef9/src/Client.ts#L97)
+[Client.ts:86](https://github.com/chromatic-protocol/sdk/blob/b3e228c/src/Client.ts#L86)
 
 ___
 
@@ -193,7 +193,7 @@ ___
 
 #### Defined in
 
-[Client.ts:103](https://github.com/chromatic-protocol/sdk/blob/fef9ef9/src/Client.ts#L103)
+[Client.ts:91](https://github.com/chromatic-protocol/sdk/blob/b3e228c/src/Client.ts#L91)
 
 ___
 
@@ -213,4 +213,4 @@ ___
 
 #### Defined in
 
-[Client.ts:35](https://github.com/chromatic-protocol/sdk/blob/fef9ef9/src/Client.ts#L35)
+[Client.ts:36](https://github.com/chromatic-protocol/sdk/blob/b3e228c/src/Client.ts#L36)

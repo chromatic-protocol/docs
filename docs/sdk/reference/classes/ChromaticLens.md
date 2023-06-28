@@ -20,7 +20,25 @@ custom_edit_url: null
 
 #### Defined in
 
-[entities/ChromaticLens.ts:34](https://github.com/chromatic-protocol/sdk/blob/fef9ef9/src/entities/ChromaticLens.ts#L34)
+[entities/ChromaticLens.ts:34](https://github.com/chromatic-protocol/sdk/blob/b3e228c/src/entities/ChromaticLens.ts#L34)
+
+## Accessors
+
+### contracts
+
+• `get` **contracts**(): `Object`
+
+#### Returns
+
+`Object`
+
+| Name | Type |
+| :------ | :------ |
+| `lens` | `ChromaticLens` |
+
+#### Defined in
+
+[entities/ChromaticLens.ts:43](https://github.com/chromatic-protocol/sdk/blob/b3e228c/src/entities/ChromaticLens.ts#L43)
 
 ## Methods
 
@@ -41,27 +59,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[entities/ChromaticLens.ts:114](https://github.com/chromatic-protocol/sdk/blob/fef9ef9/src/entities/ChromaticLens.ts#L114)
-
-___
-
-### getContract
-
-▸ **getContract**(`lensAddress?`): `ChromaticLens`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `lensAddress?` | `string` |
-
-#### Returns
-
-`ChromaticLens`
-
-#### Defined in
-
-[entities/ChromaticLens.ts:36](https://github.com/chromatic-protocol/sdk/blob/fef9ef9/src/entities/ChromaticLens.ts#L36)
+[entities/ChromaticLens.ts:120](https://github.com/chromatic-protocol/sdk/blob/b3e228c/src/entities/ChromaticLens.ts#L120)
 
 ___
 
@@ -83,7 +81,7 @@ liquidity bins
 
 #### Defined in
 
-[entities/ChromaticLens.ts:48](https://github.com/chromatic-protocol/sdk/blob/fef9ef9/src/entities/ChromaticLens.ts#L48)
+[entities/ChromaticLens.ts:54](https://github.com/chromatic-protocol/sdk/blob/b3e228c/src/entities/ChromaticLens.ts#L54)
 
 ___
 
@@ -104,4 +102,4 @@ ___
 
 #### Defined in
 
-[entities/ChromaticLens.ts:68](https://github.com/chromatic-protocol/sdk/blob/fef9ef9/src/entities/ChromaticLens.ts#L68)
+[entities/ChromaticLens.ts:74](https://github.com/chromatic-protocol/sdk/blob/b3e228c/src/entities/ChromaticLens.ts#L74)

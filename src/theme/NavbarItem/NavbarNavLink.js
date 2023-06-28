@@ -40,11 +40,22 @@ export default function NavbarNavLink({
     : {
         children: (
           <>
-            {icon && Svg && (
-              <Svg fill={isDarkTheme ? '#ffffff' : '#000000'} role="img" src={useBaseUrl(icon)} />
-            )}
-            {label}
-            {description && <p>{description}</p>}
+            <div className="flex gap-3">
+              {icon && Svg && (
+                <div>
+                  <Svg
+                    fill={isDarkTheme ? '#ffffff' : '#000000'}
+                    role="img"
+                    src={useBaseUrl(icon)}
+                  />
+                </div>
+              )}
+              <div>
+                <p className="m-0 text-lg">{label}</p>
+                {description && <p className="mt-2 mb-0 text-base text-black/50">{description}</p>}
+              </div>
+            </div>
+
             {/* {isExternalLink && (
               <IconExternalLink {...(isDropdownLink && { width: 12, height: 12 })} />
             )} */}

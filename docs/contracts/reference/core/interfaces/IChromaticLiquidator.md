@@ -8,13 +8,53 @@ title: IChromaticLiquidator.sol
 
 _Interface for the Chromatic Liquidator contract._
 
-### OnlyAccessableByMarket
+### UpdateLiquidationInterval
 
 ```solidity
-error OnlyAccessableByMarket()
+event UpdateLiquidationInterval(uint256 interval)
 ```
 
-_Throws an error indicating that the function can only be accessed by a registered market._
+Emitted when the liquidation task interval is updated.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| interval | uint256 | The new liquidation task interval. |
+
+### UpdateClaimInterval
+
+```solidity
+event UpdateClaimInterval(uint256 interval)
+```
+
+Emitted when the claim task interval is updated.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| interval | uint256 | The new claim task interval. |
+
+### updateLiquidationInterval
+
+```solidity
+function updateLiquidationInterval(uint256 interval) external
+```
+
+Updates the liquidation task interval.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| interval | uint256 | The new liquidation task interval. |
+
+### updateClaimInterval
+
+```solidity
+function updateClaimInterval(uint256 interval) external
+```
+
+Updates the claim task interval.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| interval | uint256 | The new claim task interval. |
 
 ### createLiquidationTask
 

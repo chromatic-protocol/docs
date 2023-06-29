@@ -167,10 +167,6 @@ const config = {
                 href: CHROMATIC_LINKS.twitter
               },
               {
-                label: 'Discord',
-                href: CHROMATIC_LINKS.discord
-              },
-              {
                 label: 'Medium',
                 href: CHROMATIC_LINKS.medium
               }

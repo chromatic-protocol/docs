@@ -20,7 +20,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:42](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticPosition.ts#L42)
+[entities/ChromaticPosition.ts:43](https://github.com/chromatic-protocol/sdk/blob/1fd4062/src/entities/ChromaticPosition.ts#L43)
 
 ## Methods
 
@@ -40,7 +40,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:46](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticPosition.ts#L46)
+[entities/ChromaticPosition.ts:47](https://github.com/chromatic-protocol/sdk/blob/1fd4062/src/entities/ChromaticPosition.ts#L47)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:85](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticPosition.ts#L85)
+[entities/ChromaticPosition.ts:86](https://github.com/chromatic-protocol/sdk/blob/1fd4062/src/entities/ChromaticPosition.ts#L86)
 
 ___
 
@@ -81,13 +81,13 @@ ___
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:99](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticPosition.ts#L99)
+[entities/ChromaticPosition.ts:100](https://github.com/chromatic-protocol/sdk/blob/1fd4062/src/entities/ChromaticPosition.ts#L100)
 
 ___
 
 ### getLiquidationPrice
 
-▸ **getLiquidationPrice**(`marketAddress`, `entryPrice`, `position`): `Promise`<{ `lossCutPrice`: `BigNumber` ; `profitStopPrice`: `BigNumber`  }\>
+▸ **getLiquidationPrice**(`marketAddress`, `entryPrice`, `position`, `oraclePriceDecimals`): `Promise`<{ `lossCutPrice`: `BigNumber` ; `profitStopPrice`: `BigNumber`  }\>
 
 #### Parameters
 
@@ -96,6 +96,7 @@ ___
 | `marketAddress` | `string` |
 | `entryPrice` | `BigNumber` |
 | `position` | [`PositionParam`](../interfaces/PositionParam.md) |
+| `oraclePriceDecimals` | `number` |
 
 #### Returns
 
@@ -103,7 +104,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:146](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticPosition.ts#L146)
+[entities/ChromaticPosition.ts:147](https://github.com/chromatic-protocol/sdk/blob/1fd4062/src/entities/ChromaticPosition.ts#L147)
 
 ___
 
@@ -128,7 +129,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:128](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticPosition.ts#L128)
+[entities/ChromaticPosition.ts:129](https://github.com/chromatic-protocol/sdk/blob/1fd4062/src/entities/ChromaticPosition.ts#L129)
 
 ___
 
@@ -149,13 +150,13 @@ ___
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:53](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticPosition.ts#L53)
+[entities/ChromaticPosition.ts:54](https://github.com/chromatic-protocol/sdk/blob/1fd4062/src/entities/ChromaticPosition.ts#L54)
 
 ___
 
 ### lossCutPrice
 
-▸ **lossCutPrice**(`marketAddress`, `entryPrice`, `position`): `Promise`<`BigNumber`\>
+▸ **lossCutPrice**(`marketAddress`, `entryPrice`, `position`, `oraclePriceDecimals`): `Promise`<`BigNumber`\>
 
 #### Parameters
 
@@ -164,6 +165,7 @@ ___
 | `marketAddress` | `string` |
 | `entryPrice` | `BigNumber` |
 | `position` | [`PositionParam`](../interfaces/PositionParam.md) |
+| `oraclePriceDecimals` | `number` |
 
 #### Returns
 
@@ -171,13 +173,13 @@ ___
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:184](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticPosition.ts#L184)
+[entities/ChromaticPosition.ts:207](https://github.com/chromatic-protocol/sdk/blob/1fd4062/src/entities/ChromaticPosition.ts#L207)
 
 ___
 
 ### profitStopPrice
 
-▸ **profitStopPrice**(`marketAddress`, `entryPrice`, `position`): `Promise`<`BigNumber`\>
+▸ **profitStopPrice**(`marketAddress`, `entryPrice`, `position`, `oraclePriceDecimals`): `Promise`<`BigNumber`\>
 
 #### Parameters
 
@@ -186,6 +188,7 @@ ___
 | `marketAddress` | `string` |
 | `entryPrice` | `BigNumber` |
 | `position` | [`PositionParam`](../interfaces/PositionParam.md) |
+| `oraclePriceDecimals` | `number` |
 
 #### Returns
 
@@ -193,4 +196,4 @@ ___
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:174](https://github.com/chromatic-protocol/sdk/blob/6709577/src/entities/ChromaticPosition.ts#L174)
+[entities/ChromaticPosition.ts:190](https://github.com/chromatic-protocol/sdk/blob/1fd4062/src/entities/ChromaticPosition.ts#L190)

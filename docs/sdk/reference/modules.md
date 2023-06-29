@@ -28,7 +28,6 @@ custom_edit_url: null
 - [OwnedLiquidityBinResult](interfaces/OwnedLiquidityBinResult.md)
 - [PositionParam](interfaces/PositionParam.md)
 - [RouterAddLiquidityParam](interfaces/RouterAddLiquidityParam.md)
-- [RouterClosePositionParam](interfaces/RouterClosePositionParam.md)
 - [RouterOpenPositionParam](interfaces/RouterOpenPositionParam.md)
 - [RouterRemoveLiquidityParam](interfaces/RouterRemoveLiquidityParam.md)
 - [SettlementToken](interfaces/SettlementToken.md)

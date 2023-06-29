@@ -136,11 +136,11 @@ const config = {
               }
             ]
           },
-          // right side
+          // launch app
           {
             href: 'https://github.com/facebook/chromatic-protocol',
             label: 'Launch App',
-            class: 'btn btn-black btn-lg',
+            isButton: true,
             style: { marginLeft: '40px', width: '168px' },
             position: 'right'
           }

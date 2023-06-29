@@ -14,7 +14,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[utils/helpers.ts:5](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/utils/helpers.ts#L5)
+[utils/helpers.ts:5](https://github.com/chromatic-protocol/sdk/blob/b12d4c9/src/utils/helpers.ts#L5)
 
 ## Functions
 
@@ -25,13 +25,13 @@ custom_edit_url: null
 #### Type parameters
 
 | Name |
-| :------ |
-| `T` |
+| :--- |
+| `T`  |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type                                    |
+| :------- | :-------------------------------------- |
 | `values` | `Iterable`<`T` \| `PromiseLike`<`T`\>\> |
 
 #### Returns
@@ -40,7 +40,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[utils/helpers.ts:21](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/utils/helpers.ts#L21)
+[utils/helpers.ts:21](https://github.com/chromatic-protocol/sdk/blob/b12d4c9/src/utils/helpers.ts#L21)
 
 ___
 
@@ -50,8 +50,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name        | Type        |
+| :---------- | :---------- |
 | `encodedId` | `BigNumber` |
 
 #### Returns
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[utils/helpers.ts:7](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/utils/helpers.ts#L7)
+[utils/helpers.ts:7](https://github.com/chromatic-protocol/sdk/blob/b12d4c9/src/utils/helpers.ts#L7)
 
 ___
 
@@ -70,10 +70,10 @@ ___
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `tradingFeeRate` | `number` | `undefined` |
-| `long` | `boolean` | `true` |
+| Name             | Type      | Default value |
+| :--------------- | :-------- | :------------ |
+| `tradingFeeRate` | `number`  | `undefined`   |
+| `long`           | `boolean` | `true`        |
 
 #### Returns
 
@@ -81,4 +81,4 @@ ___
 
 #### Defined in
 
-[utils/helpers.ts:15](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/utils/helpers.ts#L15)
+[utils/helpers.ts:15](https://github.com/chromatic-protocol/sdk/blob/b12d4c9/src/utils/helpers.ts#L15)

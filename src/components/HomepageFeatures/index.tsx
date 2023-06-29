@@ -11,27 +11,28 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Wide Expandability by Seperated Settlement and Target Assets',
+    title: 'Seperation of index and settlement tokens',
     Svg: require('@site/static/img/feature1.svg').default,
     description: (
       <>
-        No price slippage, no MEV and low tx fees. The first derivatives platform that makes
-        composability both easy & profitable
+        By separating the underlying index and settlement token, Chromatic Protocol enables the
+        creation of diverse futures markets. Market creators can combine non- manipulable time
+        series from external.
       </>
     )
   },
   {
-    title: 'Stability and Efficiency by Tailored Margin Mechanism',
+    title: 'Pre-set Tailored Payoff by Smart Contracts',
     Svg: require('@site/static/img/feature2.svg').default,
     description: (
       <>
-        Straightforward exposure & deep liquidity for Traders (takers). High capital efficiency &
-        isolated pools for Makers.
+        Addressing the challenge of trustless payoffs in DeFi, Chromatic Protocol offers contracts
+        for secure and automated execution of payoffs instead of relying on intermediaries.
       </>
     )
   },
   {
-    title: 'Strategic Market Making by Segmented Liquidity Pool Slots',
+    title: 'Seperation of index and settlement tokens',
     Svg: require('@site/static/img/feature3.svg').default,
     description: (
       <>
@@ -42,16 +43,17 @@ const FeatureList: FeatureItem[] = [
   }
 ]
 
-function Feature({ title, Svg, description }: FeatureItem) {
+function Feature({ title, Svg, image, description }: FeatureItem) {
   const { isDarkTheme } = useColorMode()
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
+    <div className={`flex justify-between gap-20 `}>
+      <div className="">
         <Svg className={styles.featureSvg} fill={isDarkTheme ? '#ffffff' : '#000000'} role="img" />
       </div>
-      <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
+      {/* <div className="max-w-[720px]"> */}
+      <div className="">
+        <h4 className="sub-title max-w-[620px]">{title}</h4>
+        <p className="text-lg text-black/40">{description}</p>
       </div>
     </div>
   )
@@ -59,14 +61,19 @@ function Feature({ title, Svg, description }: FeatureItem) {
 
 export default function HomepageFeatures(): JSX.Element {
   return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
-      </div>
-    </section>
+    <>
+      <section className="bg-white pt-[160px]">
+        <article className="article">
+          <div className="wrapper">
+            <h2 className="title mb-[120px]">about chromatic</h2>
+            <div className="flex flex-col gap-[220px]">
+              {FeatureList.map((props, idx) => (
+                <Feature key={idx} {...props} />
+              ))}
+            </div>
+          </div>
+        </article>
+      </section>
+    </>
   )
 }

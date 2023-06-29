@@ -20,7 +20,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:31](https://github.com/chromatic-protocol/sdk/blob/9276400/src/entities/ChromaticRouter.ts#L31)
+[entities/ChromaticRouter.ts:27](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticRouter.ts#L27)
 
 ## Methods
 
@@ -42,13 +42,13 @@ custom_edit_url: null
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:114](https://github.com/chromatic-protocol/sdk/blob/9276400/src/entities/ChromaticRouter.ts#L114)
+[entities/ChromaticRouter.ts:109](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticRouter.ts#L109)
 
 ___
 
 ### addLiquidity
 
-▸ **addLiquidity**(`marketAddress`, `param`, `receipient?`): `Promise`<`ContractTransaction`\>
+▸ **addLiquidity**(`marketAddress`, `param`, `receipient?`): `Promise`<`ContractReceipt`\>
 
 #### Parameters
 
@@ -60,11 +60,11 @@ ___
 
 #### Returns
 
-`Promise`<`ContractTransaction`\>
+`Promise`<`ContractReceipt`\>
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:99](https://github.com/chromatic-protocol/sdk/blob/9276400/src/entities/ChromaticRouter.ts#L99)
+[entities/ChromaticRouter.ts:93](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticRouter.ts#L93)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:72](https://github.com/chromatic-protocol/sdk/blob/9276400/src/entities/ChromaticRouter.ts#L72)
+[entities/ChromaticRouter.ts:66](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticRouter.ts#L66)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:85](https://github.com/chromatic-protocol/sdk/blob/9276400/src/entities/ChromaticRouter.ts#L85)
+[entities/ChromaticRouter.ts:79](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticRouter.ts#L79)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:198](https://github.com/chromatic-protocol/sdk/blob/9276400/src/entities/ChromaticRouter.ts#L198)
+[entities/ChromaticRouter.ts:193](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticRouter.ts#L193)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:185](https://github.com/chromatic-protocol/sdk/blob/9276400/src/entities/ChromaticRouter.ts#L185)
+[entities/ChromaticRouter.ts:180](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticRouter.ts#L180)
 
 ___
 
@@ -167,20 +167,20 @@ ___
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:67](https://github.com/chromatic-protocol/sdk/blob/9276400/src/entities/ChromaticRouter.ts#L67)
+[entities/ChromaticRouter.ts:61](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticRouter.ts#L61)
 
 ___
 
 ### closePosition
 
-▸ **closePosition**(`marketAddress`, `param`): `Promise`<`ContractReceipt`\>
+▸ **closePosition**(`marketAddress`, `positionId`): `Promise`<`ContractReceipt`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `marketAddress` | `string` |
-| `param` | [`RouterClosePositionParam`](../interfaces/RouterClosePositionParam.md) |
+| `positionId` | `BigNumberish` |
 
 #### Returns
 
@@ -188,7 +188,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:60](https://github.com/chromatic-protocol/sdk/blob/9276400/src/entities/ChromaticRouter.ts#L60)
+[entities/ChromaticRouter.ts:56](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticRouter.ts#L56)
 
 ___
 
@@ -206,7 +206,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:35](https://github.com/chromatic-protocol/sdk/blob/9276400/src/entities/ChromaticRouter.ts#L35)
+[entities/ChromaticRouter.ts:31](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticRouter.ts#L31)
 
 ___
 
@@ -227,7 +227,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:46](https://github.com/chromatic-protocol/sdk/blob/9276400/src/entities/ChromaticRouter.ts#L46)
+[entities/ChromaticRouter.ts:42](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticRouter.ts#L42)
 
 ___
 
@@ -249,7 +249,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:153](https://github.com/chromatic-protocol/sdk/blob/9276400/src/entities/ChromaticRouter.ts#L153)
+[entities/ChromaticRouter.ts:148](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticRouter.ts#L148)
 
 ___
 
@@ -270,7 +270,28 @@ ___
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:137](https://github.com/chromatic-protocol/sdk/blob/9276400/src/entities/ChromaticRouter.ts#L137)
+[entities/ChromaticRouter.ts:132](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticRouter.ts#L132)
+
+___
+
+### withdrawLiquidities
+
+▸ **withdrawLiquidities**(`marketAddress`, `receiptIds`): `Promise`<`ContractReceipt`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `marketAddress` | `string` |
+| `receiptIds` | `BigNumberish`[] |
+
+#### Returns
+
+`Promise`<`ContractReceipt`\>
+
+#### Defined in
+
+[entities/ChromaticRouter.ts:205](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticRouter.ts#L205)
 
 ___
 
@@ -291,4 +312,4 @@ ___
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:203](https://github.com/chromatic-protocol/sdk/blob/9276400/src/entities/ChromaticRouter.ts#L203)
+[entities/ChromaticRouter.ts:198](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticRouter.ts#L198)

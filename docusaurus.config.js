@@ -34,7 +34,6 @@ const config = {
   },
 
   plugins: [
-    'docusaurus-plugin-sass',
     async function myPlugin(context, options) {
       return {
         name: 'docusaurus-tailwindcss',
@@ -60,7 +59,7 @@ const config = {
           editUrl: 'https://github.com/chromatic-protocol/docs/tree/main/'
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.scss')
+          customCss: require.resolve('./src/css/custom.css')
         }
       })
     ]

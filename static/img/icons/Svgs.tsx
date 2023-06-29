@@ -5,5 +5,6 @@ export const Svgs = {
   twitter: require('@site/static/img/icons/twitter.svg').default,
   gitbook: require('@site/static/img/icons/gitbook.svg').default,
   medium: require('@site/static/img/icons/medium.svg').default,
-  chromatic: require('@site/static/img/icons/chromatic.svg').default
+  chromatic: require('@site/static/img/icons/chromatic.svg').default,
+  chromaticHeader: require('@site/static/img/icons/chromatic-header.svg').default
 }

@@ -20,7 +20,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[entities/ChromaticAccount.ts:11](https://github.com/chromatic-protocol/sdk/blob/1fd4062/src/entities/ChromaticAccount.ts#L11)
+[entities/ChromaticAccount.ts:11](https://github.com/chromatic-protocol/sdk/blob/9276400/src/entities/ChromaticAccount.ts#L11)
 
 ## Methods
 
@@ -41,7 +41,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[entities/ChromaticAccount.ts:37](https://github.com/chromatic-protocol/sdk/blob/1fd4062/src/entities/ChromaticAccount.ts#L37)
+[entities/ChromaticAccount.ts:37](https://github.com/chromatic-protocol/sdk/blob/9276400/src/entities/ChromaticAccount.ts#L37)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticAccount.ts:44](https://github.com/chromatic-protocol/sdk/blob/1fd4062/src/entities/ChromaticAccount.ts#L44)
+[entities/ChromaticAccount.ts:44](https://github.com/chromatic-protocol/sdk/blob/9276400/src/entities/ChromaticAccount.ts#L44)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticAccount.ts:15](https://github.com/chromatic-protocol/sdk/blob/1fd4062/src/entities/ChromaticAccount.ts#L15)
+[entities/ChromaticAccount.ts:15](https://github.com/chromatic-protocol/sdk/blob/9276400/src/entities/ChromaticAccount.ts#L15)
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticAccount.ts:22](https://github.com/chromatic-protocol/sdk/blob/1fd4062/src/entities/ChromaticAccount.ts#L22)
+[entities/ChromaticAccount.ts:22](https://github.com/chromatic-protocol/sdk/blob/9276400/src/entities/ChromaticAccount.ts#L22)
 
 ___
 
@@ -115,7 +115,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticAccount.ts:27](https://github.com/chromatic-protocol/sdk/blob/1fd4062/src/entities/ChromaticAccount.ts#L27)
+[entities/ChromaticAccount.ts:27](https://github.com/chromatic-protocol/sdk/blob/9276400/src/entities/ChromaticAccount.ts#L27)
 
 ___
 
@@ -136,4 +136,4 @@ ___
 
 #### Defined in
 
-[entities/ChromaticAccount.ts:31](https://github.com/chromatic-protocol/sdk/blob/1fd4062/src/entities/ChromaticAccount.ts#L31)
+[entities/ChromaticAccount.ts:31](https://github.com/chromatic-protocol/sdk/blob/9276400/src/entities/ChromaticAccount.ts#L31)

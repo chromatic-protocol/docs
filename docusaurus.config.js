@@ -189,7 +189,7 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                to: '/'
+                href: '#'
               },
               {
                 label: 'Medium',

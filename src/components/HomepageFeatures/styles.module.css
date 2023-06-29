@@ -5,6 +5,10 @@
   width: 100%;
 }
 
+.feature:nth-child(2n) {
+  @apply flex-row-reverse;
+}
+
 .featureSvg {
   height: 200px;
   width: 200px;

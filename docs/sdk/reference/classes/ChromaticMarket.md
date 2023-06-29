@@ -14,13 +14,13 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type                  |
+| :------- | :-------------------- |
 | `client` | [`Client`](Client.md) |
 
 #### Defined in
 
-[entities/ChromaticMarket.ts:18](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticMarket.ts#L18)
+[entities/ChromaticMarket.ts:18](https://github.com/chromatic-protocol/sdk/blob/b12d4c9/src/entities/ChromaticMarket.ts#L18)
 
 ## Methods
 
@@ -30,8 +30,8 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name            | Type     |
+| :-------------- | :------- |
 | `marketAddress` | `string` |
 
 #### Returns
@@ -40,7 +40,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[entities/ChromaticMarket.ts:43](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticMarket.ts#L43)
+[entities/ChromaticMarket.ts:43](https://github.com/chromatic-protocol/sdk/blob/b12d4c9/src/entities/ChromaticMarket.ts#L43)
 
 ___
 
@@ -50,10 +50,10 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `marketAddress` | `string` |
-| `tokenId` | `BigNumberish` |
+| Name            | Type           |
+| :-------------- | :------------- |
+| `marketAddress` | `string`       |
+| `tokenId`       | `BigNumberish` |
 
 #### Returns
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticMarket.ts:50](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticMarket.ts#L50)
+[entities/ChromaticMarket.ts:50](https://github.com/chromatic-protocol/sdk/blob/b12d4c9/src/entities/ChromaticMarket.ts#L50)
 
 ___
 
@@ -73,13 +73,13 @@ ___
 
 `Object`
 
-| Name | Type |
-| :------ | :------ |
+| Name     | Type                                             |
+| :------- | :----------------------------------------------- |
 | `market` | (`marketAddress`: `string`) => `ChromaticMarket` |
 
 #### Defined in
 
-[entities/ChromaticMarket.ts:26](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticMarket.ts#L26)
+[entities/ChromaticMarket.ts:26](https://github.com/chromatic-protocol/sdk/blob/b12d4c9/src/entities/ChromaticMarket.ts#L26)
 
 ___
 
@@ -89,8 +89,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name            | Type     |
+| :-------------- | :------- |
 | `marketAddress` | `string` |
 
 #### Returns
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticMarket.ts:76](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticMarket.ts#L76)
+[entities/ChromaticMarket.ts:76](https://github.com/chromatic-protocol/sdk/blob/b12d4c9/src/entities/ChromaticMarket.ts#L76)
 
 ___
 
@@ -109,8 +109,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name              | Type       |
+| :---------------- | :--------- |
 | `marketAddresses` | `string`[] |
 
 #### Returns
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticMarket.ts:85](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticMarket.ts#L85)
+[entities/ChromaticMarket.ts:85](https://github.com/chromatic-protocol/sdk/blob/b12d4c9/src/entities/ChromaticMarket.ts#L85)
 
 ___
 
@@ -129,8 +129,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name            | Type     |
+| :-------------- | :------- |
 | `marketAddress` | `string` |
 
 #### Returns
@@ -139,7 +139,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticMarket.ts:81](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticMarket.ts#L81)
+[entities/ChromaticMarket.ts:81](https://github.com/chromatic-protocol/sdk/blob/b12d4c9/src/entities/ChromaticMarket.ts#L81)
 
 ___
 
@@ -149,8 +149,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name            | Type     |
+| :-------------- | :------- |
 | `marketAddress` | `string` |
 
 #### Returns
@@ -159,7 +159,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticMarket.ts:66](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticMarket.ts#L66)
+[entities/ChromaticMarket.ts:66](https://github.com/chromatic-protocol/sdk/blob/b12d4c9/src/entities/ChromaticMarket.ts#L66)
 
 ___
 
@@ -169,8 +169,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name            | Type     |
+| :-------------- | :------- |
 | `marketAddress` | `string` |
 
 #### Returns
@@ -179,4 +179,4 @@ ___
 
 #### Defined in
 
-[entities/ChromaticMarket.ts:36](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticMarket.ts#L36)
+[entities/ChromaticMarket.ts:36](https://github.com/chromatic-protocol/sdk/blob/b12d4c9/src/entities/ChromaticMarket.ts#L36)

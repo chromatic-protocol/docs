@@ -14,14 +14,14 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `addressOrName` | `string` |
-| `_client` | [`Client`](Client.md) |
+| Name            | Type                  |
+| :-------------- | :-------------------- |
+| `addressOrName` | `string`              |
+| `_client`       | [`Client`](Client.md) |
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:21](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticMarketFactory.ts#L21)
+[entities/ChromaticMarketFactory.ts:21](https://github.com/chromatic-protocol/sdk/blob/b12d4c9/src/entities/ChromaticMarketFactory.ts#L21)
 
 ## Methods
 
@@ -33,13 +33,13 @@ custom_edit_url: null
 
 `Object`
 
-| Name | Type |
-| :------ | :------ |
+| Name            | Type                     |
+| :-------------- | :----------------------- |
 | `marketFactory` | `ChromaticMarketFactory` |
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:31](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticMarketFactory.ts#L31)
+[entities/ChromaticMarketFactory.ts:31](https://github.com/chromatic-protocol/sdk/blob/b12d4c9/src/entities/ChromaticMarketFactory.ts#L31)
 
 ___
 
@@ -49,8 +49,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name              | Type     |
+| :---------------- | :------- |
 | `settlementToken` | `string` |
 
 #### Returns
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:60](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticMarketFactory.ts#L60)
+[entities/ChromaticMarketFactory.ts:60](https://github.com/chromatic-protocol/sdk/blob/b12d4c9/src/entities/ChromaticMarketFactory.ts#L60)
 
 ___
 
@@ -69,8 +69,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name              | Type     |
+| :---------------- | :------- |
 | `settlementToken` | `string` |
 
 #### Returns
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:64](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticMarketFactory.ts#L64)
+[entities/ChromaticMarketFactory.ts:64](https://github.com/chromatic-protocol/sdk/blob/b12d4c9/src/entities/ChromaticMarketFactory.ts#L64)
 
 ___
 
@@ -93,4 +93,4 @@ ___
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:37](https://github.com/chromatic-protocol/sdk/blob/9c1a5ec/src/entities/ChromaticMarketFactory.ts#L37)
+[entities/ChromaticMarketFactory.ts:37](https://github.com/chromatic-protocol/sdk/blob/b12d4c9/src/entities/ChromaticMarketFactory.ts#L37)

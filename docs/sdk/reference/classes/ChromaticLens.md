@@ -20,7 +20,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[entities/ChromaticLens.ts:34](https://github.com/chromatic-protocol/sdk/blob/1fd4062/src/entities/ChromaticLens.ts#L34)
+[entities/ChromaticLens.ts:35](https://github.com/chromatic-protocol/sdk/blob/9276400/src/entities/ChromaticLens.ts#L35)
 
 ## Methods
 
@@ -41,7 +41,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[entities/ChromaticLens.ts:120](https://github.com/chromatic-protocol/sdk/blob/1fd4062/src/entities/ChromaticLens.ts#L120)
+[entities/ChromaticLens.ts:121](https://github.com/chromatic-protocol/sdk/blob/9276400/src/entities/ChromaticLens.ts#L121)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticLens.ts:43](https://github.com/chromatic-protocol/sdk/blob/1fd4062/src/entities/ChromaticLens.ts#L43)
+[entities/ChromaticLens.ts:44](https://github.com/chromatic-protocol/sdk/blob/9276400/src/entities/ChromaticLens.ts#L44)
 
 ___
 
@@ -81,7 +81,7 @@ liquidity bins
 
 #### Defined in
 
-[entities/ChromaticLens.ts:54](https://github.com/chromatic-protocol/sdk/blob/1fd4062/src/entities/ChromaticLens.ts#L54)
+[entities/ChromaticLens.ts:55](https://github.com/chromatic-protocol/sdk/blob/9276400/src/entities/ChromaticLens.ts#L55)
 
 ___
 
@@ -102,4 +102,4 @@ ___
 
 #### Defined in
 
-[entities/ChromaticLens.ts:74](https://github.com/chromatic-protocol/sdk/blob/1fd4062/src/entities/ChromaticLens.ts#L74)
+[entities/ChromaticLens.ts:75](https://github.com/chromatic-protocol/sdk/blob/9276400/src/entities/ChromaticLens.ts#L75)

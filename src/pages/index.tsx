@@ -2,12 +2,11 @@ import Link from '@docusaurus/Link'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import HomepageFeatures from '@site/src/components/HomepageFeatures'
 import Layout from '@theme/Layout'
-import clsx from 'clsx'
 import React from 'react'
 
 import { Svgs } from '@site/static/img/icons/Svgs'
 
-import styles from './index.module.css'
+import { CHROMATIC_LINKS } from '../external-links'
 
 function IconArrowButton({ label, icon, to = '', href = '', dark = false, ...props }) {
   const Svg = Svgs[icon]
@@ -78,9 +77,13 @@ function HomepageTop() {
                 equilibrium.
               </p>
               <div className="flex justify-center gap-10">
-                <IconArrowButton label="Start trade" icon="chromatic" to="" />
-                <IconArrowButton label="Read Medium" to="" icon="medium" />
-                <IconArrowButton label="Read Gitbook" to="" icon="gitbook" />
+                <IconArrowButton label="Start trade" href={CHROMATIC_LINKS.app} icon="chromatic" />
+                <IconArrowButton label="Read Medium" href={CHROMATIC_LINKS.medium} icon="medium" />
+                <IconArrowButton
+                  label="Read Gitbook"
+                  href={CHROMATIC_LINKS.gitbook}
+                  icon="gitbook"
+                />
               </div>
             </div>
           </div>
@@ -98,7 +101,11 @@ function HomepageTop() {
                   </p>
                 </div>
                 <div className="btns">
-                  <IconArrowButton label="View Github" icon="github" to="" />
+                  <IconArrowButton
+                    label="View Github"
+                    icon="github"
+                    href={CHROMATIC_LINKS.github}
+                  />
                 </div>
               </div>
               <div className="box min-h-[420px] border-[#333]">
@@ -110,8 +117,16 @@ function HomepageTop() {
                   </p>
                 </div>
                 <div className="btns">
-                  <IconArrowButton label="View Contract" icon="github" to="" />
-                  <IconArrowButton label="View SDK" icon="github" to="" />
+                  <IconArrowButton
+                    label="View Contract"
+                    icon="github"
+                    href={CHROMATIC_LINKS.githubContracts}
+                  />
+                  <IconArrowButton
+                    label="View SDK"
+                    icon="github"
+                    href={CHROMATIC_LINKS.githubSDK}
+                  />
                 </div>
               </div>
             </div>
@@ -137,8 +152,18 @@ function HomepageBottom() {
                 </p>
               </div>
               <div className="btns">
-                <IconArrowButton dark label="View Gitbook" icon="gitbook" to="" />
-                <IconArrowButton dark label="Read Medium" icon="medium" to="" />
+                <IconArrowButton
+                  dark
+                  label="View Gitbook"
+                  icon="gitbook"
+                  href={CHROMATIC_LINKS.gitbook}
+                />
+                <IconArrowButton
+                  dark
+                  label="Read Medium"
+                  icon="medium"
+                  href={CHROMATIC_LINKS.medium}
+                />
               </div>
             </div>
           </div>

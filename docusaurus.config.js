@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github')
 const darkCodeTheme = require('prism-react-renderer/themes/dracula')
+const { CHROMATIC_LINKS } = require('./src/external-links')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -162,25 +163,29 @@ const config = {
             // title: 'Apps',
             items: [
               {
-                label: 'Trade',
-                href: '#'
+                label: 'Twitter',
+                href: CHROMATIC_LINKS.twitter
               },
               {
-                label: 'Pools',
-                href: '#'
+                label: 'Discord',
+                href: CHROMATIC_LINKS.discord
+              },
+              {
+                label: 'Medium',
+                href: CHROMATIC_LINKS.medium
               }
             ]
           },
           {
-            title: 'Community',
+            title: 'Apps',
             items: [
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/chromatic-protocol'
+                label: 'Trade',
+                href: CHROMATIC_LINKS.appTrade
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/chromatic-protocol'
+                label: 'Pool',
+                href: CHROMATIC_LINKS.appPool
               }
             ]
           },
@@ -188,25 +193,29 @@ const config = {
             title: 'Articles',
             items: [
               {
-                label: 'Blog',
-                to: '/'
+                label: 'Gitbook',
+                href: CHROMATIC_LINKS.gitbook
               },
               {
                 label: 'Medium',
-                href: 'https://medium.com/chromatic-protocol'
+                href: CHROMATIC_LINKS.medium
               }
             ]
           },
           {
-            title: 'Github',
+            title: 'Developers',
             items: [
               {
-                label: 'frontend',
-                href: 'https://github.com/'
+                label: 'Github',
+                href: CHROMATIC_LINKS.github
               },
               {
-                label: 'contracts',
-                href: 'https://github.com/'
+                label: 'Contracts',
+                href: CHROMATIC_LINKS.githubContracts
+              },
+              {
+                label: 'SDK',
+                href: CHROMATIC_LINKS.githubSDK
               }
             ]
           }

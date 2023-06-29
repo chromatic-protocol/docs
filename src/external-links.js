@@ -3,7 +3,6 @@ const CHROMATIC_LINKS = {
   medium: 'https://medium.com/@chromatic-protocol',
   gitbook: 'https://chromatic-finance.gitbook.io/chromatic-protocol',
   twitter: 'https://twitter.com/chromatic-protocol',
-  discord: 'https://github.com', // FIXME
   github: 'https://github.com/chromatic-protocol',
   githubContracts: 'https://github.com/chromatic-protocol/contracts',
   githubSDK: 'https://github.com/chromatic-protocol/sdk',

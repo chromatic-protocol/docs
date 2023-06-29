@@ -92,7 +92,7 @@ const config = {
               {
                 label: 'Github',
                 description: 'external link to github',
-                href: 'https://github.com',
+                href: CHROMATIC_LINKS.github,
                 icon: 'github'
               },
               {
@@ -120,19 +120,19 @@ const config = {
               {
                 label: 'Twitter',
                 description: 'external link to twitter',
-                href: 'https://twitter.com',
+                href: CHROMATIC_LINKS.twitter,
                 icon: 'twitter'
               },
               {
                 label: 'Gitbook',
                 description: 'external link to gitbook',
-                href: 'https://gitbook.com',
+                href: CHROMATIC_LINKS.gitbook,
                 icon: 'gitbook'
               },
               {
                 label: 'Medium',
                 description: 'external link to medium',
-                href: 'https://Medium.com',
+                href: CHROMATIC_LINKS.medium,
                 icon: 'medium'
               }
             ]

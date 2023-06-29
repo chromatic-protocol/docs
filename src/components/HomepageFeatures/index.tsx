@@ -47,7 +47,7 @@ const FeatureList: FeatureItem[] = [
   }
 ]
 
-function Feature({ title, Svg, description }: FeatureItem) {
+function Feature({ title, image, description }: FeatureItem) {
   const { isDarkTheme } = useColorMode()
   return (
     <div className={`flex justify-between items-end gap-24 ${styles.feature}`}>

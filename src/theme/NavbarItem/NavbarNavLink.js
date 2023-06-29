@@ -1,5 +1,4 @@
 import Link from '@docusaurus/Link'
-import isInternalUrl from '@docusaurus/isInternalUrl'
 import { isRegexpStringMatch, useColorMode } from '@docusaurus/theme-common'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import React from 'react'
@@ -15,6 +14,7 @@ export default function NavbarNavLink({
   html,
   icon, // customized, See Svgs
   description, // customized (type: string)
+  isButton, // customized (type: boolean)
   isDropdownLink,
   prependBaseUrlToHref,
   ...props
@@ -24,7 +24,8 @@ export default function NavbarNavLink({
   const toUrl = useBaseUrl(to)
   const activeBaseUrl = useBaseUrl(activeBasePath)
   const normalizedHref = useBaseUrl(href, { forcePrependBaseUrl: true })
-  const isExternalLink = label && href && !isInternalUrl(href)
+  // const isExternalLink = label && href && !isInternalUrl(href)
+
   const { isDarkTheme } = useColorMode()
   // Link content is set through html XOR label
   const Svg = Svgs[icon]
@@ -57,7 +58,12 @@ export default function NavbarNavLink({
       }
   if (href) {
     return (
-      <Link href={prependBaseUrlToHref ? normalizedHref : href} {...props} {...linkContentProps} />
+      <Link
+        href={prependBaseUrlToHref ? normalizedHref : href}
+        {...props}
+        className={isButton ? 'btn btn-black btn-lg' : props.className}
+        {...linkContentProps}
+      />
     )
   }
   return (

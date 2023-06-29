@@ -14,13 +14,13 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name      | Type                  |
-| :-------- | :-------------------- |
+| Name | Type |
+| :------ | :------ |
 | `_client` | [`Client`](Client.md) |
 
 #### Defined in
 
-[entities/ChromaticLens.ts:35](https://github.com/chromatic-protocol/sdk/blob/b12d4c9/src/entities/ChromaticLens.ts#L35)
+[entities/ChromaticLens.ts:35](https://github.com/chromatic-protocol/sdk/blob/692619a/src/entities/ChromaticLens.ts#L35)
 
 ## Methods
 
@@ -30,10 +30,10 @@ custom_edit_url: null
 
 #### Parameters
 
-| Name            | Type                                                             |
-| :-------------- | :--------------------------------------------------------------- |
-| `marketAddress` | `string`                                                         |
-| `params`        | { `oracleVersion`: `BigNumber` ; `tradingFeeRate`: `number`  }[] |
+| Name | Type |
+| :------ | :------ |
+| `marketAddress` | `string` |
+| `params` | { `oracleVersion`: `BigNumber` ; `tradingFeeRate`: `number`  }[] |
 
 #### Returns
 
@@ -41,7 +41,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[entities/ChromaticLens.ts:121](https://github.com/chromatic-protocol/sdk/blob/b12d4c9/src/entities/ChromaticLens.ts#L121)
+[entities/ChromaticLens.ts:121](https://github.com/chromatic-protocol/sdk/blob/692619a/src/entities/ChromaticLens.ts#L121)
 
 ___
 
@@ -53,13 +53,13 @@ ___
 
 `Object`
 
-| Name   | Type            |
-| :----- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `lens` | `ChromaticLens` |
 
 #### Defined in
 
-[entities/ChromaticLens.ts:44](https://github.com/chromatic-protocol/sdk/blob/b12d4c9/src/entities/ChromaticLens.ts#L44)
+[entities/ChromaticLens.ts:44](https://github.com/chromatic-protocol/sdk/blob/692619a/src/entities/ChromaticLens.ts#L44)
 
 ___
 
@@ -71,8 +71,8 @@ liquidity bins
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `marketAddress` | `string` |
 
 #### Returns
@@ -81,7 +81,7 @@ liquidity bins
 
 #### Defined in
 
-[entities/ChromaticLens.ts:55](https://github.com/chromatic-protocol/sdk/blob/b12d4c9/src/entities/ChromaticLens.ts#L55)
+[entities/ChromaticLens.ts:55](https://github.com/chromatic-protocol/sdk/blob/692619a/src/entities/ChromaticLens.ts#L55)
 
 ___
 
@@ -91,10 +91,10 @@ ___
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `marketAddress` | `string` |
-| `owner?`        | `string` |
+| `owner?` | `string` |
 
 #### Returns
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticLens.ts:154](https://github.com/chromatic-protocol/sdk/blob/b12d4c9/src/entities/ChromaticLens.ts#L154)
+[entities/ChromaticLens.ts:154](https://github.com/chromatic-protocol/sdk/blob/692619a/src/entities/ChromaticLens.ts#L154)
 
 ___
 
@@ -112,8 +112,8 @@ ___
 
 #### Parameters
 
-| Name            | Type     |
-| :-------------- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `marketAddress` | `string` |
 | `ownerAddress?` | `string` |
 
@@ -123,4 +123,4 @@ ___
 
 #### Defined in
 
-[entities/ChromaticLens.ts:75](https://github.com/chromatic-protocol/sdk/blob/b12d4c9/src/entities/ChromaticLens.ts#L75)
+[entities/ChromaticLens.ts:75](https://github.com/chromatic-protocol/sdk/blob/692619a/src/entities/ChromaticLens.ts#L75)

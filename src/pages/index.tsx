@@ -42,7 +42,7 @@ function HomepageTop() {
   return (
     <>
       <section className="bg-white">
-        <article className="h-[100vh] text-center article">
+        <article className="h-[calc(100vh-90px)] text-center article">
           <div className="wrapper">
             <h1 className="text-[100px]">DERIVATIVE</h1>
             <p className="text-xl uppercase ">

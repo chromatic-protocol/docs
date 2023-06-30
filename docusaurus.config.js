@@ -160,19 +160,6 @@ const config = {
         },
         links: [
           {
-            // title: 'Apps',
-            items: [
-              {
-                label: 'Twitter',
-                href: CHROMATIC_LINKS.twitter
-              },
-              {
-                label: 'Medium',
-                href: CHROMATIC_LINKS.medium
-              }
-            ]
-          },
-          {
             title: 'Apps',
             items: [
               {
@@ -195,6 +182,10 @@ const config = {
               {
                 label: 'Medium',
                 href: CHROMATIC_LINKS.medium
+              },
+              {
+                label: 'Twitter',
+                href: CHROMATIC_LINKS.twitter
               }
             ]
           },

@@ -45,12 +45,12 @@ export const theme = {
       '4xl': ['36px', '40px']
     },
     fontWeight: {
-      light: 200,
-      normal: 300,
-      medium: 400,
-      semibold: 500,
-      bold: 600,
-      extrabold: 700
+      light: 300,
+      normal: 400,
+      medium: 500,
+      semibold: 600,
+      bold: 700,
+      extrabold: 800
     },
     animation: {
       'spin-slow': 'spin 3s linear infinite'

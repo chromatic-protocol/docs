@@ -94,17 +94,21 @@
 /* Footer */
 .footer {
   @apply font-mono font-medium py-20;
+  @apply flex items-center justify-center;
+  .wrapper {
+    @apply w-full max-w-[1360px] px-10;
+  }
   .footer__col {
-    @apply w-[16%];
-    &:first-child {
-      @apply min-w-[32%];
-    }
+    @apply max-w-[260px];
   }
   .footer__title {
     @apply h-5 font-bold text-lg font-mono text-white mb-10 mt-1;
   }
   .footer__items {
     @apply flex flex-col gap-6;
+  }
+  .footer__links {
+    @apply flex w-full justify-end;
   }
   .footer__link-item {
     @apply text-white text-base;

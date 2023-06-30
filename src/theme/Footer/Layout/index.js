@@ -7,14 +7,14 @@ export default function FooterLayout({ style, links, logo, copyright }) {
         'bg-black': style === 'dark'
       })}
     >
-      <div className="container relative container-fluid">
+      <div className="flex justify-between wrapper gap-[200px] container-fluid">
         {/* {(logo || copyright) && (
           <div className="footer__bottom text--center">
             {logo && <div className="margin-bottom--sm">{logo}</div>}
             {copyright}
           </div>
         )} */}
-        {logo && <div className="absolute top-0 left-0 footer-logo">{logo}</div>}
+        {logo && <div className="footer-logo">{logo}</div>}
         {links}
       </div>
     </footer>

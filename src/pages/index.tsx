@@ -1,10 +1,12 @@
 import Link from '@docusaurus/Link'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
+import { Stage } from '@pixi/react'
+import { ChromaticText } from '@site/src/components/ChromaticText'
+
 import HomepageFeatures from '@site/src/components/HomepageFeatures'
+import { Svgs } from '@site/static/img/icons/Svgs'
 import Layout from '@theme/Layout'
 import React from 'react'
-
-import { Svgs } from '@site/static/img/icons/Svgs'
 
 import { CHROMATIC_LINKS } from '../external-links'
 
@@ -36,6 +38,8 @@ function IconArrowButton({ label, icon, to = '', href = '', dark = false, ...pro
   )
 }
 
+const texts = ['DERIVATIVE', 'PERFETUAL', 'FUTURE', 'CHROMATIC']
+
 function HomepageTop() {
   const { siteConfig } = useDocusaurusContext()
   const { chromaticHeader: Svg } = Svgs
@@ -44,7 +48,19 @@ function HomepageTop() {
       <section className="bg-white">
         <article className="h-[calc(100vh-90px)] text-center article">
           <div className="wrapper">
-            <h1 className="text-[100px]">DERIVATIVE</h1>
+            {/* <h1 className="text-[100px]">DERIVATIVE</h1> */}
+            <Stage
+              width={1200}
+              height={180}
+              options={{
+                autoDensity: true,
+                backgroundColor: 0xffffff,
+                backgroundAlpha: 0
+              }}
+            >
+              <ChromaticText texts={texts} y={0} />
+            </Stage>
+
             <p className="text-xl uppercase ">
               decentralized perpetual futures protocol built on top of Arbitrum
             </p>

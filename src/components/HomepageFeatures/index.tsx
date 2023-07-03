@@ -50,9 +50,9 @@ function Feature({ title, Svg, description }: FeatureItem) {
       <div className="">
         <Svg className="w-auto" fill={isDarkTheme ? '#ffffff' : '#000000'} role="img" />
       </div>
-      <div className="">
-        <h4 className="sub-title max-w-[620px] mb-16">{title}</h4>
-        <p className="mb-2 text-lg text-black/40">{description}</p>
+      <div className="max-w-[650px]">
+        <h4 className="mb-16 sub-title">{title}</h4>
+        <p className="mb-2 text-lg text-black/40 max-w-[550px]">{description}</p>
       </div>
     </div>
   )

@@ -24,7 +24,7 @@ Creates an instance of ChromaticRouter.
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:43](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticRouter.ts#L43)
+[entities/ChromaticRouter.ts:43](https://github.com/chromatic-protocol/sdk/blob/6602637/src/entities/ChromaticRouter.ts#L43)
 
 ## Methods
 
@@ -50,7 +50,7 @@ A promise that resolves to the transaction receipt of the liquidity additions.
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:169](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticRouter.ts#L169)
+[entities/ChromaticRouter.ts:178](https://github.com/chromatic-protocol/sdk/blob/6602637/src/entities/ChromaticRouter.ts#L178)
 
 ___
 
@@ -76,7 +76,7 @@ A promise that resolves to the transaction receipt of the liquidity addition.
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:146](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticRouter.ts#L146)
+[entities/ChromaticRouter.ts:152](https://github.com/chromatic-protocol/sdk/blob/6602637/src/entities/ChromaticRouter.ts#L152)
 
 ___
 
@@ -100,7 +100,7 @@ A promise that resolves to a boolean indicating whether the approval was success
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:107](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticRouter.ts#L107)
+[entities/ChromaticRouter.ts:113](https://github.com/chromatic-protocol/sdk/blob/6602637/src/entities/ChromaticRouter.ts#L113)
 
 ___
 
@@ -124,7 +124,7 @@ A promise that resolves to a boolean indicating whether the approval was success
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:125](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticRouter.ts#L125)
+[entities/ChromaticRouter.ts:131](https://github.com/chromatic-protocol/sdk/blob/6602637/src/entities/ChromaticRouter.ts#L131)
 
 ___
 
@@ -149,7 +149,7 @@ A promise that resolves to the transaction receipt of the liquidity positions cl
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:278](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticRouter.ts#L278)
+[entities/ChromaticRouter.ts:292](https://github.com/chromatic-protocol/sdk/blob/6602637/src/entities/ChromaticRouter.ts#L292)
 
 ___
 
@@ -174,7 +174,7 @@ A promise that resolves to the transaction receipt of the liquidity position cla
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:259](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticRouter.ts#L259)
+[entities/ChromaticRouter.ts:277](https://github.com/chromatic-protocol/sdk/blob/6602637/src/entities/ChromaticRouter.ts#L277)
 
 ___
 
@@ -199,7 +199,7 @@ A promise that resolves to the transaction receipt of the position claiming.
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:97](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticRouter.ts#L97)
+[entities/ChromaticRouter.ts:101](https://github.com/chromatic-protocol/sdk/blob/6602637/src/entities/ChromaticRouter.ts#L101)
 
 ___
 
@@ -224,7 +224,7 @@ A promise that resolves to the transaction receipt of the position closing.
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:86](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticRouter.ts#L86)
+[entities/ChromaticRouter.ts:88](https://github.com/chromatic-protocol/sdk/blob/6602637/src/entities/ChromaticRouter.ts#L88)
 
 ___
 
@@ -246,7 +246,7 @@ A contract instance for the ChromaticRouter.
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:49](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticRouter.ts#L49)
+[entities/ChromaticRouter.ts:49](https://github.com/chromatic-protocol/sdk/blob/6602637/src/entities/ChromaticRouter.ts#L49)
 
 ___
 
@@ -271,7 +271,7 @@ A promise that resolves to the transaction receipt of the position opening.
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:66](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticRouter.ts#L66)
+[entities/ChromaticRouter.ts:66](https://github.com/chromatic-protocol/sdk/blob/6602637/src/entities/ChromaticRouter.ts#L66)
 
 ___
 
@@ -297,7 +297,7 @@ A promise that resolves to the transaction receipt of the liquidity removals.
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:221](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticRouter.ts#L221)
+[entities/ChromaticRouter.ts:236](https://github.com/chromatic-protocol/sdk/blob/6602637/src/entities/ChromaticRouter.ts#L236)
 
 ___
 
@@ -322,7 +322,7 @@ A promise that resolves to the transaction receipt of the liquidity removal.
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:198](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticRouter.ts#L198)
+[entities/ChromaticRouter.ts:210](https://github.com/chromatic-protocol/sdk/blob/6602637/src/entities/ChromaticRouter.ts#L210)
 
 ___
 
@@ -347,7 +347,7 @@ A promise that resolves to the transaction receipt of the liquidity positions wi
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:302](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticRouter.ts#L302)
+[entities/ChromaticRouter.ts:320](https://github.com/chromatic-protocol/sdk/blob/6602637/src/entities/ChromaticRouter.ts#L320)
 
 ___
 
@@ -362,7 +362,7 @@ Withdraws a liquidity position from the specified market.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `marketAddress` | `string` | The address of the Chromatic Market contract. |
-| `receiptId` | `any` | The ID of the liquidity position to withdraw. |
+| `receiptId` | `BigNumberish` | The ID of the liquidity position to withdraw. |
 
 #### Returns
 
@@ -372,4 +372,4 @@ A promise that resolves to the transaction receipt of the liquidity position wit
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:289](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticRouter.ts#L289)
+[entities/ChromaticRouter.ts:305](https://github.com/chromatic-protocol/sdk/blob/6602637/src/entities/ChromaticRouter.ts#L305)

@@ -8,13 +8,23 @@ custom_edit_url: null
 
 ## Variables
 
+### errorSignitures
+
+• `Const` **errorSignitures**: `ErrorSignatures`
+
+#### Defined in
+
+[utils/helpers.ts:86](https://github.com/chromatic-protocol/sdk/blob/6602637/src/utils/helpers.ts#L86)
+
+___
+
 ### logger
 
 • `Const` **logger**: `any`
 
 #### Defined in
 
-[utils/helpers.ts:5](https://github.com/chromatic-protocol/sdk/blob/e183082/src/utils/helpers.ts#L5)
+[utils/helpers.ts:17](https://github.com/chromatic-protocol/sdk/blob/6602637/src/utils/helpers.ts#L17)
 
 ## Functions
 
@@ -40,7 +50,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[utils/helpers.ts:21](https://github.com/chromatic-protocol/sdk/blob/e183082/src/utils/helpers.ts#L21)
+[utils/helpers.ts:33](https://github.com/chromatic-protocol/sdk/blob/6602637/src/utils/helpers.ts#L33)
 
 ___
 
@@ -60,7 +70,7 @@ ___
 
 #### Defined in
 
-[utils/helpers.ts:7](https://github.com/chromatic-protocol/sdk/blob/e183082/src/utils/helpers.ts#L7)
+[utils/helpers.ts:19](https://github.com/chromatic-protocol/sdk/blob/6602637/src/utils/helpers.ts#L19)
 
 ___
 
@@ -81,4 +91,31 @@ ___
 
 #### Defined in
 
-[utils/helpers.ts:15](https://github.com/chromatic-protocol/sdk/blob/e183082/src/utils/helpers.ts#L15)
+[utils/helpers.ts:27](https://github.com/chromatic-protocol/sdk/blob/6602637/src/utils/helpers.ts#L27)
+
+___
+
+### handleBytesError
+
+▸ **handleBytesError**<`T`\>(`fn`, `provider`): `Promise`<`T`\>
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `fn` | () => `Promise`<`T`\> |
+| `provider` | `Provider` |
+
+#### Returns
+
+`Promise`<`T`\>
+
+#### Defined in
+
+[utils/helpers.ts:43](https://github.com/chromatic-protocol/sdk/blob/6602637/src/utils/helpers.ts#L43)

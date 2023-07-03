@@ -6,22 +6,38 @@ sidebar_position: 0
 custom_edit_url: null
 ---
 
+A client for interacting with the Chromatic protocol on a specific chain.
+
 ## Constructors
 
 ### constructor
 
 • **new Client**(`chainName`, `signerOrProvider`)
 
+Creates a new instance of the Client class.
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `chainName` | `string` |
-| `signerOrProvider` | `Signer` \| `Provider` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `chainName` | `string` | The name of the chain. |
+| `signerOrProvider` | `Signer` \| `Provider` | The signer or provider object. |
 
 #### Defined in
 
-[Client.ts:43](https://github.com/chromatic-protocol/sdk/blob/e183082/src/Client.ts#L43)
+[Client.ts:24](https://github.com/chromatic-protocol/sdk/blob/6602637/src/Client.ts#L24)
+
+## Properties
+
+### chainName
+
+• **chainName**: `string`
+
+The name of the chain.
+
+#### Defined in
+
+[Client.ts:24](https://github.com/chromatic-protocol/sdk/blob/6602637/src/Client.ts#L24)
 
 ## Accessors
 
@@ -29,29 +45,15 @@ custom_edit_url: null
 
 • `get` **provider**(): `Provider`
 
+The provider associated with the client.
+
 #### Returns
 
 `Provider`
 
 #### Defined in
 
-[Client.ts:22](https://github.com/chromatic-protocol/sdk/blob/e183082/src/Client.ts#L22)
-
-• `set` **provider**(`provider`): `void`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `provider` | `Provider` |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-[Client.ts:39](https://github.com/chromatic-protocol/sdk/blob/e183082/src/Client.ts#L39)
+[Client.ts:38](https://github.com/chromatic-protocol/sdk/blob/6602637/src/Client.ts#L38)
 
 ___
 
@@ -59,29 +61,15 @@ ___
 
 • `get` **signer**(): `Signer`
 
+The signer associated with the client.
+
 #### Returns
 
 `Signer`
 
 #### Defined in
 
-[Client.ts:18](https://github.com/chromatic-protocol/sdk/blob/e183082/src/Client.ts#L18)
-
-• `set` **signer**(`signer`): `void`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `signer` | `Signer` |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-[Client.ts:36](https://github.com/chromatic-protocol/sdk/blob/e183082/src/Client.ts#L36)
+[Client.ts:31](https://github.com/chromatic-protocol/sdk/blob/6602637/src/Client.ts#L31)
 
 ## Methods
 
@@ -89,27 +77,17 @@ ___
 
 ▸ **account**(): [`ChromaticAccount`](ChromaticAccount.md)
 
+Creates a new instance of the ChromaticAccount class.
+
 #### Returns
 
 [`ChromaticAccount`](ChromaticAccount.md)
 
-#### Defined in
-
-[Client.ts:74](https://github.com/chromatic-protocol/sdk/blob/e183082/src/Client.ts#L74)
-
-___
-
-### contracts
-
-▸ **contracts**(): `Record`<`string`, `Contract`\>
-
-#### Returns
-
-`Record`<`string`, `Contract`\>
+An instance of the ChromaticAccount class.
 
 #### Defined in
 
-[Client.ts:78](https://github.com/chromatic-protocol/sdk/blob/e183082/src/Client.ts#L78)
+[Client.ts:101](https://github.com/chromatic-protocol/sdk/blob/6602637/src/Client.ts#L101)
 
 ___
 
@@ -117,13 +95,17 @@ ___
 
 ▸ **lens**(): [`ChromaticLens`](ChromaticLens.md)
 
+Creates a new instance of the ChromaticLens class.
+
 #### Returns
 
 [`ChromaticLens`](ChromaticLens.md)
 
+An instance of the ChromaticLens class.
+
 #### Defined in
 
-[Client.ts:54](https://github.com/chromatic-protocol/sdk/blob/e183082/src/Client.ts#L54)
+[Client.ts:61](https://github.com/chromatic-protocol/sdk/blob/6602637/src/Client.ts#L61)
 
 ___
 
@@ -131,13 +113,17 @@ ___
 
 ▸ **market**(): [`ChromaticMarket`](ChromaticMarket.md)
 
+Creates a new instance of the ChromaticMarket class.
+
 #### Returns
 
 [`ChromaticMarket`](ChromaticMarket.md)
 
+An instance of the ChromaticMarket class.
+
 #### Defined in
 
-[Client.ts:62](https://github.com/chromatic-protocol/sdk/blob/e183082/src/Client.ts#L62)
+[Client.ts:77](https://github.com/chromatic-protocol/sdk/blob/6602637/src/Client.ts#L77)
 
 ___
 
@@ -145,13 +131,17 @@ ___
 
 ▸ **marketFactory**(): [`ChromaticMarketFactory`](ChromaticMarketFactory.md)
 
+Creates a new instance of the ChromaticMarketFactory class.
+
 #### Returns
 
 [`ChromaticMarketFactory`](ChromaticMarketFactory.md)
 
+An instance of the ChromaticMarketFactory class.
+
 #### Defined in
 
-[Client.ts:58](https://github.com/chromatic-protocol/sdk/blob/e183082/src/Client.ts#L58)
+[Client.ts:69](https://github.com/chromatic-protocol/sdk/blob/6602637/src/Client.ts#L69)
 
 ___
 
@@ -159,13 +149,17 @@ ___
 
 ▸ **position**(): [`ChromaticPosition`](ChromaticPosition.md)
 
+Creates a new instance of the ChromaticPosition class.
+
 #### Returns
 
 [`ChromaticPosition`](ChromaticPosition.md)
 
+An instance of the ChromaticPosition class.
+
 #### Defined in
 
-[Client.ts:66](https://github.com/chromatic-protocol/sdk/blob/e183082/src/Client.ts#L66)
+[Client.ts:85](https://github.com/chromatic-protocol/sdk/blob/6602637/src/Client.ts#L85)
 
 ___
 
@@ -173,13 +167,17 @@ ___
 
 ▸ **router**(): [`ChromaticRouter`](ChromaticRouter.md)
 
+Creates a new instance of the ChromaticRouter class.
+
 #### Returns
 
 [`ChromaticRouter`](ChromaticRouter.md)
 
+An instance of the ChromaticRouter class.
+
 #### Defined in
 
-[Client.ts:70](https://github.com/chromatic-protocol/sdk/blob/e183082/src/Client.ts#L70)
+[Client.ts:93](https://github.com/chromatic-protocol/sdk/blob/6602637/src/Client.ts#L93)
 
 ___
 
@@ -187,11 +185,13 @@ ___
 
 ▸ **setSignerOrProvider**(`signerOrProvider`): `void`
 
+Sets the signer or provider for the client.
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `signerOrProvider` | `Signer` \| `Provider` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `signerOrProvider` | `Signer` \| `Provider` | The signer or provider object. |
 
 #### Returns
 
@@ -199,4 +199,4 @@ ___
 
 #### Defined in
 
-[Client.ts:26](https://github.com/chromatic-protocol/sdk/blob/e183082/src/Client.ts#L26)
+[Client.ts:46](https://github.com/chromatic-protocol/sdk/blob/6602637/src/Client.ts#L46)

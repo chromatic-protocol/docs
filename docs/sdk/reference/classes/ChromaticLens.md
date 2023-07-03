@@ -6,21 +6,25 @@ sidebar_position: 0
 custom_edit_url: null
 ---
 
+A class representing Chromatic Lens, which provides access to liquidity-related functions.
+
 ## Constructors
 
 ### constructor
 
 • **new ChromaticLens**(`_client`)
 
+Creates a new instance of ChromaticLens.
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_client` | [`Client`](Client.md) |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `_client` | [`Client`](Client.md) | The Chromatic Client instance. |
 
 #### Defined in
 
-[entities/ChromaticLens.ts:35](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticLens.ts#L35)
+[entities/ChromaticLens.ts:50](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticLens.ts#L50)
 
 ## Methods
 
@@ -28,20 +32,24 @@ custom_edit_url: null
 
 ▸ **claimableLiquidities**(`marketAddress`, `params`): `Promise`<[`ClaimableLiquidityResult`](../interfaces/ClaimableLiquidityResult.md)[]\>
 
+Retrieves the claimable liquidities for a given market and parameters.
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `marketAddress` | `string` |
-| `params` | { `oracleVersion`: `BigNumber` ; `tradingFeeRate`: `number`  }[] |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `marketAddress` | `string` | The address of the Chromatic Market contract. |
+| `params` | { `oracleVersion`: `BigNumber` ; `tradingFeeRate`: `number`  }[] | An array of objects containing tradingFeeRate and oracleVersion. |
 
 #### Returns
 
 `Promise`<[`ClaimableLiquidityResult`](../interfaces/ClaimableLiquidityResult.md)[]\>
 
+A promise that resolves to an array of ClaimableLiquidityResult.
+
 #### Defined in
 
-[entities/ChromaticLens.ts:121](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticLens.ts#L121)
+[entities/ChromaticLens.ts:152](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticLens.ts#L152)
 
 ___
 
@@ -49,9 +57,13 @@ ___
 
 ▸ **contracts**(): `Object`
 
+Retrieves the ChromaticLens contract.
+
 #### Returns
 
 `Object`
+
+The ChromaticLens contract.
 
 | Name | Type |
 | :------ | :------ |
@@ -59,7 +71,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticLens.ts:44](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticLens.ts#L44)
+[entities/ChromaticLens.ts:63](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticLens.ts#L63)
 
 ___
 
@@ -67,21 +79,23 @@ ___
 
 ▸ **liquidityBins**(`marketAddress`): `Promise`<[`LiquidityBinResult`](../interfaces/LiquidityBinResult.md)[]\>
 
-liquidity bins
+Retrieves the liquidity bins for a given market.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `marketAddress` | `string` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `marketAddress` | `string` | The address of the Chromatic Market contract. |
 
 #### Returns
 
 `Promise`<[`LiquidityBinResult`](../interfaces/LiquidityBinResult.md)[]\>
 
+A promise that resolves to an array of LiquidityBinResult.
+
 #### Defined in
 
-[entities/ChromaticLens.ts:55](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticLens.ts#L55)
+[entities/ChromaticLens.ts:74](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticLens.ts#L74)
 
 ___
 
@@ -89,20 +103,24 @@ ___
 
 ▸ **lpReceipts**(`marketAddress`, `owner?`): `Promise`<`LpReceiptStructOutput`[]\>
 
+Retrieves the LP receipts for a given market and owner.
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `marketAddress` | `string` |
-| `owner?` | `string` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `marketAddress` | `string` | The address of the Chromatic Market contract. |
+| `owner?` | `string` | The address of the LP owner. |
 
 #### Returns
 
 `Promise`<`LpReceiptStructOutput`[]\>
 
+A promise that resolves to the LP receipts.
+
 #### Defined in
 
-[entities/ChromaticLens.ts:154](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticLens.ts#L154)
+[entities/ChromaticLens.ts:191](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticLens.ts#L191)
 
 ___
 
@@ -110,17 +128,21 @@ ___
 
 ▸ **ownedLiquidityBins**(`marketAddress`, `ownerAddress?`): `Promise`<[`OwnedLiquidityBinResult`](../interfaces/OwnedLiquidityBinResult.md)[]\>
 
+Retrieves the owned liquidity bins for a given market and owner.
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `marketAddress` | `string` |
-| `ownerAddress?` | `string` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `marketAddress` | `string` | The address of the Chromatic Market contract. |
+| `ownerAddress?` | `string` | The address of the liquidity owner. |
 
 #### Returns
 
 `Promise`<[`OwnedLiquidityBinResult`](../interfaces/OwnedLiquidityBinResult.md)[]\>
 
+A promise that resolves to an array of OwnedLiquidityBinResult.
+
 #### Defined in
 
-[entities/ChromaticLens.ts:75](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticLens.ts#L75)
+[entities/ChromaticLens.ts:100](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticLens.ts#L100)

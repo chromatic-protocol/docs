@@ -24,7 +24,7 @@ Creates a new instance of ChromaticMarket.
 
 #### Defined in
 
-[entities/ChromaticMarket.ts:21](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticMarket.ts#L21)
+[entities/ChromaticMarket.ts:21](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticMarket.ts#L21)
 
 ## Methods
 
@@ -48,7 +48,7 @@ A promise that resolves to the CLB token instance.
 
 #### Defined in
 
-[entities/ChromaticMarket.ts:54](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticMarket.ts#L54)
+[entities/ChromaticMarket.ts:54](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticMarket.ts#L54)
 
 ___
 
@@ -73,7 +73,7 @@ A promise that resolves to the CLB token metadata.
 
 #### Defined in
 
-[entities/ChromaticMarket.ts:67](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticMarket.ts#L67)
+[entities/ChromaticMarket.ts:67](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticMarket.ts#L67)
 
 ___
 
@@ -95,7 +95,7 @@ An object containing the contract instances.
 
 #### Defined in
 
-[entities/ChromaticMarket.ts:27](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticMarket.ts#L27)
+[entities/ChromaticMarket.ts:27](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticMarket.ts#L27)
 
 ___
 
@@ -119,7 +119,7 @@ A promise that resolves to the current price.
 
 #### Defined in
 
-[entities/ChromaticMarket.ts:102](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticMarket.ts#L102)
+[entities/ChromaticMarket.ts:102](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticMarket.ts#L102)
 
 ___
 
@@ -143,7 +143,7 @@ A promise that resolves to an array of market addresses and their corresponding 
 
 #### Defined in
 
-[entities/ChromaticMarket.ts:121](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticMarket.ts#L121)
+[entities/ChromaticMarket.ts:121](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticMarket.ts#L121)
 
 ___
 
@@ -167,7 +167,7 @@ A promise that resolves to the market name.
 
 #### Defined in
 
-[entities/ChromaticMarket.ts:112](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticMarket.ts#L112)
+[entities/ChromaticMarket.ts:112](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticMarket.ts#L112)
 
 ___
 
@@ -191,7 +191,7 @@ A promise that resolves to the OracleProvider contract instance.
 
 #### Defined in
 
-[entities/ChromaticMarket.ts:88](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticMarket.ts#L88)
+[entities/ChromaticMarket.ts:88](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticMarket.ts#L88)
 
 ___
 
@@ -215,4 +215,4 @@ A promise that resolves to the settlement token instance.
 
 #### Defined in
 
-[entities/ChromaticMarket.ts:42](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticMarket.ts#L42)
+[entities/ChromaticMarket.ts:42](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticMarket.ts#L42)

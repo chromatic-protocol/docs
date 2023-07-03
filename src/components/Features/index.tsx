@@ -1,5 +1,4 @@
 import { useColorMode } from '@docusaurus/theme-common'
-import clsx from 'clsx'
 import React from 'react'
 import styles from './styles.module.css'
 import TypingEffect from '../TypingEffect'
@@ -45,13 +44,13 @@ const FeatureList: FeatureItem[] = [
 ]
 
 function Feature({ title, Svg, description }: FeatureItem) {
-  const { isDarkTheme } = useColorMode()
+  const { colorMode } = useColorMode()
   return (
     <div
       className={`flex lg:justify-between lg:items-end gap-24 flex-col-reverse lg:flex-row px-4 lg:px-0 ${styles.feature}`}
     >
       <div className="">
-        <Svg className="max-w-full" fill={isDarkTheme ? '#ffffff' : '#000000'} role="img" />
+        <Svg className="max-w-full" fill={colorMode === "dark" ? '#ffffff' : '#000000'} role="img" />
       </div>
       <div className="text-left">
         <h4 className="sub-title lg:hidden max-w-[560px]">{title}</h4>
@@ -64,21 +63,15 @@ function Feature({ title, Svg, description }: FeatureItem) {
   )
 }
 
-export default function HomepageFeatures(): JSX.Element {
+export default function Features(): JSX.Element {
   return (
-    <>
-      <section className="bg-white pt-[160px]">
-        <article className="article">
-          <div className="wrapper">
-            <h2 className="title mb-[120px]">about chromatic</h2>
-            <div className="flex flex-col gap-[220px]">
-              {FeatureList.map((props, idx) => (
-                <Feature key={idx} {...props} />
-              ))}
-            </div>
-          </div>
-        </article>
-      </section>
-    </>
+    <div className="wrapper">
+      <h2 className="title mb-[120px]">about chromatic</h2>
+      <div className="flex flex-col gap-[220px]">
+        {FeatureList.map((props, idx) => (
+          <Feature key={idx} {...props} />
+        ))}
+      </div>
+    </div>
   )
 }

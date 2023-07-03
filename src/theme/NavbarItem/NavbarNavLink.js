@@ -26,7 +26,7 @@ export default function NavbarNavLink({
   const normalizedHref = useBaseUrl(href, { forcePrependBaseUrl: true })
   // const isExternalLink = label && href && !isInternalUrl(href)
 
-  const { isDarkTheme } = useColorMode()
+  const { colorMode } = useColorMode()
   // Link content is set through html XOR label
   const Svg = Svgs[icon]
   const linkContentProps = html
@@ -38,7 +38,7 @@ export default function NavbarNavLink({
               {icon && Svg && (
                 <div>
                   <Svg
-                    fill={isDarkTheme ? '#ffffff' : '#000000'}
+                    fill={colorMode === 'dark' ? '#ffffff' : '#000000'}
                     role="img"
                     src={useBaseUrl(icon)}
                   />

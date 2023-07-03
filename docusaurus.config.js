@@ -1,9 +1,28 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
+require('dotenv').config()
 
 const lightCodeTheme = require('prism-react-renderer/themes/github')
 const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 const { CHROMATIC_LINKS } = require('./src/external-links')
+
+const PUBLISHING_TARGET = {
+  PREVIEW: {
+    // GitHub pages deployment config.
+    // If you aren't using GitHub pages, you don't need these.
+    url: 'https://chromatic-protocol.github.io/',
+    baseUrl: '/docs-preview/',
+    organizationName: '@chromatic-protocol', // Usually your GitHub org/user name.
+    projectName: 'chromatic-protocol' // Usually your repo name.
+  },
+  PUBLIC: {
+    url: 'https://chromatic.finance/',
+    baseUrl: '/'
+  }
+}
+
+const TARET_CONFIG = PUBLISHING_TARGET[process.env.TARGET ?? 'PREVIEW']
+console.log('TARET_CONFIG:', TARET_CONFIG)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -11,16 +30,7 @@ const config = {
   tagline: 'Documentation and Guides',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://chromatic-protocol.github.io/',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docs-preview/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: '@chromatic-protocol', // Usually your GitHub org/user name.
-  projectName: 'chromatic-protocol', // Usually your repo name.
+  ...TARET_CONFIG,
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',

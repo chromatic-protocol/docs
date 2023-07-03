@@ -6,21 +6,25 @@ sidebar_position: 0
 custom_edit_url: null
 ---
 
+Represents a Chromatic Account and provides methods to interact with it.
+
 ## Constructors
 
 ### constructor
 
 • **new ChromaticAccount**(`_client`)
 
+Creates a new instance of ChromaticAccount.
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_client` | [`Client`](Client.md) |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `_client` | [`Client`](Client.md) | The Chromatic Client instance. |
 
 #### Defined in
 
-[entities/ChromaticAccount.ts:11](https://github.com/chromatic-protocol/sdk/blob/692619a/src/entities/ChromaticAccount.ts#L11)
+[entities/ChromaticAccount.ts:21](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticAccount.ts#L21)
 
 ## Methods
 
@@ -28,20 +32,24 @@ custom_edit_url: null
 
 ▸ **balance**(`token`, `accountAddress?`): `Promise`<`BigNumber`\>
 
+Retrieves the balance of a specific token in the Chromatic Account.
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `token` | `string` |
-| `accountAddress?` | `string` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `token` | `string` | The address of the token. |
+| `accountAddress?` | `string` | The address of the account (optional). |
 
 #### Returns
 
 `Promise`<`BigNumber`\>
 
+A promise that resolves to the balance of the token.
+
 #### Defined in
 
-[entities/ChromaticAccount.ts:37](https://github.com/chromatic-protocol/sdk/blob/692619a/src/entities/ChromaticAccount.ts#L37)
+[entities/ChromaticAccount.ts:70](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticAccount.ts#L70)
 
 ___
 
@@ -49,20 +57,24 @@ ___
 
 ▸ **balances**(`tokens`, `accountAddress?`): `Promise`<[`TokenBalancesResult`](../interfaces/TokenBalancesResult.md)[]\>
 
+Retrieves the balances of multiple tokens in the Chromatic Account.
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `tokens` | `string`[] |
-| `accountAddress?` | `string` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `tokens` | `string`[] | An array of token addresses. |
+| `accountAddress?` | `string` | The address of the account (optional). |
 
 #### Returns
 
 `Promise`<[`TokenBalancesResult`](../interfaces/TokenBalancesResult.md)[]\>
 
+A promise that resolves to an array of TokenBalancesResult objects.
+
 #### Defined in
 
-[entities/ChromaticAccount.ts:44](https://github.com/chromatic-protocol/sdk/blob/692619a/src/entities/ChromaticAccount.ts#L44)
+[entities/ChromaticAccount.ts:83](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticAccount.ts#L83)
 
 ___
 
@@ -70,9 +82,13 @@ ___
 
 ▸ **contracts**(): `Object`
 
+Retrieves the contract instances associated with the Chromatic Account.
+
 #### Returns
 
 `Object`
+
+An object containing the contract instances.
 
 | Name | Type |
 | :------ | :------ |
@@ -81,7 +97,7 @@ ___
 
 #### Defined in
 
-[entities/ChromaticAccount.ts:15](https://github.com/chromatic-protocol/sdk/blob/692619a/src/entities/ChromaticAccount.ts#L15)
+[entities/ChromaticAccount.ts:27](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticAccount.ts#L27)
 
 ___
 
@@ -89,33 +105,35 @@ ___
 
 ▸ **createAccount**(): `Promise`<`ContractReceipt`\>
 
+Creates a new Chromatic Account.
+
 #### Returns
 
 `Promise`<`ContractReceipt`\>
 
+A promise that resolves to the transaction receipt of the account creation.
+
 #### Defined in
 
-[entities/ChromaticAccount.ts:22](https://github.com/chromatic-protocol/sdk/blob/692619a/src/entities/ChromaticAccount.ts#L22)
+[entities/ChromaticAccount.ts:39](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticAccount.ts#L39)
 
 ___
 
 ### getAccount
 
-▸ **getAccount**(`signer?`): `Promise`<`string`\>
+▸ **getAccount**(): `Promise`<`string`\>
 
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `signer?` | `Signer` |
+Retrieves the current Chromatic Account.
 
 #### Returns
 
 `Promise`<`string`\>
 
+A promise that resolves to the Chromatic Account details.
+
 #### Defined in
 
-[entities/ChromaticAccount.ts:27](https://github.com/chromatic-protocol/sdk/blob/692619a/src/entities/ChromaticAccount.ts#L27)
+[entities/ChromaticAccount.ts:48](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticAccount.ts#L48)
 
 ___
 
@@ -123,17 +141,21 @@ ___
 
 ▸ **getPositionIds**(`marketAddress`, `accountAddress?`): `Promise`<`BigNumber`[]\>
 
+Retrieves the position IDs associated with a specific market.
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `marketAddress` | `string` |
-| `accountAddress?` | `string` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `marketAddress` | `string` | The address of the market. |
+| `accountAddress?` | `string` | The address of the account (optional). |
 
 #### Returns
 
 `Promise`<`BigNumber`[]\>
 
+A promise that resolves to an array of position IDs.
+
 #### Defined in
 
-[entities/ChromaticAccount.ts:31](https://github.com/chromatic-protocol/sdk/blob/692619a/src/entities/ChromaticAccount.ts#L31)
+[entities/ChromaticAccount.ts:58](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticAccount.ts#L58)

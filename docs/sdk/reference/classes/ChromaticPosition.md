@@ -6,21 +6,25 @@ sidebar_position: 0
 custom_edit_url: null
 ---
 
+Represents a Chromatic position and provides methods to interact with it.
+
 ## Constructors
 
 ### constructor
 
-• **new ChromaticPosition**(`client`)
+• **new ChromaticPosition**(`_client`)
+
+Creates a new instance of ChromaticPosition.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `client` | [`Client`](Client.md) |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `_client` | [`Client`](Client.md) | The Chromatic Client instance. |
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:43](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticPosition.ts#L43)
+[entities/ChromaticPosition.ts:56](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticPosition.ts#L56)
 
 ## Methods
 
@@ -28,9 +32,13 @@ custom_edit_url: null
 
 ▸ **contracts**(): `Object`
 
+Retrieves the contract instances associated with Chromatic Position.
+
 #### Returns
 
 `Object`
+
+An object containing the contract instances of Lens, Market, and Market Factory.
 
 | Name | Type |
 | :------ | :------ |
@@ -40,48 +48,56 @@ custom_edit_url: null
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:47](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticPosition.ts#L47)
+[entities/ChromaticPosition.ts:62](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticPosition.ts#L62)
 
 ___
 
-### getBpsRecords
+### getInterest
 
-▸ **getBpsRecords**(`marketAddress`): `Promise`<`any`\>
+▸ **getInterest**(`marketAddress`, `position`): `Promise`<`BigNumber`\>
 
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `marketAddress` | `string` |
-
-#### Returns
-
-`Promise`<`any`\>
-
-#### Defined in
-
-[entities/ChromaticPosition.ts:86](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticPosition.ts#L86)
-
-___
-
-### getInterestFee
-
-▸ **getInterestFee**(`marketAddress`, `position`): `Promise`<`BigNumber`\>
+Retrieves the interest for a position in the specified market.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `marketAddress` | `string` |
-| `position` | `InterestFeeParam` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `marketAddress` | `string` | The address of the Chromatic Market contract. |
+| `position` | `InterestParam` | The position parameters. |
 
 #### Returns
 
 `Promise`<`BigNumber`\>
 
+A promise that resolves to the interest.
+
 #### Defined in
 
-[entities/ChromaticPosition.ts:100](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticPosition.ts#L100)
+[entities/ChromaticPosition.ts:133](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticPosition.ts#L133)
+
+___
+
+### getInterestRateRecords
+
+▸ **getInterestRateRecords**(`marketAddress`): `Promise`<`RecordStructOutput`[]\>
+
+Retrieves the interest rate records for the specified market address.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `marketAddress` | `string` | The address of the Chromatic Market contract. |
+
+#### Returns
+
+`Promise`<`RecordStructOutput`[]\>
+
+A promise that resolves to an array of interest rate records.
+
+#### Defined in
+
+[entities/ChromaticPosition.ts:113](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticPosition.ts#L113)
 
 ___
 
@@ -89,22 +105,26 @@ ___
 
 ▸ **getLiquidationPrice**(`marketAddress`, `entryPrice`, `position`, `oraclePriceDecimals`): `Promise`<{ `lossCutPrice`: `BigNumber` ; `profitStopPrice`: `BigNumber`  }\>
 
+Calculates the liquidation price for a position in the specified market.
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `marketAddress` | `string` |
-| `entryPrice` | `BigNumber` |
-| `position` | [`PositionParam`](../interfaces/PositionParam.md) |
-| `oraclePriceDecimals` | `number` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `marketAddress` | `string` | The address of the Chromatic Market contract. |
+| `entryPrice` | `BigNumber` | The entry price of the position. |
+| `position` | [`PositionParam`](../interfaces/PositionParam.md) | The position parameters. |
+| `oraclePriceDecimals` | `number` | The number of decimals used for the oracle price. |
 
 #### Returns
 
 `Promise`<{ `lossCutPrice`: `BigNumber` ; `profitStopPrice`: `BigNumber`  }\>
 
+A promise that resolves to an object containing the profit stop price and loss cut price.
+
 #### Defined in
 
-[entities/ChromaticPosition.ts:147](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticPosition.ts#L147)
+[entities/ChromaticPosition.ts:197](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticPosition.ts#L197)
 
 ___
 
@@ -112,24 +132,28 @@ ___
 
 ▸ **getPnl**(`marketAddress`, `entryPrice`, `exitPrice`, `position`, `options?`): `Promise`<`BigNumber`\>
 
+Calculates the profit and loss (PNL) for a position in the specified market.
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `marketAddress` | `string` |
-| `entryPrice` | `BigNumber` |
-| `exitPrice` | `BigNumber` |
-| `position` | [`PositionParam`](../interfaces/PositionParam.md) |
-| `options` | `Object` |
-| `options.includeInterestFee` | `boolean` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `marketAddress` | `string` | The address of the Chromatic Market contract. |
+| `entryPrice` | `BigNumber` | The entry price of the position. |
+| `exitPrice` | `BigNumber` | The exit price of the position. |
+| `position` | [`PositionParam`](../interfaces/PositionParam.md) | The position parameters. |
+| `options` | `Object` | Optional parameters for PNL calculation. |
+| `options.includeInterestFee` | `boolean` | - |
 
 #### Returns
 
 `Promise`<`BigNumber`\>
 
+A promise that resolves to the PNL value.
+
 #### Defined in
 
-[entities/ChromaticPosition.ts:129](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticPosition.ts#L129)
+[entities/ChromaticPosition.ts:171](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticPosition.ts#L171)
 
 ___
 
@@ -137,20 +161,24 @@ ___
 
 ▸ **getPositions**(`marketAddress`, `positionIds`): `Promise`<[`IPosition`](../interfaces/IPosition.md)[]\>
 
+Retrieves positions from the Chromatic Market contract.
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `marketAddress` | `string` |
-| `positionIds` | `BigNumberish`[] |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `marketAddress` | `string` | The address of the Chromatic Market contract. |
+| `positionIds` | `BigNumberish`[] | An array of position IDs. |
 
 #### Returns
 
 `Promise`<[`IPosition`](../interfaces/IPosition.md)[]\>
 
+A promise that resolves to an array of positions.
+
 #### Defined in
 
-[entities/ChromaticPosition.ts:54](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticPosition.ts#L54)
+[entities/ChromaticPosition.ts:76](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticPosition.ts#L76)
 
 ___
 
@@ -158,22 +186,26 @@ ___
 
 ▸ **lossCutPrice**(`marketAddress`, `entryPrice`, `position`, `oraclePriceDecimals`): `Promise`<`BigNumber`\>
 
+Calculates the loss cut price for a position in the specified market.
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `marketAddress` | `string` |
-| `entryPrice` | `BigNumber` |
-| `position` | [`PositionParam`](../interfaces/PositionParam.md) |
-| `oraclePriceDecimals` | `number` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `marketAddress` | `string` | The address of the Chromatic Market contract. |
+| `entryPrice` | `BigNumber` | The entry price of the position. |
+| `position` | [`PositionParam`](../interfaces/PositionParam.md) | The position parameters. |
+| `oraclePriceDecimals` | `number` | The number of decimals used for the oracle price. |
 
 #### Returns
 
 `Promise`<`BigNumber`\>
 
+A promise that resolves to the loss cut price.
+
 #### Defined in
 
-[entities/ChromaticPosition.ts:208](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticPosition.ts#L208)
+[entities/ChromaticPosition.ts:283](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticPosition.ts#L283)
 
 ___
 
@@ -181,19 +213,23 @@ ___
 
 ▸ **profitStopPrice**(`marketAddress`, `entryPrice`, `position`, `oraclePriceDecimals`): `Promise`<`BigNumber`\>
 
+Calculates the profit stop price for a position in the specified market.
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `marketAddress` | `string` |
-| `entryPrice` | `BigNumber` |
-| `position` | [`PositionParam`](../interfaces/PositionParam.md) |
-| `oraclePriceDecimals` | `number` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `marketAddress` | `string` | The address of the Chromatic Market contract. |
+| `entryPrice` | `BigNumber` | The entry price of the position. |
+| `position` | [`PositionParam`](../interfaces/PositionParam.md) | The position parameters. |
+| `oraclePriceDecimals` | `number` | The number of decimals used for the oracle price. |
 
 #### Returns
 
 `Promise`<`BigNumber`\>
 
+A promise that resolves to the profit stop price.
+
 #### Defined in
 
-[entities/ChromaticPosition.ts:191](https://github.com/chromatic-protocol/sdk/blob/07584ba/src/entities/ChromaticPosition.ts#L191)
+[entities/ChromaticPosition.ts:258](https://github.com/chromatic-protocol/sdk/blob/e183082/src/entities/ChromaticPosition.ts#L258)

@@ -78,8 +78,8 @@ function HomepageTop() {
               </div>
             </div>
             <div>
-              <p className="mb-20 text-xl uppercase text-white/30">
-                first properly designed decentralized perpetual futures protocol introducing
+              <p className="mb-20 text-xl text-white/30">
+                First properly designed decentralized perpetual futures protocol introducing
                 pioneering features of partitioned LP and dynamic fees for balanced maker-taker
                 equilibrium.
               </p>

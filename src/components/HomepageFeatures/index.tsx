@@ -47,12 +47,14 @@ const FeatureList: FeatureItem[] = [
 function Feature({ title, Svg, description }: FeatureItem) {
   const { isDarkTheme } = useColorMode()
   return (
-    <div className={`flex justify-between items-end gap-24 ${styles.feature}`}>
+    <div
+      className={`flex lg:justify-between lg:items-end gap-24 flex-col-reverse lg:flex-row px-4 lg:px-0 ${styles.feature}`}
+    >
       <div className="">
         <Svg className="max-w-full" fill={isDarkTheme ? '#ffffff' : '#000000'} role="img" />
       </div>
-      <div className="">
-        <h4 className="sub-title lg:hidden">{title}</h4>
+      <div className="text-left">
+        <h4 className="sub-title lg:hidden max-w-[560px]">{title}</h4>
         <div className="h-[120px] hidden lg:block lg:w-[560px]">
           <TypingEffect text={title} delay={60} className="sub-title" />
         </div>

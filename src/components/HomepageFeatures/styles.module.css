@@ -6,7 +6,7 @@
 }
 
 .feature:nth-child(2n) {
-  @apply flex-row-reverse;
+  @apply lg:flex-row-reverse;
 }
 
 .featureSvg {

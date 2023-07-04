@@ -51,14 +51,14 @@ function HomepageTop() {
             {/* <h1 className="text-[100px]">DERIVATIVE</h1> */}
             <Stage
               width={1200}
-              height={180}
+              height={200}
               options={{
                 autoDensity: true,
                 backgroundColor: 0xffffff,
                 backgroundAlpha: 0
               }}
             >
-              <ChromaticText texts={texts} y={0} />
+              <ChromaticText texts={texts} y={0} width={1200} height={200} />
             </Stage>
 
             <p className="text-xl uppercase ">

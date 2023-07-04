@@ -1,6 +1,7 @@
 import { Graphics, Text, useTick } from '@pixi/react'
 import { ITextStyle, TextStyle } from 'pixi.js'
 import React, { useCallback, useEffect, useRef, useState } from 'react'
+import { easing } from 'ts-easing'
 
 export type VerticalRectsMaskProps = {
   width: number // per rect
@@ -15,8 +16,9 @@ export type VerticalRectsMaskProps = {
 export type VerticalTextProps = {
   text: string
   x: number
+  pauseX: number
+  outX: number
   y?: number
-  move?: number
   maskProps: VerticalRectsMaskProps
   textStyles?: Partial<ITextStyle>
 }
@@ -47,16 +49,27 @@ function getRects(
 }
 
 export const VerticalText = (props: VerticalTextProps) => {
-  const { text, x, maskProps, textStyles } = props
+  const { text, x, maskProps, textStyles, pauseX, outX } = props
   const y = props.y ?? 0
-  const move = props.move ?? 0
   const mask: any = useRef(undefined)
   const [X, setX] = useState(x)
+  const [elapsed, setElapsed] = useState(0)
+
   useTick((delta) => {
-    setX(X + move)
+    setElapsed(elapsed + delta * 50)
+    if (elapsed < 1000) {
+      const currentX = x + (pauseX - x) * easing.outQuart(elapsed / 1000)
+      setX(currentX)
+    } else if (elapsed > 10000 && elapsed < 2500) {
+      // stay
+    } else if (elapsed >= 2500) {
+      const currentX = pauseX + (outX - pauseX) * easing.inQuart((elapsed - 2000) / 1000)
+      setX(currentX)
+    }
   })
   useEffect(() => {
     setX(x)
+    setElapsed(0)
   }, [text, x])
 
   const { width, height, start, rate, baseWidth, showCycle, showMod } = maskProps
@@ -80,17 +93,17 @@ export const VerticalText = (props: VerticalTextProps) => {
     <>
       <Text
         text={text}
-        // anchor={{ x: 0, y: 0 }}
+        anchor={{ x: 0.5, y: 0 }}
         x={X}
         y={y}
         mask={mask.current}
         style={
           new TextStyle({
             align: 'left',
-            textBaseline: 'bottom',
-            fontFamily: '"Source Sans Pro", Helvetica, sans-serif',
-            fontSize: 180,
-            fontWeight: 'normal',
+            textBaseline: 'alphabetic',
+            fontFamily: '"Source Code Pro", Helvetica, sans-serif',
+            fontSize: 140,
+            fontWeight: 'bold',
             fill: '#000000',
             stroke: '#01d27e',
             ...textStyles

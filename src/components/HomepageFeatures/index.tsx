@@ -2,6 +2,7 @@ import { useColorMode } from '@docusaurus/theme-common'
 import clsx from 'clsx'
 import React from 'react'
 import styles from './styles.module.css'
+import TypingEffect from '../TypingEffect'
 
 type FeatureItem = {
   title: string
@@ -48,11 +49,14 @@ function Feature({ title, Svg, description }: FeatureItem) {
   return (
     <div className={`flex justify-between items-end gap-24 ${styles.feature}`}>
       <div className="">
-        <Svg className="w-auto" fill={isDarkTheme ? '#ffffff' : '#000000'} role="img" />
+        <Svg className="max-w-full" fill={isDarkTheme ? '#ffffff' : '#000000'} role="img" />
       </div>
-      <div className="max-w-[650px]">
-        <h4 className="mb-16 sub-title">{title}</h4>
-        <p className="mb-2 text-lg text-black/40 max-w-[550px]">{description}</p>
+      <div className="">
+        <h4 className="sub-title lg:hidden">{title}</h4>
+        <div className="h-[120px] hidden lg:block lg:w-[560px]">
+          <TypingEffect text={title} delay={60} className="sub-title" />
+        </div>
+        <p className="mt-16 mb-2 text-lg text-black/40 max-w-[550px]">{description}</p>
       </div>
     </div>
   )

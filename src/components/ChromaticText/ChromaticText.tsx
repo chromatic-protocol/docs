@@ -4,23 +4,26 @@ import { VerticalText } from './VerticalText'
 export type ChromaticTextProps = {
   texts: string[]
   textInterval?: number
+  width: number
+  height: number
   y?: number
 }
 
-function prepareParameters(n: number, width: number, speed: number, y: number) {
+function prepareParameters(n: number, maskWidth: number, width: number, y: number) {
   return [...Array(n)].map((_, i) => {
-    const x = -width + (i * width) / n
+    const x = -maskWidth + (i * maskWidth) / n - i * (width / 2)
     return {
-      x: x,
-      y: y,
-      move: -x * speed
+      x: x + width / 2,
+      pauseX: width / 2,
+      outX: width,
+      y: y
     }
   })
 }
 
 export const ChromaticText = (props: ChromaticTextProps) => {
-  const { texts } = props
-  const textInterval = props.textInterval ?? 1000
+  const { texts, width, height } = props
+  const textInterval = props.textInterval ?? 2000
 
   const [text, setText] = useState(texts[0])
   const i = useRef(0)
@@ -34,11 +37,11 @@ export const ChromaticText = (props: ChromaticTextProps) => {
       clearInterval(interval)
     }
   }, [texts])
-  const parameters = prepareParameters(5, 40, 0.015, props.y ?? 0)
+  const parameters = prepareParameters(5, 40, width, props.y ?? 0)
 
   const common = {
-    width: 1200,
-    height: 180,
+    width: width,
+    height: height,
     rate: 1,
     baseWidth: 28,
     showCycle: parameters.length

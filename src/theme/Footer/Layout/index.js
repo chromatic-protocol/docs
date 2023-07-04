@@ -1,8 +1,6 @@
 import React from 'react'
 import clsx from 'clsx'
 export default function FooterLayout({ style, links, logo, copyright }) {
-  // FIXME: REMOVE THIS
-  return null
   return (
     <footer
       className={clsx('footer', {

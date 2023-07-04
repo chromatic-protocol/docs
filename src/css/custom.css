@@ -39,7 +39,7 @@
 }
 
 .btn {
-  @apply font-mono font-semibold inline-flex items-center justify-center rounded-full h-[38px] hover:no-underline;
+  @apply font-mono font-semibold inline-flex items-center justify-center rounded-full hover:no-underline;
   @apply px-5;
   &.btn-black {
     @apply bg-black text-white;
@@ -52,8 +52,8 @@
     @apply bg-transparent border border-solid border-white/30 text-white fill-white;
     @apply hover:bg-white hover:text-black hover:fill-black transition-colors;
   }
-  &.btn-lg {
-    @apply h-[48px];
+  &.btn-base {
+    @apply h-[38px];
   }
 }
 

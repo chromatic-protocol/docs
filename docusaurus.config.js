@@ -149,7 +149,7 @@ const config = {
           },
           // launch app
           {
-            href: 'https://github.com/facebook/chromatic-protocol',
+            href: CHROMATIC_LINKS.app,
             label: 'Launch App',
             isButton: true,
             style: { marginLeft: '40px', width: '168px' },

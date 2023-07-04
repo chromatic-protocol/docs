@@ -67,6 +67,10 @@ export default function NavbarNavLink({
             : props.className
         }
         {...linkContentProps}
+        style={{
+          backgroundColor: isButton ? (colorMode === 'dark' ? '#ffffff' : '#000000') : undefined,
+          color: isButton ? (colorMode === 'dark' ? '#000000' : '#ffffff') : undefined
+        }}
       />
     )
   }

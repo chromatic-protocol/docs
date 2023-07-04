@@ -45,19 +45,25 @@ const FeatureList: FeatureItem[] = [
 
 function Feature({ title, Svg, description }: FeatureItem) {
   const { colorMode } = useColorMode()
+  const isDarkMode = colorMode === 'dark'
   return (
     <div
       className={`flex lg:justify-between lg:items-end gap-24 flex-col-reverse lg:flex-row px-4 lg:px-0 ${styles.feature}`}
     >
       <div className="">
-        <Svg className="max-w-full" fill={colorMode === "dark" ? '#ffffff' : '#000000'} role="img" />
+        <Svg
+          className="w-auto"
+          fill={isDarkMode ? '#ffffff' : '#000000'}
+          role="img"
+          filter={isDarkMode && 'invert(1)'}
+        />
       </div>
       <div className="text-left">
         <h4 className="sub-title lg:hidden max-w-[560px]">{title}</h4>
         <div className="h-[120px] hidden lg:block lg:w-[560px]">
           <TypingEffect text={title} delay={60} className="sub-title" />
         </div>
-        <p className="mt-16 mb-2 text-lg text-black/40 max-w-[550px]">{description}</p>
+        <p className="mt-16 mb-2 text-lg max-w-[550px]">{description}</p>
       </div>
     </div>
   )
@@ -65,13 +71,17 @@ function Feature({ title, Svg, description }: FeatureItem) {
 
 export default function Features(): JSX.Element {
   return (
-    <div className="wrapper">
-      <h2 className="title mb-[120px]">about chromatic</h2>
-      <div className="flex flex-col gap-[220px]">
-        {FeatureList.map((props, idx) => (
-          <Feature key={idx} {...props} />
-        ))}
-      </div>
-    </div>
+    <section className="pt-[160px]">
+      <article className="article">
+        <div className="wrapper">
+          <h2 className="title mb-[120px]">about chromatic</h2>
+          <div className="flex flex-col gap-[220px]">
+            {FeatureList.map((props, idx) => (
+              <Feature key={idx} {...props} />
+            ))}
+          </div>
+        </div>
+      </article>
+    </section>
   )
 }

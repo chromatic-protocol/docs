@@ -1,21 +1,19 @@
+import React from 'react'
 import Link from '@docusaurus/Link'
+import { Svgs } from '@site/static/img/icons/Svgs'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import { Stage } from '@pixi/react'
 import { ChromaticText } from '@site/src/components/ChromaticText'
 
-import { Svgs } from '@site/static/img/icons/Svgs'
 import Layout from '@theme/Layout'
-import React, { useEffect, useMemo, useRef, useState } from 'react'
 
-import { CHROMATIC_LINKS } from '../external-links'
 import Features from '@site/src/components/Features'
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import useGradient from '../hooks'
+import Trigger from '@site/src/components/Trigger'
 
-function Background({ color }: { color: string }) {
-  const style = { backgroundColor: color, zIndex: -1, height: '100vh', width: '100vw' }
-  return <div style={style} />
-}
+import { useScrollPosition } from '@site/src/hooks/useScroll'
+import { useColorMode } from '@docusaurus/theme-common'
+
+import { CHROMATIC_LINKS } from '@site/src/external-links'
 
 function IconArrowButton({ label, icon, to = '', href = '', dark = false, ...props }) {
   const Svg = Svgs[icon]
@@ -80,18 +78,20 @@ function Intro() {
 
 function StartingGuide() {
   const { chromaticHeader: Svg } = Svgs
+  const { colorMode } = useColorMode()
+
   return (
-    <section className="text-white pb-[180px]">
+    <section className="pb-[180px]">
       <article className="h-[100vh] text-center article">
         <div className="flex flex-col justify-between gap-12 md:gap-28 wrapper">
           <div className="">
             <p className="text-lg md:text-[40px] uppercase mb-8 md:mb-12">See the future on</p>
             <div className="max-w-[910px] mx-auto px-4">
-              <Svg fill="#fff" role="img" alt="CHROMATIC" />
+              <Svg fill={colorMode === 'dark' ? '#FFFFFF' : '#000000'} role="img" />
             </div>
           </div>
           <div>
-            <p className="mb-20 text-lg text-white/30">
+            <p className="mb-20 text-xl">
               First properly designed decentralized perpetual futures protocol introducing
               pioneering features of partitioned LP and dynamic fees for balanced maker-taker
               equilibrium.
@@ -190,45 +190,47 @@ function Article() {
   )
 }
 
+function Contents() {
+  const triggerProps = useScrollPosition()
+
+  const { colorMode, setColorMode } = useColorMode()
+
+  function setMode(type: typeof colorMode) {
+    return () => {
+      setColorMode(type)
+    }
+  }
+
+  return (
+    <main className="font-mono landing-page">
+      <Intro />
+      <Trigger
+        onUp={setMode('light')}
+        onDown={setMode('dark')}
+        offset={'-20vh'}
+        {...triggerProps}
+      />
+      <StartingGuide />
+      <Trigger
+        onUp={setMode('dark')}
+        onDown={setMode('light')}
+        offset={'-25vh'}
+        {...triggerProps}
+      />
+      <Features />
+      <Article />
+    </main>
+  )
+}
+
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext()
-
-  const ref = useRef(null)
-
-  const PAGES = 11
-
-  const { main, sub } = useGradient({
-    ref,
-    color: { main: '#ffffff', sub: '#000000' },
-    map: [{ start: 1.5, end: 5 }],
-    offset: 0.5
-  })
-
-  // const alignCenter = { display: 'flex', alignItems: 'center' }
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <main className="font-mono landing-page bg-grey">
-        <Parallax pages={PAGES} ref={ref}>
-          <ParallaxLayer offset={0}>
-            <Intro />
-          </ParallaxLayer>
-          <ParallaxLayer offset={1}>
-            <StartingGuide />
-          </ParallaxLayer>
-          <ParallaxLayer offset={5}>
-            <FeatureList />
-          </ParallaxLayer>
-          <ParallaxLayer sticky={{ start: 10, end: 11 }}>
-            <Article />
-          </ParallaxLayer>
-          <ParallaxLayer sticky={{ start: 0, end: 11 }}>
-            <Background color={main} />
-          </ParallaxLayer>
-        </Parallax>
-      </main>
+      <Contents />
     </Layout>
   )
 }

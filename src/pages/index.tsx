@@ -15,7 +15,7 @@ function IconArrowButton({ label, icon, to = '', href = '', dark = false, ...pro
 
   return (
     <Link
-      className={`btn w-[225px] lg:w-[240px] !h-12 !px-4 
+      className={`btn w-[240px] md:w-[225px] lg:w-[240px] !h-12 !px-4 
       ${dark ? 'btn-black-line' : 'btn-white-line'}`}
       to={to}
       href={href}
@@ -49,17 +49,21 @@ function HomepageTop() {
         <article className="h-[calc(100vh-90px)] text-center article">
           <div className="wrapper">
             {/* <h1 className="text-[100px]">DERIVATIVE</h1> */}
-            <Stage
-              width={1200}
-              height={200}
-              options={{
-                autoDensity: true,
-                backgroundColor: 0xffffff,
-                backgroundAlpha: 0
-              }}
-            >
-              <ChromaticText texts={texts} y={0} width={1200} height={200} />
-            </Stage>
+            {/* todo: mobile view */}
+            <div className="flex items-center w-full overflow-hidden ">
+              <Stage
+                width={1200}
+                height={200}
+                className="flex-auto h-auto max-w-full"
+                options={{
+                  autoDensity: true,
+                  backgroundColor: 0xffffff,
+                  backgroundAlpha: 0
+                }}
+              >
+                <ChromaticText texts={texts} y={0} width={1200} height={200} />
+              </Stage>
+            </div>
 
             <p className="text-xl uppercase ">
               decentralized perpetual futures protocol built on top of Arbitrum
@@ -70,20 +74,20 @@ function HomepageTop() {
 
       <section className="text-white bg-black pb-[180px]">
         <article className="h-[100vh] text-center article">
-          <div className="flex flex-col justify-between gap-28 wrapper">
+          <div className="flex flex-col justify-between gap-12 md:gap-28 wrapper">
             <div className="">
-              <p className="text-[40px] uppercase mb-12">See the future on</p>
-              <div className="max-w-[910px] mx-auto">
-                <Svg fill="#fff" role="img" />
+              <p className="text-lg md:text-[40px] uppercase mb-8 md:mb-12">See the future on</p>
+              <div className="max-w-[910px] mx-auto px-4">
+                <Svg fill="#fff" role="img" alt="CHROMATIC" />
               </div>
             </div>
             <div>
-              <p className="mb-20 text-xl text-white/30">
+              <p className="mb-20 text-lg text-white/30">
                 First properly designed decentralized perpetual futures protocol introducing
                 pioneering features of partitioned LP and dynamic fees for balanced maker-taker
                 equilibrium.
               </p>
-              <div className="flex justify-center gap-10">
+              <div className="flex flex-wrap justify-center gap-5 md:gap-10">
                 <IconArrowButton label="Start trade" href={CHROMATIC_LINKS.app} icon="chromatic" />
                 <IconArrowButton label="Read Medium" href={CHROMATIC_LINKS.medium} icon="medium" />
                 <IconArrowButton
@@ -98,8 +102,8 @@ function HomepageTop() {
         <article className="mt-20 article">
           <div className="wrapper">
             <h2 className="mb-[60px] title">Developement</h2>
-            <div className="flex items-stretch gap-5">
-              <div className="box h-[420px] border-[#333]">
+            <div className="flex flex-wrap items-stretch gap-5 lg:flex-nowrap">
+              <div className="box lg:min-h-[420px] border-[#333]">
                 <div>
                   <h4 className="sub-title">Github</h4>
                   <p className="p">
@@ -115,7 +119,7 @@ function HomepageTop() {
                   />
                 </div>
               </div>
-              <div className="box min-h-[420px] border-[#333]">
+              <div className="box lg:min-h-[420px] border-[#333]">
                 <div>
                   <h4 className="sub-title">SDK</h4>
                   <p className="p">

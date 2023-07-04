@@ -152,7 +152,6 @@ const config = {
             href: CHROMATIC_LINKS.app,
             label: 'Launch App',
             isButton: true,
-            style: { marginLeft: '40px', width: '168px' },
             position: 'right'
           }
         ]

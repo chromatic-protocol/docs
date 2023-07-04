@@ -52,7 +52,7 @@ function Feature({ title, Svg, description }: FeatureItem) {
     >
       <div className="">
         <Svg
-          className="w-auto"
+          className="max-w-full"
           fill={isDarkMode ? '#ffffff' : '#000000'}
           role="img"
           filter={isDarkMode && 'invert(1)'}

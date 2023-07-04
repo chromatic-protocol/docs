@@ -51,9 +51,8 @@ export default function NavbarContent() {
       left={
         // TODO stop hardcoding items?
         <>
-          {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
           <NavbarLogo />
-          <NavbarItems items={leftItems} />
+          {/* <NavbarItems items={leftItems} /> */}
         </>
       }
       right={
@@ -61,6 +60,7 @@ export default function NavbarContent() {
         // Ask the user to add the respective navbar items => more flexible
         <>
           <NavbarItems items={rightItems} />
+          {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
           {/* <NavbarColorModeToggle className={styles.colorModeToggle} />
           {!searchBarItem && (
             <NavbarSearch>

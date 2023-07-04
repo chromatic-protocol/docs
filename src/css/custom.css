@@ -98,6 +98,15 @@
 .navbar__items--right > :last-child {
   @apply px-5;
 }
+.navbar-sidebar {
+  @apply font-mono;
+  .menu__link {
+    @apply py-4 px-6 font-semibold;
+  }
+  .btn-black {
+    @apply !hidden;
+  }
+}
 
 /* Footer */
 .footer {

@@ -87,8 +87,8 @@ const config = {
         // title: 'CHROMATIC',
         logo: {
           alt: 'Chromatic Protocol',
-          src: 'img/chromatic-logo-full-row.svg',
-          srcDark: 'img/chromatic-logo-full-row-white.svg',
+          src: 'img/chromatic-logo-row.svg',
+          srcDark: 'img/chromatic-logo-row-white.svg',
           width: 200,
           height: 'auto'
         },
@@ -128,12 +128,6 @@ const config = {
             position: 'right',
             items: [
               {
-                label: 'Twitter',
-                description: 'external link to twitter',
-                href: CHROMATIC_LINKS.twitter,
-                icon: 'twitter'
-              },
-              {
                 label: 'Gitbook',
                 description: 'external link to gitbook',
                 href: CHROMATIC_LINKS.gitbook,
@@ -147,10 +141,36 @@ const config = {
               }
             ]
           },
+          {
+            type: 'dropdown',
+            label: 'Governance',
+            description: 'for detail explanation', // customized prop
+            position: 'right',
+            items: [
+              {
+                label: 'Twitter',
+                description: 'external link to twitter',
+                href: CHROMATIC_LINKS.twitter,
+                icon: 'twitter'
+              },
+              {
+                label: 'Discord',
+                description: 'external link to gitbook',
+                href: CHROMATIC_LINKS.gitbook,
+                icon: 'discord'
+              },
+              {
+                label: 'Telegram',
+                description: 'external link to medium',
+                href: CHROMATIC_LINKS.medium,
+                icon: 'telegram'
+              }
+            ]
+          },
           // launch app
           {
             href: CHROMATIC_LINKS.app,
-            label: 'Launch App',
+            label: 'Testnet App',
             isButton: true,
             position: 'right'
           }

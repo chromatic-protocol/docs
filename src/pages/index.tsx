@@ -20,17 +20,23 @@ function IconArrowButton({ label, icon, to = '', href = '', dark = false, ...pro
 
   return (
     <Link
-      className={`btn w-[240px] md:w-[225px] lg:w-[240px] !h-12 !px-4 
+      className={`btn w-[240px] md:w-[240px] lg:w-[200px] !h-12 !px-4 
       ${dark ? 'btn-black-line' : 'btn-white-line'}`}
       to={to}
       href={href}
     >
       <div className="flex items-center justify-between w-full">
-        <div className="flex items-center gap-2">
-          <Svg fill="current" role="img" />
+        <div className="flex items-center gap-3 text-lg">
+          <Svg fill="current" role="img" className="w-5 h-5" />
           {label}
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          className="w-5 h-5"
+        >
           <path
             fill="current"
             fillRule="evenodd"
@@ -83,18 +89,20 @@ function StartingGuide() {
   return (
     <section className="pb-[180px]">
       <article className="h-[100vh] text-center article">
-        <div className="flex flex-col justify-between gap-12 md:gap-28 wrapper">
+        <div className="flex flex-col justify-between gap-12 md:gap-14 wrapper">
           <div className="">
-            <p className="text-lg md:text-[40px] uppercase mb-8 md:mb-12">See the future on</p>
+            <p className="mb-8 text-2xl uppercase lg:text-4xl md:mb-12">See the future on</p>
             <div className="max-w-[910px] mx-auto px-4">
               <Svg fill={colorMode === 'dark' ? '#FFFFFF' : '#000000'} role="img" />
             </div>
           </div>
           <div>
-            <p className="mb-20 text-xl">
+            <p className="mb-20 text-xl leading-normal md:max-w-[80%] opacity-50 mx-auto">
               First properly designed decentralized perpetual futures protocol introducing
               pioneering features of partitioned LP and dynamic fees for balanced maker-taker
-              equilibrium.
+              equilibrium. First properly designed decentralized perpetual futures protocol
+              introducing pioneering features of partitioned LP and dynamic fees for balanced
+              maker-taker equilibrium.
             </p>
             <div className="flex flex-wrap justify-center gap-5 md:gap-10">
               <IconArrowButton label="Start trade" href={CHROMATIC_LINKS.app} icon="chromatic" />
@@ -106,7 +114,7 @@ function StartingGuide() {
       </article>
       <article className="mt-20 article">
         <div className="wrapper">
-          <h2 className="mb-[60px] title">Developement</h2>
+          <h2 className="mb-10 title">Developement</h2>
           <div className="flex flex-wrap items-stretch gap-5 lg:flex-nowrap">
             <div className="box lg:min-h-[420px] border-[#333]">
               <div>

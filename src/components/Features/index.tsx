@@ -17,7 +17,9 @@ const FeatureList: FeatureItem[] = [
       <>
         By separating the underlying index and settlement token, Chromatic Protocol enables the
         creation of diverse futures markets. Market creators can combine non- manipulable time
-        series from external.
+        series from external. By separating the underlying index and settlement token, Chromatic
+        Protocol enables the creation of diverse futures markets. Market creators can combine non-
+        manipulable time series from external.
       </>
     )
   },
@@ -26,6 +28,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/feature2.svg').default,
     description: (
       <>
+        Addressing the challenge of trustless payoffs in DeFi, Chromatic Protocol offers contracts
+        for secure and automated execution of payoffs instead of relying on intermediaries.
         Addressing the challenge of trustless payoffs in DeFi, Chromatic Protocol offers contracts
         for secure and automated execution of payoffs instead of relying on intermediaries.
       </>
@@ -37,7 +41,9 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         One-size-fits-all doesn’t scale. In Chromatic protocol, users are in the drivers seat.
-        Chromatic protocol is a minimalist & permission-less protocol designed.
+        Chromatic protocol is a minimalist & permission-less protocol designed. One-size-fits-all
+        doesn’t scale. In Chromatic protocol, users are in the drivers seat. Chromatic protocol is a
+        minimalist & permission-less protocol designed.
       </>
     )
   }
@@ -48,11 +54,11 @@ function Feature({ title, Svg, description }: FeatureItem) {
   const isDarkMode = colorMode === 'dark'
   return (
     <div
-      className={`flex lg:justify-between lg:items-end gap-24 flex-col-reverse lg:flex-row px-4 lg:px-0 ${styles.feature}`}
+      className={`flex lg:justify-between lg:items-center gap-24 flex-col-reverse lg:flex-row px-4 lg:px-0 ${styles.feature}`}
     >
       <div className="">
         <Svg
-          className="max-w-full"
+          className="w-full max-w-[400px]"
           fill={isDarkMode ? '#ffffff' : '#000000'}
           role="img"
           filter={isDarkMode && 'invert(1)'}
@@ -60,10 +66,10 @@ function Feature({ title, Svg, description }: FeatureItem) {
       </div>
       <div className="text-left">
         <h4 className="sub-title lg:hidden max-w-[560px]">{title}</h4>
-        <div className="h-[120px] hidden lg:block lg:w-[560px]">
-          <TypingEffect text={title} delay={60} className="sub-title" />
+        <div className="h-[100px] hidden lg:block lg:w-[560px]">
+          <TypingEffect text={title} delay={38} className="sub-title" />
         </div>
-        <p className="mt-16 mb-2 text-lg max-w-[550px]">{description}</p>
+        <p className="mt-10 mb-2 text-lg max-w-[580px]">{description}</p>
       </div>
     </div>
   )

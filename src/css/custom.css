@@ -45,6 +45,7 @@ html[data-theme='dark'] {
 
 .font-mono {
   @apply tracking-tight;
+  word-spacing: -0.1em;
   /* letter-spacing: -0.26px !important; */
 }
 
@@ -69,20 +70,21 @@ html[data-theme='dark'] {
 
 /* Landing page */
 .landing-page {
-  p {
-    @apply leading-normal;
+  .p {
+    @apply leading-normal text-lg;
   }
   .article {
     @apply flex flex-col items-center justify-center;
   }
   .wrapper {
-    @apply w-full max-w-[1360px] px-4 md:px-10;
+    @apply w-full max-w-[1160px] px-4 md:px-10;
   }
   .title {
-    @apply text-[28px] text-center font-mono font-semibold uppercase leading-normal;
+    @apply text-2xl text-center font-mono font-semibold uppercase opacity-50;
+    letter-spacing: 0.3em !important;
   }
   .sub-title {
-    @apply text-[40px] font-mono font-semibold uppercase leading-normal;
+    @apply text-[40px] font-mono font-bold uppercase leading-[1.25];
   }
   .box {
     @apply pt-8 px-10 pb-10 max-w-full h-auto border border-solid rounded-2xl flex flex-col gap-10 justify-between min-h-max;

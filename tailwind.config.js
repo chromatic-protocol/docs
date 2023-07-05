@@ -35,14 +35,14 @@ export const theme = {
       xl: '4px 4px 60px rgba(229, 229, 229, 0.16)'
     },
     fontSize: {
-      xs: ['10px', '12px'],
-      sm: ['11px', '14px'],
-      base: ['13px', '16px'],
-      lg: ['16px', '20px'],
-      xl: ['20px', '24px'],
-      '2xl': ['24px', '28px'],
-      '3xl': ['28px', '34px'],
-      '4xl': ['36px', '40px']
+      xs: ['10px', 'normal'],
+      sm: ['11px', 'normal'],
+      base: ['12px', 'normal'],
+      lg: ['14px', 'normal'],
+      xl: ['16px', 'normal'],
+      '2xl': ['20px', 'normal'],
+      '3xl': ['24px', 'normal'],
+      '4xl': ['32px', 'normal']
     },
     fontWeight: {
       light: 300,

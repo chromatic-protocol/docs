@@ -1,14 +1,19 @@
+import React from 'react'
 import Link from '@docusaurus/Link'
+import { Svgs } from '@site/static/img/icons/Svgs'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import { Stage } from '@pixi/react'
 import { ChromaticText } from '@site/src/components/ChromaticText'
 
-import HomepageFeatures from '@site/src/components/HomepageFeatures'
-import { Svgs } from '@site/static/img/icons/Svgs'
 import Layout from '@theme/Layout'
-import React from 'react'
 
-import { CHROMATIC_LINKS } from '../external-links'
+import Features from '@site/src/components/Features'
+import Trigger from '@site/src/components/Trigger'
+
+import { useScrollPosition } from '@site/src/hooks/useScroll'
+import { useColorMode } from '@docusaurus/theme-common'
+
+import { CHROMATIC_LINKS } from '@site/src/external-links'
 
 function IconArrowButton({ label, icon, to = '', href = '', dark = false, ...props }) {
   const Svg = Svgs[icon]
@@ -40,118 +45,119 @@ function IconArrowButton({ label, icon, to = '', href = '', dark = false, ...pro
 
 const texts = ['DERIVATIVE', 'PERFETUAL', 'FUTURE', 'CHROMATIC']
 
-function HomepageTop() {
-  const { siteConfig } = useDocusaurusContext()
-  const { chromaticHeader: Svg } = Svgs
+function Intro() {
   return (
-    <>
-      <section className="bg-white">
-        <article className="h-[calc(100vh-90px)] text-center article">
-          <div className="wrapper">
-            {/* <h1 className="text-[100px]">DERIVATIVE</h1> */}
-            {/* todo: mobile view */}
-            <div className="flex items-center w-full overflow-hidden ">
-              <Stage
-                width={1200}
-                height={200}
-                className="flex-auto h-auto max-w-full"
-                options={{
-                  autoDensity: true,
-                  backgroundColor: 0xffffff,
-                  backgroundAlpha: 0
-                }}
-              >
-                <ChromaticText texts={texts} y={0} width={1200} height={200} />
-              </Stage>
-            </div>
+    <section>
+      <article className="h-[calc(100vh-90px)] text-center article">
+        <div className="wrapper">
+          {/* <h1 className="text-[100px]">DERIVATIVE</h1> */}
+          {/* todo: mobile view */}
+          <div className="flex items-center w-full overflow-hidden ">
+            <Stage
+              width={1200}
+              height={200}
+              className="flex-auto h-auto max-w-full"
+              options={{
+                autoDensity: true,
+                backgroundColor: 0xffffff,
+                backgroundAlpha: 0
+              }}
+            >
+              <ChromaticText texts={texts} y={0} width={1200} height={200} />
+            </Stage>
+          </div>
 
-            <p className="text-xl uppercase ">
-              decentralized perpetual futures protocol built on top of Arbitrum
-            </p>
-          </div>
-        </article>
-      </section>
-
-      <section className="text-white bg-black pb-[180px]">
-        <article className="h-[100vh] text-center article">
-          <div className="flex flex-col justify-between gap-12 md:gap-28 wrapper">
-            <div className="">
-              <p className="text-lg md:text-[40px] uppercase mb-8 md:mb-12">See the future on</p>
-              <div className="max-w-[910px] mx-auto px-4">
-                <Svg fill="#fff" role="img" alt="CHROMATIC" />
-              </div>
-            </div>
-            <div>
-              <p className="mb-20 text-lg text-white/30">
-                First properly designed decentralized perpetual futures protocol introducing
-                pioneering features of partitioned LP and dynamic fees for balanced maker-taker
-                equilibrium.
-              </p>
-              <div className="flex flex-wrap justify-center gap-5 md:gap-10">
-                <IconArrowButton label="Start trade" href={CHROMATIC_LINKS.app} icon="chromatic" />
-                <IconArrowButton label="Read Medium" href={CHROMATIC_LINKS.medium} icon="medium" />
-                <IconArrowButton
-                  label="Read Gitbook"
-                  href={CHROMATIC_LINKS.gitbook}
-                  icon="gitbook"
-                />
-              </div>
-            </div>
-          </div>
-        </article>
-        <article className="mt-20 article">
-          <div className="wrapper">
-            <h2 className="mb-[60px] title">Developement</h2>
-            <div className="flex flex-wrap items-stretch gap-5 lg:flex-nowrap">
-              <div className="box lg:min-h-[420px] border-[#333]">
-                <div>
-                  <h4 className="sub-title">Github</h4>
-                  <p className="p">
-                    One-size-fits-all doesn’t scale. In Chromatic protocol, users are in the drivers
-                    seat. Chromatic protocol is a minimalist & permission-less protocol designed.
-                  </p>
-                </div>
-                <div className="btns">
-                  <IconArrowButton
-                    label="View Github"
-                    icon="github"
-                    href={CHROMATIC_LINKS.github}
-                  />
-                </div>
-              </div>
-              <div className="box lg:min-h-[420px] border-[#333]">
-                <div>
-                  <h4 className="sub-title">SDK</h4>
-                  <p className="p">
-                    One-size-fits-all doesn’t scale. In Chromatic protocol, users are in the drivers
-                    seat. Chromatic protocol is a minimalist & permission-less protocol designed.
-                  </p>
-                </div>
-                <div className="btns">
-                  <IconArrowButton
-                    label="View Contract"
-                    icon="github"
-                    href={CHROMATIC_LINKS.githubContracts}
-                  />
-                  <IconArrowButton
-                    label="View SDK"
-                    icon="github"
-                    href={CHROMATIC_LINKS.githubSDK}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-      </section>
-    </>
+          <p className="text-xl uppercase ">
+            decentralized perpetual futures protocol built on top of Arbitrum
+          </p>
+        </div>
+      </article>
+    </section>
   )
 }
 
-function HomepageBottom() {
+function StartingGuide() {
+  const { chromaticHeader: Svg } = Svgs
+  const { colorMode } = useColorMode()
+
+  return (
+    <section className="pb-[180px]">
+      <article className="h-[100vh] text-center article">
+        <div className="flex flex-col justify-between gap-12 md:gap-28 wrapper">
+          <div className="">
+            <p className="text-lg md:text-[40px] uppercase mb-8 md:mb-12">See the future on</p>
+            <div className="max-w-[910px] mx-auto px-4">
+              <Svg fill={colorMode === 'dark' ? '#FFFFFF' : '#000000'} role="img" />
+            </div>
+          </div>
+          <div>
+            <p className="mb-20 text-xl">
+              First properly designed decentralized perpetual futures protocol introducing
+              pioneering features of partitioned LP and dynamic fees for balanced maker-taker
+              equilibrium.
+            </p>
+            <div className="flex flex-wrap justify-center gap-5 md:gap-10">
+              <IconArrowButton label="Start trade" href={CHROMATIC_LINKS.app} icon="chromatic" />
+              <IconArrowButton label="Read Medium" href={CHROMATIC_LINKS.medium} icon="medium" />
+              <IconArrowButton label="Read Gitbook" href={CHROMATIC_LINKS.gitbook} icon="gitbook" />
+            </div>
+          </div>
+        </div>
+      </article>
+      <article className="mt-20 article">
+        <div className="wrapper">
+          <h2 className="mb-[60px] title">Developement</h2>
+          <div className="flex flex-wrap items-stretch gap-5 lg:flex-nowrap">
+            <div className="box lg:min-h-[420px] border-[#333]">
+              <div>
+                <h4 className="sub-title">Github</h4>
+                <p className="p">
+                  One-size-fits-all doesn’t scale. In Chromatic protocol, users are in the drivers
+                  seat. Chromatic protocol is a minimalist & permission-less protocol designed.
+                </p>
+              </div>
+              <div className="btns">
+                <IconArrowButton label="View Github" icon="github" href={CHROMATIC_LINKS.github} />
+              </div>
+            </div>
+            <div className="box lg:min-h-[420px] border-[#333]">
+              <div>
+                <h4 className="sub-title">SDK</h4>
+                <p className="p">
+                  One-size-fits-all doesn’t scale. In Chromatic protocol, users are in the drivers
+                  seat. Chromatic protocol is a minimalist & permission-less protocol designed.
+                </p>
+              </div>
+              <div className="btns">
+                <IconArrowButton
+                  label="View Contract"
+                  icon="github"
+                  href={CHROMATIC_LINKS.githubContracts}
+                />
+                <IconArrowButton label="View SDK" icon="github" href={CHROMATIC_LINKS.githubSDK} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  )
+}
+
+function FeatureList(): JSX.Element {
+  return (
+    <section className="pt-[160px]">
+      <article className="article">
+        <Features />
+      </article>
+    </section>
+  )
+}
+
+function Article() {
   return (
     <>
-      <section className="bg-white pt-[220px] pb-[120px]">
+      <section className="pt-[220px] pb-[120px]">
         <article className="article">
           <div className="wrapper">
             <div className="box border-[#EEE]">
@@ -184,6 +190,39 @@ function HomepageBottom() {
   )
 }
 
+function Contents() {
+  const triggerProps = useScrollPosition()
+
+  const { colorMode, setColorMode } = useColorMode()
+
+  function setMode(type: typeof colorMode) {
+    return () => {
+      setColorMode(type)
+    }
+  }
+
+  return (
+    <main className="font-mono landing-page">
+      <Intro />
+      <Trigger
+        onUp={setMode('light')}
+        onDown={setMode('dark')}
+        offset={'-20vh'}
+        {...triggerProps}
+      />
+      <StartingGuide />
+      <Trigger
+        onUp={setMode('dark')}
+        onDown={setMode('light')}
+        offset={'-25vh'}
+        {...triggerProps}
+      />
+      <Features />
+      <Article />
+    </main>
+  )
+}
+
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext()
   return (
@@ -191,11 +230,7 @@ export default function Home(): JSX.Element {
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <main className="font-mono landing-page">
-        <HomepageTop />
-        <HomepageFeatures />
-        <HomepageBottom />
-      </main>
+      <Contents />
     </Layout>
   )
 }

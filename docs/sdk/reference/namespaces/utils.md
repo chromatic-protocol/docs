@@ -14,7 +14,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[utils/helpers.ts:86](https://github.com/chromatic-protocol/sdk/blob/2c50391/src/utils/helpers.ts#L86)
+[utils/helpers.ts:86](https://github.com/chromatic-protocol/sdk/blob/fbec2a8/src/utils/helpers.ts#L86)
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 #### Defined in
 
-[utils/helpers.ts:17](https://github.com/chromatic-protocol/sdk/blob/2c50391/src/utils/helpers.ts#L17)
+[utils/helpers.ts:17](https://github.com/chromatic-protocol/sdk/blob/fbec2a8/src/utils/helpers.ts#L17)
 
 ## Functions
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[utils/helpers.ts:33](https://github.com/chromatic-protocol/sdk/blob/2c50391/src/utils/helpers.ts#L33)
+[utils/helpers.ts:33](https://github.com/chromatic-protocol/sdk/blob/fbec2a8/src/utils/helpers.ts#L33)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[utils/helpers.ts:19](https://github.com/chromatic-protocol/sdk/blob/2c50391/src/utils/helpers.ts#L19)
+[utils/helpers.ts:19](https://github.com/chromatic-protocol/sdk/blob/fbec2a8/src/utils/helpers.ts#L19)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[utils/helpers.ts:27](https://github.com/chromatic-protocol/sdk/blob/2c50391/src/utils/helpers.ts#L27)
+[utils/helpers.ts:27](https://github.com/chromatic-protocol/sdk/blob/fbec2a8/src/utils/helpers.ts#L27)
 
 ___
 
@@ -118,4 +118,4 @@ ___
 
 #### Defined in
 
-[utils/helpers.ts:43](https://github.com/chromatic-protocol/sdk/blob/2c50391/src/utils/helpers.ts#L43)
+[utils/helpers.ts:43](https://github.com/chromatic-protocol/sdk/blob/fbec2a8/src/utils/helpers.ts#L43)

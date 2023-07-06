@@ -18,13 +18,13 @@ Creates a new instance of ChromaticLens.
 
 #### Parameters
 
-| Name      | Type                  | Description                    |
-| :-------- | :-------------------- | :----------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `_client` | [`Client`](Client.md) | The Chromatic Client instance. |
 
 #### Defined in
 
-[entities/ChromaticLens.ts:50](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L50)
+[entities/ChromaticLens.ts:50](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L50)
 
 ## Methods
 
@@ -36,10 +36,10 @@ Retrieves the claimable liquidities for a given market and parameters.
 
 #### Parameters
 
-| Name            | Type                                                             | Description                                                      |
-| :-------------- | :--------------------------------------------------------------- | :--------------------------------------------------------------- |
-| `marketAddress` | `string`                                                         | The address of the Chromatic Market contract.                    |
-| `params`        | { `oracleVersion`: `BigNumber` ; `tradingFeeRate`: `number`  }[] | An array of objects containing tradingFeeRate and oracleVersion. |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `marketAddress` | `string` | The address of the Chromatic Market contract. |
+| `params` | { `oracleVersion`: `BigNumber` ; `tradingFeeRate`: `number`  }[] | An array of objects containing tradingFeeRate and oracleVersion. |
 
 #### Returns
 
@@ -49,7 +49,7 @@ A promise that resolves to an array of ClaimableLiquidityResult.
 
 #### Defined in
 
-[entities/ChromaticLens.ts:156](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L156)
+[entities/ChromaticLens.ts:156](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L156)
 
 ___
 
@@ -65,13 +65,13 @@ Retrieves the ChromaticLens contract.
 
 The ChromaticLens contract.
 
-| Name   | Type            |
-| :----- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `lens` | `ChromaticLens` |
 
 #### Defined in
 
-[entities/ChromaticLens.ts:63](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L63)
+[entities/ChromaticLens.ts:63](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L63)
 
 ___
 
@@ -83,8 +83,8 @@ Retrieves the liquidity bins for a given market.
 
 #### Parameters
 
-| Name            | Type     | Description                                   |
-| :-------------- | :------- | :-------------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `marketAddress` | `string` | The address of the Chromatic Market contract. |
 
 #### Returns
@@ -95,7 +95,7 @@ A promise that resolves to an array of LiquidityBinResult.
 
 #### Defined in
 
-[entities/ChromaticLens.ts:74](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L74)
+[entities/ChromaticLens.ts:74](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L74)
 
 ___
 
@@ -107,10 +107,10 @@ Retrieves the LP receipts for a given market and owner.
 
 #### Parameters
 
-| Name            | Type     | Description                                   |
-| :-------------- | :------- | :-------------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `marketAddress` | `string` | The address of the Chromatic Market contract. |
-| `owner?`        | `string` | The address of the LP owner.                  |
+| `owner?` | `string` | The address of the LP owner. |
 
 #### Returns
 
@@ -120,7 +120,7 @@ A promise that resolves to the LP receipts.
 
 #### Defined in
 
-[entities/ChromaticLens.ts:197](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L197)
+[entities/ChromaticLens.ts:197](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L197)
 
 ___
 
@@ -132,10 +132,10 @@ Retrieves the owned liquidity bins for a given market and owner.
 
 #### Parameters
 
-| Name            | Type     | Description                                   |
-| :-------------- | :------- | :-------------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `marketAddress` | `string` | The address of the Chromatic Market contract. |
-| `ownerAddress?` | `string` | The address of the liquidity owner.           |
+| `ownerAddress?` | `string` | The address of the liquidity owner. |
 
 #### Returns
 
@@ -145,4 +145,4 @@ A promise that resolves to an array of OwnedLiquidityBinResult.
 
 #### Defined in
 
-[entities/ChromaticLens.ts:102](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L102)
+[entities/ChromaticLens.ts:102](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L102)

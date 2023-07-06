@@ -18,13 +18,13 @@ Creates a new instance of ChromaticMarket.
 
 #### Parameters
 
-| Name      | Type                  | Description                    |
-| :-------- | :-------------------- | :----------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `_client` | [`Client`](Client.md) | The Chromatic Client instance. |
 
 #### Defined in
 
-[entities/ChromaticMarket.ts:22](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L22)
+[entities/ChromaticMarket.ts:22](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L22)
 
 ## Methods
 
@@ -36,8 +36,8 @@ Retrieves the CLB token associated with a specific market.
 
 #### Parameters
 
-| Name            | Type     | Description                |
-| :-------------- | :------- | :------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `marketAddress` | `string` | The address of the market. |
 
 #### Returns
@@ -48,7 +48,7 @@ A promise that resolves to the CLB token instance.
 
 #### Defined in
 
-[entities/ChromaticMarket.ts:57](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L57)
+[entities/ChromaticMarket.ts:57](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L57)
 
 ___
 
@@ -60,10 +60,10 @@ Retrieves the metadata of a CLB token associated with a specific market and toke
 
 #### Parameters
 
-| Name            | Type           | Description                |
-| :-------------- | :------------- | :------------------------- |
-| `marketAddress` | `string`       | The address of the market. |
-| `tokenId`       | `BigNumberish` | The ID of the CLB token.   |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `marketAddress` | `string` | The address of the market. |
+| `tokenId` | `BigNumberish` | The ID of the CLB token. |
 
 #### Returns
 
@@ -73,7 +73,7 @@ A promise that resolves to the CLB token metadata.
 
 #### Defined in
 
-[entities/ChromaticMarket.ts:72](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L72)
+[entities/ChromaticMarket.ts:72](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L72)
 
 ___
 
@@ -89,13 +89,13 @@ Retrieves the contract instances associated with the Chromatic Market.
 
 An object containing the contract instances.
 
-| Name     | Type                                             |
-| :------- | :----------------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `market` | (`marketAddress`: `string`) => `ChromaticMarket` |
 
 #### Defined in
 
-[entities/ChromaticMarket.ts:28](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L28)
+[entities/ChromaticMarket.ts:28](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L28)
 
 ___
 
@@ -107,8 +107,8 @@ Retrieves the current price from the OracleProvider contract associated with a s
 
 #### Parameters
 
-| Name            | Type     | Description                |
-| :-------------- | :------- | :------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `marketAddress` | `string` | The address of the market. |
 
 #### Returns
@@ -119,7 +119,7 @@ A promise that resolves to the current price.
 
 #### Defined in
 
-[entities/ChromaticMarket.ts:111](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L111)
+[entities/ChromaticMarket.ts:111](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L111)
 
 ___
 
@@ -131,8 +131,8 @@ Retrieves the current prices from the OracleProvider contracts associated with m
 
 #### Parameters
 
-| Name              | Type       | Description                   |
-| :---------------- | :--------- | :---------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `marketAddresses` | `string`[] | An array of market addresses. |
 
 #### Returns
@@ -143,7 +143,7 @@ A promise that resolves to an array of market addresses and their corresponding 
 
 #### Defined in
 
-[entities/ChromaticMarket.ts:134](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L134)
+[entities/ChromaticMarket.ts:134](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L134)
 
 ___
 
@@ -155,8 +155,8 @@ Retrieves the name of the market from the OracleProvider contract associated wit
 
 #### Parameters
 
-| Name            | Type     | Description                |
-| :-------------- | :------- | :------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `marketAddress` | `string` | The address of the market. |
 
 #### Returns
@@ -167,7 +167,7 @@ A promise that resolves to the market name.
 
 #### Defined in
 
-[entities/ChromaticMarket.ts:123](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L123)
+[entities/ChromaticMarket.ts:123](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L123)
 
 ___
 
@@ -179,8 +179,8 @@ Retrieves the OracleProvider contract associated with a specific market.
 
 #### Parameters
 
-| Name            | Type     | Description                |
-| :-------------- | :------- | :------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `marketAddress` | `string` | The address of the market. |
 
 #### Returns
@@ -191,7 +191,7 @@ A promise that resolves to the OracleProvider contract instance.
 
 #### Defined in
 
-[entities/ChromaticMarket.ts:95](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L95)
+[entities/ChromaticMarket.ts:95](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L95)
 
 ___
 
@@ -203,8 +203,8 @@ Retrieves the settlement token associated with a specific market.
 
 #### Parameters
 
-| Name            | Type     | Description                |
-| :-------------- | :------- | :------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `marketAddress` | `string` | The address of the market. |
 
 #### Returns
@@ -215,4 +215,4 @@ A promise that resolves to the settlement token instance.
 
 #### Defined in
 
-[entities/ChromaticMarket.ts:43](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L43)
+[entities/ChromaticMarket.ts:43](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L43)

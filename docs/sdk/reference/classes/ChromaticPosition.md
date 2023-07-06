@@ -18,13 +18,13 @@ Creates a new instance of ChromaticPosition.
 
 #### Parameters
 
-| Name      | Type                  | Description                    |
-| :-------- | :-------------------- | :----------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `_client` | [`Client`](Client.md) | The Chromatic Client instance. |
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:56](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L56)
+[entities/ChromaticPosition.ts:56](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L56)
 
 ## Methods
 
@@ -40,15 +40,15 @@ Retrieves the contract instances associated with Chromatic Position.
 
 An object containing the contract instances of Lens, Market, and Market Factory.
 
-| Name            | Type                                             |
-| :-------------- | :----------------------------------------------- |
-| `lens`          | `ChromaticLens`                                  |
-| `market`        | (`marketAddress`: `string`) => `ChromaticMarket` |
-| `marketFactory` | `ChromaticMarketFactory`                         |
+| Name | Type |
+| :------ | :------ |
+| `lens` | `ChromaticLens` |
+| `market` | (`marketAddress`: `string`) => `ChromaticMarket` |
+| `marketFactory` | `ChromaticMarketFactory` |
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:62](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L62)
+[entities/ChromaticPosition.ts:62](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L62)
 
 ___
 
@@ -60,10 +60,10 @@ Retrieves the interest for a position in the specified market.
 
 #### Parameters
 
-| Name            | Type            | Description                                   |
-| :-------------- | :-------------- | :-------------------------------------------- |
-| `marketAddress` | `string`        | The address of the Chromatic Market contract. |
-| `position`      | `InterestParam` | The position parameters.                      |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `marketAddress` | `string` | The address of the Chromatic Market contract. |
+| `position` | `InterestParam` | The position parameters. |
 
 #### Returns
 
@@ -73,7 +73,7 @@ A promise that resolves to the interest.
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:139](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L139)
+[entities/ChromaticPosition.ts:139](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L139)
 
 ___
 
@@ -85,8 +85,8 @@ Retrieves the interest rate records for the specified market address.
 
 #### Parameters
 
-| Name            | Type     | Description                                   |
-| :-------------- | :------- | :-------------------------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `marketAddress` | `string` | The address of the Chromatic Market contract. |
 
 #### Returns
@@ -97,7 +97,7 @@ A promise that resolves to an array of interest rate records.
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:115](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L115)
+[entities/ChromaticPosition.ts:115](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L115)
 
 ___
 
@@ -109,12 +109,12 @@ Calculates the liquidation price for a position in the specified market.
 
 #### Parameters
 
-| Name                  | Type                                              | Description                                       |
-| :-------------------- | :------------------------------------------------ | :------------------------------------------------ |
-| `marketAddress`       | `string`                                          | The address of the Chromatic Market contract.     |
-| `entryPrice`          | `BigNumber`                                       | The entry price of the position.                  |
-| `position`            | [`PositionParam`](../interfaces/PositionParam.md) | The position parameters.                          |
-| `oraclePriceDecimals` | `number`                                          | The number of decimals used for the oracle price. |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `marketAddress` | `string` | The address of the Chromatic Market contract. |
+| `entryPrice` | `BigNumber` | The entry price of the position. |
+| `position` | [`PositionParam`](../interfaces/PositionParam.md) | The position parameters. |
+| `oraclePriceDecimals` | `number` | The number of decimals used for the oracle price. |
 
 #### Returns
 
@@ -124,7 +124,7 @@ A promise that resolves to an object containing the profit stop price and loss c
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:203](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L203)
+[entities/ChromaticPosition.ts:203](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L203)
 
 ___
 
@@ -136,14 +136,14 @@ Calculates the profit and loss (PNL) for a position in the specified market.
 
 #### Parameters
 
-| Name                         | Type                                              | Description                                   |
-| :--------------------------- | :------------------------------------------------ | :-------------------------------------------- |
-| `marketAddress`              | `string`                                          | The address of the Chromatic Market contract. |
-| `entryPrice`                 | `BigNumber`                                       | The entry price of the position.              |
-| `exitPrice`                  | `BigNumber`                                       | The exit price of the position.               |
-| `position`                   | [`PositionParam`](../interfaces/PositionParam.md) | The position parameters.                      |
-| `options`                    | `Object`                                          | Optional parameters for PNL calculation.      |
-| `options.includeInterestFee` | `boolean`                                         | -                                             |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `marketAddress` | `string` | The address of the Chromatic Market contract. |
+| `entryPrice` | `BigNumber` | The entry price of the position. |
+| `exitPrice` | `BigNumber` | The exit price of the position. |
+| `position` | [`PositionParam`](../interfaces/PositionParam.md) | The position parameters. |
+| `options` | `Object` | Optional parameters for PNL calculation. |
+| `options.includeInterestFee` | `boolean` | - |
 
 #### Returns
 
@@ -153,7 +153,7 @@ A promise that resolves to the PNL value.
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:177](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L177)
+[entities/ChromaticPosition.ts:177](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L177)
 
 ___
 
@@ -165,10 +165,10 @@ Retrieves positions from the Chromatic Market contract.
 
 #### Parameters
 
-| Name            | Type             | Description                                   |
-| :-------------- | :--------------- | :-------------------------------------------- |
-| `marketAddress` | `string`         | The address of the Chromatic Market contract. |
-| `positionIds`   | `BigNumberish`[] | An array of position IDs.                     |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `marketAddress` | `string` | The address of the Chromatic Market contract. |
+| `positionIds` | `BigNumberish`[] | An array of position IDs. |
 
 #### Returns
 
@@ -178,7 +178,7 @@ A promise that resolves to an array of positions.
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:76](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L76)
+[entities/ChromaticPosition.ts:76](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L76)
 
 ___
 
@@ -190,12 +190,12 @@ Calculates the loss cut price for a position in the specified market.
 
 #### Parameters
 
-| Name                  | Type                                              | Description                                       |
-| :-------------------- | :------------------------------------------------ | :------------------------------------------------ |
-| `marketAddress`       | `string`                                          | The address of the Chromatic Market contract.     |
-| `entryPrice`          | `BigNumber`                                       | The entry price of the position.                  |
-| `position`            | [`PositionParam`](../interfaces/PositionParam.md) | The position parameters.                          |
-| `oraclePriceDecimals` | `number`                                          | The number of decimals used for the oracle price. |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `marketAddress` | `string` | The address of the Chromatic Market contract. |
+| `entryPrice` | `BigNumber` | The entry price of the position. |
+| `position` | [`PositionParam`](../interfaces/PositionParam.md) | The position parameters. |
+| `oraclePriceDecimals` | `number` | The number of decimals used for the oracle price. |
 
 #### Returns
 
@@ -205,7 +205,7 @@ A promise that resolves to the loss cut price.
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:289](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L289)
+[entities/ChromaticPosition.ts:289](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L289)
 
 ___
 
@@ -217,12 +217,12 @@ Calculates the profit stop price for a position in the specified market.
 
 #### Parameters
 
-| Name                  | Type                                              | Description                                       |
-| :-------------------- | :------------------------------------------------ | :------------------------------------------------ |
-| `marketAddress`       | `string`                                          | The address of the Chromatic Market contract.     |
-| `entryPrice`          | `BigNumber`                                       | The entry price of the position.                  |
-| `position`            | [`PositionParam`](../interfaces/PositionParam.md) | The position parameters.                          |
-| `oraclePriceDecimals` | `number`                                          | The number of decimals used for the oracle price. |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `marketAddress` | `string` | The address of the Chromatic Market contract. |
+| `entryPrice` | `BigNumber` | The entry price of the position. |
+| `position` | [`PositionParam`](../interfaces/PositionParam.md) | The position parameters. |
+| `oraclePriceDecimals` | `number` | The number of decimals used for the oracle price. |
 
 #### Returns
 
@@ -232,4 +232,4 @@ A promise that resolves to the profit stop price.
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:264](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L264)
+[entities/ChromaticPosition.ts:264](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L264)

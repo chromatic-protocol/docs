@@ -18,13 +18,13 @@ Creates a new instance of ChromaticAccount.
 
 #### Parameters
 
-| Name      | Type                  | Description                    |
-| :-------- | :-------------------- | :----------------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `_client` | [`Client`](Client.md) | The Chromatic Client instance. |
 
 #### Defined in
 
-[entities/ChromaticAccount.ts:21](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L21)
+[entities/ChromaticAccount.ts:21](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L21)
 
 ## Methods
 
@@ -36,9 +36,9 @@ Retrieves the balance of a specific token in the Chromatic Account.
 
 #### Parameters
 
-| Name              | Type     | Description                            |
-| :---------------- | :------- | :------------------------------------- |
-| `token`           | `string` | The address of the token.              |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `token` | `string` | The address of the token. |
 | `accountAddress?` | `string` | The address of the account (optional). |
 
 #### Returns
@@ -49,7 +49,7 @@ A promise that resolves to the balance of the token.
 
 #### Defined in
 
-[entities/ChromaticAccount.ts:76](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L76)
+[entities/ChromaticAccount.ts:76](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L76)
 
 ___
 
@@ -61,10 +61,10 @@ Retrieves the balances of multiple tokens in the Chromatic Account.
 
 #### Parameters
 
-| Name              | Type       | Description                            |
-| :---------------- | :--------- | :------------------------------------- |
-| `tokens`          | `string`[] | An array of token addresses.           |
-| `accountAddress?` | `string`   | The address of the account (optional). |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `tokens` | `string`[] | An array of token addresses. |
+| `accountAddress?` | `string` | The address of the account (optional). |
 
 #### Returns
 
@@ -74,7 +74,7 @@ A promise that resolves to an array of TokenBalancesResult objects.
 
 #### Defined in
 
-[entities/ChromaticAccount.ts:91](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L91)
+[entities/ChromaticAccount.ts:91](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L91)
 
 ___
 
@@ -90,14 +90,14 @@ Retrieves the contract instances associated with the Chromatic Account.
 
 An object containing the contract instances.
 
-| Name      | Type                                                               |
-| :-------- | :----------------------------------------------------------------- |
-| `account` | (`address?`: `string`) => `ChromaticAccount`                       |
-| `router`  | (`signerOrProvider?`: `Signer` \| `Provider`) => `ChromaticRouter` |
+| Name | Type |
+| :------ | :------ |
+| `account` | (`address?`: `string`) => `ChromaticAccount` |
+| `router` | (`signerOrProvider?`: `Signer` \| `Provider`) => `ChromaticRouter` |
 
 #### Defined in
 
-[entities/ChromaticAccount.ts:27](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L27)
+[entities/ChromaticAccount.ts:27](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L27)
 
 ___
 
@@ -115,7 +115,7 @@ A promise that resolves to the transaction receipt of the account creation.
 
 #### Defined in
 
-[entities/ChromaticAccount.ts:39](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L39)
+[entities/ChromaticAccount.ts:39](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L39)
 
 ___
 
@@ -133,7 +133,7 @@ A promise that resolves to the Chromatic Account details.
 
 #### Defined in
 
-[entities/ChromaticAccount.ts:50](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L50)
+[entities/ChromaticAccount.ts:50](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L50)
 
 ___
 
@@ -145,9 +145,9 @@ Retrieves the position IDs associated with a specific market.
 
 #### Parameters
 
-| Name              | Type     | Description                            |
-| :---------------- | :------- | :------------------------------------- |
-| `marketAddress`   | `string` | The address of the market.             |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `marketAddress` | `string` | The address of the market. |
 | `accountAddress?` | `string` | The address of the account (optional). |
 
 #### Returns
@@ -158,4 +158,4 @@ A promise that resolves to an array of position IDs.
 
 #### Defined in
 
-[entities/ChromaticAccount.ts:62](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L62)
+[entities/ChromaticAccount.ts:62](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L62)

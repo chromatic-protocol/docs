@@ -286,7 +286,7 @@ Returns vPoolA Amplification coefficient of virtual future pool, precise value_
 ### registerOracleProvider
 
 ```solidity
-function registerOracleProvider(address oracleProvider) external
+function registerOracleProvider(address oracleProvider, struct IOracleProviderRegistry.OracleProviderProperties properties) external
 ```
 
 Registers an oracle provider.
@@ -296,6 +296,7 @@ _This function can only be called by the DAO address._
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | oracleProvider | address | The address of the oracle provider to register. |
+| properties | struct IOracleProviderRegistry.OracleProviderProperties | The properties of the oracle provider. |
 
 ### unregisterOracleProvider
 
@@ -339,13 +340,13 @@ Checks if an oracle provider is registered.
 | ---- | ---- | ----------- |
 | [0] | bool | A boolean indicating if the oracle provider is registered. |
 
-### getOracleProviderLevel
+### getOracleProviderProperties
 
 ```solidity
-function getOracleProviderLevel(address oracleProvider) external view returns (uint8)
+function getOracleProviderProperties(address oracleProvider) external view returns (struct IOracleProviderRegistry.OracleProviderProperties)
 ```
 
-Retrieves the level of an oracle provider in the registry.
+Retrieves the properties of an oracle provider.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -353,22 +354,54 @@ Retrieves the level of an oracle provider in the registry.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| [0] | uint8 | The level of the oracle provider. |
+| [0] | struct IOracleProviderRegistry.OracleProviderProperties | The properties of the oracle provider. |
 
-### setOracleProviderLevel
+### updateStopLossBPSRange
 
 ```solidity
-function setOracleProviderLevel(address oracleProvider, uint8 level) external
+function updateStopLossBPSRange(address oracleProvider, uint32 minStopLossBPS, uint32 maxStopLossBPS) external
 ```
 
-Sets the level of an oracle provider in the registry.
+Updates the stop-loss basis points range of an oracle provider.
+
+_This function can only be called by the DAO and registered oracle providers._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| oracleProvider | address | The address of the oracle provider@param minStopLossBPS The new minimum stop-loss basis points. |
+| minStopLossBPS | uint32 |  |
+| maxStopLossBPS | uint32 | The new maximum stop-loss basis points. |
+
+### updateTakeProfitBPSRange
+
+```solidity
+function updateTakeProfitBPSRange(address oracleProvider, uint32 minTakeProfitBPS, uint32 maxTakeProfitBPS) external
+```
+
+Updates the take-profit basis points range of an oracle provider.
 
 _This function can only be called by the DAO and registered oracle providers._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | oracleProvider | address | The address of the oracle provider. |
-| level | uint8 | The new level to be set for the oracle provider. |
+| minTakeProfitBPS | uint32 | The new minimum take-profit basis points. |
+| maxTakeProfitBPS | uint32 | The new maximum take-profit basis points. |
+
+### updateLeverageLevel
+
+```solidity
+function updateLeverageLevel(address oracleProvider, uint8 level) external
+```
+
+Updates the leverage level of an oracle provider in the registry.
+
+_This function can only be called by the DAO and registered oracle providers._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| oracleProvider | address | The address of the oracle provider. |
+| level | uint8 | The new leverage level to be set for the oracle provider. |
 
 ### registerSettlementToken
 

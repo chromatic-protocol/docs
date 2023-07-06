@@ -8,66 +8,6 @@ title: ITrade.sol
 
 _Interface for trading positions in a market._
 
-### ZeroTargetAmount
-
-```solidity
-error ZeroTargetAmount()
-```
-
-### TooSmallTakerMargin
-
-```solidity
-error TooSmallTakerMargin()
-```
-
-### NotEnoughMarginTransfered
-
-```solidity
-error NotEnoughMarginTransfered()
-```
-
-### NotExistPosition
-
-```solidity
-error NotExistPosition()
-```
-
-### NotPermitted
-
-```solidity
-error NotPermitted()
-```
-
-### AlreadyClosedPosition
-
-```solidity
-error AlreadyClosedPosition()
-```
-
-### NotClaimablePosition
-
-```solidity
-error NotClaimablePosition()
-```
-
-### ExceedMaxAllowableTradingFee
-
-```solidity
-error ExceedMaxAllowableTradingFee()
-```
-
-### ExceedMaxAllowableLeverage
-
-```solidity
-error ExceedMaxAllowableLeverage()
-```
-
-### ClaimPositionCallbackError
-
-```solidity
-error ClaimPositionCallbackError()
-```
-
 ### OpenPosition
 
 ```solidity

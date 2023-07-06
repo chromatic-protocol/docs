@@ -1,6 +1,6 @@
 ---
 id: "modules"
-title: "@chromatic-protocol/sdk"
+title: "@chromatic-protocol/sdk-ethers-v5"
 sidebar_label: "Exports"
 sidebar_position: 0.5
 custom_edit_url: null

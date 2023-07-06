@@ -3,6 +3,9 @@ sidebar_position: 1
 id: setup
 ---
 
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
+
 # Setup
 
 ## Overview
@@ -13,18 +16,32 @@ This documentation will guide you through the process of setting up the SDK.
 
 Before you can start using the Chromatic Protocol SDK, make sure you have the following:
 
-- Node.js (v16 or higher)
+- Node.js (v18 or higher)
 - npm (Node Package Manager)
 - An Arbitrum Ethereum provider or a local Arbitrum Ethereum node
 - An Ethereum wallet or signer (such as MetaMask) with a funded account on the Arbitrum chain
 
-
 ## Installation
 
-To install the Chromatic Protocol SDK, run the following command in your project directory:
+To install the Chromatic Protocol SDK, run one of following command among targets in your project directory:
+
+### ethers-v5
 
 ```bash npm2yarn
 npm install @chromatic-protocol/sdk-ethers-v5
+```
+
+### ethers-v6
+
+```bash npm2yarn
+# TBA
+npm install @chromatic-protocol/sdk-ethers-v6
+```
+
+### viem
+
+```bash npm2yarn
+npm install @chromatic-protocol/sdk-viem
 ```
 
 ## Setting up the Client
@@ -33,7 +50,11 @@ To interact with the Chromatic Protocol, you need to create a `Client` instance.
 
 Here's an example of setting up the `Client`:
 
-```typescript
+<Tabs>
+
+<TabItem value="ts ethers-v5" label="ethers-v5">
+
+```ts ethers-v5
 import { Signer } from 'ethers';
 import { Client } from "@chromatic-protocol/sdk-ethers-v5"
 
@@ -41,7 +62,31 @@ const chain: string = "arbitrum"; // Specify "arbitrum" as the chain name for th
 const signer: Signer = ...; // Replace with your Ethereum signer or wallet instance
 const client: Client = new Client(chain, signer);
 ```
-
 Replace "arbitrum" with the name of the Arbitrum chain you want to connect to.
 
 Make sure to replace ... with your actual Ethereum signer or wallet instance.
+
+</TabItem>
+<TabItem value="ts ethers-v6" label="ethers-v6">
+
+```ts ethers-v6
+import { Signer } from 'ethers';
+import { Client } from "@chromatic-protocol/sdk-ethers-v6"
+
+const chain: string = "arbitrum"; // Specify "arbitrum" as the chain name for the Arbitrum chain
+const signer: Signer = ...; // Replace with your Ethereum signer or wallet instance
+const client: Client = new Client(chain, signer);
+```
+Replace "arbitrum" with the name of the Arbitrum chain you want to connect to.
+
+Make sure to replace ... with your actual Ethereum signer or wallet instance.
+
+</TabItem>
+<TabItem value="ts viem" label="viem">
+
+```ts viem
+// TBA
+```
+
+</TabItem>
+</Tabs>

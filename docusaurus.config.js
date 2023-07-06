@@ -66,7 +66,8 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/chromatic-protocol/docs/tree/main/'
+          editUrl: 'https://github.com/chromatic-protocol/docs/tree/main/',
+          remarkPlugins: [[require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }]]
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css')

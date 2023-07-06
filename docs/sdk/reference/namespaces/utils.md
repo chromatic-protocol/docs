@@ -14,7 +14,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[utils/helpers.ts:86](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/utils/helpers.ts#L86)
+[utils/helpers.ts:86](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/utils/helpers.ts#L86)
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 #### Defined in
 
-[utils/helpers.ts:17](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/utils/helpers.ts#L17)
+[utils/helpers.ts:17](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/utils/helpers.ts#L17)
 
 ## Functions
 
@@ -35,13 +35,13 @@ ___
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
-| Name     | Type                                    |
-| :------- | :-------------------------------------- |
+| Name | Type |
+| :------ | :------ |
 | `values` | `Iterable`<`T` \| `PromiseLike`<`T`\>\> |
 
 #### Returns
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[utils/helpers.ts:33](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/utils/helpers.ts#L33)
+[utils/helpers.ts:33](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/utils/helpers.ts#L33)
 
 ___
 
@@ -60,8 +60,8 @@ ___
 
 #### Parameters
 
-| Name        | Type        |
-| :---------- | :---------- |
+| Name | Type |
+| :------ | :------ |
 | `encodedId` | `BigNumber` |
 
 #### Returns
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[utils/helpers.ts:19](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/utils/helpers.ts#L19)
+[utils/helpers.ts:19](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/utils/helpers.ts#L19)
 
 ___
 
@@ -80,10 +80,10 @@ ___
 
 #### Parameters
 
-| Name             | Type      | Default value |
-| :--------------- | :-------- | :------------ |
-| `tradingFeeRate` | `number`  | `undefined`   |
-| `long`           | `boolean` | `true`        |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `tradingFeeRate` | `number` | `undefined` |
+| `long` | `boolean` | `true` |
 
 #### Returns
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[utils/helpers.ts:27](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/utils/helpers.ts#L27)
+[utils/helpers.ts:27](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/utils/helpers.ts#L27)
 
 ___
 
@@ -102,15 +102,15 @@ ___
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
-| Name       | Type                  |
-| :--------- | :-------------------- |
-| `fn`       | () => `Promise`<`T`\> |
-| `provider` | `Provider`            |
+| Name | Type |
+| :------ | :------ |
+| `fn` | () => `Promise`<`T`\> |
+| `provider` | `Provider` |
 
 #### Returns
 
@@ -118,4 +118,4 @@ ___
 
 #### Defined in
 
-[utils/helpers.ts:43](https://github.com/chromatic-protocol/sdk/blob/e278534/packages/sdk-ethers-v5/src/utils/helpers.ts#L43)
+[utils/helpers.ts:43](https://github.com/chromatic-protocol/sdk/blob/d787d1e/packages/sdk-ethers-v5/src/utils/helpers.ts#L43)

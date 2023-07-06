@@ -8,10 +8,22 @@ title: IOracleProviderRegistry.sol
 
 _Interface for the Oracle Provider Registry contract._
 
+### OracleProviderProperties
+
+```solidity
+struct OracleProviderProperties {
+  uint32 minStopLossBPS;
+  uint32 maxStopLossBPS;
+  uint32 minTakeProfitBPS;
+  uint32 maxTakeProfitBPS;
+  uint8 leverageLevel;
+}
+```
+
 ### OracleProviderRegistered
 
 ```solidity
-event OracleProviderRegistered(address oracleProvider)
+event OracleProviderRegistered(address oracleProvider, struct IOracleProviderRegistry.OracleProviderProperties properties)
 ```
 
 _Emitted when a new oracle provider is registered._
@@ -19,6 +31,7 @@ _Emitted when a new oracle provider is registered._
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | oracleProvider | address | The address of the registered oracle provider. |
+| properties | struct IOracleProviderRegistry.OracleProviderProperties | The properties of the registered oracle provider. |
 
 ### OracleProviderUnregistered
 
@@ -32,10 +45,38 @@ _Emitted when an oracle provider is unregistered._
 | ---- | ---- | ----------- |
 | oracleProvider | address | The address of the unregistered oracle provider. |
 
-### SetOracleProviderLevel
+### UpdateStopLossBPSRange
 
 ```solidity
-event SetOracleProviderLevel(address oracleProvider, uint8 level)
+event UpdateStopLossBPSRange(address oracleProvider, uint32 minStopLossBPS, uint32 maxStopLossBPS)
+```
+
+_Emitted when the stop-loss basis points range of an oracle provider is updated._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| oracleProvider | address | The address of the oracle provider. |
+| minStopLossBPS | uint32 | The new minimum stop-loss basis points. |
+| maxStopLossBPS | uint32 | The new maximum stop-loss basis points. |
+
+### UpdateTakeProfitBPSRange
+
+```solidity
+event UpdateTakeProfitBPSRange(address oracleProvider, uint32 minTakeProfitBPS, uint32 maxTakeProfitBPS)
+```
+
+_Emitted when the take-profit basis points range of an oracle provider is updated._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| oracleProvider | address | The address of the oracle provider. |
+| minTakeProfitBPS | uint32 | The new minimum take-profit basis points. |
+| maxTakeProfitBPS | uint32 | The new maximum take-profit basis points. |
+
+### UpdateLeverageLevel
+
+```solidity
+event UpdateLeverageLevel(address oracleProvider, uint8 level)
 ```
 
 _Emitted when the level of an oracle provider is set._
@@ -48,7 +89,7 @@ _Emitted when the level of an oracle provider is set._
 ### registerOracleProvider
 
 ```solidity
-function registerOracleProvider(address oracleProvider) external
+function registerOracleProvider(address oracleProvider, struct IOracleProviderRegistry.OracleProviderProperties properties) external
 ```
 
 Registers an oracle provider.
@@ -56,6 +97,7 @@ Registers an oracle provider.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | oracleProvider | address | The address of the oracle provider to register. |
+| properties | struct IOracleProviderRegistry.OracleProviderProperties | The properties of the oracle provider. |
 
 ### unregisterOracleProvider
 
@@ -97,13 +139,13 @@ Checks if an oracle provider is registered.
 | ---- | ---- | ----------- |
 | [0] | bool | A boolean indicating if the oracle provider is registered. |
 
-### getOracleProviderLevel
+### getOracleProviderProperties
 
 ```solidity
-function getOracleProviderLevel(address oracleProvider) external view returns (uint8)
+function getOracleProviderProperties(address oracleProvider) external view returns (struct IOracleProviderRegistry.OracleProviderProperties)
 ```
 
-Retrieves the level of an oracle provider in the registry.
+Retrieves the properties of an oracle provider.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -111,20 +153,48 @@ Retrieves the level of an oracle provider in the registry.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| [0] | uint8 | The level of the oracle provider. |
+| [0] | struct IOracleProviderRegistry.OracleProviderProperties | The properties of the oracle provider. |
 
-### setOracleProviderLevel
+### updateStopLossBPSRange
 
 ```solidity
-function setOracleProviderLevel(address oracleProvider, uint8 level) external
+function updateStopLossBPSRange(address oracleProvider, uint32 minStopLossBPS, uint32 maxStopLossBPS) external
 ```
 
-Sets the level of an oracle provider in the registry.
+Updates the stop-loss basis points range of an oracle provider.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| oracleProvider | address | The address of the oracle provider@param minStopLossBPS The new minimum stop-loss basis points. |
+| minStopLossBPS | uint32 |  |
+| maxStopLossBPS | uint32 | The new maximum stop-loss basis points. |
+
+### updateTakeProfitBPSRange
+
+```solidity
+function updateTakeProfitBPSRange(address oracleProvider, uint32 minTakeProfitBPS, uint32 maxTakeProfitBPS) external
+```
+
+Updates the take-profit basis points range of an oracle provider.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| oracleProvider | address | The address of the oracle provider. |
+| minTakeProfitBPS | uint32 | The new minimum take-profit basis points. |
+| maxTakeProfitBPS | uint32 | The new maximum take-profit basis points. |
+
+### updateLeverageLevel
+
+```solidity
+function updateLeverageLevel(address oracleProvider, uint8 level) external
+```
+
+Updates the leverage level of an oracle provider in the registry.
 
 _The level must be either 0 or 1, and the max leverage must be x10 for level 0 or x20 for level 1._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | oracleProvider | address | The address of the oracle provider. |
-| level | uint8 | The new level to be set for the oracle provider. |
+| level | uint8 | The new leverage level to be set for the oracle provider. |
 

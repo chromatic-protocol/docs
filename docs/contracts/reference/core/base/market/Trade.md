@@ -14,6 +14,78 @@ _A contract that manages trading positions and liquidations._
 uint256 _positionId
 ```
 
+### ZeroTargetAmount
+
+```solidity
+error ZeroTargetAmount()
+```
+
+### TooSmallTakerMargin
+
+```solidity
+error TooSmallTakerMargin()
+```
+
+### NotEnoughMarginTransfered
+
+```solidity
+error NotEnoughMarginTransfered()
+```
+
+### NotExistPosition
+
+```solidity
+error NotExistPosition()
+```
+
+### NotPermitted
+
+```solidity
+error NotPermitted()
+```
+
+### AlreadyClosedPosition
+
+```solidity
+error AlreadyClosedPosition()
+```
+
+### NotClaimablePosition
+
+```solidity
+error NotClaimablePosition()
+```
+
+### ExceedMaxAllowableTradingFee
+
+```solidity
+error ExceedMaxAllowableTradingFee()
+```
+
+### ExceedMaxAllowableLeverage
+
+```solidity
+error ExceedMaxAllowableLeverage()
+```
+
+### NotAllowableTakerMargin
+
+```solidity
+error NotAllowableTakerMargin()
+```
+
+### NotAllowableMakerMargin
+
+```solidity
+error NotAllowableMakerMargin()
+```
+
+### ClaimPositionCallbackError
+
+```solidity
+error ClaimPositionCallbackError()
+```
+
 ### openPosition
 
 ```solidity

@@ -31,42 +31,6 @@ struct LiquidityBinStatus {
 }
 ```
 
-### TooSmallAmount
-
-```solidity
-error TooSmallAmount()
-```
-
-### OnlyAccessableByVault
-
-```solidity
-error OnlyAccessableByVault()
-```
-
-### NotExistLpReceipt
-
-```solidity
-error NotExistLpReceipt()
-```
-
-### NotClaimableLpReceipt
-
-```solidity
-error NotClaimableLpReceipt()
-```
-
-### NotWithdrawableLpReceipt
-
-```solidity
-error NotWithdrawableLpReceipt()
-```
-
-### InvalidLpReceiptAction
-
-```solidity
-error InvalidLpReceiptAction()
-```
-
 ### AddLiquidity
 
 ```solidity

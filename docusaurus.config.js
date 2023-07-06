@@ -143,7 +143,7 @@ const config = {
           },
           {
             type: 'dropdown',
-            label: 'Governance',
+            label: 'Community',
             description: 'for detail explanation', // customized prop
             position: 'right',
             items: [
@@ -152,19 +152,19 @@ const config = {
                 description: 'external link to twitter',
                 href: CHROMATIC_LINKS.twitter,
                 icon: 'twitter'
-              },
-              {
-                label: 'Discord',
-                description: 'external link to gitbook',
-                href: CHROMATIC_LINKS.gitbook,
-                icon: 'discord'
-              },
-              {
-                label: 'Telegram',
-                description: 'external link to medium',
-                href: CHROMATIC_LINKS.medium,
-                icon: 'telegram'
               }
+              // {
+              //   label: 'Discord',
+              //   description: 'external link to discord',
+              //   href: CHROMATIC_LINKS.discord,
+              //   icon: 'discord'
+              // },
+              // {
+              //   label: 'Telegram',
+              //   description: 'external link to telegram',
+              //   href: CHROMATIC_LINKS.telegram,
+              //   icon: 'telegram'
+              // }
             ]
           },
           // launch app
@@ -211,10 +211,6 @@ const config = {
               {
                 label: 'Medium',
                 href: CHROMATIC_LINKS.medium
-              },
-              {
-                label: 'Twitter',
-                href: CHROMATIC_LINKS.twitter
               }
             ]
           },
@@ -233,6 +229,23 @@ const config = {
                 label: 'SDK',
                 href: CHROMATIC_LINKS.githubSDK
               }
+            ]
+          },
+          {
+            title: 'Community',
+            items: [
+              {
+                label: 'Twitter',
+                href: CHROMATIC_LINKS.twitter
+              }
+              // {
+              //   label: 'Discord',
+              //   href: CHROMATIC_LINKS.discord
+              // },
+              // {
+              //   label: 'Telegram',
+              //   href: CHROMATIC_LINKS.telegram
+              // }
             ]
           }
         ]

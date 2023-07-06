@@ -138,7 +138,7 @@ html[data-theme='dark'] {
     @apply text-white text-base;
   }
   .footer-group {
-    @apply w-full md:max-w-[260px];
+    @apply w-full md:max-w-[200px];
     @apply flex flex-col;
     .footer-title {
       @apply h-5 font-bold text-lg font-mono text-white mb-2 md:mb-10 mt-1;

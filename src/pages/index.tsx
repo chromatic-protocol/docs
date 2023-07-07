@@ -129,7 +129,7 @@ function StartingGuide({ onOpenModal }: { onOpenModal: () => void }) {
         <div className="wrapper">
           <h2 className="mb-10 title">Developement</h2>
           <div className="flex flex-wrap items-stretch gap-5 lg:flex-nowrap">
-            <div className="box lg:min-h-[420px] border-[#333]">
+            <div className="box flex-1 lg:min-h-[420px] border-[#333]">
               <div>
                 <h4 className="sub-title">Github</h4>
                 <p className="p">
@@ -143,7 +143,7 @@ function StartingGuide({ onOpenModal }: { onOpenModal: () => void }) {
                 <IconArrowButton label="View Github" icon="github" href={CHROMATIC_LINKS.github} />
               </div>
             </div>
-            <div className="box lg:min-h-[420px] border-[#333]">
+            <div className="box flex-1 lg:min-h-[420px] border-[#333]">
               <div>
                 <h4 className="sub-title">SDK</h4>
                 <p className="p">

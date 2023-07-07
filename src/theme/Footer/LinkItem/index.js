@@ -3,10 +3,12 @@ import Link from '@docusaurus/Link'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import isInternalUrl from '@docusaurus/isInternalUrl'
 import IconExternalLink from '@theme/Icon/ExternalLink'
+import { useTestnetModal } from '@site/src/hooks/useTestnetModal'
 export default function FooterLinkItem({ item }) {
   const { to, href, label, prependBaseUrlToHref, ...props } = item
   const toUrl = useBaseUrl(to)
   const normalizedHref = useBaseUrl(href, { forcePrependBaseUrl: true })
+  const { onOpen } = useTestnetModal()
   return (
     <Link
       className="footer-link"
@@ -18,6 +20,11 @@ export default function FooterLinkItem({ item }) {
             to: toUrl
           })}
       {...props}
+      onClick={() => {
+        if (label === 'Trade') {
+          onOpen()
+        }
+      }}
     >
       {label}
       {/* {href && !isInternalUrl(href) && <IconExternalLink />} */}

@@ -60,36 +60,35 @@ function IconArrowButton({
   )
 }
 
-const texts = ['DERIVATIVE', 'PERFETUAL', 'FUTURE', 'CHROMATIC']
+// const texts = ['DERIVATIVE', 'PERFETUAL', 'FUTURE', 'CHROMATIC']
 
-function Intro() {
-  return (
-    <section>
-      <article className="h-[calc(100vh-90px)] text-center article">
-        <div className="wrapper">
-          {/* <h1 className="text-[100px]">DERIVATIVE</h1> */}
-          {/* todo: mobile view */}
-          <div className="flex items-center w-full overflow-hidden ">
-            <Stage
-              width={1200}
-              height={200}
-              className="flex-auto h-auto max-w-full"
-              options={{
-                autoDensity: true,
-                backgroundColor: 0xffffff,
-                backgroundAlpha: 0
-              }}
-            >
-              <ChromaticText texts={texts} y={0} width={1200} height={200} />
-            </Stage>
-          </div>
-
-          <p className="text-xl uppercase ">A NEW ERA IN DECENTRALIZED PERPETUAL FUTURES</p>
-        </div>
-      </article>
-    </section>
-  )
-}
+// function Intro() {
+//   return (
+//     <section>
+//       <article className="h-[calc(100vh-90px)] text-center article">
+//         <div className="wrapper">
+//           {/* <h1 className="text-[100px]">DERIVATIVE</h1> */}
+//           {/* todo: mobile view */}
+//           <div className="flex items-center w-full overflow-hidden ">
+//             <Stage
+//               width={1200}
+//               height={200}
+//               className="flex-auto h-auto max-w-full"
+//               options={{
+//                 autoDensity: true,
+//                 backgroundColor: 0xffffff,
+//                 backgroundAlpha: 0
+//               }}
+//             >
+//               <ChromaticText texts={texts} y={0} width={1200} height={200} />
+//             </Stage>
+//           </div>
+//           <p className="text-xl uppercase ">A NEW ERA IN DECENTRALIZED PERPETUAL FUTURES</p>
+//         </div>
+//       </article>
+//     </section>
+//   )
+// }
 
 function StartingGuide() {
   const { chromaticHeader: Svg } = Svgs
@@ -230,13 +229,13 @@ function Contents() {
 
   return (
     <main className="font-mono landing-page">
-      <Intro />
-      <Trigger
-        onUp={setMode('light')}
-        onDown={setMode('dark')}
+      {/* <Intro /> */}
+      {/* <Trigger
+        onUp={setColor('light')}
+        onDown={setColor('dark')}
         offset={'-20vh'}
         {...triggerProps}
-      />
+  />*/}
       <StartingGuide />
       <Trigger
         onUp={setMode('dark')}

@@ -73,9 +73,7 @@ function Intro() {
             </Stage>
           </div>
 
-          <p className="text-xl uppercase ">
-            decentralized perpetual futures protocol built on top of Arbitrum
-          </p>
+          <p className="text-xl uppercase ">A NEW ERA IN DECENTRALIZED PERPETUAL FUTURES</p>
         </div>
       </article>
     </section>
@@ -98,11 +96,10 @@ function StartingGuide() {
           </div>
           <div>
             <p className="mb-20 text-xl leading-normal md:max-w-[80%] opacity-50 mx-auto">
-              First properly designed decentralized perpetual futures protocol introducing
-              pioneering features of partitioned LP and dynamic fees for balanced maker-taker
-              equilibrium. First properly designed decentralized perpetual futures protocol
-              introducing pioneering features of partitioned LP and dynamic fees for balanced
-              maker-taker equilibrium.
+              The first properly designed decentralized perpetual futures protocol that provides
+              permissionless, trustless, and unopinionated building blocks. It enables participants
+              in the DeFi ecosystem to create balanced two-sided markets exposed to oracle price
+              feeds and trade futures using various strategies.
             </p>
             <div className="flex flex-wrap justify-center gap-5 md:gap-10">
               <IconArrowButton label="Testnet App" href={CHROMATIC_LINKS.app} icon="chromatic" />
@@ -120,8 +117,10 @@ function StartingGuide() {
               <div>
                 <h4 className="sub-title">Github</h4>
                 <p className="p">
-                  One-size-fits-all doesn’t scale. In Chromatic protocol, users are in the drivers
-                  seat. Chromatic protocol is a minimalist & permission-less protocol designed.
+                  Start building with Chromatic Protocol. With its unopinionated, low-level, and
+                  non-upgradable design, Chromatic empowers developers to build decentralized
+                  perpetual futures platforms that align with their unique business and trading
+                  strategies.
                 </p>
               </div>
               <div className="btns">
@@ -132,8 +131,10 @@ function StartingGuide() {
               <div>
                 <h4 className="sub-title">SDK</h4>
                 <p className="p">
-                  One-size-fits-all doesn’t scale. In Chromatic protocol, users are in the drivers
-                  seat. Chromatic protocol is a minimalist & permission-less protocol designed.
+                  Discover the Chromatic Protocol SDK, a comprehensive JavaScript library designed
+                  to facilitate seamless interaction with Chromatic Protocol on Arbitrum. This
+                  document serves as a step-by-step guide, assisting you in the setup process for
+                  utilizing the SDK effectively.
                 </p>
               </div>
               <div className="btns">
@@ -172,8 +173,8 @@ function Article() {
               <div>
                 <h4 className="sub-title">ARTICLES</h4>
                 <p className="p">
-                  One-size-fits-all doesn’t scale. In Chromatic protocol, users are in the drivers
-                  seat. Chromatic protocol is a minimalist & permission-less protocol designed.
+                  Stay informed and up to date with more detailed information, insights and updates
+                  from Chromatic Protocol.
                 </p>
               </div>
               <div className="btns">

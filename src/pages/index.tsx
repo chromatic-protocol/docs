@@ -257,7 +257,7 @@ function Contents() {
           isOpen={true}
           onClose={closeModal}
           title="Testnet Launch"
-          message="Goerli testnet App will be activated soon"
+          message="Arbitrum Goerli testnet app will be activated shortly!"
         />
       )}
     </main>

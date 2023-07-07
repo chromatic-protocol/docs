@@ -24,14 +24,14 @@ function IconArrowButton({ label, icon, to = '', href = '', onClick = null, ...p
 
   return (
     <Link
-      className={`btn w-[240px] md:w-[240px] lg:w-[200px] !h-12 !px-4 cursor-pointer 
+      className={`btn w-[240px] md:w-[240px] lg:w-[200px] !h-12 !px-4 cursor-pointer hover
       ${color === 'light' ? 'btn-black-line' : 'btn-white-line'}`}
       to={to}
       href={href}
       onClick={onClick}
     >
       <div className="flex items-center justify-between w-full">
-        <div className="flex items-center gap-3 text-lg primary hover">
+        <div className="flex items-center gap-3 text-lg primary">
           <Svg fill="current" role="img" className="w-5 h-5" />
           {label}
         </div>

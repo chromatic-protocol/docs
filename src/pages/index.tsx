@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Link from '@docusaurus/Link'
 import { Svgs } from '@site/static/img/icons/Svgs'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import { Stage } from '@pixi/react'
 import { ChromaticText } from '@site/src/components/ChromaticText'
+import Modal from '../components/Modal'
 
 import Layout from '@theme/Layout'
 
@@ -15,15 +16,16 @@ import { useColorMode } from '@docusaurus/theme-common'
 
 import { CHROMATIC_LINKS } from '@site/src/external-links'
 
-function IconArrowButton({ label, icon, to = '', href = '', dark = false, ...props }) {
+function IconArrowButton({ label, icon, to = '', href = '', dark = false, onClick, ...props }) {
   const Svg = Svgs[icon]
 
   return (
     <Link
-      className={`btn w-[240px] md:w-[240px] lg:w-[200px] !h-12 !px-4 
+      className={`btn w-[240px] md:w-[240px] lg:w-[200px] !h-12 !px-4 cursor-pointer 
       ${dark ? 'btn-black-line' : 'btn-white-line'}`}
       to={to}
       href={href}
+      onClick={onClick}
     >
       <div className="flex items-center justify-between w-full">
         <div className="flex items-center gap-3 text-lg">
@@ -80,7 +82,7 @@ function Intro() {
   )
 }
 
-function StartingGuide() {
+function StartingGuide({ onOpenModal }: { onOpenModal: () => void }) {
   const { chromaticHeader: Svg } = Svgs
   const { colorMode } = useColorMode()
 
@@ -102,7 +104,13 @@ function StartingGuide() {
               feeds and trade futures using various strategies.
             </p>
             <div className="flex flex-wrap justify-center gap-5 md:gap-10">
-              <IconArrowButton label="Testnet App" href={CHROMATIC_LINKS.app} icon="chromatic" />
+              <IconArrowButton
+                label="Testnet App"
+                href={null}
+                onClick={onOpenModal}
+                // href={CHROMATIC_LINKS.app}
+                icon="chromatic"
+              />
               <IconArrowButton label="Read Medium" href={CHROMATIC_LINKS.medium} icon="medium" />
               <IconArrowButton label="Read Gitbook" href={CHROMATIC_LINKS.gitbook} icon="gitbook" />
             </div>
@@ -210,6 +218,14 @@ function Contents() {
     }
   }
 
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const openModal = () => {
+    setIsModalOpen(true)
+  }
+  const closeModal = () => {
+    setIsModalOpen(false)
+  }
+
   return (
     <main className="font-mono landing-page">
       <Intro />
@@ -219,7 +235,7 @@ function Contents() {
         offset={'-20vh'}
         {...triggerProps}
       />
-      <StartingGuide />
+      <StartingGuide onOpenModal={openModal} />
       <Trigger
         onUp={setMode('dark')}
         onDown={setMode('light')}
@@ -228,6 +244,7 @@ function Contents() {
       />
       <Features />
       <Article />
+      {isModalOpen && <Modal isOpen={true} onClose={closeModal} title="Hello" message="Hello" />}
     </main>
   )
 }

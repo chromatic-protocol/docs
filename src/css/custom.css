@@ -107,6 +107,9 @@ html[data-theme='dark'] {
     @apply border-0 inline-block w-4 h-4 top-auto transform-none fill-current;
   }
 }
+.navbar__items .wrapper-logo {
+  @apply w-6 overflow-hidden md:w-auto;
+}
 .navbar__items--right > :last-child {
   @apply px-5;
 }

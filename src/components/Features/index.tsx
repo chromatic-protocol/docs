@@ -60,7 +60,7 @@ function Feature({ title, titleWidth, Svg, description }: FeatureItem) {
     <div
       className={`flex lg:justify-between lg:items-center gap-24 flex-col-reverse lg:flex-row px-4 lg:px-0 ${styles.feature}`}
     >
-      <div className="">
+      <div className="hidden lg:inline-block">
         <Svg
           className="w-full max-w-[400px]"
           fill={isDarkMode ? '#ffffff' : '#000000'}
@@ -78,7 +78,15 @@ function Feature({ title, titleWidth, Svg, description }: FeatureItem) {
         >
           <TypingEffect text={title} delay={38} className="sub-title" />
         </div>
-        <p className="mt-10 mb-2 text-lg max-w-[580px]">{description}</p>
+        <div className="mt-10 lg:hidden">
+          <Svg
+            className="w-full max-w-[400px]"
+            fill={isDarkMode ? '#ffffff' : '#000000'}
+            role="img"
+            filter={isDarkMode && 'invert(1)'}
+          />
+        </div>
+        <p className="mt-5 lg:mt-10 mb-2 text-lg max-w-[580px]">{description}</p>
       </div>
     </div>
   )

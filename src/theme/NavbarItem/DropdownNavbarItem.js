@@ -70,12 +70,14 @@ function DropdownNavbarItemDesktop({
       >
         {props.children ?? props.label}
       </NavbarNavLink>
-      <ul className="flex items-stretch font-mono !font-semibold dropdown__menu p-5 rounded-xl border-solid border-black border-2 shadow-none">
+      <ul className="flex items-stretch font-mono !font-semibold dropdown__menu p-5 rounded-xl border-solid border-black dark:border-gray border-2 shadow-none">
         <div className="pt-4 pl-2 w-[220px]">
           {props.label && <p className="m-0 text-lg uppercase">{props.label}</p>}
-          {description && <p className="mt-4 text-base text-black/50">{description}</p>}
+          {description && (
+            <p className="mt-4 text-base text-black opacity-50 dark:text-white">{description}</p>
+          )}
         </div>
-        <div className="flex flex-col gap-2 pl-4 ml-10 border-r-0 border-solid border-y-0 border-grayL">
+        <div className="flex flex-col gap-2 pl-4 ml-10 border-r-0 border-solid border-y-0 border-grayL dark:border-grayD">
           {items.map((childItemProps, i) => (
             <NavbarItem
               isDropdownItem

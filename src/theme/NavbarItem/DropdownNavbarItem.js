@@ -29,6 +29,7 @@ function DropdownNavbarItemDesktop({
 }) {
   const dropdownRef = useRef(null)
   const [showDropdown, setShowDropdown] = useState(false)
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (!dropdownRef.current || dropdownRef.current.contains(event.target)) {
@@ -70,19 +71,19 @@ function DropdownNavbarItemDesktop({
       >
         {props.children ?? props.label}
       </NavbarNavLink>
-      <ul className="flex items-stretch font-mono !font-semibold dropdown__menu p-5 rounded-xl border-solid border-black dark:border-gray border-2 shadow-none">
+      <ul
+        className={`flex items-stretch font-mono !font-semibold dropdown__menu p-5 rounded-xl border-solid border-2 shadow-none background border`}
+      >
         <div className="pt-4 pl-2 w-[220px]">
-          {props.label && <p className="m-0 text-lg uppercase">{props.label}</p>}
-          {description && (
-            <p className="mt-4 text-base text-black opacity-50 dark:text-white">{description}</p>
-          )}
+          {props.label && <p className="m-0 text-lg uppercase primary">{props.label}</p>}
+          {description && <p className="mt-4 text-base primary-lighter">{description}</p>}
         </div>
-        <div className="flex flex-col gap-2 pl-4 ml-10 border-r-0 border-solid border-y-0 border-grayL dark:border-grayD">
+        <div className="flex flex-col gap-2 pl-4 ml-10 border-r-0 border-solid border-y-0 border-lighter">
           {items.map((childItemProps, i) => (
             <NavbarItem
               isDropdownItem
               activeClassName="dropdown__link--active"
-              className="px-3 py-2 rounded-xl"
+              className="px-3 py-2 rounded-xl primary"
               {...childItemProps}
               key={i}
             />

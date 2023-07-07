@@ -1,7 +1,7 @@
-import { useColorMode } from '@docusaurus/theme-common'
 import React from 'react'
 import styles from './styles.module.css'
 import TypingEffect from '../TypingEffect'
+import { useColor } from '@site/src/theme/Contexts/color'
 
 type FeatureItem = {
   title: string
@@ -54,8 +54,8 @@ const FeatureList: FeatureItem[] = [
 ]
 
 function Feature({ title, titleWidth, Svg, description }: FeatureItem) {
-  const { colorMode } = useColorMode()
-  const isDarkMode = colorMode === 'dark'
+  const { color } = useColor()
+  const isDark = color === 'dark'
   return (
     <div
       className={`flex lg:justify-between lg:items-center gap-24 flex-col-reverse lg:flex-row px-4 lg:px-0 ${styles.feature}`}
@@ -63,9 +63,9 @@ function Feature({ title, titleWidth, Svg, description }: FeatureItem) {
       <div className="hidden lg:inline-block">
         <Svg
           className="w-full max-w-[400px]"
-          fill={isDarkMode ? '#ffffff' : '#000000'}
+          fill={isDark ? '#ffffff' : '#000000'}
           role="img"
-          filter={isDarkMode && 'invert(1)'}
+          filter={isDark ? 'invert(1)' : undefined}
         />
       </div>
       <div className="text-left">
@@ -76,17 +76,17 @@ function Feature({ title, titleWidth, Svg, description }: FeatureItem) {
           className="h-[100px] hidden lg:block lg:w-[560px]"
           style={{ maxWidth: `${titleWidth}px` }}
         >
-          <TypingEffect text={title} delay={38} className="sub-title" />
+          <TypingEffect text={title} delay={38} className="sub-title primary" />
         </div>
         <div className="mt-10 lg:hidden">
           <Svg
             className="w-full max-w-[400px]"
-            fill={isDarkMode ? '#ffffff' : '#000000'}
+            fill={isDark ? '#ffffff' : '#000000'}
             role="img"
-            filter={isDarkMode && 'invert(1)'}
+            filter={isDark && 'invert(1)'}
           />
         </div>
-        <p className="mt-5 lg:mt-10 mb-2 text-lg max-w-[580px]">{description}</p>
+        <p className="mt-5 lg:mt-10 mb-2 text-lg max-w-[580px] primary-lighter">{description}</p>
       </div>
     </div>
   )
@@ -97,7 +97,7 @@ export default function Features(): JSX.Element {
     <section className="pt-[160px]">
       <article className="article">
         <div className="wrapper">
-          <h2 className="title mb-[120px]">about chromatic</h2>
+          <h2 className="title mb-[120px] primary-lighter">about chromatic</h2>
           <div className="flex flex-col gap-[220px]">
             {FeatureList.map((props, idx) => (
               <Feature key={idx} {...props} />

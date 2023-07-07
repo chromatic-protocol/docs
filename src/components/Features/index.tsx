@@ -5,51 +5,55 @@ import TypingEffect from '../TypingEffect'
 
 type FeatureItem = {
   title: string
+  titleWidth: number
   Svg: React.ComponentType<React.ComponentProps<'svg'>>
   description: JSX.Element
 }
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Seperation of index and settlement tokens',
+    title: 'SEPARATION OF INDEX AND SETTLEMENT TOKEN',
+    titleWidth: 560,
     Svg: require('@site/static/img/feature1.svg').default,
     description: (
       <>
-        By separating the underlying index and settlement token, Chromatic Protocol enables the
-        creation of diverse futures markets. Market creators can combine non- manipulable time
-        series from external. By separating the underlying index and settlement token, Chromatic
-        Protocol enables the creation of diverse futures markets. Market creators can combine non-
-        manipulable time series from external.
+        A diverse array of futures markets can be established in a permissionless manner by
+        utilizing oracle price feeds as the index and leveraging ERC-20 tokens as a settlement
+        token. Chromatic Protocol is the most versatile among existing decentralized futures
+        protocols, offering the ability to generate a wide range of futures markets.
       </>
     )
   },
   {
-    title: 'Pre-set Tailored Payoff by Smart Contracts',
+    title: 'PPREDEFINED TP/SL ON SMART CONTRACT',
+    titleWidth: 480,
     Svg: require('@site/static/img/feature2.svg').default,
     description: (
       <>
-        Addressing the challenge of trustless payoffs in DeFi, Chromatic Protocol offers contracts
-        for secure and automated execution of payoffs instead of relying on intermediaries.
-        Addressing the challenge of trustless payoffs in DeFi, Chromatic Protocol offers contracts
-        for secure and automated execution of payoffs instead of relying on intermediaries.
+        To ensure trustless payoffs in the DeFi environment, Chromatic Protocol implemented smart
+        contracts for secure and automated execution of payoffs instead of relying on
+        intermediaries. It mitigates the delta risk in highly volatile markets for makers, liberates
+        takers from forced liquidations, and enhances the capital efficiency of the protocol.
       </>
     )
   },
   {
-    title: 'Seperation of index and settlement tokens',
+    title: 'PARTITIONED LP WITH DYNAMIC FEES',
+    titleWidth: 460,
     Svg: require('@site/static/img/feature3.svg').default,
     description: (
       <>
-        One-size-fits-all doesn’t scale. In Chromatic protocol, users are in the drivers seat.
-        Chromatic protocol is a minimalist & permission-less protocol designed. One-size-fits-all
-        doesn’t scale. In Chromatic protocol, users are in the drivers seat. Chromatic protocol is a
-        minimalist & permission-less protocol designed.
+        Chromatic’s LPs are divided into multiple bins with different trading fees, and the optimal
+        fee is determined based on taker’s trading demand and maker’s liquidity supply. This dynamic
+        fee system achieves a balanced maker-taker equilibrium, addressing the inherent instability
+        of closed systems like futures markets and significantly enhancing the sustainability of the
+        protocol.
       </>
     )
   }
 ]
 
-function Feature({ title, Svg, description }: FeatureItem) {
+function Feature({ title, titleWidth, Svg, description }: FeatureItem) {
   const { colorMode } = useColorMode()
   const isDarkMode = colorMode === 'dark'
   return (
@@ -65,8 +69,13 @@ function Feature({ title, Svg, description }: FeatureItem) {
         />
       </div>
       <div className="text-left">
-        <h4 className="sub-title lg:hidden max-w-[560px]">{title}</h4>
-        <div className="h-[100px] hidden lg:block lg:w-[560px]">
+        <h4 className="sub-title lg:hidden" style={{ maxWidth: `${titleWidth}px` }}>
+          {title}
+        </h4>
+        <div
+          className="h-[100px] hidden lg:block lg:w-[560px]"
+          style={{ maxWidth: `${titleWidth}px` }}
+        >
           <TypingEffect text={title} delay={38} className="sub-title" />
         </div>
         <p className="mt-10 mb-2 text-lg max-w-[580px]">{description}</p>

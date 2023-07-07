@@ -21,7 +21,7 @@ export default function FooterLinkItem({ item }) {
           })}
       {...props}
       onClick={() => {
-        if (label === 'Trade') {
+        if (label === 'Trade' || 'Pools') {
           onOpen()
         }
       }}

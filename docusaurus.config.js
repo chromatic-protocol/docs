@@ -199,7 +199,7 @@ const config = {
                 href: '#none'
               },
               {
-                label: 'Pool',
+                label: 'Pools',
                 // href: CHROMATIC_LINKS.appPool
                 href: '#none'
               }

@@ -105,7 +105,7 @@ function StartingGuide() {
               maker-taker equilibrium.
             </p>
             <div className="flex flex-wrap justify-center gap-5 md:gap-10">
-              <IconArrowButton label="Start trade" href={CHROMATIC_LINKS.app} icon="chromatic" />
+              <IconArrowButton label="Testnet App" href={CHROMATIC_LINKS.app} icon="chromatic" />
               <IconArrowButton label="Read Medium" href={CHROMATIC_LINKS.medium} icon="medium" />
               <IconArrowButton label="Read Gitbook" href={CHROMATIC_LINKS.gitbook} icon="gitbook" />
             </div>
@@ -170,7 +170,7 @@ function Article() {
           <div className="wrapper">
             <div className="box border-[#EEE]">
               <div>
-                <h4 className="sub-title">ARTICLE</h4>
+                <h4 className="sub-title">ARTICLES</h4>
                 <p className="p">
                   One-size-fits-all doesn’t scale. In Chromatic protocol, users are in the drivers
                   seat. Chromatic protocol is a minimalist & permission-less protocol designed.

@@ -97,7 +97,7 @@ const config = {
           {
             type: 'dropdown',
             label: 'Development',
-            description: 'for developers', // customized prop
+            // description: 'for developers', // customized prop
             position: 'right',
             items: [
               {
@@ -125,7 +125,7 @@ const config = {
           {
             type: 'dropdown',
             label: 'Articles',
-            description: 'for detail explanation', // customized prop
+            // description: 'for detail explanation', // customized prop
             position: 'right',
             items: [
               {
@@ -145,7 +145,7 @@ const config = {
           {
             type: 'dropdown',
             label: 'Community',
-            description: 'for detail explanation', // customized prop
+            // description: 'for detail explanation', // customized prop
             position: 'right',
             items: [
               {
@@ -190,7 +190,7 @@ const config = {
         },
         links: [
           {
-            title: 'Apps',
+            title: 'Testnet Apps',
             items: [
               {
                 label: 'Trade',
@@ -199,6 +199,23 @@ const config = {
               {
                 label: 'Pool',
                 href: CHROMATIC_LINKS.appPool
+              }
+            ]
+          },
+          {
+            title: 'Development',
+            items: [
+              {
+                label: 'Github',
+                href: CHROMATIC_LINKS.github
+              },
+              {
+                label: 'Contracts',
+                href: CHROMATIC_LINKS.githubContracts
+              },
+              {
+                label: 'SDK',
+                href: CHROMATIC_LINKS.githubSDK
               }
             ]
           },
@@ -212,23 +229,6 @@ const config = {
               {
                 label: 'Medium',
                 href: CHROMATIC_LINKS.medium
-              }
-            ]
-          },
-          {
-            title: 'Developers',
-            items: [
-              {
-                label: 'Github',
-                href: CHROMATIC_LINKS.github
-              },
-              {
-                label: 'Contracts',
-                href: CHROMATIC_LINKS.githubContracts
-              },
-              {
-                label: 'SDK',
-                href: CHROMATIC_LINKS.githubSDK
               }
             ]
           },

@@ -46,7 +46,11 @@ export default function NavbarNavLink({
               )}
               <div>
                 <p className="m-0 text-lg">{label}</p>
-                {description && <p className="mt-2 mb-0 text-base text-black/50">{description}</p>}
+                {description && (
+                  <p className="mt-2 mb-0 text-base text-black/50 dark:text-white/50">
+                    {description}
+                  </p>
+                )}
               </div>
             </div>
 

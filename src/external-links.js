@@ -4,7 +4,7 @@ const CHROMATIC_LINKS = {
   appPool: 'https://testnet.chromatic.finance/pool',
   medium: 'https://medium.com/@chromatic-protocol',
   gitbook: 'https://chromatic.gitbook.io/docs',
-  twitter: 'https://twitter.com/chromatic-protocol',
+  twitter: 'https://twitter.com/chromatic_perp',
   // discord: '',
   // telegram: '',
   github: 'https://github.com/chromatic-protocol',

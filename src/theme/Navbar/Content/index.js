@@ -51,7 +51,9 @@ export default function NavbarContent() {
       left={
         // TODO stop hardcoding items?
         <>
-          <NavbarLogo />
+          <div className="wrapper-logo">
+            <NavbarLogo />
+          </div>
           {/* <NavbarItems items={leftItems} /> */}
         </>
       }

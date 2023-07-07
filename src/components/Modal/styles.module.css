@@ -12,7 +12,7 @@
 }
 
 .modal {
-  @apply bg-white rounded-2xl p-5 min-w-[400px] text-center relative;
+  @apply bg-white rounded-2xl p-5 lg:min-w-[400px] w-full mx-4 text-center relative;
   box-shadow: 4px 4px 60px 0px rgba(229, 229, 229, 0.16);
 }
 
@@ -26,6 +26,8 @@
   @apply outline-none border-none bg-transparent;
   @apply w-4 h-4 absolute cursor-pointer right-5 top-5;
   @apply opacity-60 hover:opacity-100;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3E%3Cpath stroke='%23030303' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m4 12 8-8M4 4l8 8' opacity='.3'/%3E%3C/svg%3E");
 }
 

@@ -14,7 +14,14 @@ export default function FooterLayout({ style, links, logo, copyright }) {
             {copyright}
           </div>
         )} */}
-        {logo && <div className="footer-logo">{logo}</div>}
+        <div>
+          <div className="footer-logo">
+            {logo}
+            <p className="mt-5 mb-0 text-xs text-white/50 lg:mt-7 whitespace-nowrap">
+              A New Era in Decentralized Perpetual Futures
+            </p>
+          </div>
+        </div>
         {links}
       </div>
     </footer>

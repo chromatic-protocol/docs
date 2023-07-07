@@ -4,6 +4,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 import React from 'react'
 
 import { Svgs } from '@site/static/img/icons/Svgs'
+import { useTestnetModal } from '@site/src/hooks/useTestnetModal'
 
 export default function NavbarNavLink({
   activeBasePath,
@@ -27,6 +28,7 @@ export default function NavbarNavLink({
   // const isExternalLink = label && href && !isInternalUrl(href)
 
   const { colorMode } = useColorMode()
+  const { onOpen } = useTestnetModal()
   // Link content is set through html XOR label
   const Svg = Svgs[icon]
   const linkContentProps = html
@@ -74,6 +76,11 @@ export default function NavbarNavLink({
         style={{
           backgroundColor: isButton ? (colorMode === 'dark' ? '#ffffff' : '#000000') : undefined,
           color: isButton ? (colorMode === 'dark' ? '#000000' : '#ffffff') : undefined
+        }}
+        onClick={(event) => {
+          if (label === 'Testnet App') {
+            onOpen()
+          }
         }}
       />
     )

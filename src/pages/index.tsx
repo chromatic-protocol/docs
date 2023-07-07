@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Link from '@docusaurus/Link'
 import { Svgs } from '@site/static/img/icons/Svgs'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
@@ -15,6 +15,7 @@ import { useScrollPosition } from '@site/src/hooks/useScroll'
 import { useColorMode } from '@docusaurus/theme-common'
 
 import { CHROMATIC_LINKS } from '@site/src/external-links'
+import { useTestnetModal } from '../hooks/useTestnetModal'
 
 function IconArrowButton({
   label,
@@ -90,9 +91,10 @@ function Intro() {
   )
 }
 
-function StartingGuide({ onOpenModal }: { onOpenModal: () => void }) {
+function StartingGuide() {
   const { chromaticHeader: Svg } = Svgs
   const { colorMode } = useColorMode()
+  const { onOpen } = useTestnetModal()
 
   return (
     <section className="pb-[180px]">
@@ -115,7 +117,7 @@ function StartingGuide({ onOpenModal }: { onOpenModal: () => void }) {
               <IconArrowButton
                 label="Testnet App"
                 href={null}
-                onClick={onOpenModal}
+                onClick={onOpen}
                 // href={CHROMATIC_LINKS.app}
                 icon="chromatic"
               />
@@ -217,21 +219,13 @@ function Article() {
 
 function Contents() {
   const triggerProps = useScrollPosition()
-
+  const { isOpen, onClose } = useTestnetModal()
   const { colorMode, setColorMode } = useColorMode()
 
   function setMode(type: typeof colorMode) {
     return () => {
       setColorMode(type)
     }
-  }
-
-  const [isModalOpen, setIsModalOpen] = useState(false)
-  const openModal = () => {
-    setIsModalOpen(true)
-  }
-  const closeModal = () => {
-    setIsModalOpen(false)
   }
 
   return (
@@ -243,7 +237,7 @@ function Contents() {
         offset={'-20vh'}
         {...triggerProps}
       />
-      <StartingGuide onOpenModal={openModal} />
+      <StartingGuide />
       <Trigger
         onUp={setMode('dark')}
         onDown={setMode('light')}
@@ -252,10 +246,10 @@ function Contents() {
       />
       <Features />
       <Article />
-      {isModalOpen && (
+      {isOpen && (
         <Modal
           isOpen={true}
-          onClose={closeModal}
+          onClose={onClose}
           title="Testnet Launch"
           message="Arbitrum Goerli testnet app will be activated shortly!"
         />

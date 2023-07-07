@@ -27,7 +27,7 @@ ${JSON.stringify(item, null, 2)}`,
             )
           }
         >
-          <NavbarItem {...item} className="font-mono" />
+          <NavbarItem {...item} className="font-mono primary" />
         </ErrorCauseBoundary>
       ))}
     </>

@@ -5,6 +5,8 @@ import { useHideableNavbar, useNavbarMobileSidebar } from '@docusaurus/theme-com
 import { translate } from '@docusaurus/Translate'
 import NavbarMobileSidebar from '@theme/Navbar/MobileSidebar'
 import styles from './styles.module.css'
+import { useColor } from '@site/src/theme/Contexts/color'
+
 function NavbarBackdrop(props) {
   return (
     <div
@@ -18,6 +20,9 @@ export default function NavbarLayout({ children }) {
   const {
     navbar: { hideOnScroll, style }
   } = useThemeConfig()
+
+  const { color } = useColor()
+
   const mobileSidebar = useNavbarMobileSidebar()
   const { navbarRef, isNavbarVisible } = useHideableNavbar(hideOnScroll)
   return (
@@ -28,17 +33,19 @@ export default function NavbarLayout({ children }) {
         message: 'Main',
         description: 'The ARIA label for the main navigation'
       })}
-      className={clsx(
-        'navbar',
-        'navbar--fixed-top',
-        'h-[70px] px-4 md:px-10',
-        hideOnScroll && [styles.navbarHideable, !isNavbarVisible && styles.navbarHidden],
-        {
-          'navbar--dark': style === 'dark',
-          'navbar--primary': style === 'primary',
-          'navbar-sidebar--show': mobileSidebar.shown
-        }
-      )}
+      className={
+        clsx(
+          'navbar',
+          'navbar--fixed-top',
+          'h-[70px] px-4 md:px-10',
+          hideOnScroll && [styles.navbarHideable, !isNavbarVisible && styles.navbarHidden],
+          {
+            'navbar--dark': style === 'dark',
+            'navbar--primary': style === 'primary',
+            'navbar-sidebar--show': mobileSidebar.shown
+          }
+        ) + ` ${color} background`
+      }
     >
       {children}
       <NavbarBackdrop onClick={mobileSidebar.toggle} />

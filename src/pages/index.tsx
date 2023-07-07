@@ -12,32 +12,26 @@ import Features from '@site/src/components/Features'
 import Trigger from '@site/src/components/Trigger'
 
 import { useScrollPosition } from '@site/src/hooks/useScroll'
-import { useColorMode } from '@docusaurus/theme-common'
 
 import { CHROMATIC_LINKS } from '@site/src/external-links'
 import { useTestnetModal } from '../hooks/useTestnetModal'
+import { useColor } from '@site/src/theme/Contexts/color'
 
-function IconArrowButton({
-  label,
-  icon,
-  to = '',
-  href = '',
-  dark = false,
-  onClick = null,
-  ...props
-}) {
+function IconArrowButton({ label, icon, to = '', href = '', onClick = null, ...props }) {
   const Svg = Svgs[icon]
+
+  const { color } = useColor()
 
   return (
     <Link
       className={`btn w-[240px] md:w-[240px] lg:w-[200px] !h-12 !px-4 cursor-pointer 
-      ${dark ? 'btn-black-line' : 'btn-white-line'}`}
+      ${color === 'light' ? 'btn-black-line' : 'btn-white-line'}`}
       to={to}
       href={href}
       onClick={onClick}
     >
       <div className="flex items-center justify-between w-full">
-        <div className="flex items-center gap-3 text-lg">
+        <div className="flex items-center gap-3 text-lg primary hover">
           <Svg fill="current" role="img" className="w-5 h-5" />
           {label}
         </div>
@@ -92,21 +86,23 @@ function IconArrowButton({
 
 function StartingGuide() {
   const { chromaticHeader: Svg } = Svgs
-  const { colorMode } = useColorMode()
   const { onOpen } = useTestnetModal()
+  const { color } = useColor()
 
   return (
     <section className="pb-[180px]">
       <article className="h-[100vh] text-center article">
         <div className="flex flex-col justify-between gap-12 md:gap-14 wrapper">
           <div className="">
-            <p className="mb-8 text-2xl uppercase lg:text-4xl md:mb-12">See the future on</p>
+            <p className="mb-8 text-2xl uppercase lg:text-4xl md:mb-12 primary">
+              See the future on
+            </p>
             <div className="max-w-[910px] mx-auto px-4">
-              <Svg fill={colorMode === 'dark' ? '#FFFFFF' : '#000000'} role="img" />
+              <Svg fill={color === 'dark' ? '#FFFFFF' : '#000000'} role="img" />
             </div>
           </div>
           <div>
-            <p className="mb-20 text-xl leading-normal md:max-w-[80%] opacity-50 mx-auto">
+            <p className="mb-20 text-xl leading-normal md:max-w-[80%] opacity-50 mx-auto primary-lighter">
               The first properly designed decentralized perpetual futures protocol that provides
               permissionless, trustless, and unopinionated building blocks. It enables participants
               in the DeFi ecosystem to create balanced two-sided markets exposed to oracle price
@@ -128,12 +124,12 @@ function StartingGuide() {
       </article>
       <article className="mt-20 article">
         <div className="wrapper">
-          <h2 className="mb-10 title">Developement</h2>
+          <h2 className="mb-10 title primary-lighter">Developement</h2>
           <div className="flex flex-wrap items-stretch gap-5 lg:flex-nowrap">
-            <div className="box flex-1 lg:min-h-[420px] border-[#333]">
+            <div className="box lg:min-h-[420px] border-lighter">
               <div>
-                <h4 className="sub-title">Github</h4>
-                <p className="p">
+                <h4 className="sub-title primary">Github</h4>
+                <p className="p primary-lighter">
                   Start building with Chromatic Protocol. With its unopinionated, low-level, and
                   non-upgradable design, Chromatic empowers developers to build decentralized
                   perpetual futures platforms that align with their unique business and trading
@@ -144,10 +140,10 @@ function StartingGuide() {
                 <IconArrowButton label="View Github" icon="github" href={CHROMATIC_LINKS.github} />
               </div>
             </div>
-            <div className="box flex-1 lg:min-h-[420px] border-[#333]">
+            <div className="box lg:min-h-[420px] border-lighter">
               <div>
-                <h4 className="sub-title">SDK</h4>
-                <p className="p">
+                <h4 className="sub-title primary">SDK</h4>
+                <p className="p primary-lighter">
                   Discover the Chromatic Protocol SDK, a comprehensive JavaScript library designed
                   to facilitate seamless interaction with Chromatic Protocol on Arbitrum. This
                   document serves as a step-by-step guide, assisting you in the setup process for
@@ -170,43 +166,27 @@ function StartingGuide() {
   )
 }
 
-function FeatureList(): JSX.Element {
-  return (
-    <section className="pt-[160px]">
-      <article className="article">
-        <Features />
-      </article>
-    </section>
-  )
-}
-
 function Article() {
   return (
     <>
       <section className="pt-[220px] pb-[120px]">
         <article className="article">
           <div className="wrapper">
-            <div className="box border-[#EEE]">
+            <div className="box border-lighter">
               <div>
-                <h4 className="sub-title">ARTICLES</h4>
-                <p className="p">
+                <h4 className="sub-title primary">ARTICLES</h4>
+                <p className="p primary-lighter">
                   Stay informed and up to date with more detailed information, insights and updates
                   from Chromatic Protocol.
                 </p>
               </div>
               <div className="btns">
                 <IconArrowButton
-                  dark
                   label="View Gitbook"
                   icon="gitbook"
                   href={CHROMATIC_LINKS.gitbook}
                 />
-                <IconArrowButton
-                  dark
-                  label="Read Medium"
-                  icon="medium"
-                  href={CHROMATIC_LINKS.medium}
-                />
+                <IconArrowButton label="Read Medium" icon="medium" href={CHROMATIC_LINKS.medium} />
               </div>
             </div>
           </div>
@@ -219,16 +199,14 @@ function Article() {
 function Contents() {
   const triggerProps = useScrollPosition()
   const { isOpen, onClose } = useTestnetModal()
-  const { colorMode, setColorMode } = useColorMode()
+  const { color, setColor: _setColor } = useColor()
 
-  function setMode(type: typeof colorMode) {
-    return () => {
-      setColorMode(type)
-    }
+  const setColor = (nextColor: typeof color) => () => {
+    _setColor(nextColor)
   }
 
   return (
-    <main className="font-mono landing-page">
+    <main className={`font-mono landing-page ${color} background`}>
       {/* <Intro /> */}
       {/* <Trigger
         onUp={setColor('light')}
@@ -238,8 +216,8 @@ function Contents() {
   />*/}
       <StartingGuide />
       <Trigger
-        onUp={setMode('dark')}
-        onDown={setMode('light')}
+        onUp={setColor('dark')}
+        onDown={setColor('light')}
         offset={'-25vh'}
         {...triggerProps}
       />
@@ -263,6 +241,7 @@ export default function Home(): JSX.Element {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
+      wrapperClassName="home"
     >
       <Contents />
     </Layout>

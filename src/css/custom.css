@@ -8,6 +8,67 @@
 @tailwind components;
 @tailwind utilities;
 
+.dark {
+  .primary {
+    color: #ffffff;
+  }
+  .inverted {
+    color: #000000;
+  }
+  .primary-lighter {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .background,
+  &.background {
+    background-color: #000000;
+  }
+  .inverted-background {
+    background-color: #ffffff;
+  }
+  .hover:hover {
+    * {
+      color: #000000;
+    }
+  }
+  .border {
+    color: #ffffff;
+  }
+  .border-lighter {
+    color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.light {
+  .primary {
+    color: #000000;
+  }
+  .inverted {
+    color: #ffffff;
+  }
+  .primary-lighter {
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .background,
+  &.background {
+    background-color: #ffffff;
+  }
+
+  .inverted-background {
+    background-color: #000000;
+  }
+  .hover:hover {
+    * {
+      color: #ffffff;
+    }
+  }
+  .border {
+    border-color: #000000;
+  }
+  .border-lighter {
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
 * {
   transition-property: background-color;
   transition-duration: 0.72s;

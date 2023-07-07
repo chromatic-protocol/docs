@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect } from 'react'
 import styles from './styles.module.css'
 
 interface ModalProps {
@@ -9,6 +9,21 @@ interface ModalProps {
 }
 
 const Modal: React.FC<ModalProps> = ({ title, message, isOpen, onClose }) => {
+  useEffect(() => {
+    const handleOutsideClick = (event: MouseEvent) => {
+      const target = event.target as HTMLElement
+      if (!target.closest(`.${styles.modal}`)) {
+        onClose()
+      }
+    }
+    if (isOpen) {
+      document.addEventListener('mousedown', handleOutsideClick)
+    }
+    return () => {
+      document.removeEventListener('mousedown', handleOutsideClick)
+    }
+  }, [isOpen, onClose])
+
   if (!isOpen) {
     return null
   }
@@ -17,11 +32,11 @@ const Modal: React.FC<ModalProps> = ({ title, message, isOpen, onClose }) => {
     <div className={styles.backdrop}>
       <div className={styles.modal}>
         <div className={styles.header}>
-          <p className="w-full text-xl font-semibold text-black">{title}</p>
-          <button className={styles.close} onClick={onClose} title="close" />
+          <p className={styles.title}>{title}</p>
+          <button className={styles.close} onClick={onClose} title="Close" />
         </div>
         <div className={styles.message}>
-          <p className="text-base font-medium text-black/70">{message}</p>
+          <p className={styles.messageText}>{message}</p>
         </div>
       </div>
     </div>

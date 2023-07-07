@@ -16,7 +16,15 @@ import { useColorMode } from '@docusaurus/theme-common'
 
 import { CHROMATIC_LINKS } from '@site/src/external-links'
 
-function IconArrowButton({ label, icon, to = '', href = '', dark = false, onClick, ...props }) {
+function IconArrowButton({
+  label,
+  icon,
+  to = '',
+  href = '',
+  dark = false,
+  onClick = null,
+  ...props
+}) {
   const Svg = Svgs[icon]
 
   return (
@@ -244,7 +252,14 @@ function Contents() {
       />
       <Features />
       <Article />
-      {isModalOpen && <Modal isOpen={true} onClose={closeModal} title="Hello" message="Hello" />}
+      {isModalOpen && (
+        <Modal
+          isOpen={true}
+          onClose={closeModal}
+          title="Testnet Launch"
+          message="Goerli testnet App will be activated soon"
+        />
+      )}
     </main>
   )
 }

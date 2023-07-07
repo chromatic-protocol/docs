@@ -19,7 +19,9 @@
 .header {
   @apply flex text-center;
 }
-
+.title {
+  @apply w-full text-xl font-semibold text-black;
+}
 .close {
   @apply outline-none border-none bg-transparent;
   @apply w-4 h-4 absolute cursor-pointer right-5 top-5;
@@ -29,4 +31,7 @@
 
 .message {
   @apply my-5;
+}
+.messageText {
+  @apply text-base font-medium text-black/70;
 }

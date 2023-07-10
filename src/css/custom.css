@@ -175,12 +175,11 @@ html[data-theme='dark'] {
   @apply px-5;
 }
 .navbar-sidebar {
-  @apply font-mono;
   .menu__link {
-    @apply py-4 px-6 font-semibold;
+    @apply min-h-[40px];
   }
-  .btn-black {
-    @apply !hidden;
+  .btn.h-7 {
+    @apply hidden;
   }
 }
 

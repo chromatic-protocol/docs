@@ -2,7 +2,7 @@
 id: PositionParam
 title: PositionParam.sol
 ---
-# [PositionParam.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/external/liquidity/PositionParam.sol)
+# [PositionParam.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/libraries/liquidity/PositionParam.sol)
 
 ## PositionParam
 

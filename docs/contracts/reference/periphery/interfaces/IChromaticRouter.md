@@ -194,7 +194,7 @@ Get the LP receipt IDs associated with a specific market and owner.
 function addLiquidityBatch(address market, address recipient, int16[] feeRates, uint256[] amounts) external returns (struct LpReceipt[] lpReceipts)
 ```
 
-Adds liquidity to multiple ChromaticMarket contracts in a batch.
+Adds liquidity to multiple liquidity bins of ChromaticMarket contract in a batch.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

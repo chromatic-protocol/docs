@@ -218,16 +218,3 @@ Sets the `_binMargins` array for the position
 | self | struct Position | The memory instance of the `Position` struct |
 | margins | struct BinMargin[] | The bin margins for the position |
 
-### storeTo
-
-```solidity
-function storeTo(struct Position self, struct Position storedPosition) internal
-```
-
-Stores the memory values of the `Position` struct to the storage
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct Position | The memory instance of the `Position` struct |
-| storedPosition | struct Position | The target storage |
-

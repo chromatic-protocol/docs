@@ -2,7 +2,7 @@
 id: BinClosingPosition
 title: BinClosingPosition.sol
 ---
-# [BinClosingPosition.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/external/liquidity/BinClosingPosition.sol)
+# [BinClosingPosition.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/libraries/liquidity/BinClosingPosition.sol)
 
 ## BinClosingPosition
 

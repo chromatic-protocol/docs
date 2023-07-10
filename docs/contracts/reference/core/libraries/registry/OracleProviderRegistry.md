@@ -2,7 +2,7 @@
 id: OracleProviderRegistry
 title: OracleProviderRegistry.sol
 ---
-# [OracleProviderRegistry.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/external/registry/OracleProviderRegistry.sol)
+# [OracleProviderRegistry.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/libraries/registry/OracleProviderRegistry.sol)
 
 ## OracleProviderRegistry
 
@@ -24,7 +24,7 @@ Library for managing a registry of oracle providers.
 ### register
 
 ```solidity
-function register(struct OracleProviderRegistry self, address oracleProvider, uint32 minStopLossBPS, uint32 maxStopLossBPS, uint32 minTakeProfitBPS, uint32 maxTakeProfitBPS, uint8 leverageLevel) external
+function register(struct OracleProviderRegistry self, address oracleProvider, uint32 minStopLossBPS, uint32 maxStopLossBPS, uint32 minTakeProfitBPS, uint32 maxTakeProfitBPS, uint8 leverageLevel) internal
 ```
 
 Registers an oracle provider in the registry.
@@ -44,7 +44,7 @@ _Throws an error if the oracle provider is already registered._
 ### unregister
 
 ```solidity
-function unregister(struct OracleProviderRegistry self, address oracleProvider) external
+function unregister(struct OracleProviderRegistry self, address oracleProvider) internal
 ```
 
 Unregisters an oracle provider from the registry.
@@ -57,7 +57,7 @@ Unregisters an oracle provider from the registry.
 ### oracleProviders
 
 ```solidity
-function oracleProviders(struct OracleProviderRegistry self) external view returns (address[])
+function oracleProviders(struct OracleProviderRegistry self) internal view returns (address[])
 ```
 
 Returns an array of all registered oracle providers.
@@ -73,7 +73,7 @@ Returns an array of all registered oracle providers.
 ### isRegistered
 
 ```solidity
-function isRegistered(struct OracleProviderRegistry self, address oracleProvider) external view returns (bool)
+function isRegistered(struct OracleProviderRegistry self, address oracleProvider) internal view returns (bool)
 ```
 
 Checks if an oracle provider is registered in the registry.
@@ -90,7 +90,7 @@ Checks if an oracle provider is registered in the registry.
 ### getOracleProviderProperties
 
 ```solidity
-function getOracleProviderProperties(struct OracleProviderRegistry self, address oracleProvider) external view returns (uint32 minStopLossBPS, uint32 maxStopLossBPS, uint32 minTakeProfitBPS, uint32 maxTakeProfitBPS, uint8 leverageLevel)
+function getOracleProviderProperties(struct OracleProviderRegistry self, address oracleProvider) internal view returns (uint32 minStopLossBPS, uint32 maxStopLossBPS, uint32 minTakeProfitBPS, uint32 maxTakeProfitBPS, uint8 leverageLevel)
 ```
 
 Retrieves the properties of an oracle provider.
@@ -111,7 +111,7 @@ Retrieves the properties of an oracle provider.
 ### setStopLossBPSRange
 
 ```solidity
-function setStopLossBPSRange(struct OracleProviderRegistry self, address oracleProvider, uint32 minStopLossBPS, uint32 maxStopLossBPS) external
+function setStopLossBPSRange(struct OracleProviderRegistry self, address oracleProvider, uint32 minStopLossBPS, uint32 maxStopLossBPS) internal
 ```
 
 Sets the range for stop-loss basis points for an oracle provider.
@@ -126,7 +126,7 @@ Sets the range for stop-loss basis points for an oracle provider.
 ### setTakeProfitBPSRange
 
 ```solidity
-function setTakeProfitBPSRange(struct OracleProviderRegistry self, address oracleProvider, uint32 minTakeProfitBPS, uint32 maxTakeProfitBPS) external
+function setTakeProfitBPSRange(struct OracleProviderRegistry self, address oracleProvider, uint32 minTakeProfitBPS, uint32 maxTakeProfitBPS) internal
 ```
 
 Sets the range for take-profit basis points for an oracle provider.
@@ -141,7 +141,7 @@ Sets the range for take-profit basis points for an oracle provider.
 ### setLeverageLevel
 
 ```solidity
-function setLeverageLevel(struct OracleProviderRegistry self, address oracleProvider, uint8 leverageLevel) external
+function setLeverageLevel(struct OracleProviderRegistry self, address oracleProvider, uint8 leverageLevel) internal
 ```
 
 Sets the leverage level of an oracle provider in the registry.

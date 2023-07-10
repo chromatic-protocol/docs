@@ -2,7 +2,7 @@
 id: AccruedInterest
 title: AccruedInterest.sol
 ---
-# [AccruedInterest.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/external/liquidity/AccruedInterest.sol)
+# [AccruedInterest.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/libraries/liquidity/AccruedInterest.sol)
 
 ## AccruedInterest
 

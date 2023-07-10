@@ -1,10 +1,10 @@
 ---
-id: ILiquidity
-title: ILiquidity.sol
+id: IMarketLiquidity
+title: IMarketLiquidity.sol
 ---
-# [ILiquidity.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/interfaces/market/ILiquidity.sol)
+# [IMarketLiquidity.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/interfaces/market/IMarketLiquidity.sol)
 
-## ILiquidity
+## IMarketLiquidity
 
 _The interface for liquidity operations in a market._
 
@@ -34,57 +34,104 @@ struct LiquidityBinStatus {
 ### AddLiquidity
 
 ```solidity
-event AddLiquidity(address recipient, struct LpReceipt receipt)
+event AddLiquidity(struct LpReceipt receipt)
 ```
 
 _Emitted when liquidity is added to the market._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| recipient | address | The address to receive the CLB tokens. |
 | receipt | struct LpReceipt | The liquidity receipt. |
+
+### AddLiquidityBatch
+
+```solidity
+event AddLiquidityBatch(struct LpReceipt[] receipts)
+```
+
+_Emitted when liquidity is added to the market._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| receipts | struct LpReceipt[] | An array of LP receipts. |
 
 ### ClaimLiquidity
 
 ```solidity
-event ClaimLiquidity(address recipient, uint256 clbTokenAmount, struct LpReceipt receipt)
+event ClaimLiquidity(struct LpReceipt receipt, uint256 clbTokenAmount)
 ```
 
 _Emitted when liquidity is claimed from the market._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| recipient | address | The address that receives the claimed CLB tokens. |
-| clbTokenAmount | uint256 | The amount of CLB tokens claimed. |
 | receipt | struct LpReceipt | The liquidity receipt. |
+| clbTokenAmount | uint256 | The amount of CLB tokens claimed. |
+
+### ClaimLiquidityBatch
+
+```solidity
+event ClaimLiquidityBatch(struct LpReceipt[] receipts, uint256[] clbTokenAmounts)
+```
+
+_Emitted when liquidity is claimed from the market._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| receipts | struct LpReceipt[] | An array of LP receipts. |
+| clbTokenAmounts | uint256[] | The amount list of CLB tokens claimed. |
 
 ### RemoveLiquidity
 
 ```solidity
-event RemoveLiquidity(address recipient, struct LpReceipt receipt)
+event RemoveLiquidity(struct LpReceipt receipt)
 ```
 
 _Emitted when liquidity is removed from the market._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| recipient | address | The address that receives the removed liquidity. |
 | receipt | struct LpReceipt | The liquidity receipt. |
+
+### RemoveLiquidityBatch
+
+```solidity
+event RemoveLiquidityBatch(struct LpReceipt[] receipts)
+```
+
+_Emitted when liquidity is removed from the market._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| receipts | struct LpReceipt[] | An array of LP receipts. |
 
 ### WithdrawLiquidity
 
 ```solidity
-event WithdrawLiquidity(address recipient, uint256 amount, uint256 burnedCLBTokenAmount, struct LpReceipt receipt)
+event WithdrawLiquidity(struct LpReceipt receipt, uint256 amount, uint256 burnedCLBTokenAmount)
 ```
 
 _Emitted when liquidity is withdrawn from the market._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| recipient | address | The address that receives the withdrawn liquidity. |
+| receipt | struct LpReceipt | The liquidity receipt. |
 | amount | uint256 | The amount of liquidity withdrawn. |
 | burnedCLBTokenAmount | uint256 | The amount of burned CLB tokens. |
-| receipt | struct LpReceipt | The liquidity receipt. |
+
+### WithdrawLiquidityBatch
+
+```solidity
+event WithdrawLiquidityBatch(struct LpReceipt[] receipts, uint256[] amounts, uint256[] burnedCLBTokenAmounts)
+```
+
+_Emitted when liquidity is withdrawn from the market._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| receipts | struct LpReceipt[] | An array of LP receipts. |
+| amounts | uint256[] | The amount list of liquidity withdrawn. |
+| burnedCLBTokenAmounts | uint256[] | The amount list of burned CLB tokens. |
 
 ### addLiquidity
 
@@ -104,6 +151,25 @@ _Adds liquidity to the market._
 | ---- | ---- | ----------- |
 | [0] | struct LpReceipt | The liquidity receipt. |
 
+### addLiquidityBatch
+
+```solidity
+function addLiquidityBatch(address recipient, int16[] tradingFeeRates, uint256[] amounts, bytes data) external returns (struct LpReceipt[])
+```
+
+Adds liquidity to multiple liquidity bins of the market in a batch.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| recipient | address | The address of the recipient for each liquidity bin. |
+| tradingFeeRates | int16[] | An array of fee rates for each liquidity bin. |
+| amounts | uint256[] | An array of amounts to add as liquidity for each bin. |
+| data | bytes | Additional data for the liquidity callback. |
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| [0] | struct LpReceipt[] | An array of LP receipts. |
+
 ### claimLiquidity
 
 ```solidity
@@ -115,6 +181,19 @@ _Claims liquidity from a liquidity receipt._
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | receiptId | uint256 | The ID of the liquidity receipt. |
+| data | bytes | Additional data for the liquidity callback. |
+
+### claimLiquidityBatch
+
+```solidity
+function claimLiquidityBatch(uint256[] receiptIds, bytes data) external
+```
+
+_Claims liquidity from a liquidity receipt._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| receiptIds | uint256[] | The array of the liquidity receipt IDs. |
 | data | bytes | Additional data for the liquidity callback. |
 
 ### removeLiquidity
@@ -135,6 +214,25 @@ _Removes liquidity from the market._
 | ---- | ---- | ----------- |
 | [0] | struct LpReceipt | The liquidity receipt. |
 
+### removeLiquidityBatch
+
+```solidity
+function removeLiquidityBatch(address recipient, int16[] tradingFeeRates, uint256[] clbTokenAmounts, bytes data) external returns (struct LpReceipt[])
+```
+
+_Removes liquidity from the market._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| recipient | address | The address to receive the removed liquidity. |
+| tradingFeeRates | int16[] | An array of fee rates for each liquidity bin. |
+| clbTokenAmounts | uint256[] | An array of clb token amounts to remove as liquidity for each bin. |
+| data | bytes | Additional data for the liquidity callback. |
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| [0] | struct LpReceipt[] | The liquidity receipt. |
+
 ### withdrawLiquidity
 
 ```solidity
@@ -146,6 +244,19 @@ _Withdraws liquidity from a liquidity receipt._
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | receiptId | uint256 | The ID of the liquidity receipt. |
+| data | bytes | Additional data for the liquidity callback. |
+
+### withdrawLiquidityBatch
+
+```solidity
+function withdrawLiquidityBatch(uint256[] receiptIds, bytes data) external
+```
+
+_Withdraws liquidity from a liquidity receipt._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| receiptIds | uint256[] | The array of the liquidity receipt IDs. |
 | data | bytes | Additional data for the liquidity callback. |
 
 ### getBinLiquidity
@@ -230,7 +341,7 @@ _Retrieves the liquidity receipt with the given receipt ID.
 ### claimableLiquidity
 
 ```solidity
-function claimableLiquidity(int16 tradingFeeRate, uint256 oracleVersion) external view returns (struct ILiquidity.ClaimableLiquidity)
+function claimableLiquidity(int16 tradingFeeRate, uint256 oracleVersion) external view returns (struct IMarketLiquidity.ClaimableLiquidity)
 ```
 
 _Retrieves the claimable liquidity information for a specific trading fee rate and oracle version from the associated LiquidityPool._
@@ -242,17 +353,17 @@ _Retrieves the claimable liquidity information for a specific trading fee rate a
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| [0] | struct ILiquidity.ClaimableLiquidity | claimableLiquidity An instance of ClaimableLiquidity representing the claimable liquidity information. |
+| [0] | struct IMarketLiquidity.ClaimableLiquidity | claimableLiquidity An instance of ClaimableLiquidity representing the claimable liquidity information. |
 
 ### liquidityBinStatuses
 
 ```solidity
-function liquidityBinStatuses() external view returns (struct ILiquidity.LiquidityBinStatus[])
+function liquidityBinStatuses() external view returns (struct IMarketLiquidity.LiquidityBinStatus[])
 ```
 
 _Retrieves the liquidity bin statuses for the caller's liquidity pool._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| [0] | struct ILiquidity.LiquidityBinStatus[] | statuses An array of LiquidityBinStatus representing the liquidity bin statuses. |
+| [0] | struct IMarketLiquidity.LiquidityBinStatus[] | statuses An array of LiquidityBinStatus representing the liquidity bin statuses. |
 

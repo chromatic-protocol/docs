@@ -24,7 +24,7 @@ Creates an instance of ChromaticRouter.
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:43](https://github.com/chromatic-protocol/sdk/blob/56e7c5d/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L43)
+[entities/ChromaticRouter.ts:43](https://github.com/chromatic-protocol/sdk/blob/b3f5957/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L43)
 
 ## Methods
 
@@ -50,7 +50,7 @@ A promise that resolves to the transaction receipt of the liquidity additions.
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:179](https://github.com/chromatic-protocol/sdk/blob/56e7c5d/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L179)
+[entities/ChromaticRouter.ts:179](https://github.com/chromatic-protocol/sdk/blob/b3f5957/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L179)
 
 ___
 
@@ -76,7 +76,7 @@ A promise that resolves to the transaction receipt of the liquidity addition.
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:153](https://github.com/chromatic-protocol/sdk/blob/56e7c5d/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L153)
+[entities/ChromaticRouter.ts:153](https://github.com/chromatic-protocol/sdk/blob/b3f5957/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L153)
 
 ___
 
@@ -100,7 +100,7 @@ A promise that resolves to a boolean indicating whether the approval was success
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:113](https://github.com/chromatic-protocol/sdk/blob/56e7c5d/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L113)
+[entities/ChromaticRouter.ts:113](https://github.com/chromatic-protocol/sdk/blob/b3f5957/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L113)
 
 ___
 
@@ -125,7 +125,7 @@ A promise that resolves to a boolean indicating whether the approval was success
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:132](https://github.com/chromatic-protocol/sdk/blob/56e7c5d/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L132)
+[entities/ChromaticRouter.ts:132](https://github.com/chromatic-protocol/sdk/blob/b3f5957/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L132)
 
 ___
 
@@ -150,7 +150,7 @@ A promise that resolves to the transaction receipt of the liquidity positions cl
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:294](https://github.com/chromatic-protocol/sdk/blob/56e7c5d/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L294)
+[entities/ChromaticRouter.ts:294](https://github.com/chromatic-protocol/sdk/blob/b3f5957/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L294)
 
 ___
 
@@ -175,7 +175,7 @@ A promise that resolves to the transaction receipt of the liquidity position cla
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:279](https://github.com/chromatic-protocol/sdk/blob/56e7c5d/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L279)
+[entities/ChromaticRouter.ts:279](https://github.com/chromatic-protocol/sdk/blob/b3f5957/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L279)
 
 ___
 
@@ -200,7 +200,7 @@ A promise that resolves to the transaction receipt of the position claiming.
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:101](https://github.com/chromatic-protocol/sdk/blob/56e7c5d/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L101)
+[entities/ChromaticRouter.ts:101](https://github.com/chromatic-protocol/sdk/blob/b3f5957/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L101)
 
 ___
 
@@ -225,7 +225,7 @@ A promise that resolves to the transaction receipt of the position closing.
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:88](https://github.com/chromatic-protocol/sdk/blob/56e7c5d/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L88)
+[entities/ChromaticRouter.ts:88](https://github.com/chromatic-protocol/sdk/blob/b3f5957/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L88)
 
 ___
 
@@ -247,7 +247,7 @@ A contract instance for the ChromaticRouter.
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:49](https://github.com/chromatic-protocol/sdk/blob/56e7c5d/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L49)
+[entities/ChromaticRouter.ts:49](https://github.com/chromatic-protocol/sdk/blob/b3f5957/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L49)
 
 ___
 
@@ -272,7 +272,7 @@ A promise that resolves to the transaction receipt of the position opening.
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:66](https://github.com/chromatic-protocol/sdk/blob/56e7c5d/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L66)
+[entities/ChromaticRouter.ts:66](https://github.com/chromatic-protocol/sdk/blob/b3f5957/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L66)
 
 ___
 
@@ -298,7 +298,7 @@ A promise that resolves to the transaction receipt of the liquidity removals.
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:238](https://github.com/chromatic-protocol/sdk/blob/56e7c5d/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L238)
+[entities/ChromaticRouter.ts:238](https://github.com/chromatic-protocol/sdk/blob/b3f5957/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L238)
 
 ___
 
@@ -323,7 +323,7 @@ A promise that resolves to the transaction receipt of the liquidity removal.
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:212](https://github.com/chromatic-protocol/sdk/blob/56e7c5d/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L212)
+[entities/ChromaticRouter.ts:212](https://github.com/chromatic-protocol/sdk/blob/b3f5957/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L212)
 
 ___
 
@@ -348,7 +348,7 @@ A promise that resolves to the transaction receipt of the liquidity positions wi
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:322](https://github.com/chromatic-protocol/sdk/blob/56e7c5d/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L322)
+[entities/ChromaticRouter.ts:322](https://github.com/chromatic-protocol/sdk/blob/b3f5957/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L322)
 
 ___
 
@@ -373,4 +373,4 @@ A promise that resolves to the transaction receipt of the liquidity position wit
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:307](https://github.com/chromatic-protocol/sdk/blob/56e7c5d/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L307)
+[entities/ChromaticRouter.ts:307](https://github.com/chromatic-protocol/sdk/blob/b3f5957/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L307)

@@ -69,7 +69,7 @@ function Feature({ title, titleWidth, Svg, description }: FeatureItem) {
         />
       </div>
       <div className="text-left">
-        <h4 className="sub-title lg:hidden" style={{ maxWidth: `${titleWidth}px` }}>
+        <h4 className="sub-title primary lg:hidden" style={{ maxWidth: `${titleWidth}px` }}>
           {title}
         </h4>
         <div

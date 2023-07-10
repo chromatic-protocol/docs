@@ -175,36 +175,11 @@ html[data-theme='dark'] {
   @apply px-5;
 }
 .navbar-sidebar {
-  @apply font-mono;
   .menu__link {
-    @apply py-4 px-6 font-semibold cursor-pointer;
+    @apply min-h-[40px];
   }
-  .menu__list-item .btn {
-    @apply !hidden;
-  }
-}
-.menu__link--sublist:after,
-.clean-btn.menu__caret:before {
-  @apply rotate-0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M2.47 4.97a.75.75 0 0 1 1.06 0L8 9.44l4.47-4.47a.75.75 0 1 1 1.06 1.06l-5 5a.75.75 0 0 1-1.06 0l-5-5a.75.75 0 0 1 0-1.06Z' clip-rule='evenodd'/%3E%3C/svg%3E");
-  background-size: cover;
-  opacity: 0.5;
-}
-.menu__list-item--collapsed .menu__link--sublist:after,
-.menu__list-item--collapsed .clean-btn.menu__caret:before {
-  @apply -rotate-90;
-}
-.dark {
-  .navbar-sidebar {
-    @apply border-r border-white/10 border-solid;
-  }
-  .menu__list-item {
-    a {
-      @apply hover:bg-white/10;
-    }
-  }
-  .menu__link--sublist:after {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M2.47 4.97a.75.75 0 0 1 1.06 0L8 9.44l4.47-4.47a.75.75 0 1 1 1.06 1.06l-5 5a.75.75 0 0 1-1.06 0l-5-5a.75.75 0 0 1 0-1.06Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+  .btn.h-7 {
+    @apply hidden;
   }
 }
 

@@ -5,6 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import { Stage } from '@pixi/react'
 import { ChromaticText } from '@site/src/components/ChromaticText'
 import Modal from '../components/Modal'
+import TypingEffect from '../components/TypingEffect'
 
 import Layout from '@theme/Layout'
 
@@ -128,7 +129,10 @@ function StartingGuide() {
           <div className="flex flex-wrap items-stretch gap-5 lg:flex-nowrap">
             <div className="box lg:min-h-[420px] border-lighter">
               <div>
-                <h4 className="sub-title primary">Github</h4>
+                <div className="hidden lg:block h-[50px] sub-title">
+                  <TypingEffect text="Github" delay={38} className="primary" />
+                </div>
+                <h4 className="sub-title primary lg:hidden">Github</h4>
                 <p className="p primary-lighter">
                   Start building with Chromatic Protocol. With its unopinionated, low-level, and
                   non-upgradable design, Chromatic empowers developers to build decentralized
@@ -142,7 +146,10 @@ function StartingGuide() {
             </div>
             <div className="box lg:min-h-[420px] border-lighter">
               <div>
-                <h4 className="sub-title primary">SDK</h4>
+                <div className="hidden lg:block h-[50px] sub-title">
+                  <TypingEffect text="SDK" delay={38} className="primary" />
+                </div>
+                <h4 className="sub-title primary lg:hidden">SDK</h4>
                 <p className="p primary-lighter">
                   Discover the Chromatic Protocol SDK, a comprehensive JavaScript library designed
                   to facilitate seamless interaction with Chromatic Protocol on Arbitrum. This
@@ -174,7 +181,11 @@ function Article() {
           <div className="wrapper">
             <div className="box border-lighter">
               <div>
-                <h4 className="sub-title primary">ARTICLES</h4>
+                <div className="hidden lg:block sub-title h-[50px]">
+                  <TypingEffect text="ARTICLES" delay={38} className="primary" />
+                </div>
+                <h4 className="sub-title lg:hidden">ARTICLES</h4>
+
                 <p className="p primary-lighter">
                   Stay informed and up to date with more detailed information, insights and updates
                   from Chromatic Protocol.

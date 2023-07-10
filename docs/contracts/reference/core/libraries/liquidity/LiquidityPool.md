@@ -2,7 +2,7 @@
 id: LiquidityPool
 title: LiquidityPool.sol
 ---
-# [LiquidityPool.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/external/liquidity/LiquidityPool.sol)
+# [LiquidityPool.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/libraries/liquidity/LiquidityPool.sol)
 
 ## LiquidityPool
 
@@ -55,7 +55,7 @@ Modifier to validate the trading fee rate.
 ### initialize
 
 ```solidity
-function initialize(struct LiquidityPool self) external
+function initialize(struct LiquidityPool self) internal
 ```
 
 Initializes the LiquidityPool.
@@ -67,7 +67,7 @@ Initializes the LiquidityPool.
 ### settle
 
 ```solidity
-function settle(struct LiquidityPool self, struct LpContext ctx) external
+function settle(struct LiquidityPool self, struct LpContext ctx) internal
 ```
 
 Settles the liquidity bins in the LiquidityPool.
@@ -80,7 +80,7 @@ Settles the liquidity bins in the LiquidityPool.
 ### prepareBinMargins
 
 ```solidity
-function prepareBinMargins(struct LiquidityPool self, int224 qty, uint256 makerMargin, uint256 minimumBinMargin) external view returns (struct BinMargin[])
+function prepareBinMargins(struct LiquidityPool self, int224 qty, uint256 makerMargin, uint256 minimumBinMargin) internal view returns (struct BinMargin[])
 ```
 
 Prepares bin margins based on the given quantity and maker margin.
@@ -110,7 +110,7 @@ _This function prepares bin margins by performing the following steps:
 ### acceptOpenPosition
 
 ```solidity
-function acceptOpenPosition(struct LiquidityPool self, struct LpContext ctx, struct Position position) external
+function acceptOpenPosition(struct LiquidityPool self, struct LpContext ctx, struct Position position) internal
 ```
 
 Accepts an open position and opens corresponding liquidity bins.
@@ -128,7 +128,7 @@ _This function calculates the target liquidity bins based on the position quanti
 ### acceptClosePosition
 
 ```solidity
-function acceptClosePosition(struct LiquidityPool self, struct LpContext ctx, struct Position position) external
+function acceptClosePosition(struct LiquidityPool self, struct LpContext ctx, struct Position position) internal
 ```
 
 Accepts a close position request and closes the corresponding liquidity bins.
@@ -147,7 +147,7 @@ _This function calculates the target liquidity bins based on the position quanti
 ### acceptClaimPosition
 
 ```solidity
-function acceptClaimPosition(struct LiquidityPool self, struct LpContext ctx, struct Position position, int256 realizedPnl) external
+function acceptClaimPosition(struct LiquidityPool self, struct LpContext ctx, struct Position position, int256 realizedPnl) internal
 ```
 
 Accepts a claim position request and processes the corresponding liquidity bins
@@ -169,7 +169,7 @@ _This function verifies if the absolute value of the realized position pnl is wi
 ### acceptAddLiquidity
 
 ```solidity
-function acceptAddLiquidity(struct LiquidityPool self, struct LpContext ctx, int16 tradingFeeRate, uint256 amount) external
+function acceptAddLiquidity(struct LiquidityPool self, struct LpContext ctx, int16 tradingFeeRate, uint256 amount) internal
 ```
 
 Accepts an add liquidity request
@@ -188,7 +188,7 @@ _This function validates the trading fee rate
 ### acceptClaimLiquidity
 
 ```solidity
-function acceptClaimLiquidity(struct LiquidityPool self, struct LpContext ctx, int16 tradingFeeRate, uint256 amount, uint256 oracleVersion) external returns (uint256)
+function acceptClaimLiquidity(struct LiquidityPool self, struct LpContext ctx, int16 tradingFeeRate, uint256 amount, uint256 oracleVersion) internal returns (uint256)
 ```
 
 Accepts a claim liquidity request
@@ -212,7 +212,7 @@ _This function validates the trading fee rate
 ### acceptRemoveLiquidity
 
 ```solidity
-function acceptRemoveLiquidity(struct LiquidityPool self, struct LpContext ctx, int16 tradingFeeRate, uint256 clbTokenAmount) external
+function acceptRemoveLiquidity(struct LiquidityPool self, struct LpContext ctx, int16 tradingFeeRate, uint256 clbTokenAmount) internal
 ```
 
 Accepts a remove liquidity request
@@ -231,7 +231,7 @@ _This function validates the trading fee rate
 ### acceptWithdrawLiquidity
 
 ```solidity
-function acceptWithdrawLiquidity(struct LiquidityPool self, struct LpContext ctx, int16 tradingFeeRate, uint256 clbTokenAmount, uint256 oracleVersion) external returns (uint256 amount, uint256 burnedCLBTokenAmount)
+function acceptWithdrawLiquidity(struct LiquidityPool self, struct LpContext ctx, int16 tradingFeeRate, uint256 clbTokenAmount, uint256 oracleVersion) internal returns (uint256 amount, uint256 burnedCLBTokenAmount)
 ```
 
 Accepts a withdraw liquidity request
@@ -256,7 +256,7 @@ _This function validates the trading fee rate
 ### getBinLiquidity
 
 ```solidity
-function getBinLiquidity(struct LiquidityPool self, int16 tradingFeeRate) external view returns (uint256 amount)
+function getBinLiquidity(struct LiquidityPool self, int16 tradingFeeRate) internal view returns (uint256 amount)
 ```
 
 Retrieves the total liquidity amount in base tokens for the specified trading fee rate.
@@ -276,7 +276,7 @@ _This function retrieves the liquidity bin based on the trading fee rate
 ### getBinFreeLiquidity
 
 ```solidity
-function getBinFreeLiquidity(struct LiquidityPool self, int16 tradingFeeRate) external view returns (uint256 amount)
+function getBinFreeLiquidity(struct LiquidityPool self, int16 tradingFeeRate) internal view returns (uint256 amount)
 ```
 
 Retrieves the free liquidity amount in base tokens for the specified trading fee rate.
@@ -296,7 +296,7 @@ _This function retrieves the liquidity bin based on the trading fee rate
 ### distributeEarning
 
 ```solidity
-function distributeEarning(struct LiquidityPool self, uint256 earning, uint256 marketBalance) external
+function distributeEarning(struct LiquidityPool self, uint256 earning, uint256 marketBalance) internal
 ```
 
 Distributes earnings among the liquidity bins.
@@ -316,7 +316,7 @@ _This function distributes the earnings among the liquidity bins,
 ### binValue
 
 ```solidity
-function binValue(struct LiquidityPool self, int16 _tradingFeeRate, struct LpContext ctx) external view returns (uint256 value)
+function binValue(struct LiquidityPool self, int16 _tradingFeeRate, struct LpContext ctx) internal view returns (uint256 value)
 ```
 
 _Retrieves the value of a specific bin in the LiquidityPool storage for the provided trading fee rate._
@@ -334,7 +334,7 @@ _Retrieves the value of a specific bin in the LiquidityPool storage for the prov
 ### claimableLiquidity
 
 ```solidity
-function claimableLiquidity(struct LiquidityPool self, int16 tradingFeeRate, uint256 oracleVersion) external view returns (struct ILiquidity.ClaimableLiquidity)
+function claimableLiquidity(struct LiquidityPool self, int16 tradingFeeRate, uint256 oracleVersion) internal view returns (struct IMarketLiquidity.ClaimableLiquidity)
 ```
 
 _Retrieves the claimable liquidity information for a specific trading fee rate and oracle version from a LiquidityPool._
@@ -347,12 +347,12 @@ _Retrieves the claimable liquidity information for a specific trading fee rate a
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| [0] | struct ILiquidity.ClaimableLiquidity | claimableLiquidity An instance of ILiquidity.ClaimableLiquidity representing the claimable liquidity information. |
+| [0] | struct IMarketLiquidity.ClaimableLiquidity | claimableLiquidity An instance of IMarketLiquidity.ClaimableLiquidity representing the claimable liquidity information. |
 
 ### liquidityBinStatuses
 
 ```solidity
-function liquidityBinStatuses(struct LiquidityPool self, struct LpContext ctx) external view returns (struct ILiquidity.LiquidityBinStatus[])
+function liquidityBinStatuses(struct LiquidityPool self, struct LpContext ctx) internal view returns (struct IMarketLiquidity.LiquidityBinStatus[])
 ```
 
 _Retrieves the liquidity bin statuses for the LiquidityPool using the provided context._
@@ -364,5 +364,5 @@ _Retrieves the liquidity bin statuses for the LiquidityPool using the provided c
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| [0] | struct ILiquidity.LiquidityBinStatus[] | stats An array of ILiquidity.LiquidityBinStatus representing the liquidity bin statuses. |
+| [0] | struct IMarketLiquidity.LiquidityBinStatus[] | stats An array of IMarketLiquidity.LiquidityBinStatus representing the liquidity bin statuses. |
 

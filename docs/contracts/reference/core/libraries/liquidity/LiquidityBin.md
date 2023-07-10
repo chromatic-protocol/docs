@@ -2,7 +2,7 @@
 id: LiquidityBin
 title: LiquidityBin.sol
 ---
-# [LiquidityBin.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/external/liquidity/LiquidityBin.sol)
+# [LiquidityBin.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/libraries/liquidity/LiquidityBin.sol)
 
 ## LiquidityBin
 
@@ -255,7 +255,7 @@ _This function withdraws liquidity from the bin by calling the `onWithdrawLiquid
 ### claimableLiquidity
 
 ```solidity
-function claimableLiquidity(struct LiquidityBin self, uint256 oracleVersion) internal view returns (struct ILiquidity.ClaimableLiquidity)
+function claimableLiquidity(struct LiquidityBin self, uint256 oracleVersion) internal view returns (struct IMarketLiquidity.ClaimableLiquidity)
 ```
 
 _Retrieves the claimable liquidity information for a specific oracle version from a LiquidityBin._
@@ -267,5 +267,5 @@ _Retrieves the claimable liquidity information for a specific oracle version fro
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| [0] | struct ILiquidity.ClaimableLiquidity | claimableLiquidity An instance of ILiquidity.ClaimableLiquidity representing the claimable liquidity information. |
+| [0] | struct IMarketLiquidity.ClaimableLiquidity | claimableLiquidity An instance of IMarketLiquidity.ClaimableLiquidity representing the claimable liquidity information. |
 

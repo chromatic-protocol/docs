@@ -144,7 +144,7 @@ _Constructs a new ChromaticVault instance._
 ### onOpenPosition
 
 ```solidity
-function onOpenPosition(uint256 positionId, uint256 takerMargin, uint256 tradingFee, uint256 protocolFee) external
+function onOpenPosition(address settlementToken, uint256 positionId, uint256 takerMargin, uint256 tradingFee, uint256 protocolFee) external
 ```
 
 Called when a position is opened by a market contract.
@@ -153,6 +153,7 @@ _This function can only be called by a market contract._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
+| settlementToken | address | The settlement token address. |
 | positionId | uint256 | The ID of the opened position. |
 | takerMargin | uint256 | The margin amount provided by the taker for the position. |
 | tradingFee | uint256 | The trading fee associated with the position. |
@@ -161,7 +162,7 @@ _This function can only be called by a market contract._
 ### onClaimPosition
 
 ```solidity
-function onClaimPosition(uint256 positionId, address recipient, uint256 takerMargin, uint256 settlementAmount) external
+function onClaimPosition(address settlementToken, uint256 positionId, address recipient, uint256 takerMargin, uint256 settlementAmount) external
 ```
 
 Called when a position is claimed by a market contract.
@@ -170,6 +171,7 @@ _This function can only be called by a market contract._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
+| settlementToken | address | The settlement token address. |
 | positionId | uint256 | The ID of the claimed position. |
 | recipient | address | The address that will receive the settlement amount. |
 | takerMargin | uint256 | The margin amount provided by the taker for the position. |
@@ -178,7 +180,7 @@ _This function can only be called by a market contract._
 ### onAddLiquidity
 
 ```solidity
-function onAddLiquidity(uint256 amount) external
+function onAddLiquidity(address settlementToken, uint256 amount) external
 ```
 
 Called when liquidity is added to the vault by a market contract.
@@ -187,12 +189,13 @@ _This function can only be called by a market contract._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
+| settlementToken | address | The settlement token address. |
 | amount | uint256 | The amount of liquidity being added. |
 
 ### onSettlePendingLiquidity
 
 ```solidity
-function onSettlePendingLiquidity(uint256 pendingDeposit, uint256 pendingWithdrawal) external
+function onSettlePendingLiquidity(address settlementToken, uint256 pendingDeposit, uint256 pendingWithdrawal) external
 ```
 
 Called when pending liquidity is settled in the vault by a market contract.
@@ -201,13 +204,14 @@ _This function can only be called by a market contract._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
+| settlementToken | address | The settlement token address. |
 | pendingDeposit | uint256 | The amount of pending deposits being settled. |
 | pendingWithdrawal | uint256 | The amount of pending withdrawals being settled. |
 
 ### onWithdrawLiquidity
 
 ```solidity
-function onWithdrawLiquidity(address recipient, uint256 amount) external
+function onWithdrawLiquidity(address settlementToken, address recipient, uint256 amount) external
 ```
 
 Called when liquidity is withdrawn from the vault by a market contract.
@@ -216,13 +220,14 @@ _This function can only be called by a market contract._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
+| settlementToken | address | The settlement token address. |
 | recipient | address | The address that will receive the withdrawn liquidity. |
 | amount | uint256 | The amount of liquidity to be withdrawn. |
 
 ### transferKeeperFee
 
 ```solidity
-function transferKeeperFee(address keeper, uint256 fee, uint256 margin) external returns (uint256 usedFee)
+function transferKeeperFee(address settlementToken, address keeper, uint256 fee, uint256 margin) external returns (uint256 usedFee)
 ```
 
 Transfers the keeper fee from the market to the specified keeper.
@@ -231,6 +236,7 @@ _This function can only be called by a market contract._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
+| settlementToken | address | The settlement token address. |
 | keeper | address | The address of the keeper to receive the fee. |
 | fee | uint256 | The amount of the fee to transfer as native token. |
 | margin | uint256 | The margin amount used for the fee payment. |
@@ -291,7 +297,7 @@ _Executes a flash loan._
 ### getPendingBinShare
 
 ```solidity
-function getPendingBinShare(address market, uint256 binBalance) external view returns (uint256)
+function getPendingBinShare(address market, address settlementToken, uint256 binBalance) external view returns (uint256)
 ```
 
 Retrieves the pending share of earnings for a specific bin (subset) of funds in a market.
@@ -301,6 +307,7 @@ _The pending share of earnings is calculated based on the bin balance, maker bal
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the market. |
+| settlementToken | address | The settlement token address. |
 | binBalance | uint256 | The balance of funds in the bin. |
 
 | Name | Type | Description |

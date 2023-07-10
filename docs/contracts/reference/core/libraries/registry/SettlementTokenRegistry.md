@@ -2,7 +2,7 @@
 id: SettlementTokenRegistry
 title: SettlementTokenRegistry.sol
 ---
-# [SettlementTokenRegistry.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/external/registry/SettlementTokenRegistry.sol)
+# [SettlementTokenRegistry.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/libraries/registry/SettlementTokenRegistry.sol)
 
 ## SettlementTokenRegistry
 
@@ -39,7 +39,7 @@ _Throws an error if the token is not registered._
 ### register
 
 ```solidity
-function register(struct SettlementTokenRegistry self, address token, uint256 minimumMargin, uint256 interestRate, uint256 flashLoanFeeRate, uint256 earningDistributionThreshold, uint24 uniswapFeeTier) external
+function register(struct SettlementTokenRegistry self, address token, uint256 minimumMargin, uint256 interestRate, uint256 flashLoanFeeRate, uint256 earningDistributionThreshold, uint24 uniswapFeeTier) internal
 ```
 
 Registers a token in the settlement token registry.
@@ -59,7 +59,7 @@ _Throws an error if the token is already registered._
 ### settlementTokens
 
 ```solidity
-function settlementTokens(struct SettlementTokenRegistry self) external view returns (address[])
+function settlementTokens(struct SettlementTokenRegistry self) internal view returns (address[])
 ```
 
 Returns an array of all registered settlement tokens.
@@ -75,7 +75,7 @@ Returns an array of all registered settlement tokens.
 ### isRegistered
 
 ```solidity
-function isRegistered(struct SettlementTokenRegistry self, address token) external view returns (bool)
+function isRegistered(struct SettlementTokenRegistry self, address token) internal view returns (bool)
 ```
 
 Checks if a token is registered in the settlement token registry.
@@ -92,7 +92,7 @@ Checks if a token is registered in the settlement token registry.
 ### getMinimumMargin
 
 ```solidity
-function getMinimumMargin(struct SettlementTokenRegistry self, address token) external view returns (uint256)
+function getMinimumMargin(struct SettlementTokenRegistry self, address token) internal view returns (uint256)
 ```
 
 Retrieves the minimum margin for a asettlement token.
@@ -109,7 +109,7 @@ Retrieves the minimum margin for a asettlement token.
 ### setMinimumMargin
 
 ```solidity
-function setMinimumMargin(struct SettlementTokenRegistry self, address token, uint256 minimumMargin) external
+function setMinimumMargin(struct SettlementTokenRegistry self, address token, uint256 minimumMargin) internal
 ```
 
 Sets the minimum margin for asettlement token.
@@ -123,7 +123,7 @@ Sets the minimum margin for asettlement token.
 ### getFlashLoanFeeRate
 
 ```solidity
-function getFlashLoanFeeRate(struct SettlementTokenRegistry self, address token) external view returns (uint256)
+function getFlashLoanFeeRate(struct SettlementTokenRegistry self, address token) internal view returns (uint256)
 ```
 
 Retrieves the flash loan fee rate for a settlement token.
@@ -140,7 +140,7 @@ Retrieves the flash loan fee rate for a settlement token.
 ### setFlashLoanFeeRate
 
 ```solidity
-function setFlashLoanFeeRate(struct SettlementTokenRegistry self, address token, uint256 flashLoanFeeRate) external
+function setFlashLoanFeeRate(struct SettlementTokenRegistry self, address token, uint256 flashLoanFeeRate) internal
 ```
 
 Sets the flash loan fee rate for a settlement token.
@@ -154,7 +154,7 @@ Sets the flash loan fee rate for a settlement token.
 ### getEarningDistributionThreshold
 
 ```solidity
-function getEarningDistributionThreshold(struct SettlementTokenRegistry self, address token) external view returns (uint256)
+function getEarningDistributionThreshold(struct SettlementTokenRegistry self, address token) internal view returns (uint256)
 ```
 
 Retrieves the earning distribution threshold for a settlement token.
@@ -171,7 +171,7 @@ Retrieves the earning distribution threshold for a settlement token.
 ### setEarningDistributionThreshold
 
 ```solidity
-function setEarningDistributionThreshold(struct SettlementTokenRegistry self, address token, uint256 earningDistributionThreshold) external
+function setEarningDistributionThreshold(struct SettlementTokenRegistry self, address token, uint256 earningDistributionThreshold) internal
 ```
 
 Sets the earning distribution threshold for a settlement token.
@@ -185,7 +185,7 @@ Sets the earning distribution threshold for a settlement token.
 ### getUniswapFeeTier
 
 ```solidity
-function getUniswapFeeTier(struct SettlementTokenRegistry self, address token) external view returns (uint24)
+function getUniswapFeeTier(struct SettlementTokenRegistry self, address token) internal view returns (uint24)
 ```
 
 Retrieves the Uniswap fee tier for a settlement token.
@@ -202,7 +202,7 @@ Retrieves the Uniswap fee tier for a settlement token.
 ### setUniswapFeeTier
 
 ```solidity
-function setUniswapFeeTier(struct SettlementTokenRegistry self, address token, uint24 uniswapFeeTier) external
+function setUniswapFeeTier(struct SettlementTokenRegistry self, address token, uint24 uniswapFeeTier) internal
 ```
 
 Sets the Uniswap fee tier for a settlement token.
@@ -216,7 +216,7 @@ Sets the Uniswap fee tier for a settlement token.
 ### appendInterestRateRecord
 
 ```solidity
-function appendInterestRateRecord(struct SettlementTokenRegistry self, address token, uint256 annualRateBPS, uint256 beginTimestamp) external
+function appendInterestRateRecord(struct SettlementTokenRegistry self, address token, uint256 annualRateBPS, uint256 beginTimestamp) internal
 ```
 
 Appends an interest rate record for a settlement token.
@@ -233,7 +233,7 @@ _Throws an error if the settlement token is not registered._
 ### removeLastInterestRateRecord
 
 ```solidity
-function removeLastInterestRateRecord(struct SettlementTokenRegistry self, address token) external returns (bool removed, struct InterestRate.Record record)
+function removeLastInterestRateRecord(struct SettlementTokenRegistry self, address token) internal returns (bool removed, struct InterestRate.Record record)
 ```
 
 Removes the last interest rate record for a settlement token.
@@ -255,7 +255,7 @@ Throws an error if the settlement token is not registered._
 ### currentInterestRate
 
 ```solidity
-function currentInterestRate(struct SettlementTokenRegistry self, address token) external view returns (uint256 annualRateBPS)
+function currentInterestRate(struct SettlementTokenRegistry self, address token) internal view returns (uint256 annualRateBPS)
 ```
 
 Retrieves the current interest rate for a settlement token.
@@ -274,7 +274,7 @@ _Throws an error if the settlement token is not registered._
 ### calculateInterest
 
 ```solidity
-function calculateInterest(struct SettlementTokenRegistry self, address token, uint256 amount, uint256 from, uint256 to) external view returns (uint256)
+function calculateInterest(struct SettlementTokenRegistry self, address token, uint256 amount, uint256 from, uint256 to) internal view returns (uint256)
 ```
 
 Calculates the interest accrued for a settlement token within a specified time range.
@@ -296,7 +296,7 @@ _Throws an error if the token is not registered._
 ### getInterestRateRecords
 
 ```solidity
-function getInterestRateRecords(struct SettlementTokenRegistry self, address token) public view returns (struct InterestRate.Record[])
+function getInterestRateRecords(struct SettlementTokenRegistry self, address token) internal view returns (struct InterestRate.Record[])
 ```
 
 Retrieves the array of interest rate records for a settlement token.

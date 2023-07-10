@@ -2,7 +2,7 @@
 id: CLBTokenDeployer
 title: CLBTokenDeployer.sol
 ---
-# [CLBTokenDeployer.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/external/deployer/CLBTokenDeployer.sol)
+# [CLBTokenDeployer.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/libraries/deployer/CLBTokenDeployer.sol)
 
 ## CLBTokenDeployerLib
 

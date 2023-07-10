@@ -120,10 +120,20 @@ _Modifier to ensure that the caller is a registered oracle provider.
 ### constructor
 
 ```solidity
-constructor() public
+constructor(address _marketDiamondCutFacet, address _marketLoupeFacet, address _marketStateFacet, address _marketLiquidityFacet, address _marketTradeFacet, address _marketLiquidateFacet, address _marketSettleFacet) public
 ```
 
 _Initializes the ChromaticMarketFactory contract._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| _marketDiamondCutFacet | address | The market diamond cut facet address. |
+| _marketLoupeFacet | address | The market loupe facet address. |
+| _marketStateFacet | address | The market state facet address. |
+| _marketLiquidityFacet | address | The market liquidity facet address. |
+| _marketTradeFacet | address | The market trade facet address. |
+| _marketLiquidateFacet | address | The market liquidate facet address. |
+| _marketSettleFacet | address | The market settle facet address. |
 
 ### updateDao
 

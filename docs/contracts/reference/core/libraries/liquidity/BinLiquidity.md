@@ -2,7 +2,7 @@
 id: BinLiquidity
 title: BinLiquidity.sol
 ---
-# [BinLiquidity.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/external/liquidity/BinLiquidity.sol)
+# [BinLiquidity.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/libraries/liquidity/BinLiquidity.sol)
 
 ## BinLiquidity
 
@@ -221,7 +221,7 @@ _If the CLB token total supply is zero, returns zero.
 ### claimableLiquidity
 
 ```solidity
-function claimableLiquidity(struct BinLiquidity self, uint256 oracleVersion) internal view returns (struct ILiquidity.ClaimableLiquidity)
+function claimableLiquidity(struct BinLiquidity self, uint256 oracleVersion) internal view returns (struct IMarketLiquidity.ClaimableLiquidity)
 ```
 
 _Retrieves the claimable liquidity information for a specific oracle version._
@@ -233,5 +233,5 @@ _Retrieves the claimable liquidity information for a specific oracle version._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| [0] | struct ILiquidity.ClaimableLiquidity | claimableLiquidity An instance of ILiquidity.ClaimableLiquidity representing the claimable liquidity information. |
+| [0] | struct IMarketLiquidity.ClaimableLiquidity | claimableLiquidity An instance of IMarketLiquidity.ClaimableLiquidity representing the claimable liquidity information. |
 

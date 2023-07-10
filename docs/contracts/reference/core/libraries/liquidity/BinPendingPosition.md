@@ -2,7 +2,7 @@
 id: BinPendingPosition
 title: BinPendingPosition.sol
 ---
-# [BinPendingPosition.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/external/liquidity/BinPendingPosition.sol)
+# [BinPendingPosition.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/libraries/liquidity/BinPendingPosition.sol)
 
 ## BinPendingPosition
 

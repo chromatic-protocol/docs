@@ -17,10 +17,27 @@ struct AddLiquidityCallbackData {
 }
 ```
 
+### AddLiquidityBatchCallbackData
+
+```solidity
+struct AddLiquidityBatchCallbackData {
+  address provider;
+  uint256 amount;
+}
+```
+
 ### ClaimLiquidityCallbackData
 
 ```solidity
 struct ClaimLiquidityCallbackData {
+  address provider;
+}
+```
+
+### ClaimLiquidityBatchCallbackData
+
+```solidity
+struct ClaimLiquidityBatchCallbackData {
   address provider;
 }
 ```
@@ -34,12 +51,35 @@ struct RemoveLiquidityCallbackData {
 }
 ```
 
+### RemoveLiquidityBatchCallbackData
+
+```solidity
+struct RemoveLiquidityBatchCallbackData {
+  address provider;
+  uint256[] clbTokenAmounts;
+}
+```
+
 ### WithdrawLiquidityCallbackData
 
 ```solidity
 struct WithdrawLiquidityCallbackData {
   address provider;
 }
+```
+
+### WithdrawLiquidityBatchCallbackData
+
+```solidity
+struct WithdrawLiquidityBatchCallbackData {
+  address provider;
+}
+```
+
+### receiptIds
+
+```solidity
+mapping(address => mapping(address => struct EnumerableSet.UintSet)) receiptIds
 ```
 
 ### NotExistLpReceipt
@@ -74,6 +114,20 @@ Handles the callback after adding liquidity to the Chromatic protocol.
 | vault | address | The address of the vault where the liquidity is added. |
 | data | bytes | Additional data associated with the liquidity addition. |
 
+### addLiquidityBatchCallback
+
+```solidity
+function addLiquidityBatchCallback(address settlementToken, address vault, bytes data) external
+```
+
+Handles the callback after adding liquidity to the Chromatic protocol.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| settlementToken | address | The address of the settlement token used for adding liquidity. |
+| vault | address | The address of the vault where the liquidity is added. |
+| data | bytes | Additional data associated with the liquidity addition. |
+
 ### claimLiquidityCallback
 
 ```solidity
@@ -85,6 +139,19 @@ Handles the callback after claiming liquidity from the Chromatic protocol.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | receiptId | uint256 | The ID of the liquidity claim receipt. |
+| data | bytes | Additional data associated with the liquidity claim. |
+
+### claimLiquidityBatchCallback
+
+```solidity
+function claimLiquidityBatchCallback(uint256[] _receiptIds, bytes data) external
+```
+
+Handles the callback after claiming liquidity from the Chromatic protocol.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| _receiptIds | uint256[] |  |
 | data | bytes | Additional data associated with the liquidity claim. |
 
 ### removeLiquidityCallback
@@ -101,6 +168,20 @@ Handles the callback after removing liquidity from the Chromatic protocol.
 | clbTokenId | uint256 | The ID of the Chromatic liquidity token to be removed. |
 | data | bytes | Additional data associated with the liquidity removal. |
 
+### removeLiquidityBatchCallback
+
+```solidity
+function removeLiquidityBatchCallback(address clbToken, uint256[] clbTokenIds, bytes data) external
+```
+
+Handles the callback after removing liquidity from the Chromatic protocol.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| clbToken | address | The address of the Chromatic liquidity token. |
+| clbTokenIds | uint256[] | The array of the Chromatic liquidity token IDs to be removed. |
+| data | bytes | Additional data associated with the liquidity removal. |
+
 ### withdrawLiquidityCallback
 
 ```solidity
@@ -112,6 +193,19 @@ Handles the callback after withdrawing liquidity from the Chromatic protocol.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | receiptId | uint256 | The ID of the liquidity withdrawal receipt. |
+| data | bytes | Additional data associated with the liquidity withdrawal. |
+
+### withdrawLiquidityBatchCallback
+
+```solidity
+function withdrawLiquidityBatchCallback(uint256[] _receiptIds, bytes data) external
+```
+
+Handles the callback after withdrawing liquidity from the Chromatic protocol.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| _receiptIds | uint256[] |  |
 | data | bytes | Additional data associated with the liquidity withdrawal. |
 
 ### openPosition
@@ -280,7 +374,7 @@ Get the LP receipt IDs associated with a specific market and owner.
 function addLiquidityBatch(address market, address recipient, int16[] feeRates, uint256[] amounts) external returns (struct LpReceipt[] lpReceipts)
 ```
 
-Adds liquidity to multiple ChromaticMarket contracts in a batch.
+Adds liquidity to multiple liquidity bins of ChromaticMarket contract in a batch.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

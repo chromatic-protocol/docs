@@ -91,7 +91,7 @@ _Retrieves the CLB token balances for the specified owner in the given Chromatic
 ### claimableLiquidity
 
 ```solidity
-function claimableLiquidity(contract IChromaticMarket market, int16 tradingFeeRate, uint256 _oracleVersion) external view returns (struct ILiquidity.ClaimableLiquidity)
+function claimableLiquidity(contract IChromaticMarket market, int16 tradingFeeRate, uint256 _oracleVersion) external view returns (struct IMarketLiquidity.ClaimableLiquidity)
 ```
 
 _Retrieves the claimable liquidity information for a specific trading fee rate and oracle version from the given Chromatic Market._
@@ -104,12 +104,12 @@ _Retrieves the claimable liquidity information for a specific trading fee rate a
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| [0] | struct ILiquidity.ClaimableLiquidity | claimableLiquidity An instance of IChromaticMarket.ClaimableLiquidity representing the claimable liquidity information. |
+| [0] | struct IMarketLiquidity.ClaimableLiquidity | claimableLiquidity An instance of IChromaticMarket.ClaimableLiquidity representing the claimable liquidity information. |
 
 ### liquidityBinStatuses
 
 ```solidity
-function liquidityBinStatuses(contract IChromaticMarket market) external view returns (struct ILiquidity.LiquidityBinStatus[])
+function liquidityBinStatuses(contract IChromaticMarket market) external view returns (struct IMarketLiquidity.LiquidityBinStatus[])
 ```
 
 _Retrieves the liquidity bin statuses for the specified Chromatic Market._
@@ -120,5 +120,5 @@ _Retrieves the liquidity bin statuses for the specified Chromatic Market._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| [0] | struct ILiquidity.LiquidityBinStatus[] | statuses An array of LiquidityBinStatus representing the liquidity bin statuses. |
+| [0] | struct IMarketLiquidity.LiquidityBinStatus[] | statuses An array of LiquidityBinStatus representing the liquidity bin statuses. |
 

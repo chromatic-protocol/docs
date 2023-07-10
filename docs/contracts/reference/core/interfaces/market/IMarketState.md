@@ -8,6 +8,19 @@ title: IMarketState.sol
 
 _Interface for accessing the state of a market contract._
 
+### SetFeeProtocol
+
+```solidity
+event SetFeeProtocol(uint8 feeProtocolOld, uint8 feeProtocolNew)
+```
+
+Emitted when the protocol fee is changed by the market
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| feeProtocolOld | uint8 | The previous value of the protocol fee |
+| feeProtocolNew | uint8 | The updated value of the protocol fee |
+
 ### factory
 
 ```solidity
@@ -91,4 +104,28 @@ _Returns the keeper fee payer contract for the market._
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | [0] | contract IKeeperFeePayer | The keeper fee payer contract. |
+
+### feeProtocol
+
+```solidity
+function feeProtocol() external view returns (uint8)
+```
+
+Returns the denominator of the protocol's % share of the fees
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| [0] | uint8 | The protocol fee for the market |
+
+### setFeeProtocol
+
+```solidity
+function setFeeProtocol(uint8 feeProtocol) external
+```
+
+Set the denominator of the protocol's % share of the fees
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| feeProtocol | uint8 | new protocol fee for the market |
 

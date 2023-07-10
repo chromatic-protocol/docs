@@ -43,7 +43,7 @@ _Executes a flash loan._
 ### getPendingBinShare
 
 ```solidity
-function getPendingBinShare(address market, uint256 binBalance) external view returns (uint256)
+function getPendingBinShare(address market, address settlementToken, uint256 binBalance) external view returns (uint256)
 ```
 
 Retrieves the pending share of earnings for a specific bin (subset) of funds in a market.
@@ -51,6 +51,7 @@ Retrieves the pending share of earnings for a specific bin (subset) of funds in 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the market. |
+| settlementToken | address | The settlement token address. |
 | binBalance | uint256 | The balance of funds in the bin. |
 
 | Name | Type | Description |

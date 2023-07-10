@@ -1,10 +1,10 @@
 ---
-id: ITrade
-title: ITrade.sol
+id: IMarketTrade
+title: IMarketTrade.sol
 ---
-# [ITrade.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/interfaces/market/ITrade.sol)
+# [IMarketTrade.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/interfaces/market/IMarketTrade.sol)
 
-## ITrade
+## IMarketTrade
 
 _Interface for trading positions in a market._
 
@@ -61,33 +61,6 @@ _Emitted when protocol fees are transferred._
 | ---- | ---- | ----------- |
 | positionId | uint256 | The ID of the position for which the fees are transferred. |
 | amount | uint256 | The amount of fees transferred. |
-
-### Liquidate
-
-```solidity
-event Liquidate(address account, uint256 usedKeeperFee, struct Position position)
-```
-
-_Emitted when a position is liquidated._
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| account | address | The address of the account being liquidated. |
-| usedKeeperFee | uint256 | The amount of keeper fee used for the liquidation. |
-| position | struct Position | The liquidated position. |
-
-### SetFeeProtocol
-
-```solidity
-event SetFeeProtocol(uint8 feeProtocolOld, uint8 feeProtocolNew)
-```
-
-Emitted when the protocol fee is changed by the market
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| feeProtocolOld | uint8 | The previous value of the protocol fee |
-| feeProtocolNew | uint8 | The updated value of the protocol fee |
 
 ### openPosition
 
@@ -151,16 +124,4 @@ _Retrieves multiple positions by their IDs._
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | positions | struct Position[] | An array of retrieved positions. |
-
-### setFeeProtocol
-
-```solidity
-function setFeeProtocol(uint8 feeProtocol) external
-```
-
-Set the denominator of the protocol's % share of the fees
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| feeProtocol | uint8 | new protocol fee for the market |
 

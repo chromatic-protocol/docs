@@ -177,7 +177,7 @@ html[data-theme='dark'] {
 .navbar-sidebar {
   @apply font-mono;
   .menu__link {
-    @apply py-4 px-6 font-semibold;
+    @apply py-4 px-6 font-semibold cursor-pointer;
   }
   .btn-black {
     @apply !hidden;

@@ -4,7 +4,7 @@ import { useNavbarSecondaryMenu } from '@docusaurus/theme-common/internal'
 export default function NavbarMobileSidebarLayout({ header, primaryMenu, secondaryMenu }) {
   const { shown: secondaryMenuShown } = useNavbarSecondaryMenu()
   return (
-    <div className="navbar-sidebar">
+    <div className="navbar-sidebar background">
       {header}
       <div
         className={clsx('navbar-sidebar__items', {

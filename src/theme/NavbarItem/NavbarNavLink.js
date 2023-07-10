@@ -28,8 +28,8 @@ export default function NavbarNavLink({
   const normalizedHref = useBaseUrl(href, { forcePrependBaseUrl: true })
   // const isExternalLink = label && href && !isInternalUrl(href)
 
-const { onOpen } = useTestnetModal()  
-const { color } = useColor()
+  const { onOpen } = useTestnetModal()
+  const { color } = useColor()
 
   const primaryColor = color === 'dark' ? '#ffffff' : '#000000'
   const invertedColor = color === 'dark' ? '#000000' : '#ffffff'
@@ -47,9 +47,9 @@ const { color } = useColor()
                 </div>
               )}
               <div>
-                <p className="m-0 text-lg">{label}</p>
+                <p className={`m-0 text-lg  ${isButton ? 'inverted' : 'primary'}`}>{label}</p>
                 {description && (
-                  <p className="mt-2 mb-0 text-base primary-lighter">{description}</p>
+                  <p className="mt-2 mb-0 text-base opacity-50 primary">{description}</p>
                 )}
               </div>
             </div>
@@ -71,7 +71,7 @@ const { color } = useColor()
         {...linkContentProps}
         style={{
           backgroundColor: isButton ? primaryColor : undefined,
-          color: isButton ? invertedColor : undefined
+          color: isButton ? invertedColor : primaryColor
         }}
         onClick={() => {
           if (label === 'Testnet App') {

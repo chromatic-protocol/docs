@@ -12,7 +12,7 @@
 }
 
 .modal {
-  @apply bg-white rounded-2xl p-5 lg:min-w-[400px] w-full mx-4 text-center relative;
+  @apply bg-white rounded-2xl p-5 lg:min-w-[400px] lg:max-w-[600px] lg:w-auto w-full mx-4 text-center relative;
   box-shadow: 4px 4px 60px 0px rgba(229, 229, 229, 0.16);
 }
 

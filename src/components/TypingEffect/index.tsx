@@ -60,7 +60,7 @@ const TypingEffect: React.FC<TypingEffectProps> = ({ text, delay = 100, classNam
             className={`relative inline-flex items-center min-w-[20px] h-auto ${className}`}
           >
             <div
-              className="absolute inline-block w-full h-[70%] bg-black"
+              className="absolute inline-block w-full h-[70%] inverted-background"
               style={{
                 opacity: shouldShow ? 0 : 1,
                 transition: 'opacity 0.1s ease-in-out'

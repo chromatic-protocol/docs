@@ -3,6 +3,9 @@ sidebar_position: 2
 id: open-position
 ---
 
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
+
 # Open Position
 
 ## Overview
@@ -20,7 +23,11 @@ Before opening a position, ensure that you have completed the following steps:
 
 To open a new position on the Chromatic Protocol, use the `openPosition` method provided by the `ChromaticRouter` instance. This method allows you to specify the market address, leverage, taker margin, maker margin, and maximum allowable trading fee.
 
-```typescript
+<Tabs>
+
+<TabItem value="ts ethers-v5" label="ethers-v5">
+
+```ts ethers-v5
 import { Client } from "@chromatic-protocol/sdk-ethers-v5"
 
 const client: Client = ... // Replace with your instantiated Client object
@@ -40,6 +47,58 @@ await client.router().openPosition(
 )
 ```
 
+</TabItem>
+
+<TabItem value="ts ethers-v6" label="ethers-v6">
+
+```ts ethers-v6
+import { Client } from "@chromatic-protocol/sdk-ethers-v6"
+
+const client: Client = ... // Replace with your instantiated Client object
+
+const marketAddress: string = ... // Replace with the address of the market you want to trade on
+const leverage: number = ... // Specify the leverage for the position
+const takerMargin: string = ... // Specify the taker margin amount
+const makerMargin: string = ... // Specify the maker margin amount
+const maxAllowableTradingFee: string = ... // Specify the maximum allowable trading fee
+
+await client.router().openPosition(
+  marketAddress,
+  leverage,
+  takerMargin,
+  makerMargin,
+  maxAllowableTradingFee
+)
+```
+
+</TabItem>
+
+<TabItem value="ts viem" label="viem">
+
+```ts viem
+import { Client } from "@chromatic-protocol/sdk-viem"
+
+const client: Client = ... // Replace with your instantiated Client object
+
+const marketAddress: string = ... // Replace with the address of the market you want to trade on
+const leverage: number = ... // Specify the leverage for the position
+const takerMargin: string = ... // Specify the taker margin amount
+const makerMargin: string = ... // Specify the maker margin amount
+const maxAllowableTradingFee: string = ... // Specify the maximum allowable trading fee
+
+await client.router().openPosition(
+  marketAddress,
+  leverage,
+  takerMargin,
+  makerMargin,
+  maxAllowableTradingFee
+)
+```
+
+</TabItem>
+
+</Tabs>
+
 Replace the placeholders (`client`, `marketAddress`, `leverage`, `takerMargin`, `makerMargin`, `maxAllowableTradingFee`) with your actual values. Make sure you have the sufficient funds in your account to open the position.
 
 The `openPosition` method is asynchronous and returns a Promise, so you need to use `await` to wait for the position opening process to complete.
@@ -48,7 +107,7 @@ The `openPosition` method is asynchronous and returns a Promise, so you need to 
 
 After opening a position, you can retrieve information about your positions using the `getPositions` method provided by the `ChromaticPosition` instance. This method requires the market address and an array of position IDs.
 
-```typescript
+```ts
 const positionIds = await client.account().getPositionIds(marketAddress)
 const positions = await client.position().getPositions(marketAddress, positionIds)
 ```

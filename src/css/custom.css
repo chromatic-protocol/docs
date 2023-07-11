@@ -165,9 +165,16 @@ html[data-theme='dark'] {
 .dropdown > .navbar__link {
   @apply flex items-center h-12;
   &::after {
-    @apply border-0 inline-block w-4 h-4 top-auto transform-none fill-current;
+    @apply border-0 inline-block w-4 h-4 top-auto transform-none fill-current m-0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M2.47 4.97a.75.75 0 0 1 1.06 0L8 9.44l4.47-4.47a.75.75 0 1 1 1.06 1.06l-5 5a.75.75 0 0 1-1.06 0l-5-5a.75.75 0 0 1 0-1.06Z' clip-rule='evenodd'/%3E%3C/svg%3E");
   }
 }
+.dark {
+  .dropdown > .navbar__link::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M2.47 4.97a.75.75 0 0 1 1.06 0L8 9.44l4.47-4.47a.75.75 0 1 1 1.06 1.06l-5 5a.75.75 0 0 1-1.06 0l-5-5a.75.75 0 0 1 0-1.06Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+  }
+}
+
 .navbar__items .wrapper-logo {
   @apply w-6 overflow-hidden md:w-auto;
 }

@@ -13,21 +13,21 @@
     color: #ffffff;
   }
   .inverted {
-    color: #000000;
+    color: #030303;
   }
   .primary-lighter {
     color: rgba(255, 255, 255, 0.7);
   }
   .background,
   &.background {
-    background-color: #000000;
+    background-color: #030303;
   }
   .inverted-background {
     background-color: #ffffff;
   }
   .hover:hover {
     * {
-      color: #000000;
+      color: #030303;
     }
   }
   .border {
@@ -40,7 +40,7 @@
 
 .light {
   .primary {
-    color: #000000;
+    color: #030303;
   }
   .inverted {
     color: #ffffff;
@@ -54,7 +54,7 @@
   }
 
   .inverted-background {
-    background-color: #000000;
+    background-color: #030303;
   }
   .hover:hover {
     * {
@@ -62,7 +62,7 @@
     }
   }
   .border {
-    border-color: #000000;
+    border-color: #030303;
   }
   .border-lighter {
     border-color: rgba(0, 0, 0, 0.1);
@@ -99,8 +99,8 @@ html[data-theme='dark'] {
   --ifm-color-primary-light: #9d9d9d;
   --ifm-color-primary-lighter: #a2a2a2;
   --ifm-color-primary-lightest: #afafaf;
-  --ifm-background-color: #000000;
-  --ifm-background-surface-color: #000000;
+  --ifm-background-color: #030303;
+  --ifm-background-surface-color: #030303;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 

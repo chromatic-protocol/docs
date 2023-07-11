@@ -24,7 +24,7 @@ Creates a new instance of ChromaticLens.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:61](https://github.com/chromatic-protocol/sdk/blob/521ff17/packages/sdk-viem/src/entities/ChromaticLens.ts#L61)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:61](https://github.com/chromatic-protocol/sdk/blob/52ce008/packages/sdk-viem/src/entities/ChromaticLens.ts#L61)
 
 ## Methods
 
@@ -49,7 +49,7 @@ A promise that resolves to an array of ClaimableLiquidityResult.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:173](https://github.com/chromatic-protocol/sdk/blob/521ff17/packages/sdk-viem/src/entities/ChromaticLens.ts#L173)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:173](https://github.com/chromatic-protocol/sdk/blob/52ce008/packages/sdk-viem/src/entities/ChromaticLens.ts#L173)
 
 ___
 
@@ -71,7 +71,7 @@ The ChromaticLens contract.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:79](https://github.com/chromatic-protocol/sdk/blob/521ff17/packages/sdk-viem/src/entities/ChromaticLens.ts#L79)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:79](https://github.com/chromatic-protocol/sdk/blob/52ce008/packages/sdk-viem/src/entities/ChromaticLens.ts#L79)
 
 ___
 
@@ -95,7 +95,7 @@ A promise that resolves to an array of LiquidityBinResult.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:90](https://github.com/chromatic-protocol/sdk/blob/521ff17/packages/sdk-viem/src/entities/ChromaticLens.ts#L90)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:90](https://github.com/chromatic-protocol/sdk/blob/52ce008/packages/sdk-viem/src/entities/ChromaticLens.ts#L90)
 
 ___
 
@@ -120,7 +120,7 @@ A promise that resolves to the LP receipts.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:213](https://github.com/chromatic-protocol/sdk/blob/521ff17/packages/sdk-viem/src/entities/ChromaticLens.ts#L213)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:213](https://github.com/chromatic-protocol/sdk/blob/52ce008/packages/sdk-viem/src/entities/ChromaticLens.ts#L213)
 
 ___
 
@@ -145,4 +145,4 @@ A promise that resolves to an array of OwnedLiquidityBinResult.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:123](https://github.com/chromatic-protocol/sdk/blob/521ff17/packages/sdk-viem/src/entities/ChromaticLens.ts#L123)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:123](https://github.com/chromatic-protocol/sdk/blob/52ce008/packages/sdk-viem/src/entities/ChromaticLens.ts#L123)

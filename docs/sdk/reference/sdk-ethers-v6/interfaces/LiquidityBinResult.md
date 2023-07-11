@@ -1,0 +1,9 @@
+---
+id: "LiquidityBinResult"
+title: "Interface: LiquidityBinResult"
+sidebar_label: "LiquidityBinResult"
+sidebar_position: 0
+custom_edit_url: null
+---
+
+Represents the result of a liquidity bin.

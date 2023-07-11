@@ -3,6 +3,9 @@ sidebar_position: 1
 id: create-account
 ---
 
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
+
 # Create an Account
 
 ## Overview
@@ -21,7 +24,11 @@ Before you can start trading on the Chromatic Protocol, you need to create an ac
 
 To create an account, use the `createAccount` method of the `ChromaticAccount` instance:
 
-```typescript
+<Tabs>
+
+<TabItem value="ts ethers-v5" label="ethers-v5">
+
+```ts ethers-v5
 import { Client } from "@chromatic-protocol/sdk-ethers-v5"
 
 const client: Client = ... // Replace with your instantiated Client object
@@ -29,14 +36,42 @@ const client: Client = ... // Replace with your instantiated Client object
 await client.account().createAccount();
 ```
 
+</TabItem>
+
+<TabItem value="ts ethers-v6" label="ethers-v6">
+
+```ts ethers-v6
+import { Client } from "@chromatic-protocol/sdk-ethers-v6"
+
+const client: Client = ... // Replace with your instantiated Client object
+
+await client.account().createAccount();
+```
+
+</TabItem>
+
+<TabItem value="ts viem" label="viem">
+
+```ts viem
+import { Client } from "@chromatic-protocol/sdk-viem"
+
+const client: Client = ... // Replace with your instantiated Client object
+
+await client.account().createAccount();
+```
+
+</TabItem>
+
+</Tabs>
+
 The `createAccount` method is asynchronous and returns a Promise, so you need to use `await` to wait for the account creation process to complete.
 
 ## Retrieving the Account Address
 
 Once the account is created, you can retrieve the associated account address using the `getAccount` method:
 
-```typescript
-const accountAddress = await client.account().getAccount();
+```ts
+const accountAddress = await client.account().getAccount()
 ```
 
 The `getAccount` method is also asynchronous and returns a Promise that resolves to the Ethereum address of the account.

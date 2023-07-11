@@ -34,7 +34,6 @@ npm install @chromatic-protocol/sdk-ethers-v5
 ### ethers-v6
 
 ```bash npm2yarn
-# TBA
 npm install @chromatic-protocol/sdk-ethers-v6
 ```
 
@@ -85,8 +84,25 @@ Make sure to replace ... with your actual Ethereum signer or wallet instance.
 <TabItem value="ts viem" label="viem">
 
 ```ts viem
-// TBA
+import { createWalletClient, custom, getAccount, createPublicClient, http } from 'viem'
+import { arbitrumGoerli, arbitrum } from 'viem/chains'
+import { Client } from "@chromatic-protocol/sdk-viem"
+
+const publicClient = createPublicClient({ 
+  chain: arbitrumGoerli,  // or arbitrum
+  transport: http()
+})
+
+const walletClient = createWalletClient({
+  chain: arbitrumGoerli,  // or arbitrum
+  transport: custom(window.ethereum)
+})
+
+const client = new Client({walletClient, publicClient})
 ```
+Replace "chain" and chain with the name of the Arbitrum chain you want to connect to.
+
+Make sure to replace ... with your actual `walletClient` or `publicClient`
 
 </TabItem>
 </Tabs>

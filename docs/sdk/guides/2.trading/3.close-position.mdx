@@ -3,6 +3,9 @@ sidebar_position: 3
 id: close-position
 ---
 
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
+
 # Close Position
 
 ## Overview
@@ -23,7 +26,11 @@ Closing a position in the Chromatic Protocol involves two stages: "Close Positio
 
 To close a position, use the `closePosition` method provided by the `ChromaticRouter` instance. This method requires the market address and the position ID of the position you want to close.
 
-```typescript
+<Tabs>
+
+<TabItem value="ts ethers-v5" label="ethers-v5">
+
+```ts ethers-v5
 import { Client } from "@chromatic-protocol/sdk-ethers-v5"
 
 const client: Client = ... // Replace with your instantiated Client object
@@ -34,13 +41,47 @@ const positionId: number = ... // Replace with the ID of the position you want t
 await client.router().closePosition(marketAddress, positionId)
 ```
 
+</TabItem>
+
+<TabItem value="ts ethers-v6" label="ethers-v6">
+
+```ts ethers-v6
+import { Client } from "@chromatic-protocol/sdk-ethers-v6"
+
+const client: Client = ... // Replace with your instantiated Client object
+
+const marketAddress: string = ... // Replace with the address of the market containing the position
+const positionId: number = ... // Replace with the ID of the position you want to close
+
+await client.router().closePosition(marketAddress, positionId)
+```
+
+</TabItem>
+
+<TabItem value="ts viem" label="viem">
+
+```ts viem
+import { Client } from "@chromatic-protocol/sdk-viem"
+
+const client: Client = ... // Replace with your instantiated Client object
+
+const marketAddress: string = ... // Replace with the address of the market containing the position
+const positionId: number = ... // Replace with the ID of the position you want to close
+
+await client.router().closePosition(marketAddress, positionId)
+```
+
+</TabItem>
+
+</Tabs>
+
 Replace the placeholders (`client`, `marketAddress`, `positionId`) with your actual values.
 
 ## Claiming a Position
 
 After closing a position using the "Close Position" stage, you need to claim the funds associated with the closed position using the `claimPosition` method provided by the `ChromaticRouter` instance. This method also requires the market address and the position ID.
 
-```typescript
+```ts
 await client.router().claimPosition(marketAddress, positionId)
 ```
 

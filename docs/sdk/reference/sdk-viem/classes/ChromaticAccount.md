@@ -24,7 +24,7 @@ Creates a new instance of ChromaticAccount.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticAccount.ts:21](https://github.com/chromatic-protocol/sdk/blob/521ff17/packages/sdk-viem/src/entities/ChromaticAccount.ts#L21)
+[packages/sdk-viem/src/entities/ChromaticAccount.ts:21](https://github.com/chromatic-protocol/sdk/blob/52ce008/packages/sdk-viem/src/entities/ChromaticAccount.ts#L21)
 
 ## Methods
 
@@ -49,7 +49,7 @@ A promise that resolves to the balance of the token.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticAccount.ts:88](https://github.com/chromatic-protocol/sdk/blob/521ff17/packages/sdk-viem/src/entities/ChromaticAccount.ts#L88)
+[packages/sdk-viem/src/entities/ChromaticAccount.ts:88](https://github.com/chromatic-protocol/sdk/blob/52ce008/packages/sdk-viem/src/entities/ChromaticAccount.ts#L88)
 
 ___
 
@@ -74,7 +74,7 @@ A promise that resolves to an array of TokenBalancesResult objects.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticAccount.ts:103](https://github.com/chromatic-protocol/sdk/blob/521ff17/packages/sdk-viem/src/entities/ChromaticAccount.ts#L103)
+[packages/sdk-viem/src/entities/ChromaticAccount.ts:103](https://github.com/chromatic-protocol/sdk/blob/52ce008/packages/sdk-viem/src/entities/ChromaticAccount.ts#L103)
 
 ___
 
@@ -97,7 +97,7 @@ An object containing the contract instances.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticAccount.ts:27](https://github.com/chromatic-protocol/sdk/blob/521ff17/packages/sdk-viem/src/entities/ChromaticAccount.ts#L27)
+[packages/sdk-viem/src/entities/ChromaticAccount.ts:27](https://github.com/chromatic-protocol/sdk/blob/52ce008/packages/sdk-viem/src/entities/ChromaticAccount.ts#L27)
 
 ___
 
@@ -115,7 +115,7 @@ A promise that resolves to the transaction receipt of the account creation.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticAccount.ts:45](https://github.com/chromatic-protocol/sdk/blob/521ff17/packages/sdk-viem/src/entities/ChromaticAccount.ts#L45)
+[packages/sdk-viem/src/entities/ChromaticAccount.ts:45](https://github.com/chromatic-protocol/sdk/blob/52ce008/packages/sdk-viem/src/entities/ChromaticAccount.ts#L45)
 
 ___
 
@@ -133,7 +133,7 @@ A promise that resolves to the Chromatic Account details.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticAccount.ts:58](https://github.com/chromatic-protocol/sdk/blob/521ff17/packages/sdk-viem/src/entities/ChromaticAccount.ts#L58)
+[packages/sdk-viem/src/entities/ChromaticAccount.ts:58](https://github.com/chromatic-protocol/sdk/blob/52ce008/packages/sdk-viem/src/entities/ChromaticAccount.ts#L58)
 
 ___
 
@@ -158,4 +158,4 @@ A promise that resolves to an array of position IDs.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticAccount.ts:72](https://github.com/chromatic-protocol/sdk/blob/521ff17/packages/sdk-viem/src/entities/ChromaticAccount.ts#L72)
+[packages/sdk-viem/src/entities/ChromaticAccount.ts:72](https://github.com/chromatic-protocol/sdk/blob/52ce008/packages/sdk-viem/src/entities/ChromaticAccount.ts#L72)

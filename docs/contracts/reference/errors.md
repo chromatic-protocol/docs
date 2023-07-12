@@ -4,6 +4,116 @@ title: Errors
 sidebar_position: 3
 ---
 
+## Errors
+
+| Code | Name |
+| ---- | ---- |
+| NEFL | NOT_ENOUGH_FREE_LIQUIDITY |
+| TSA | TOO_SMALL_AMOUNT |
+| IOV | INVALID_ORACLE_VERSION |
+| IOV | EXCEED_MARGIN_RANGE |
+| UTFR | UNSUPPORTED_TRADING_FEE_RATE |
+| ARO | ALREADY_REGISTERED_ORACLE_PROVIDER |
+| ART | ALREADY_REGISTERED_TOKEN |
+| URT | UNREGISTERED_TOKEN |
+| IRNI | INTEREST_RATE_NOT_INITIALIZED |
+| IROF | INTEREST_RATE_OVERFLOW |
+| IRPT | INTEREST_RATE_PAST_TIMESTAMP |
+| IRNA | INTEREST_RATE_NOT_APPENDABLE |
+| IRAA | INTEREST_RATE_ALREADY_APPLIED |
+| USP | UNSETTLED_POSITION |
+| IPQ | INVALID_POSITION_QTY |
+
+### NOT_ENOUGH_FREE_LIQUIDITY
+
+```solidity
+string constant NOT_ENOUGH_FREE_LIQUIDITY = "NEFL";
+```
+
+### TOO_SMALL_AMOUNT
+
+```solidity
+string constant TOO_SMALL_AMOUNT = "TSA";
+```
+
+### INVALID_ORACLE_VERSION
+
+```solidity
+string constant INVALID_ORACLE_VERSION = "IOV";
+```
+
+### EXCEED_MARGIN_RANGE
+
+```solidity
+string constant EXCEED_MARGIN_RANGE = "IOV";
+```
+
+### UNSUPPORTED_TRADING_FEE_RATE
+
+```solidity
+string constant UNSUPPORTED_TRADING_FEE_RATE = "UTFR";
+```
+
+### ALREADY_REGISTERED_ORACLE_PROVIDER
+
+```solidity
+string constant ALREADY_REGISTERED_ORACLE_PROVIDER = "ARO";
+```
+
+### ALREADY_REGISTERED_TOKEN
+
+```solidity
+string constant ALREADY_REGISTERED_TOKEN = "ART";
+```
+
+### UNREGISTERED_TOKEN
+
+```solidity
+string constant UNREGISTERED_TOKEN = "URT";
+```
+
+### INTEREST_RATE_NOT_INITIALIZED
+
+```solidity
+string constant INTEREST_RATE_NOT_INITIALIZED = "IRNI";
+```
+
+### INTEREST_RATE_OVERFLOW
+
+```solidity
+string constant INTEREST_RATE_OVERFLOW = "IROF";
+```
+
+### INTEREST_RATE_PAST_TIMESTAMP
+
+```solidity
+string constant INTEREST_RATE_PAST_TIMESTAMP = "IRPT";
+```
+
+### INTEREST_RATE_NOT_APPENDABLE
+
+```solidity
+string constant INTEREST_RATE_NOT_APPENDABLE = "IRNA";
+```
+
+### INTEREST_RATE_ALREADY_APPLIED
+
+```solidity
+string constant INTEREST_RATE_ALREADY_APPLIED = "IRAA";
+```
+
+### UNSETTLED_POSITION
+
+```solidity
+string constant UNSETTLED_POSITION = "USP";
+```
+
+### INVALID_POSITION_QTY
+
+```solidity
+string constant INVALID_POSITION_QTY = "IPQ";
+```
+
 ## CLBToken
 
 _CLBToken is an ERC1155 token contract that represents Liquidity Bin tokens.
@@ -312,116 +422,6 @@ error ClaimPositionCallbackError()
 
 ```solidity
 error InitializationFunctionReverted(address _initializationContractAddress, bytes _calldata)
-```
-
-## Errors
-
-| Code | Name |
-| ---- | ---- |
-| NEFL | NOT_ENOUGH_FREE_LIQUIDITY |
-| TSA | TOO_SMALL_AMOUNT |
-| IOV | INVALID_ORACLE_VERSION |
-| IOV | EXCEED_MARGIN_RANGE |
-| UTFR | UNSUPPORTED_TRADING_FEE_RATE |
-| ARO | ALREADY_REGISTERED_ORACLE_PROVIDER |
-| ART | ALREADY_REGISTERED_TOKEN |
-| URT | UNREGISTERED_TOKEN |
-| IRNI | INTEREST_RATE_NOT_INITIALIZED |
-| IROF | INTEREST_RATE_OVERFLOW |
-| IRPT | INTEREST_RATE_PAST_TIMESTAMP |
-| IRNA | INTEREST_RATE_NOT_APPENDABLE |
-| IRAA | INTEREST_RATE_ALREADY_APPLIED |
-| USP | UNSETTLED_POSITION |
-| IPQ | INVALID_POSITION_QTY |
-
-### NOT_ENOUGH_FREE_LIQUIDITY
-
-```solidity
-string constant NOT_ENOUGH_FREE_LIQUIDITY = "NEFL";
-```
-
-### TOO_SMALL_AMOUNT
-
-```solidity
-string constant TOO_SMALL_AMOUNT = "TSA";
-```
-
-### INVALID_ORACLE_VERSION
-
-```solidity
-string constant INVALID_ORACLE_VERSION = "IOV";
-```
-
-### EXCEED_MARGIN_RANGE
-
-```solidity
-string constant EXCEED_MARGIN_RANGE = "IOV";
-```
-
-### UNSUPPORTED_TRADING_FEE_RATE
-
-```solidity
-string constant UNSUPPORTED_TRADING_FEE_RATE = "UTFR";
-```
-
-### ALREADY_REGISTERED_ORACLE_PROVIDER
-
-```solidity
-string constant ALREADY_REGISTERED_ORACLE_PROVIDER = "ARO";
-```
-
-### ALREADY_REGISTERED_TOKEN
-
-```solidity
-string constant ALREADY_REGISTERED_TOKEN = "ART";
-```
-
-### UNREGISTERED_TOKEN
-
-```solidity
-string constant UNREGISTERED_TOKEN = "URT";
-```
-
-### INTEREST_RATE_NOT_INITIALIZED
-
-```solidity
-string constant INTEREST_RATE_NOT_INITIALIZED = "IRNI";
-```
-
-### INTEREST_RATE_OVERFLOW
-
-```solidity
-string constant INTEREST_RATE_OVERFLOW = "IROF";
-```
-
-### INTEREST_RATE_PAST_TIMESTAMP
-
-```solidity
-string constant INTEREST_RATE_PAST_TIMESTAMP = "IRPT";
-```
-
-### INTEREST_RATE_NOT_APPENDABLE
-
-```solidity
-string constant INTEREST_RATE_NOT_APPENDABLE = "IRNA";
-```
-
-### INTEREST_RATE_ALREADY_APPLIED
-
-```solidity
-string constant INTEREST_RATE_ALREADY_APPLIED = "IRAA";
-```
-
-### UNSETTLED_POSITION
-
-```solidity
-string constant UNSETTLED_POSITION = "USP";
-```
-
-### INVALID_POSITION_QTY
-
-```solidity
-string constant INVALID_POSITION_QTY = "IPQ";
 ```
 
 ## ChainlinkFeedOracle

@@ -24,7 +24,7 @@ Creates a new instance of ChromaticLens.
 
 #### Defined in
 
-[entities/ChromaticLens.ts:50](https://github.com/chromatic-protocol/sdk/blob/afad83c/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L50)
+[entities/ChromaticLens.ts:50](https://github.com/chromatic-protocol/sdk/blob/3558a68/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L50)
 
 ## Methods
 
@@ -49,7 +49,7 @@ A promise that resolves to an array of ClaimableLiquidityResult.
 
 #### Defined in
 
-[entities/ChromaticLens.ts:156](https://github.com/chromatic-protocol/sdk/blob/afad83c/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L156)
+[entities/ChromaticLens.ts:156](https://github.com/chromatic-protocol/sdk/blob/3558a68/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L156)
 
 ___
 
@@ -71,7 +71,7 @@ The ChromaticLens contract.
 
 #### Defined in
 
-[entities/ChromaticLens.ts:63](https://github.com/chromatic-protocol/sdk/blob/afad83c/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L63)
+[entities/ChromaticLens.ts:63](https://github.com/chromatic-protocol/sdk/blob/3558a68/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L63)
 
 ___
 
@@ -95,7 +95,7 @@ A promise that resolves to an array of LiquidityBinResult.
 
 #### Defined in
 
-[entities/ChromaticLens.ts:74](https://github.com/chromatic-protocol/sdk/blob/afad83c/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L74)
+[entities/ChromaticLens.ts:74](https://github.com/chromatic-protocol/sdk/blob/3558a68/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L74)
 
 ___
 
@@ -120,7 +120,7 @@ A promise that resolves to the LP receipts.
 
 #### Defined in
 
-[entities/ChromaticLens.ts:197](https://github.com/chromatic-protocol/sdk/blob/afad83c/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L197)
+[entities/ChromaticLens.ts:197](https://github.com/chromatic-protocol/sdk/blob/3558a68/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L197)
 
 ___
 
@@ -145,4 +145,4 @@ A promise that resolves to an array of OwnedLiquidityBinResult.
 
 #### Defined in
 
-[entities/ChromaticLens.ts:102](https://github.com/chromatic-protocol/sdk/blob/afad83c/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L102)
+[entities/ChromaticLens.ts:102](https://github.com/chromatic-protocol/sdk/blob/3558a68/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L102)

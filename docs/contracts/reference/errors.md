@@ -1,6 +1,7 @@
 ---
 id: errors
 title: Errors
+sidebar_position: 3
 ---
 
 ## CLBToken

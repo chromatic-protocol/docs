@@ -22,7 +22,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/sdk-viem/src/Client.ts:14](https://github.com/chromatic-protocol/sdk/blob/92d7e5d/packages/sdk-viem/src/Client.ts#L14)
+[packages/sdk-viem/src/Client.ts:14](https://github.com/chromatic-protocol/sdk/blob/295a5e2/packages/sdk-viem/src/Client.ts#L14)
 
 ## Accessors
 
@@ -36,7 +36,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/sdk-viem/src/Client.ts:25](https://github.com/chromatic-protocol/sdk/blob/92d7e5d/packages/sdk-viem/src/Client.ts#L25)
+[packages/sdk-viem/src/Client.ts:25](https://github.com/chromatic-protocol/sdk/blob/295a5e2/packages/sdk-viem/src/Client.ts#L25)
 
 ## Methods
 
@@ -50,7 +50,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/sdk-viem/src/Client.ts:49](https://github.com/chromatic-protocol/sdk/blob/92d7e5d/packages/sdk-viem/src/Client.ts#L49)
+[packages/sdk-viem/src/Client.ts:49](https://github.com/chromatic-protocol/sdk/blob/295a5e2/packages/sdk-viem/src/Client.ts#L49)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/Client.ts:29](https://github.com/chromatic-protocol/sdk/blob/92d7e5d/packages/sdk-viem/src/Client.ts#L29)
+[packages/sdk-viem/src/Client.ts:29](https://github.com/chromatic-protocol/sdk/blob/295a5e2/packages/sdk-viem/src/Client.ts#L29)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/Client.ts:37](https://github.com/chromatic-protocol/sdk/blob/92d7e5d/packages/sdk-viem/src/Client.ts#L37)
+[packages/sdk-viem/src/Client.ts:37](https://github.com/chromatic-protocol/sdk/blob/295a5e2/packages/sdk-viem/src/Client.ts#L37)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/Client.ts:33](https://github.com/chromatic-protocol/sdk/blob/92d7e5d/packages/sdk-viem/src/Client.ts#L33)
+[packages/sdk-viem/src/Client.ts:33](https://github.com/chromatic-protocol/sdk/blob/295a5e2/packages/sdk-viem/src/Client.ts#L33)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/Client.ts:41](https://github.com/chromatic-protocol/sdk/blob/92d7e5d/packages/sdk-viem/src/Client.ts#L41)
+[packages/sdk-viem/src/Client.ts:41](https://github.com/chromatic-protocol/sdk/blob/295a5e2/packages/sdk-viem/src/Client.ts#L41)
 
 ___
 
@@ -120,4 +120,4 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/Client.ts:45](https://github.com/chromatic-protocol/sdk/blob/92d7e5d/packages/sdk-viem/src/Client.ts#L45)
+[packages/sdk-viem/src/Client.ts:45](https://github.com/chromatic-protocol/sdk/blob/295a5e2/packages/sdk-viem/src/Client.ts#L45)

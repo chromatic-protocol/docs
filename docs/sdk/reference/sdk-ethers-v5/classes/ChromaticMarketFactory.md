@@ -24,7 +24,7 @@ Creates a new instance of ChromaticMarketFactory.
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:23](https://github.com/chromatic-protocol/sdk/blob/4bf5570/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L23)
+[entities/ChromaticMarketFactory.ts:23](https://github.com/chromatic-protocol/sdk/blob/afad83c/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L23)
 
 ## Methods
 
@@ -46,7 +46,7 @@ An object containing the contract instance of the Market Factory.
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:41](https://github.com/chromatic-protocol/sdk/blob/4bf5570/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L41)
+[entities/ChromaticMarketFactory.ts:41](https://github.com/chromatic-protocol/sdk/blob/afad83c/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L41)
 
 ___
 
@@ -70,7 +70,7 @@ A promise that resolves to the current interest rate.
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:85](https://github.com/chromatic-protocol/sdk/blob/4bf5570/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L85)
+[entities/ChromaticMarketFactory.ts:85](https://github.com/chromatic-protocol/sdk/blob/afad83c/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L85)
 
 ___
 
@@ -94,7 +94,7 @@ A promise that resolves to an array of market information.
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:96](https://github.com/chromatic-protocol/sdk/blob/4bf5570/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L96)
+[entities/ChromaticMarketFactory.ts:96](https://github.com/chromatic-protocol/sdk/blob/afad83c/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L96)
 
 ___
 
@@ -112,4 +112,4 @@ A promise that resolves to an array of settlement tokens.
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:51](https://github.com/chromatic-protocol/sdk/blob/4bf5570/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L51)
+[entities/ChromaticMarketFactory.ts:51](https://github.com/chromatic-protocol/sdk/blob/afad83c/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L51)

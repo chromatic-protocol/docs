@@ -24,7 +24,7 @@ Creates a new instance of ChromaticMarketFactory.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:24](https://github.com/chromatic-protocol/sdk/blob/92d7e5d/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L24)
+[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:24](https://github.com/chromatic-protocol/sdk/blob/295a5e2/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L24)
 
 ## Methods
 
@@ -47,7 +47,7 @@ An object containing the contract instance of the Market Factory.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:47](https://github.com/chromatic-protocol/sdk/blob/92d7e5d/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L47)
+[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:47](https://github.com/chromatic-protocol/sdk/blob/295a5e2/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L47)
 
 ___
 
@@ -71,7 +71,7 @@ A promise that resolves to the current interest rate.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:86](https://github.com/chromatic-protocol/sdk/blob/92d7e5d/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L86)
+[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:86](https://github.com/chromatic-protocol/sdk/blob/295a5e2/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L86)
 
 ___
 
@@ -95,7 +95,7 @@ A promise that resolves to an array of market information.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:97](https://github.com/chromatic-protocol/sdk/blob/92d7e5d/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L97)
+[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:97](https://github.com/chromatic-protocol/sdk/blob/295a5e2/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L97)
 
 ___
 
@@ -113,4 +113,4 @@ A promise that resolves to an array of settlement tokens.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:64](https://github.com/chromatic-protocol/sdk/blob/92d7e5d/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L64)
+[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:64](https://github.com/chromatic-protocol/sdk/blob/295a5e2/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L64)

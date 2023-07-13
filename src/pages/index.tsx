@@ -62,13 +62,15 @@ function Intro() {
   return (
     <section>
       <article className="h-[calc(100vh-90px)] text-center article">
-        <div className="wrapper">
+        <div className="p-10">
           {/* <h1 className="text-[100px]">DERIVATIVE</h1> */}
           {/* todo: mobile view */}
           <div className="flex items-center w-full overflow-hidden ">
             <ChromaticTitle />
           </div>
-          <p className="text-xl uppercase ">A NEW ERA IN DECENTRALIZED PERPETUAL FUTURES</p>
+          <p className="text-xl uppercase primary opacity-80">
+            A NEW ERA IN DECENTRALIZED PERPETUAL FUTURES
+          </p>
         </div>
       </article>
     </section>
@@ -209,12 +211,12 @@ function Contents() {
   return (
     <main className={`font-mono landing-page ${color} background`}>
       <Intro />
-      {/* <Trigger
+      <Trigger
         onUp={setColor('light')}
         onDown={setColor('dark')}
         offset={'-20vh'}
         {...triggerProps}
-  />*/}
+      />
       <StartingGuide />
       <Trigger
         onUp={setColor('dark')}

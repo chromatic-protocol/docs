@@ -5,7 +5,7 @@ import { ChromaticText } from './ChromaticText'
 const texts = ['Maximum Freedom', 'Zero Price Impact', 'Default Risk-Free', 'Lower Trading Costs']
 
 export function ChromaticTitle(props) {
-  const width = 1200
+  const width = 2000
   const height = 200
 
   return (

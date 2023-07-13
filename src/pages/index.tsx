@@ -1,9 +1,8 @@
-import React from 'react'
 import Link from '@docusaurus/Link'
-import { Svgs } from '@site/static/img/icons/Svgs'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
-import { Stage } from '@pixi/react'
-import { ChromaticText } from '@site/src/components/ChromaticText'
+import { ChromaticTitle } from '@site/src/components/ChromaticText'
+import { Svgs } from '@site/static/img/icons/Svgs'
+import React from 'react'
 import Modal from '../components/Modal'
 import TypingEffect from '../components/TypingEffect'
 
@@ -15,8 +14,8 @@ import Trigger from '@site/src/components/Trigger'
 import { useScrollPosition } from '@site/src/hooks/useScroll'
 
 import { CHROMATIC_LINKS } from '@site/src/external-links'
-import { useTestnetModal } from '../hooks/useTestnetModal'
 import { useColor } from '@site/src/theme/Contexts/color'
+import { useTestnetModal } from '../hooks/useTestnetModal'
 
 function IconArrowButton({ label, icon, to = '', href = '', onClick = null, ...props }) {
   const Svg = Svgs[icon]
@@ -56,34 +55,25 @@ function IconArrowButton({ label, icon, to = '', href = '', onClick = null, ...p
 }
 
 // const texts = ['DERIVATIVE', 'PERFETUAL', 'FUTURE', 'CHROMATIC']
+const texts = ['Maximum Freedom', 'Zero Price Impact', 'Default Risk-Free', 'Lower Trading Costs']
 
-// function Intro() {
-//   return (
-//     <section>
-//       <article className="h-[calc(100vh-90px)] text-center article">
-//         <div className="wrapper">
-//           {/* <h1 className="text-[100px]">DERIVATIVE</h1> */}
-//           {/* todo: mobile view */}
-//           <div className="flex items-center w-full overflow-hidden ">
-//             <Stage
-//               width={1200}
-//               height={200}
-//               className="flex-auto h-auto max-w-full"
-//               options={{
-//                 autoDensity: true,
-//                 backgroundColor: 0xffffff,
-//                 backgroundAlpha: 0
-//               }}
-//             >
-//               <ChromaticText texts={texts} y={0} width={1200} height={200} />
-//             </Stage>
-//           </div>
-//           <p className="text-xl uppercase ">A NEW ERA IN DECENTRALIZED PERPETUAL FUTURES</p>
-//         </div>
-//       </article>
-//     </section>
-//   )
-// }
+// Limitless Trading Pairs
+function Intro() {
+  return (
+    <section>
+      <article className="h-[calc(100vh-90px)] text-center article">
+        <div className="wrapper">
+          {/* <h1 className="text-[100px]">DERIVATIVE</h1> */}
+          {/* todo: mobile view */}
+          <div className="flex items-center w-full overflow-hidden ">
+            <ChromaticTitle />
+          </div>
+          <p className="text-xl uppercase ">A NEW ERA IN DECENTRALIZED PERPETUAL FUTURES</p>
+        </div>
+      </article>
+    </section>
+  )
+}
 
 function StartingGuide() {
   const { chromaticHeader: Svg } = Svgs
@@ -218,7 +208,7 @@ function Contents() {
 
   return (
     <main className={`font-mono landing-page ${color} background`}>
-      {/* <Intro /> */}
+      <Intro />
       {/* <Trigger
         onUp={setColor('light')}
         onDown={setColor('dark')}

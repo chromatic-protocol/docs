@@ -63,7 +63,7 @@ export const VerticalText = (props: VerticalTextProps) => {
     } else if (elapsed > 10000 && elapsed < 2500) {
       // stay
     } else if (elapsed >= 2500) {
-      const currentX = pauseX + (outX - pauseX) * easing.inQuart((elapsed - 2000) / 1000)
+      const currentX = pauseX + (outX - pauseX) * easing.inQuart((elapsed - 2500) / 1000)
       setX(currentX)
     }
   })
@@ -102,9 +102,9 @@ export const VerticalText = (props: VerticalTextProps) => {
             align: 'left',
             textBaseline: 'alphabetic',
             fontFamily: '"Source Code Pro", Helvetica, sans-serif',
-            fontSize: 140,
+            fontSize: 100, //50
             fontWeight: 'bold',
-            fill: '#000000',
+            fill: '#ffffff',
             stroke: '#01d27e',
             ...textStyles
             // strokeThickness: 5,

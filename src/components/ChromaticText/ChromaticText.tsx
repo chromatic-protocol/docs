@@ -15,7 +15,7 @@ function prepareParameters(n: number, maskWidth: number, width: number, y: numbe
     return {
       x: x + width / 2,
       pauseX: width / 2,
-      outX: width,
+      outX: width - x / 2,
       y: y
     }
   })
@@ -37,15 +37,25 @@ export const ChromaticText = (props: ChromaticTextProps) => {
       clearInterval(interval)
     }
   }, [texts])
-  const parameters = prepareParameters(5, 40, width, props.y ?? 0)
-
-  const common = {
+  let [parameters, setParameters] = useState(prepareParameters(5, 40, width, props.y ?? 0))
+  let [common, setCommon] = useState({
     width: width,
     height: height,
     rate: 1,
     baseWidth: 28,
     showCycle: parameters.length
-  }
+  })
+
+  useEffect(() => {
+    setParameters(prepareParameters(5, 40, width, props.y ?? 0))
+    setCommon({
+      width: width,
+      height: height,
+      rate: 1,
+      baseWidth: 28,
+      showCycle: parameters.length
+    })
+  }, [width])
 
   return (
     <>
@@ -55,6 +65,7 @@ export const ChromaticText = (props: ChromaticTextProps) => {
           text={text}
           {...props}
           maskProps={{ ...common, start: 0, showMod: idx }}
+          textStyles={{ fontSize: width / 12 }}
         />
       ))}
     </>

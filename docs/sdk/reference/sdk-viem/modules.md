@@ -23,7 +23,6 @@ custom_edit_url: null
 ## Interfaces
 
 - [ClaimableLiquidityResult](interfaces/ClaimableLiquidityResult.md)
-- [IBinMargin](interfaces/IBinMargin.md)
 - [IPosition](interfaces/IPosition.md)
 - [LiquidityBinResult](interfaces/LiquidityBinResult.md)
 - [OwnedLiquidityBinResult](interfaces/OwnedLiquidityBinResult.md)
@@ -31,5 +30,3 @@ custom_edit_url: null
 - [RouterAddLiquidityParam](interfaces/RouterAddLiquidityParam.md)
 - [RouterOpenPositionParam](interfaces/RouterOpenPositionParam.md)
 - [RouterRemoveLiquidityParam](interfaces/RouterRemoveLiquidityParam.md)
-- [SettlementToken](interfaces/SettlementToken.md)
-- [TokenBalancesResult](interfaces/TokenBalancesResult.md)

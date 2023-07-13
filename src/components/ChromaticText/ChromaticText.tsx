@@ -9,14 +9,23 @@ export type ChromaticTextProps = {
   y?: number
 }
 
-function prepareParameters(n: number, maskWidth: number, width: number, y: number) {
+function prepareParameters(
+  n: number,
+  maskWidth: number,
+  width: number,
+  y: number,
+  fills: string[]
+) {
   return [...Array(n)].map((_, i) => {
     const x = -maskWidth + (i * maskWidth) / n - i * (width / 2)
     return {
       x: x + width / 2,
       pauseX: width / 2,
       outX: width - x,
-      y: y
+      y: y,
+      textStyles: {
+        fill: fills[i]
+      }
     }
   })
 }
@@ -37,7 +46,9 @@ export const ChromaticText = (props: ChromaticTextProps) => {
       clearInterval(interval)
     }
   }, [texts])
-  let [parameters, setParameters] = useState(prepareParameters(5, 40, width, props.y ?? 0))
+  const fills = ['#ffffff', '#ffffff', '#ffffff', '#ffffff', '#ffffff']
+  // const fills = ['#ff0000', '#e06f33', '#d8f41e', '#00ff00', '#0000ff']
+  let [parameters, setParameters] = useState(prepareParameters(5, 40, width, props.y ?? 0, fills))
   let [common, setCommon] = useState({
     width: width,
     height: height,
@@ -45,9 +56,8 @@ export const ChromaticText = (props: ChromaticTextProps) => {
     baseWidth: 28,
     showCycle: parameters.length
   })
-
   useEffect(() => {
-    setParameters(prepareParameters(5, 40, width, props.y ?? 0))
+    setParameters(prepareParameters(5, 40, width, props.y ?? 0, fills))
     setCommon({
       width: width,
       height: height,
@@ -66,7 +76,11 @@ export const ChromaticText = (props: ChromaticTextProps) => {
           textInterval={textInterval}
           {...props}
           maskProps={{ ...common, start: 0, showMod: idx }}
-          textStyles={{ fontSize: width / 12 }}
+          textStyles={{
+            fontSize: width / 12,
+            fill: '#ff00ff',
+            ...props.textStyles
+          }}
         />
       ))}
     </>

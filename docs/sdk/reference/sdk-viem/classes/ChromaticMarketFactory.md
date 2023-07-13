@@ -24,7 +24,7 @@ Creates a new instance of ChromaticMarketFactory.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:24](https://github.com/chromatic-protocol/sdk/blob/75f0584/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L24)
+[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:24](https://github.com/chromatic-protocol/sdk/blob/429a302/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L24)
 
 ## Methods
 
@@ -47,7 +47,7 @@ An object containing the contract instance of the Market Factory.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:47](https://github.com/chromatic-protocol/sdk/blob/75f0584/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L47)
+[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:47](https://github.com/chromatic-protocol/sdk/blob/429a302/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L47)
 
 ___
 
@@ -71,7 +71,7 @@ A promise that resolves to the current interest rate.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:86](https://github.com/chromatic-protocol/sdk/blob/75f0584/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L86)
+[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:86](https://github.com/chromatic-protocol/sdk/blob/429a302/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L86)
 
 ___
 
@@ -95,7 +95,31 @@ A promise that resolves to an array of market information.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:97](https://github.com/chromatic-protocol/sdk/blob/75f0584/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L97)
+[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:97](https://github.com/chromatic-protocol/sdk/blob/429a302/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L97)
+
+___
+
+### getOracleProviderProperties
+
+▸ **getOracleProviderProperties**(`oracleProvider`): `Promise`<{ `leverageLevel`: `number` ; `maxStopLossBPS`: `number` ; `maxTakeProfitBPS`: `number` ; `minStopLossBPS`: `number` ; `minTakeProfitBPS`: `number`  }\>
+
+Retrieves the oracle provider properties for a specific oracle provider
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `oracleProvider` | \`0x${string}\` | The address of the oracle provider |
+
+#### Returns
+
+`Promise`<{ `leverageLevel`: `number` ; `maxStopLossBPS`: `number` ; `maxTakeProfitBPS`: `number` ; `minStopLossBPS`: `number` ; `minTakeProfitBPS`: `number`  }\>
+
+A Promise that resolves to an object containing the oracle properties
+
+#### Defined in
+
+[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:122](https://github.com/chromatic-protocol/sdk/blob/429a302/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L122)
 
 ___
 
@@ -113,4 +137,4 @@ A promise that resolves to an array of settlement tokens.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:64](https://github.com/chromatic-protocol/sdk/blob/75f0584/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L64)
+[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:64](https://github.com/chromatic-protocol/sdk/blob/429a302/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L64)

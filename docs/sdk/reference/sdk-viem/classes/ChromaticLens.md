@@ -24,7 +24,7 @@ Creates a new instance of ChromaticLens.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:55](https://github.com/chromatic-protocol/sdk/blob/15593dc/packages/sdk-viem/src/entities/ChromaticLens.ts#L55)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:54](https://github.com/chromatic-protocol/sdk/blob/c4dfbf3/packages/sdk-viem/src/entities/ChromaticLens.ts#L54)
 
 ## Methods
 
@@ -49,7 +49,7 @@ A promise that resolves to an array of ClaimableLiquidityResult.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:165](https://github.com/chromatic-protocol/sdk/blob/15593dc/packages/sdk-viem/src/entities/ChromaticLens.ts#L165)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:164](https://github.com/chromatic-protocol/sdk/blob/c4dfbf3/packages/sdk-viem/src/entities/ChromaticLens.ts#L164)
 
 ___
 
@@ -67,11 +67,11 @@ The ChromaticLens contract.
 
 | Name | Type |
 | :------ | :------ |
-| `lens` | [`Contract`](../namespaces/utils.md#contract)<readonly [{ `inputs`: readonly [{ `internalType`: ``"contract IChromaticRouter"`` = 'contract IChromaticRouter'; `name`: ``"_router"`` = '\_router'; `type`: ``"address"`` = 'address' }] ; `stateMutability`: ``"nonpayable"`` = 'nonpayable'; `type`: ``"constructor"`` = 'constructor' }, { `inputs`: readonly [{ `internalType`: ``"contract IChromaticMarket"`` = 'contract IChromaticMarket'; `name`: ``"market"`` = 'market'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"int16"`` = 'int16'; `name`: ``"tradingFeeRate"`` = 'tradingFeeRate'; `type`: ``"int16"`` = 'int16' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"_oracleVersion"`` = '\_oracleVersion'; `type`: ``"uint256"`` = 'uint256' }] ; `name`: ``"claimableLiquidity"`` = 'claimableLiquidity'; `outputs`: readonly [{ `components`: readonly [{ `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"mintingTokenAmountRequested"`` = 'mintingTokenAmountRequested'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"mintingCLBTokenAmount"`` = 'mintingCLBTokenAmount'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"burningCLBTokenAmountRequested"`` = 'burningCLBTokenAmountRequested'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"burningCLBTokenAmount"`` = 'burningCLBTokenAmount'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"burningTokenAmount"`` = 'burningTokenAmount'; `type`: ``"uint256"`` = 'uint256' }] ; `internalType`: ``"struct IMarketLiquidity.ClaimableLiquidity"`` = 'struct IMarketLiquidity.ClaimableLiquidity'; `name`: ``""`` = ''; `type`: ``"tuple"`` = 'tuple' }] ; `stateMutability`: ``"view"`` = 'view'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [{ `internalType`: ``"contract IChromaticMarket"`` = 'contract IChromaticMarket'; `name`: ``"market"`` = 'market'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"address"`` = 'address'; `name`: ``"owner"`` = 'owner'; `type`: ``"address"`` = 'address' }] ; `name`: ``"clbBalanceOf"`` = 'clbBalanceOf'; `outputs`: readonly [{ `components`: readonly [{ `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"tokenId"`` = 'tokenId'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"balance"`` = 'balance'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"totalSupply"`` = 'totalSupply'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"binValue"`` = 'binValue'; `type`: ``"uint256"`` = 'uint256' }] ; `internalType`: ``"struct ChromaticLens.CLBBalance[]"`` = 'struct ChromaticLens.CLBBalance[]'; `name`: ``""`` = ''; `type`: ``"tuple[]"`` = 'tuple[]' }] ; `stateMutability`: ``"view"`` = 'view'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [{ `internalType`: ``"contract IChromaticMarket"`` = 'contract IChromaticMarket'; `name`: ``"market"`` = 'market'; `type`: ``"address"`` = 'address' }] ; `name`: ``"liquidityBinStatuses"`` = 'liquidityBinStatuses'; `outputs`: readonly [{ `components`: readonly [{ `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"liquidity"`` = 'liquidity'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"freeLiquidity"`` = 'freeLiquidity'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"binValue"`` = 'binValue'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"int16"`` = 'int16'; `name`: ``"tradingFeeRate"`` = 'tradingFeeRate'; `type`: ``"int16"`` = 'int16' }] ; `internalType`: ``"struct IMarketLiquidity.LiquidityBinStatus[]"`` = 'struct IMarketLiquidity.LiquidityBinStatus[]'; `name`: ``""`` = ''; `type`: ``"tuple[]"`` = 'tuple[]' }] ; `stateMutability`: ``"view"`` = 'view'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [{ `internalType`: ``"contract IChromaticMarket"`` = 'contract IChromaticMarket'; `name`: ``"market"`` = 'market'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"address"`` = 'address'; `name`: ``"owner"`` = 'owner'; `type`: ``"address"`` = 'address' }] ; `name`: ``"lpReceipts"`` = 'lpReceipts'; `outputs`: readonly [{ `components`: readonly [{ `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"id"`` = 'id'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"oracleVersion"`` = 'oracleVersion'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"amount"`` = 'amount'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"address"`` = 'address'; `name`: ``"recipient"`` = 'recipient'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"enum LpAction"`` = 'enum LpAction'; `name`: ``"action"`` = 'action'; `type`: ``"uint8"`` = 'uint8' }, { `internalType`: ``"int16"`` = 'int16'; `name`: ``"tradingFeeRate"`` = 'tradingFeeRate'; `type`: ``"int16"`` = 'int16' }] ; `internalType`: ``"struct LpReceipt[]"`` = 'struct LpReceipt[]'; `name`: ``"result"`` = 'result'; `type`: ``"tuple[]"`` = 'tuple[]' }] ; `stateMutability`: ``"view"`` = 'view'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [{ `internalType`: ``"contract IChromaticMarket"`` = 'contract IChromaticMarket'; `name`: ``"market"`` = 'market'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"version"`` = 'version'; `type`: ``"uint256"`` = 'uint256' }] ; `name`: ``"oracleVersion"`` = 'oracleVersion'; `outputs`: readonly [{ `components`: readonly [{ `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"version"`` = 'version'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"timestamp"`` = 'timestamp'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"Fixed18"`` = 'Fixed18'; `name`: ``"price"`` = 'price'; `type`: ``"int256"`` = 'int256' }] ; `internalType`: ``"struct IOracleProvider.OracleVersion"`` = 'struct IOracleProvider.OracleVersion'; `name`: ``""`` = ''; `type`: ``"tuple"`` = 'tuple' }] ; `stateMutability`: ``"view"`` = 'view'; `type`: ``"function"`` = 'function' }]\> |
+| `lens` | `ContractChromaticLens` |
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:73](https://github.com/chromatic-protocol/sdk/blob/15593dc/packages/sdk-viem/src/entities/ChromaticLens.ts#L73)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:72](https://github.com/chromatic-protocol/sdk/blob/c4dfbf3/packages/sdk-viem/src/entities/ChromaticLens.ts#L72)
 
 ___
 
@@ -95,7 +95,7 @@ A promise that resolves to an array of LiquidityBinResult.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:84](https://github.com/chromatic-protocol/sdk/blob/15593dc/packages/sdk-viem/src/entities/ChromaticLens.ts#L84)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:83](https://github.com/chromatic-protocol/sdk/blob/c4dfbf3/packages/sdk-viem/src/entities/ChromaticLens.ts#L83)
 
 ___
 
@@ -120,7 +120,7 @@ A promise that resolves to the LP receipts.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:193](https://github.com/chromatic-protocol/sdk/blob/15593dc/packages/sdk-viem/src/entities/ChromaticLens.ts#L193)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:192](https://github.com/chromatic-protocol/sdk/blob/c4dfbf3/packages/sdk-viem/src/entities/ChromaticLens.ts#L192)
 
 ___
 
@@ -145,4 +145,4 @@ A promise that resolves to an array of OwnedLiquidityBinResult.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:115](https://github.com/chromatic-protocol/sdk/blob/15593dc/packages/sdk-viem/src/entities/ChromaticLens.ts#L115)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:114](https://github.com/chromatic-protocol/sdk/blob/c4dfbf3/packages/sdk-viem/src/entities/ChromaticLens.ts#L114)

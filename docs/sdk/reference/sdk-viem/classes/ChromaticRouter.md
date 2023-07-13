@@ -24,7 +24,7 @@ Creates an instance of ChromaticRouter.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:45](https://github.com/chromatic-protocol/sdk/blob/15593dc/packages/sdk-viem/src/entities/ChromaticRouter.ts#L45)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:44](https://github.com/chromatic-protocol/sdk/blob/c4dfbf3/packages/sdk-viem/src/entities/ChromaticRouter.ts#L44)
 
 ## Methods
 
@@ -50,7 +50,7 @@ A promise that resolves to the transaction receipt of the liquidity additions.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:236](https://github.com/chromatic-protocol/sdk/blob/15593dc/packages/sdk-viem/src/entities/ChromaticRouter.ts#L236)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:235](https://github.com/chromatic-protocol/sdk/blob/c4dfbf3/packages/sdk-viem/src/entities/ChromaticRouter.ts#L235)
 
 ___
 
@@ -76,7 +76,7 @@ A promise that resolves to the transaction receipt of the liquidity addition.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:205](https://github.com/chromatic-protocol/sdk/blob/15593dc/packages/sdk-viem/src/entities/ChromaticRouter.ts#L205)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:204](https://github.com/chromatic-protocol/sdk/blob/c4dfbf3/packages/sdk-viem/src/entities/ChromaticRouter.ts#L204)
 
 ___
 
@@ -100,7 +100,7 @@ A promise that resolves to a boolean indicating whether the approval was success
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:148](https://github.com/chromatic-protocol/sdk/blob/15593dc/packages/sdk-viem/src/entities/ChromaticRouter.ts#L148)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:147](https://github.com/chromatic-protocol/sdk/blob/c4dfbf3/packages/sdk-viem/src/entities/ChromaticRouter.ts#L147)
 
 ___
 
@@ -125,7 +125,7 @@ A promise that resolves to a boolean indicating whether the approval was success
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:177](https://github.com/chromatic-protocol/sdk/blob/15593dc/packages/sdk-viem/src/entities/ChromaticRouter.ts#L177)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:176](https://github.com/chromatic-protocol/sdk/blob/c4dfbf3/packages/sdk-viem/src/entities/ChromaticRouter.ts#L176)
 
 ___
 
@@ -150,7 +150,7 @@ A promise that resolves to the transaction receipt of the liquidity positions cl
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:382](https://github.com/chromatic-protocol/sdk/blob/15593dc/packages/sdk-viem/src/entities/ChromaticRouter.ts#L382)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:381](https://github.com/chromatic-protocol/sdk/blob/c4dfbf3/packages/sdk-viem/src/entities/ChromaticRouter.ts#L381)
 
 ___
 
@@ -175,7 +175,7 @@ A promise that resolves to the transaction receipt of the liquidity position cla
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:362](https://github.com/chromatic-protocol/sdk/blob/15593dc/packages/sdk-viem/src/entities/ChromaticRouter.ts#L362)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:361](https://github.com/chromatic-protocol/sdk/blob/c4dfbf3/packages/sdk-viem/src/entities/ChromaticRouter.ts#L361)
 
 ___
 
@@ -200,7 +200,7 @@ A promise that resolves to the transaction receipt of the position claiming.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:125](https://github.com/chromatic-protocol/sdk/blob/15593dc/packages/sdk-viem/src/entities/ChromaticRouter.ts#L125)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:124](https://github.com/chromatic-protocol/sdk/blob/c4dfbf3/packages/sdk-viem/src/entities/ChromaticRouter.ts#L124)
 
 ___
 
@@ -225,7 +225,7 @@ A promise that resolves to the transaction receipt of the position closing.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:105](https://github.com/chromatic-protocol/sdk/blob/15593dc/packages/sdk-viem/src/entities/ChromaticRouter.ts#L105)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:104](https://github.com/chromatic-protocol/sdk/blob/c4dfbf3/packages/sdk-viem/src/entities/ChromaticRouter.ts#L104)
 
 ___
 
@@ -243,11 +243,11 @@ A contract instance for the ChromaticRouter.
 
 | Name | Type |
 | :------ | :------ |
-| `router` | () => [`Contract`](../namespaces/utils.md#contract)<readonly [{ `inputs`: readonly [{ `internalType`: ``"address"`` = 'address'; `name`: ``"_marketFactory"`` = '\_marketFactory'; `type`: ``"address"`` = 'address' }] ; `stateMutability`: ``"nonpayable"`` = 'nonpayable'; `type`: ``"constructor"`` = 'constructor' }, { `inputs`: readonly [] = []; `name`: ``"NotExistLpReceipt"`` = 'NotExistLpReceipt'; `type`: ``"error"`` = 'error' }, { `inputs`: readonly [] = []; `name`: ``"NotMarket"`` = 'NotMarket'; `type`: ``"error"`` = 'error' }, { `anonymous`: ``false`` = false; `inputs`: readonly [{ `indexed`: ``true`` = true; `internalType`: ``"address"`` = 'address'; `name`: ``"account"`` = 'account'; `type`: ``"address"`` = 'address' }, { `indexed`: ``true`` = true; `internalType`: ``"address"`` = 'address'; `name`: ``"owner"`` = 'owner'; `type`: ``"address"`` = 'address' }] ; `name`: ``"AccountCreated"`` = 'AccountCreated'; `type`: ``"event"`` = 'event' }, { `anonymous`: ``false`` = false; `inputs`: readonly [{ `indexed`: ``true`` = true; `internalType`: ``"address"`` = 'address'; `name`: ``"previousOwner"`` = 'previousOwner'; `type`: ``"address"`` = 'address' }, { `indexed`: ``true`` = true; `internalType`: ``"address"`` = 'address'; `name`: ``"newOwner"`` = 'newOwner'; `type`: ``"address"`` = 'address' }] ; `name`: ``"OwnershipTransferred"`` = 'OwnershipTransferred'; `type`: ``"event"`` = 'event' }, { `inputs`: readonly [{ `internalType`: ``"address"`` = 'address'; `name`: ``"market"`` = 'market'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"int16"`` = 'int16'; `name`: ``"feeRate"`` = 'feeRate'; `type`: ``"int16"`` = 'int16' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"amount"`` = 'amount'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"address"`` = 'address'; `name`: ``"recipient"`` = 'recipient'; `type`: ``"address"`` = 'address' }] ; `name`: ``"addLiquidity"`` = 'addLiquidity'; `outputs`: readonly [{ `components`: readonly [{ `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"id"`` = 'id'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"oracleVersion"`` = 'oracleVersion'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"amount"`` = 'amount'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"address"`` = 'address'; `name`: ``"recipient"`` = 'recipient'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"enum LpAction"`` = 'enum LpAction'; `name`: ``"action"`` = 'action'; `type`: ``"uint8"`` = 'uint8' }, { `internalType`: ``"int16"`` = 'int16'; `name`: ``"tradingFeeRate"`` = 'tradingFeeRate'; `type`: ``"int16"`` = 'int16' }] ; `internalType`: ``"struct LpReceipt"`` = 'struct LpReceipt'; `name`: ``"receipt"`` = 'receipt'; `type`: ``"tuple"`` = 'tuple' }] ; `stateMutability`: ``"nonpayable"`` = 'nonpayable'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [{ `internalType`: ``"address"`` = 'address'; `name`: ``"market"`` = 'market'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"address"`` = 'address'; `name`: ``"recipient"`` = 'recipient'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"int16[]"`` = 'int16[]'; `name`: ``"feeRates"`` = 'feeRates'; `type`: ``"int16[]"`` = 'int16[]' }, { `internalType`: ``"uint256[]"`` = 'uint256[]'; `name`: ``"amounts"`` = 'amounts'; `type`: ``"uint256[]"`` = 'uint256[]' }] ; `name`: ``"addLiquidityBatch"`` = 'addLiquidityBatch'; `outputs`: readonly [{ `components`: readonly [{ `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"id"`` = 'id'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"oracleVersion"`` = 'oracleVersion'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"amount"`` = 'amount'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"address"`` = 'address'; `name`: ``"recipient"`` = 'recipient'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"enum LpAction"`` = 'enum LpAction'; `name`: ``"action"`` = 'action'; `type`: ``"uint8"`` = 'uint8' }, { `internalType`: ``"int16"`` = 'int16'; `name`: ``"tradingFeeRate"`` = 'tradingFeeRate'; `type`: ``"int16"`` = 'int16' }] ; `internalType`: ``"struct LpReceipt[]"`` = 'struct LpReceipt[]'; `name`: ``"lpReceipts"`` = 'lpReceipts'; `type`: ``"tuple[]"`` = 'tuple[]' }] ; `stateMutability`: ``"nonpayable"`` = 'nonpayable'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [{ `internalType`: ``"address"`` = 'address'; `name`: ``"settlementToken"`` = 'settlementToken'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"address"`` = 'address'; `name`: ``"vault"`` = 'vault'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"bytes"`` = 'bytes'; `name`: ``"data"`` = 'data'; `type`: ``"bytes"`` = 'bytes' }] ; `name`: ``"addLiquidityBatchCallback"`` = 'addLiquidityBatchCallback'; `outputs`: readonly [] = []; `stateMutability`: ``"nonpayable"`` = 'nonpayable'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [{ `internalType`: ``"address"`` = 'address'; `name`: ``"settlementToken"`` = 'settlementToken'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"address"`` = 'address'; `name`: ``"vault"`` = 'vault'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"bytes"`` = 'bytes'; `name`: ``"data"`` = 'data'; `type`: ``"bytes"`` = 'bytes' }] ; `name`: ``"addLiquidityCallback"`` = 'addLiquidityCallback'; `outputs`: readonly [] = []; `stateMutability`: ``"nonpayable"`` = 'nonpayable'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [{ `internalType`: ``"address"`` = 'address'; `name`: ``"market"`` = 'market'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"receiptId"`` = 'receiptId'; `type`: ``"uint256"`` = 'uint256' }] ; `name`: ``"claimLiquidity"`` = 'claimLiquidity'; `outputs`: readonly [] = []; `stateMutability`: ``"nonpayable"`` = 'nonpayable'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [{ `internalType`: ``"address"`` = 'address'; `name`: ``"market"`` = 'market'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"uint256[]"`` = 'uint256[]'; `name`: ``"_receiptIds"`` = '\_receiptIds'; `type`: ``"uint256[]"`` = 'uint256[]' }] ; `name`: ``"claimLiquidityBatch"`` = 'claimLiquidityBatch'; `outputs`: readonly [] = []; `stateMutability`: ``"nonpayable"`` = 'nonpayable'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [{ `internalType`: ``"uint256[]"`` = 'uint256[]'; `name`: ``"_receiptIds"`` = '\_receiptIds'; `type`: ``"uint256[]"`` = 'uint256[]' }, { `internalType`: ``"bytes"`` = 'bytes'; `name`: ``"data"`` = 'data'; `type`: ``"bytes"`` = 'bytes' }] ; `name`: ``"claimLiquidityBatchCallback"`` = 'claimLiquidityBatchCallback'; `outputs`: readonly [] = []; `stateMutability`: ``"nonpayable"`` = 'nonpayable'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [{ `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"receiptId"`` = 'receiptId'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"bytes"`` = 'bytes'; `name`: ``"data"`` = 'data'; `type`: ``"bytes"`` = 'bytes' }] ; `name`: ``"claimLiquidityCallback"`` = 'claimLiquidityCallback'; `outputs`: readonly [] = []; `stateMutability`: ``"nonpayable"`` = 'nonpayable'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [{ `internalType`: ``"address"`` = 'address'; `name`: ``"market"`` = 'market'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"positionId"`` = 'positionId'; `type`: ``"uint256"`` = 'uint256' }] ; `name`: ``"claimPosition"`` = 'claimPosition'; `outputs`: readonly [] = []; `stateMutability`: ``"nonpayable"`` = 'nonpayable'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [{ `internalType`: ``"address"`` = 'address'; `name`: ``"market"`` = 'market'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"positionId"`` = 'positionId'; `type`: ``"uint256"`` = 'uint256' }] ; `name`: ``"closePosition"`` = 'closePosition'; `outputs`: readonly [] = []; `stateMutability`: ``"nonpayable"`` = 'nonpayable'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [] = []; `name`: ``"createAccount"`` = 'createAccount'; `outputs`: readonly [] = []; `stateMutability`: ``"nonpayable"`` = 'nonpayable'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [] = []; `name`: ``"getAccount"`` = 'getAccount'; `outputs`: readonly [{ `internalType`: ``"address"`` = 'address'; `name`: ``""`` = ''; `type`: ``"address"`` = 'address' }] ; `stateMutability`: ``"view"`` = 'view'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [{ `internalType`: ``"address"`` = 'address'; `name`: ``"market"`` = 'market'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"address"`` = 'address'; `name`: ``"owner"`` = 'owner'; `type`: ``"address"`` = 'address' }] ; `name`: ``"getLpReceiptIds"`` = 'getLpReceiptIds'; `outputs`: readonly [{ `internalType`: ``"uint256[]"`` = 'uint256[]'; `name`: ``""`` = ''; `type`: ``"uint256[]"`` = 'uint256[]' }] ; `stateMutability`: ``"view"`` = 'view'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [{ `internalType`: ``"address"`` = 'address'; `name`: ``"market"`` = 'market'; `type`: ``"address"`` = 'address' }] ; `name`: ``"getLpReceiptIds"`` = 'getLpReceiptIds'; `outputs`: readonly [{ `internalType`: ``"uint256[]"`` = 'uint256[]'; `name`: ``""`` = ''; `type`: ``"uint256[]"`` = 'uint256[]' }] ; `stateMutability`: ``"view"`` = 'view'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [{ `internalType`: ``"address"`` = 'address'; `name`: ``"market"`` = 'market'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"int224"`` = 'int224'; `name`: ``"qty"`` = 'qty'; `type`: ``"int224"`` = 'int224' }, { `internalType`: ``"uint32"`` = 'uint32'; `name`: ``"leverage"`` = 'leverage'; `type`: ``"uint32"`` = 'uint32' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"takerMargin"`` = 'takerMargin'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"makerMargin"`` = 'makerMargin'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"maxAllowableTradingFee"`` = 'maxAllowableTradingFee'; `type`: ``"uint256"`` = 'uint256' }] ; `name`: ``"openPosition"`` = 'openPosition'; `outputs`: readonly [{ `components`: readonly [{ `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"id"`` = 'id'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"openVersion"`` = 'openVersion'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"closeVersion"`` = 'closeVersion'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"int224"`` = 'int224'; `name`: ``"qty"`` = 'qty'; `type`: ``"int224"`` = 'int224' }, { `internalType`: ``"uint32"`` = 'uint32'; `name`: ``"leverage"`` = 'leverage'; `type`: ``"uint32"`` = 'uint32' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"openTimestamp"`` = 'openTimestamp'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"closeTimestamp"`` = 'closeTimestamp'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"takerMargin"`` = 'takerMargin'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"address"`` = 'address'; `name`: ``"owner"`` = 'owner'; `type`: ``"address"`` = 'address' }, { `components`: readonly [{ `internalType`: ``"uint16"`` = 'uint16'; `name`: ``"tradingFeeRate"`` = 'tradingFeeRate'; `type`: ``"uint16"`` = 'uint16' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"amount"`` = 'amount'; `type`: ``"uint256"`` = 'uint256' }] ; `internalType`: ``"struct BinMargin[]"`` = 'struct BinMargin[]'; `name`: ``"_binMargins"`` = '\_binMargins'; `type`: ``"tuple[]"`` = 'tuple[]' }, { `internalType`: ``"uint8"`` = 'uint8'; `name`: ``"_feeProtocol"`` = '\_feeProtocol'; `type`: ``"uint8"`` = 'uint8' }] ; `internalType`: ``"struct Position"`` = 'struct Position'; `name`: ``""`` = ''; `type`: ``"tuple"`` = 'tuple' }] ; `stateMutability`: ``"nonpayable"`` = 'nonpayable'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [] = []; `name`: ``"owner"`` = 'owner'; `outputs`: readonly [{ `internalType`: ``"address"`` = 'address'; `name`: ``""`` = ''; `type`: ``"address"`` = 'address' }] ; `stateMutability`: ``"view"`` = 'view'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [{ `internalType`: ``"address"`` = 'address'; `name`: ``"market"`` = 'market'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"int16"`` = 'int16'; `name`: ``"feeRate"`` = 'feeRate'; `type`: ``"int16"`` = 'int16' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"clbTokenAmount"`` = 'clbTokenAmount'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"address"`` = 'address'; `name`: ``"recipient"`` = 'recipient'; `type`: ``"address"`` = 'address' }] ; `name`: ``"removeLiquidity"`` = 'removeLiquidity'; `outputs`: readonly [{ `components`: readonly [{ `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"id"`` = 'id'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"oracleVersion"`` = 'oracleVersion'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"amount"`` = 'amount'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"address"`` = 'address'; `name`: ``"recipient"`` = 'recipient'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"enum LpAction"`` = 'enum LpAction'; `name`: ``"action"`` = 'action'; `type`: ``"uint8"`` = 'uint8' }, { `internalType`: ``"int16"`` = 'int16'; `name`: ``"tradingFeeRate"`` = 'tradingFeeRate'; `type`: ``"int16"`` = 'int16' }] ; `internalType`: ``"struct LpReceipt"`` = 'struct LpReceipt'; `name`: ``"receipt"`` = 'receipt'; `type`: ``"tuple"`` = 'tuple' }] ; `stateMutability`: ``"nonpayable"`` = 'nonpayable'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [{ `internalType`: ``"address"`` = 'address'; `name`: ``"market"`` = 'market'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"address"`` = 'address'; `name`: ``"recipient"`` = 'recipient'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"int16[]"`` = 'int16[]'; `name`: ``"feeRates"`` = 'feeRates'; `type`: ``"int16[]"`` = 'int16[]' }, { `internalType`: ``"uint256[]"`` = 'uint256[]'; `name`: ``"clbTokenAmounts"`` = 'clbTokenAmounts'; `type`: ``"uint256[]"`` = 'uint256[]' }] ; `name`: ``"removeLiquidityBatch"`` = 'removeLiquidityBatch'; `outputs`: readonly [{ `components`: readonly [{ `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"id"`` = 'id'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"oracleVersion"`` = 'oracleVersion'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"amount"`` = 'amount'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"address"`` = 'address'; `name`: ``"recipient"`` = 'recipient'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"enum LpAction"`` = 'enum LpAction'; `name`: ``"action"`` = 'action'; `type`: ``"uint8"`` = 'uint8' }, { `internalType`: ``"int16"`` = 'int16'; `name`: ``"tradingFeeRate"`` = 'tradingFeeRate'; `type`: ``"int16"`` = 'int16' }] ; `internalType`: ``"struct LpReceipt[]"`` = 'struct LpReceipt[]'; `name`: ``"lpReceipts"`` = 'lpReceipts'; `type`: ``"tuple[]"`` = 'tuple[]' }] ; `stateMutability`: ``"nonpayable"`` = 'nonpayable'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [{ `internalType`: ``"address"`` = 'address'; `name`: ``"clbToken"`` = 'clbToken'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"uint256[]"`` = 'uint256[]'; `name`: ``"clbTokenIds"`` = 'clbTokenIds'; `type`: ``"uint256[]"`` = 'uint256[]' }, { `internalType`: ``"bytes"`` = 'bytes'; `name`: ``"data"`` = 'data'; `type`: ``"bytes"`` = 'bytes' }] ; `name`: ``"removeLiquidityBatchCallback"`` = 'removeLiquidityBatchCallback'; `outputs`: readonly [] = []; `stateMutability`: ``"nonpayable"`` = 'nonpayable'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [{ `internalType`: ``"address"`` = 'address'; `name`: ``"clbToken"`` = 'clbToken'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"clbTokenId"`` = 'clbTokenId'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"bytes"`` = 'bytes'; `name`: ``"data"`` = 'data'; `type`: ``"bytes"`` = 'bytes' }] ; `name`: ``"removeLiquidityCallback"`` = 'removeLiquidityCallback'; `outputs`: readonly [] = []; `stateMutability`: ``"nonpayable"`` = 'nonpayable'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [] = []; `name`: ``"renounceOwnership"`` = 'renounceOwnership'; `outputs`: readonly [] = []; `stateMutability`: ``"nonpayable"`` = 'nonpayable'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [{ `internalType`: ``"address"`` = 'address'; `name`: ``"newOwner"`` = 'newOwner'; `type`: ``"address"`` = 'address' }] ; `name`: ``"transferOwnership"`` = 'transferOwnership'; `outputs`: readonly [] = []; `stateMutability`: ``"nonpayable"`` = 'nonpayable'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [{ `internalType`: ``"address"`` = 'address'; `name`: ``"market"`` = 'market'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"receiptId"`` = 'receiptId'; `type`: ``"uint256"`` = 'uint256' }] ; `name`: ``"withdrawLiquidity"`` = 'withdrawLiquidity'; `outputs`: readonly [] = []; `stateMutability`: ``"nonpayable"`` = 'nonpayable'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [{ `internalType`: ``"address"`` = 'address'; `name`: ``"market"`` = 'market'; `type`: ``"address"`` = 'address' }, { `internalType`: ``"uint256[]"`` = 'uint256[]'; `name`: ``"_receiptIds"`` = '\_receiptIds'; `type`: ``"uint256[]"`` = 'uint256[]' }] ; `name`: ``"withdrawLiquidityBatch"`` = 'withdrawLiquidityBatch'; `outputs`: readonly [] = []; `stateMutability`: ``"nonpayable"`` = 'nonpayable'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [{ `internalType`: ``"uint256[]"`` = 'uint256[]'; `name`: ``"_receiptIds"`` = '\_receiptIds'; `type`: ``"uint256[]"`` = 'uint256[]' }, { `internalType`: ``"bytes"`` = 'bytes'; `name`: ``"data"`` = 'data'; `type`: ``"bytes"`` = 'bytes' }] ; `name`: ``"withdrawLiquidityBatchCallback"`` = 'withdrawLiquidityBatchCallback'; `outputs`: readonly [] = []; `stateMutability`: ``"nonpayable"`` = 'nonpayable'; `type`: ``"function"`` = 'function' }, { `inputs`: readonly [{ `internalType`: ``"uint256"`` = 'uint256'; `name`: ``"receiptId"`` = 'receiptId'; `type`: ``"uint256"`` = 'uint256' }, { `internalType`: ``"bytes"`` = 'bytes'; `name`: ``"data"`` = 'data'; `type`: ``"bytes"`` = 'bytes' }] ; `name`: ``"withdrawLiquidityCallback"`` = 'withdrawLiquidityCallback'; `outputs`: readonly [] = []; `stateMutability`: ``"nonpayable"`` = 'nonpayable'; `type`: ``"function"`` = 'function' }]\> |
+| `router` | () => `ContractChromaticRouter` |
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:51](https://github.com/chromatic-protocol/sdk/blob/15593dc/packages/sdk-viem/src/entities/ChromaticRouter.ts#L51)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:50](https://github.com/chromatic-protocol/sdk/blob/c4dfbf3/packages/sdk-viem/src/entities/ChromaticRouter.ts#L50)
 
 ___
 
@@ -272,7 +272,7 @@ A promise that resolves to the transaction receipt of the position opening.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:72](https://github.com/chromatic-protocol/sdk/blob/15593dc/packages/sdk-viem/src/entities/ChromaticRouter.ts#L72)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:71](https://github.com/chromatic-protocol/sdk/blob/c4dfbf3/packages/sdk-viem/src/entities/ChromaticRouter.ts#L71)
 
 ___
 
@@ -298,7 +298,7 @@ A promise that resolves to the transaction receipt of the liquidity removals.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:317](https://github.com/chromatic-protocol/sdk/blob/15593dc/packages/sdk-viem/src/entities/ChromaticRouter.ts#L317)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:316](https://github.com/chromatic-protocol/sdk/blob/c4dfbf3/packages/sdk-viem/src/entities/ChromaticRouter.ts#L316)
 
 ___
 
@@ -323,7 +323,7 @@ A promise that resolves to the transaction receipt of the liquidity removal.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:279](https://github.com/chromatic-protocol/sdk/blob/15593dc/packages/sdk-viem/src/entities/ChromaticRouter.ts#L279)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:278](https://github.com/chromatic-protocol/sdk/blob/c4dfbf3/packages/sdk-viem/src/entities/ChromaticRouter.ts#L278)
 
 ___
 
@@ -348,7 +348,7 @@ A promise that resolves to the transaction receipt of the liquidity positions wi
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:422](https://github.com/chromatic-protocol/sdk/blob/15593dc/packages/sdk-viem/src/entities/ChromaticRouter.ts#L422)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:421](https://github.com/chromatic-protocol/sdk/blob/c4dfbf3/packages/sdk-viem/src/entities/ChromaticRouter.ts#L421)
 
 ___
 
@@ -373,4 +373,4 @@ A promise that resolves to the transaction receipt of the liquidity position wit
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:402](https://github.com/chromatic-protocol/sdk/blob/15593dc/packages/sdk-viem/src/entities/ChromaticRouter.ts#L402)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:401](https://github.com/chromatic-protocol/sdk/blob/c4dfbf3/packages/sdk-viem/src/entities/ChromaticRouter.ts#L401)

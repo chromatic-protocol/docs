@@ -15,7 +15,7 @@ function prepareParameters(n: number, maskWidth: number, width: number, y: numbe
     return {
       x: x + width / 2,
       pauseX: width / 2,
-      outX: width - x / 2,
+      outX: width - x,
       y: y
     }
   })
@@ -23,7 +23,7 @@ function prepareParameters(n: number, maskWidth: number, width: number, y: numbe
 
 export const ChromaticText = (props: ChromaticTextProps) => {
   const { texts, width, height } = props
-  const textInterval = props.textInterval ?? 2000
+  const textInterval = props.textInterval ?? 4000
 
   const [text, setText] = useState(texts[0])
   const i = useRef(0)
@@ -63,6 +63,7 @@ export const ChromaticText = (props: ChromaticTextProps) => {
         <VerticalText
           key={idx}
           text={text}
+          textInterval={textInterval}
           {...props}
           maskProps={{ ...common, start: 0, showMod: idx }}
           textStyles={{ fontSize: width / 12 }}

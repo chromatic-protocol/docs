@@ -185,7 +185,7 @@ const config = {
           // href: '#',
           alt: 'Chromatic Protocol',
           src: 'img/chromatic-logo-row-white.svg',
-          srcDark: 'img/chromatic-logo-row.svg',
+          srcDark: 'img/chromatic-logo-row-white.svg',
           width: 200,
           height: 'auto',
           style: { margin: '0' }

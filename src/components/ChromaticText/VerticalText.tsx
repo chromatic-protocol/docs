@@ -57,7 +57,7 @@ export const VerticalText = (props: VerticalTextProps) => {
   const [elapsed, setElapsed] = useState(0)
   const intervals = [textInterval * (1 / 3), textInterval * (2 / 3), textInterval]
   useTick((delta) => {
-    setElapsed(elapsed + delta * 15)
+    setElapsed(elapsed + delta * 16.66)
     if (elapsed < intervals[0]) {
       const currentX = x + (pauseX - x) * easing.outQuint(elapsed / intervals[0])
       setX(currentX)
@@ -107,7 +107,7 @@ export const VerticalText = (props: VerticalTextProps) => {
             fontWeight: 'bold',
             fill: '#ffffff',
             stroke: '#01d27e',
-            letterSpacing: -2,
+            letterSpacing: -4,
             ...textStyles
             // strokeThickness: 5,
             // dropShadow: true,

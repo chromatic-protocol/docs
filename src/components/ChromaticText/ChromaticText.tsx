@@ -33,7 +33,7 @@ function prepareParameters(
 
 export const ChromaticText = (props: ChromaticTextProps) => {
   const { texts, width, height, fill } = props
-  const textInterval = props.textInterval ?? 4000
+  const textInterval = props.textInterval ?? 3600
 
   const [text, setText] = useState(texts[0])
   const i = useRef(0)
@@ -78,8 +78,9 @@ export const ChromaticText = (props: ChromaticTextProps) => {
           {...props}
           maskProps={{ ...common, start: 0, showMod: idx }}
           textStyles={{
-            fontSize: width / 12,
-            fill: fill
+            fontSize: width / 16,
+            fill: fill,
+            fontWeight: '900'
             // ...props.textStyles
           }}
         />

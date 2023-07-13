@@ -54,15 +54,12 @@ function IconArrowButton({ label, icon, to = '', href = '', onClick = null, ...p
   )
 }
 
-// const texts = ['DERIVATIVE', 'PERFETUAL', 'FUTURE', 'CHROMATIC']
-const texts = ['Maximum Freedom', 'Zero Price Impact', 'Default Risk-Free', 'Lower Trading Costs']
-
 // Limitless Trading Pairs
 function Intro() {
   return (
     <section>
       <article className="h-[calc(100vh-90px)] text-center article">
-        <div className="p-10">
+        <div className="lg:p-5">
           {/* <h1 className="text-[100px]">DERIVATIVE</h1> */}
           {/* todo: mobile view */}
           <div className="flex items-center w-full overflow-hidden ">

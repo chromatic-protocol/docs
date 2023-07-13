@@ -3,7 +3,13 @@ import React from 'react'
 import { ChromaticText } from './ChromaticText'
 import { useColor } from '@site/src/theme/Contexts/color'
 
-const texts = ['Maximum Freedom', 'Zero Price Impact', 'No Default Risk', 'Lower Trading Costs']
+const texts = [
+  'Limitless Trading Pairs',
+  'Maximum Freedom',
+  'Zero Price Impact',
+  'No Default Risk',
+  'Lower Trading Costs'
+]
 
 export function ChromaticTitle(props) {
   const width = 2000

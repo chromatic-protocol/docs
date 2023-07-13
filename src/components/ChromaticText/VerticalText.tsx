@@ -19,6 +19,7 @@ export type VerticalTextProps = {
   pauseX: number
   outX: number
   y?: number
+  textInterval: number
   maskProps: VerticalRectsMaskProps
   textStyles?: Partial<ITextStyle>
 }
@@ -49,21 +50,21 @@ function getRects(
 }
 
 export const VerticalText = (props: VerticalTextProps) => {
-  const { text, x, maskProps, textStyles, pauseX, outX } = props
+  const { text, x, maskProps, textStyles, textInterval, pauseX, outX } = props
   const y = props.y ?? 0
   const mask: any = useRef(undefined)
   const [X, setX] = useState(x)
   const [elapsed, setElapsed] = useState(0)
-
+  const intervals = [textInterval * (1 / 3), textInterval * (2 / 3), textInterval]
   useTick((delta) => {
-    setElapsed(elapsed + delta * 50)
-    if (elapsed < 1000) {
-      const currentX = x + (pauseX - x) * easing.outQuart(elapsed / 1000)
+    setElapsed(elapsed + delta * 15)
+    if (elapsed < intervals[0]) {
+      const currentX = x + (pauseX - x) * easing.outQuint(elapsed / intervals[0])
       setX(currentX)
-    } else if (elapsed > 10000 && elapsed < 2500) {
+    } else if (elapsed > intervals[0] && elapsed < intervals[1]) {
       // stay
-    } else if (elapsed >= 2500) {
-      const currentX = pauseX + (outX - pauseX) * easing.inQuart((elapsed - 2000) / 1000)
+    } else if (elapsed >= intervals[1]) {
+      const currentX = pauseX + (outX - pauseX) * easing.inQuint((elapsed - intervals[1]) / 1000)
       setX(currentX)
     }
   })
@@ -102,13 +103,13 @@ export const VerticalText = (props: VerticalTextProps) => {
             align: 'left',
             textBaseline: 'alphabetic',
             fontFamily: '"Source Code Pro", Helvetica, sans-serif',
-            fontSize: 140,
+            fontSize: 150, //50
             fontWeight: 'bold',
-            fill: '#000000',
+            fill: '#ffffff',
             stroke: '#01d27e',
+            letterSpacing: -2,
             ...textStyles
             // strokeThickness: 5,
-            // letterSpacing: 20,
             // dropShadow: true,
             // dropShadowColor: "#ccced2",
             // dropShadowBlur: 4,

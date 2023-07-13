@@ -82,6 +82,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/tiwtter-card.png',
       colorMode: {
+        defaultMode: 'dark',
         disableSwitch: true
       },
       navbar: {

@@ -12,8 +12,6 @@ _Interface for the Oracle Provider Registry contract._
 
 ```solidity
 struct OracleProviderProperties {
-  uint32 minStopLossBPS;
-  uint32 maxStopLossBPS;
   uint32 minTakeProfitBPS;
   uint32 maxTakeProfitBPS;
   uint8 leverageLevel;
@@ -44,20 +42,6 @@ _Emitted when an oracle provider is unregistered._
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | oracleProvider | address | The address of the unregistered oracle provider. |
-
-### UpdateStopLossBPSRange
-
-```solidity
-event UpdateStopLossBPSRange(address oracleProvider, uint32 minStopLossBPS, uint32 maxStopLossBPS)
-```
-
-_Emitted when the stop-loss basis points range of an oracle provider is updated._
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| oracleProvider | address | The address of the oracle provider. |
-| minStopLossBPS | uint32 | The new minimum stop-loss basis points. |
-| maxStopLossBPS | uint32 | The new maximum stop-loss basis points. |
 
 ### UpdateTakeProfitBPSRange
 
@@ -154,20 +138,6 @@ Retrieves the properties of an oracle provider.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | [0] | struct IOracleProviderRegistry.OracleProviderProperties | The properties of the oracle provider. |
-
-### updateStopLossBPSRange
-
-```solidity
-function updateStopLossBPSRange(address oracleProvider, uint32 minStopLossBPS, uint32 maxStopLossBPS) external
-```
-
-Updates the stop-loss basis points range of an oracle provider.
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| oracleProvider | address | The address of the oracle provider@param minStopLossBPS The new minimum stop-loss basis points. |
-| minStopLossBPS | uint32 |  |
-| maxStopLossBPS | uint32 | The new maximum stop-loss basis points. |
 
 ### updateTakeProfitBPSRange
 

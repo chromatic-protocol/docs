@@ -366,22 +366,6 @@ Retrieves the properties of an oracle provider.
 | ---- | ---- | ----------- |
 | [0] | struct IOracleProviderRegistry.OracleProviderProperties | The properties of the oracle provider. |
 
-### updateStopLossBPSRange
-
-```solidity
-function updateStopLossBPSRange(address oracleProvider, uint32 minStopLossBPS, uint32 maxStopLossBPS) external
-```
-
-Updates the stop-loss basis points range of an oracle provider.
-
-_This function can only be called by the DAO and registered oracle providers._
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| oracleProvider | address | The address of the oracle provider@param minStopLossBPS The new minimum stop-loss basis points. |
-| minStopLossBPS | uint32 |  |
-| maxStopLossBPS | uint32 | The new maximum stop-loss basis points. |
-
 ### updateTakeProfitBPSRange
 
 ```solidity

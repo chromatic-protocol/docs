@@ -31,12 +31,6 @@ contract IChromaticRouter router
 constructor(contract IChromaticRouter _router) public
 ```
 
-### multicall
-
-```solidity
-function multicall(bytes[] data) external view returns (bytes[] results)
-```
-
 ### oracleVersion
 
 ```solidity

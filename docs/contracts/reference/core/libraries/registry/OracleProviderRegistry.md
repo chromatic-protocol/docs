@@ -9,8 +9,6 @@ title: OracleProviderRegistry.sol
 ```solidity
 struct OracleProviderRegistry {
   struct EnumerableSet.AddressSet _oracleProviders;
-  mapping(address => uint32) _minStopLossBPSs;
-  mapping(address => uint32) _maxStopLossBPSs;
   mapping(address => uint32) _minTakeProfitBPSs;
   mapping(address => uint32) _maxTakeProfitBPSs;
   mapping(address => uint8) _leverageLevels;
@@ -24,7 +22,7 @@ Library for managing a registry of oracle providers.
 ### register
 
 ```solidity
-function register(struct OracleProviderRegistry self, address oracleProvider, uint32 minStopLossBPS, uint32 maxStopLossBPS, uint32 minTakeProfitBPS, uint32 maxTakeProfitBPS, uint8 leverageLevel) internal
+function register(struct OracleProviderRegistry self, address oracleProvider, uint32 minTakeProfitBPS, uint32 maxTakeProfitBPS, uint8 leverageLevel) internal
 ```
 
 Registers an oracle provider in the registry.
@@ -35,8 +33,6 @@ _Throws an error if the oracle provider is already registered._
 | ---- | ---- | ----------- |
 | self | struct OracleProviderRegistry | The OracleProviderRegistry storage. |
 | oracleProvider | address | The address of the oracle provider to register. |
-| minStopLossBPS | uint32 | The minimum stop-loss basis points. |
-| maxStopLossBPS | uint32 | The maximum stop-loss basis points. |
 | minTakeProfitBPS | uint32 | The minimum take-profit basis points. |
 | maxTakeProfitBPS | uint32 | The maximum take-profit basis points. |
 | leverageLevel | uint8 | The leverage level of the oracle provider. |
@@ -90,7 +86,7 @@ Checks if an oracle provider is registered in the registry.
 ### getOracleProviderProperties
 
 ```solidity
-function getOracleProviderProperties(struct OracleProviderRegistry self, address oracleProvider) internal view returns (uint32 minStopLossBPS, uint32 maxStopLossBPS, uint32 minTakeProfitBPS, uint32 maxTakeProfitBPS, uint8 leverageLevel)
+function getOracleProviderProperties(struct OracleProviderRegistry self, address oracleProvider) internal view returns (uint32 minTakeProfitBPS, uint32 maxTakeProfitBPS, uint8 leverageLevel)
 ```
 
 Retrieves the properties of an oracle provider.
@@ -102,26 +98,9 @@ Retrieves the properties of an oracle provider.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| minStopLossBPS | uint32 | The minimum stop-loss basis points. |
-| maxStopLossBPS | uint32 | The maximum stop-loss basis points. |
 | minTakeProfitBPS | uint32 | The minimum take-profit basis points. |
 | maxTakeProfitBPS | uint32 | The maximum take-profit basis points. |
 | leverageLevel | uint8 | The leverage level of the oracle provider. |
-
-### setStopLossBPSRange
-
-```solidity
-function setStopLossBPSRange(struct OracleProviderRegistry self, address oracleProvider, uint32 minStopLossBPS, uint32 maxStopLossBPS) internal
-```
-
-Sets the range for stop-loss basis points for an oracle provider.
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct OracleProviderRegistry | The OracleProviderRegistry storage. |
-| oracleProvider | address | The address of the oracle provider. |
-| minStopLossBPS | uint32 | The minimum stop-loss basis points. |
-| maxStopLossBPS | uint32 | The maximum stop-loss basis points. |
 
 ### setTakeProfitBPSRange
 

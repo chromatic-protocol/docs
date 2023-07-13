@@ -54,11 +54,15 @@ Returns the address of the DAO treasury.
 error OnlyAccessableByDao()
 ```
 
+_Throws an error indicating that the caller is not the DAO._
+
 ### AlreadySetLiquidator
 
 ```solidity
 error AlreadySetLiquidator()
 ```
+
+_Throws an error indicating that the chromatic liquidator address is already set._
 
 ### AlreadySetVault
 
@@ -66,11 +70,15 @@ error AlreadySetLiquidator()
 error AlreadySetVault()
 ```
 
+_Throws an error indicating that the chromatic vault address is already set._
+
 ### AlreadySetKeeperFeePayer
 
 ```solidity
 error AlreadySetKeeperFeePayer()
 ```
+
+_Throws an error indicating that the keeper fee payer address is already set._
 
 ### NotRegisteredOracleProvider
 
@@ -78,17 +86,15 @@ error AlreadySetKeeperFeePayer()
 error NotRegisteredOracleProvider()
 ```
 
+_Throws an error indicating that the oracle provider is not registered._
+
 ### NotRegisteredSettlementToken
 
 ```solidity
 error NotRegisteredSettlementToken()
 ```
 
-### WrongTokenAddress
-
-```solidity
-error WrongTokenAddress()
-```
+_Throws an error indicating that the settlement token is not registered._
 
 ### ExistMarket
 
@@ -96,13 +102,16 @@ error WrongTokenAddress()
 error ExistMarket()
 ```
 
+_Throws an error indicating that a market already exists for the given oracle provider and settlement token._
+
 ### onlyDao
 
 ```solidity
 modifier onlyDao()
 ```
 
-_Modifier to restrict access to only the DAO address_
+_Modifier to restrict access to only the DAO address
+     Throws an `OnlyAccessableByDao` error if the caller is not the DAO._
 
 ### onlyRegisteredOracleProvider
 
@@ -110,12 +119,12 @@ _Modifier to restrict access to only the DAO address_
 modifier onlyRegisteredOracleProvider(address oracleProvider)
 ```
 
-_Modifier to ensure that the caller is a registered oracle provider.
-     Throws a 'NotRegisteredOracleProvider' error if the oracle provider is not registered._
+_Modifier to ensure that the specified oracle provider is registered.
+     Throws a `NotRegisteredOracleProvider` error if the oracle provider is not registered._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| oracleProvider | address | The address of the oracle provider. |
+| oracleProvider | address | The address of the oracle provider to check. Requirements: - The `oracleProvider` address must be registered in the `_oracleProviderRegistry`. |
 
 ### constructor
 
@@ -171,7 +180,8 @@ function setLiquidator(address _liquidator) external
 
 Sets the liquidator address.
 
-_This function can only be called by the DAO address._
+_This function can only be called by the DAO address.
+     Throws an `AlreadySetLiquidator` error if the liquidator address has already been set._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -185,7 +195,8 @@ function setVault(address _vault) external
 
 Sets the vault address.
 
-_This function can only be called by the DAO address._
+_This function can only be called by the DAO address.
+     Throws an `AlreadySetVault` error if the vault address has already been set._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -199,7 +210,8 @@ function setKeeperFeePayer(address _keeperFeePayer) external
 
 Sets the keeper fee payer address.
 
-_This function can only be called by the DAO address._
+_This function can only be called by the DAO address.
+     Throws an `AlreadySetKeeperFeePayer` error if the keeper fee payer address has already been set._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -273,6 +285,10 @@ function createMarket(address oracleProvider, address settlementToken) external
 ```
 
 Creates a new market associated with an oracle provider and settlement token.
+
+_This function creates a new market using the specified oracle provider and settlement token addresses.
+     Throws a `NotRegisteredSettlementToken` error if the settlement token is not registered.
+     Throws an `ExistMarket` error if the market already exists for the given oracle provider and settlement token._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

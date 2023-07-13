@@ -87,11 +87,15 @@ mapping(address => bytes32) marketEarningDistributionTaskIds
 error OnlyAccessableByFactoryOrDao()
 ```
 
+_Throws an error indicating that the caller is nether the chormatic factory contract nor the DAO._
+
 ### OnlyAccessableByMarket
 
 ```solidity
 error OnlyAccessableByMarket()
 ```
+
+_Throws an error indicating that the caller is not a registered market._
 
 ### NotEnoughBalance
 
@@ -99,11 +103,23 @@ error OnlyAccessableByMarket()
 error NotEnoughBalance()
 ```
 
+_Throws an error indicating that the flash loan amount exceeds the available balance in the vault._
+
 ### NotEnoughFeePaid
 
 ```solidity
 error NotEnoughFeePaid()
 ```
+
+_Throws an error indicating that the recipient has not paid the sufficient flash loan fee._
+
+### ExistMakerEarningDistributionTask
+
+```solidity
+error ExistMakerEarningDistributionTask()
+```
+
+_Throws an error indicating that a maker earning distribution task already exists._
 
 ### ExistMarketEarningDistributionTask
 
@@ -111,13 +127,16 @@ error NotEnoughFeePaid()
 error ExistMarketEarningDistributionTask()
 ```
 
+_Throws an error indicating that a market earning distribution task already exists._
+
 ### onlyFactoryOrDao
 
 ```solidity
 modifier onlyFactoryOrDao()
 ```
 
-_Modifier to restrict access to only the factory or the DAO._
+_Modifier to restrict access to only the factory or the DAO.
+     Throws an `OnlyAccessableByFactoryOrDao` error if the caller is nether the chormatic factory contract nor the DAO._
 
 ### onlyMarket
 
@@ -125,7 +144,8 @@ _Modifier to restrict access to only the factory or the DAO._
 modifier onlyMarket()
 ```
 
-_Modifier to restrict access to only the Market contract._
+_Modifier to restrict access to only the Market contract.
+     Throws an `OnlyAccessableByMarket` error if the caller is not a registered market._
 
 ### constructor
 
@@ -285,7 +305,19 @@ Transfers the protocol fee to the DAO treasury address.
 function flashLoan(address token, uint256 amount, address recipient, bytes data) external
 ```
 
-_Executes a flash loan._
+Executes a flash loan.
+
+_Throws a `NotEnoughBalance` error if the loan amount exceeds the available balance.
+     Throws a `NotEnoughFeePaid` error if the fee has not been paid by the recipient.
+
+Requirements:
+- The loan amount must not exceed the available balance after considering pending deposits and withdrawals.
+- The fee for the flash loan must be paid by the recipient.
+- The total amount paid must be distributed between the taker pool and maker pool according to their balances.
+- The amount paid to the taker pool must be transferred to the DAO treasury address.
+- The amount paid to the maker pool must be added to the pending maker earnings.
+
+Emits a `FlashLoan` event with details of the flash loan execution._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -350,6 +382,9 @@ function createMakerEarningDistributionTask(address token) external virtual
 ```
 
 Creates a maker earning distribution task for a token.
+
+_This function can only be called by the Chromatic factory contract or the DAO.
+     Throws an `ExistMakerEarningDistributionTask` error if a maker earning distribution task already exists for the token._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -416,6 +451,9 @@ function createMarketEarningDistributionTask(address market) external virtual
 ```
 
 Creates a market earning distribution task for a market.
+
+_This function can only be called by the Chromatic factory contract or the DAO.
+     Throws an `ExistMarketEarningDistributionTask` error if a market earning distribution task already exists for the market._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

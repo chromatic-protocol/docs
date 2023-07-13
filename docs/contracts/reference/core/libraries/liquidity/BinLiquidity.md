@@ -100,8 +100,8 @@ function onAddLiquidity(struct BinLiquidity self, uint256 amount, uint256 oracle
 Adds liquidity to the BinLiquidity.
 
 _Sets the pending liquidity with the specified amount and oracle version.
-     If the amount is less than the minimum amount, it reverts with an error.
-     If there is already pending liquidity with a different oracle version, it reverts with an error._
+     Throws an error with the code `Errors.TOO_SMALL_AMOUNT` if the amount is too small.
+     Throws an error with the code `Errors.INVALID_ORACLE_VERSION` if there is already pending liquidity with a different oracle version, it reverts with an error._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -141,7 +141,7 @@ function onRemoveLiquidity(struct BinLiquidity self, uint256 clbTokenAmount, uin
 Removes liquidity from the BinLiquidity by setting pending CLB token amount.
 
 _Sets the pending liquidity with the specified CLB token amount and oracle version.
-     If there is already pending liquidity with a different oracle version, it reverts with an error._
+     Throws an error with the code `Errors.INVALID_ORACLE_VERSION` if there is already pending liquidity with a different oracle version, it reverts with an error._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

@@ -29,7 +29,7 @@ modifier registeredOnly(struct SettlementTokenRegistry self, address token)
 
 Modifier to check if a token is registered in the settlement token registry.
 
-_Throws an error if the token is not registered._
+_Throws an error with the code `Errors.UNREGISTERED_TOKEN` if the settlement token is not registered._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -44,7 +44,7 @@ function register(struct SettlementTokenRegistry self, address token, uint256 mi
 
 Registers a token in the settlement token registry.
 
-_Throws an error if the token is already registered._
+_Throws an error with the code `Errors.ALREADY_REGISTERED_TOKEN` if the settlement token is already registered._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -239,7 +239,7 @@ function removeLastInterestRateRecord(struct SettlementTokenRegistry self, addre
 Removes the last interest rate record for a settlement token.
 
 _The current time must be less than the begin timestamp of the last record.
-     Otherwise throws an error with the message `INTEREST_RATE_ALREADY_APPLIED`.
+     Throws an error with the code `Errors.INTEREST_RATE_ALREADY_APPLIED` if not.
 Throws an error if the settlement token is not registered._
 
 | Name | Type | Description |

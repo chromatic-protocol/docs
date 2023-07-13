@@ -32,11 +32,15 @@ contract IWETH9 WETH9
 error OnlyAccessableByDao()
 ```
 
+_Throws an error indicating that the caller is not the DAO._
+
 ### OnlyAccessableByFactoryOrDao
 
 ```solidity
 error OnlyAccessableByFactoryOrDao()
 ```
+
+_Throws an error indicating that the caller is nether the chormatic factory contract nor the DAO._
 
 ### KeeperFeeTransferFailure
 
@@ -44,11 +48,15 @@ error OnlyAccessableByFactoryOrDao()
 error KeeperFeeTransferFailure()
 ```
 
+_Throws an error indicating that the transfer of keeper fee has failed._
+
 ### InvalidSwapValue
 
 ```solidity
 error InvalidSwapValue()
 ```
+
+_Throws an error indicating that the swap value for the Uniswap trade is invalid._
 
 ### onlyDao
 
@@ -56,7 +64,8 @@ error InvalidSwapValue()
 modifier onlyDao()
 ```
 
-_Modifier to restrict access to only the DAO._
+_Modifier to restrict access to only the DAO.
+     Throws an `OnlyAccessableByDao` error if the caller is not the DAO._
 
 ### onlyFactoryOrDao
 
@@ -64,7 +73,8 @@ _Modifier to restrict access to only the DAO._
 modifier onlyFactoryOrDao()
 ```
 
-_Modifier to restrict access to only the factory or the DAO._
+_Modifier to restrict access to only the factory or the DAO.
+     Throws an `OnlyAccessableByFactoryOrDao` error if the caller is nether the chormatic factory contract nor the DAO._
 
 ### constructor
 
@@ -117,7 +127,9 @@ function payKeeperFee(address tokenIn, uint256 amountOut, address keeperAddress)
 
 Pays the keeper fee using Uniswap swaps.
 
-_Only the Vault can call this function._
+_Only the Vault can call this function.
+     Throws a `KeeperFeeTransferFailure` error if the transfer of ETH to the keeper address fails.
+     Throws an `InvalidSwapValue` error if the remaining balance of the input token after the swap is insufficient._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

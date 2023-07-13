@@ -26,11 +26,15 @@ bool isInitialized
 error NotRouter()
 ```
 
+_Throws an error indicating that the caller is not the chromatic router contract._
+
 ### NotOwner
 
 ```solidity
 error NotOwner()
 ```
+
+_Throws an error indicating that the caller is not the owner of this account contract._
 
 ### AlreadyInitialized
 
@@ -38,11 +42,15 @@ error NotOwner()
 error AlreadyInitialized()
 ```
 
+_Throws an error indicating that the account is already initialized, and calling the initialization function again is not allowed._
+
 ### NotEnoughBalance
 
 ```solidity
 error NotEnoughBalance()
 ```
+
+_Throws an error indicating that the account does not have sufficient balance to perform a particular operation, such as withdrawing an amount of tokens._
 
 ### NotExistPosition
 
@@ -50,13 +58,16 @@ error NotEnoughBalance()
 error NotExistPosition()
 ```
 
+_Throws an error indicating that the caller is not the owner of this account contractthat the caller is not the owner of this account contract._
+
 ### onlyRouter
 
 ```solidity
 modifier onlyRouter()
 ```
 
-_Modifier that allows only the router to call a function._
+_Modifier that allows only the router to call a function.
+     Throws an `NotRouter` error if the caller is not the chromatic router contract._
 
 ### onlyOwner
 
@@ -64,7 +75,8 @@ _Modifier that allows only the router to call a function._
 modifier onlyOwner()
 ```
 
-_Modifier that allows only the owner to call a function._
+_Modifier that allows only the owner to call a function.
+     Throws an `NotOwner` error if the caller is not the owner of this account contract._
 
 ### initialize
 
@@ -73,6 +85,8 @@ function initialize(address _owner, address _router, address _marketFactory) ext
 ```
 
 Initializes the account with the specified owner, router, and market factory addresses.
+
+_Throws an `AlreadyInitialized` error if the account has already been initialized._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -103,6 +117,9 @@ function withdraw(address token, uint256 amount) external
 ```
 
 Withdraws the specified amount of tokens from the account.
+
+_This function can only be called by owner.
+     Throws a `NotEnoughBalance` error if the account does not have enough balance of the specified token._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -162,6 +179,8 @@ function openPosition(address marketAddress, int224 qty, uint32 leverage, uint25
 
 Opens a new position in the specified market.
 
+_This function can only be called by the chromatic router contract._
+
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | marketAddress | address | The address of the market. |
@@ -183,6 +202,9 @@ function closePosition(address marketAddress, uint256 positionId) external
 
 Closes the specified position in the specified market.
 
+_This function can only be called by the chromatic router contract.
+     Throws a `NotExistPosition` error if the position does not exist._
+
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | marketAddress | address | The address of the market. |
@@ -196,6 +218,9 @@ function claimPosition(address marketAddress, uint256 positionId) external
 
 Claims the specified position in the specified market.
 
+_This function can only be called by the chromatic router contract.
+     Throws a `NotExistPosition` error if the position does not exist._
+
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | marketAddress | address | The address of the market. |
@@ -208,6 +233,9 @@ function openPositionCallback(address settlementToken, address vault, uint256 ma
 ```
 
 Callback function called after opening a position.
+
+_Transfers the required margin from the account to the specified vault.
+     Throws a `NotEnoughBalance` error if the account does not have enough balance of the settlement token._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

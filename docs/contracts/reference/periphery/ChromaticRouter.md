@@ -88,6 +88,8 @@ mapping(address => mapping(address => struct EnumerableSet.UintSet)) receiptIds
 error NotExistLpReceipt()
 ```
 
+_Throws an error indicating that the specified receipt ID does not exist for the liquidity provider in the given market._
+
 ### constructor
 
 ```solidity
@@ -282,6 +284,9 @@ function claimLiquidity(address market, uint256 receiptId) public
 
 Claims liquidity from a ChromaticMarket contract.
 
+_This function allows the liquidity provider to claim their liquidity by calling the `claimLiquidity` function in the specified market contract.
+     Throws a `NotExistLpReceipt` error if the specified receipt ID does not exist for the liquidity provider in the given market._
+
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | market | address | The address of the ChromaticMarket contract. |
@@ -313,6 +318,9 @@ function withdrawLiquidity(address market, uint256 receiptId) public
 ```
 
 Withdraws liquidity from a ChromaticMarket contract.
+
+_This function allows the liquidity provider to withdraw their liquidity by calling the `withdrawLiquidity` function in the specified market contract.
+     Throws a `NotExistLpReceipt` error if the specified receipt ID does not exist for the liquidity provider in the given market._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

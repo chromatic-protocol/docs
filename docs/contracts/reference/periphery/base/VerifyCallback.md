@@ -29,5 +29,5 @@ modifier verifyCallback()
 ```
 
 _Modifier to verify the callback function is called by a registered market.
-     Throws an error if the caller is not a registered market._
+     Throws a `NotMarket` error if the caller is not a registered market._
 

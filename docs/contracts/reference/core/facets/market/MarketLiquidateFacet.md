@@ -14,11 +14,15 @@ _A contract that manages liquidations._
 error AlreadyClosedPosition()
 ```
 
+_Throws an error indicating that the position has already been closed._
+
 ### NotClaimablePosition
 
 ```solidity
 error NotClaimablePosition()
 ```
+
+_Throws an error indicating that the position is not claimable._
 
 ### claimPosition
 
@@ -26,7 +30,9 @@ error NotClaimablePosition()
 function claimPosition(uint256 positionId, address keeper, uint256 keeperFee) external
 ```
 
-_Claims a closed position on behalf of a keeper._
+_This function can only be called by the chromatic liquidator contract.
+     Throws a `NotExistPosition` error if the requested position does not exist.
+     Throws a `NotClaimablePosition` error if the position's close version is not in the past, indicating that it is not claimable._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -40,7 +46,11 @@ _Claims a closed position on behalf of a keeper._
 function liquidate(uint256 positionId, address keeper, uint256 keeperFee) external
 ```
 
-_Liquidates a position._
+_This function can only be called by the chromatic liquidator contract.
+     The liquidation process checks if the position should be liquidated based on its profitability.
+     If the position does not meet the liquidation criteria, the function returns without performing any action.
+     Throws a `NotExistPosition` error if the requested position does not exist.
+     Throws an `AlreadyClosedPosition` error if the position is already closed._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

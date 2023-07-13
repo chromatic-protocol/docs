@@ -12,13 +12,16 @@ title: MarketDiamondCutFacet.sol
 error OnlyAccessableByFactoryOrDao()
 ```
 
+_Throws an error indicating that the caller is nether the chormatic factory contract nor the DAO._
+
 ### onlyFactoryOrDao
 
 ```solidity
 modifier onlyFactoryOrDao()
 ```
 
-_Modifier to restrict access to only the factory or the DAO._
+_Modifier to restrict access to only the factory or the DAO.
+     Throws an `OnlyAccessableByFactoryOrDao` error if the caller is nether the chormatic factory contract nor the DAO._
 
 ### diamondCut
 
@@ -28,6 +31,8 @@ function diamondCut(struct IDiamondCut.FacetCut[] _cut, address _init, bytes _ca
 
 Add/replace/remove any number of functions and optionally execute
         a function with delegatecall
+
+_This function can only be called by the Chromatic factory contract or the DAO._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

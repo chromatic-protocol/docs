@@ -21,6 +21,8 @@ contract IChromaticMarket market
 error OnlyAccessableByMarket()
 ```
 
+_Throws an error indicating that the caller is not a registered market._
+
 ### onlyMarket
 
 ```solidity

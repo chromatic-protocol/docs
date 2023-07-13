@@ -41,6 +41,8 @@ function onOpenPosition(struct BinPendingPosition self, struct LpContext ctx, st
 
 Handles the opening of a position.
 
+_Throws an error with the code `Errors.INVALID_ORACLE_VERSION` if the `openVersion` is not valid._
+
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct BinPendingPosition | The BinPendingPosition storage. |
@@ -54,6 +56,8 @@ function onClosePosition(struct BinPendingPosition self, struct LpContext ctx, s
 ```
 
 Handles the closing of a position.
+
+_Throws an error with the code `Errors.INVALID_ORACLE_VERSION` if the `openVersion` is not valid._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

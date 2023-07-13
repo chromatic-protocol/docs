@@ -12,11 +12,15 @@ title: MarketFacetBase.sol
 error OnlyAccessableByDao()
 ```
 
+_Throws an error indicating that the caller is not the DAO._
+
 ### OnlyAccessableByLiquidator
 
 ```solidity
 error OnlyAccessableByLiquidator()
 ```
+
+_Throws an error indicating that the caller is not the chromatic liquidator contract._
 
 ### OnlyAccessableByVault
 
@@ -24,13 +28,16 @@ error OnlyAccessableByLiquidator()
 error OnlyAccessableByVault()
 ```
 
+_Throws an error indicating that the caller is not the chromatch vault contract._
+
 ### onlyDao
 
 ```solidity
 modifier onlyDao()
 ```
 
-_Modifier to restrict access to only the DAO._
+_Modifier to restrict access to only the DAO.
+     Throws an `OnlyAccessableByDao` error if the caller is not the DAO._
 
 ### onlyLiquidator
 
@@ -38,7 +45,8 @@ _Modifier to restrict access to only the DAO._
 modifier onlyLiquidator()
 ```
 
-_Modifier to restrict access to only the liquidator contract._
+_Modifier to restrict access to only the liquidator contract.
+     Throws an `OnlyAccessableByLiquidator` error if the caller is not the chromatic liquidator contract._
 
 ### onlyVault
 
@@ -46,7 +54,8 @@ _Modifier to restrict access to only the liquidator contract._
 modifier onlyVault()
 ```
 
-_Modifier to restrict a function to be called only by the vault contract._
+_Modifier to restrict a function to be called only by the vault contract.
+     Throws an `OnlyAccessableByVault` error if the caller is not the chromatic vault contract._
 
 ### newLpContext
 

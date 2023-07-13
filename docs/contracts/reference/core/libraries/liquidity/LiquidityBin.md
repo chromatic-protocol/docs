@@ -67,6 +67,8 @@ function openPosition(struct LiquidityBin self, struct LpContext ctx, struct Pos
 
 Opens a new position in the liquidity bin
 
+_Throws an error with the code `Errors.NOT_ENOUGH_FREE_LIQUIDITY` if there is not enough free liquidity._
+
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct LiquidityBin | The LiquidityBin storage |

@@ -27,7 +27,7 @@ function register(struct OracleProviderRegistry self, address oracleProvider, ui
 
 Registers an oracle provider in the registry.
 
-_Throws an error if the oracle provider is already registered._
+_Throws an error with the code `Errors.ALREADY_REGISTERED_ORACLE_PROVIDER` if the oracle provider is already registered._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

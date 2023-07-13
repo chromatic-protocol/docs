@@ -32,11 +32,15 @@ uint256 claimInterval
 error OnlyAccessableByDao()
 ```
 
+_Throws an error indicating that the caller is not the DAO._
+
 ### OnlyAccessableByMarket
 
 ```solidity
 error OnlyAccessableByMarket()
 ```
+
+_Throws an error indicating that the caller is not a registered market._
 
 ### onlyDao
 
@@ -44,7 +48,8 @@ error OnlyAccessableByMarket()
 modifier onlyDao()
 ```
 
-_Modifier to restrict access to only the DAO._
+_Modifier to restrict access to only the DAO.
+     Throws an `OnlyAccessableByDao` error if the caller is not the DAO._
 
 ### onlyMarket
 
@@ -52,7 +57,8 @@ _Modifier to restrict access to only the DAO._
 modifier onlyMarket()
 ```
 
-_Modifier to check if the calling contract is a registered market._
+_Modifier to check if the calling contract is a registered market.
+     Throws an `OnlyAccessableByMarket` error if the caller is not a registered market._
 
 ### constructor
 

@@ -94,7 +94,8 @@ _This function prepares bin margins by performing the following steps:
      3. Iterates from the minimum fee rate until the upper bound,
         assigning the remaining maker margin to the bins until it is exhausted.
      4. Creates an array of BinMargin structs
-        containing the trading fee rate and corresponding margin amount for each bin._
+        containing the trading fee rate and corresponding margin amount for each bin.
+     Throws an error with the code `Errors.NOT_ENOUGH_FREE_LIQUIDITY` if there is not enough free liquidity._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -157,7 +158,8 @@ _This function verifies if the absolute value of the realized position pnl is wi
      It retrieves the target liquidity bins based on the position quantity and the bin margins from the position.
      Then, it divides the position parameters to match the bin margins.
      Depending on the value of the realized position pnl, it either claims the position fully or partially.
-     The claimed pnl is distributed among the liquidity bins according to their respective margins._
+     The claimed pnl is distributed among the liquidity bins according to their respective margins.
+     Throws an error with the code `Errors.EXCEED_MARGIN_RANGE` if the realized profit or loss does not falls within the acceptable margin range._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

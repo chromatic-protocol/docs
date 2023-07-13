@@ -14,11 +14,16 @@ _Contract for managing liquidity in a market._
 error TooSmallAmount()
 ```
 
+_Throws an error indicating that the amount of liquidity is too small.
+     This error is thrown when attempting to remove liquidity with an amount of zero._
+
 ### NotExistLpReceipt
 
 ```solidity
 error NotExistLpReceipt()
 ```
+
+_Throws an error indicating that the specified liquidity receipt does not exist._
 
 ### NotClaimableLpReceipt
 
@@ -26,11 +31,15 @@ error NotExistLpReceipt()
 error NotClaimableLpReceipt()
 ```
 
+_Throws an error indicating that the liquidity receipt is not claimable._
+
 ### NotWithdrawableLpReceipt
 
 ```solidity
 error NotWithdrawableLpReceipt()
 ```
+
+_Throws an error indicating that the liquidity receipt is not withdrawable._
 
 ### InvalidLpReceiptAction
 
@@ -38,11 +47,16 @@ error NotWithdrawableLpReceipt()
 error InvalidLpReceiptAction()
 ```
 
+_Throws an error indicating that the liquidity receipt action is invalid._
+
 ### InvalidTransferedTokenAmount
 
 ```solidity
 error InvalidTransferedTokenAmount()
 ```
+
+_Throws an error indicating that the transferred token amount is invalid.
+     This error is thrown when the transferred token amount does not match the expected amount._
 
 ### addLiquidity
 
@@ -70,6 +84,8 @@ function addLiquidityBatch(address recipient, int16[] tradingFeeRates, uint256[]
 
 Adds liquidity to multiple liquidity bins of the market in a batch.
 
+_Throws an `InvalidTransferedTokenAmount` error if the transferred amount does not match the sum of amounts param._
+
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | recipient | address | The address of the recipient for each liquidity bin. |
@@ -87,7 +103,9 @@ Adds liquidity to multiple liquidity bins of the market in a batch.
 function claimLiquidity(uint256 receiptId, bytes data) external
 ```
 
-_Claims liquidity from a liquidity receipt._
+_Throws a `NotExistLpReceipt` error if the liquidity receipt does not exist.
+     Throws an `InvalidLpReceiptAction` error if the action of liquidity receipt is not `ADD_LIQUIDITY`.
+     Throws a `NotClaimableLpReceipt` error if the liquidity receipt is not claimable in the current oracle version._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -100,7 +118,9 @@ _Claims liquidity from a liquidity receipt._
 function claimLiquidityBatch(uint256[] receiptIds, bytes data) external
 ```
 
-_Claims liquidity from a liquidity receipt._
+_Throws a `NotExistLpReceipt` error if the liquidity receipt does not exist.
+     Throws an `InvalidLpReceiptAction` error if the action of liquidity receipt is not `ADD_LIQUIDITY`.
+     Throws a `NotClaimableLpReceipt` error if the liquidity receipt is not claimable in the current oracle version._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -113,7 +133,9 @@ _Claims liquidity from a liquidity receipt._
 function removeLiquidity(address recipient, int16 tradingFeeRate, bytes data) external returns (struct LpReceipt receipt)
 ```
 
-_Removes liquidity from the market._
+_This function is called by the liquidity provider to remove their liquidity from the market.
+     The liquidity provider must have previously added liquidity to the market.
+     Throws a `TooSmallAmount` error if the CLB tokne amount of liquidity to be removed is zero._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -131,7 +153,7 @@ _Removes liquidity from the market._
 function removeLiquidityBatch(address recipient, int16[] tradingFeeRates, uint256[] clbTokenAmounts, bytes data) external returns (struct LpReceipt[] receipts)
 ```
 
-_Removes liquidity from the market._
+_Throws an `InvalidTransferedTokenAmount` error if the transferred CLB token amount does not match the expected amount (clbTokenAmounts param)._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -150,7 +172,9 @@ _Removes liquidity from the market._
 function withdrawLiquidity(uint256 receiptId, bytes data) external
 ```
 
-_Withdraws liquidity from a liquidity receipt._
+_Throws a `NotExistLpReceipt` error if the liquidity receipt does not exist.
+     Throws an `InvalidLpReceiptAction` error if the action of liquidity receipt is not `REMOVE_LIQUIDITY`.
+     Throws a `NotWithdrawableLpReceipt` error if the liquidity receipt is not withdrawable in the current oracle version._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -163,7 +187,9 @@ _Withdraws liquidity from a liquidity receipt._
 function withdrawLiquidityBatch(uint256[] receiptIds, bytes data) external
 ```
 
-_Withdraws liquidity from a liquidity receipt._
+_Throws a `NotExistLpReceipt` error if the liquidity receipt does not exist.
+     Throws an `InvalidLpReceiptAction` error if the action of liquidity receipt is not `REMOVE_LIQUIDITY`.
+     Throws a `NotWithdrawableLpReceipt` error if the liquidity receipt is not withdrawable in the current oracle version._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -238,8 +264,7 @@ _Retrieves the values of a specific trading fee rate's bins in the liquidity poo
 function getLpReceipt(uint256 receiptId) external view returns (struct LpReceipt receipt)
 ```
 
-_Retrieves the liquidity receipt with the given receipt ID.
-     It throws NotExistLpReceipt if the specified receipt ID does not exist._
+_Throws a `NotExistLpReceipt` error if the liquidity receipt does not exist._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

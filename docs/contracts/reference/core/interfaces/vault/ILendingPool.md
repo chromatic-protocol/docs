@@ -14,7 +14,7 @@ _Interface for a lending pool contract._
 event FlashLoan(address sender, address recipient, uint256 amount, uint256 paid, uint256 paidToTakerPool, uint256 paidToMakerPool)
 ```
 
-_Emitted when a flash loan is executed._
+Emitted when a flash loan is executed.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -31,7 +31,7 @@ _Emitted when a flash loan is executed._
 function flashLoan(address token, uint256 amount, address recipient, bytes data) external
 ```
 
-_Executes a flash loan._
+Executes a flash loan.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

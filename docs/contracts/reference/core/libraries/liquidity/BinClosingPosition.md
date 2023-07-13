@@ -42,6 +42,8 @@ function onClosePosition(struct BinClosingPosition self, struct LpContext ctx, s
 
 Handles the closing of a position.
 
+_Throws an error with the code `Errors.INVALID_ORACLE_VERSION` if the `closeVersion` is not valid._
+
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct BinClosingPosition | The BinClosingPosition storage. |
@@ -55,6 +57,8 @@ function onClaimPosition(struct BinClosingPosition self, struct LpContext ctx, s
 ```
 
 Handles the claiming of a position.
+
+_Throws an error with the code `Errors.INVALID_ORACLE_VERSION` if the `closeVersion` is not valid._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

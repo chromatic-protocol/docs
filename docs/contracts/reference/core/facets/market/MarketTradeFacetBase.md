@@ -12,11 +12,15 @@ title: MarketTradeFacetBase.sol
 error NotExistPosition()
 ```
 
+_Throws an error indicating that the requested position does not exist._
+
 ### ClaimPositionCallbackError
 
 ```solidity
 error ClaimPositionCallbackError()
 ```
+
+_Throws an error indicating that an error occurred during the claim position callback._
 
 ### _claimPosition
 

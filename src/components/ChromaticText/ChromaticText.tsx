@@ -7,14 +7,15 @@ export type ChromaticTextProps = {
   width: number
   height: number
   y?: number
+  fill?: string
 }
 
 function prepareParameters(
   n: number,
   maskWidth: number,
   width: number,
-  y: number,
-  fills: string[]
+  y: number
+  // fills: string[]
 ) {
   return [...Array(n)].map((_, i) => {
     const x = -maskWidth + (i * maskWidth) / n - i * (width / 2)
@@ -22,16 +23,16 @@ function prepareParameters(
       x: x + width / 2,
       pauseX: width / 2,
       outX: width - x,
-      y: y,
-      textStyles: {
-        fill: fills[i]
-      }
+      y: y
+      // textStyles: {
+      //   fill: fills[i]
+      // }
     }
   })
 }
 
 export const ChromaticText = (props: ChromaticTextProps) => {
-  const { texts, width, height } = props
+  const { texts, width, height, fill } = props
   const textInterval = props.textInterval ?? 4000
 
   const [text, setText] = useState(texts[0])
@@ -46,9 +47,9 @@ export const ChromaticText = (props: ChromaticTextProps) => {
       clearInterval(interval)
     }
   }, [texts])
-  const fills = ['#ffffff', '#ffffff', '#ffffff', '#ffffff', '#ffffff']
+
   // const fills = ['#ff0000', '#e06f33', '#d8f41e', '#00ff00', '#0000ff']
-  let [parameters, setParameters] = useState(prepareParameters(5, 40, width, props.y ?? 0, fills))
+  let [parameters, setParameters] = useState(prepareParameters(5, 40, width, props.y ?? 0))
   let [common, setCommon] = useState({
     width: width,
     height: height,
@@ -57,7 +58,7 @@ export const ChromaticText = (props: ChromaticTextProps) => {
     showCycle: parameters.length
   })
   useEffect(() => {
-    setParameters(prepareParameters(5, 40, width, props.y ?? 0, fills))
+    setParameters(prepareParameters(5, 40, width, props.y ?? 0))
     setCommon({
       width: width,
       height: height,
@@ -78,8 +79,8 @@ export const ChromaticText = (props: ChromaticTextProps) => {
           maskProps={{ ...common, start: 0, showMod: idx }}
           textStyles={{
             fontSize: width / 12,
-            fill: '#ff00ff',
-            ...props.textStyles
+            fill: fill
+            // ...props.textStyles
           }}
         />
       ))}

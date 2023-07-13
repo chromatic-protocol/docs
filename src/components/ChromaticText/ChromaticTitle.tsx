@@ -1,12 +1,15 @@
 import { Stage } from '@pixi/react'
 import React from 'react'
 import { ChromaticText } from './ChromaticText'
+import { useColor } from '@site/src/theme/Contexts/color'
 
-const texts = ['Maximum Freedom', 'Zero Price Impact', 'Default Risk-Free', 'Lower Trading Costs']
+const texts = ['Maximum Freedom', 'Zero Price Impact', 'No Default Risk', 'Lower Trading Costs']
 
 export function ChromaticTitle(props) {
   const width = 2000
   const height = 200
+  const { color } = useColor()
+  const isDark = color === 'dark'
 
   return (
     <Stage
@@ -19,7 +22,13 @@ export function ChromaticTitle(props) {
         backgroundAlpha: 0
       }}
     >
-      <ChromaticText texts={texts} y={0} width={width} height={height} />
+      <ChromaticText
+        texts={texts}
+        y={0}
+        width={width}
+        height={height}
+        fill={isDark ? '#ffffff' : '#030303'}
+      />
     </Stage>
   )
 }

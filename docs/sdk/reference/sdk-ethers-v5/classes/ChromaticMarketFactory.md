@@ -24,7 +24,7 @@ Creates a new instance of ChromaticMarketFactory.
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:23](https://github.com/chromatic-protocol/sdk/blob/ab287f6/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L23)
+[entities/ChromaticMarketFactory.ts:23](https://github.com/chromatic-protocol/sdk/blob/0476e93/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L23)
 
 ## Methods
 
@@ -46,7 +46,7 @@ An object containing the contract instance of the Market Factory.
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:41](https://github.com/chromatic-protocol/sdk/blob/ab287f6/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L41)
+[entities/ChromaticMarketFactory.ts:41](https://github.com/chromatic-protocol/sdk/blob/0476e93/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L41)
 
 ___
 
@@ -70,7 +70,7 @@ A promise that resolves to the current interest rate.
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:85](https://github.com/chromatic-protocol/sdk/blob/ab287f6/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L85)
+[entities/ChromaticMarketFactory.ts:77](https://github.com/chromatic-protocol/sdk/blob/0476e93/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L77)
 
 ___
 
@@ -94,22 +94,46 @@ A promise that resolves to an array of market information.
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:96](https://github.com/chromatic-protocol/sdk/blob/ab287f6/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L96)
+[entities/ChromaticMarketFactory.ts:88](https://github.com/chromatic-protocol/sdk/blob/0476e93/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L88)
+
+___
+
+### getOracleProviderProperties
+
+▸ **getOracleProviderProperties**(`oracleProvider`): `Promise`<`OracleProviderPropertiesStructOutput`\>
+
+Retrieves the oracle provider properties for a specific oracle provider
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `oracleProvider` | `string` | The address of the oracle provider |
+
+#### Returns
+
+`Promise`<`OracleProviderPropertiesStructOutput`\>
+
+A Promise that resolves to an object containing the oracle properties
+
+#### Defined in
+
+[entities/ChromaticMarketFactory.ts:114](https://github.com/chromatic-protocol/sdk/blob/0476e93/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L114)
 
 ___
 
 ### registeredSettlementTokens
 
-▸ **registeredSettlementTokens**(): `Promise`<[`SettlementToken`](../interfaces/SettlementToken.md)[]\>
+▸ **registeredSettlementTokens**(): `Promise`<{ `address`: `string` ; `decimals`: `number` ; `name`: `string`  }[]\>
 
 Retrieves the registered settlement tokens.
 
 #### Returns
 
-`Promise`<[`SettlementToken`](../interfaces/SettlementToken.md)[]\>
+`Promise`<{ `address`: `string` ; `decimals`: `number` ; `name`: `string`  }[]\>
 
 A promise that resolves to an array of settlement tokens.
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:51](https://github.com/chromatic-protocol/sdk/blob/ab287f6/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L51)
+[entities/ChromaticMarketFactory.ts:51](https://github.com/chromatic-protocol/sdk/blob/0476e93/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L51)

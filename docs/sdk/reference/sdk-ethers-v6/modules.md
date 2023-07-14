@@ -32,3 +32,63 @@ custom_edit_url: null
 - [RouterRemoveLiquidityParam](interfaces/RouterRemoveLiquidityParam.md)
 - [SettlementToken](interfaces/SettlementToken.md)
 - [TokenBalancesResult](interfaces/TokenBalancesResult.md)
+
+## Variables
+
+### LEVERAGE\_DECIMALS
+
+• `Const` **LEVERAGE\_DECIMALS**: ``2``
+
+#### Defined in
+
+[constants.ts:2](https://github.com/chromatic-protocol/sdk/blob/3129461/packages/sdk-ethers-v6/src/constants.ts#L2)
+
+___
+
+### LIQUIDATION\_PRICE\_DECIMALS
+
+• `Const` **LIQUIDATION\_PRICE\_DECIMALS**: ``4``
+
+#### Defined in
+
+[constants.ts:5](https://github.com/chromatic-protocol/sdk/blob/3129461/packages/sdk-ethers-v6/src/constants.ts#L5)
+
+___
+
+### LIQUIDATION\_PRICE\_PRECISION
+
+• `Const` **LIQUIDATION\_PRICE\_PRECISION**: `number`
+
+#### Defined in
+
+[constants.ts:6](https://github.com/chromatic-protocol/sdk/blob/3129461/packages/sdk-ethers-v6/src/constants.ts#L6)
+
+___
+
+### QTY\_DECIMALS
+
+• `Const` **QTY\_DECIMALS**: ``4``
+
+#### Defined in
+
+[constants.ts:1](https://github.com/chromatic-protocol/sdk/blob/3129461/packages/sdk-ethers-v6/src/constants.ts#L1)
+
+___
+
+### QTY\_LEVERAGE\_DECIMALS
+
+• `Const` **QTY\_LEVERAGE\_DECIMALS**: `number`
+
+#### Defined in
+
+[constants.ts:3](https://github.com/chromatic-protocol/sdk/blob/3129461/packages/sdk-ethers-v6/src/constants.ts#L3)
+
+___
+
+### QTY\_LEVERAGE\_PRECISION
+
+• `Const` **QTY\_LEVERAGE\_PRECISION**: `number`
+
+#### Defined in
+
+[constants.ts:4](https://github.com/chromatic-protocol/sdk/blob/3129461/packages/sdk-ethers-v6/src/constants.ts#L4)

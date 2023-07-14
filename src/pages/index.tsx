@@ -60,7 +60,7 @@ function Intro() {
   return (
     <section>
       <article className="h-[calc(100vh-90px)] min-h-[800px] text-center article">
-        <div className="lg:p-5">
+        <div className="-mt-20">
           <div className="relative flex items-center justify-center pt-10">
             <div className={styles.introBg}>
               <img src="img/bg-stripe.svg" alt="" />

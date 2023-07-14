@@ -16,6 +16,7 @@ import { useScrollPosition } from '@site/src/hooks/useScroll'
 import { CHROMATIC_LINKS } from '@site/src/external-links'
 import { useColor } from '@site/src/theme/Contexts/color'
 import { useTestnetModal } from '../hooks/useTestnetModal'
+import styles from './index.module.css'
 
 function IconArrowButton({ label, icon, to = '', href = '', onClick = null, ...props }) {
   const Svg = Svgs[icon]
@@ -58,12 +59,20 @@ function IconArrowButton({ label, icon, to = '', href = '', onClick = null, ...p
 function Intro() {
   return (
     <section>
-      <article className="h-[calc(100vh-90px)] text-center article">
+      <article className="h-[calc(100vh-90px)] min-h-[800px] text-center article">
         <div className="lg:p-5">
-          {/* <h1 className="text-[100px]">DERIVATIVE</h1> */}
-          {/* todo: mobile view */}
-          <div className="flex items-center w-full overflow-hidden ">
-            <ChromaticTitle />
+          <div className="relative flex items-center justify-center pt-10">
+            <div className={styles.introBg}>
+              <img src="img/bg-stripe.svg" alt="" />
+            </div>
+            <div className="flex items-center w-full overflow-hidden">
+              <ChromaticTitle />
+            </div>
+            {/* <img
+              src="img/stripe.svg"
+              alt=""
+              className="absolute top-0 w-[44%] max-w-[calc(2000px*0.8)]"
+            /> */}
           </div>
           <p className="text-xl uppercase primary opacity-80">
             A NEW ERA IN DECENTRALIZED PERPETUAL FUTURES

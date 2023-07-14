@@ -61,9 +61,9 @@ function Intro() {
     <section>
       <article className="h-[calc(100vh-90px)] min-h-[800px] text-center article">
         <div className="-mt-20">
-          <div className="relative flex items-center justify-center pt-10">
+          <div className="relative flex items-center justify-center pt-12">
             <div className={styles.introBg}>
-              <img src="img/bg-stripe.svg" alt="" />
+              <img src="img/bg-stripe.svg" alt="" width={2016} className="w-full" />
             </div>
             <div className="flex items-center w-full overflow-hidden">
               <ChromaticTitle />

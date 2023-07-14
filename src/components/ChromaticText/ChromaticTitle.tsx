@@ -12,7 +12,7 @@ const texts = [
 ]
 
 export function ChromaticTitle(props) {
-  const width = 2000
+  const width = 2016
   const height = 200
   const { color } = useColor()
   const isDark = color === 'dark'
@@ -21,7 +21,7 @@ export function ChromaticTitle(props) {
     <Stage
       width={width}
       height={height}
-      className="flex-auto !h-auto max-w-full"
+      className="flex-auto !h-auto max-w-full flex items-center"
       options={{
         autoDensity: true,
         backgroundColor: 0xffffff,

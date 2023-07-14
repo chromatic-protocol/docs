@@ -19,6 +19,9 @@
 }
 
 .introBg {
-  @apply absolute top-0 bottom-0 left-0 right-0 flex items-center justify-center;
+  @apply absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center -my-10;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
   animation: blink 2800ms ease-out infinite;
 }

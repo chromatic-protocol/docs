@@ -49,7 +49,7 @@ export const ChromaticText = (props: ChromaticTextProps) => {
   }, [texts])
 
   // const fills = ['#ff0000', '#e06f33', '#d8f41e', '#00ff00', '#0000ff']
-  let [parameters, setParameters] = useState(prepareParameters(12, 40, width, props.y ?? 0))
+  let [parameters, setParameters] = useState(prepareParameters(9, 40, width, props.y ?? 0))
   let [common, setCommon] = useState({
     width: width,
     height: height,
@@ -58,7 +58,7 @@ export const ChromaticText = (props: ChromaticTextProps) => {
     showCycle: parameters.length
   })
   useEffect(() => {
-    setParameters(prepareParameters(12, 40, width, props.y ?? 0))
+    setParameters(prepareParameters(9, 40, width, props.y ?? 0))
     setCommon({
       width: width,
       height: height,

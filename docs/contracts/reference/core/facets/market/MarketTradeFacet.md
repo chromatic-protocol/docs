@@ -17,10 +17,10 @@ error TooSmallTakerMargin()
 _Throws an error indicating that the taker margin provided is smaller than the minimum required margin for the specific settlement token.
      The minimum required margin is determined by the DAO and represents the minimum amount required for operations such as liquidation and payment of keeper fees._
 
-### NotEnoughMarginTransfered
+### NotEnoughMarginTransferred
 
 ```solidity
-error NotEnoughMarginTransfered()
+error NotEnoughMarginTransferred()
 ```
 
 _Throws an error indicating that the margin settlement token balance does not increase by the required margin amount after the callback._
@@ -97,7 +97,7 @@ _Throws a `TooSmallTakerMargin` error if the `takerMargin` is smaller than the m
      Throws a `NotAllowableTakerMargin` if the taker margin is not within the allowable range based on the absolute quantity and maximum allowable leverage.
      Throws a `NotAllowableMakerMargin` if the maker margin is not within the allowable range based on the absolute quantity and min/max take-profit basis points (BPS).
      Throws an `ExceedMaxAllowableTradingFee` if the total trading fee (including protocol fee) exceeds the maximum allowable trading fee (`maxAllowableTradingFee`).
-     Throws a `NotEnoughMarginTransfered` if the margin settlement token balance did not increase by the required margin amount after the callback.
+     Throws a `NotEnoughMarginTransferred` if the margin settlement token balance did not increase by the required margin amount after the callback.
 
 Requirements:
  - The `takerMargin` must be greater than or equal to the minimum required margin for the settlement token.

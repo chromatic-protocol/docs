@@ -24,7 +24,7 @@ Creates a new instance of ChromaticAccount.
 
 #### Defined in
 
-[entities/ChromaticAccount.ts:21](https://github.com/chromatic-protocol/sdk/blob/9eacd50/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L21)
+[entities/ChromaticAccount.ts:21](https://github.com/chromatic-protocol/sdk/blob/7c73f4c/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L21)
 
 ## Methods
 
@@ -49,7 +49,7 @@ A promise that resolves to the balance of the token.
 
 #### Defined in
 
-[entities/ChromaticAccount.ts:76](https://github.com/chromatic-protocol/sdk/blob/9eacd50/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L76)
+[entities/ChromaticAccount.ts:76](https://github.com/chromatic-protocol/sdk/blob/7c73f4c/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L76)
 
 ___
 
@@ -74,7 +74,7 @@ A promise that resolves to an array of TokenBalancesResult objects.
 
 #### Defined in
 
-[entities/ChromaticAccount.ts:91](https://github.com/chromatic-protocol/sdk/blob/9eacd50/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L91)
+[entities/ChromaticAccount.ts:91](https://github.com/chromatic-protocol/sdk/blob/7c73f4c/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L91)
 
 ___
 
@@ -97,7 +97,7 @@ An object containing the contract instances.
 
 #### Defined in
 
-[entities/ChromaticAccount.ts:27](https://github.com/chromatic-protocol/sdk/blob/9eacd50/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L27)
+[entities/ChromaticAccount.ts:27](https://github.com/chromatic-protocol/sdk/blob/7c73f4c/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L27)
 
 ___
 
@@ -115,7 +115,7 @@ A promise that resolves to the transaction receipt of the account creation.
 
 #### Defined in
 
-[entities/ChromaticAccount.ts:39](https://github.com/chromatic-protocol/sdk/blob/9eacd50/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L39)
+[entities/ChromaticAccount.ts:39](https://github.com/chromatic-protocol/sdk/blob/7c73f4c/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L39)
 
 ___
 
@@ -133,7 +133,7 @@ A promise that resolves to the Chromatic Account details.
 
 #### Defined in
 
-[entities/ChromaticAccount.ts:50](https://github.com/chromatic-protocol/sdk/blob/9eacd50/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L50)
+[entities/ChromaticAccount.ts:50](https://github.com/chromatic-protocol/sdk/blob/7c73f4c/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L50)
 
 ___
 
@@ -158,4 +158,4 @@ A promise that resolves to an array of position IDs.
 
 #### Defined in
 
-[entities/ChromaticAccount.ts:62](https://github.com/chromatic-protocol/sdk/blob/9eacd50/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L62)
+[entities/ChromaticAccount.ts:62](https://github.com/chromatic-protocol/sdk/blob/7c73f4c/packages/sdk-ethers-v5/src/entities/ChromaticAccount.ts#L62)

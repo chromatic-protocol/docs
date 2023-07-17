@@ -415,10 +415,10 @@ error InvalidLpReceiptAction()
 
 _Throws an error indicating that the liquidity receipt action is invalid._
 
-### InvalidTransferedTokenAmount
+### InvalidTransferredTokenAmount
 
 ```solidity
-error InvalidTransferedTokenAmount()
+error InvalidTransferredTokenAmount()
 ```
 
 _Throws an error indicating that the transferred token amount is invalid.
@@ -437,10 +437,10 @@ error TooSmallTakerMargin()
 _Throws an error indicating that the taker margin provided is smaller than the minimum required margin for the specific settlement token.
      The minimum required margin is determined by the DAO and represents the minimum amount required for operations such as liquidation and payment of keeper fees._
 
-### NotEnoughMarginTransfered
+### NotEnoughMarginTransferred
 
 ```solidity
-error NotEnoughMarginTransfered()
+error NotEnoughMarginTransferred()
 ```
 
 _Throws an error indicating that the margin settlement token balance does not increase by the required margin amount after the callback._

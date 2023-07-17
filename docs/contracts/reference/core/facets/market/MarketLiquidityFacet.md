@@ -49,10 +49,10 @@ error InvalidLpReceiptAction()
 
 _Throws an error indicating that the liquidity receipt action is invalid._
 
-### InvalidTransferedTokenAmount
+### InvalidTransferredTokenAmount
 
 ```solidity
-error InvalidTransferedTokenAmount()
+error InvalidTransferredTokenAmount()
 ```
 
 _Throws an error indicating that the transferred token amount is invalid.
@@ -84,7 +84,7 @@ function addLiquidityBatch(address recipient, int16[] tradingFeeRates, uint256[]
 
 Adds liquidity to multiple liquidity bins of the market in a batch.
 
-_Throws an `InvalidTransferedTokenAmount` error if the transferred amount does not match the sum of amounts param._
+_Throws an `InvalidTransferredTokenAmount` error if the transferred amount does not match the sum of amounts param._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -153,7 +153,7 @@ _This function is called by the liquidity provider to remove their liquidity fro
 function removeLiquidityBatch(address recipient, int16[] tradingFeeRates, uint256[] clbTokenAmounts, bytes data) external returns (struct LpReceipt[] receipts)
 ```
 
-_Throws an `InvalidTransferedTokenAmount` error if the transferred CLB token amount does not match the expected amount (clbTokenAmounts param)._
+_Throws an `InvalidTransferredTokenAmount` error if the transferred CLB token amount does not match the expected amount (clbTokenAmounts param)._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

@@ -24,7 +24,7 @@ Creates a new instance of ChromaticLens.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:54](https://github.com/chromatic-protocol/sdk/blob/bd29eb3/packages/sdk-viem/src/entities/ChromaticLens.ts#L54)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:54](https://github.com/chromatic-protocol/sdk/blob/7b9faae/packages/sdk-viem/src/entities/ChromaticLens.ts#L54)
 
 ## Methods
 
@@ -49,7 +49,7 @@ A promise that resolves to an array of ClaimableLiquidityResult.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:164](https://github.com/chromatic-protocol/sdk/blob/bd29eb3/packages/sdk-viem/src/entities/ChromaticLens.ts#L164)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:171](https://github.com/chromatic-protocol/sdk/blob/7b9faae/packages/sdk-viem/src/entities/ChromaticLens.ts#L171)
 
 ___
 
@@ -71,13 +71,13 @@ The ChromaticLens contract.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:72](https://github.com/chromatic-protocol/sdk/blob/bd29eb3/packages/sdk-viem/src/entities/ChromaticLens.ts#L72)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:72](https://github.com/chromatic-protocol/sdk/blob/7b9faae/packages/sdk-viem/src/entities/ChromaticLens.ts#L72)
 
 ___
 
 ### liquidityBins
 
-▸ **liquidityBins**(`marketAddress`): `Promise`<{ `clbTokenTotalSupply`: `bigint` ; `clbValue`: `number` ; `freeLiquidity`: `bigint` = bin.freeLiquidity; `liquidity`: `bigint` = bin.liquidity; `tradingFeeRate`: `number` = bin.tradingFeeRate }[]\>
+▸ **liquidityBins**(`marketAddress`): `Promise`<{ `clbTokenTotalSupply`: `bigint` ; `clbValue`: `bigint` ; `freeLiquidity`: `bigint` = bin.freeLiquidity; `liquidity`: `bigint` = bin.liquidity; `tradingFeeRate`: `number` = bin.tradingFeeRate }[]\>
 
 Retrieves the liquidity bins for a given market.
 
@@ -89,13 +89,13 @@ Retrieves the liquidity bins for a given market.
 
 #### Returns
 
-`Promise`<{ `clbTokenTotalSupply`: `bigint` ; `clbValue`: `number` ; `freeLiquidity`: `bigint` = bin.freeLiquidity; `liquidity`: `bigint` = bin.liquidity; `tradingFeeRate`: `number` = bin.tradingFeeRate }[]\>
+`Promise`<{ `clbTokenTotalSupply`: `bigint` ; `clbValue`: `bigint` ; `freeLiquidity`: `bigint` = bin.freeLiquidity; `liquidity`: `bigint` = bin.liquidity; `tradingFeeRate`: `number` = bin.tradingFeeRate }[]\>
 
 A promise that resolves to an array of LiquidityBinResult.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:83](https://github.com/chromatic-protocol/sdk/blob/bd29eb3/packages/sdk-viem/src/entities/ChromaticLens.ts#L83)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:83](https://github.com/chromatic-protocol/sdk/blob/7b9faae/packages/sdk-viem/src/entities/ChromaticLens.ts#L83)
 
 ___
 
@@ -120,13 +120,13 @@ A promise that resolves to the LP receipts.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:192](https://github.com/chromatic-protocol/sdk/blob/bd29eb3/packages/sdk-viem/src/entities/ChromaticLens.ts#L192)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:199](https://github.com/chromatic-protocol/sdk/blob/7b9faae/packages/sdk-viem/src/entities/ChromaticLens.ts#L199)
 
 ___
 
 ### ownedLiquidityBins
 
-▸ **ownedLiquidityBins**(`marketAddress`, `ownerAddress?`): `Promise`<{ `clbBalance`: `bigint` = ownedBin.balance; `clbTotalSupply`: `bigint` = ownedBin.totalSupply; `clbValue`: `number` ; `freeLiquidity`: `bigint` = targetTotalLiqBin.freeLiquidity; `liquidity`: `bigint` = ownedBin.binValue; `removableRate`: `number` ; `tradingFeeRate`: `number`  }[]\>
+▸ **ownedLiquidityBins**(`marketAddress`, `ownerAddress?`): `Promise`<{ `clbBalance`: `bigint` = ownedBin.balance; `clbTotalSupply`: `bigint` = ownedBin.totalSupply; `clbValue`: `number` \| `bigint` ; `freeLiquidity`: `bigint` = targetTotalLiqBin.freeLiquidity; `liquidity`: `bigint` = ownedBin.binValue; `removableRate`: `number` ; `tradingFeeRate`: `number`  }[]\>
 
 Retrieves the owned liquidity bins for a given market and owner.
 
@@ -139,10 +139,10 @@ Retrieves the owned liquidity bins for a given market and owner.
 
 #### Returns
 
-`Promise`<{ `clbBalance`: `bigint` = ownedBin.balance; `clbTotalSupply`: `bigint` = ownedBin.totalSupply; `clbValue`: `number` ; `freeLiquidity`: `bigint` = targetTotalLiqBin.freeLiquidity; `liquidity`: `bigint` = ownedBin.binValue; `removableRate`: `number` ; `tradingFeeRate`: `number`  }[]\>
+`Promise`<{ `clbBalance`: `bigint` = ownedBin.balance; `clbTotalSupply`: `bigint` = ownedBin.totalSupply; `clbValue`: `number` \| `bigint` ; `freeLiquidity`: `bigint` = targetTotalLiqBin.freeLiquidity; `liquidity`: `bigint` = ownedBin.binValue; `removableRate`: `number` ; `tradingFeeRate`: `number`  }[]\>
 
 A promise that resolves to an array of OwnedLiquidityBinResult.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:114](https://github.com/chromatic-protocol/sdk/blob/bd29eb3/packages/sdk-viem/src/entities/ChromaticLens.ts#L114)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:118](https://github.com/chromatic-protocol/sdk/blob/7b9faae/packages/sdk-viem/src/entities/ChromaticLens.ts#L118)

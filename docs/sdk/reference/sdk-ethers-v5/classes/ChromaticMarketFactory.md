@@ -24,7 +24,7 @@ Creates a new instance of ChromaticMarketFactory.
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:23](https://github.com/chromatic-protocol/sdk/blob/9bb3df4/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L23)
+[entities/ChromaticMarketFactory.ts:23](https://github.com/chromatic-protocol/sdk/blob/d76ac81/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L23)
 
 ## Methods
 
@@ -46,7 +46,7 @@ An object containing the contract instance of the Market Factory.
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:41](https://github.com/chromatic-protocol/sdk/blob/9bb3df4/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L41)
+[entities/ChromaticMarketFactory.ts:41](https://github.com/chromatic-protocol/sdk/blob/d76ac81/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L41)
 
 ___
 
@@ -70,7 +70,7 @@ A promise that resolves to the current interest rate.
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:77](https://github.com/chromatic-protocol/sdk/blob/9bb3df4/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L77)
+[entities/ChromaticMarketFactory.ts:77](https://github.com/chromatic-protocol/sdk/blob/d76ac81/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L77)
 
 ___
 
@@ -94,7 +94,7 @@ A promise that resolves to an array of market information.
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:88](https://github.com/chromatic-protocol/sdk/blob/9bb3df4/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L88)
+[entities/ChromaticMarketFactory.ts:88](https://github.com/chromatic-protocol/sdk/blob/d76ac81/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L88)
 
 ___
 
@@ -118,7 +118,7 @@ A Promise that resolves to an object containing the oracle properties
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:114](https://github.com/chromatic-protocol/sdk/blob/9bb3df4/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L114)
+[entities/ChromaticMarketFactory.ts:114](https://github.com/chromatic-protocol/sdk/blob/d76ac81/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L114)
 
 ___
 
@@ -136,4 +136,4 @@ A promise that resolves to an array of settlement tokens.
 
 #### Defined in
 
-[entities/ChromaticMarketFactory.ts:51](https://github.com/chromatic-protocol/sdk/blob/9bb3df4/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L51)
+[entities/ChromaticMarketFactory.ts:51](https://github.com/chromatic-protocol/sdk/blob/d76ac81/packages/sdk-ethers-v5/src/entities/ChromaticMarketFactory.ts#L51)

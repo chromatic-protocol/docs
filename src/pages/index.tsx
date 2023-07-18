@@ -3,7 +3,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import { ChromaticTitle } from '@site/src/components/ChromaticText'
 import { Svgs } from '@site/static/img/icons/Svgs'
 import React from 'react'
-import Modal from '../components/Modal'
+// import Modal from '../components/Modal'
 import TypingEffect from '../components/TypingEffect'
 
 import Layout from '@theme/Layout'
@@ -15,7 +15,7 @@ import { useScrollPosition } from '@site/src/hooks/useScroll'
 
 import { CHROMATIC_LINKS } from '@site/src/external-links'
 import { useColor } from '@site/src/theme/Contexts/color'
-import { useTestnetModal } from '../hooks/useTestnetModal'
+// import { useTestnetModal } from '../hooks/useTestnetModal'
 import styles from './index.module.css'
 
 function IconArrowButton({ label, icon, to = '', href = '', onClick = null, ...props }) {
@@ -59,7 +59,7 @@ function IconArrowButton({ label, icon, to = '', href = '', onClick = null, ...p
 function Intro() {
   return (
     <section>
-      <article className="h-[calc(100vh-90px)] min-h-[800px] text-center article">
+      <article className="h-[calc(100vh-90px)] min-h-[600px] lg:min-h-[800px] text-center article">
         <div className="">
           <div className="relative flex items-center justify-center">
             <div
@@ -81,7 +81,7 @@ function Intro() {
 
 function StartingGuide() {
   const { chromaticHeader: Svg } = Svgs
-  const { onOpen } = useTestnetModal()
+  // const { onOpen } = useTestnetModal()
   const { color } = useColor()
 
   return (
@@ -106,9 +106,9 @@ function StartingGuide() {
             <div className="flex flex-wrap justify-center gap-5 md:gap-10">
               <IconArrowButton
                 label="Testnet App"
-                href={null}
-                onClick={onOpen}
-                // href={CHROMATIC_LINKS.app}
+                // href={null}
+                // onClick={onOpen}
+                href={CHROMATIC_LINKS.app}
                 icon="chromatic"
               />
               <IconArrowButton label="Read Medium" href={CHROMATIC_LINKS.medium} icon="medium" />
@@ -178,7 +178,7 @@ function Article() {
                 <div className="hidden lg:block sub-title h-[50px]">
                   <TypingEffect text="ARTICLES" delay={38} className="primary" />
                 </div>
-                <h4 className="sub-title lg:hidden">ARTICLES</h4>
+                <h4 className="sub-title lg:hidden primary">ARTICLES</h4>
 
                 <p className="p primary-lighter">
                   Stay informed and up to date with more detailed information, insights and updates
@@ -203,7 +203,7 @@ function Article() {
 
 function Contents() {
   const triggerProps = useScrollPosition()
-  const { isOpen, onClose } = useTestnetModal()
+  // const { isOpen, onClose } = useTestnetModal()
   const { color, setColor: _setColor } = useColor()
 
   const setColor = (nextColor: typeof color) => () => {
@@ -228,14 +228,14 @@ function Contents() {
       />
       <Features />
       <Article />
-      {isOpen && (
+      {/* {isOpen && (
         <Modal
           isOpen={true}
           onClose={onClose}
           title="Testnet Launch"
           message="Arbitrum Goerli testnet app will be activated shortly!"
         />
-      )}
+      )} */}
     </main>
   )
 }

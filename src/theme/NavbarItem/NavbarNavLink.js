@@ -4,7 +4,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 import React from 'react'
 
 import { Svgs } from '@site/static/img/icons/Svgs'
-import { useTestnetModal } from '@site/src/hooks/useTestnetModal'
+// import { useTestnetModal } from '@site/src/hooks/useTestnetModal'
 import { useColor } from '../Contexts/color'
 
 export default function NavbarNavLink({
@@ -28,7 +28,7 @@ export default function NavbarNavLink({
   const normalizedHref = useBaseUrl(href, { forcePrependBaseUrl: true })
   // const isExternalLink = label && href && !isInternalUrl(href)
 
-  const { onOpen } = useTestnetModal()
+  // const { onOpen } = useTestnetModal()
   const { color } = useColor()
 
   const primaryColor = color === 'dark' ? '#ffffff' : '#000000'
@@ -71,11 +71,11 @@ export default function NavbarNavLink({
           backgroundColor: isButton ? primaryColor : undefined,
           color: isButton ? invertedColor : primaryColor
         }}
-        onClick={() => {
-          if (label === 'Testnet App') {
-            onOpen()
-          }
-        }}
+        // onClick={() => {
+        //   if (label === 'Testnet App') {
+        //     onOpen()
+        //   }
+        // }}
       />
     )
   }

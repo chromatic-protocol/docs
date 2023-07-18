@@ -171,8 +171,8 @@ const config = {
           },
           // launch app
           {
-            // href: CHROMATIC_LINKS.app,
-            href: '#none',
+            href: CHROMATIC_LINKS.app,
+            // href: '#none',
             label: 'Testnet App',
             isButton: true,
             position: 'right'
@@ -196,13 +196,13 @@ const config = {
             items: [
               {
                 label: 'Trade',
-                // href: CHROMATIC_LINKS.appTrade
-                href: '#none'
+                href: CHROMATIC_LINKS.appTrade
+                // href: '#none'
               },
               {
                 label: 'Pools',
-                // href: CHROMATIC_LINKS.appPool
-                href: '#none'
+                href: CHROMATIC_LINKS.appPool
+                // href: '#none'
               }
             ]
           },

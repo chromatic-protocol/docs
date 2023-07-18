@@ -178,7 +178,7 @@ function Article() {
                 <div className="hidden lg:block sub-title h-[50px]">
                   <TypingEffect text="ARTICLES" delay={38} className="primary" />
                 </div>
-                <h4 className="sub-title lg:hidden">ARTICLES</h4>
+                <h4 className="sub-title lg:hidden primary">ARTICLES</h4>
 
                 <p className="p primary-lighter">
                   Stay informed and up to date with more detailed information, insights and updates

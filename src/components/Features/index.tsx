@@ -25,7 +25,7 @@ const FeatureList: FeatureItem[] = [
     )
   },
   {
-    title: 'PPREDEFINED TP/SL ON SMART CONTRACT',
+    title: 'PREDEFINED TP/SL ON SMART CONTRACT',
     titleWidth: 480,
     Svg: require('@site/static/img/feature2.svg').default,
     description: (

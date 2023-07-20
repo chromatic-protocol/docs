@@ -9,6 +9,7 @@ title: BinClosedPosition.sol
 ```solidity
 struct BinClosedPosition {
   uint256 _totalMakerMargin;
+  uint256 _totalTakerMargin;
   struct BinClosingPosition _closing;
   struct EnumerableSet.UintSet _waitingVersions;
   mapping(uint256 => struct _ClaimWaitingPosition) _waitingPositions;
@@ -80,6 +81,38 @@ _If the closeVersion is equal to the BinClosingPosition's closeVersion, the clai
 | self | struct BinClosedPosition | The BinClosedPosition storage. |
 | ctx | struct LpContext | The LpContext memory. |
 | param | struct PositionParam | The PositionParam memory. |
+
+### totalMakerMargin
+
+```solidity
+function totalMakerMargin(struct BinClosedPosition self) internal view returns (uint256)
+```
+
+Returns the total maker margin for a liquidity bin closed position.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| self | struct BinClosedPosition | The BinClosedPosition storage struct. |
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| [0] | uint256 | uint256 The total maker margin. |
+
+### totalTakerMargin
+
+```solidity
+function totalTakerMargin(struct BinClosedPosition self) internal view returns (uint256)
+```
+
+Returns the total taker margin for a liquidity bin closed position.
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| self | struct BinClosedPosition | The BinClosedPosition storage struct. |
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| [0] | uint256 | uint256 The total taker margin. |
 
 ### currentInterest
 

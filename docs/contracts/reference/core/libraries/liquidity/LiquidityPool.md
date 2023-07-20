@@ -80,7 +80,7 @@ Settles the liquidity bins in the LiquidityPool.
 ### prepareBinMargins
 
 ```solidity
-function prepareBinMargins(struct LiquidityPool self, int224 qty, uint256 makerMargin, uint256 minimumBinMargin) internal view returns (struct BinMargin[])
+function prepareBinMargins(struct LiquidityPool self, struct LpContext ctx, int224 qty, uint256 makerMargin, uint256 minimumBinMargin) internal returns (struct BinMargin[])
 ```
 
 Prepares bin margins based on the given quantity and maker margin.
@@ -100,6 +100,7 @@ _This function prepares bin margins by performing the following steps:
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | self | struct LiquidityPool | The reference to the LiquidityPool. |
+| ctx | struct LpContext | The LpContext data struct |
 | qty | int224 | The quantity of the position. |
 | makerMargin | uint256 | The maker margin of the position. |
 | minimumBinMargin | uint256 |  |

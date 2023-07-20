@@ -7,3 +7,91 @@ custom_edit_url: null
 ---
 
 Represents the result of an owned liquidity bin.
+
+## Properties
+
+### binValue
+
+• **binValue**: `bigint`
+
+The current value of the bin for the specified trading fee rate.
+The unrealized profit or loss of the position and adds it to the total value.
+Additionally, it includes the pending bin share from the market's vault
+
+#### Defined in
+
+[packages/sdk-viem/src/entities/ChromaticLens.ts:54](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticLens.ts#L54)
+
+___
+
+### clbBalance
+
+• **clbBalance**: `bigint`
+
+The balance of CLB tokens owned by the owner for the specified trading fee rate
+
+#### Defined in
+
+[packages/sdk-viem/src/entities/ChromaticLens.ts:40](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticLens.ts#L40)
+
+___
+
+### clbTotalSupply
+
+• **clbTotalSupply**: `bigint`
+
+The total supply of CLB tokens for the specified trading fee rate
+
+#### Defined in
+
+[packages/sdk-viem/src/entities/ChromaticLens.ts:42](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticLens.ts#L42)
+
+___
+
+### clbValue
+
+• **clbValue**: `bigint`
+
+The current value per one CLB token, which includes decimal points.
+The unrealized profit or loss of the position and adds it to the total value.
+Additionally, it includes the pending bin share from the market's vault
+
+#### Defined in
+
+[packages/sdk-viem/src/entities/ChromaticLens.ts:48](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticLens.ts#L48)
+
+___
+
+### freeLiquidity
+
+• **freeLiquidity**: `bigint`
+
+The available (free) liquidity amount (settlement token) for the specified trading fee rate
+
+#### Defined in
+
+[packages/sdk-viem/src/entities/ChromaticLens.ts:38](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticLens.ts#L38)
+
+___
+
+### liquidity
+
+• **liquidity**: `bigint`
+
+The total liquidity amount (settlement token) for the specified trading fee rate
+
+#### Defined in
+
+[packages/sdk-viem/src/entities/ChromaticLens.ts:36](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticLens.ts#L36)
+
+___
+
+### tradingFeeRate
+
+• **tradingFeeRate**: `number`
+
+The trading fee rate for the liquidity bin
+
+#### Defined in
+
+[packages/sdk-viem/src/entities/ChromaticLens.ts:34](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticLens.ts#L34)

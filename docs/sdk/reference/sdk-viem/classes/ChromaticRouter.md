@@ -24,7 +24,7 @@ Creates an instance of ChromaticRouter.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:44](https://github.com/chromatic-protocol/sdk/blob/9c74eaf/packages/sdk-viem/src/entities/ChromaticRouter.ts#L44)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:54](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticRouter.ts#L54)
 
 ## Methods
 
@@ -50,13 +50,13 @@ A promise that resolves to the transaction receipt of the liquidity additions.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:235](https://github.com/chromatic-protocol/sdk/blob/9c74eaf/packages/sdk-viem/src/entities/ChromaticRouter.ts#L235)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:245](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticRouter.ts#L245)
 
 ___
 
 ### addLiquidity
 
-▸ **addLiquidity**(`marketAddress`, `param`, `receipient?`): `Promise`<`undefined` \| `TransactionReceipt`\>
+▸ **addLiquidity**(`marketAddress`, `param`, `recipient?`): `Promise`<`undefined` \| `TransactionReceipt`\>
 
 Adds liquidity to the specified market.
 
@@ -66,7 +66,7 @@ Adds liquidity to the specified market.
 | :------ | :------ | :------ |
 | `marketAddress` | \`0x${string}\` | The address of the Chromatic Market contract. |
 | `param` | [`RouterAddLiquidityParam`](../interfaces/RouterAddLiquidityParam.md) | The parameters for adding liquidity. |
-| `receipient?` | \`0x${string}\` | The recipient address for the liquidity tokens. |
+| `recipient?` | \`0x${string}\` | The recipient address for the liquidity tokens. |
 
 #### Returns
 
@@ -76,7 +76,7 @@ A promise that resolves to the transaction receipt of the liquidity addition.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:204](https://github.com/chromatic-protocol/sdk/blob/9c74eaf/packages/sdk-viem/src/entities/ChromaticRouter.ts#L204)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:214](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticRouter.ts#L214)
 
 ___
 
@@ -100,7 +100,7 @@ A promise that resolves to a boolean indicating whether the approval was success
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:147](https://github.com/chromatic-protocol/sdk/blob/9c74eaf/packages/sdk-viem/src/entities/ChromaticRouter.ts#L147)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:157](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticRouter.ts#L157)
 
 ___
 
@@ -125,7 +125,7 @@ A promise that resolves to a boolean indicating whether the approval was success
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:176](https://github.com/chromatic-protocol/sdk/blob/9c74eaf/packages/sdk-viem/src/entities/ChromaticRouter.ts#L176)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:186](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticRouter.ts#L186)
 
 ___
 
@@ -150,7 +150,7 @@ A promise that resolves to the transaction receipt of the liquidity positions cl
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:381](https://github.com/chromatic-protocol/sdk/blob/9c74eaf/packages/sdk-viem/src/entities/ChromaticRouter.ts#L381)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:391](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticRouter.ts#L391)
 
 ___
 
@@ -175,7 +175,7 @@ A promise that resolves to the transaction receipt of the liquidity position cla
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:361](https://github.com/chromatic-protocol/sdk/blob/9c74eaf/packages/sdk-viem/src/entities/ChromaticRouter.ts#L361)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:371](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticRouter.ts#L371)
 
 ___
 
@@ -200,7 +200,7 @@ A promise that resolves to the transaction receipt of the position claiming.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:124](https://github.com/chromatic-protocol/sdk/blob/9c74eaf/packages/sdk-viem/src/entities/ChromaticRouter.ts#L124)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:134](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticRouter.ts#L134)
 
 ___
 
@@ -225,7 +225,7 @@ A promise that resolves to the transaction receipt of the position closing.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:104](https://github.com/chromatic-protocol/sdk/blob/9c74eaf/packages/sdk-viem/src/entities/ChromaticRouter.ts#L104)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:114](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticRouter.ts#L114)
 
 ___
 
@@ -247,7 +247,7 @@ A contract instance for the ChromaticRouter.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:50](https://github.com/chromatic-protocol/sdk/blob/9c74eaf/packages/sdk-viem/src/entities/ChromaticRouter.ts#L50)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:60](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticRouter.ts#L60)
 
 ___
 
@@ -272,13 +272,13 @@ A promise that resolves to the transaction receipt of the position opening.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:71](https://github.com/chromatic-protocol/sdk/blob/9c74eaf/packages/sdk-viem/src/entities/ChromaticRouter.ts#L71)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:81](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticRouter.ts#L81)
 
 ___
 
 ### removeLiquidities
 
-▸ **removeLiquidities**(`marketAddress`, `params`, `receipient?`): `Promise`<`undefined` \| `TransactionReceipt`\>
+▸ **removeLiquidities**(`marketAddress`, `params`, `recipient?`): `Promise`<`undefined` \| `TransactionReceipt`\>
 
 Removes multiple liquidity positions from the specified market.
 
@@ -288,7 +288,7 @@ Removes multiple liquidity positions from the specified market.
 | :------ | :------ | :------ |
 | `marketAddress` | \`0x${string}\` | The address of the Chromatic Market contract. |
 | `params` | [`RouterRemoveLiquidityParam`](../interfaces/RouterRemoveLiquidityParam.md)[] | The array of parameters for removing liquidity. |
-| `receipient?` | \`0x${string}\` | - |
+| `recipient?` | \`0x${string}\` | The recipient address for the liquidity tokens. |
 
 #### Returns
 
@@ -298,7 +298,7 @@ A promise that resolves to the transaction receipt of the liquidity removals.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:316](https://github.com/chromatic-protocol/sdk/blob/9c74eaf/packages/sdk-viem/src/entities/ChromaticRouter.ts#L316)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:326](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticRouter.ts#L326)
 
 ___
 
@@ -323,7 +323,7 @@ A promise that resolves to the transaction receipt of the liquidity removal.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:278](https://github.com/chromatic-protocol/sdk/blob/9c74eaf/packages/sdk-viem/src/entities/ChromaticRouter.ts#L278)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:288](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticRouter.ts#L288)
 
 ___
 
@@ -348,7 +348,7 @@ A promise that resolves to the transaction receipt of the liquidity positions wi
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:421](https://github.com/chromatic-protocol/sdk/blob/9c74eaf/packages/sdk-viem/src/entities/ChromaticRouter.ts#L421)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:431](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticRouter.ts#L431)
 
 ___
 
@@ -373,4 +373,4 @@ A promise that resolves to the transaction receipt of the liquidity position wit
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:401](https://github.com/chromatic-protocol/sdk/blob/9c74eaf/packages/sdk-viem/src/entities/ChromaticRouter.ts#L401)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:411](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticRouter.ts#L411)

@@ -30,8 +30,6 @@ custom_edit_url: null
 - [RouterAddLiquidityParam](interfaces/RouterAddLiquidityParam.md)
 - [RouterOpenPositionParam](interfaces/RouterOpenPositionParam.md)
 - [RouterRemoveLiquidityParam](interfaces/RouterRemoveLiquidityParam.md)
-- [SettlementToken](interfaces/SettlementToken.md)
-- [TokenBalancesResult](interfaces/TokenBalancesResult.md)
 
 ## Variables
 
@@ -41,7 +39,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[constants.ts:2](https://github.com/chromatic-protocol/sdk/blob/6dccf06/packages/sdk-ethers-v6/src/constants.ts#L2)
+[constants.ts:2](https://github.com/chromatic-protocol/sdk/blob/8fbbed5/packages/sdk-ethers-v6/src/constants.ts#L2)
 
 ___
 
@@ -51,7 +49,7 @@ ___
 
 #### Defined in
 
-[constants.ts:5](https://github.com/chromatic-protocol/sdk/blob/6dccf06/packages/sdk-ethers-v6/src/constants.ts#L5)
+[constants.ts:5](https://github.com/chromatic-protocol/sdk/blob/8fbbed5/packages/sdk-ethers-v6/src/constants.ts#L5)
 
 ___
 
@@ -61,7 +59,7 @@ ___
 
 #### Defined in
 
-[constants.ts:6](https://github.com/chromatic-protocol/sdk/blob/6dccf06/packages/sdk-ethers-v6/src/constants.ts#L6)
+[constants.ts:6](https://github.com/chromatic-protocol/sdk/blob/8fbbed5/packages/sdk-ethers-v6/src/constants.ts#L6)
 
 ___
 
@@ -71,7 +69,7 @@ ___
 
 #### Defined in
 
-[constants.ts:1](https://github.com/chromatic-protocol/sdk/blob/6dccf06/packages/sdk-ethers-v6/src/constants.ts#L1)
+[constants.ts:1](https://github.com/chromatic-protocol/sdk/blob/8fbbed5/packages/sdk-ethers-v6/src/constants.ts#L1)
 
 ___
 
@@ -81,7 +79,7 @@ ___
 
 #### Defined in
 
-[constants.ts:3](https://github.com/chromatic-protocol/sdk/blob/6dccf06/packages/sdk-ethers-v6/src/constants.ts#L3)
+[constants.ts:3](https://github.com/chromatic-protocol/sdk/blob/8fbbed5/packages/sdk-ethers-v6/src/constants.ts#L3)
 
 ___
 
@@ -91,4 +89,4 @@ ___
 
 #### Defined in
 
-[constants.ts:4](https://github.com/chromatic-protocol/sdk/blob/6dccf06/packages/sdk-ethers-v6/src/constants.ts#L4)
+[constants.ts:4](https://github.com/chromatic-protocol/sdk/blob/8fbbed5/packages/sdk-ethers-v6/src/constants.ts#L4)

@@ -18,7 +18,7 @@ The actual amount of CLB tokens burned
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:70](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticLens.ts#L70)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:70](https://github.com/chromatic-protocol/sdk/blob/fd80bcd/packages/sdk-viem/src/entities/ChromaticLens.ts#L70)
 
 ___
 
@@ -30,7 +30,7 @@ The amount of CLB tokens requested for burning
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:68](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticLens.ts#L68)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:68](https://github.com/chromatic-protocol/sdk/blob/fd80bcd/packages/sdk-viem/src/entities/ChromaticLens.ts#L68)
 
 ___
 
@@ -42,7 +42,7 @@ The amount of settlement tokens equal in value to the burned CLB tokens
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:72](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticLens.ts#L72)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:72](https://github.com/chromatic-protocol/sdk/blob/fd80bcd/packages/sdk-viem/src/entities/ChromaticLens.ts#L72)
 
 ___
 
@@ -54,7 +54,7 @@ The actual amount of CLB tokens minted
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:66](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticLens.ts#L66)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:66](https://github.com/chromatic-protocol/sdk/blob/fd80bcd/packages/sdk-viem/src/entities/ChromaticLens.ts#L66)
 
 ___
 
@@ -66,7 +66,7 @@ The amount of settlement tokens requested for minting
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:64](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticLens.ts#L64)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:64](https://github.com/chromatic-protocol/sdk/blob/fd80bcd/packages/sdk-viem/src/entities/ChromaticLens.ts#L64)
 
 ___
 
@@ -78,4 +78,4 @@ The trading fee rate for the liquidity bin
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:62](https://github.com/chromatic-protocol/sdk/blob/3b5e5ee/packages/sdk-viem/src/entities/ChromaticLens.ts#L62)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:62](https://github.com/chromatic-protocol/sdk/blob/fd80bcd/packages/sdk-viem/src/entities/ChromaticLens.ts#L62)

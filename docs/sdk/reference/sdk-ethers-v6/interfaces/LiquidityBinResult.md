@@ -7,3 +7,53 @@ custom_edit_url: null
 ---
 
 Represents the result of a liquidity bin.
+
+## Properties
+
+### clbValue
+
+• **clbValue**: `bigint`
+
+The current value per one CLB token, which includes decimal points.
+The unrealized profit or loss of the position and adds it to the total value.
+Additionally, it includes the pending bin share from the market's vault
+
+#### Defined in
+
+[entities/ChromaticLens.ts:17](https://github.com/chromatic-protocol/sdk/blob/6dccf06/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L17)
+
+___
+
+### freeLiquidity
+
+• **freeLiquidity**: `bigint`
+
+The available (free) liquidity amount (settlement token) for the specified trading fee rate
+
+#### Defined in
+
+[entities/ChromaticLens.ts:21](https://github.com/chromatic-protocol/sdk/blob/6dccf06/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L21)
+
+___
+
+### liquidity
+
+• **liquidity**: `bigint`
+
+The total liquidity amount (settlement token) for the specified trading fee rate
+
+#### Defined in
+
+[entities/ChromaticLens.ts:19](https://github.com/chromatic-protocol/sdk/blob/6dccf06/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L19)
+
+___
+
+### tradingFeeRate
+
+• **tradingFeeRate**: `bigint`
+
+The trading fee rate for the liquidity bin
+
+#### Defined in
+
+[entities/ChromaticLens.ts:11](https://github.com/chromatic-protocol/sdk/blob/6dccf06/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L11)

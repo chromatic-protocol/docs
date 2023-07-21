@@ -16,13 +16,15 @@ event ClaimPositionByKeeper(address account, int256 pnl, uint256 interest, uint2
 
 _Emitted when a position is claimed by keeper._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| account | address | The address of the account claiming the position. |
-| pnl | int256 | The profit or loss of the claimed position. |
-| interest | uint256 | The interest paid for the claimed position. |
-| usedKeeperFee | uint256 | The amount of keeper fee used for the liquidation. |
-| position | struct Position | The claimed position. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | account | address | The address of the account claiming the position. |
+  | pnl | int256 | The profit or loss of the claimed position. |
+  | interest | uint256 | The interest paid for the claimed position. |
+  | usedKeeperFee | uint256 | The amount of keeper fee used for the liquidation. |
+  | position | struct Position | The claimed position. |
 
 ### Liquidate
 
@@ -32,13 +34,15 @@ event Liquidate(address account, int256 pnl, uint256 interest, uint256 usedKeepe
 
 _Emitted when a position is liquidated._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| account | address | The address of the account being liquidated. |
-| pnl | int256 | The profit or loss of the claimed position. |
-| interest | uint256 | The interest paid for the claimed position. |
-| usedKeeperFee | uint256 | The amount of keeper fee used for the liquidation. |
-| position | struct Position | The liquidated position. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | account | address | The address of the account being liquidated. |
+  | pnl | int256 | The profit or loss of the claimed position. |
+  | interest | uint256 | The interest paid for the claimed position. |
+  | usedKeeperFee | uint256 | The amount of keeper fee used for the liquidation. |
+  | position | struct Position | The liquidated position. |
 
 ### checkLiquidation
 
@@ -48,13 +52,17 @@ function checkLiquidation(uint256 positionId) external view returns (bool)
 
 _Checks if a position is eligible for liquidation._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| positionId | uint256 | The ID of the position to check. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | bool | A boolean indicating if the position is eligible for liquidation. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | positionId | uint256 | The ID of the position to check. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | bool | A boolean indicating if the position is eligible for liquidation. |
 
 ### liquidate
 
@@ -64,11 +72,13 @@ function liquidate(uint256 positionId, address keeper, uint256 keeperFee) extern
 
 _Liquidates a position._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| positionId | uint256 | The ID of the position to liquidate. |
-| keeper | address | The address of the keeper performing the liquidation. |
-| keeperFee | uint256 | The native token amount of the keeper's fee. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | positionId | uint256 | The ID of the position to liquidate. |
+  | keeper | address | The address of the keeper performing the liquidation. |
+  | keeperFee | uint256 | The native token amount of the keeper's fee. |
 
 ### checkClaimPosition
 
@@ -78,13 +88,17 @@ function checkClaimPosition(uint256 positionId) external view returns (bool)
 
 _Checks if a position is eligible for claim._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| positionId | uint256 | The ID of the position to check. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | bool | A boolean indicating if the position is eligible for claim. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | positionId | uint256 | The ID of the position to check. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | bool | A boolean indicating if the position is eligible for claim. |
 
 ### claimPosition
 
@@ -94,9 +108,11 @@ function claimPosition(uint256 positionId, address keeper, uint256 keeperFee) ex
 
 _Claims a closed position on behalf of a keeper._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| positionId | uint256 | The ID of the position to claim. |
-| keeper | address | The address of the keeper claiming the position. |
-| keeperFee | uint256 | The native token amount of the keeper's fee. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | positionId | uint256 | The ID of the position to claim. |
+  | keeper | address | The address of the keeper claiming the position. |
+  | keeperFee | uint256 | The native token amount of the keeper's fee. |
 

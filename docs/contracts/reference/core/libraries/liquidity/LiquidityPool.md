@@ -27,11 +27,13 @@ event LiquidityBinEarningAccumulated(uint16 feeRate, bytes1 binType, uint256 ear
 
 Emitted when earning is accumulated for a liquidity bin.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| feeRate | uint16 | The fee rate of the bin. |
-| binType | bytes1 | The type of the bin ("L" for long, "S" for short). |
-| earning | uint256 | The accumulated earning. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | feeRate | uint16 | The fee rate of the bin. |
+  | binType | bytes1 | The type of the bin ("L" for long, "S" for short). |
+  | earning | uint256 | The accumulated earning. |
 
 ### _proportionalPositionParamValue
 
@@ -50,9 +52,11 @@ modifier _validTradingFeeRate(int16 tradingFeeRate)
 
 Modifier to validate the trading fee rate.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| tradingFeeRate | int16 | The trading fee rate to validate. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | tradingFeeRate | int16 | The trading fee rate to validate. |
 
 ### initialize
 
@@ -62,9 +66,11 @@ function initialize(struct LiquidityPool self) internal
 
 Initializes the LiquidityPool.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct LiquidityPool | The reference to the LiquidityPool. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LiquidityPool | The reference to the LiquidityPool. |
 
 ### settle
 
@@ -74,10 +80,12 @@ function settle(struct LiquidityPool self, struct LpContext ctx) internal
 
 Settles the liquidity bins in the LiquidityPool.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct LiquidityPool | The reference to the LiquidityPool. |
-| ctx | struct LpContext | The LpContext object. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LiquidityPool | The reference to the LiquidityPool. |
+  | ctx | struct LpContext | The LpContext object. |
 
 ### prepareBinMargins
 
@@ -99,17 +107,21 @@ _This function prepares bin margins by performing the following steps:
         containing the trading fee rate and corresponding margin amount for each bin.
      Throws an error with the code `Errors.NOT_ENOUGH_FREE_LIQUIDITY` if there is not enough free liquidity._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct LiquidityPool | The reference to the LiquidityPool. |
-| ctx | struct LpContext | The LpContext data struct |
-| qty | int224 | The quantity of the position. |
-| makerMargin | uint256 | The maker margin of the position. |
-| minimumBinMargin | uint256 |  |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct BinMargin[] | binMargins An array of BinMargin representing the calculated bin margins. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LiquidityPool | The reference to the LiquidityPool. |
+  | ctx | struct LpContext | The LpContext data struct |
+  | qty | int224 | The quantity of the position. |
+  | makerMargin | uint256 | The maker margin of the position. |
+  | minimumBinMargin | uint256 |  |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct BinMargin[] | binMargins An array of BinMargin representing the calculated bin margins. |
 
 ### acceptOpenPosition
 
@@ -123,11 +135,13 @@ _This function calculates the target liquidity bins based on the position quanti
      It prepares the bin margins and divides the position parameters accordingly.
      Then, it opens the liquidity bins with the corresponding parameters and trading fees._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct LiquidityPool | The reference to the LiquidityPool storage. |
-| ctx | struct LpContext | The LpContext object. |
-| position | struct Position | The Position object representing the open position. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LiquidityPool | The reference to the LiquidityPool storage. |
+  | ctx | struct LpContext | The LpContext object. |
+  | position | struct Position | The Position object representing the open position. |
 
 ### acceptClosePosition
 
@@ -142,11 +156,13 @@ _This function calculates the target liquidity bins based on the position quanti
      Then, it divides the position parameters to match the bin margins.
      Finally, it closes the liquidity bins with the provided parameters._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct LiquidityPool | The reference to the LiquidityPool storage. |
-| ctx | struct LpContext | The LpContext object. |
-| position | struct Position | The Position object representing the close position request. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LiquidityPool | The reference to the LiquidityPool storage. |
+  | ctx | struct LpContext | The LpContext object. |
+  | position | struct Position | The Position object representing the close position request. |
 
 ### acceptClaimPosition
 
@@ -164,12 +180,14 @@ _This function verifies if the absolute value of the realized position pnl is wi
      The claimed pnl is distributed among the liquidity bins according to their respective margins.
      Throws an error with the code `Errors.EXCEED_MARGIN_RANGE` if the realized profit or loss does not falls within the acceptable margin range._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct LiquidityPool | The reference to the LiquidityPool storage. |
-| ctx | struct LpContext | The LpContext object. |
-| position | struct Position | The Position object representing the position to claim. |
-| realizedPnl | int256 | The realized position pnl (taker side). |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LiquidityPool | The reference to the LiquidityPool storage. |
+  | ctx | struct LpContext | The LpContext object. |
+  | position | struct Position | The Position object representing the position to claim. |
+  | realizedPnl | int256 | The realized position pnl (taker side). |
 
 ### acceptAddLiquidity
 
@@ -183,12 +201,14 @@ Accepts an add liquidity request
 _This function validates the trading fee rate
      and calls the acceptAddLiquidity function on the target liquidity bin._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct LiquidityPool | The reference to the LiquidityPool storage. |
-| ctx | struct LpContext | The LpContext object. |
-| tradingFeeRate | int16 | The trading fee rate associated with the liquidity bin. |
-| amount | uint256 | The amount of liquidity to add. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LiquidityPool | The reference to the LiquidityPool storage. |
+  | ctx | struct LpContext | The LpContext object. |
+  | tradingFeeRate | int16 | The trading fee rate associated with the liquidity bin. |
+  | amount | uint256 | The amount of liquidity to add. |
 
 ### acceptClaimLiquidity
 
@@ -202,17 +222,21 @@ Accepts a claim liquidity request
 _This function validates the trading fee rate
      and calls the acceptClaimLiquidity function on the target liquidity bin._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct LiquidityPool | The reference to the LiquidityPool storage. |
-| ctx | struct LpContext | The LpContext object. |
-| tradingFeeRate | int16 | The trading fee rate associated with the liquidity bin. |
-| amount | uint256 | The amount of liquidity to claim.        (should be the same as the one used in acceptAddLiquidity) |
-| oracleVersion | uint256 | The oracle version used for the claim.        (should be the oracle version when call acceptAddLiquidity) |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | The amount of liquidity (CLB tokens) received as a result of the liquidity claim. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LiquidityPool | The reference to the LiquidityPool storage. |
+  | ctx | struct LpContext | The LpContext object. |
+  | tradingFeeRate | int16 | The trading fee rate associated with the liquidity bin. |
+  | amount | uint256 | The amount of liquidity to claim.        (should be the same as the one used in acceptAddLiquidity) |
+  | oracleVersion | uint256 | The oracle version used for the claim.        (should be the oracle version when call acceptAddLiquidity) |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | The amount of liquidity (CLB tokens) received as a result of the liquidity claim. |
 
 ### acceptRemoveLiquidity
 
@@ -226,12 +250,14 @@ Accepts a remove liquidity request
 _This function validates the trading fee rate
      and calls the acceptRemoveLiquidity function on the target liquidity bin._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct LiquidityPool | The reference to the LiquidityPool storage. |
-| ctx | struct LpContext | The LpContext object. |
-| tradingFeeRate | int16 | The trading fee rate associated with the liquidity bin. |
-| clbTokenAmount | uint256 | The amount of CLB tokens to remove. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LiquidityPool | The reference to the LiquidityPool storage. |
+  | ctx | struct LpContext | The LpContext object. |
+  | tradingFeeRate | int16 | The trading fee rate associated with the liquidity bin. |
+  | clbTokenAmount | uint256 | The amount of CLB tokens to remove. |
 
 ### acceptWithdrawLiquidity
 
@@ -245,18 +271,22 @@ Accepts a withdraw liquidity request
 _This function validates the trading fee rate
      and calls the acceptWithdrawLiquidity function on the target liquidity bin._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct LiquidityPool | The reference to the LiquidityPool storage. |
-| ctx | struct LpContext | The LpContext object. |
-| tradingFeeRate | int16 | The trading fee rate associated with the liquidity bin. |
-| clbTokenAmount | uint256 | The amount of CLB tokens to withdraw.        (should be the same as the one used in acceptRemoveLiquidity) |
-| oracleVersion | uint256 | The oracle version used for the withdrawal.        (should be the oracle version when call acceptRemoveLiquidity) |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| amount | uint256 | The amount of base tokens withdrawn |
-| burnedCLBTokenAmount | uint256 | the amount of CLB tokens burned. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LiquidityPool | The reference to the LiquidityPool storage. |
+  | ctx | struct LpContext | The LpContext object. |
+  | tradingFeeRate | int16 | The trading fee rate associated with the liquidity bin. |
+  | clbTokenAmount | uint256 | The amount of CLB tokens to withdraw.        (should be the same as the one used in acceptRemoveLiquidity) |
+  | oracleVersion | uint256 | The oracle version used for the withdrawal.        (should be the oracle version when call acceptRemoveLiquidity) |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | amount | uint256 | The amount of base tokens withdrawn |
+  | burnedCLBTokenAmount | uint256 | the amount of CLB tokens burned. |
 
 ### getBinLiquidity
 
@@ -269,14 +299,18 @@ Retrieves the total liquidity amount in base tokens for the specified trading fe
 _This function retrieves the liquidity bin based on the trading fee rate
      and calls the liquidity function on it._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct LiquidityPool | The reference to the LiquidityPool storage. |
-| tradingFeeRate | int16 | The trading fee rate associated with the liquidity bin. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| amount | uint256 | The total liquidity amount in base tokens. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LiquidityPool | The reference to the LiquidityPool storage. |
+  | tradingFeeRate | int16 | The trading fee rate associated with the liquidity bin. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | amount | uint256 | The total liquidity amount in base tokens. |
 
 ### getBinFreeLiquidity
 
@@ -289,14 +323,18 @@ Retrieves the free liquidity amount in base tokens for the specified trading fee
 _This function retrieves the liquidity bin based on the trading fee rate
      and calls the freeLiquidity function on it._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct LiquidityPool | The reference to the LiquidityPool storage. |
-| tradingFeeRate | int16 | The trading fee rate associated with the liquidity bin. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| amount | uint256 | The free liquidity amount in base tokens. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LiquidityPool | The reference to the LiquidityPool storage. |
+  | tradingFeeRate | int16 | The trading fee rate associated with the liquidity bin. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | amount | uint256 | The free liquidity amount in base tokens. |
 
 ### distributeEarning
 
@@ -312,11 +350,13 @@ _This function distributes the earnings among the liquidity bins,
      and distributes the proportional amount of earnings to each bin
      based on its total balance relative to the market balance._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct LiquidityPool | The LiquidityPool storage. |
-| earning | uint256 | The total earnings to be distributed. |
-| marketBalance | uint256 | The market balance. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LiquidityPool | The LiquidityPool storage. |
+  | earning | uint256 | The total earnings to be distributed. |
+  | marketBalance | uint256 | The market balance. |
 
 ### binValue
 
@@ -326,15 +366,19 @@ function binValue(struct LiquidityPool self, int16 _tradingFeeRate, struct LpCon
 
 _Retrieves the value of a specific bin in the LiquidityPool storage for the provided trading fee rate._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct LiquidityPool | The reference to the LiquidityPool storage. |
-| _tradingFeeRate | int16 | The trading fee rate for which to calculate the bin value. |
-| ctx | struct LpContext | The LP context containing relevant information for the calculation. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| value | uint256 | The value of the specified bin. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LiquidityPool | The reference to the LiquidityPool storage. |
+  | _tradingFeeRate | int16 | The trading fee rate for which to calculate the bin value. |
+  | ctx | struct LpContext | The LP context containing relevant information for the calculation. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | value | uint256 | The value of the specified bin. |
 
 ### claimableLiquidity
 
@@ -344,15 +388,19 @@ function claimableLiquidity(struct LiquidityPool self, int16 tradingFeeRate, uin
 
 _Retrieves the claimable liquidity information for a specific trading fee rate and oracle version from a LiquidityPool._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct LiquidityPool | The reference to the LiquidityPool struct. |
-| tradingFeeRate | int16 | The trading fee rate for which to retrieve the claimable liquidity. |
-| oracleVersion | uint256 | The oracle version for which to retrieve the claimable liquidity. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct IMarketLiquidity.ClaimableLiquidity | claimableLiquidity An instance of IMarketLiquidity.ClaimableLiquidity representing the claimable liquidity information. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LiquidityPool | The reference to the LiquidityPool struct. |
+  | tradingFeeRate | int16 | The trading fee rate for which to retrieve the claimable liquidity. |
+  | oracleVersion | uint256 | The oracle version for which to retrieve the claimable liquidity. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct IMarketLiquidity.ClaimableLiquidity | claimableLiquidity An instance of IMarketLiquidity.ClaimableLiquidity representing the claimable liquidity information. |
 
 ### liquidityBinStatuses
 
@@ -362,12 +410,16 @@ function liquidityBinStatuses(struct LiquidityPool self, struct LpContext ctx) i
 
 _Retrieves the liquidity bin statuses for the LiquidityPool using the provided context._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct LiquidityPool | The LiquidityPool storage instance. |
-| ctx | struct LpContext | The LpContext containing the necessary context for calculating the bin statuses. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct IMarketLiquidity.LiquidityBinStatus[] | stats An array of IMarketLiquidity.LiquidityBinStatus representing the liquidity bin statuses. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LiquidityPool | The LiquidityPool storage instance. |
+  | ctx | struct LpContext | The LpContext containing the necessary context for calculating the bin statuses. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct IMarketLiquidity.LiquidityBinStatus[] | stats An array of IMarketLiquidity.LiquidityBinStatus representing the liquidity bin statuses. |
 

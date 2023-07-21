@@ -16,13 +16,17 @@ function totalSupply(uint256 id) external view returns (uint256)
 
 _Total amount of tokens in with a given id._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| id | uint256 | The token ID for which to retrieve the total supply. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | The total supply of tokens for the given token ID. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | id | uint256 | The token ID for which to retrieve the total supply. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | The total supply of tokens for the given token ID. |
 
 ### totalSupplyBatch
 
@@ -32,13 +36,17 @@ function totalSupplyBatch(uint256[] ids) external view returns (uint256[])
 
 _Total amounts of tokens in with the given ids._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| ids | uint256[] | The token IDs for which to retrieve the total supply. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256[] | The total supples of tokens for the given token IDs. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | ids | uint256[] | The token IDs for which to retrieve the total supply. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256[] | The total supples of tokens for the given token IDs. |
 
 ### mint
 
@@ -48,12 +56,14 @@ function mint(address to, uint256 id, uint256 amount, bytes data) external
 
 _Mints new tokens and assigns them to the specified address._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| to | address | The address to which the minted tokens will be assigned. |
-| id | uint256 | The token ID to mint. |
-| amount | uint256 | The amount of tokens to mint. |
-| data | bytes | Additional data to pass during the minting process. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | to | address | The address to which the minted tokens will be assigned. |
+  | id | uint256 | The token ID to mint. |
+  | amount | uint256 | The amount of tokens to mint. |
+  | data | bytes | Additional data to pass during the minting process. |
 
 ### burn
 
@@ -63,11 +73,13 @@ function burn(address from, uint256 id, uint256 amount) external
 
 _Burns tokens from a specified address._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| from | address | The address from which to burn tokens. |
-| id | uint256 | The token ID to burn. |
-| amount | uint256 | The amount of tokens to burn. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | from | address | The address from which to burn tokens. |
+  | id | uint256 | The token ID to burn. |
+  | amount | uint256 | The amount of tokens to burn. |
 
 ### decimals
 
@@ -77,9 +89,11 @@ function decimals() external view returns (uint8)
 
 _Retrieves the number of decimals used for token amounts._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint8 | The number of decimals used for token amounts. |
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint8 | The number of decimals used for token amounts. |
 
 ### name
 
@@ -89,13 +103,17 @@ function name(uint256 id) external view returns (string)
 
 _Retrieves the name of a token._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| id | uint256 | The token ID for which to retrieve the name. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | string | The name of the token. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | id | uint256 | The token ID for which to retrieve the name. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | string | The name of the token. |
 
 ### description
 
@@ -105,13 +123,17 @@ function description(uint256 id) external view returns (string)
 
 _Retrieves the description of a token._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| id | uint256 | The token ID for which to retrieve the description. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | string | The description of the token. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | id | uint256 | The token ID for which to retrieve the description. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | string | The description of the token. |
 
 ### image
 
@@ -121,11 +143,15 @@ function image(uint256 id) external view returns (string)
 
 _Retrieves the image URI of a token._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| id | uint256 | The token ID for which to retrieve the image URI. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | string | The image URI of the token. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | id | uint256 | The token ID for which to retrieve the image URI. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | string | The image URI of the token. |
 

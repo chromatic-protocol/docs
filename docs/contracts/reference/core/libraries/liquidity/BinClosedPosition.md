@@ -48,10 +48,12 @@ Settles the closing position within the BinClosedPosition.
 _If the closeVersion is not set or is equal to the current oracle version, no action is taken.
      Otherwise, the waiting position is stored and the accrued interest is accumulated._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BinClosedPosition | The BinClosedPosition storage. |
-| ctx | struct LpContext | The LpContext memory. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct BinClosedPosition | The BinClosedPosition storage. |
+  | ctx | struct LpContext | The LpContext memory. |
 
 ### onClosePosition
 
@@ -63,11 +65,13 @@ Closes the position within the BinClosedPosition.
 
 _Delegates the onClosePosition function call to the underlying BinClosingPosition._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BinClosedPosition | The BinClosedPosition storage. |
-| ctx | struct LpContext | The LpContext memory. |
-| param | struct PositionParam | The PositionParam memory. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct BinClosedPosition | The BinClosedPosition storage. |
+  | ctx | struct LpContext | The LpContext memory. |
+  | param | struct PositionParam | The PositionParam memory. |
 
 ### onClaimPosition
 
@@ -81,11 +85,13 @@ _If the closeVersion is equal to the BinClosingPosition's closeVersion, the clai
      Otherwise, the claim is made from the waiting position, and if exhausted, the waiting position is removed.
      The accrued interest is accumulated and deducted accordingly._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BinClosedPosition | The BinClosedPosition storage. |
-| ctx | struct LpContext | The LpContext memory. |
-| param | struct PositionParam | The PositionParam memory. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct BinClosedPosition | The BinClosedPosition storage. |
+  | ctx | struct LpContext | The LpContext memory. |
+  | param | struct PositionParam | The PositionParam memory. |
 
 ### totalMakerMargin
 
@@ -95,13 +101,17 @@ function totalMakerMargin(struct BinClosedPosition self) internal view returns (
 
 Returns the total maker margin for a liquidity bin closed position.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BinClosedPosition | The BinClosedPosition storage struct. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | uint256 The total maker margin. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct BinClosedPosition | The BinClosedPosition storage struct. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | uint256 The total maker margin. |
 
 ### totalTakerMargin
 
@@ -111,13 +121,17 @@ function totalTakerMargin(struct BinClosedPosition self) internal view returns (
 
 Returns the total taker margin for a liquidity bin closed position.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BinClosedPosition | The BinClosedPosition storage struct. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | uint256 The total taker margin. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct BinClosedPosition | The BinClosedPosition storage struct. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | uint256 The total taker margin. |
 
 ### currentInterest
 
@@ -127,12 +141,16 @@ function currentInterest(struct BinClosedPosition self, struct LpContext ctx) in
 
 _Calculates the current interest for a liquidity bin closed position._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BinClosedPosition | The BinClosedPosition storage struct. |
-| ctx | struct LpContext | The LpContext data struct. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | uint256 The current interest. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct BinClosedPosition | The BinClosedPosition storage struct. |
+  | ctx | struct LpContext | The LpContext data struct. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | uint256 The current interest. |
 

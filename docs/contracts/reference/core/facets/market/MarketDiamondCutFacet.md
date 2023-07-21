@@ -34,9 +34,11 @@ Add/replace/remove any number of functions and optionally execute
 
 _This function can only be called by the Chromatic factory contract or the DAO._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _cut | struct IDiamondCut.FacetCut[] | Contains the facet addresses and function selectors |
-| _init | address | The address of the contract or facet to execute _calldata |
-| _calldata | bytes | A function call, including function selector and arguments                  _calldata is executed with delegatecall on _init |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _cut | struct IDiamondCut.FacetCut[] | Contains the facet addresses and function selectors |
+  | _init | address | The address of the contract or facet to execute _calldata |
+  | _calldata | bytes | A function call, including function selector and arguments                  _calldata is executed with delegatecall on _init |
 

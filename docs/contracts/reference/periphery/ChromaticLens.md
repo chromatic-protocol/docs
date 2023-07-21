@@ -39,14 +39,18 @@ function oracleVersion(contract IChromaticMarket market, uint256 version) extern
 
 _Retrieves the OracleVersion for the specified oracle version in the given Chromatic market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | contract IChromaticMarket | The address of the Chromatic market contract. |
-| version | uint256 | An oracle versions. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct IOracleProvider.OracleVersion | oracleVersion The OracleVersion for the specified oracle version. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | contract IChromaticMarket | The address of the Chromatic market contract. |
+  | version | uint256 | An oracle versions. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct IOracleProvider.OracleVersion | oracleVersion The OracleVersion for the specified oracle version. |
 
 ### lpReceipts
 
@@ -56,14 +60,18 @@ function lpReceipts(contract IChromaticMarket market, address owner) public view
 
 _Retrieves the LP receipts for the specified owner in the given Chromatic market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | contract IChromaticMarket | The address of the Chromatic market contract. |
-| owner | address | The address of the LP token owner. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| result | struct LpReceipt[] | An array of LpReceipt containing the LP receipts for the owner. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | contract IChromaticMarket | The address of the Chromatic market contract. |
+  | owner | address | The address of the LP token owner. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | result | struct LpReceipt[] | An array of LpReceipt containing the LP receipts for the owner. |
 
 ### clbBalanceOf
 
@@ -73,14 +81,18 @@ function clbBalanceOf(contract IChromaticMarket market, address owner) external 
 
 _Retrieves the CLB token balances for the specified owner in the given Chromatic market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | contract IChromaticMarket | The address of the Chromatic market contract. |
-| owner | address | The address of the CLB token owner. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct ChromaticLens.CLBBalance[] | An array of CLBBalance containing the CLB token balance information for the owner. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | contract IChromaticMarket | The address of the Chromatic market contract. |
+  | owner | address | The address of the CLB token owner. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct ChromaticLens.CLBBalance[] | An array of CLBBalance containing the CLB token balance information for the owner. |
 
 ### claimableLiquidity
 
@@ -90,15 +102,19 @@ function claimableLiquidity(contract IChromaticMarket market, int16 tradingFeeRa
 
 _Retrieves the claimable liquidity information for a specific trading fee rate and oracle version from the given Chromatic Market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | contract IChromaticMarket | The Chromatic Market from which to retrieve the claimable liquidity information. |
-| tradingFeeRate | int16 | The trading fee rate for which to retrieve the claimable liquidity. |
-| _oracleVersion | uint256 | The oracle version for which to retrieve the claimable liquidity. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct IMarketLiquidity.ClaimableLiquidity | claimableLiquidity An instance of IChromaticMarket.ClaimableLiquidity representing the claimable liquidity information. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | contract IChromaticMarket | The Chromatic Market from which to retrieve the claimable liquidity information. |
+  | tradingFeeRate | int16 | The trading fee rate for which to retrieve the claimable liquidity. |
+  | _oracleVersion | uint256 | The oracle version for which to retrieve the claimable liquidity. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct IMarketLiquidity.ClaimableLiquidity | claimableLiquidity An instance of IChromaticMarket.ClaimableLiquidity representing the claimable liquidity information. |
 
 ### liquidityBinStatuses
 
@@ -108,11 +124,15 @@ function liquidityBinStatuses(contract IChromaticMarket market) external view re
 
 _Retrieves the liquidity bin statuses for the specified Chromatic Market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | contract IChromaticMarket | The Chromatic Market contract for which liquidity bin statuses are retrieved. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct IMarketLiquidity.LiquidityBinStatus[] | statuses An array of LiquidityBinStatus representing the liquidity bin statuses. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | contract IChromaticMarket | The Chromatic Market contract for which liquidity bin statuses are retrieved. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct IMarketLiquidity.LiquidityBinStatus[] | statuses An array of LiquidityBinStatus representing the liquidity bin statuses. |
 

@@ -106,18 +106,22 @@ Requirements:
  - A keeper task for potential liquidation is created by the liquidator.
  - An `OpenPosition` event is emitted with the owner's address and the newly opened position details._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| qty | int224 | The quantity of the position. |
-| leverage | uint32 | The leverage of the position in basis points. |
-| takerMargin | uint256 | The margin amount provided by the taker. |
-| makerMargin | uint256 | The margin amount provided by the maker. |
-| maxAllowableTradingFee | uint256 | The maximum allowable trading fee for the position. |
-| data | bytes | Additional data for the position callback. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| position | struct Position | The opened position. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | qty | int224 | The quantity of the position. |
+  | leverage | uint32 | The leverage of the position in basis points. |
+  | takerMargin | uint256 | The margin amount provided by the taker. |
+  | makerMargin | uint256 | The margin amount provided by the maker. |
+  | maxAllowableTradingFee | uint256 | The maximum allowable trading fee for the position. |
+  | data | bytes | Additional data for the position callback. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | position | struct Position | The opened position. |
 
 ### closePosition
 
@@ -134,9 +138,11 @@ _This function allows the owner of the position to close it. The position must e
      Throws an `AlreadyClosedPosition` error if the position has already been closed.
      Throws a `ClaimPositionCallbackError` error if an error occurred during the claim position callback._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| positionId | uint256 | The ID of the position to close. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | positionId | uint256 | The ID of the position to close. |
 
 ### claimPosition
 
@@ -153,11 +159,13 @@ _Claims the position by transferring the available funds to the recipient.
      Throws a `NotClaimablePosition` error if the position cannot be claimed as it is not eligible for claim in the current oracle version.
      Throws a `ClaimPositionCallbackError` error if an error occurred during the claim position callback._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| positionId | uint256 | The ID of the position to claim. |
-| recipient | address | The address of the recipient of the claimed position. |
-| data | bytes | Additional data for the claim callback. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | positionId | uint256 | The ID of the position to claim. |
+  | recipient | address | The address of the recipient of the claimed position. |
+  | data | bytes | Additional data for the claim callback. |
 
 ### getPositions
 
@@ -167,11 +175,15 @@ function getPositions(uint256[] positionIds) external view returns (struct Posit
 
 _Retrieves multiple positions by their IDs._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| positionIds | uint256[] | The IDs of the positions to retrieve. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _positions | struct Position[] |  |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | positionIds | uint256[] | The IDs of the positions to retrieve. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _positions | struct Position[] |  |
 

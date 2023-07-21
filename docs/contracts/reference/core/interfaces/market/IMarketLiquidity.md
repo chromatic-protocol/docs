@@ -58,9 +58,11 @@ event AddLiquidity(struct LpReceipt receipt)
 
 _Emitted when liquidity is added to the market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| receipt | struct LpReceipt | The liquidity receipt. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | receipt | struct LpReceipt | The liquidity receipt. |
 
 ### AddLiquidityBatch
 
@@ -70,9 +72,11 @@ event AddLiquidityBatch(struct LpReceipt[] receipts)
 
 _Emitted when liquidity is added to the market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| receipts | struct LpReceipt[] | An array of LP receipts. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | receipts | struct LpReceipt[] | An array of LP receipts. |
 
 ### ClaimLiquidity
 
@@ -82,10 +86,12 @@ event ClaimLiquidity(struct LpReceipt receipt, uint256 clbTokenAmount)
 
 _Emitted when liquidity is claimed from the market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| receipt | struct LpReceipt | The liquidity receipt. |
-| clbTokenAmount | uint256 | The amount of CLB tokens claimed. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | receipt | struct LpReceipt | The liquidity receipt. |
+  | clbTokenAmount | uint256 | The amount of CLB tokens claimed. |
 
 ### ClaimLiquidityBatch
 
@@ -95,10 +101,12 @@ event ClaimLiquidityBatch(struct LpReceipt[] receipts, uint256[] clbTokenAmounts
 
 _Emitted when liquidity is claimed from the market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| receipts | struct LpReceipt[] | An array of LP receipts. |
-| clbTokenAmounts | uint256[] | The amount list of CLB tokens claimed. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | receipts | struct LpReceipt[] | An array of LP receipts. |
+  | clbTokenAmounts | uint256[] | The amount list of CLB tokens claimed. |
 
 ### RemoveLiquidity
 
@@ -108,9 +116,11 @@ event RemoveLiquidity(struct LpReceipt receipt)
 
 _Emitted when liquidity is removed from the market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| receipt | struct LpReceipt | The liquidity receipt. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | receipt | struct LpReceipt | The liquidity receipt. |
 
 ### RemoveLiquidityBatch
 
@@ -120,9 +130,11 @@ event RemoveLiquidityBatch(struct LpReceipt[] receipts)
 
 _Emitted when liquidity is removed from the market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| receipts | struct LpReceipt[] | An array of LP receipts. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | receipts | struct LpReceipt[] | An array of LP receipts. |
 
 ### WithdrawLiquidity
 
@@ -132,11 +144,13 @@ event WithdrawLiquidity(struct LpReceipt receipt, uint256 amount, uint256 burned
 
 _Emitted when liquidity is withdrawn from the market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| receipt | struct LpReceipt | The liquidity receipt. |
-| amount | uint256 | The amount of liquidity withdrawn. |
-| burnedCLBTokenAmount | uint256 | The amount of burned CLB tokens. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | receipt | struct LpReceipt | The liquidity receipt. |
+  | amount | uint256 | The amount of liquidity withdrawn. |
+  | burnedCLBTokenAmount | uint256 | The amount of burned CLB tokens. |
 
 ### WithdrawLiquidityBatch
 
@@ -146,11 +160,13 @@ event WithdrawLiquidityBatch(struct LpReceipt[] receipts, uint256[] amounts, uin
 
 _Emitted when liquidity is withdrawn from the market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| receipts | struct LpReceipt[] | An array of LP receipts. |
-| amounts | uint256[] | The amount list of liquidity withdrawn. |
-| burnedCLBTokenAmounts | uint256[] | The amount list of burned CLB tokens. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | receipts | struct LpReceipt[] | An array of LP receipts. |
+  | amounts | uint256[] | The amount list of liquidity withdrawn. |
+  | burnedCLBTokenAmounts | uint256[] | The amount list of burned CLB tokens. |
 
 ### addLiquidity
 
@@ -160,15 +176,19 @@ function addLiquidity(address recipient, int16 tradingFeeRate, bytes data) exter
 
 _Adds liquidity to the market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| recipient | address | The address to receive the liquidity tokens. |
-| tradingFeeRate | int16 | The trading fee rate for the liquidity. |
-| data | bytes | Additional data for the liquidity callback. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct LpReceipt | The liquidity receipt. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | recipient | address | The address to receive the liquidity tokens. |
+  | tradingFeeRate | int16 | The trading fee rate for the liquidity. |
+  | data | bytes | Additional data for the liquidity callback. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct LpReceipt | The liquidity receipt. |
 
 ### addLiquidityBatch
 
@@ -178,16 +198,20 @@ function addLiquidityBatch(address recipient, int16[] tradingFeeRates, uint256[]
 
 Adds liquidity to multiple liquidity bins of the market in a batch.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| recipient | address | The address of the recipient for each liquidity bin. |
-| tradingFeeRates | int16[] | An array of fee rates for each liquidity bin. |
-| amounts | uint256[] | An array of amounts to add as liquidity for each bin. |
-| data | bytes | Additional data for the liquidity callback. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct LpReceipt[] | An array of LP receipts. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | recipient | address | The address of the recipient for each liquidity bin. |
+  | tradingFeeRates | int16[] | An array of fee rates for each liquidity bin. |
+  | amounts | uint256[] | An array of amounts to add as liquidity for each bin. |
+  | data | bytes | Additional data for the liquidity callback. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct LpReceipt[] | An array of LP receipts. |
 
 ### claimLiquidity
 
@@ -197,10 +221,12 @@ function claimLiquidity(uint256 receiptId, bytes data) external
 
 _Claims liquidity from a liquidity receipt._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| receiptId | uint256 | The ID of the liquidity receipt. |
-| data | bytes | Additional data for the liquidity callback. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | receiptId | uint256 | The ID of the liquidity receipt. |
+  | data | bytes | Additional data for the liquidity callback. |
 
 ### claimLiquidityBatch
 
@@ -210,10 +236,12 @@ function claimLiquidityBatch(uint256[] receiptIds, bytes data) external
 
 _Claims liquidity from a liquidity receipt._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| receiptIds | uint256[] | The array of the liquidity receipt IDs. |
-| data | bytes | Additional data for the liquidity callback. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | receiptIds | uint256[] | The array of the liquidity receipt IDs. |
+  | data | bytes | Additional data for the liquidity callback. |
 
 ### removeLiquidity
 
@@ -223,15 +251,19 @@ function removeLiquidity(address recipient, int16 tradingFeeRate, bytes data) ex
 
 _Removes liquidity from the market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| recipient | address | The address to receive the removed liquidity. |
-| tradingFeeRate | int16 | The trading fee rate for the liquidity. |
-| data | bytes | Additional data for the liquidity callback. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct LpReceipt | The liquidity receipt. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | recipient | address | The address to receive the removed liquidity. |
+  | tradingFeeRate | int16 | The trading fee rate for the liquidity. |
+  | data | bytes | Additional data for the liquidity callback. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct LpReceipt | The liquidity receipt. |
 
 ### removeLiquidityBatch
 
@@ -241,16 +273,20 @@ function removeLiquidityBatch(address recipient, int16[] tradingFeeRates, uint25
 
 _Removes liquidity from the market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| recipient | address | The address to receive the removed liquidity. |
-| tradingFeeRates | int16[] | An array of fee rates for each liquidity bin. |
-| clbTokenAmounts | uint256[] | An array of clb token amounts to remove as liquidity for each bin. |
-| data | bytes | Additional data for the liquidity callback. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct LpReceipt[] | The liquidity receipt. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | recipient | address | The address to receive the removed liquidity. |
+  | tradingFeeRates | int16[] | An array of fee rates for each liquidity bin. |
+  | clbTokenAmounts | uint256[] | An array of clb token amounts to remove as liquidity for each bin. |
+  | data | bytes | Additional data for the liquidity callback. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct LpReceipt[] | The liquidity receipt. |
 
 ### withdrawLiquidity
 
@@ -260,10 +296,12 @@ function withdrawLiquidity(uint256 receiptId, bytes data) external
 
 _Withdraws liquidity from a liquidity receipt._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| receiptId | uint256 | The ID of the liquidity receipt. |
-| data | bytes | Additional data for the liquidity callback. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | receiptId | uint256 | The ID of the liquidity receipt. |
+  | data | bytes | Additional data for the liquidity callback. |
 
 ### withdrawLiquidityBatch
 
@@ -273,10 +311,12 @@ function withdrawLiquidityBatch(uint256[] receiptIds, bytes data) external
 
 _Withdraws liquidity from a liquidity receipt._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| receiptIds | uint256[] | The array of the liquidity receipt IDs. |
-| data | bytes | Additional data for the liquidity callback. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | receiptIds | uint256[] | The array of the liquidity receipt IDs. |
+  | data | bytes | Additional data for the liquidity callback. |
 
 ### getBinLiquidity
 
@@ -286,13 +326,17 @@ function getBinLiquidity(int16 tradingFeeRate) external view returns (uint256 am
 
 _Retrieves the total liquidity amount for a specific trading fee rate in the liquidity pool._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| tradingFeeRate | int16 | The trading fee rate for which to retrieve the liquidity amount. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| amount | uint256 | The total liquidity amount for the specified trading fee rate. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | tradingFeeRate | int16 | The trading fee rate for which to retrieve the liquidity amount. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | amount | uint256 | The total liquidity amount for the specified trading fee rate. |
 
 ### getBinFreeLiquidity
 
@@ -302,13 +346,17 @@ function getBinFreeLiquidity(int16 tradingFeeRate) external view returns (uint25
 
 _Retrieves the available (free) liquidity amount for a specific trading fee rate in the liquidity pool._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| tradingFeeRate | int16 | The trading fee rate for which to retrieve the available liquidity amount. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| amount | uint256 | The available (free) liquidity amount for the specified trading fee rate. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | tradingFeeRate | int16 | The trading fee rate for which to retrieve the available liquidity amount. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | amount | uint256 | The available (free) liquidity amount for the specified trading fee rate. |
 
 ### getBinValues
 
@@ -319,13 +367,17 @@ function getBinValues(int16[] tradingFeeRates) external view returns (uint256[] 
 _Retrieves the values of a specific trading fee rate's bins in the liquidity pool.
      The value of a bin represents the total valuation of the liquidity in the bin._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| tradingFeeRates | int16[] | The list of trading fee rate for which to retrieve the bin value. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| values | uint256[] | The value list of the bins for the specified trading fee rates. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | tradingFeeRates | int16[] | The list of trading fee rate for which to retrieve the bin value. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | values | uint256[] | The value list of the bins for the specified trading fee rates. |
 
 ### distributeEarningToBins
 
@@ -335,10 +387,12 @@ function distributeEarningToBins(uint256 earning, uint256 marketBalance) externa
 
 _Distributes earning to the liquidity bins._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| earning | uint256 | The amount of earning to distribute. |
-| marketBalance | uint256 | The balance of the market. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | earning | uint256 | The amount of earning to distribute. |
+  | marketBalance | uint256 | The balance of the market. |
 
 ### getLpReceipt
 
@@ -349,13 +403,17 @@ function getLpReceipt(uint256 receiptId) external view returns (struct LpReceipt
 _Retrieves the liquidity receipt with the given receipt ID.
      It throws NotExistLpReceipt if the specified receipt ID does not exist._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| receiptId | uint256 | The ID of the liquidity receipt to retrieve. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct LpReceipt | receipt The liquidity receipt with the specified ID. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | receiptId | uint256 | The ID of the liquidity receipt to retrieve. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct LpReceipt | receipt The liquidity receipt with the specified ID. |
 
 ### claimableLiquidity
 
@@ -365,14 +423,18 @@ function claimableLiquidity(int16 tradingFeeRate, uint256 oracleVersion) externa
 
 _Retrieves the claimable liquidity information for a specific trading fee rate and oracle version from the associated LiquidityPool._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| tradingFeeRate | int16 | The trading fee rate for which to retrieve the claimable liquidity. |
-| oracleVersion | uint256 | The oracle version for which to retrieve the claimable liquidity. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct IMarketLiquidity.ClaimableLiquidity | claimableLiquidity An instance of ClaimableLiquidity representing the claimable liquidity information. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | tradingFeeRate | int16 | The trading fee rate for which to retrieve the claimable liquidity. |
+  | oracleVersion | uint256 | The oracle version for which to retrieve the claimable liquidity. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct IMarketLiquidity.ClaimableLiquidity | claimableLiquidity An instance of ClaimableLiquidity representing the claimable liquidity information. |
 
 ### liquidityBinStatuses
 
@@ -382,7 +444,9 @@ function liquidityBinStatuses() external view returns (struct IMarketLiquidity.L
 
 _Retrieves the liquidity bin statuses for the caller's liquidity pool._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct IMarketLiquidity.LiquidityBinStatus[] | statuses An array of LiquidityBinStatus representing the liquidity bin statuses. |
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct IMarketLiquidity.LiquidityBinStatus[] | statuses An array of LiquidityBinStatus representing the liquidity bin statuses. |
 

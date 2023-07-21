@@ -16,13 +16,17 @@ function balance(address token) external view returns (uint256)
 
 Returns the balance of the specified token for the account.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the token. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | The balance of the token. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the token. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | The balance of the token. |
 
 ### withdraw
 
@@ -32,10 +36,12 @@ function withdraw(address token, uint256 amount) external
 
 Withdraws the specified amount of tokens from the account.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the token to withdraw. |
-| amount | uint256 | The amount of tokens to withdraw. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the token to withdraw. |
+  | amount | uint256 | The amount of tokens to withdraw. |
 
 ### hasPositionId
 
@@ -45,14 +51,18 @@ function hasPositionId(address marketAddress, uint256 positionId) external view 
 
 Checks if the specified market has the specified position ID.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| marketAddress | address | The address of the market. |
-| positionId | uint256 | The ID of the position. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | bool | A boolean indicating whether the market has the position ID. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | marketAddress | address | The address of the market. |
+  | positionId | uint256 | The ID of the position. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | bool | A boolean indicating whether the market has the position ID. |
 
 ### getPositionIds
 
@@ -62,13 +72,17 @@ function getPositionIds(address marketAddress) external view returns (uint256[])
 
 Retrieves an array of position IDs owned by this account for the specified market.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| marketAddress | address | The address of the market. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256[] | An array of position IDs. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | marketAddress | address | The address of the market. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256[] | An array of position IDs. |
 
 ### openPosition
 
@@ -78,18 +92,22 @@ function openPosition(address marketAddress, int224 qty, uint32 leverage, uint25
 
 Opens a new position in the specified market.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| marketAddress | address | The address of the market. |
-| qty | int224 | The quantity of the position. |
-| leverage | uint32 | The leverage of the position. |
-| takerMargin | uint256 | The margin required for the taker. |
-| makerMargin | uint256 | The margin required for the maker. |
-| maxAllowableTradingFee | uint256 | The maximum allowable trading fee. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct Position | position The opened position. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | marketAddress | address | The address of the market. |
+  | qty | int224 | The quantity of the position. |
+  | leverage | uint32 | The leverage of the position. |
+  | takerMargin | uint256 | The margin required for the taker. |
+  | makerMargin | uint256 | The margin required for the maker. |
+  | maxAllowableTradingFee | uint256 | The maximum allowable trading fee. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct Position | position The opened position. |
 
 ### closePosition
 
@@ -99,10 +117,12 @@ function closePosition(address marketAddress, uint256 positionId) external
 
 Closes the specified position in the specified market.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| marketAddress | address | The address of the market. |
-| positionId | uint256 | The ID of the position to close. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | marketAddress | address | The address of the market. |
+  | positionId | uint256 | The ID of the position to close. |
 
 ### claimPosition
 
@@ -112,8 +132,10 @@ function claimPosition(address marketAddress, uint256 positionId) external
 
 Claims the specified position in the specified market.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| marketAddress | address | The address of the market. |
-| positionId | uint256 | The ID of the position to claim. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | marketAddress | address | The address of the market. |
+  | positionId | uint256 | The ID of the position to claim. |
 

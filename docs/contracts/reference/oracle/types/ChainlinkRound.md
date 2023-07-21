@@ -28,11 +28,15 @@ function phaseId(struct ChainlinkRound self) internal pure returns (uint16)
 
 Computes the chainlink phase ID from a round
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct ChainlinkRound | Round to compute from |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint16 | Chainlink phase ID |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct ChainlinkRound | Round to compute from |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint16 | Chainlink phase ID |
 

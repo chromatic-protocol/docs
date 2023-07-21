@@ -18,8 +18,10 @@ function flashLoanCallback(uint256 fee, bytes data) external
 
 Handles the flash loan callback after a flash loan has been executed.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| fee | uint256 | The fee amount charged for the flash loan. |
-| data | bytes | Additional data associated with the flash loan. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | fee | uint256 | The fee amount charged for the flash loan. |
+  | data | bytes | Additional data associated with the flash loan. |
 

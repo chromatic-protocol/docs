@@ -50,9 +50,11 @@ function decimals() public view returns (uint8)
 
 _Retrieves the number of decimals used for token amounts._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint8 | The number of decimals used for token amounts. |
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint8 | The number of decimals used for token amounts. |
 
 ### totalSupply
 
@@ -62,13 +64,17 @@ function totalSupply(uint256 id) public view virtual returns (uint256)
 
 _Total amount of tokens in with a given id._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| id | uint256 | The token ID for which to retrieve the total supply. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | The total supply of tokens for the given token ID. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | id | uint256 | The token ID for which to retrieve the total supply. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | The total supply of tokens for the given token ID. |
 
 ### totalSupplyBatch
 
@@ -78,13 +84,17 @@ function totalSupplyBatch(uint256[] ids) public view virtual returns (uint256[])
 
 _Total amounts of tokens in with the given ids._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| ids | uint256[] | The token IDs for which to retrieve the total supply. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256[] | The total supples of tokens for the given token IDs. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | ids | uint256[] | The token IDs for which to retrieve the total supply. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256[] | The total supples of tokens for the given token IDs. |
 
 ### mint
 
@@ -94,12 +104,14 @@ function mint(address to, uint256 id, uint256 amount, bytes data) external
 
 _This function can only be called by the Chromatic Market contract._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| to | address | The address to which the minted tokens will be assigned. |
-| id | uint256 | The token ID to mint. |
-| amount | uint256 | The amount of tokens to mint. |
-| data | bytes | Additional data to pass during the minting process. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | to | address | The address to which the minted tokens will be assigned. |
+  | id | uint256 | The token ID to mint. |
+  | amount | uint256 | The amount of tokens to mint. |
+  | data | bytes | Additional data to pass during the minting process. |
 
 ### burn
 
@@ -109,11 +121,13 @@ function burn(address from, uint256 id, uint256 amount) external
 
 _This function can only be called by the Chromatic Market contract._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| from | address | The address from which to burn tokens. |
-| id | uint256 | The token ID to burn. |
-| amount | uint256 | The amount of tokens to burn. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | from | address | The address from which to burn tokens. |
+  | id | uint256 | The token ID to burn. |
+  | amount | uint256 | The amount of tokens to burn. |
 
 ### name
 
@@ -123,13 +137,17 @@ function name(uint256 id) public view returns (string)
 
 _Retrieves the name of a token._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| id | uint256 | The token ID for which to retrieve the name. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | string | The name of the token. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | id | uint256 | The token ID for which to retrieve the name. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | string | The name of the token. |
 
 ### description
 
@@ -139,13 +157,17 @@ function description(uint256 id) public view returns (string)
 
 _Retrieves the description of a token._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| id | uint256 | The token ID for which to retrieve the description. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | string | The description of the token. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | id | uint256 | The token ID for which to retrieve the description. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | string | The description of the token. |
 
 ### image
 
@@ -155,13 +177,17 @@ function image(uint256 id) public view returns (string)
 
 _Retrieves the image URI of a token._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| id | uint256 | The token ID for which to retrieve the image URI. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | string | The image URI of the token. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | id | uint256 | The token ID for which to retrieve the image URI. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | string | The image URI of the token. |
 
 ### uri
 
@@ -182,13 +208,17 @@ function encodeId(int16 tradingFeeRate) internal pure returns (uint256 id)
 
 _Encodes a trading fee rate into a token ID._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| tradingFeeRate | int16 | The trading fee rate to encode. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| id | uint256 | The encoded token ID. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | tradingFeeRate | int16 | The trading fee rate to encode. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | id | uint256 | The encoded token ID. |
 
 ### decodeId
 
@@ -198,11 +228,15 @@ function decodeId(uint256 id) internal pure returns (int16 tradingFeeRate)
 
 _Decodes a token ID into a trading fee rate._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| id | uint256 | The token ID to decode. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| tradingFeeRate | int16 | The decoded trading fee rate. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | id | uint256 | The token ID to decode. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | tradingFeeRate | int16 | The decoded trading fee rate. |
 

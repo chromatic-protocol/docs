@@ -16,9 +16,11 @@ constructor(address _marketFactory) internal
 
 _Initializes the AccountFactory contract with the provided router and market factory addresses._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _marketFactory | address | The address of the market factory contract. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _marketFactory | address | The address of the market factory contract. |
 
 ### createAccount
 
@@ -39,9 +41,11 @@ function getAccount() external view returns (address)
 
 Retrieves the account of the caller.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | address | The account address. |
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | address | The account address. |
 
 ### getAccount
 
@@ -51,11 +55,15 @@ function getAccount(address accountAddress) internal view returns (address)
 
 Retrieves the address of a user's account.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| accountAddress | address | The address of the user's account. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | address | The address of the user's account. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | accountAddress | address | The address of the user's account. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | address | The address of the user's account. |
 

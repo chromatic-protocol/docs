@@ -50,13 +50,17 @@ function entryVersion(struct Position self) internal pure returns (uint256)
 
 Calculates the settle version for the position's entry
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct Position | The memory instance of the `Position` struct |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | utin256 The settle version for the position's entry |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct Position | The memory instance of the `Position` struct |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | utin256 The settle version for the position's entry |
 
 ### exitVersion
 
@@ -66,13 +70,17 @@ function exitVersion(struct Position self) internal pure returns (uint256)
 
 Calculates the settle version for the position's exit
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct Position | The memory instance of the `Position` struct |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | utin256 The settle version for the position's exit |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct Position | The memory instance of the `Position` struct |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | utin256 The settle version for the position's exit |
 
 ### leveragedQty
 
@@ -83,14 +91,18 @@ function leveragedQty(struct Position self, struct LpContext ctx) internal pure 
 Calculates the leveraged quantity of the position
         based on the position's quantity and leverage
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct Position | The memory instance of the `Position` struct |
-| ctx | struct LpContext | The context object for this transaction |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | int256 | uint256 The leveraged quantity |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct Position | The memory instance of the `Position` struct |
+  | ctx | struct LpContext | The context object for this transaction |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | int256 | uint256 The leveraged quantity |
 
 ### entryPrice
 
@@ -103,14 +115,18 @@ Calculates the entry price of the position based on the position's open oracle v
 _It fetches oracle price from `IOracleProvider`
      at the settle version calculated based on the position's open oracle version_
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct Position | The memory instance of the `Position` struct |
-| ctx | struct LpContext | The context object for this transaction |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | UFixed18 | UFixed18 The entry price |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct Position | The memory instance of the `Position` struct |
+  | ctx | struct LpContext | The context object for this transaction |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | UFixed18 | UFixed18 The entry price |
 
 ### exitPrice
 
@@ -123,14 +139,18 @@ Calculates the exit price of the position based on the position's close oracle v
 _It fetches oracle price from `IOracleProvider`
      at the settle version calculated based on the position's close oracle version_
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct Position | The memory instance of the `Position` struct |
-| ctx | struct LpContext | The context object for this transaction |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | UFixed18 | UFixed18 The exit price |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct Position | The memory instance of the `Position` struct |
+  | ctx | struct LpContext | The context object for this transaction |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | UFixed18 | UFixed18 The exit price |
 
 ### pnl
 
@@ -141,14 +161,18 @@ function pnl(struct Position self, struct LpContext ctx) internal view returns (
 Calculates the profit or loss of the position
         based on the close oracle version and the leveraged quantity
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct Position | The memory instance of the `Position` struct |
-| ctx | struct LpContext | The context object for this transaction |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | int256 | int256 The profit or loss |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct Position | The memory instance of the `Position` struct |
+  | ctx | struct LpContext | The context object for this transaction |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | int256 | int256 The profit or loss |
 
 ### makerMargin
 
@@ -161,13 +185,17 @@ Calculates the total margin required for the makers of the position
 _The maker margin is calculated by summing up the amounts of all bin margins
      in the `_binMargins` array_
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct Position | The memory instance of the `Position` struct |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| margin | uint256 | The maker margin |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct Position | The memory instance of the `Position` struct |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | margin | uint256 | The maker margin |
 
 ### tradingFee
 
@@ -180,13 +208,17 @@ Calculates the total trading fee for the position
 _The trading fee is calculated by summing up the trading fees of all bin margins
      in the `_binMargins` array_
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct Position | The memory instance of the `Position` struct |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| fee | uint256 | The trading fee |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct Position | The memory instance of the `Position` struct |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | fee | uint256 | The trading fee |
 
 ### protocolFee
 
@@ -196,13 +228,17 @@ function protocolFee(struct Position self) internal pure returns (uint256 fee)
 
 Calculates the total protocol fee for a position.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct Position | The Position struct representing the position. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| fee | uint256 | The total protocol fee amount. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct Position | The Position struct representing the position. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | fee | uint256 | The total protocol fee amount. |
 
 ### binMargins
 
@@ -213,13 +249,17 @@ function binMargins(struct Position self) internal pure returns (struct BinMargi
 Returns an array of BinMargin instances
         representing the bin margins for the position
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct Position | The memory instance of the `Position` struct |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| margins | struct BinMargin[] | The bin margins for the position |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct Position | The memory instance of the `Position` struct |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | margins | struct BinMargin[] | The bin margins for the position |
 
 ### setBinMargins
 
@@ -229,8 +269,10 @@ function setBinMargins(struct Position self, struct BinMargin[] margins) interna
 
 Sets the `_binMargins` array for the position
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct Position | The memory instance of the `Position` struct |
-| margins | struct BinMargin[] | The bin margins for the position |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct Position | The memory instance of the `Position` struct |
+  | margins | struct BinMargin[] | The bin margins for the position |
 

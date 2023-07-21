@@ -155,11 +155,13 @@ constructor(contract IChromaticMarketFactory _factory, address _automate, addres
 
 _Constructs a new ChromaticVault instance._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _factory | contract IChromaticMarketFactory | The address of the Chromatic Market Factory contract. |
-| _automate | address | The address of the Gelato Automate contract. |
-| opsProxyFactory | address | The address of the OpsProxyFactory contract. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _factory | contract IChromaticMarketFactory | The address of the Chromatic Market Factory contract. |
+  | _automate | address | The address of the Gelato Automate contract. |
+  | opsProxyFactory | address | The address of the OpsProxyFactory contract. |
 
 ### onOpenPosition
 
@@ -171,13 +173,15 @@ Called when a position is opened by a market contract.
 
 _This function can only be called by a market contract._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| settlementToken | address | The settlement token address. |
-| positionId | uint256 | The ID of the opened position. |
-| takerMargin | uint256 | The margin amount provided by the taker for the position. |
-| tradingFee | uint256 | The trading fee associated with the position. |
-| protocolFee | uint256 | The protocol fee associated with the position. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | settlementToken | address | The settlement token address. |
+  | positionId | uint256 | The ID of the opened position. |
+  | takerMargin | uint256 | The margin amount provided by the taker for the position. |
+  | tradingFee | uint256 | The trading fee associated with the position. |
+  | protocolFee | uint256 | The protocol fee associated with the position. |
 
 ### onClaimPosition
 
@@ -189,13 +193,15 @@ Called when a position is claimed by a market contract.
 
 _This function can only be called by a market contract._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| settlementToken | address | The settlement token address. |
-| positionId | uint256 | The ID of the claimed position. |
-| recipient | address | The address that will receive the settlement amount. |
-| takerMargin | uint256 | The margin amount provided by the taker for the position. |
-| settlementAmount | uint256 | The amount to be settled for the position. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | settlementToken | address | The settlement token address. |
+  | positionId | uint256 | The ID of the claimed position. |
+  | recipient | address | The address that will receive the settlement amount. |
+  | takerMargin | uint256 | The margin amount provided by the taker for the position. |
+  | settlementAmount | uint256 | The amount to be settled for the position. |
 
 ### onAddLiquidity
 
@@ -207,10 +213,12 @@ Called when liquidity is added to the vault by a market contract.
 
 _This function can only be called by a market contract._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| settlementToken | address | The settlement token address. |
-| amount | uint256 | The amount of liquidity being added. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | settlementToken | address | The settlement token address. |
+  | amount | uint256 | The amount of liquidity being added. |
 
 ### onSettlePendingLiquidity
 
@@ -222,11 +230,13 @@ Called when pending liquidity is settled in the vault by a market contract.
 
 _This function can only be called by a market contract._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| settlementToken | address | The settlement token address. |
-| pendingDeposit | uint256 | The amount of pending deposits being settled. |
-| pendingWithdrawal | uint256 | The amount of pending withdrawals being settled. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | settlementToken | address | The settlement token address. |
+  | pendingDeposit | uint256 | The amount of pending deposits being settled. |
+  | pendingWithdrawal | uint256 | The amount of pending withdrawals being settled. |
 
 ### onWithdrawLiquidity
 
@@ -238,11 +248,13 @@ Called when liquidity is withdrawn from the vault by a market contract.
 
 _This function can only be called by a market contract._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| settlementToken | address | The settlement token address. |
-| recipient | address | The address that will receive the withdrawn liquidity. |
-| amount | uint256 | The amount of liquidity to be withdrawn. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | settlementToken | address | The settlement token address. |
+  | recipient | address | The address that will receive the withdrawn liquidity. |
+  | amount | uint256 | The amount of liquidity to be withdrawn. |
 
 ### transferKeeperFee
 
@@ -254,16 +266,20 @@ Transfers the keeper fee from the market to the specified keeper.
 
 _This function can only be called by a market contract._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| settlementToken | address | The settlement token address. |
-| keeper | address | The address of the keeper to receive the fee. |
-| fee | uint256 | The amount of the fee to transfer as native token. |
-| margin | uint256 | The margin amount used for the fee payment. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| usedFee | uint256 | The actual settlement token amount of fee used for the transfer. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | settlementToken | address | The settlement token address. |
+  | keeper | address | The address of the keeper to receive the fee. |
+  | fee | uint256 | The amount of the fee to transfer as native token. |
+  | margin | uint256 | The margin amount used for the fee payment. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | usedFee | uint256 | The actual settlement token amount of fee used for the transfer. |
 
 ### _transferKeeperFee
 
@@ -273,16 +289,20 @@ function _transferKeeperFee(address token, address keeper, uint256 fee, uint256 
 
 Internal function to transfer the keeper fee.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the settlement token. |
-| keeper | address | The address of the keeper to receive the fee. |
-| fee | uint256 | The amount of the fee to transfer as native token. |
-| margin | uint256 | The margin amount used for the fee payment. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| usedFee | uint256 | The actual settlement token amount of fee used for the transfer. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token. |
+  | keeper | address | The address of the keeper to receive the fee. |
+  | fee | uint256 | The amount of the fee to transfer as native token. |
+  | margin | uint256 | The margin amount used for the fee payment. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | usedFee | uint256 | The actual settlement token amount of fee used for the transfer. |
 
 ### transferProtocolFee
 
@@ -292,12 +312,14 @@ function transferProtocolFee(address market, address settlementToken, uint256 po
 
 Transfers the protocol fee to the DAO treasury address.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the market contract. |
-| settlementToken | address | The address of the settlement token. |
-| positionId | uint256 | The ID of the position. |
-| amount | uint256 | The amount of the protocol fee to transfer. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the market contract. |
+  | settlementToken | address | The address of the settlement token. |
+  | positionId | uint256 | The ID of the position. |
+  | amount | uint256 | The amount of the protocol fee to transfer. |
 
 ### flashLoan
 
@@ -319,12 +341,14 @@ Requirements:
 
 Emits a `FlashLoan` event with details of the flash loan execution._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the token for the flash loan. |
-| amount | uint256 | The amount of the flash loan. |
-| recipient | address | The address to receive the flash loan. |
-| data | bytes | Additional data for the flash loan. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the token for the flash loan. |
+  | amount | uint256 | The amount of the flash loan. |
+  | recipient | address | The address to receive the flash loan. |
+  | data | bytes | Additional data for the flash loan. |
 
 ### getPendingBinShare
 
@@ -336,15 +360,19 @@ Retrieves the pending share of earnings for a specific bin (subset) of funds in 
 
 _The pending share of earnings is calculated based on the bin balance, maker balances, and market balances._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the market. |
-| settlementToken | address | The settlement token address. |
-| binBalance | uint256 | The balance of funds in the bin. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | The pending share of earnings for the specified bin. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the market. |
+  | settlementToken | address | The settlement token address. |
+  | binBalance | uint256 | The balance of funds in the bin. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | The pending share of earnings for the specified bin. |
 
 ### resolveMakerEarningDistribution
 
@@ -354,14 +382,18 @@ function resolveMakerEarningDistribution(address token) external view returns (b
 
 Resolves the maker earning distribution for a specific token.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the settlement token. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| canExec | bool | True if the distribution can be executed, otherwise False. |
-| execPayload | bytes | The payload for executing the distribution. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | canExec | bool | True if the distribution can be executed, otherwise False. |
+  | execPayload | bytes | The payload for executing the distribution. |
 
 ### distributeMakerEarning
 
@@ -371,9 +403,11 @@ function distributeMakerEarning(address token) external
 
 Distributes the maker earning for a token to the each markets.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the settlement token. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token. |
 
 ### createMakerEarningDistributionTask
 
@@ -386,9 +420,11 @@ Creates a maker earning distribution task for a token.
 _This function can only be called by the Chromatic factory contract or the DAO.
      Throws an `ExistMakerEarningDistributionTask` error if a maker earning distribution task already exists for the token._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the settlement token. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token. |
 
 ### cancelMakerEarningDistributionTask
 
@@ -398,9 +434,11 @@ function cancelMakerEarningDistributionTask(address token) external virtual
 
 Cancels a maker earning distribution task for a token.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the settlement token. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token. |
 
 ### _distributeMakerEarning
 
@@ -410,10 +448,12 @@ function _distributeMakerEarning(address token, uint256 fee) internal
 
 _Internal function to distribute the maker earning for a token to the each markets._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the settlement token. |
-| fee | uint256 | The keeper fee amount. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token. |
+  | fee | uint256 | The keeper fee amount. |
 
 ### resolveMarketEarningDistribution
 
@@ -423,14 +463,18 @@ function resolveMarketEarningDistribution(address market) external view returns 
 
 Resolves the market earning distribution for a market.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the market. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| canExec | bool | True if the distribution can be executed. |
-| execPayload | bytes | The payload for executing the distribution. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the market. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | canExec | bool | True if the distribution can be executed. |
+  | execPayload | bytes | The payload for executing the distribution. |
 
 ### distributeMarketEarning
 
@@ -440,9 +484,11 @@ function distributeMarketEarning(address market) external
 
 Distributes the market earning for a market to the each bins.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the market. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the market. |
 
 ### createMarketEarningDistributionTask
 
@@ -455,9 +501,11 @@ Creates a market earning distribution task for a market.
 _This function can only be called by the Chromatic factory contract or the DAO.
      Throws an `ExistMarketEarningDistributionTask` error if a market earning distribution task already exists for the market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the market. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the market. |
 
 ### cancelMarketEarningDistributionTask
 
@@ -467,9 +515,11 @@ function cancelMarketEarningDistributionTask(address market) external virtual
 
 Cancels a market earning distribution task for a market.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the market. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the market. |
 
 ### _distributeMarketEarning
 
@@ -479,10 +529,12 @@ function _distributeMarketEarning(address market, uint256 fee) internal
 
 _Internal function to distribute the market earning for a market to the each bins._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the market. |
-| fee | uint256 | The fee amount. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the market. |
+  | fee | uint256 | The fee amount. |
 
 ### _resolverModuleArg
 

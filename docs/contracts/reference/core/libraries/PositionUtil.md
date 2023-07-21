@@ -50,13 +50,17 @@ _It adds 1 to the `oracleVersion`
      and ensures that the `oracleVersion` is greater than 0 using a require statement.
      Throws an error with the code `Errors.INVALID_ORACLE_VERSION` if the `oracleVersion` is not valid._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| oracleVersion | uint256 | Input oracle version |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | uint256 Next oracle version to settle |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | oracleVersion | uint256 | Input oracle version |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | uint256 Next oracle version to settle |
 
 ### settlePrice
 
@@ -70,14 +74,18 @@ _It calls another overloaded `settlePrice` function
      with an additional `OracleVersion` parameter,
      passing the `currentVersion` obtained from the `provider`_
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| provider | contract IOracleProvider | The oracle provider |
-| oracleVersion | uint256 | The oracle version of position |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | UFixed18 | UFixed18 The calculated price to settle |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | provider | contract IOracleProvider | The oracle provider |
+  | oracleVersion | uint256 | The oracle version of position |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | UFixed18 | UFixed18 The calculated price to settle |
 
 ### settlePrice
 
@@ -94,15 +102,19 @@ _It calculates the price by considering the `settleVersion`
      It retrieves the corresponding `OracleVersion` using `atVersion` from the `IOracleProvider`,
      and then calls `oraclePrice` to obtain the price._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| provider | contract IOracleProvider | The oracle provider |
-| oracleVersion | uint256 | The oracle version of position |
-| currentVersion | struct IOracleProvider.OracleVersion | The current oracle version |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | UFixed18 | UFixed18 The calculated entry price to settle |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | provider | contract IOracleProvider | The oracle provider |
+  | oracleVersion | uint256 | The oracle version of position |
+  | currentVersion | struct IOracleProvider.OracleVersion | The current oracle version |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | UFixed18 | UFixed18 The calculated entry price to settle |
 
 ### oraclePrice
 
@@ -114,13 +126,17 @@ Extracts the price value from an `OracleVersion` struct
 
 _If the price is less than 0, it returns 0_
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| oracleVersion | struct IOracleProvider.OracleVersion | The memory instance of `OracleVersion` struct |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | UFixed18 | UFixed18 The price value of `oracleVersion` |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | oracleVersion | struct IOracleProvider.OracleVersion | The memory instance of `OracleVersion` struct |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | UFixed18 | UFixed18 The price value of `oracleVersion` |
 
 ### pnl
 
@@ -140,15 +156,19 @@ _It first calculates the price difference (`delta`) between the exit price and t
      Finally, if `delta` is negative, indicating a loss,
      the absolute PnL is negated to represent a negative value._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| leveragedQty | int256 | The leveraged quantity of the position |
-| _entryPrice | UFixed18 | The entry price of the position |
-| _exitPrice | UFixed18 | The exit price of the position |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | int256 | int256 The profit or loss |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | leveragedQty | int256 | The leveraged quantity of the position |
+  | _entryPrice | UFixed18 | The entry price of the position |
+  | _exitPrice | UFixed18 | The exit price of the position |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | int256 | int256 The profit or loss |
 
 ### checkAddPositionQty
 
@@ -162,10 +182,12 @@ _It ensures that the sign of the current quantity of the bin's position
      and the added quantity are same or zero.
      If the condition is not met, it triggers an error with the message `Errors.INVALID_POSITION_QTY`._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| currentQty | int256 | The current quantity of the bin's pending position |
-| addedQty | int256 | The position quantity added |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | currentQty | int256 | The current quantity of the bin's pending position |
+  | addedQty | int256 | The position quantity added |
 
 ### checkRemovePositionQty
 
@@ -180,10 +202,12 @@ _It ensures that the sign of the current quantity of the bin's position
      and the absolute removed quantity is not greater than the absolute current quantity.
      If the condition is not met, it triggers an error with the message `Errors.INVALID_POSITION_QTY`._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| currentQty | int256 | The current quantity of the bin's position |
-| removeQty | int256 | The position quantity removed |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | currentQty | int256 | The current quantity of the bin's position |
+  | removeQty | int256 | The position quantity removed |
 
 ### transactionAmount
 
@@ -193,12 +217,16 @@ function transactionAmount(int256 leveragedQty, UFixed18 price) internal pure re
 
 Calculates the transaction amount based on the leveraged quantity and price
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| leveragedQty | int256 | The leveraged quantity of the position |
-| price | UFixed18 | The price of the position |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | uint256 The transaction amount |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | leveragedQty | int256 | The leveraged quantity of the position |
+  | price | UFixed18 | The price of the position |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | uint256 The transaction amount |
 

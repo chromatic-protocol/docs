@@ -22,10 +22,12 @@ function approveToRouter(address token, bool approve) external
 
 Approves or revokes approval to the Uniswap router for a given token.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the token. |
-| approve | bool | A boolean indicating whether to approve or revoke approval. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the token. |
+  | approve | bool | A boolean indicating whether to approve or revoke approval. |
 
 ### payKeeperFee
 
@@ -35,13 +37,17 @@ function payKeeperFee(address tokenIn, uint256 amountOut, address keeperAddress)
 
 Pays the keeper fee using Uniswap swaps.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| tokenIn | address | The address of the token being swapped. |
-| amountOut | uint256 | The desired amount of output tokens. |
-| keeperAddress | address | The address of the keeper to receive the fee. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| amountIn | uint256 | The actual amount of input tokens used for the swap. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | tokenIn | address | The address of the token being swapped. |
+  | amountOut | uint256 | The desired amount of output tokens. |
+  | keeperAddress | address | The address of the keeper to receive the fee. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | amountIn | uint256 | The actual amount of input tokens used for the swap. |
 

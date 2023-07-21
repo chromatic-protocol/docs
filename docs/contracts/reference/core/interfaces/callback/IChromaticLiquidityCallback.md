@@ -18,11 +18,13 @@ function addLiquidityCallback(address settlementToken, address vault, bytes data
 
 Handles the callback after adding liquidity to the Chromatic protocol.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| settlementToken | address | The address of the settlement token used for adding liquidity. |
-| vault | address | The address of the vault where the liquidity is added. |
-| data | bytes | Additional data associated with the liquidity addition. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | settlementToken | address | The address of the settlement token used for adding liquidity. |
+  | vault | address | The address of the vault where the liquidity is added. |
+  | data | bytes | Additional data associated with the liquidity addition. |
 
 ### addLiquidityBatchCallback
 
@@ -32,11 +34,13 @@ function addLiquidityBatchCallback(address settlementToken, address vault, bytes
 
 Handles the callback after adding liquidity to the Chromatic protocol.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| settlementToken | address | The address of the settlement token used for adding liquidity. |
-| vault | address | The address of the vault where the liquidity is added. |
-| data | bytes | Additional data associated with the liquidity addition. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | settlementToken | address | The address of the settlement token used for adding liquidity. |
+  | vault | address | The address of the vault where the liquidity is added. |
+  | data | bytes | Additional data associated with the liquidity addition. |
 
 ### claimLiquidityCallback
 
@@ -46,10 +50,12 @@ function claimLiquidityCallback(uint256 receiptId, bytes data) external
 
 Handles the callback after claiming liquidity from the Chromatic protocol.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| receiptId | uint256 | The ID of the liquidity claim receipt. |
-| data | bytes | Additional data associated with the liquidity claim. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | receiptId | uint256 | The ID of the liquidity claim receipt. |
+  | data | bytes | Additional data associated with the liquidity claim. |
 
 ### claimLiquidityBatchCallback
 
@@ -59,10 +65,12 @@ function claimLiquidityBatchCallback(uint256[] receiptIds, bytes data) external
 
 Handles the callback after claiming liquidity from the Chromatic protocol.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| receiptIds | uint256[] | The array of the liquidity receipt IDs. |
-| data | bytes | Additional data associated with the liquidity claim. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | receiptIds | uint256[] | The array of the liquidity receipt IDs. |
+  | data | bytes | Additional data associated with the liquidity claim. |
 
 ### removeLiquidityCallback
 
@@ -72,11 +80,13 @@ function removeLiquidityCallback(address clbToken, uint256 clbTokenId, bytes dat
 
 Handles the callback after removing liquidity from the Chromatic protocol.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| clbToken | address | The address of the Chromatic liquidity token. |
-| clbTokenId | uint256 | The ID of the Chromatic liquidity token to be removed. |
-| data | bytes | Additional data associated with the liquidity removal. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | clbToken | address | The address of the Chromatic liquidity token. |
+  | clbTokenId | uint256 | The ID of the Chromatic liquidity token to be removed. |
+  | data | bytes | Additional data associated with the liquidity removal. |
 
 ### removeLiquidityBatchCallback
 
@@ -86,11 +96,13 @@ function removeLiquidityBatchCallback(address clbToken, uint256[] clbTokenIds, b
 
 Handles the callback after removing liquidity from the Chromatic protocol.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| clbToken | address | The address of the Chromatic liquidity token. |
-| clbTokenIds | uint256[] | The array of the Chromatic liquidity token IDs to be removed. |
-| data | bytes | Additional data associated with the liquidity removal. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | clbToken | address | The address of the Chromatic liquidity token. |
+  | clbTokenIds | uint256[] | The array of the Chromatic liquidity token IDs to be removed. |
+  | data | bytes | Additional data associated with the liquidity removal. |
 
 ### withdrawLiquidityCallback
 
@@ -100,10 +112,12 @@ function withdrawLiquidityCallback(uint256 receiptId, bytes data) external
 
 Handles the callback after withdrawing liquidity from the Chromatic protocol.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| receiptId | uint256 | The ID of the liquidity withdrawal receipt. |
-| data | bytes | Additional data associated with the liquidity withdrawal. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | receiptId | uint256 | The ID of the liquidity withdrawal receipt. |
+  | data | bytes | Additional data associated with the liquidity withdrawal. |
 
 ### withdrawLiquidityBatchCallback
 
@@ -113,8 +127,10 @@ function withdrawLiquidityBatchCallback(uint256[] receiptIds, bytes data) extern
 
 Handles the callback after withdrawing liquidity from the Chromatic protocol.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| receiptIds | uint256[] | The array of the liquidity receipt IDs. |
-| data | bytes | Additional data associated with the liquidity withdrawal. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | receiptIds | uint256[] | The array of the liquidity receipt IDs. |
+  | data | bytes | Additional data associated with the liquidity withdrawal. |
 

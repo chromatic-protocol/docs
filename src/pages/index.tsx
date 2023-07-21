@@ -119,7 +119,7 @@ function StartingGuide() {
       </article>
       <article className="mt-20 article">
         <div className="wrapper">
-          <h2 className="mb-10 title primary-lighter">Developement</h2>
+          <h2 className="mb-10 title primary-lighter">Development</h2>
           <div className="flex flex-wrap items-stretch gap-5 lg:flex-nowrap">
             <div className="box lg:min-h-[420px] border-lighter">
               <div>

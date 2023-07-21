@@ -17,6 +17,8 @@ struct BinClosedPosition {
 }
 ```
 
+_Represents a closed position within an LiquidityBin._
+
 ## _ClaimWaitingPosition
 
 ```solidity
@@ -27,6 +29,9 @@ struct _ClaimWaitingPosition {
   uint256 totalTakerMargin;
 }
 ```
+
+_Represents the accumulated values of the waiting positions to be claimed
+     for a specific version within BinClosedPosition._
 
 ## BinClosedPositionLib
 

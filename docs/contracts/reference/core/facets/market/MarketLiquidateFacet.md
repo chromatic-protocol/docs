@@ -34,11 +34,13 @@ _This function can only be called by the chromatic liquidator contract.
      Throws a `NotExistPosition` error if the requested position does not exist.
      Throws a `NotClaimablePosition` error if the position's close version is not in the past, indicating that it is not claimable._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| positionId | uint256 | The ID of the position to claim. |
-| keeper | address | The address of the keeper claiming the position. |
-| keeperFee | uint256 | The native token amount of the keeper's fee. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | positionId | uint256 | The ID of the position to claim. |
+  | keeper | address | The address of the keeper claiming the position. |
+  | keeperFee | uint256 | The native token amount of the keeper's fee. |
 
 ### liquidate
 
@@ -52,11 +54,13 @@ _This function can only be called by the chromatic liquidator contract.
      Throws a `NotExistPosition` error if the requested position does not exist.
      Throws an `AlreadyClosedPosition` error if the position is already closed._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| positionId | uint256 | The ID of the position to liquidate. |
-| keeper | address | The address of the keeper performing the liquidation. |
-| keeperFee | uint256 | The native token amount of the keeper's fee. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | positionId | uint256 | The ID of the position to liquidate. |
+  | keeper | address | The address of the keeper performing the liquidation. |
+  | keeperFee | uint256 | The native token amount of the keeper's fee. |
 
 ### checkLiquidation
 
@@ -66,13 +70,17 @@ function checkLiquidation(uint256 positionId) external view returns (bool _liqui
 
 _Checks if a position is eligible for liquidation._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| positionId | uint256 | The ID of the position to check. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _liquidate | bool | A boolean indicating if the position is eligible for liquidation. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | positionId | uint256 | The ID of the position to check. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _liquidate | bool | A boolean indicating if the position is eligible for liquidation. |
 
 ### _checkLiquidation
 
@@ -82,15 +90,19 @@ function _checkLiquidation(struct LpContext ctx, struct Position position) inter
 
 _Internal function for checking if a position should be liquidated._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| ctx | struct LpContext | The LpContext containing the current oracle version and synchronization information. |
-| position | struct Position | The Position object representing the position to be checked. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _liquidate | bool | A boolean indicating whether the position should be liquidated. |
-| _pnl | int256 | The profit or loss amount of the position. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | ctx | struct LpContext | The LpContext containing the current oracle version and synchronization information. |
+  | position | struct Position | The Position object representing the position to be checked. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _liquidate | bool | A boolean indicating whether the position should be liquidated. |
+  | _pnl | int256 | The profit or loss amount of the position. |
 
 ### checkClaimPosition
 
@@ -100,11 +112,15 @@ function checkClaimPosition(uint256 positionId) external view returns (bool)
 
 _Checks if a position is eligible for claim._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| positionId | uint256 | The ID of the position to check. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | bool | A boolean indicating if the position is eligible for claim. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | positionId | uint256 | The ID of the position to check. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | bool | A boolean indicating if the position is eligible for claim. |
 

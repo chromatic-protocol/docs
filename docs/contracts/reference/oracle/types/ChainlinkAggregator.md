@@ -18,13 +18,17 @@ function decimals(ChainlinkAggregator self) internal view returns (uint8)
 
 Returns the decimal amount for a specific feed
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | ChainlinkAggregator | Chainlink Feed Aggregator to operate on |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint8 | Decimal amount |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | ChainlinkAggregator | Chainlink Feed Aggregator to operate on |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint8 | Decimal amount |
 
 ### getLatestRound
 
@@ -34,13 +38,17 @@ function getLatestRound(ChainlinkAggregator self) internal view returns (struct 
 
 Returns the latest round data for a specific feed
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | ChainlinkAggregator | Chainlink Feed Aggregator to operate on |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct ChainlinkRound | Latest round data |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | ChainlinkAggregator | Chainlink Feed Aggregator to operate on |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct ChainlinkRound | Latest round data |
 
 ### getRound
 
@@ -50,14 +58,18 @@ function getRound(ChainlinkAggregator self, uint256 roundId) internal view retur
 
 Returns a specific round's data for a specific feed
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | ChainlinkAggregator | Chainlink Feed Aggregator to operate on |
-| roundId | uint256 | The specific round to fetch data for |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct ChainlinkRound | Specific round's data |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | ChainlinkAggregator | Chainlink Feed Aggregator to operate on |
+  | roundId | uint256 | The specific round to fetch data for |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct ChainlinkRound | Specific round's data |
 
 ### getPhaseSwitchoverData
 
@@ -67,15 +79,19 @@ function getPhaseSwitchoverData(ChainlinkAggregator self, uint256 startingRoundI
 
 Returns the round count and next phase starting round for the lastSyncedRound phase
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | ChainlinkAggregator | Chainlink Feed Aggregator to operate on |
-| startingRoundId | uint256 | starting roundId for the aggregator proxy |
-| lastSyncedRoundId | uint256 | last synced round ID for the proxy |
-| latestRound | struct ChainlinkRound | latest round from the proxy |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| roundCount | uint256 | The number of rounds in the phase |
-| nextPhaseStartingRoundId | uint256 | The starting round ID for the next phase |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | ChainlinkAggregator | Chainlink Feed Aggregator to operate on |
+  | startingRoundId | uint256 | starting roundId for the aggregator proxy |
+  | lastSyncedRoundId | uint256 | last synced round ID for the proxy |
+  | latestRound | struct ChainlinkRound | latest round from the proxy |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | roundCount | uint256 | The number of rounds in the phase |
+  | nextPhaseStartingRoundId | uint256 | The starting round ID for the next phase |
 

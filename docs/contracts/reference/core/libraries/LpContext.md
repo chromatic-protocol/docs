@@ -44,9 +44,11 @@ function syncOracleVersion(struct LpContext self) internal
 
 Syncs the oracle version used by the market.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct LpContext | The memory instance of `LpContext` struct |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LpContext | The memory instance of `LpContext` struct |
 
 ### currentOracleVersion
 
@@ -61,13 +63,17 @@ _If the `_currentVersionCache` has been initialized, then returns it.
      to fetch the current version and stores it in the cache,
      and then returns the current version._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct LpContext | The memory instance of `LpContext` struct |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct IOracleProvider.OracleVersion | OracleVersion The current oracle version |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LpContext | The memory instance of `LpContext` struct |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct IOracleProvider.OracleVersion | OracleVersion The current oracle version |
 
 ### oracleVersionAt
 
@@ -81,14 +87,18 @@ _If the `_currentVersionCache` matches the requested version, then returns it.
      Otherwise, it calls the `atVersion` function on the `oracleProvider` of the market
      to fetch the desired version._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct LpContext | The memory instance of `LpContext` struct |
-| version | uint256 | The requested version number |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct IOracleProvider.OracleVersion | OracleVersion The oracle version at the requested version number |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LpContext | The memory instance of `LpContext` struct |
+  | version | uint256 | The requested version number |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct IOracleProvider.OracleVersion | OracleVersion The oracle version at the requested version number |
 
 ### calculateInterest
 
@@ -101,16 +111,20 @@ Calculates the interest accrued for a given amount of settlement tokens
 
 _This function internally calls the `calculateInterest` function on the `interestCalculator` contract._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct LpContext | The memory instance of the `LpContext` struct. |
-| amount | uint256 | The amount of settlement tokens for which the interest needs to be calculated. |
-| from | uint256 | The starting timestamp of the time range (inclusive). |
-| to | uint256 | The ending timestamp of the time range (exclusive). |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | The accrued interest as a `uint256` value. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LpContext | The memory instance of the `LpContext` struct. |
+  | amount | uint256 | The amount of settlement tokens for which the interest needs to be calculated. |
+  | from | uint256 | The starting timestamp of the time range (inclusive). |
+  | to | uint256 | The ending timestamp of the time range (exclusive). |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | The accrued interest as a `uint256` value. |
 
 ### isPastVersion
 
@@ -120,12 +134,16 @@ function isPastVersion(struct LpContext self, uint256 oracleVersion) internal vi
 
 Checks if an oracle version is in the past.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct LpContext | The memory instance of the `LpContext` struct. |
-| oracleVersion | uint256 | The oracle version to check. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | bool | A boolean value indicating whether the oracle version is in the past. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LpContext | The memory instance of the `LpContext` struct. |
+  | oracleVersion | uint256 | The oracle version to check. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | bool | A boolean value indicating whether the oracle version is in the past. |
 

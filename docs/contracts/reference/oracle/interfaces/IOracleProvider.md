@@ -47,9 +47,11 @@ _`sync` is expected to be called soon after a phase update occurs in the underly
      Reverts if there is more than 1 phase to update in a single sync because we currently cannot
      determine the startingRoundId for the intermediary phase._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct IOracleProvider.OracleVersion | The current oracle version after sync |
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct IOracleProvider.OracleVersion | The current oracle version after sync |
 
 ### currentVersion
 
@@ -59,9 +61,11 @@ function currentVersion() external view returns (struct IOracleProvider.OracleVe
 
 Returns the current oracle version
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct IOracleProvider.OracleVersion | oracleVersion Current oracle version |
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct IOracleProvider.OracleVersion | oracleVersion Current oracle version |
 
 ### atVersion
 
@@ -71,13 +75,17 @@ function atVersion(uint256 version) external view returns (struct IOracleProvide
 
 Returns the current oracle version
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| version | uint256 | The version of which to lookup |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct IOracleProvider.OracleVersion | oracleVersion Oracle version at version `version` |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | version | uint256 | The version of which to lookup |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct IOracleProvider.OracleVersion | oracleVersion Oracle version at version `version` |
 
 ### description
 
@@ -87,7 +95,9 @@ function description() external view returns (string)
 
 Retrieves the description of the Oracle Provider.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | string | A string representing the description of the Oracle Provider. |
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | string | A string representing the description of the Oracle Provider. |
 

@@ -40,10 +40,12 @@ function settleAccruedInterest(struct BinClosingPosition self, struct LpContext 
 
 Settles the accumulated interest of the closing position.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BinClosingPosition | The BinClosingPosition storage. |
-| ctx | struct LpContext | The LpContext. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct BinClosingPosition | The BinClosingPosition storage. |
+  | ctx | struct LpContext | The LpContext. |
 
 ### onClosePosition
 
@@ -55,11 +57,13 @@ Handles the closing of a position.
 
 _Throws an error with the code `Errors.INVALID_ORACLE_VERSION` if the `closeVersion` is not valid._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BinClosingPosition | The BinClosingPosition storage. |
-| ctx | struct LpContext | The LpContext. |
-| param | struct PositionParam | The position parameters. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct BinClosingPosition | The BinClosingPosition storage. |
+  | ctx | struct LpContext | The LpContext. |
+  | param | struct PositionParam | The position parameters. |
 
 ### onClaimPosition
 
@@ -71,11 +75,13 @@ Handles the claiming of a position.
 
 _Throws an error with the code `Errors.INVALID_ORACLE_VERSION` if the `closeVersion` is not valid._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BinClosingPosition | The BinPendingPosition storage. |
-| ctx | struct LpContext | The LpContext. |
-| param | struct PositionParam | The position parameters. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct BinClosingPosition | The BinPendingPosition storage. |
+  | ctx | struct LpContext | The LpContext. |
+  | param | struct PositionParam | The position parameters. |
 
 ### currentInterest
 
@@ -85,12 +91,16 @@ function currentInterest(struct BinClosingPosition self, struct LpContext ctx) i
 
 Calculates the current accrued interest of the closing position.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BinClosingPosition | The BinClosingPosition storage. |
-| ctx | struct LpContext | The LpContext. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | uint256 The current accrued interest. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct BinClosingPosition | The BinClosingPosition storage. |
+  | ctx | struct LpContext | The LpContext. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | uint256 The current accrued interest. |
 

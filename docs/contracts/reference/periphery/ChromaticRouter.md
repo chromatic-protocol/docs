@@ -150,9 +150,11 @@ constructor(address _marketFactory) public
 
 _Initializes the ChromaticRouter contract._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _marketFactory | address | The address of the ChromaticMarketFactory contract. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _marketFactory | address | The address of the ChromaticMarketFactory contract. |
 
 ### addLiquidityCallback
 
@@ -162,11 +164,13 @@ function addLiquidityCallback(address settlementToken, address vault, bytes data
 
 Handles the callback after adding liquidity to the Chromatic protocol.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| settlementToken | address | The address of the settlement token used for adding liquidity. |
-| vault | address | The address of the vault where the liquidity is added. |
-| data | bytes | Additional data associated with the liquidity addition. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | settlementToken | address | The address of the settlement token used for adding liquidity. |
+  | vault | address | The address of the vault where the liquidity is added. |
+  | data | bytes | Additional data associated with the liquidity addition. |
 
 ### addLiquidityBatchCallback
 
@@ -176,11 +180,13 @@ function addLiquidityBatchCallback(address settlementToken, address vault, bytes
 
 Handles the callback after adding liquidity to the Chromatic protocol.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| settlementToken | address | The address of the settlement token used for adding liquidity. |
-| vault | address | The address of the vault where the liquidity is added. |
-| data | bytes | Additional data associated with the liquidity addition. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | settlementToken | address | The address of the settlement token used for adding liquidity. |
+  | vault | address | The address of the vault where the liquidity is added. |
+  | data | bytes | Additional data associated with the liquidity addition. |
 
 ### claimLiquidityCallback
 
@@ -190,10 +196,12 @@ function claimLiquidityCallback(uint256 receiptId, bytes data) external
 
 Handles the callback after claiming liquidity from the Chromatic protocol.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| receiptId | uint256 | The ID of the liquidity claim receipt. |
-| data | bytes | Additional data associated with the liquidity claim. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | receiptId | uint256 | The ID of the liquidity claim receipt. |
+  | data | bytes | Additional data associated with the liquidity claim. |
 
 ### claimLiquidityBatchCallback
 
@@ -203,10 +211,12 @@ function claimLiquidityBatchCallback(uint256[] _receiptIds, bytes data) external
 
 Handles the callback after claiming liquidity from the Chromatic protocol.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _receiptIds | uint256[] |  |
-| data | bytes | Additional data associated with the liquidity claim. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _receiptIds | uint256[] |  |
+  | data | bytes | Additional data associated with the liquidity claim. |
 
 ### removeLiquidityCallback
 
@@ -216,11 +226,13 @@ function removeLiquidityCallback(address clbToken, uint256 clbTokenId, bytes dat
 
 Handles the callback after removing liquidity from the Chromatic protocol.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| clbToken | address | The address of the Chromatic liquidity token. |
-| clbTokenId | uint256 | The ID of the Chromatic liquidity token to be removed. |
-| data | bytes | Additional data associated with the liquidity removal. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | clbToken | address | The address of the Chromatic liquidity token. |
+  | clbTokenId | uint256 | The ID of the Chromatic liquidity token to be removed. |
+  | data | bytes | Additional data associated with the liquidity removal. |
 
 ### removeLiquidityBatchCallback
 
@@ -230,11 +242,13 @@ function removeLiquidityBatchCallback(address clbToken, uint256[] clbTokenIds, b
 
 Handles the callback after removing liquidity from the Chromatic protocol.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| clbToken | address | The address of the Chromatic liquidity token. |
-| clbTokenIds | uint256[] | The array of the Chromatic liquidity token IDs to be removed. |
-| data | bytes | Additional data associated with the liquidity removal. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | clbToken | address | The address of the Chromatic liquidity token. |
+  | clbTokenIds | uint256[] | The array of the Chromatic liquidity token IDs to be removed. |
+  | data | bytes | Additional data associated with the liquidity removal. |
 
 ### withdrawLiquidityCallback
 
@@ -244,10 +258,12 @@ function withdrawLiquidityCallback(uint256 receiptId, bytes data) external
 
 Handles the callback after withdrawing liquidity from the Chromatic protocol.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| receiptId | uint256 | The ID of the liquidity withdrawal receipt. |
-| data | bytes | Additional data associated with the liquidity withdrawal. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | receiptId | uint256 | The ID of the liquidity withdrawal receipt. |
+  | data | bytes | Additional data associated with the liquidity withdrawal. |
 
 ### withdrawLiquidityBatchCallback
 
@@ -257,10 +273,12 @@ function withdrawLiquidityBatchCallback(uint256[] _receiptIds, bytes data) exter
 
 Handles the callback after withdrawing liquidity from the Chromatic protocol.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _receiptIds | uint256[] |  |
-| data | bytes | Additional data associated with the liquidity withdrawal. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _receiptIds | uint256[] |  |
+  | data | bytes | Additional data associated with the liquidity withdrawal. |
 
 ### openPosition
 
@@ -270,18 +288,22 @@ function openPosition(address market, int224 qty, uint32 leverage, uint256 taker
 
 _Opens a new position in a ChromaticMarket contract._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the ChromaticMarket contract. |
-| qty | int224 | The quantity of the position. |
-| leverage | uint32 | The leverage of the position. |
-| takerMargin | uint256 | The margin amount for the taker. |
-| makerMargin | uint256 | The margin amount for the maker. |
-| maxAllowableTradingFee | uint256 | The maximum allowable trading fee. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct Position | position The new position. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the ChromaticMarket contract. |
+  | qty | int224 | The quantity of the position. |
+  | leverage | uint32 | The leverage of the position. |
+  | takerMargin | uint256 | The margin amount for the taker. |
+  | makerMargin | uint256 | The margin amount for the maker. |
+  | maxAllowableTradingFee | uint256 | The maximum allowable trading fee. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct Position | position The new position. |
 
 ### closePosition
 
@@ -291,10 +313,12 @@ function closePosition(address market, uint256 positionId) external
 
 Closes a position in a ChromaticMarket contract.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the ChromaticMarket contract. |
-| positionId | uint256 | The ID of the position to close. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the ChromaticMarket contract. |
+  | positionId | uint256 | The ID of the position to close. |
 
 ### claimPosition
 
@@ -304,10 +328,12 @@ function claimPosition(address market, uint256 positionId) external
 
 Claims a position from a ChromaticMarket contract.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the ChromaticMarket contract. |
-| positionId | uint256 | The ID of the position to claim. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the ChromaticMarket contract. |
+  | positionId | uint256 | The ID of the position to claim. |
 
 ### addLiquidity
 
@@ -317,16 +343,20 @@ function addLiquidity(address market, int16 feeRate, uint256 amount, address rec
 
 Adds liquidity to a ChromaticMarket contract.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the ChromaticMarket contract. |
-| feeRate | int16 | The fee rate of the liquidity bin. |
-| amount | uint256 | The amount to add as liquidity. |
-| recipient | address | The recipient address. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| receipt | struct LpReceipt | receipt The LP receipt. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the ChromaticMarket contract. |
+  | feeRate | int16 | The fee rate of the liquidity bin. |
+  | amount | uint256 | The amount to add as liquidity. |
+  | recipient | address | The recipient address. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | receipt | struct LpReceipt | receipt The LP receipt. |
 
 ### claimLiquidity
 
@@ -339,10 +369,12 @@ Claims liquidity from a ChromaticMarket contract.
 _This function allows the liquidity provider to claim their liquidity by calling the `claimLiquidity` function in the specified market contract.
      Throws a `NotExistLpReceipt` error if the specified receipt ID does not exist for the liquidity provider in the given market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the ChromaticMarket contract. |
-| receiptId | uint256 | The ID of the LP receipt. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the ChromaticMarket contract. |
+  | receiptId | uint256 | The ID of the LP receipt. |
 
 ### removeLiquidity
 
@@ -352,16 +384,20 @@ function removeLiquidity(address market, int16 feeRate, uint256 clbTokenAmount, 
 
 Removes liquidity from a ChromaticMarket contract.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the ChromaticMarket contract. |
-| feeRate | int16 | The fee rate of the liquidity bin. |
-| clbTokenAmount | uint256 | The amount of CLB tokens to remove as liquidity. |
-| recipient | address | The recipient address. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| receipt | struct LpReceipt | receipt The LP receipt. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the ChromaticMarket contract. |
+  | feeRate | int16 | The fee rate of the liquidity bin. |
+  | clbTokenAmount | uint256 | The amount of CLB tokens to remove as liquidity. |
+  | recipient | address | The recipient address. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | receipt | struct LpReceipt | receipt The LP receipt. |
 
 ### withdrawLiquidity
 
@@ -374,10 +410,12 @@ Withdraws liquidity from a ChromaticMarket contract.
 _This function allows the liquidity provider to withdraw their liquidity by calling the `withdrawLiquidity` function in the specified market contract.
      Throws a `NotExistLpReceipt` error if the specified receipt ID does not exist for the liquidity provider in the given market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the ChromaticMarket contract. |
-| receiptId | uint256 | The ID of the LP receipt. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the ChromaticMarket contract. |
+  | receiptId | uint256 | The ID of the LP receipt. |
 
 ### _getAccount
 
@@ -387,13 +425,17 @@ function _getAccount(address owner) internal view returns (contract ChromaticAcc
 
 _Retrieves the account of the specified owner._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| owner | address | The owner of the account. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | contract ChromaticAccount | The account address. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | owner | address | The owner of the account. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | contract ChromaticAccount | The account address. |
 
 ### getLpReceiptIds
 
@@ -403,13 +445,17 @@ function getLpReceiptIds(address market) external view returns (uint256[])
 
 Retrieves the LP receipt IDs of the caller for the specified market.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the ChromaticMarket contract. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256[] | An array of LP receipt IDs. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the ChromaticMarket contract. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256[] | An array of LP receipt IDs. |
 
 ### getLpReceiptIds
 
@@ -419,14 +465,18 @@ function getLpReceiptIds(address market, address owner) public view returns (uin
 
 Get the LP receipt IDs associated with a specific market and owner.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the ChromaticMarket contract. |
-| owner | address | The address of the owner. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256[] | An array of LP receipt IDs. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the ChromaticMarket contract. |
+  | owner | address | The address of the owner. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256[] | An array of LP receipt IDs. |
 
 ### addLiquidityBatch
 
@@ -436,16 +486,20 @@ function addLiquidityBatch(address market, address recipient, int16[] feeRates, 
 
 Adds liquidity to multiple liquidity bins of ChromaticMarket contract in a batch.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the ChromaticMarket contract. |
-| recipient | address | The address of the recipient for each liquidity bin. |
-| feeRates | int16[] | An array of fee rates for each liquidity bin. |
-| amounts | uint256[] | An array of amounts to add as liquidity for each bin. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| lpReceipts | struct LpReceipt[] | An array of LP receipts. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the ChromaticMarket contract. |
+  | recipient | address | The address of the recipient for each liquidity bin. |
+  | feeRates | int16[] | An array of fee rates for each liquidity bin. |
+  | amounts | uint256[] | An array of amounts to add as liquidity for each bin. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | lpReceipts | struct LpReceipt[] | An array of LP receipts. |
 
 ### claimLiquidityBatch
 
@@ -455,10 +509,12 @@ function claimLiquidityBatch(address market, uint256[] _receiptIds) external
 
 Claims liquidity from multiple ChromaticMarket contracts in a batch.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the ChromaticMarket contract. |
-| _receiptIds | uint256[] |  |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the ChromaticMarket contract. |
+  | _receiptIds | uint256[] |  |
 
 ### removeLiquidityBatch
 
@@ -468,16 +524,20 @@ function removeLiquidityBatch(address market, address recipient, int16[] feeRate
 
 Removes liquidity from multiple ChromaticMarket contracts in a batch.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the ChromaticMarket contract. |
-| recipient | address | The address of the recipient for each liquidity bin. |
-| feeRates | int16[] | An array of fee rates for each liquidity bin. |
-| clbTokenAmounts | uint256[] | An array of CLB token amounts to remove as liquidity for each bin. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| lpReceipts | struct LpReceipt[] | An array of LP receipts. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the ChromaticMarket contract. |
+  | recipient | address | The address of the recipient for each liquidity bin. |
+  | feeRates | int16[] | An array of fee rates for each liquidity bin. |
+  | clbTokenAmounts | uint256[] | An array of CLB token amounts to remove as liquidity for each bin. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | lpReceipts | struct LpReceipt[] | An array of LP receipts. |
 
 ### withdrawLiquidityBatch
 
@@ -487,10 +547,12 @@ function withdrawLiquidityBatch(address market, uint256[] _receiptIds) external
 
 Withdraws liquidity from multiple ChromaticMarket contracts in a batch.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the ChromaticMarket contract. |
-| _receiptIds | uint256[] |  |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the ChromaticMarket contract. |
+  | _receiptIds | uint256[] |  |
 
 ### _call
 

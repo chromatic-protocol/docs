@@ -16,14 +16,16 @@ event FlashLoan(address sender, address recipient, uint256 amount, uint256 paid,
 
 Emitted when a flash loan is executed.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| sender | address | The address initiating the flash loan. |
-| recipient | address | The address receiving the flash loan. |
-| amount | uint256 | The amount of the flash loan. |
-| paid | uint256 | The amount paid back after the flash loan. |
-| paidToTakerPool | uint256 | The amount paid to the taker pool after the flash loan. |
-| paidToMakerPool | uint256 | The amount paid to the maker pool after the flash loan. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | sender | address | The address initiating the flash loan. |
+  | recipient | address | The address receiving the flash loan. |
+  | amount | uint256 | The amount of the flash loan. |
+  | paid | uint256 | The amount paid back after the flash loan. |
+  | paidToTakerPool | uint256 | The amount paid to the taker pool after the flash loan. |
+  | paidToMakerPool | uint256 | The amount paid to the maker pool after the flash loan. |
 
 ### flashLoan
 
@@ -33,12 +35,14 @@ function flashLoan(address token, uint256 amount, address recipient, bytes data)
 
 Executes a flash loan.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the token for the flash loan. |
-| amount | uint256 | The amount of the flash loan. |
-| recipient | address | The address to receive the flash loan. |
-| data | bytes | Additional data for the flash loan. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the token for the flash loan. |
+  | amount | uint256 | The amount of the flash loan. |
+  | recipient | address | The address to receive the flash loan. |
+  | data | bytes | Additional data for the flash loan. |
 
 ### getPendingBinShare
 
@@ -48,13 +52,17 @@ function getPendingBinShare(address market, address settlementToken, uint256 bin
 
 Retrieves the pending share of earnings for a specific bin (subset) of funds in a market.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the market. |
-| settlementToken | address | The settlement token address. |
-| binBalance | uint256 | The balance of funds in the bin. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | The pending share of earnings for the specified bin. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the market. |
+  | settlementToken | address | The settlement token address. |
+  | binBalance | uint256 | The balance of funds in the bin. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | The pending share of earnings for the specified bin. |
 

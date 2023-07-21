@@ -14,9 +14,11 @@ function factory() external view returns (contract IChromaticMarketFactory _fact
 
 _Returns the factory contract for the market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _factory | contract IChromaticMarketFactory | The factory contract. |
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _factory | contract IChromaticMarketFactory | The factory contract. |
 
 ### settlementToken
 
@@ -26,9 +28,11 @@ function settlementToken() external view returns (contract IERC20Metadata _token
 
 _Returns the settlement token of the market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _token | contract IERC20Metadata | The settlement token. |
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _token | contract IERC20Metadata | The settlement token. |
 
 ### oracleProvider
 
@@ -38,9 +42,11 @@ function oracleProvider() external view returns (contract IOracleProvider _provi
 
 _Returns the oracle provider contract for the market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _provider | contract IOracleProvider | The oracle provider contract. |
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _provider | contract IOracleProvider | The oracle provider contract. |
 
 ### clbToken
 
@@ -50,9 +56,11 @@ function clbToken() external view returns (contract ICLBToken _token)
 
 _Returns the CLB token contract for the market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _token | contract ICLBToken | The CLB token contract. |
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _token | contract ICLBToken | The CLB token contract. |
 
 ### liquidator
 
@@ -62,9 +70,11 @@ function liquidator() external view returns (contract IChromaticLiquidator _liqu
 
 _Returns the liquidator contract for the market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _liquidator | contract IChromaticLiquidator | The liquidator contract. |
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _liquidator | contract IChromaticLiquidator | The liquidator contract. |
 
 ### vault
 
@@ -74,9 +84,11 @@ function vault() external view returns (contract IChromaticVault _vault)
 
 _Returns the vault contract for the market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _vault | contract IChromaticVault | The vault contract. |
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _vault | contract IChromaticVault | The vault contract. |
 
 ### keeperFeePayer
 
@@ -86,9 +98,11 @@ function keeperFeePayer() external view returns (contract IKeeperFeePayer _keepe
 
 _Returns the keeper fee payer contract for the market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _keeperFeePayer | contract IKeeperFeePayer | The keeper fee payer contract. |
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _keeperFeePayer | contract IKeeperFeePayer | The keeper fee payer contract. |
 
 ### feeProtocol
 
@@ -98,9 +112,11 @@ function feeProtocol() external view returns (uint8 _feeProtocol)
 
 Returns the denominator of the protocol's % share of the fees
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _feeProtocol | uint8 | The protocol fee for the market |
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _feeProtocol | uint8 | The protocol fee for the market |
 
 ### setFeeProtocol
 
@@ -110,7 +126,9 @@ function setFeeProtocol(uint8 _feeProtocol) external
 
 Set the denominator of the protocol's % share of the fees
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _feeProtocol | uint8 |  |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _feeProtocol | uint8 |  |
 

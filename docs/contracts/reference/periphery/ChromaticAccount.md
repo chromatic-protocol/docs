@@ -88,11 +88,13 @@ Initializes the account with the specified owner, router, and market factory add
 
 _Throws an `AlreadyInitialized` error if the account has already been initialized._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _owner | address | The address of the account owner. |
-| _router | address | The address of the router contract. |
-| _marketFactory | address | The address of the market factory contract. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _owner | address | The address of the account owner. |
+  | _router | address | The address of the router contract. |
+  | _marketFactory | address | The address of the market factory contract. |
 
 ### balance
 
@@ -102,13 +104,17 @@ function balance(address token) public view returns (uint256)
 
 Returns the balance of the specified token for the account.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the token. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | The balance of the token. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the token. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | The balance of the token. |
 
 ### withdraw
 
@@ -121,10 +127,12 @@ Withdraws the specified amount of tokens from the account.
 _This function can only be called by owner.
      Throws a `NotEnoughBalance` error if the account does not have enough balance of the specified token._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the token to withdraw. |
-| amount | uint256 | The amount of tokens to withdraw. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the token to withdraw. |
+  | amount | uint256 | The amount of tokens to withdraw. |
 
 ### addPositionId
 
@@ -146,14 +154,18 @@ function hasPositionId(address market, uint256 id) public view returns (bool)
 
 Checks if the specified market has the specified position ID.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address |  |
-| id | uint256 |  |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | bool | A boolean indicating whether the market has the position ID. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address |  |
+  | id | uint256 |  |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | bool | A boolean indicating whether the market has the position ID. |
 
 ### getPositionIds
 
@@ -163,13 +175,17 @@ function getPositionIds(address market) external view returns (uint256[])
 
 Retrieves an array of position IDs owned by this account for the specified market.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address |  |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256[] | An array of position IDs. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address |  |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256[] | An array of position IDs. |
 
 ### openPosition
 
@@ -181,18 +197,22 @@ Opens a new position in the specified market.
 
 _This function can only be called by the chromatic router contract._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| marketAddress | address | The address of the market. |
-| qty | int224 | The quantity of the position. |
-| leverage | uint32 | The leverage of the position. |
-| takerMargin | uint256 | The margin required for the taker. |
-| makerMargin | uint256 | The margin required for the maker. |
-| maxAllowableTradingFee | uint256 | The maximum allowable trading fee. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| position | struct Position | position The opened position. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | marketAddress | address | The address of the market. |
+  | qty | int224 | The quantity of the position. |
+  | leverage | uint32 | The leverage of the position. |
+  | takerMargin | uint256 | The margin required for the taker. |
+  | makerMargin | uint256 | The margin required for the maker. |
+  | maxAllowableTradingFee | uint256 | The maximum allowable trading fee. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | position | struct Position | position The opened position. |
 
 ### closePosition
 
@@ -205,10 +225,12 @@ Closes the specified position in the specified market.
 _This function can only be called by the chromatic router contract.
      Throws a `NotExistPosition` error if the position does not exist._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| marketAddress | address | The address of the market. |
-| positionId | uint256 | The ID of the position to close. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | marketAddress | address | The address of the market. |
+  | positionId | uint256 | The ID of the position to close. |
 
 ### claimPosition
 
@@ -221,10 +243,12 @@ Claims the specified position in the specified market.
 _This function can only be called by the chromatic router contract.
      Throws a `NotExistPosition` error if the position does not exist._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| marketAddress | address | The address of the market. |
-| positionId | uint256 | The ID of the position to claim. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | marketAddress | address | The address of the market. |
+  | positionId | uint256 | The ID of the position to claim. |
 
 ### openPositionCallback
 
@@ -237,12 +261,14 @@ Callback function called after opening a position.
 _Transfers the required margin from the account to the specified vault.
      Throws a `NotEnoughBalance` error if the account does not have enough balance of the settlement token._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| settlementToken | address | The address of the settlement token used in the position. |
-| vault | address | The address of the vault contract. |
-| marginRequired | uint256 | The amount of margin required for the position. |
-|  | bytes |  |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | settlementToken | address | The address of the settlement token used in the position. |
+  | vault | address | The address of the vault contract. |
+  | marginRequired | uint256 | The amount of margin required for the position. |
+  |  | bytes |  |
 
 ### claimPositionCallback
 
@@ -252,8 +278,10 @@ function claimPositionCallback(uint256 positionId, bytes) external
 
 Callback function called after claiming a position.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| positionId | uint256 | The ID of the claimed position. |
-|  | bytes |  |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | positionId | uint256 | The ID of the claimed position. |
+  |  | bytes |  |
 

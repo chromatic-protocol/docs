@@ -34,10 +34,12 @@ event OracleProviderRegistered(address oracleProvider, struct IOracleProviderReg
 
 _Emitted when a new oracle provider is registered._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| oracleProvider | address | The address of the registered oracle provider. |
-| properties | struct IOracleProviderRegistry.OracleProviderProperties | The properties of the registered oracle provider. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | oracleProvider | address | The address of the registered oracle provider. |
+  | properties | struct IOracleProviderRegistry.OracleProviderProperties | The properties of the registered oracle provider. |
 
 ### OracleProviderUnregistered
 
@@ -47,9 +49,11 @@ event OracleProviderUnregistered(address oracleProvider)
 
 _Emitted when an oracle provider is unregistered._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| oracleProvider | address | The address of the unregistered oracle provider. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | oracleProvider | address | The address of the unregistered oracle provider. |
 
 ### UpdateTakeProfitBPSRange
 
@@ -59,11 +63,13 @@ event UpdateTakeProfitBPSRange(address oracleProvider, uint32 minTakeProfitBPS, 
 
 _Emitted when the take-profit basis points range of an oracle provider is updated._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| oracleProvider | address | The address of the oracle provider. |
-| minTakeProfitBPS | uint32 | The new minimum take-profit basis points. |
-| maxTakeProfitBPS | uint32 | The new maximum take-profit basis points. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | oracleProvider | address | The address of the oracle provider. |
+  | minTakeProfitBPS | uint32 | The new minimum take-profit basis points. |
+  | maxTakeProfitBPS | uint32 | The new maximum take-profit basis points. |
 
 ### UpdateLeverageLevel
 
@@ -73,10 +79,12 @@ event UpdateLeverageLevel(address oracleProvider, uint8 level)
 
 _Emitted when the level of an oracle provider is set._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| oracleProvider | address | The address of the oracle provider. |
-| level | uint8 | The new level set for the oracle provider. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | oracleProvider | address | The address of the oracle provider. |
+  | level | uint8 | The new level set for the oracle provider. |
 
 ### registerOracleProvider
 
@@ -86,10 +94,12 @@ function registerOracleProvider(address oracleProvider, struct IOracleProviderRe
 
 Registers an oracle provider.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| oracleProvider | address | The address of the oracle provider to register. |
-| properties | struct IOracleProviderRegistry.OracleProviderProperties | The properties of the oracle provider. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | oracleProvider | address | The address of the oracle provider to register. |
+  | properties | struct IOracleProviderRegistry.OracleProviderProperties | The properties of the oracle provider. |
 
 ### unregisterOracleProvider
 
@@ -99,9 +109,11 @@ function unregisterOracleProvider(address oracleProvider) external
 
 Unregisters an oracle provider.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| oracleProvider | address | The address of the oracle provider to unregister. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | oracleProvider | address | The address of the oracle provider to unregister. |
 
 ### registeredOracleProviders
 
@@ -111,9 +123,11 @@ function registeredOracleProviders() external view returns (address[])
 
 Gets the registered oracle providers.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | address[] | An array of registered oracle provider addresses. |
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | address[] | An array of registered oracle provider addresses. |
 
 ### isRegisteredOracleProvider
 
@@ -123,13 +137,17 @@ function isRegisteredOracleProvider(address oracleProvider) external view return
 
 Checks if an oracle provider is registered.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| oracleProvider | address | The address of the oracle provider to check. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | bool | A boolean indicating if the oracle provider is registered. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | oracleProvider | address | The address of the oracle provider to check. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | bool | A boolean indicating if the oracle provider is registered. |
 
 ### getOracleProviderProperties
 
@@ -139,13 +157,17 @@ function getOracleProviderProperties(address oracleProvider) external view retur
 
 Retrieves the properties of an oracle provider.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| oracleProvider | address | The address of the oracle provider. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct IOracleProviderRegistry.OracleProviderProperties | The properties of the oracle provider. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | oracleProvider | address | The address of the oracle provider. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct IOracleProviderRegistry.OracleProviderProperties | The properties of the oracle provider. |
 
 ### updateTakeProfitBPSRange
 
@@ -155,11 +177,13 @@ function updateTakeProfitBPSRange(address oracleProvider, uint32 minTakeProfitBP
 
 Updates the take-profit basis points range of an oracle provider.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| oracleProvider | address | The address of the oracle provider. |
-| minTakeProfitBPS | uint32 | The new minimum take-profit basis points. |
-| maxTakeProfitBPS | uint32 | The new maximum take-profit basis points. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | oracleProvider | address | The address of the oracle provider. |
+  | minTakeProfitBPS | uint32 | The new minimum take-profit basis points. |
+  | maxTakeProfitBPS | uint32 | The new maximum take-profit basis points. |
 
 ### updateLeverageLevel
 
@@ -171,8 +195,10 @@ Updates the leverage level of an oracle provider in the registry.
 
 _The level must be either 0 or 1, and the max leverage must be x10 for level 0 or x20 for level 1._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| oracleProvider | address | The address of the oracle provider. |
-| level | uint8 | The new leverage level to be set for the oracle provider. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | oracleProvider | address | The address of the oracle provider. |
+  | level | uint8 | The new leverage level to be set for the oracle provider. |
 

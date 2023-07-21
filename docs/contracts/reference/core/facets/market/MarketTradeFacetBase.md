@@ -30,14 +30,16 @@ function _claimPosition(struct LpContext ctx, struct Position position, int256 p
 
 _Internal function for claiming a position._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| ctx | struct LpContext | The LpContext containing the current oracle version and synchronization information. |
-| position | struct Position | The Position object representing the position to be claimed. |
-| pnl | int256 | The profit or loss amount of the position. |
-| usedKeeperFee | uint256 | The amount of the keeper fee used. |
-| recipient | address | The address of the recipient (EOA or account contract) receiving the settlement. |
-| data | bytes | Additional data for the claim position callback. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | ctx | struct LpContext | The LpContext containing the current oracle version and synchronization information. |
+  | position | struct Position | The Position object representing the position to be claimed. |
+  | pnl | int256 | The profit or loss amount of the position. |
+  | usedKeeperFee | uint256 | The amount of the keeper fee used. |
+  | recipient | address | The address of the recipient (EOA or account contract) receiving the settlement. |
+  | data | bytes | Additional data for the claim position callback. |
 
 ### _getPosition
 

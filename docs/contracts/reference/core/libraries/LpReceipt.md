@@ -51,11 +51,15 @@ function clbTokenId(struct LpReceipt self) internal pure returns (uint256)
 
 Computes the ID of the CLBToken contract based on the trading fee rate.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct LpReceipt | The LpReceipt struct. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | The ID of the CLBToken contract. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LpReceipt | The LpReceipt struct. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | The ID of the CLBToken contract. |
 

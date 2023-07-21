@@ -38,14 +38,18 @@ function tradingFee(struct BinMargin self, uint8 _feeProtocol) internal pure ret
 
 Calculates the trading fee based on the margin amount and the trading fee rate.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BinMargin | The BinMargin struct |
-| _feeProtocol | uint8 | The protocol fee for the market |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | The trading fee amount |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct BinMargin | The BinMargin struct |
+  | _feeProtocol | uint8 | The protocol fee for the market |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | The trading fee amount |
 
 ### protocolFee
 
@@ -55,12 +59,16 @@ function protocolFee(struct BinMargin self, uint8 _feeProtocol) internal pure re
 
 Calculates the protocol fee based on the margin amount and the trading fee rate.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BinMargin | The BinMargin struct |
-| _feeProtocol | uint8 | The protocol fee for the market |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | The protocol fee amount |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct BinMargin | The BinMargin struct |
+  | _feeProtocol | uint8 | The protocol fee for the market |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | The protocol fee amount |
 

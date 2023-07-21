@@ -16,10 +16,12 @@ event MarketEarningAccumulated(address market, uint256 earning)
 
 _Emitted when market earning is accumulated._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the market. |
-| earning | uint256 | The amount of earning accumulated. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the market. |
+  | earning | uint256 | The amount of earning accumulated. |
 
 ### MakerEarningDistributed
 
@@ -29,11 +31,13 @@ event MakerEarningDistributed(address token, uint256 earning, uint256 usedKeeper
 
 _Emitted when maker earning is distributed._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the settlement token. |
-| earning | uint256 | The amount of earning distributed. |
-| usedKeeperFee | uint256 | The amount of keeper fee used. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token. |
+  | earning | uint256 | The amount of earning distributed. |
+  | usedKeeperFee | uint256 | The amount of keeper fee used. |
 
 ### MarketEarningDistributed
 
@@ -43,12 +47,14 @@ event MarketEarningDistributed(address market, uint256 earning, uint256 usedKeep
 
 _Emitted when market earning is distributed._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the market. |
-| earning | uint256 | The amount of earning distributed. |
-| usedKeeperFee | uint256 | The amount of keeper fee used. |
-| marketBalance | uint256 | The balance of the market. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the market. |
+  | earning | uint256 | The amount of earning distributed. |
+  | usedKeeperFee | uint256 | The amount of keeper fee used. |
+  | marketBalance | uint256 | The balance of the market. |
 
 ### createMakerEarningDistributionTask
 
@@ -58,9 +64,11 @@ function createMakerEarningDistributionTask(address token) external
 
 Creates a maker earning distribution task for a token.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the settlement token. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token. |
 
 ### cancelMakerEarningDistributionTask
 
@@ -70,9 +78,11 @@ function cancelMakerEarningDistributionTask(address token) external
 
 Cancels a maker earning distribution task for a token.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the settlement token. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token. |
 
 ### createMarketEarningDistributionTask
 
@@ -82,9 +92,11 @@ function createMarketEarningDistributionTask(address market) external
 
 Creates a market earning distribution task for a market.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the market. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the market. |
 
 ### cancelMarketEarningDistributionTask
 
@@ -94,7 +106,9 @@ function cancelMarketEarningDistributionTask(address market) external
 
 Cancels a market earning distribution task for a market.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the market. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the market. |
 

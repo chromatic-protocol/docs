@@ -45,10 +45,12 @@ function initialize(struct InterestRate.Record[] self, uint256 initialInterestRa
 
 Initialize the interest rate records.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct InterestRate.Record[] | The stored record array |
-| initialInterestRate | uint256 | The initial interest rate |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct InterestRate.Record[] | The stored record array |
+  | initialInterestRate | uint256 | The initial interest rate |
 
 ### appendRecord
 
@@ -65,11 +67,13 @@ _Annual rate is not greater than the maximum rate and that the begin timestamp i
      Throws an error with the code `Errors.INTEREST_RATE_PAST_TIMESTAMP` if the timestamp is in the past, ensuring that the interest rate period has not already started.
      Throws an error with the code `Errors.INTEREST_RATE_NOT_APPENDABLE` if the timestamp is greater than the last recorded timestamp, ensuring that the new record is appended in chronological order._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct InterestRate.Record[] | The stored record array |
-| annualRateBPS | uint256 | The annual interest rate in BPS |
-| beginTimestamp | uint256 | Begin timestamp of this record |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct InterestRate.Record[] | The stored record array |
+  | annualRateBPS | uint256 | The annual interest rate in BPS |
+  | beginTimestamp | uint256 | Begin timestamp of this record |
 
 ### removeLastRecord
 
@@ -85,14 +89,18 @@ _The current time must be less than the begin timestamp of the last record.
      Throws an error with the code `Errors.INTEREST_RATE_NOT_INITIALIZED` if the array is empty.
      Throws an error with the code `Errors.INTEREST_RATE_ALREADY_APPLIED` if the `beginTimestamp` of the last record is not in the future._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct InterestRate.Record[] | The stored record array |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| removed | bool | Whether the last record is removed |
-| record | struct InterestRate.Record | The removed record |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct InterestRate.Record[] | The stored record array |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | removed | bool | Whether the last record is removed |
+  | record | struct InterestRate.Record | The removed record |
 
 ### findRecordAt
 
@@ -106,15 +114,19 @@ _It iterates through the array from the end to the beginning
      and returns the first record with a begin timestamp less than or equal to the provided timestamp.
      Throws an error with the code `Errors.INTEREST_RATE_NOT_INITIALIZED` if the array is empty._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct InterestRate.Record[] | The stored record array |
-| timestamp | uint256 | Given timestamp |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| interestRate | struct InterestRate.Record | The record which is found |
-| index | uint256 | The index of record |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct InterestRate.Record[] | The stored record array |
+  | timestamp | uint256 | Given timestamp |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | interestRate | struct InterestRate.Record | The record which is found |
+  | index | uint256 | The index of record |
 
 ### calculateInterest
 
@@ -126,10 +138,12 @@ Calculate the interest
 
 _Throws an error with the code `Errors.INTEREST_RATE_NOT_INITIALIZED` if the array is empty._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct InterestRate.Record[] | The stored record array |
-| amount | uint256 | Token amount |
-| from | uint256 | Begin timestamp (inclusive) |
-| to | uint256 | End timestamp (exclusive) |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct InterestRate.Record[] | The stored record array |
+  | amount | uint256 | Token amount |
+  | from | uint256 | Begin timestamp (inclusive) |
+  | to | uint256 | End timestamp (exclusive) |
 

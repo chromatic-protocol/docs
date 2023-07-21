@@ -93,13 +93,15 @@ _This function settles pending liquidity in the BinLiquidity storage by performi
      And the CLB tokens are minted or burned accordingly.
      The pending deposit and withdrawal amounts are passed to the vault for further processing._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BinLiquidity | The BinLiquidity storage. |
-| ctx | struct LpContext | The LpContext memory. |
-| binValue | uint256 | The current value of the bin. |
-| freeLiquidity | uint256 | The amount of free liquidity available in the bin. |
-| clbTokenId | uint256 | The ID of the CLB token. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct BinLiquidity | The BinLiquidity storage. |
+  | ctx | struct LpContext | The LpContext memory. |
+  | binValue | uint256 | The current value of the bin. |
+  | freeLiquidity | uint256 | The amount of free liquidity available in the bin. |
+  | clbTokenId | uint256 | The ID of the CLB token. |
 
 ### onAddLiquidity
 
@@ -113,11 +115,13 @@ _Sets the pending liquidity with the specified amount and oracle version.
      Throws an error with the code `Errors.TOO_SMALL_AMOUNT` if the amount is too small.
      Throws an error with the code `Errors.INVALID_ORACLE_VERSION` if there is already pending liquidity with a different oracle version, it reverts with an error._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BinLiquidity | The BinLiquidity storage. |
-| amount | uint256 | The amount of tokens to add for liquidity. |
-| oracleVersion | uint256 | The oracle version associated with the liquidity. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct BinLiquidity | The BinLiquidity storage. |
+  | amount | uint256 | The amount of tokens to add for liquidity. |
+  | oracleVersion | uint256 | The oracle version associated with the liquidity. |
 
 ### onClaimLiquidity
 
@@ -132,15 +136,19 @@ _Retrieves the minting details for the specified oracle version
      Updates the claim minting details and returns the CLB token amount to be claimed.
      If there are no more tokens remaining for the claim, it is removed from the mapping._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BinLiquidity | The BinLiquidity storage. |
-| amount | uint256 | The amount of tokens to claim. |
-| oracleVersion | uint256 | The oracle version associated with the claim. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| clbTokenAmount | uint256 | The amount of CLB tokens to be claimed. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct BinLiquidity | The BinLiquidity storage. |
+  | amount | uint256 | The amount of tokens to claim. |
+  | oracleVersion | uint256 | The oracle version associated with the claim. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | clbTokenAmount | uint256 | The amount of CLB tokens to be claimed. |
 
 ### onRemoveLiquidity
 
@@ -153,11 +161,13 @@ Removes liquidity from the BinLiquidity by setting pending CLB token amount.
 _Sets the pending liquidity with the specified CLB token amount and oracle version.
      Throws an error with the code `Errors.INVALID_ORACLE_VERSION` if there is already pending liquidity with a different oracle version, it reverts with an error._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BinLiquidity | The BinLiquidity storage. |
-| clbTokenAmount | uint256 | The amount of CLB tokens to remove liquidity. |
-| oracleVersion | uint256 | The oracle version associated with the liquidity. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct BinLiquidity | The BinLiquidity storage. |
+  | clbTokenAmount | uint256 | The amount of CLB tokens to remove liquidity. |
+  | oracleVersion | uint256 | The oracle version associated with the liquidity. |
 
 ### onWithdrawLiquidity
 
@@ -172,16 +182,20 @@ _Retrieves the burning details for the specified oracle version
      Updates the claim burning details and returns the token amount to withdraw and the burned CLB token amount.
      If there are no more CLB tokens remaining for the claim, it is removed from the mapping._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BinLiquidity | The BinLiquidity storage. |
-| clbTokenAmount | uint256 | The amount of CLB tokens to withdraw. |
-| oracleVersion | uint256 | The oracle version associated with the claim. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| amount | uint256 | The amount of tokens to be withdrawn for the claim. |
-| burnedCLBTokenAmount | uint256 | The amount of CLB tokens to be burned for the claim. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct BinLiquidity | The BinLiquidity storage. |
+  | clbTokenAmount | uint256 | The amount of CLB tokens to withdraw. |
+  | oracleVersion | uint256 | The oracle version associated with the claim. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | amount | uint256 | The amount of tokens to be withdrawn for the claim. |
+  | burnedCLBTokenAmount | uint256 | The amount of CLB tokens to be burned for the claim. |
 
 ### calculateCLBTokenMinting
 
@@ -196,15 +210,19 @@ _If the CLB token total supply is zero, returns the token amount as is.
      Otherwise, calculates the minting amount
      based on the token amount, bin value, and CLB token total supply._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| amount | uint256 | The amount of tokens to be minted. |
-| binValue | uint256 | The current bin value. |
-| clbTokenTotalSupply | uint256 | The total supply of CLB tokens. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | The amount of CLB tokens to be minted. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | amount | uint256 | The amount of tokens to be minted. |
+  | binValue | uint256 | The current bin value. |
+  | clbTokenTotalSupply | uint256 | The total supply of CLB tokens. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | The amount of CLB tokens to be minted. |
 
 ### calculateCLBTokenValue
 
@@ -218,15 +236,19 @@ Calculates the value of CLB tokens
 _If the CLB token total supply is zero, returns zero.
      Otherwise, calculates the value based on the CLB token amount, bin value, and CLB token total supply._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| clbTokenAmount | uint256 | The amount of CLB tokens. |
-| binValue | uint256 | The current bin value. |
-| clbTokenTotalSupply | uint256 | The total supply of CLB tokens. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | The value of the CLB tokens. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | clbTokenAmount | uint256 | The amount of CLB tokens. |
+  | binValue | uint256 | The current bin value. |
+  | clbTokenTotalSupply | uint256 | The total supply of CLB tokens. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | The value of the CLB tokens. |
 
 ### claimableLiquidity
 
@@ -236,12 +258,16 @@ function claimableLiquidity(struct BinLiquidity self, uint256 oracleVersion) int
 
 _Retrieves the claimable liquidity information for a specific oracle version._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BinLiquidity | The reference to the BinLiquidity struct. |
-| oracleVersion | uint256 | The oracle version for which to retrieve the claimable liquidity. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct IMarketLiquidity.ClaimableLiquidity | claimableLiquidity An instance of IMarketLiquidity.ClaimableLiquidity representing the claimable liquidity information. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct BinLiquidity | The reference to the BinLiquidity struct. |
+  | oracleVersion | uint256 | The oracle version for which to retrieve the claimable liquidity. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct IMarketLiquidity.ClaimableLiquidity | claimableLiquidity An instance of IMarketLiquidity.ClaimableLiquidity representing the claimable liquidity information. |
 

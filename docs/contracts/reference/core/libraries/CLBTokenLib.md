@@ -19,9 +19,11 @@ Encode the CLB token ID of ERC1155 token type
 _If `tradingFeeRate` is negative, it adds `DIRECTION_PRECISION` to the absolute fee rate.
      Otherwise it returns the fee rate directly._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | id The ID of ERC1155 token |
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | id The ID of ERC1155 token |
 
 ### decodeId
 
@@ -36,9 +38,11 @@ _If `id` is greater than or equal to `DIRECTION_PRECISION`,
      and returns the negation of the substracted value.
      Otherwise it returns `id` directly._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| tradingFeeRate | int16 | The trading fee rate |
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | tradingFeeRate | int16 | The trading fee rate |
 
 ### tradingFeeRates
 
@@ -51,9 +55,11 @@ Retrieves the array of supported trading fee rates.
 _This function returns the array of supported trading fee rates,
      ranging from the minimum fee rate to the maximum fee rate with step increments._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint16[36] | tradingFeeRates The array of supported trading fee rates. |
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint16[36] | tradingFeeRates The array of supported trading fee rates. |
 
 ### tokenIds
 

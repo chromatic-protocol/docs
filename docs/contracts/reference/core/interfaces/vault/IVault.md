@@ -16,13 +16,15 @@ event OnOpenPosition(address market, uint256 positionId, uint256 takerMargin, ui
 
 Emitted when a position is opened.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the market. |
-| positionId | uint256 | The ID of the opened position. |
-| takerMargin | uint256 | The margin amount provided by the taker for the position. |
-| tradingFee | uint256 | The trading fee associated with the position. |
-| protocolFee | uint256 | The protocol fee associated with the position. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the market. |
+  | positionId | uint256 | The ID of the opened position. |
+  | takerMargin | uint256 | The margin amount provided by the taker for the position. |
+  | tradingFee | uint256 | The trading fee associated with the position. |
+  | protocolFee | uint256 | The protocol fee associated with the position. |
 
 ### OnClaimPosition
 
@@ -32,13 +34,15 @@ event OnClaimPosition(address market, uint256 positionId, address recipient, uin
 
 Emitted when a position is claimed.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the market. |
-| positionId | uint256 | The ID of the claimed position. |
-| recipient | address | The address of the recipient of the settlement amount. |
-| takerMargin | uint256 | The margin amount provided by the taker for the position. |
-| settlementAmount | uint256 | The settlement amount received by the recipient. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the market. |
+  | positionId | uint256 | The ID of the claimed position. |
+  | recipient | address | The address of the recipient of the settlement amount. |
+  | takerMargin | uint256 | The margin amount provided by the taker for the position. |
+  | settlementAmount | uint256 | The settlement amount received by the recipient. |
 
 ### OnAddLiquidity
 
@@ -48,10 +52,12 @@ event OnAddLiquidity(address market, uint256 amount)
 
 Emitted when liquidity is added to the vault.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the market. |
-| amount | uint256 | The amount of liquidity added. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the market. |
+  | amount | uint256 | The amount of liquidity added. |
 
 ### OnSettlePendingLiquidity
 
@@ -61,11 +67,13 @@ event OnSettlePendingLiquidity(address market, uint256 pendingDeposit, uint256 p
 
 Emitted when pending liquidity is settled.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the market. |
-| pendingDeposit | uint256 | The amount of pending deposit being settled. |
-| pendingWithdrawal | uint256 | The amount of pending withdrawal being settled. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the market. |
+  | pendingDeposit | uint256 | The amount of pending deposit being settled. |
+  | pendingWithdrawal | uint256 | The amount of pending withdrawal being settled. |
 
 ### OnWithdrawLiquidity
 
@@ -75,11 +83,13 @@ event OnWithdrawLiquidity(address market, uint256 amount, address recipient)
 
 Emitted when liquidity is withdrawn from the vault.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the market. |
-| amount | uint256 | The amount of liquidity withdrawn. |
-| recipient | address | The address of the recipient of the withdrawn liquidity. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the market. |
+  | amount | uint256 | The amount of liquidity withdrawn. |
+  | recipient | address | The address of the recipient of the withdrawn liquidity. |
 
 ### TransferKeeperFee
 
@@ -89,10 +99,12 @@ event TransferKeeperFee(uint256 fee, uint256 amount)
 
 Emitted when the keeper fee is transferred.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| fee | uint256 | The amount of the transferred keeper fee as native token. |
-| amount | uint256 | The amount of settlement token to be used for paying keeper fee. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | fee | uint256 | The amount of the transferred keeper fee as native token. |
+  | amount | uint256 | The amount of settlement token to be used for paying keeper fee. |
 
 ### TransferKeeperFee
 
@@ -102,11 +114,13 @@ event TransferKeeperFee(address market, uint256 fee, uint256 amount)
 
 Emitted when the keeper fee is transferred for a specific market.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the market. |
-| fee | uint256 | The amount of the transferred keeper fee as native token. |
-| amount | uint256 | The amount of settlement token to be used for paying keeper fee. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the market. |
+  | fee | uint256 | The amount of the transferred keeper fee as native token. |
+  | amount | uint256 | The amount of settlement token to be used for paying keeper fee. |
 
 ### TransferProtocolFee
 
@@ -116,11 +130,13 @@ event TransferProtocolFee(address market, uint256 positionId, uint256 amount)
 
 Emitted when the protocol fee is transferred for a specific position.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the market. |
-| positionId | uint256 | The ID of the position. |
-| amount | uint256 | The amount of the transferred fee. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the market. |
+  | positionId | uint256 | The ID of the position. |
+  | amount | uint256 | The amount of the transferred fee. |
 
 ### onOpenPosition
 
@@ -130,13 +146,15 @@ function onOpenPosition(address settlementToken, uint256 positionId, uint256 tak
 
 Called when a position is opened by a market contract.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| settlementToken | address | The settlement token address. |
-| positionId | uint256 | The ID of the opened position. |
-| takerMargin | uint256 | The margin amount provided by the taker for the position. |
-| tradingFee | uint256 | The trading fee associated with the position. |
-| protocolFee | uint256 | The protocol fee associated with the position. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | settlementToken | address | The settlement token address. |
+  | positionId | uint256 | The ID of the opened position. |
+  | takerMargin | uint256 | The margin amount provided by the taker for the position. |
+  | tradingFee | uint256 | The trading fee associated with the position. |
+  | protocolFee | uint256 | The protocol fee associated with the position. |
 
 ### onClaimPosition
 
@@ -146,13 +164,15 @@ function onClaimPosition(address settlementToken, uint256 positionId, address re
 
 Called when a position is claimed by a market contract.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| settlementToken | address | The settlement token address. |
-| positionId | uint256 | The ID of the claimed position. |
-| recipient | address | The address that will receive the settlement amount. |
-| takerMargin | uint256 | The margin amount provided by the taker for the position. |
-| settlementAmount | uint256 | The amount to be settled for the position. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | settlementToken | address | The settlement token address. |
+  | positionId | uint256 | The ID of the claimed position. |
+  | recipient | address | The address that will receive the settlement amount. |
+  | takerMargin | uint256 | The margin amount provided by the taker for the position. |
+  | settlementAmount | uint256 | The amount to be settled for the position. |
 
 ### onAddLiquidity
 
@@ -162,10 +182,12 @@ function onAddLiquidity(address settlementToken, uint256 amount) external
 
 Called when liquidity is added to the vault by a market contract.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| settlementToken | address | The settlement token address. |
-| amount | uint256 | The amount of liquidity being added. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | settlementToken | address | The settlement token address. |
+  | amount | uint256 | The amount of liquidity being added. |
 
 ### onSettlePendingLiquidity
 
@@ -175,11 +197,13 @@ function onSettlePendingLiquidity(address settlementToken, uint256 pendingDeposi
 
 Called when pending liquidity is settled in the vault by a market contract.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| settlementToken | address | The settlement token address. |
-| pendingDeposit | uint256 | The amount of pending deposits being settled. |
-| pendingWithdrawal | uint256 | The amount of pending withdrawals being settled. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | settlementToken | address | The settlement token address. |
+  | pendingDeposit | uint256 | The amount of pending deposits being settled. |
+  | pendingWithdrawal | uint256 | The amount of pending withdrawals being settled. |
 
 ### onWithdrawLiquidity
 
@@ -189,11 +213,13 @@ function onWithdrawLiquidity(address settlementToken, address recipient, uint256
 
 Called when liquidity is withdrawn from the vault by a market contract.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| settlementToken | address | The settlement token address. |
-| recipient | address | The address that will receive the withdrawn liquidity. |
-| amount | uint256 | The amount of liquidity to be withdrawn. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | settlementToken | address | The settlement token address. |
+  | recipient | address | The address that will receive the withdrawn liquidity. |
+  | amount | uint256 | The amount of liquidity to be withdrawn. |
 
 ### transferKeeperFee
 
@@ -203,14 +229,18 @@ function transferKeeperFee(address settlementToken, address keeper, uint256 fee,
 
 Transfers the keeper fee from the market to the specified keeper.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| settlementToken | address | The settlement token address. |
-| keeper | address | The address of the keeper to receive the fee. |
-| fee | uint256 | The amount of the fee to transfer as native token. |
-| margin | uint256 | The margin amount used for the fee payment. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| usedFee | uint256 | The actual settlement token amount of fee used for the transfer. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | settlementToken | address | The settlement token address. |
+  | keeper | address | The address of the keeper to receive the fee. |
+  | fee | uint256 | The amount of the fee to transfer as native token. |
+  | margin | uint256 | The margin amount used for the fee payment. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | usedFee | uint256 | The actual settlement token amount of fee used for the transfer. |
 

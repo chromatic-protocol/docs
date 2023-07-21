@@ -65,7 +65,9 @@ function newLpContext(struct MarketStorage ms) internal view returns (struct LpC
 
 _Creates a new LP context._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct LpContext | The LP context. |
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct LpContext | The LP context. |
 

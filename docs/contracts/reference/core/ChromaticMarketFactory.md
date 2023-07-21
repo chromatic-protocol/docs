@@ -122,9 +122,11 @@ modifier onlyRegisteredOracleProvider(address oracleProvider)
 _Modifier to ensure that the specified oracle provider is registered.
      Throws a `NotRegisteredOracleProvider` error if the oracle provider is not registered._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| oracleProvider | address | The address of the oracle provider to check. Requirements: - The `oracleProvider` address must be registered in the `_oracleProviderRegistry`. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | oracleProvider | address | The address of the oracle provider to check. Requirements: - The `oracleProvider` address must be registered in the `_oracleProviderRegistry`. |
 
 ### constructor
 
@@ -134,15 +136,17 @@ constructor(address _marketDiamondCutFacet, address _marketLoupeFacet, address _
 
 _Initializes the ChromaticMarketFactory contract._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _marketDiamondCutFacet | address | The market diamond cut facet address. |
-| _marketLoupeFacet | address | The market loupe facet address. |
-| _marketStateFacet | address | The market state facet address. |
-| _marketLiquidityFacet | address | The market liquidity facet address. |
-| _marketTradeFacet | address | The market trade facet address. |
-| _marketLiquidateFacet | address | The market liquidate facet address. |
-| _marketSettleFacet | address | The market settle facet address. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _marketDiamondCutFacet | address | The market diamond cut facet address. |
+  | _marketLoupeFacet | address | The market loupe facet address. |
+  | _marketStateFacet | address | The market state facet address. |
+  | _marketLiquidityFacet | address | The market liquidity facet address. |
+  | _marketTradeFacet | address | The market trade facet address. |
+  | _marketLiquidateFacet | address | The market liquidate facet address. |
+  | _marketSettleFacet | address | The market settle facet address. |
 
 ### updateDao
 
@@ -154,9 +158,11 @@ Updates the DAO address.
 
 _This function can only be called by the DAO address._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _dao | address |  |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _dao | address |  |
 
 ### updateTreasury
 
@@ -168,9 +174,11 @@ Updates the DAO treasury address.
 
 _This function can only be called by the DAO address._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _treasury | address |  |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _treasury | address |  |
 
 ### setLiquidator
 
@@ -183,9 +191,11 @@ Sets the liquidator address.
 _This function can only be called by the DAO address.
      Throws an `AlreadySetLiquidator` error if the liquidator address has already been set._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _liquidator | address |  |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _liquidator | address |  |
 
 ### setVault
 
@@ -198,9 +208,11 @@ Sets the vault address.
 _This function can only be called by the DAO address.
      Throws an `AlreadySetVault` error if the vault address has already been set._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _vault | address |  |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _vault | address |  |
 
 ### setKeeperFeePayer
 
@@ -213,9 +225,11 @@ Sets the keeper fee payer address.
 _This function can only be called by the DAO address.
      Throws an `AlreadySetKeeperFeePayer` error if the keeper fee payer address has already been set._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _keeperFeePayer | address |  |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _keeperFeePayer | address |  |
 
 ### getMarkets
 
@@ -225,9 +239,11 @@ function getMarkets() external view returns (address[])
 
 Returns an array of all market addresses.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | address[] |  |
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | address[] |  |
 
 ### getMarketsBySettlmentToken
 
@@ -237,13 +253,17 @@ function getMarketsBySettlmentToken(address settlementToken) external view retur
 
 Returns an array of market addresses associated with a settlement token.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| settlementToken | address | The address of the settlement token. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | address[] | An array of market addresses. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | settlementToken | address | The address of the settlement token. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | address[] | An array of market addresses. |
 
 ### getMarket
 
@@ -253,14 +273,18 @@ function getMarket(address oracleProvider, address settlementToken) external vie
 
 Returns the address of a market associated with an oracle provider and settlement token.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| oracleProvider | address | The address of the oracle provider. |
-| settlementToken | address | The address of the settlement token. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | address | The address of the market. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | oracleProvider | address | The address of the oracle provider. |
+  | settlementToken | address | The address of the settlement token. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | address | The address of the market. |
 
 ### isRegisteredMarket
 
@@ -270,13 +294,17 @@ function isRegisteredMarket(address market) external view returns (bool)
 
 Checks if a market is registered.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the market. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | bool | True if the market is registered, false otherwise. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the market. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | bool | True if the market is registered, false otherwise. |
 
 ### createMarket
 
@@ -290,10 +318,12 @@ _This function creates a new market using the specified oracle provider and sett
      Throws a `NotRegisteredSettlementToken` error if the settlement token is not registered.
      Throws an `ExistMarket` error if the market already exists for the given oracle provider and settlement token._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| oracleProvider | address | The address of the oracle provider. |
-| settlementToken | address | The address of the settlement token. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | oracleProvider | address | The address of the oracle provider. |
+  | settlementToken | address | The address of the settlement token. |
 
 ### parameters
 
@@ -319,10 +349,12 @@ Registers an oracle provider.
 
 _This function can only be called by the DAO address._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| oracleProvider | address | The address of the oracle provider to register. |
-| properties | struct IOracleProviderRegistry.OracleProviderProperties | The properties of the oracle provider. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | oracleProvider | address | The address of the oracle provider to register. |
+  | properties | struct IOracleProviderRegistry.OracleProviderProperties | The properties of the oracle provider. |
 
 ### unregisterOracleProvider
 
@@ -334,9 +366,11 @@ Unregisters an oracle provider.
 
 _This function can only be called by the DAO address._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| oracleProvider | address | The address of the oracle provider to unregister. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | oracleProvider | address | The address of the oracle provider to unregister. |
 
 ### registeredOracleProviders
 
@@ -346,9 +380,11 @@ function registeredOracleProviders() external view returns (address[])
 
 Gets the registered oracle providers.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | address[] | An array of registered oracle provider addresses. |
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | address[] | An array of registered oracle provider addresses. |
 
 ### isRegisteredOracleProvider
 
@@ -358,13 +394,17 @@ function isRegisteredOracleProvider(address oracleProvider) external view return
 
 Checks if an oracle provider is registered.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| oracleProvider | address | The address of the oracle provider to check. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | bool | A boolean indicating if the oracle provider is registered. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | oracleProvider | address | The address of the oracle provider to check. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | bool | A boolean indicating if the oracle provider is registered. |
 
 ### getOracleProviderProperties
 
@@ -374,13 +414,17 @@ function getOracleProviderProperties(address oracleProvider) external view retur
 
 Retrieves the properties of an oracle provider.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| oracleProvider | address | The address of the oracle provider. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct IOracleProviderRegistry.OracleProviderProperties | The properties of the oracle provider. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | oracleProvider | address | The address of the oracle provider. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct IOracleProviderRegistry.OracleProviderProperties | The properties of the oracle provider. |
 
 ### updateTakeProfitBPSRange
 
@@ -392,11 +436,13 @@ Updates the take-profit basis points range of an oracle provider.
 
 _This function can only be called by the DAO and registered oracle providers._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| oracleProvider | address | The address of the oracle provider. |
-| minTakeProfitBPS | uint32 | The new minimum take-profit basis points. |
-| maxTakeProfitBPS | uint32 | The new maximum take-profit basis points. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | oracleProvider | address | The address of the oracle provider. |
+  | minTakeProfitBPS | uint32 | The new minimum take-profit basis points. |
+  | maxTakeProfitBPS | uint32 | The new maximum take-profit basis points. |
 
 ### updateLeverageLevel
 
@@ -408,10 +454,12 @@ Updates the leverage level of an oracle provider in the registry.
 
 _This function can only be called by the DAO and registered oracle providers._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| oracleProvider | address | The address of the oracle provider. |
-| level | uint8 | The new leverage level to be set for the oracle provider. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | oracleProvider | address | The address of the oracle provider. |
+  | level | uint8 | The new leverage level to be set for the oracle provider. |
 
 ### registerSettlementToken
 
@@ -423,14 +471,16 @@ Registers a new settlement token.
 
 _This function can only be called by the DAO address._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the settlement token to register. |
-| minimumMargin | uint256 | The minimum margin for the settlement token. |
-| interestRate | uint256 | The interest rate for the settlement token. |
-| flashLoanFeeRate | uint256 | The flash loan fee rate for the settlement token. |
-| earningDistributionThreshold | uint256 | The earning distribution threshold for the settlement token. |
-| uniswapFeeTier | uint24 | The Uniswap fee tier for the settlement token. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token to register. |
+  | minimumMargin | uint256 | The minimum margin for the settlement token. |
+  | interestRate | uint256 | The interest rate for the settlement token. |
+  | flashLoanFeeRate | uint256 | The flash loan fee rate for the settlement token. |
+  | earningDistributionThreshold | uint256 | The earning distribution threshold for the settlement token. |
+  | uniswapFeeTier | uint24 | The Uniswap fee tier for the settlement token. |
 
 ### registeredSettlementTokens
 
@@ -440,9 +490,11 @@ function registeredSettlementTokens() external view returns (address[])
 
 Gets the list of registered settlement tokens.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | address[] | An array of addresses representing the registered settlement tokens. |
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | address[] | An array of addresses representing the registered settlement tokens. |
 
 ### isRegisteredSettlementToken
 
@@ -452,13 +504,17 @@ function isRegisteredSettlementToken(address token) external view returns (bool)
 
 Checks if a settlement token is registered.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the settlement token to check. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | bool | True if the settlement token is registered, false otherwise. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token to check. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | bool | True if the settlement token is registered, false otherwise. |
 
 ### getMinimumMargin
 
@@ -471,13 +527,17 @@ Gets the minimum margin for a settlement token.
 _The minimumMargin is used as the minimum value for the taker margin of a position
      or as the minimum value for the maker margin of each bin._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the settlement token. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | The minimum margin for the settlement token. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | The minimum margin for the settlement token. |
 
 ### setMinimumMargin
 
@@ -489,10 +549,12 @@ Sets the minimum margin for a settlement token.
 
 _This function can only be called by the DAO address._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the settlement token. |
-| minimumMargin | uint256 | The new minimum margin for the settlement token. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token. |
+  | minimumMargin | uint256 | The new minimum margin for the settlement token. |
 
 ### getFlashLoanFeeRate
 
@@ -502,13 +564,17 @@ function getFlashLoanFeeRate(address token) external view returns (uint256)
 
 Gets the flash loan fee rate for a settlement token.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the settlement token. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | The flash loan fee rate for the settlement token. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | The flash loan fee rate for the settlement token. |
 
 ### setFlashLoanFeeRate
 
@@ -520,10 +586,12 @@ Sets the flash loan fee rate for a settlement token.
 
 _This function can only be called by the DAO address._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the settlement token. |
-| flashLoanFeeRate | uint256 | The new flash loan fee rate for the settlement token. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token. |
+  | flashLoanFeeRate | uint256 | The new flash loan fee rate for the settlement token. |
 
 ### getEarningDistributionThreshold
 
@@ -533,13 +601,17 @@ function getEarningDistributionThreshold(address token) external view returns (u
 
 Gets the earning distribution threshold for a settlement token.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the settlement token. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | The earning distribution threshold for the settlement token. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | The earning distribution threshold for the settlement token. |
 
 ### setEarningDistributionThreshold
 
@@ -551,10 +623,12 @@ Sets the earning distribution threshold for a settlement token.
 
 _This function can only be called by the DAO address._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the settlement token. |
-| earningDistributionThreshold | uint256 | The new earning distribution threshold for the settlement token. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token. |
+  | earningDistributionThreshold | uint256 | The new earning distribution threshold for the settlement token. |
 
 ### getUniswapFeeTier
 
@@ -564,13 +638,17 @@ function getUniswapFeeTier(address token) external view returns (uint24)
 
 Gets the Uniswap fee tier for a settlement token.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the settlement token. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint24 | The Uniswap fee tier for the settlement token. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint24 | The Uniswap fee tier for the settlement token. |
 
 ### setUniswapFeeTier
 
@@ -582,10 +660,12 @@ Sets the Uniswap fee tier for a settlement token.
 
 _This function can only be called by the DAO address._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the settlement token. |
-| uniswapFeeTier | uint24 | The new Uniswap fee tier for the settlement token. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token. |
+  | uniswapFeeTier | uint24 | The new Uniswap fee tier for the settlement token. |
 
 ### appendInterestRateRecord
 
@@ -597,11 +677,13 @@ Appends an interest rate record for a settlement token.
 
 _This function can only be called by the DAO address._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the settlement token. |
-| annualRateBPS | uint256 | The annual interest rate in basis points (BPS). |
-| beginTimestamp | uint256 | The timestamp when the interest rate record begins. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token. |
+  | annualRateBPS | uint256 | The annual interest rate in basis points (BPS). |
+  | beginTimestamp | uint256 | The timestamp when the interest rate record begins. |
 
 ### removeLastInterestRateRecord
 
@@ -613,9 +695,11 @@ Removes the last interest rate record for a settlement token.
 
 _This function can only be called by the DAO address._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the settlement token. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token. |
 
 ### getInterestRateRecords
 
@@ -625,13 +709,17 @@ function getInterestRateRecords(address token) external view returns (struct Int
 
 Gets all the interest rate records for a settlement token.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the settlement token. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct InterestRate.Record[] | An array of interest rate records for the settlement token. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct InterestRate.Record[] | An array of interest rate records for the settlement token. |
 
 ### currentInterestRate
 
@@ -641,13 +729,17 @@ function currentInterestRate(address token) external view returns (uint256 annua
 
 Gets the current interest rate for a settlement token.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the settlement token. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| annualRateBPS | uint256 | The current interest rate for the settlement token. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | annualRateBPS | uint256 | The current interest rate for the settlement token. |
 
 ### calculateInterest
 
@@ -657,14 +749,18 @@ function calculateInterest(address token, uint256 amount, uint256 from, uint256 
 
 Calculates the interest accrued for a given token and amount within a specified time range.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the token. |
-| amount | uint256 | The amount of the token. |
-| from | uint256 | The starting timestamp (inclusive) of the time range. |
-| to | uint256 | The ending timestamp (exclusive) of the time range. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | The accrued interest for the specified token and amount within the given time range. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the token. |
+  | amount | uint256 | The amount of the token. |
+  | from | uint256 | The starting timestamp (inclusive) of the time range. |
+  | to | uint256 | The ending timestamp (exclusive) of the time range. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | The accrued interest for the specified token and amount within the given time range. |
 

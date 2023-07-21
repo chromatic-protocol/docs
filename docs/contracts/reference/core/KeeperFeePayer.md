@@ -84,11 +84,13 @@ constructor(contract IChromaticMarketFactory _factory, contract ISwapRouter _uni
 
 _Constructor function._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _factory | contract IChromaticMarketFactory | The address of the ChromaticMarketFactory contract. |
-| _uniswapRouter | contract ISwapRouter | The address of the Uniswap router contract. |
-| _weth | contract IWETH9 | The address of the WETH9 contract. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _factory | contract IChromaticMarketFactory | The address of the ChromaticMarketFactory contract. |
+  | _uniswapRouter | contract ISwapRouter | The address of the Uniswap router contract. |
+  | _weth | contract IWETH9 | The address of the WETH9 contract. |
 
 ### setRouter
 
@@ -100,9 +102,11 @@ Only the DAO can call this function.
 
 _Sets the Uniswap router address._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _uniswapRouter | contract ISwapRouter | The address of the Uniswap router contract. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _uniswapRouter | contract ISwapRouter | The address of the Uniswap router contract. |
 
 ### approveToRouter
 
@@ -114,10 +118,12 @@ Approves or revokes approval to the Uniswap router for a given token.
 
 _Only the factory or the DAO can call this function._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| token | address | The address of the token. |
-| approve | bool | A boolean indicating whether to approve or revoke approval. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the token. |
+  | approve | bool | A boolean indicating whether to approve or revoke approval. |
 
 ### payKeeperFee
 
@@ -131,15 +137,19 @@ _Only the Vault can call this function.
      Throws a `KeeperFeeTransferFailure` error if the transfer of ETH to the keeper address fails.
      Throws an `InvalidSwapValue` error if the remaining balance of the input token after the swap is insufficient._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| tokenIn | address | The address of the token being swapped. |
-| amountOut | uint256 | The desired amount of output tokens. |
-| keeperAddress | address | The address of the keeper to receive the fee. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| amountIn | uint256 | The actual amount of input tokens used for the swap. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | tokenIn | address | The address of the token being swapped. |
+  | amountOut | uint256 | The desired amount of output tokens. |
+  | keeperAddress | address | The address of the keeper to receive the fee. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | amountIn | uint256 | The actual amount of input tokens used for the swap. |
 
 ### swapExactOutput
 
@@ -149,16 +159,20 @@ function swapExactOutput(address tokenIn, address recipient, uint256 amountOut, 
 
 _Executes a Uniswap swap with exact output amount._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| tokenIn | address | The address of the input token. |
-| recipient | address | The address that will receive the output tokens. |
-| amountOut | uint256 | The desired amount of output tokens. |
-| amountInMaximum | uint256 | The maximum amount of input tokens allowed for the swap. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| amountIn | uint256 | The actual amount of input tokens used for the swap. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | tokenIn | address | The address of the input token. |
+  | recipient | address | The address that will receive the output tokens. |
+  | amountOut | uint256 | The desired amount of output tokens. |
+  | amountInMaximum | uint256 | The maximum amount of input tokens allowed for the swap. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | amountIn | uint256 | The actual amount of input tokens used for the swap. |
 
 ### receive
 

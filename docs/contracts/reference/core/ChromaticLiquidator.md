@@ -17,11 +17,13 @@ constructor(contract IChromaticMarketFactory _factory, address _automate, addres
 
 _Constructor function._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _factory | contract IChromaticMarketFactory | The address of the Chromatic Market Factory contract. |
-| _automate | address | The address of the Gelato Automate contract. |
-| opsProxyFactory | address | The address of the Ops Proxy Factory contract. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _factory | contract IChromaticMarketFactory | The address of the Chromatic Market Factory contract. |
+  | _automate | address | The address of the Gelato Automate contract. |
+  | opsProxyFactory | address | The address of the Ops Proxy Factory contract. |
 
 ### getAutomate
 
@@ -31,9 +33,11 @@ function getAutomate() internal view returns (contract IAutomate)
 
 _Retrieves the IAutomate contract instance._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | contract IAutomate | IAutomate The IAutomate contract instance. |
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | contract IAutomate | IAutomate The IAutomate contract instance. |
 
 ### liquidate
 
@@ -43,10 +47,12 @@ function liquidate(address market, uint256 positionId) external
 
 Liquidates a position in a market.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the market contract. |
-| positionId | uint256 | The ID of the position to be liquidated. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the market contract. |
+  | positionId | uint256 | The ID of the position to be liquidated. |
 
 ### claimPosition
 
@@ -56,8 +62,10 @@ function claimPosition(address market, uint256 positionId) external
 
 Claims a position in a market.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| market | address | The address of the market contract. |
-| positionId | uint256 | The ID of the position to be claimed. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the market contract. |
+  | positionId | uint256 | The ID of the position to be claimed. |
 

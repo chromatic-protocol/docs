@@ -46,13 +46,17 @@ function entryVersion(struct PositionParam self) internal pure returns (uint256)
 
 Returns the settle version for the position's entry.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct PositionParam | The PositionParam struct. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | uint256 The settle version for the position's entry. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct PositionParam | The PositionParam struct. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | uint256 The settle version for the position's entry. |
 
 ### entryPrice
 
@@ -62,14 +66,18 @@ function entryPrice(struct PositionParam self, struct LpContext ctx) internal vi
 
 Calculates the entry price for a PositionParam.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct PositionParam | The PositionParam struct. |
-| ctx | struct LpContext | The LpContext struct. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | UFixed18 | UFixed18 The entry price. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct PositionParam | The PositionParam struct. |
+  | ctx | struct LpContext | The LpContext struct. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | UFixed18 | UFixed18 The entry price. |
 
 ### entryAmount
 
@@ -79,14 +87,18 @@ function entryAmount(struct PositionParam self, struct LpContext ctx) internal v
 
 Calculates the entry amount for a PositionParam.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct PositionParam | The PositionParam struct. |
-| ctx | struct LpContext | The LpContext struct. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | uint256 The entry amount. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct PositionParam | The PositionParam struct. |
+  | ctx | struct LpContext | The LpContext struct. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | uint256 The entry amount. |
 
 ### entryOracleVersion
 
@@ -96,14 +108,18 @@ function entryOracleVersion(struct PositionParam self, struct LpContext ctx) int
 
 Retrieves the settle oracle version for the position's entry.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct PositionParam | The PositionParam struct. |
-| ctx | struct LpContext | The LpContext struct. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct IOracleProvider.OracleVersion | OracleVersion The settle oracle version for the position's entry. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct PositionParam | The PositionParam struct. |
+  | ctx | struct LpContext | The LpContext struct. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct IOracleProvider.OracleVersion | OracleVersion The settle oracle version for the position's entry. |
 
 ### calculateInterest
 
@@ -114,15 +130,19 @@ function calculateInterest(struct PositionParam self, struct LpContext ctx, uint
 _Calculates the interest for a PositionParam until a specified timestamp.
 It is used only to deduct accumulated accrued interest when close position_
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct PositionParam | The PositionParam struct. |
-| ctx | struct LpContext | The LpContext struct. |
-| until | uint256 | The timestamp until which to calculate the interest. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | uint256 The calculated interest. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct PositionParam | The PositionParam struct. |
+  | ctx | struct LpContext | The LpContext struct. |
+  | until | uint256 | The timestamp until which to calculate the interest. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | uint256 The calculated interest. |
 
 ### clone
 
@@ -132,13 +152,17 @@ function clone(struct PositionParam self) internal pure returns (struct Position
 
 Creates a clone of a PositionParam.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct PositionParam | The PositionParam data struct. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct PositionParam | PositionParam The cloned PositionParam. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct PositionParam | The PositionParam data struct. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct PositionParam | PositionParam The cloned PositionParam. |
 
 ### inverse
 
@@ -148,11 +172,15 @@ function inverse(struct PositionParam self) internal pure returns (struct Positi
 
 Creates the inverse of a PositionParam by negating the leveragedQty.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct PositionParam | The PositionParam data struct. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | struct PositionParam | PositionParam The inverted PositionParam. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct PositionParam | The PositionParam data struct. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct PositionParam | PositionParam The inverted PositionParam. |
 

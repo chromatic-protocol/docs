@@ -38,10 +38,12 @@ function settleAccruedInterest(struct BinPendingPosition self, struct LpContext 
 
 Settles the accumulated interest of the pending position.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BinPendingPosition | The BinPendingPosition storage. |
-| ctx | struct LpContext | The LpContext. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct BinPendingPosition | The BinPendingPosition storage. |
+  | ctx | struct LpContext | The LpContext. |
 
 ### onOpenPosition
 
@@ -53,11 +55,13 @@ Handles the opening of a position.
 
 _Throws an error with the code `Errors.INVALID_ORACLE_VERSION` if the `openVersion` is not valid._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BinPendingPosition | The BinPendingPosition storage. |
-| ctx | struct LpContext |  |
-| param | struct PositionParam | The position parameters. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct BinPendingPosition | The BinPendingPosition storage. |
+  | ctx | struct LpContext |  |
+  | param | struct PositionParam | The position parameters. |
 
 ### onClosePosition
 
@@ -69,11 +73,13 @@ Handles the closing of a position.
 
 _Throws an error with the code `Errors.INVALID_ORACLE_VERSION` if the `openVersion` is not valid._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BinPendingPosition | The BinPendingPosition storage. |
-| ctx | struct LpContext | The LpContext. |
-| param | struct PositionParam | The position parameters. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct BinPendingPosition | The BinPendingPosition storage. |
+  | ctx | struct LpContext | The LpContext. |
+  | param | struct PositionParam | The position parameters. |
 
 ### unrealizedPnl
 
@@ -83,14 +89,18 @@ function unrealizedPnl(struct BinPendingPosition self, struct LpContext ctx) int
 
 Calculates the unrealized profit or loss (PnL) of the pending position.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BinPendingPosition | The BinPendingPosition storage. |
-| ctx | struct LpContext | The LpContext. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | int256 | uint256 The unrealized PnL. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct BinPendingPosition | The BinPendingPosition storage. |
+  | ctx | struct LpContext | The LpContext. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | int256 | uint256 The unrealized PnL. |
 
 ### currentInterest
 
@@ -100,14 +110,18 @@ function currentInterest(struct BinPendingPosition self, struct LpContext ctx) i
 
 Calculates the current accrued interest of the pending position.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BinPendingPosition | The BinPendingPosition storage. |
-| ctx | struct LpContext | The LpContext. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | uint256 | uint256 The current accrued interest. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct BinPendingPosition | The BinPendingPosition storage. |
+  | ctx | struct LpContext | The LpContext. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | uint256 The current accrued interest. |
 
 ### entryPrice
 
@@ -117,12 +131,16 @@ function entryPrice(struct BinPendingPosition self, struct LpContext ctx) intern
 
 Calculates the entry price of the pending position.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct BinPendingPosition | The BinPendingPosition storage. |
-| ctx | struct LpContext | The LpContext. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | UFixed18 | UFixed18 The entry price. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct BinPendingPosition | The BinPendingPosition storage. |
+  | ctx | struct LpContext | The LpContext. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | UFixed18 | UFixed18 The entry price. |
 

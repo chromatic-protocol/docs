@@ -68,9 +68,11 @@ constructor(contract IChromaticMarketFactory _factory) internal
 
 _Initializes the Liquidator contract._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _factory | contract IChromaticMarketFactory | The address of the ChromaticMarketFactory contract. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _factory | contract IChromaticMarketFactory | The address of the ChromaticMarketFactory contract. |
 
 ### getAutomate
 
@@ -80,9 +82,11 @@ function getAutomate() internal view virtual returns (contract IAutomate)
 
 _Retrieves the IAutomate contract instance._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | contract IAutomate | IAutomate The IAutomate contract instance. |
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | contract IAutomate | IAutomate The IAutomate contract instance. |
 
 ### updateLiquidationInterval
 
@@ -94,9 +98,11 @@ Updates the liquidation task interval.
 
 _Can only be called by the DAO_
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| interval | uint256 | The new liquidation task interval. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | interval | uint256 | The new liquidation task interval. |
 
 ### updateClaimInterval
 
@@ -108,9 +114,11 @@ Updates the claim task interval.
 
 _Can only be called by the DAO_
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| interval | uint256 | The new claim task interval. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | interval | uint256 | The new claim task interval. |
 
 ### createLiquidationTask
 
@@ -122,9 +130,11 @@ Creates a liquidation task for a given position.
 
 _Can only be called by a registered market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| positionId | uint256 | The ID of the position to be liquidated. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | positionId | uint256 | The ID of the position to be liquidated. |
 
 ### cancelLiquidationTask
 
@@ -136,9 +146,11 @@ Cancels a liquidation task for a given position.
 
 _Can only be called by a registered market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| positionId | uint256 | The ID of the position for which to cancel the liquidation task. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | positionId | uint256 | The ID of the position for which to cancel the liquidation task. |
 
 ### resolveLiquidation
 
@@ -150,15 +162,19 @@ Resolves the liquidation of a position.
 
 _This function is called by the Gelato automation system._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _market | address |  |
-| positionId | uint256 | The ID of the position to be liquidated. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| canExec | bool | Whether the liquidation can be executed. |
-| execPayload | bytes | The encoded function call to execute the liquidation. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _market | address |  |
+  | positionId | uint256 | The ID of the position to be liquidated. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | canExec | bool | Whether the liquidation can be executed. |
+  | execPayload | bytes | The encoded function call to execute the liquidation. |
 
 ### _liquidate
 
@@ -168,11 +184,13 @@ function _liquidate(address _market, uint256 positionId, uint256 fee) internal
 
 _Internal function to perform the liquidation of a position._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _market | address | The address of the market contract. |
-| positionId | uint256 | The ID of the position to be liquidated. |
-| fee | uint256 | The fee to be paid for the liquidation. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _market | address | The address of the market contract. |
+  | positionId | uint256 | The ID of the position to be liquidated. |
+  | fee | uint256 | The fee to be paid for the liquidation. |
 
 ### createClaimPositionTask
 
@@ -184,9 +202,11 @@ Creates a claim position task for a given position.
 
 _Can only be called by a registered market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| positionId | uint256 | The ID of the position to be claimed. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | positionId | uint256 | The ID of the position to be claimed. |
 
 ### cancelClaimPositionTask
 
@@ -198,9 +218,11 @@ Cancels a claim position task for a given position.
 
 _Can only be called by a registered market._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| positionId | uint256 | The ID of the position for which to cancel the claim position task. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | positionId | uint256 | The ID of the position for which to cancel the claim position task. |
 
 ### resolveClaimPosition
 
@@ -212,15 +234,19 @@ Resolves the claim of a position.
 
 _This function is called by the Gelato automation system._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _market | address |  |
-| positionId | uint256 | The ID of the position to be claimed. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| canExec | bool | Whether the claim can be executed. |
-| execPayload | bytes | The encoded function call to execute the claim. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _market | address |  |
+  | positionId | uint256 | The ID of the position to be claimed. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | canExec | bool | Whether the claim can be executed. |
+  | execPayload | bytes | The encoded function call to execute the claim. |
 
 ### _claimPosition
 
@@ -230,11 +256,13 @@ function _claimPosition(address _market, uint256 positionId, uint256 fee) intern
 
 _Internal function to perform the claim of a position._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _market | address | The address of the market contract. |
-| positionId | uint256 | The ID of the position to be claimed. |
-| fee | uint256 | The fee to be paid for the claim. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _market | address | The address of the market contract. |
+  | positionId | uint256 | The ID of the position to be claimed. |
+  | fee | uint256 | The fee to be paid for the claim. |
 
 ### _createTask
 
@@ -244,12 +272,14 @@ function _createTask(mapping(address => mapping(uint256 => bytes32)) registry, u
 
 _Internal function to create a Gelato task for liquidation or claim position._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| registry | mapping(address &#x3D;&gt; mapping(uint256 &#x3D;&gt; bytes32)) | The mapping to store task IDs. |
-| positionId | uint256 | The ID of the position. |
-| resolve | function (address,uint256) view external returns (bool,bytes) | The resolve function to be called by the Gelato automation system. |
-| interval | uint256 | The interval between task executions. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | registry | mapping(address &#x3D;&gt; mapping(uint256 &#x3D;&gt; bytes32)) | The mapping to store task IDs. |
+  | positionId | uint256 | The ID of the position. |
+  | resolve | function (address,uint256) view external returns (bool,bytes) | The resolve function to be called by the Gelato automation system. |
+  | interval | uint256 | The interval between task executions. |
 
 ### _cancelTask
 
@@ -259,8 +289,10 @@ function _cancelTask(mapping(address => mapping(uint256 => bytes32)) registry, u
 
 _Internal function to cancel a Gelato task._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| registry | mapping(address &#x3D;&gt; mapping(uint256 &#x3D;&gt; bytes32)) | The mapping storing task IDs. |
-| positionId | uint256 | The ID of the position. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | registry | mapping(address &#x3D;&gt; mapping(uint256 &#x3D;&gt; bytes32)) | The mapping storing task IDs. |
+  | positionId | uint256 | The ID of the position. |
 

@@ -35,13 +35,15 @@ Registers an oracle provider in the registry.
 
 _Throws an error with the code `Errors.ALREADY_REGISTERED_ORACLE_PROVIDER` if the oracle provider is already registered._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct OracleProviderRegistry | The OracleProviderRegistry storage. |
-| oracleProvider | address | The address of the oracle provider to register. |
-| minTakeProfitBPS | uint32 | The minimum take-profit basis points. |
-| maxTakeProfitBPS | uint32 | The maximum take-profit basis points. |
-| leverageLevel | uint8 | The leverage level of the oracle provider. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct OracleProviderRegistry | The OracleProviderRegistry storage. |
+  | oracleProvider | address | The address of the oracle provider to register. |
+  | minTakeProfitBPS | uint32 | The minimum take-profit basis points. |
+  | maxTakeProfitBPS | uint32 | The maximum take-profit basis points. |
+  | leverageLevel | uint8 | The leverage level of the oracle provider. |
 
 ### unregister
 
@@ -51,10 +53,12 @@ function unregister(struct OracleProviderRegistry self, address oracleProvider) 
 
 Unregisters an oracle provider from the registry.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct OracleProviderRegistry | The OracleProviderRegistry storage. |
-| oracleProvider | address | The address of the oracle provider to unregister. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct OracleProviderRegistry | The OracleProviderRegistry storage. |
+  | oracleProvider | address | The address of the oracle provider to unregister. |
 
 ### oracleProviders
 
@@ -64,13 +68,17 @@ function oracleProviders(struct OracleProviderRegistry self) internal view retur
 
 Returns an array of all registered oracle providers.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct OracleProviderRegistry | The OracleProviderRegistry storage. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | address[] | oracleProviders An array of addresses representing the registered oracle providers. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct OracleProviderRegistry | The OracleProviderRegistry storage. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | address[] | oracleProviders An array of addresses representing the registered oracle providers. |
 
 ### isRegistered
 
@@ -80,14 +88,18 @@ function isRegistered(struct OracleProviderRegistry self, address oracleProvider
 
 Checks if an oracle provider is registered in the registry.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct OracleProviderRegistry | The OracleProviderRegistry storage. |
-| oracleProvider | address | The address of the oracle provider to check. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| [0] | bool | bool Whether the oracle provider is registered. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct OracleProviderRegistry | The OracleProviderRegistry storage. |
+  | oracleProvider | address | The address of the oracle provider to check. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | bool | bool Whether the oracle provider is registered. |
 
 ### getOracleProviderProperties
 
@@ -97,16 +109,20 @@ function getOracleProviderProperties(struct OracleProviderRegistry self, address
 
 Retrieves the properties of an oracle provider.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct OracleProviderRegistry | The OracleProviderRegistry storage. |
-| oracleProvider | address | The address of the oracle provider. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| minTakeProfitBPS | uint32 | The minimum take-profit basis points. |
-| maxTakeProfitBPS | uint32 | The maximum take-profit basis points. |
-| leverageLevel | uint8 | The leverage level of the oracle provider. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct OracleProviderRegistry | The OracleProviderRegistry storage. |
+  | oracleProvider | address | The address of the oracle provider. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | minTakeProfitBPS | uint32 | The minimum take-profit basis points. |
+  | maxTakeProfitBPS | uint32 | The maximum take-profit basis points. |
+  | leverageLevel | uint8 | The leverage level of the oracle provider. |
 
 ### setTakeProfitBPSRange
 
@@ -116,12 +132,14 @@ function setTakeProfitBPSRange(struct OracleProviderRegistry self, address oracl
 
 Sets the range for take-profit basis points for an oracle provider.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct OracleProviderRegistry | The OracleProviderRegistry storage. |
-| oracleProvider | address | The address of the oracle provider. |
-| minTakeProfitBPS | uint32 | The minimum take-profit basis points. |
-| maxTakeProfitBPS | uint32 | The maximum take-profit basis points. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct OracleProviderRegistry | The OracleProviderRegistry storage. |
+  | oracleProvider | address | The address of the oracle provider. |
+  | minTakeProfitBPS | uint32 | The minimum take-profit basis points. |
+  | maxTakeProfitBPS | uint32 | The maximum take-profit basis points. |
 
 ### setLeverageLevel
 
@@ -133,9 +151,11 @@ Sets the leverage level of an oracle provider in the registry.
 
 _The leverage level must be either 0 or 1, and the max leverage must be x10 for level 0 or x20 for level 1._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| self | struct OracleProviderRegistry | The storage reference to the OracleProviderRegistry. |
-| oracleProvider | address | The address of the oracle provider. |
-| leverageLevel | uint8 | The new leverage level to be set for the oracle provider. |
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct OracleProviderRegistry | The storage reference to the OracleProviderRegistry. |
+  | oracleProvider | address | The address of the oracle provider. |
+  | leverageLevel | uint8 | The new leverage level to be set for the oracle provider. |
 

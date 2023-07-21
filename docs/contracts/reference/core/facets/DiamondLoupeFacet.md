@@ -14,9 +14,11 @@ function facets() external view returns (struct IDiamondLoupe.Facet[] facets_)
 
 Gets all facets and their selectors.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| facets_ | struct IDiamondLoupe.Facet[] | Facet |
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | facets_ | struct IDiamondLoupe.Facet[] | Facet |
 
 ### facetFunctionSelectors
 
@@ -26,13 +28,17 @@ function facetFunctionSelectors(address _facet) external view returns (bytes4[] 
 
 Gets all the function selectors supported by a specific facet.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _facet | address | The facet address. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _facetFunctionSelectors | bytes4[] | The selectors associated with a facet address. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _facet | address | The facet address. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _facetFunctionSelectors | bytes4[] | The selectors associated with a facet address. |
 
 ### facetAddresses
 
@@ -42,9 +48,11 @@ function facetAddresses() external view returns (address[] facetAddresses_)
 
 Get all the facet addresses used by a diamond.
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| facetAddresses_ | address[] |  |
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | facetAddresses_ | address[] |  |
 
 ### facetAddress
 
@@ -56,13 +64,17 @@ Gets the facet that supports the given selector.
 
 _If facet is not found return address(0)._
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| _functionSelector | bytes4 | The function selector. |
+- Parameters:
 
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| facetAddress_ | address | The facet address. |
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _functionSelector | bytes4 | The function selector. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | facetAddress_ | address | The facet address. |
 
 ### supportsInterface
 

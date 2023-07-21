@@ -22,6 +22,22 @@ struct Position {
 }
 ```
 
+_The Position struct represents a trading position._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| id | uint256 | The position identifier |
+| openVersion | uint256 | The version of the oracle when the position was opened |
+| closeVersion | uint256 | The version of the oracle when the position was closed |
+| qty | int224 | The quantity of the position |
+| leverage | uint32 | The leverage applied to the position |
+| openTimestamp | uint256 | The timestamp when the position was opened |
+| closeTimestamp | uint256 | The timestamp when the position was closed |
+| takerMargin | uint256 | The amount of collateral that a trader must provide |
+| owner | address | The owner of the position, usually it is the account address of trader |
+| _binMargins | struct BinMargin[] | The bin margins for the position, it represents the amount of collateral for each bin |
+| _feeProtocol | uint8 | The protocol fee for the market |
+
 ## PositionLib
 
 Provides functions that operate on the `Position` struct

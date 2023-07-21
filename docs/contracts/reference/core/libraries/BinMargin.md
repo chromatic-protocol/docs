@@ -13,6 +13,13 @@ struct BinMargin {
 }
 ```
 
+_The BinMargin struct represents the margin information for an LP bin._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| tradingFeeRate | uint16 | The trading fee rate associated with the LP bin |
+| amount | uint256 | The maker margin amount specified for the LP bin |
+
 ## BinMarginLib
 
 _The BinMarginLib library provides functions to operate on BinMargin structs._

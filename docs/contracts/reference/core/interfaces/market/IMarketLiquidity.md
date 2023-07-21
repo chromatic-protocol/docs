@@ -20,6 +20,16 @@ struct ClaimableLiquidity {
 }
 ```
 
+_A struct representing claimable liquidity information._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| mintingTokenAmountRequested | uint256 | The amount of settlement tokens requested for minting. |
+| mintingCLBTokenAmount | uint256 | The actual amount of CLB tokens minted. |
+| burningCLBTokenAmountRequested | uint256 | The amount of CLB tokens requested for burning. |
+| burningCLBTokenAmount | uint256 | The actual amount of CLB tokens burned. |
+| burningTokenAmount | uint256 | The amount of settlement tokens equal in value to the burned CLB tokens. |
+
 ### LiquidityBinStatus
 
 ```solidity
@@ -30,6 +40,15 @@ struct LiquidityBinStatus {
   int16 tradingFeeRate;
 }
 ```
+
+_A struct representing status of the liquidity bin._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| liquidity | uint256 | The total liquidity amount in the bin |
+| freeLiquidity | uint256 | The amount of free liquidity available in the bin. |
+| binValue | uint256 | The current value of the bin. |
+| tradingFeeRate | int16 | The trading fee rate for the liquidity. |
 
 ### AddLiquidity
 

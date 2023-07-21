@@ -14,6 +14,8 @@ struct ChainlinkRound {
 }
 ```
 
+_ChainlinkRound type_
+
 ## ChainlinkRoundLib
 
 Library that manages Chainlink round parsing.

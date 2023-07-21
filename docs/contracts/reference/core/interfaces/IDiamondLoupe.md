@@ -15,6 +15,9 @@ struct Facet {
 }
 ```
 
+These functions are expected to be called frequently
+by tools.
+
 ### facets
 
 ```solidity

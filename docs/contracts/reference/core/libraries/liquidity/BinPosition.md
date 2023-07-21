@@ -17,6 +17,17 @@ struct BinPosition {
 }
 ```
 
+_Represents a position in the LiquidityBin_
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| totalLeveragedQty | int256 | The total leveraged quantity of the `LiquidityBin` |
+| totalEntryAmount | uint256 | The total entry amount of the `LiquidityBin` |
+| _totalMakerMargin | uint256 | The total maker margin of the `LiquidityBin` |
+| _totalTakerMargin | uint256 | The total taker margin of the `LiquidityBin` |
+| _pending | struct BinPendingPosition | The pending position of the `LiquidityBin` |
+| _accruedInterest | struct AccruedInterest | The accumulated interest of the `LiquidityBin` |
+
 ## BinPositionLib
 
 Library for managing positions in the `LiquidityBin`

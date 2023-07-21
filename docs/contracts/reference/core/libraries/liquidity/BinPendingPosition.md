@@ -16,6 +16,16 @@ struct BinPendingPosition {
 }
 ```
 
+_Represents a pending position within the LiquidityBin_
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| openVersion | uint256 | The oracle version when the position was opened. |
+| totalLeveragedQty | int256 | The total leveraged quantity of the pending position. |
+| totalMakerMargin | uint256 | The total maker margin of the pending position. |
+| totalTakerMargin | uint256 | The total taker margin of the pending position. |
+| accruedInterest | struct AccruedInterest | The accumulated interest of the pending position. |
+
 ## BinPendingPositionLib
 
 Library for managing pending positions in the `LiquidityBin`

@@ -12,6 +12,8 @@ struct MarketDeployer {
 }
 ```
 
+_Storage struct for deploying a ChromaticMarket contract_
+
 ## Parameters
 
 ```solidity
@@ -20,6 +22,8 @@ struct Parameters {
   address settlementToken;
 }
 ```
+
+_Struct for storing deployment parameters_
 
 ## MarketDeployerLib
 

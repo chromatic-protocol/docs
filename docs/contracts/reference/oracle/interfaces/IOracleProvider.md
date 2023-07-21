@@ -24,6 +24,14 @@ struct OracleVersion {
 }
 ```
 
+_A singular oracle version with its corresponding data_
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| version | uint256 | The iterative version |
+| timestamp | uint256 | the timestamp of the oracle update |
+| price | Fixed18 | The oracle price of the corresponding version |
+
 ### sync
 
 ```solidity

@@ -15,6 +15,12 @@ struct OracleProviderRegistry {
 }
 ```
 
+_A registry for managing oracle providers._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| _oracleProviders | struct EnumerableSet.AddressSet | Set of registered oracle providers |
+
 ## OracleProviderRegistryLib
 
 Library for managing a registry of oracle providers.

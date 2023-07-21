@@ -23,7 +23,7 @@ struct LpReceipt {
   uint256 oracleVersion;
   uint256 amount;
   address recipient;
-  enum LpAction action;
+  LpAction action;
   int16 tradingFeeRate;
 }
 ```
@@ -36,7 +36,7 @@ _The LpReceipt struct represents a receipt of an LP action performed._
 | oracleVersion | uint256 | The oracle version associated with the action |
 | amount | uint256 | The amount involved in the action,<br /> when the action is `ADD_LIQUIDITY`, this value represents the amount of settlement tokens<br /> when the action is `REMOVE_LIQUIDITY`, this value represents the amount of CLB tokens |
 | recipient | address | The address of the recipient of the action |
-| action | enum LpAction | An enumeration representing the type of LP action performed (ADD_LIQUIDITY or REMOVE_LIQUIDITY) |
+| action | LpAction | An enumeration representing the type of LP action performed (ADD_LIQUIDITY or REMOVE_LIQUIDITY) |
 | tradingFeeRate | int16 | The trading fee rate associated with the LP action |
 
 ## LpReceiptLib

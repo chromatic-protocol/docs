@@ -8,7 +8,7 @@ title: OracleProviderRegistry.sol
 
 ```solidity
 struct OracleProviderRegistry {
-  struct EnumerableSet.AddressSet _oracleProviders;
+  EnumerableSet.AddressSet _oracleProviders;
   mapping(address => uint32) _minTakeProfitBPSs;
   mapping(address => uint32) _maxTakeProfitBPSs;
   mapping(address => uint8) _leverageLevels;
@@ -19,7 +19,7 @@ _A registry for managing oracle providers._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| _oracleProviders | struct EnumerableSet.AddressSet | Set of registered oracle providers |
+| _oracleProviders | EnumerableSet.AddressSet | Set of registered oracle providers |
 
 ## OracleProviderRegistryLib
 

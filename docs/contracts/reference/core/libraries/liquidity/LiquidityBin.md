@@ -9,9 +9,9 @@ title: LiquidityBin.sol
 ```solidity
 struct LiquidityBin {
   uint256 clbTokenId;
-  struct BinLiquidity _liquidity;
-  struct BinPosition _position;
-  struct BinClosedPosition _closedPosition;
+  BinLiquidity _liquidity;
+  BinPosition _position;
+  BinClosedPosition _closedPosition;
 }
 ```
 
@@ -20,9 +20,9 @@ _Structure representing a liquidity bin_
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | clbTokenId | uint256 | The ID of the CLB token |
-| _liquidity | struct BinLiquidity | The liquidity data for the bin |
-| _position | struct BinPosition | The position data for the bin |
-| _closedPosition | struct BinClosedPosition | The closed position data for the bin |
+| _liquidity | BinLiquidity | The liquidity data for the bin |
+| _position | BinPosition | The position data for the bin |
+| _closedPosition | BinClosedPosition | The closed position data for the bin |
 
 ## LiquidityBinLib
 

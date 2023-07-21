@@ -12,8 +12,8 @@ struct BinPosition {
   uint256 totalEntryAmount;
   uint256 _totalMakerMargin;
   uint256 _totalTakerMargin;
-  struct BinPendingPosition _pending;
-  struct AccruedInterest _accruedInterest;
+  BinPendingPosition _pending;
+  AccruedInterest _accruedInterest;
 }
 ```
 
@@ -25,8 +25,8 @@ _Represents a position in the LiquidityBin_
 | totalEntryAmount | uint256 | The total entry amount of the `LiquidityBin` |
 | _totalMakerMargin | uint256 | The total maker margin of the `LiquidityBin` |
 | _totalTakerMargin | uint256 | The total taker margin of the `LiquidityBin` |
-| _pending | struct BinPendingPosition | The pending position of the `LiquidityBin` |
-| _accruedInterest | struct AccruedInterest | The accumulated interest of the `LiquidityBin` |
+| _pending | BinPendingPosition | The pending position of the `LiquidityBin` |
+| _accruedInterest | AccruedInterest | The accumulated interest of the `LiquidityBin` |
 
 ## BinPositionLib
 

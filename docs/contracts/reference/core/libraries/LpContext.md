@@ -8,14 +8,14 @@ title: LpContext.sol
 
 ```solidity
 struct LpContext {
-  contract IOracleProvider oracleProvider;
-  contract IInterestCalculator interestCalculator;
-  contract IChromaticVault vault;
-  contract ICLBToken clbToken;
+  IOracleProvider oracleProvider;
+  IInterestCalculator interestCalculator;
+  IChromaticVault vault;
+  ICLBToken clbToken;
   address market;
   address settlementToken;
   uint256 tokenPrecision;
-  struct IOracleProvider.OracleVersion _currentVersionCache;
+  IOracleProvider.OracleVersion _currentVersionCache;
 }
 ```
 
@@ -23,14 +23,14 @@ _Represents the context information required for LP bin operations._
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| oracleProvider | contract IOracleProvider | The Oracle Provider contract used for price feed |
-| interestCalculator | contract IInterestCalculator | The Interest Calculator contract used for interest calculations |
-| vault | contract IChromaticVault | The Chromatic Vault contract responsible for managing liquidity and margin |
-| clbToken | contract ICLBToken | The CLB token contract that represents LP ownership in the pool |
+| oracleProvider | IOracleProvider | The Oracle Provider contract used for price feed |
+| interestCalculator | IInterestCalculator | The Interest Calculator contract used for interest calculations |
+| vault | IChromaticVault | The Chromatic Vault contract responsible for managing liquidity and margin |
+| clbToken | ICLBToken | The CLB token contract that represents LP ownership in the pool |
 | market | address | The address of market contract |
 | settlementToken | address | The address of the settlement token used in the market |
 | tokenPrecision | uint256 | The precision of the settlement token used in the market |
-| _currentVersionCache | struct IOracleProvider.OracleVersion | Cached instance of the current oracle version |
+| _currentVersionCache | IOracleProvider.OracleVersion | Cached instance of the current oracle version |
 
 ## LpContextLib
 

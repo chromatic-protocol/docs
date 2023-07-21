@@ -15,8 +15,8 @@ struct PositionParam {
   uint256 makerMargin;
   uint256 openTimestamp;
   uint256 closeTimestamp;
-  struct IOracleProvider.OracleVersion _entryVersionCache;
-  struct IOracleProvider.OracleVersion _exitVersionCache;
+  IOracleProvider.OracleVersion _entryVersionCache;
+  IOracleProvider.OracleVersion _exitVersionCache;
 }
 ```
 
@@ -31,8 +31,8 @@ _A struct representing the parameters of a position._
 | makerMargin | uint256 | The margin amount provided by the maker |
 | openTimestamp | uint256 | The timestamp of the position's open transaction |
 | closeTimestamp | uint256 | The timestamp of the position's close transaction |
-| _entryVersionCache | struct IOracleProvider.OracleVersion | Caches the settle oracle version for the position's entry |
-| _exitVersionCache | struct IOracleProvider.OracleVersion | Caches the settle oracle version for the position's exit |
+| _entryVersionCache | IOracleProvider.OracleVersion | Caches the settle oracle version for the position's entry |
+| _exitVersionCache | IOracleProvider.OracleVersion | Caches the settle oracle version for the position's exit |
 
 ## PositionParamLib
 

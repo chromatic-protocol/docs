@@ -13,7 +13,7 @@ struct BinClosingPosition {
   uint256 totalEntryAmount;
   uint256 totalMakerMargin;
   uint256 totalTakerMargin;
-  struct AccruedInterest accruedInterest;
+  AccruedInterest accruedInterest;
 }
 ```
 
@@ -26,7 +26,7 @@ _Represents the closing position within an LiquidityBin._
 | totalEntryAmount | uint256 | The total entry amount of the closing position. |
 | totalMakerMargin | uint256 | The total maker margin of the closing position. |
 | totalTakerMargin | uint256 | The total taker margin of the closing position. |
-| accruedInterest | struct AccruedInterest | The accumulated interest of the closing position. |
+| accruedInterest | AccruedInterest | The accumulated interest of the closing position. |
 
 ## BinClosingPositionLib
 

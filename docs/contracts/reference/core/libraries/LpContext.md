@@ -19,6 +19,19 @@ struct LpContext {
 }
 ```
 
+_Represents the context information required for LP bin operations._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| oracleProvider | contract IOracleProvider | The Oracle Provider contract used for price feed |
+| interestCalculator | contract IInterestCalculator | The Interest Calculator contract used for interest calculations |
+| vault | contract IChromaticVault | The Chromatic Vault contract responsible for managing liquidity and margin |
+| clbToken | contract ICLBToken | The CLB token contract that represents LP ownership in the pool |
+| market | address | The address of market contract |
+| settlementToken | address | The address of the settlement token used in the market |
+| tokenPrecision | uint256 | The precision of the settlement token used in the market |
+| _currentVersionCache | struct IOracleProvider.OracleVersion | Cached instance of the current oracle version |
+
 ## LpContextLib
 
 Provides functions that operate on the `LpContext` struct

@@ -18,6 +18,14 @@ struct OracleProviderProperties {
 }
 ```
 
+_The OracleProviderProperties struct represents properties of the oracle provider._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| minTakeProfitBPS | uint32 | The minimum take-profit basis points. |
+| maxTakeProfitBPS | uint32 | The maximum take-profit basis points. |
+| leverageLevel | uint8 | The leverage level of the oracle provider. |
+
 ### OracleProviderRegistered
 
 ```solidity

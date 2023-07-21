@@ -17,6 +17,13 @@ struct AddLiquidityCallbackData {
 }
 ```
 
+_Struct representing the data for an addLiquidity callback._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| provider | address | The address of the liquidity provider. |
+| amount | uint256 | The amount of tokens being added as liquidity. |
+
 ### AddLiquidityBatchCallbackData
 
 ```solidity
@@ -26,6 +33,13 @@ struct AddLiquidityBatchCallbackData {
 }
 ```
 
+_Struct representing the data for an addLiquidityBatch callback._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| provider | address | The address of the liquidity provider. |
+| amount | uint256 | The amount of tokens being added as liquidity. |
+
 ### ClaimLiquidityCallbackData
 
 ```solidity
@@ -34,6 +48,12 @@ struct ClaimLiquidityCallbackData {
 }
 ```
 
+_Struct representing the data for a claimLiquidity callback._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| provider | address | The address of the liquidity provider. |
+
 ### ClaimLiquidityBatchCallbackData
 
 ```solidity
@@ -41,6 +61,12 @@ struct ClaimLiquidityBatchCallbackData {
   address provider;
 }
 ```
+
+_Struct representing the data for a claimLiquidityBatch callback._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| provider | address | The address of the liquidity provider. |
 
 ### RemoveLiquidityCallbackData
 
@@ -51,6 +77,13 @@ struct RemoveLiquidityCallbackData {
 }
 ```
 
+_Struct representing the data for a removeLiquidity callback._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| provider | address | The address of the liquidity provider. |
+| clbTokenAmount | uint256 | The amount of CLB tokens being removed. |
+
 ### RemoveLiquidityBatchCallbackData
 
 ```solidity
@@ -60,6 +93,13 @@ struct RemoveLiquidityBatchCallbackData {
 }
 ```
 
+_Struct representing the data for a removeLiquidityBatch callback._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| provider | address | The address of the liquidity provider. |
+| clbTokenAmounts | uint256[] | An array of CLB token amounts being removed. |
+
 ### WithdrawLiquidityCallbackData
 
 ```solidity
@@ -68,6 +108,12 @@ struct WithdrawLiquidityCallbackData {
 }
 ```
 
+_Struct representing the data for a withdrawLiquidity callback._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| provider | address | The address of the liquidity provider. |
+
 ### WithdrawLiquidityBatchCallbackData
 
 ```solidity
@@ -75,6 +121,12 @@ struct WithdrawLiquidityBatchCallbackData {
   address provider;
 }
 ```
+
+_Struct representing the data for a withdrawLiquidityBatch callback._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| provider | address | The address of the liquidity provider. |
 
 ### receiptIds
 

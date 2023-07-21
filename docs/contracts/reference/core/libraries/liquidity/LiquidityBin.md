@@ -15,6 +15,15 @@ struct LiquidityBin {
 }
 ```
 
+_Structure representing a liquidity bin_
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| clbTokenId | uint256 | The ID of the CLB token |
+| _liquidity | struct BinLiquidity | The liquidity data for the bin |
+| _position | struct BinPosition | The position data for the bin |
+| _closedPosition | struct BinClosedPosition | The closed position data for the bin |
+
 ## LiquidityBinLib
 
 Library for managing liquidity bin

@@ -13,6 +13,13 @@ struct AccruedInterest {
 }
 ```
 
+_Structure for tracking accumulated interest_
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| accumulatedAt | uint256 | The timestamp at which the interest was last accumulated. |
+| accumulatedAmount | uint256 | The total amount of interest accumulated. |
+
 ## AccruedInterestLib
 
 Tracks the accumulated interest for a given token amount and period of time

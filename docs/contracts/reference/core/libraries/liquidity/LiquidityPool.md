@@ -13,6 +13,8 @@ struct LiquidityPool {
 }
 ```
 
+_Represents a collection of long and short liquidity bins_
+
 ## LiquidityPoolLib
 
 Library for managing liquidity bins in an LiquidityPool

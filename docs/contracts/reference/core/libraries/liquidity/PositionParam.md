@@ -20,6 +20,20 @@ struct PositionParam {
 }
 ```
 
+_A struct representing the parameters of a position._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| openVersion | uint256 | The version of the position's open transaction |
+| closeVersion | uint256 | The version of the position's close transaction |
+| leveragedQty | int256 | The leveraged quantity of the position |
+| takerMargin | uint256 | The margin amount provided by the taker |
+| makerMargin | uint256 | The margin amount provided by the maker |
+| openTimestamp | uint256 | The timestamp of the position's open transaction |
+| closeTimestamp | uint256 | The timestamp of the position's close transaction |
+| _entryVersionCache | struct IOracleProvider.OracleVersion | Caches the settle oracle version for the position's entry |
+| _exitVersionCache | struct IOracleProvider.OracleVersion | Caches the settle oracle version for the position's exit |
+
 ## PositionParamLib
 
 Library for manipulating PositionParam struct.

@@ -17,6 +17,17 @@ struct SettlementTokenRegistry {
 }
 ```
 
+_A registry for managing settlement tokens and their associated parameters._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| _tokens | struct EnumerableSet.AddressSet | Set of registered settlement tokens |
+| _interestRateRecords | mapping(address &#x3D;&gt; struct InterestRate.Record[]) | Mapping of settlement tokens to their interest rate records |
+| _minimumMargins | mapping(address &#x3D;&gt; uint256) | Mapping of settlement tokens to their minimum margins |
+| _flashLoanFeeRates | mapping(address &#x3D;&gt; uint256) | Mapping of settlement tokens to their flash loan fee rates |
+| _earningDistributionThresholds | mapping(address &#x3D;&gt; uint256) | Mapping of settlement tokens to their earning distribution thresholds |
+| _uniswapFeeTiers | mapping(address &#x3D;&gt; uint24) | Mapping of settlement tokens to their Uniswap fee tiers |
+
 ## SettlementTokenRegistryLib
 
 Library for managing the settlement token registry.

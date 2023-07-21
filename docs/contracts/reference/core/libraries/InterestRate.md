@@ -20,6 +20,13 @@ struct Record {
 }
 ```
 
+_Record type_
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| annualRateBPS | uint256 | Annual interest rate in BPS |
+| beginTimestamp | uint256 | Timestamp when the interest rate becomes effective |
+
 ### initialized
 
 ```solidity

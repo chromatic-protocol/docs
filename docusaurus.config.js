@@ -169,6 +169,10 @@ const config = {
               // }
             ]
           },
+          {
+            type: 'search',
+            position: 'right'
+          },
           // launch app
           {
             href: CHROMATIC_LINKS.app,
@@ -267,7 +271,18 @@ const config = {
   markdown: {
     mermaid: true
   },
-  themes: ['@docusaurus/theme-mermaid']
+  themes: [
+    '@docusaurus/theme-mermaid',
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        hashed: true,
+        language: ['en'],
+        searchResultLimits: 20
+      })
+    ]
+  ]
 }
 
 module.exports = config

@@ -279,7 +279,7 @@ const config = {
       ({
         hashed: true,
         language: ['en'],
-        searchResultLimits: 20
+        searchResultLimits: 8
       })
     ]
   ]

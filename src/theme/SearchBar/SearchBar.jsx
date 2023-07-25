@@ -310,9 +310,6 @@ export default function SearchBar({ handleSearchBarToggle, }) {
             searchBarShortcutHint &&
             (inputValue !== "" ? (<button className={styles.searchClearButton} onClick={onClearSearch}>
             ✕
-          </button>) : (ExecutionEnvironment.canUseDOM && (<div className={styles.searchHintContainer}>
-              <kbd className={styles.searchHint}>{isMac ? "⌘" : "ctrl"}</kbd>
-              <kbd className={styles.searchHint}>K</kbd>
-            </div>)))}
+          </button>) : null)}
     </div>);
 }

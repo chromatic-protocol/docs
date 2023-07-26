@@ -268,10 +268,9 @@ export default function SearchBar({ handleSearchBarToggle, }) {
         if (!searchBarShortcut) {
             return;
         }
-        // Add shortcuts command/ctrl + K
+        // Add shortcuts /
         const handleShortcut = (event) => {
-            if ((isMac ? event.metaKey : event.ctrlKey) &&
-                (event.key === "k" || event.key === "K")) {
+            if (event.key === "/") {
                 event.preventDefault();
                 searchBarRef.current?.focus();
                 onInputFocus();

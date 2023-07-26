@@ -138,7 +138,7 @@ Returns the denominator of the protocol's % share of the fees
 ### setFeeProtocol
 
 ```solidity
-function setFeeProtocol(uint8 feeProtocol) external
+function setFeeProtocol(uint8 _feeProtocol) external
 ```
 
 Set the denominator of the protocol's % share of the fees
@@ -147,5 +147,5 @@ Set the denominator of the protocol's % share of the fees
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | feeProtocol | uint8 | new protocol fee for the market |
+  | _feeProtocol | uint8 | new protocol fee for the market |
 

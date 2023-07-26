@@ -162,7 +162,7 @@ _This function can only be called by the DAO address._
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | _dao | address |  |
+  | _dao | address | The new DAO address. |
 
 ### updateTreasury
 
@@ -178,7 +178,7 @@ _This function can only be called by the DAO address._
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | _treasury | address |  |
+  | _treasury | address | The new DAO treasury address. |
 
 ### setLiquidator
 
@@ -195,7 +195,7 @@ _This function can only be called by the DAO address.
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | _liquidator | address |  |
+  | _liquidator | address | The liquidator address. |
 
 ### setVault
 
@@ -212,7 +212,7 @@ _This function can only be called by the DAO address.
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | _vault | address |  |
+  | _vault | address | The vault address. |
 
 ### setKeeperFeePayer
 
@@ -229,7 +229,7 @@ _This function can only be called by the DAO address.
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | _keeperFeePayer | address |  |
+  | _keeperFeePayer | address | The keeper fee payer address. |
 
 ### getMarkets
 

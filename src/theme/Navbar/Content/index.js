@@ -54,6 +54,9 @@ export default function NavbarContent() {
           <div className="wrapper-logo">
             <NavbarLogo />
           </div>
+          <NavbarSearch>
+            <SearchBar />
+          </NavbarSearch>
           {/* <NavbarItems items={leftItems} /> */}
         </>
       }

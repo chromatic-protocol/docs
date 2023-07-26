@@ -171,7 +171,7 @@ const config = {
           },
           {
             type: 'search',
-            position: 'right'
+            position: 'left'
           },
           // launch app
           {

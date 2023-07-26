@@ -554,9 +554,3 @@ Withdraws liquidity from multiple ChromaticMarket contracts in a batch.
   | market | address | The address of the ChromaticMarket contract. |
   | _receiptIds | uint256[] |  |
 
-### _call
-
-```solidity
-function _call(address target, bytes data) internal returns (bytes)
-```
-

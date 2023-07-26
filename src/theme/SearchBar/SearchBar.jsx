@@ -270,7 +270,7 @@ export default function SearchBar({ handleSearchBarToggle, }) {
         }
         // Add shortcuts /
         const handleShortcut = (event) => {
-            if (event.key === "/") {
+            if (event.key === "/" && searchBarRef.current !== document.activeElement) {
                 event.preventDefault();
                 searchBarRef.current?.focus();
                 onInputFocus();

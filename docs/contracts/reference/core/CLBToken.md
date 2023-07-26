@@ -200,26 +200,6 @@ _Returns the URI for token type `id`.
 If the `\{id\}` substring is present in the URI, it must be replaced by
 clients with the actual token type ID._
 
-### encodeId
-
-```solidity
-function encodeId(int16 tradingFeeRate) internal pure returns (uint256 id)
-```
-
-_Encodes a trading fee rate into a token ID._
-
-- Parameters:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | tradingFeeRate | int16 | The trading fee rate to encode. |
-
-- Return Values:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | id | uint256 | The encoded token ID. |
-
 ### decodeId
 
 ```solidity

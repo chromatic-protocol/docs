@@ -42,46 +42,6 @@ _The Position struct represents a trading position._
 
 Provides functions that operate on the `Position` struct
 
-### entryVersion
-
-```solidity
-function entryVersion(struct Position self) internal pure returns (uint256)
-```
-
-Calculates the settle version for the position's entry
-
-- Parameters:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | self | struct Position | The memory instance of the `Position` struct |
-
-- Return Values:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | [0] | uint256 | utin256 The settle version for the position's entry |
-
-### exitVersion
-
-```solidity
-function exitVersion(struct Position self) internal pure returns (uint256)
-```
-
-Calculates the settle version for the position's exit
-
-- Parameters:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | self | struct Position | The memory instance of the `Position` struct |
-
-- Return Values:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | [0] | uint256 | utin256 The settle version for the position's exit |
-
 ### leveragedQty
 
 ```solidity

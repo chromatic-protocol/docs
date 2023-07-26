@@ -18,7 +18,7 @@ The actual amount of CLB tokens burned
 
 #### Defined in
 
-[entities/ChromaticLens.ts:65](https://github.com/chromatic-protocol/sdk/blob/26a3c3b/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L65)
+[entities/ChromaticLens.ts:65](https://github.com/chromatic-protocol/sdk/blob/4a8e1dc/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L65)
 
 ___
 
@@ -30,7 +30,7 @@ The amount of CLB tokens requested for burning
 
 #### Defined in
 
-[entities/ChromaticLens.ts:63](https://github.com/chromatic-protocol/sdk/blob/26a3c3b/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L63)
+[entities/ChromaticLens.ts:63](https://github.com/chromatic-protocol/sdk/blob/4a8e1dc/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L63)
 
 ___
 
@@ -42,7 +42,7 @@ The amount of settlement tokens equal in value to the burned CLB tokens
 
 #### Defined in
 
-[entities/ChromaticLens.ts:67](https://github.com/chromatic-protocol/sdk/blob/26a3c3b/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L67)
+[entities/ChromaticLens.ts:67](https://github.com/chromatic-protocol/sdk/blob/4a8e1dc/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L67)
 
 ___
 
@@ -54,7 +54,7 @@ The actual amount of CLB tokens minted
 
 #### Defined in
 
-[entities/ChromaticLens.ts:61](https://github.com/chromatic-protocol/sdk/blob/26a3c3b/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L61)
+[entities/ChromaticLens.ts:61](https://github.com/chromatic-protocol/sdk/blob/4a8e1dc/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L61)
 
 ___
 
@@ -66,7 +66,7 @@ The amount of settlement tokens requested for minting
 
 #### Defined in
 
-[entities/ChromaticLens.ts:59](https://github.com/chromatic-protocol/sdk/blob/26a3c3b/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L59)
+[entities/ChromaticLens.ts:59](https://github.com/chromatic-protocol/sdk/blob/4a8e1dc/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L59)
 
 ___
 
@@ -78,4 +78,4 @@ The trading fee rate for the liquidity bin
 
 #### Defined in
 
-[entities/ChromaticLens.ts:57](https://github.com/chromatic-protocol/sdk/blob/26a3c3b/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L57)
+[entities/ChromaticLens.ts:57](https://github.com/chromatic-protocol/sdk/blob/4a8e1dc/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L57)

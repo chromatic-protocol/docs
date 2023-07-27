@@ -383,14 +383,6 @@ error TooSmallAmount()
 _Throws an error indicating that the amount of liquidity is too small.
      This error is thrown when attempting to remove liquidity with an amount of zero._
 
-### NotExistLpReceipt
-
-```solidity
-error NotExistLpReceipt()
-```
-
-_Throws an error indicating that the specified liquidity receipt does not exist._
-
 ### NotClaimableLpReceipt
 
 ```solidity
@@ -423,6 +415,16 @@ error InvalidTransferredTokenAmount()
 
 _Throws an error indicating that the transferred token amount is invalid.
      This error is thrown when the transferred token amount does not match the expected amount._
+
+## MarketLiquidityFacetBase
+
+### NotExistLpReceipt
+
+```solidity
+error NotExistLpReceipt()
+```
+
+_Throws an error indicating that the specified liquidity receipt does not exist._
 
 ## MarketTradeFacet
 

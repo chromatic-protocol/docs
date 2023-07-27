@@ -9,7 +9,7 @@ title: BinLiquidity.sol
 ```solidity
 struct BinLiquidity {
   uint256 total;
-  struct _PendingLiquidity _pending;
+  struct IMarketLiquidity.PendingLiquidity _pending;
   mapping(uint256 => struct _ClaimMinting) _claimMintings;
   mapping(uint256 => struct _ClaimBurning) _claimBurnings;
   struct DoubleEndedQueue.Bytes32Deque _burningVersions;
@@ -17,18 +17,6 @@ struct BinLiquidity {
 ```
 
 _Represents the liquidity information within an LiquidityBin._
-
-## _PendingLiquidity
-
-```solidity
-struct _PendingLiquidity {
-  uint256 oracleVersion;
-  uint256 tokenAmount;
-  uint256 clbTokenAmount;
-}
-```
-
-_Represents the pending liquidity details within BinLiquidity._
 
 ## _ClaimMinting
 
@@ -249,6 +237,26 @@ _If the CLB token total supply is zero, returns zero.
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | [0] | uint256 | The value of the CLB tokens. |
+
+### pendingLiquidity
+
+```solidity
+function pendingLiquidity(struct BinLiquidity self) internal view returns (struct IMarketLiquidity.PendingLiquidity)
+```
+
+_Retrieves the pending liquidity information._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct BinLiquidity | The reference to the BinLiquidity struct. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct IMarketLiquidity.PendingLiquidity | pendingLiquidity An instance of IMarketLiquidity.PendingLiquidity representing the pending liquidity information. |
 
 ### claimableLiquidity
 

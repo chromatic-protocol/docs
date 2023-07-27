@@ -167,7 +167,7 @@ Returns the address of the keeper fee payer.
 ### updateDao
 
 ```solidity
-function updateDao(address dao) external
+function updateDao(address _dao) external
 ```
 
 Updates the DAO address.
@@ -176,12 +176,12 @@ Updates the DAO address.
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | dao | address | The new DAO address. |
+  | _dao | address | The new DAO address. |
 
 ### updateTreasury
 
 ```solidity
-function updateTreasury(address treasury) external
+function updateTreasury(address _treasury) external
 ```
 
 Updates the DAO treasury address.
@@ -190,12 +190,12 @@ Updates the DAO treasury address.
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | treasury | address | The new DAO treasury address. |
+  | _treasury | address | The new DAO treasury address. |
 
 ### setLiquidator
 
 ```solidity
-function setLiquidator(address liquidator) external
+function setLiquidator(address _liquidator) external
 ```
 
 Sets the liquidator address.
@@ -204,12 +204,12 @@ Sets the liquidator address.
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | liquidator | address | The liquidator address. |
+  | _liquidator | address | The liquidator address. |
 
 ### setVault
 
 ```solidity
-function setVault(address vault) external
+function setVault(address _vault) external
 ```
 
 Sets the vault address.
@@ -218,12 +218,12 @@ Sets the vault address.
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | vault | address | The vault address. |
+  | _vault | address | The vault address. |
 
 ### setKeeperFeePayer
 
 ```solidity
-function setKeeperFeePayer(address keeperFeePayer) external
+function setKeeperFeePayer(address _keeperFeePayer) external
 ```
 
 Sets the keeper fee payer address.
@@ -232,7 +232,7 @@ Sets the keeper fee payer address.
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | keeperFeePayer | address | The keeper fee payer address. |
+  | _keeperFeePayer | address | The keeper fee payer address. |
 
 ### getMarkets
 

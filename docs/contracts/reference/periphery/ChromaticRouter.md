@@ -338,7 +338,7 @@ Claims a position from a ChromaticMarket contract.
 ### addLiquidity
 
 ```solidity
-function addLiquidity(address market, int16 feeRate, uint256 amount, address recipient) public returns (struct LpReceipt receipt)
+function addLiquidity(address market, int16 feeRate, uint256 amount, address recipient) external returns (struct LpReceipt receipt)
 ```
 
 Adds liquidity to a ChromaticMarket contract.
@@ -361,7 +361,7 @@ Adds liquidity to a ChromaticMarket contract.
 ### claimLiquidity
 
 ```solidity
-function claimLiquidity(address market, uint256 receiptId) public
+function claimLiquidity(address market, uint256 receiptId) external
 ```
 
 Claims liquidity from a ChromaticMarket contract.
@@ -379,7 +379,7 @@ _This function allows the liquidity provider to claim their liquidity by calling
 ### removeLiquidity
 
 ```solidity
-function removeLiquidity(address market, int16 feeRate, uint256 clbTokenAmount, address recipient) public returns (struct LpReceipt receipt)
+function removeLiquidity(address market, int16 feeRate, uint256 clbTokenAmount, address recipient) external returns (struct LpReceipt receipt)
 ```
 
 Removes liquidity from a ChromaticMarket contract.
@@ -402,7 +402,7 @@ Removes liquidity from a ChromaticMarket contract.
 ### withdrawLiquidity
 
 ```solidity
-function withdrawLiquidity(address market, uint256 receiptId) public
+function withdrawLiquidity(address market, uint256 receiptId) external
 ```
 
 Withdraws liquidity from a ChromaticMarket contract.
@@ -553,10 +553,4 @@ Withdraws liquidity from multiple ChromaticMarket contracts in a batch.
   | ---- | ---- | ----------- |
   | market | address | The address of the ChromaticMarket contract. |
   | _receiptIds | uint256[] |  |
-
-### _call
-
-```solidity
-function _call(address target, bytes data) internal returns (bytes)
-```
 

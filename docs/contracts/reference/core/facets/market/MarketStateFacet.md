@@ -130,5 +130,5 @@ Set the denominator of the protocol's % share of the fees
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | _feeProtocol | uint8 |  |
+  | _feeProtocol | uint8 | new protocol fee for the market |
 

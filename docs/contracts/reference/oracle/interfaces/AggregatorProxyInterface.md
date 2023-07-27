@@ -9,7 +9,7 @@ title: AggregatorProxyInterface.sol
 ### phaseAggregators
 
 ```solidity
-function phaseAggregators(uint16 phaseId) external view returns (address)
+function phaseAggregators(uint16 _phaseId) external view returns (address)
 ```
 
 ### phaseId

@@ -301,6 +301,26 @@ _This function withdraws liquidity from the bin by calling the `onWithdrawLiquid
   | amount | uint256 | The amount of liquidity withdrawn |
   | burnedCLBTokenAmount | uint256 | The amount of CLB tokens burned during the withdrawal. |
 
+### pendingLiquidity
+
+```solidity
+function pendingLiquidity(struct LiquidityBin self) internal view returns (struct IMarketLiquidity.PendingLiquidity)
+```
+
+_Retrieves the pending liquidity information from a LiquidityBin._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LiquidityBin | The reference to the LiquidityBin struct. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct IMarketLiquidity.PendingLiquidity | pendingLiquidity An instance of IMarketLiquidity.PendingLiquidity representing the pending liquidity information. |
+
 ### claimableLiquidity
 
 ```solidity

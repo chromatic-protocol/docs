@@ -17,7 +17,7 @@
   margin-right: var(--ifm-navbar-padding-horizontal) !important;
   top: calc(70px - var(--ifm-navbar-padding-vertical)) !important; /* 70px is navbar height */
 }
-    
+
 @media not (max-width: 996px) {
   .searchBar.searchBarLeft .dropdownMenu {
     left: 0 !important;
@@ -38,13 +38,9 @@
   }
 }
 
-html[data-theme="dark"] .searchBar .dropdownMenu {
+html[data-theme='dark'] .searchBar .dropdownMenu {
   background: var(--search-local-modal-background, var(--ifm-background-color));
-  box-shadow: var(
-    --search-local-modal-shadow,
-    inset 1px 1px 0 0 #2c2e40,
-    0 3px 8px 0 #000309
-  );
+  box-shadow: var(--search-local-modal-shadow, inset 1px 1px 0 0 #2c2e40, 0 3px 8px 0 #000309);
 }
 
 .searchBar .dropdownMenu .suggestion {
@@ -62,7 +58,7 @@ html[data-theme="dark"] .searchBar .dropdownMenu {
   height: var(--search-local-hit-height, 56px);
 }
 
-html[data-theme="dark"] .dropdownMenu .suggestion {
+html[data-theme='dark'] .dropdownMenu .suggestion {
   background: var(--search-local-hit-background, var(--ifm-color-emphasis-100));
   box-shadow: var(--search-local-hit-shadow, none);
   color: var(--search-local-hit-color, var(--ifm-font-color-base));
@@ -73,10 +69,7 @@ html[data-theme="dark"] .dropdownMenu .suggestion {
 }
 
 .searchBar .dropdownMenu .suggestion.cursor {
-  background-color: var(
-    --search-local-highlight-color,
-    var(--ifm-color-primary)
-  );
+  background-color: var(--search-local-highlight-color, var(--ifm-color-primary));
 }
 
 .hitTree,
@@ -87,10 +80,10 @@ html[data-theme="dark"] .dropdownMenu .suggestion {
   color: var(--search-local-muted-color, #969faf);
 }
 
-html[data-theme="dark"] .hitTree,
-html[data-theme="dark"] .hitIcon,
-html[data-theme="dark"] .hitPath,
-html[data-theme="dark"] .noResultsIcon {
+html[data-theme='dark'] .hitTree,
+html[data-theme='dark'] .hitIcon,
+html[data-theme='dark'] .hitPath,
+html[data-theme='dark'] .noResultsIcon {
   color: var(--search-local-muted-color, var(--ifm-color-secondary-darkest));
 }
 
@@ -184,10 +177,7 @@ html[data-theme="dark"] .noResultsIcon {
 .suggestion.cursor .hitTree,
 .suggestion.cursor .hitIcon,
 .suggestion.cursor .hitPath {
-  color: var(
-    --search-local-hit-active-color,
-    var(--ifm-color-white)
-  ) !important;
+  color: var(--search-local-hit-active-color, var(--ifm-color-white)) !important;
 }
 
 .suggestion.cursor mark {

@@ -18,7 +18,7 @@ The amount to add as liquidity
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:13](https://github.com/chromatic-protocol/sdk/blob/f7d689f/packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts#L13)
+[entities/ChromaticRouter.ts:13](https://github.com/chromatic-protocol/sdk/blob/4841980/packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts#L13)
 
 ___
 
@@ -30,4 +30,4 @@ The fee rate of the liquidity bin
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:11](https://github.com/chromatic-protocol/sdk/blob/f7d689f/packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts#L11)
+[entities/ChromaticRouter.ts:11](https://github.com/chromatic-protocol/sdk/blob/4841980/packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts#L11)

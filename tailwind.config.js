@@ -20,7 +20,7 @@ export const theme = {
       black: '#030303',
       gray: '#D4D4D4',
       grayL: '#EEEEEE',
-      grayD: '#4D4D4D',
+      grayD: '#333333',
 
       standby: '#FF8A00',
       completed: '#00E23F',

@@ -91,7 +91,7 @@ const config = {
           alt: 'Chromatic Protocol',
           src: 'img/chromatic-logo-row.svg',
           srcDark: 'img/chromatic-logo-row-white.svg',
-          width: 200,
+          width: 180,
           height: 'auto'
         },
         items: [
@@ -190,7 +190,7 @@ const config = {
           alt: 'Chromatic Protocol',
           src: 'img/chromatic-logo-row-white.svg',
           srcDark: 'img/chromatic-logo-row-white.svg',
-          width: 200,
+          width: 180,
           height: 'auto',
           style: { margin: '0' }
         },

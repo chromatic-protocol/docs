@@ -65,7 +65,7 @@ export default function NavbarNavLink({
       <Link
         href={prependBaseUrlToHref ? normalizedHref : href}
         {...props}
-        className={isButton ? 'btn h-7 lg:h-10 w-[120px] !px-0 lg:w-[168px]' : props.className}
+        className={isButton ? 'btn h-7 lg:h-10 w-[120px] !px-0 lg:w-[140px]' : props.className}
         {...linkContentProps}
         style={{
           backgroundColor: isButton ? primaryColor : undefined,

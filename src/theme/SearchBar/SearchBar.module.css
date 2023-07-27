@@ -1,4 +1,5 @@
 .searchBar .dropdownMenu {
+  @apply mt-2 relative;
   left: auto !important;
   right: 0 !important;
 
@@ -9,28 +10,32 @@
     inset 1px 1px 0 0 hsla(0, 0%, 100%, 0.5),
     0 3px 8px 0 #555a64
   );
-  margin-top: 0px;
   width: var(--search-local-modal-width, 560px);
-  position: fixed !important;
+  /* position: fixed !important; */
 
   padding: var(--search-local-spacing, 12px);
-  margin-right: var(--ifm-navbar-padding-horizontal) !important;
-  top: calc(70px - var(--ifm-navbar-padding-vertical)) !important; /* 70px is navbar height */
+  /* margin-right: var(--ifm-navbar-padding-horizontal) !important; */
+  /* top: calc(70px - var(--ifm-navbar-padding-vertical)) !important; 70px is navbar height */
 }
 
-@media not (max-width: 996px) {
+.searchBar.searchBarLeft .dropdownMenu {
+  left: 0 !important;
+  right: auto !important;
+}
+
+/* @media not (max-width: 996px) {
   .searchBar.searchBarLeft .dropdownMenu {
     left: 0 !important;
     right: auto !important;
   }
-}
+} */
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .searchBar .dropdownMenu {
     width: var(--search-local-modal-width-sm, 340px);
     max-width: calc(100vw - var(--ifm-navbar-padding-horizontal) * 2);
   }
-}
+} */
 
 /* @media (max-width: 996px) {
   :global(.navbar__search-input):not(:focus) {
@@ -197,9 +202,9 @@ html[data-theme='dark'] .noResultsIcon {
 
 .searchBarContainer .searchClearButton {
   position: absolute;
-  right: 0.8rem;
-  top: 50%;
-  transform: translate(0, -50%);
+  /* right: 0.8rem; */
+  /* top: 50%; */
+  /* transform: translate(0, -50%); */
   padding: 0;
   background: none;
   border: none;
@@ -238,14 +243,16 @@ html[data-theme='dark'] .noResultsIcon {
   /* box-shadow: inset 0 -1px 0 var(--ifm-color-emphasis-500); */
 }
 
-.searchBarContainer:not(.focused) .searchClearButton,
-.searchHintContainer {
-  @apply max-lg:hidden;
+@media (max-width: 996px) {
+  .searchBarContainer:not(.focused) .searchClearButton,
+  .searchHintContainer {
+    display: none;
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .searchBar .dropdownMenu {
-    @apply max-lg:w-full left-0 right-0;
+    @apply !w-[calc(100%+48px)] !left-0 !right-0 !mx-0 mt-4;
     /* margin-left: var(--ifm-navbar-padding-horizontal) !important; */
   }
 }

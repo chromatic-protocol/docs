@@ -18,7 +18,7 @@ The bin margins for the position, it represents the amount of collateral for eac
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:56](https://github.com/chromatic-protocol/sdk/blob/a7c6459/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L56)
+[entities/ChromaticPosition.ts:56](https://github.com/chromatic-protocol/sdk/blob/d364c6f/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L56)
 
 ___
 
@@ -30,7 +30,7 @@ The denominator of the protocol's % share of the fees
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:58](https://github.com/chromatic-protocol/sdk/blob/a7c6459/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L58)
+[entities/ChromaticPosition.ts:58](https://github.com/chromatic-protocol/sdk/blob/d364c6f/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L58)
 
 ___
 
@@ -42,7 +42,7 @@ The timestamp when the position was claimed
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:66](https://github.com/chromatic-protocol/sdk/blob/a7c6459/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L66)
+[entities/ChromaticPosition.ts:66](https://github.com/chromatic-protocol/sdk/blob/d364c6f/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L66)
 
 ___
 
@@ -54,7 +54,7 @@ The price of the underlying asset when position was closed.
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:62](https://github.com/chromatic-protocol/sdk/blob/a7c6459/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L62)
+[entities/ChromaticPosition.ts:62](https://github.com/chromatic-protocol/sdk/blob/d364c6f/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L62)
 
 ___
 
@@ -66,7 +66,7 @@ The timestamp when the position was closed
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:50](https://github.com/chromatic-protocol/sdk/blob/a7c6459/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L50)
+[entities/ChromaticPosition.ts:50](https://github.com/chromatic-protocol/sdk/blob/d364c6f/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L50)
 
 ___
 
@@ -78,7 +78,7 @@ The version of the oracle when the position was closed
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:42](https://github.com/chromatic-protocol/sdk/blob/a7c6459/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L42)
+[entities/ChromaticPosition.ts:42](https://github.com/chromatic-protocol/sdk/blob/d364c6f/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L42)
 
 ___
 
@@ -90,7 +90,7 @@ The position identifier
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:38](https://github.com/chromatic-protocol/sdk/blob/a7c6459/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L38)
+[entities/ChromaticPosition.ts:38](https://github.com/chromatic-protocol/sdk/blob/d364c6f/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L38)
 
 ___
 
@@ -102,7 +102,7 @@ The leverage BPS applied to the position
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:46](https://github.com/chromatic-protocol/sdk/blob/a7c6459/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L46)
+[entities/ChromaticPosition.ts:46](https://github.com/chromatic-protocol/sdk/blob/d364c6f/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L46)
 
 ___
 
@@ -114,7 +114,7 @@ The amount of maker's margin
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:60](https://github.com/chromatic-protocol/sdk/blob/a7c6459/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L60)
+[entities/ChromaticPosition.ts:60](https://github.com/chromatic-protocol/sdk/blob/d364c6f/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L60)
 
 ___
 
@@ -126,7 +126,7 @@ The price of the underlying asset when position was opened.
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:64](https://github.com/chromatic-protocol/sdk/blob/a7c6459/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L64)
+[entities/ChromaticPosition.ts:64](https://github.com/chromatic-protocol/sdk/blob/d364c6f/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L64)
 
 ___
 
@@ -138,7 +138,7 @@ The timestamp when the position was opened
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:48](https://github.com/chromatic-protocol/sdk/blob/a7c6459/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L48)
+[entities/ChromaticPosition.ts:48](https://github.com/chromatic-protocol/sdk/blob/d364c6f/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L48)
 
 ___
 
@@ -150,7 +150,7 @@ The version of the oracle when the position was opened
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:40](https://github.com/chromatic-protocol/sdk/blob/a7c6459/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L40)
+[entities/ChromaticPosition.ts:40](https://github.com/chromatic-protocol/sdk/blob/d364c6f/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L40)
 
 ___
 
@@ -162,7 +162,7 @@ The owner of the position, usually it is the account address of trader
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:54](https://github.com/chromatic-protocol/sdk/blob/a7c6459/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L54)
+[entities/ChromaticPosition.ts:54](https://github.com/chromatic-protocol/sdk/blob/d364c6f/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L54)
 
 ___
 
@@ -174,7 +174,7 @@ The quantity of the position, with 4 decimal places
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:44](https://github.com/chromatic-protocol/sdk/blob/a7c6459/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L44)
+[entities/ChromaticPosition.ts:44](https://github.com/chromatic-protocol/sdk/blob/d364c6f/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L44)
 
 ___
 
@@ -186,4 +186,4 @@ The amount of collateral that a trader must provide
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:52](https://github.com/chromatic-protocol/sdk/blob/a7c6459/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L52)
+[entities/ChromaticPosition.ts:52](https://github.com/chromatic-protocol/sdk/blob/d364c6f/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L52)

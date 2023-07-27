@@ -316,7 +316,29 @@ export default function SearchBar({ handleSearchBarToggle }) {
     // We always clear these here because in case no match was selected the above history push wont happen
     setInputValue('')
     search.current?.autocomplete.setVal('')
+
+    // search.current?.focus()
   }, [location.pathname, location.search, location.hash, history])
+
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight
+  })
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight
+      })
+    }
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize)
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+
   return (
     <div
       className={clsx('navbar__search', styles.searchBarContainer, {
@@ -341,13 +363,26 @@ export default function SearchBar({ handleSearchBarToggle }) {
         value={inputValue}
       />
       <LoadingRing className={styles.searchBarLoadingRing} />
-      {searchBarShortcut &&
+
+      {windowSize.width < 768 ? (
+        <button className="btn-clear" onClick={onClearSearch}>
+          ✕
+        </button>
+      ) : (
+        searchBarShortcut &&
         searchBarShortcutHint &&
         (inputValue !== '' ? (
-          <button className={styles.searchClearButton} onClick={onClearSearch}>
+          <button className="btn-clear" onClick={onClearSearch}>
             ✕
           </button>
-        ) : null)}
+        ) : (
+          ExecutionEnvironment.canUseDOM && (
+            <div className={styles.searchHintContainer}>
+              <kbd className="search-hint">/</kbd>
+            </div>
+          )
+        ))
+      )}
     </div>
   )
 }

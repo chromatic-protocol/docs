@@ -255,7 +255,7 @@ html[data-theme='dark'] {
   }
   &,
   * {
-    transition-duration: unset;
+    @apply max-md:duration-0;
   }
 }
 .navbar__search {
@@ -265,14 +265,12 @@ html[data-theme='dark'] {
     @apply grow;
     &:has(.navbar__search-input:focus) {
       ~ .btn-clear {
-        /* z-index: 1030 !important; */
         @apply !inline-flex;
       }
     }
   }
   /* clear button */
   .btn-clear {
-    /* z-index: 1030 !important; */
     @apply font-bold border border-solid ml-2 inline-flex items-center justify-center transform-none rounded-full;
     /* mobile */
     @apply max-md:relative max-md:top-auto max-md:right-auto max-md:hidden w-10 h-10;
@@ -283,7 +281,8 @@ html[data-theme='dark'] {
   }
   .search-hint {
     @apply rounded-full w-8 h-8 inline-flex items-center justify-center;
-    @apply text-black/50 bg-white border-grayL shadow-none;
+    @apply text-black/50 bg-white shadow-none;
+    @apply border-grayL;
   }
 
   input.navbar__search-input {
@@ -295,7 +294,7 @@ html[data-theme='dark'] {
     /* pc */
     @apply md:w-full lg:pl-9 lg:pr-2 lg:!ml-0;
     /* light */
-    @apply !border-grayL text-black/50 md:bg-grayL/50 placeholder:text-black/30;
+    @apply max-md:!border-grayL md:!border-transparent text-black/50 md:bg-grayL/50 placeholder:text-black/30;
 
     &:focus {
       @apply w-full grow !outline-none pr-2 !ml-0;
@@ -316,21 +315,17 @@ html[data-theme='dark'] {
         }
       }
     }
-    /* clear button */
     .btn-clear {
-      /* dark */
       @apply text-white/50 bg-black !border-grayD;
     }
     .search-hint {
       @apply text-white/50 bg-grayD/70 !border-grayD;
     }
-
     input.navbar__search-input {
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M2.934 2.934a5.75 5.75 0 0 1 8.628 7.567l2.969 2.969a.75.75 0 0 1-1.06 1.06l-2.97-2.969a5.75 5.75 0 0 1-7.567-8.627ZM7 2.749a4.25 4.25 0 1 0 0 8.5 4.25 4.25 0 0 0 0-8.5Z' clip-rule='evenodd'/%3E%3C/svg%3E");
-      /* dark */
-      @apply !border-grayD text-white/50 md:bg-grayD/50 placeholder:text-white/30;
+      @apply max-md:!border-grayD md:!border-transparent text-white/50 md:bg-grayD/50 placeholder:text-white/30;
       &:focus {
-        @apply bg-black;
+        @apply bg-black !border-grayD;
       }
     }
   }

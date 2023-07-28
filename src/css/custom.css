@@ -270,7 +270,7 @@ html[data-theme='dark'] {
         @apply mb-2;
       }
       &.cursor {
-        @apply lg:bg-grayL/50;
+        @apply bg-grayL/50;
         /* background-color: var(--search-local-highlight-color, var(--ifm-color-primary)); */
         mark {
           text-decoration: underline;
@@ -342,7 +342,7 @@ html[data-theme='dark'] {
       .search-suggestion {
         @apply text-white bg-grayD2/20;
         &.cursor {
-          @apply lg:bg-grayD2/50;
+          @apply bg-grayD2/50;
         }
       }
     }

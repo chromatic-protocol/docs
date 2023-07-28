@@ -21,6 +21,7 @@ export const theme = {
       gray: '#D4D4D4',
       grayL: '#EEEEEE',
       grayD: '#333333',
+      grayD2: '#5A5A5A',
 
       standby: '#FF8A00',
       completed: '#00E23F',

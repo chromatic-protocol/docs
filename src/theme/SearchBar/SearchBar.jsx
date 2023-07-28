@@ -180,14 +180,14 @@ export default function SearchBar({ handleSearchBarToggle }) {
             [styles.searchBarLeft]: searchBarPosition === 'left'
           }),
           noPrefix: true,
-          dropdownMenu: styles.dropdownMenu,
+          dropdownMenu: clsx(styles.dropdownMenu, `search-dropdown`),
           input: styles.input,
           hint: styles.hint,
           suggestions: styles.suggestions,
-          suggestion: styles.suggestion,
+          suggestion: clsx(styles.suggestion, `search-suggestion`),
           cursor: styles.cursor,
-          dataset: styles.dataset,
-          empty: styles.empty
+          dataset: clsx(styles.dataset, `dataset`),
+          empty: clsx(styles.empty, `empty`)
         }
       },
       [

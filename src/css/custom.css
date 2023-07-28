@@ -263,6 +263,24 @@ html[data-theme='dark'] {
     .search-suggestion {
       @apply rounded-lg py-2 px-4;
       @apply text-black bg-grayL/20 lg:hover:bg-grayL/50;
+
+      @apply cursor-pointer w-full items-center flex flex-row;
+      height: var(--search-local-hit-height, 56px);
+      &:not(:last-child) {
+        @apply mb-2;
+      }
+      &.cursor {
+        background-color: var(--search-local-highlight-color, var(--ifm-color-primary));
+        mark {
+          text-decoration: underline;
+        }
+        mark,
+        .hitTree,
+        .hitIcon,
+        .hitPath {
+          color: var(--search-local-hit-active-color, var(--ifm-color-white)) !important;
+        }
+      }
     }
   }
   .no-result {

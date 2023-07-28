@@ -24,7 +24,7 @@ Creates a new instance of ChromaticPosition.
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:80](https://github.com/chromatic-protocol/sdk/blob/9e0eb84/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L80)
+[entities/ChromaticPosition.ts:80](https://github.com/chromatic-protocol/sdk/blob/1d5c46e/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L80)
 
 ## Methods
 
@@ -48,7 +48,7 @@ An object containing the contract instances of Lens, Market, and Market Factory.
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:86](https://github.com/chromatic-protocol/sdk/blob/9e0eb84/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L86)
+[entities/ChromaticPosition.ts:86](https://github.com/chromatic-protocol/sdk/blob/1d5c46e/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L86)
 
 ___
 
@@ -73,7 +73,7 @@ A promise that resolves to the interest.
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:159](https://github.com/chromatic-protocol/sdk/blob/9e0eb84/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L159)
+[entities/ChromaticPosition.ts:159](https://github.com/chromatic-protocol/sdk/blob/1d5c46e/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L159)
 
 ___
 
@@ -97,7 +97,7 @@ A promise that resolves to an array of interest rate records.
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:135](https://github.com/chromatic-protocol/sdk/blob/9e0eb84/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L135)
+[entities/ChromaticPosition.ts:135](https://github.com/chromatic-protocol/sdk/blob/1d5c46e/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L135)
 
 ___
 
@@ -124,7 +124,7 @@ A promise that resolves to an object containing the profit stop price and loss c
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:227](https://github.com/chromatic-protocol/sdk/blob/9e0eb84/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L227)
+[entities/ChromaticPosition.ts:227](https://github.com/chromatic-protocol/sdk/blob/1d5c46e/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L227)
 
 ___
 
@@ -154,7 +154,7 @@ A promise that resolves to the PNL value.
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:198](https://github.com/chromatic-protocol/sdk/blob/9e0eb84/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L198)
+[entities/ChromaticPosition.ts:198](https://github.com/chromatic-protocol/sdk/blob/1d5c46e/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L198)
 
 ___
 
@@ -179,7 +179,7 @@ A promise that resolves to an array of positions.
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:100](https://github.com/chromatic-protocol/sdk/blob/9e0eb84/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L100)
+[entities/ChromaticPosition.ts:100](https://github.com/chromatic-protocol/sdk/blob/1d5c46e/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L100)
 
 ___
 
@@ -206,7 +206,7 @@ A promise that resolves to the loss cut price.
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:313](https://github.com/chromatic-protocol/sdk/blob/9e0eb84/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L313)
+[entities/ChromaticPosition.ts:308](https://github.com/chromatic-protocol/sdk/blob/1d5c46e/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L308)
 
 ___
 
@@ -233,4 +233,4 @@ A promise that resolves to the profit stop price.
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:288](https://github.com/chromatic-protocol/sdk/blob/9e0eb84/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L288)
+[entities/ChromaticPosition.ts:283](https://github.com/chromatic-protocol/sdk/blob/1d5c46e/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L283)

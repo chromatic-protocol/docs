@@ -275,12 +275,12 @@ html[data-theme='dark'] {
         mark {
           text-decoration: underline;
         }
-        mark,
+        /* mark,
         .hitTree,
         .hitIcon,
         .hitPath {
           color: var(--search-local-hit-active-color, var(--ifm-color-white)) !important;
-        }
+        } */
       }
     }
   }

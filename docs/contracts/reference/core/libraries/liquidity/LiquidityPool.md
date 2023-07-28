@@ -380,6 +380,27 @@ _Retrieves the value of a specific bin in the LiquidityPool storage for the prov
   | ---- | ---- | ----------- |
   | value | uint256 | The value of the specified bin. |
 
+### pendingLiquidity
+
+```solidity
+function pendingLiquidity(struct LiquidityPool self, int16 tradingFeeRate) internal view returns (struct IMarketLiquidity.PendingLiquidity)
+```
+
+_Retrieves the pending liquidity information for a specific trading fee rate from a LiquidityPool._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LiquidityPool | The reference to the LiquidityPool struct. |
+  | tradingFeeRate | int16 | The trading fee rate for which to retrieve the pending liquidity. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct IMarketLiquidity.PendingLiquidity | pendingLiquidity An instance of IMarketLiquidity.PendingLiquidity representing the pending liquidity information. |
+
 ### claimableLiquidity
 
 ```solidity

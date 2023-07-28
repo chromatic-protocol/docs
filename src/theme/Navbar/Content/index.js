@@ -54,6 +54,10 @@ export default function NavbarContent() {
           <div className="wrapper-logo">
             <NavbarLogo />
           </div>
+          <NavbarSearch className="wrapper-search">
+            <SearchBar />
+          </NavbarSearch>
+
           {/* <NavbarItems items={leftItems} /> */}
         </>
       }
@@ -63,8 +67,8 @@ export default function NavbarContent() {
         <>
           <NavbarItems items={rightItems} />
           {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
-          {/* <NavbarColorModeToggle className={styles.colorModeToggle} />
-          {!searchBarItem && (
+          {/* <NavbarColorModeToggle className={styles.colorModeToggle} /> */}
+          {/* {!searchBarItem && (
             <NavbarSearch>
               <SearchBar />
             </NavbarSearch>

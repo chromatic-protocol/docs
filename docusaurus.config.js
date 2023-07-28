@@ -91,7 +91,7 @@ const config = {
           alt: 'Chromatic Protocol',
           src: 'img/chromatic-logo-row.svg',
           srcDark: 'img/chromatic-logo-row-white.svg',
-          width: 200,
+          width: 180,
           height: 'auto'
         },
         items: [
@@ -169,6 +169,10 @@ const config = {
               // }
             ]
           },
+          {
+            type: 'search',
+            position: 'left'
+          },
           // launch app
           {
             href: CHROMATIC_LINKS.app,
@@ -186,7 +190,7 @@ const config = {
           alt: 'Chromatic Protocol',
           src: 'img/chromatic-logo-row-white.svg',
           srcDark: 'img/chromatic-logo-row-white.svg',
-          width: 200,
+          width: 180,
           height: 'auto',
           style: { margin: '0' }
         },
@@ -267,7 +271,18 @@ const config = {
   markdown: {
     mermaid: true
   },
-  themes: ['@docusaurus/theme-mermaid']
+  themes: [
+    '@docusaurus/theme-mermaid',
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        hashed: true,
+        language: ['en'],
+        searchResultLimits: 8
+      })
+    ]
+  ]
 }
 
 module.exports = config

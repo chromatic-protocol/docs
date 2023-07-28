@@ -270,7 +270,8 @@ html[data-theme='dark'] {
         @apply mb-2;
       }
       &.cursor {
-        background-color: var(--search-local-highlight-color, var(--ifm-color-primary));
+        @apply lg:bg-grayL/50;
+        /* background-color: var(--search-local-highlight-color, var(--ifm-color-primary)); */
         mark {
           text-decoration: underline;
         }
@@ -340,6 +341,9 @@ html[data-theme='dark'] {
       @apply bg-black border-white;
       .search-suggestion {
         @apply text-white bg-grayD2/20 lg:hover:bg-grayD2/50;
+        &.cursor {
+          @apply lg:bg-grayD2/50;
+        }
       }
     }
     .no-result {

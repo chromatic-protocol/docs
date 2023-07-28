@@ -186,7 +186,8 @@ export default function SearchBar({ handleSearchBarToggle }) {
           suggestions: styles.suggestions,
           // suggestion: clsx(styles.suggestion, `search-suggestion`),
           suggestion: `search-suggestion`,
-          cursor: styles.cursor,
+          // cursor: styles.cursor,
+          cursor: `cursor`,
           dataset: clsx(styles.dataset, `dataset`),
           empty: clsx(styles.empty, `empty`)
         }

@@ -262,7 +262,7 @@ html[data-theme='dark'] {
     @apply bg-white border-black;
     .search-suggestion {
       @apply rounded-lg py-2 px-4;
-      @apply text-black bg-grayL/20 lg:hover:bg-grayL/50;
+      @apply text-black bg-grayL/20;
 
       @apply cursor-pointer w-full items-center flex flex-row;
       height: var(--search-local-hit-height, 56px);
@@ -340,7 +340,7 @@ html[data-theme='dark'] {
     .search-dropdown {
       @apply bg-black border-white;
       .search-suggestion {
-        @apply text-white bg-grayD2/20 lg:hover:bg-grayD2/50;
+        @apply text-white bg-grayD2/20;
         &.cursor {
           @apply lg:bg-grayD2/50;
         }

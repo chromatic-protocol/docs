@@ -39,7 +39,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[constants.ts:2](https://github.com/chromatic-protocol/sdk/blob/01a7cba/packages/sdk-ethers-v6/src/constants.ts#L2)
+[constants.ts:3](https://github.com/chromatic-protocol/sdk/blob/15b6120/packages/sdk-ethers-v6/src/constants.ts#L3)
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 #### Defined in
 
-[constants.ts:5](https://github.com/chromatic-protocol/sdk/blob/01a7cba/packages/sdk-ethers-v6/src/constants.ts#L5)
+[constants.ts:6](https://github.com/chromatic-protocol/sdk/blob/15b6120/packages/sdk-ethers-v6/src/constants.ts#L6)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[constants.ts:6](https://github.com/chromatic-protocol/sdk/blob/01a7cba/packages/sdk-ethers-v6/src/constants.ts#L6)
+[constants.ts:7](https://github.com/chromatic-protocol/sdk/blob/15b6120/packages/sdk-ethers-v6/src/constants.ts#L7)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[constants.ts:1](https://github.com/chromatic-protocol/sdk/blob/01a7cba/packages/sdk-ethers-v6/src/constants.ts#L1)
+[constants.ts:1](https://github.com/chromatic-protocol/sdk/blob/15b6120/packages/sdk-ethers-v6/src/constants.ts#L1)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[constants.ts:3](https://github.com/chromatic-protocol/sdk/blob/01a7cba/packages/sdk-ethers-v6/src/constants.ts#L3)
+[constants.ts:4](https://github.com/chromatic-protocol/sdk/blob/15b6120/packages/sdk-ethers-v6/src/constants.ts#L4)
 
 ___
 
@@ -89,4 +89,14 @@ ___
 
 #### Defined in
 
-[constants.ts:4](https://github.com/chromatic-protocol/sdk/blob/01a7cba/packages/sdk-ethers-v6/src/constants.ts#L4)
+[constants.ts:5](https://github.com/chromatic-protocol/sdk/blob/15b6120/packages/sdk-ethers-v6/src/constants.ts#L5)
+
+___
+
+### QTY\_PRECISION
+
+• `Const` **QTY\_PRECISION**: `number`
+
+#### Defined in
+
+[constants.ts:2](https://github.com/chromatic-protocol/sdk/blob/15b6120/packages/sdk-ethers-v6/src/constants.ts#L2)

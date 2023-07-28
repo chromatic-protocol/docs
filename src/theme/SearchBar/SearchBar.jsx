@@ -321,8 +321,8 @@ export default function SearchBar({ handleSearchBarToggle }) {
   }, [location.pathname, location.search, location.hash, history])
 
   const [windowSize, setWindowSize] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight
+    width: 0,
+    height: 0
   })
   useEffect(() => {
     const handleResize = () => {
@@ -331,6 +331,7 @@ export default function SearchBar({ handleSearchBarToggle }) {
         height: window.innerHeight
       })
     }
+    handleResize()
     // Add event listener for window resize
     window.addEventListener('resize', handleResize)
     // Clean up the event listener on component unmount

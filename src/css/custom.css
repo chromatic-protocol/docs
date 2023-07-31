@@ -303,9 +303,9 @@ html[data-theme='dark'] {
   .btn-clear {
     @apply font-bold border border-solid ml-2 inline-flex items-center justify-center transform-none rounded-full;
     /* mobile */
-    @apply max-md:relative max-md:top-auto max-md:right-auto max-md:hidden w-10 h-10;
+    @apply max-md:relative max-md:top-auto max-md:right-auto max-md:hidden w-10 h-10 text-lg;
     /* pc */
-    @apply md:absolute md:top-1 md:right-1 md:w-8 md:h-8;
+    @apply md:absolute md:top-1 md:right-1 md:w-8 md:h-8 md:text-base;
     /* light */
     @apply text-black/30 bg-white !border-grayL;
   }

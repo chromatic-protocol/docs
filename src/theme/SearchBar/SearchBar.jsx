@@ -368,16 +368,12 @@ export default function SearchBar({ handleSearchBarToggle }) {
       <LoadingRing className={styles.searchBarLoadingRing} />
 
       {windowSize.width < 768 ? (
-        <button className="btn-clear" onClick={onClearSearch}>
-          ✕
-        </button>
+        <button className="btn-clear" onClick={onClearSearch} />
       ) : (
         searchBarShortcut &&
         searchBarShortcutHint &&
         (inputValue !== '' ? (
-          <button className="btn-clear" onClick={onClearSearch}>
-            ✕
-          </button>
+          <button className="btn-clear" onClick={onClearSearch} />
         ) : (
           ExecutionEnvironment.canUseDOM && (
             <div className={styles.searchHintContainer}>

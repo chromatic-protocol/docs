@@ -259,6 +259,7 @@ html[data-theme='dark'] {
   }
   .search-dropdown {
     @apply shadow-none border-2 border-solid rounded-xl font-mono text-base;
+    @apply max-md:max-h-[40vh] max-md:overflow-auto;
     @apply bg-white border-black;
     .search-suggestion {
       @apply rounded-lg py-2 px-4;
@@ -271,7 +272,6 @@ html[data-theme='dark'] {
       }
       &.cursor {
         @apply bg-grayL/50;
-        /* background-color: var(--search-local-highlight-color, var(--ifm-color-primary)); */
         mark {
           text-decoration: underline;
         }

@@ -37,7 +37,7 @@ export default function NavbarLayout({ children }) {
         clsx(
           'navbar',
           'navbar--fixed-top',
-          'h-[70px] px-4 md:px-10',
+          'h-[70px] px-4 md:px-10 shadow-none',
           hideOnScroll && [styles.navbarHideable, !isNavbarVisible && styles.navbarHidden],
           {
             'navbar--dark': style === 'dark',

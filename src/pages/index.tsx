@@ -59,7 +59,7 @@ function IconArrowButton({ label, icon, to = '', href = '', onClick = null, ...p
 function Intro() {
   return (
     <section>
-      <article className="h-[calc(100vh-90px)] min-h-[600px] lg:min-h-[800px] text-center article">
+      <article className="h-[calc(100vh-70px)] min-h-[400px] lg:min-h-[800px] text-center article">
         <div className="">
           <div className="relative flex items-center justify-center">
             <div

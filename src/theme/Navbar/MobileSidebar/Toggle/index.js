@@ -14,10 +14,10 @@ export default function MobileSidebarToggle() {
         description: 'The ARIA label for hamburger menu button of mobile navigation'
       })}
       aria-expanded={shown}
-      className="!px-0 mx-0 navbar__toggle clean-btn w-6 primary"
+      className="!px-0 mx-0 navbar__toggle clean-btn w-7 primary inline-flex justify-center"
       type="button"
     >
-      <IconMenu />
+      <IconMenu className="w-5" />
     </button>
   )
 }

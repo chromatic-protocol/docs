@@ -37,7 +37,7 @@ function NavbarContentLayout({ left, right }) {
   return (
     <div className="navbar__inner">
       <div className="navbar__items">{left}</div>
-      <div className="gap-5 navbar__items navbar__items--right">{right}</div>
+      <div className="gap-4 lg:gap-5 navbar__items navbar__items--right">{right}</div>
     </div>
   )
 }

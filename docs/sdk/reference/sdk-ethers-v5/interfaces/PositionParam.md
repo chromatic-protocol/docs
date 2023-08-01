@@ -18,7 +18,7 @@ The timestamp when the position was claimed
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:26](https://github.com/chromatic-protocol/sdk/blob/efd3098/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L26)
+[entities/ChromaticPosition.ts:25](https://github.com/chromatic-protocol/sdk/blob/63af47a/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L25)
 
 ___
 
@@ -30,19 +30,7 @@ The position identifier
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:18](https://github.com/chromatic-protocol/sdk/blob/efd3098/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L18)
-
-___
-
-### leverage
-
-• **leverage**: `number`
-
-The leverage BPS applied to the position
-
-#### Defined in
-
-[entities/ChromaticPosition.ts:30](https://github.com/chromatic-protocol/sdk/blob/efd3098/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L30)
+[entities/ChromaticPosition.ts:17](https://github.com/chromatic-protocol/sdk/blob/63af47a/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L17)
 
 ___
 
@@ -54,7 +42,7 @@ The amount of maker's margin
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:22](https://github.com/chromatic-protocol/sdk/blob/efd3098/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L22)
+[entities/ChromaticPosition.ts:21](https://github.com/chromatic-protocol/sdk/blob/63af47a/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L21)
 
 ___
 
@@ -66,7 +54,7 @@ The timestamp when the position was opened
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:24](https://github.com/chromatic-protocol/sdk/blob/efd3098/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L24)
+[entities/ChromaticPosition.ts:23](https://github.com/chromatic-protocol/sdk/blob/63af47a/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L23)
 
 ___
 
@@ -74,11 +62,11 @@ ___
 
 • **qty**: `BigNumber`
 
-The quantity of the position, with 4 decimal places
+The quantity of the position
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:28](https://github.com/chromatic-protocol/sdk/blob/efd3098/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L28)
+[entities/ChromaticPosition.ts:27](https://github.com/chromatic-protocol/sdk/blob/63af47a/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L27)
 
 ___
 
@@ -90,4 +78,4 @@ The amount of collateral that a trader must provide
 
 #### Defined in
 
-[entities/ChromaticPosition.ts:20](https://github.com/chromatic-protocol/sdk/blob/efd3098/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L20)
+[entities/ChromaticPosition.ts:19](https://github.com/chromatic-protocol/sdk/blob/63af47a/packages/sdk-ethers-v5/src/entities/ChromaticPosition.ts#L19)

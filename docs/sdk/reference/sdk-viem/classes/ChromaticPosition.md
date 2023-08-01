@@ -24,7 +24,7 @@ Creates a new instance of ChromaticPosition.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:85](https://github.com/chromatic-protocol/sdk/blob/9e3330a/packages/sdk-viem/src/entities/ChromaticPosition.ts#L85)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:80](https://github.com/chromatic-protocol/sdk/blob/d83cf81/packages/sdk-viem/src/entities/ChromaticPosition.ts#L80)
 
 ## Methods
 
@@ -48,7 +48,7 @@ An object containing the contract instances of Lens, Market, and Market Factory.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:91](https://github.com/chromatic-protocol/sdk/blob/9e3330a/packages/sdk-viem/src/entities/ChromaticPosition.ts#L91)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:86](https://github.com/chromatic-protocol/sdk/blob/d83cf81/packages/sdk-viem/src/entities/ChromaticPosition.ts#L86)
 
 ___
 
@@ -73,7 +73,7 @@ A promise that resolves to the interest.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:168](https://github.com/chromatic-protocol/sdk/blob/9e3330a/packages/sdk-viem/src/entities/ChromaticPosition.ts#L168)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:163](https://github.com/chromatic-protocol/sdk/blob/d83cf81/packages/sdk-viem/src/entities/ChromaticPosition.ts#L163)
 
 ___
 
@@ -97,13 +97,13 @@ A promise that resolves to an array of interest rate records.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:142](https://github.com/chromatic-protocol/sdk/blob/9e3330a/packages/sdk-viem/src/entities/ChromaticPosition.ts#L142)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:137](https://github.com/chromatic-protocol/sdk/blob/d83cf81/packages/sdk-viem/src/entities/ChromaticPosition.ts#L137)
 
 ___
 
 ### getLiquidationPrice
 
-▸ **getLiquidationPrice**(`marketAddress`, `entryPrice`, `position`, `oraclePriceDecimals`): `Promise`<{ `lossCutPrice`: `undefined` \| `bigint` ; `profitStopPrice`: `undefined` \| `bigint`  }\>
+▸ **getLiquidationPrice**(`marketAddress`, `entryPrice`, `position`): `Promise`<{ `lossCutPrice`: `undefined` \| `bigint` ; `profitStopPrice`: `undefined` \| `bigint`  }\>
 
 Calculates the liquidation price for a position in the specified market.
 
@@ -114,7 +114,6 @@ Calculates the liquidation price for a position in the specified market.
 | `marketAddress` | \`0x${string}\` | The address of the Chromatic Market contract. |
 | `entryPrice` | `undefined` \| `bigint` | The entry price of the position. |
 | `position` | [`PositionParam`](../interfaces/PositionParam.md) | The position parameters. |
-| `oraclePriceDecimals` | `number` | The number of decimals used for the oracle price. |
 
 #### Returns
 
@@ -124,13 +123,13 @@ A promise that resolves to an object containing the profit stop price and loss c
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:230](https://github.com/chromatic-protocol/sdk/blob/9e3330a/packages/sdk-viem/src/entities/ChromaticPosition.ts#L230)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:219](https://github.com/chromatic-protocol/sdk/blob/d83cf81/packages/sdk-viem/src/entities/ChromaticPosition.ts#L219)
 
 ___
 
 ### getPnl
 
-▸ **getPnl**(`marketAddress`, `entryPrice`, `exitPrice`, `position`, `tokenDecimals`, `options?`): `Promise`<`bigint`\>
+▸ **getPnl**(`marketAddress`, `entryPrice`, `exitPrice`, `position`, `options?`): `Promise`<`bigint`\>
 
 Calculates the profit and loss (PNL) for a position in the specified market.
 
@@ -142,9 +141,8 @@ Calculates the profit and loss (PNL) for a position in the specified market.
 | `entryPrice` | `bigint` | The entry price of the position. |
 | `exitPrice` | `bigint` | The exit price of the position. |
 | `position` | [`PositionParam`](../interfaces/PositionParam.md) | The position parameters. |
-| `tokenDecimals` | `number` | The decimals of the settlement token. |
 | `options` | `Object` | Optional parameters for PNL calculation. |
-| `options.includeInterestFee` | `boolean` | - |
+| `options.includeInterest` | `boolean` | - |
 
 #### Returns
 
@@ -154,7 +152,7 @@ A promise that resolves to the PNL value.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:202](https://github.com/chromatic-protocol/sdk/blob/9e3330a/packages/sdk-viem/src/entities/ChromaticPosition.ts#L202)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:196](https://github.com/chromatic-protocol/sdk/blob/d83cf81/packages/sdk-viem/src/entities/ChromaticPosition.ts#L196)
 
 ___
 
@@ -179,13 +177,13 @@ A promise that resolves to an array of positions.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:105](https://github.com/chromatic-protocol/sdk/blob/9e3330a/packages/sdk-viem/src/entities/ChromaticPosition.ts#L105)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:100](https://github.com/chromatic-protocol/sdk/blob/d83cf81/packages/sdk-viem/src/entities/ChromaticPosition.ts#L100)
 
 ___
 
 ### lossCutPrice
 
-▸ **lossCutPrice**(`marketAddress`, `entryPrice`, `position`, `oraclePriceDecimals`): `Promise`<`undefined` \| `bigint`\>
+▸ **lossCutPrice**(`marketAddress`, `entryPrice`, `position`): `Promise`<`undefined` \| `bigint`\>
 
 Calculates the loss cut price for a position in the specified market.
 
@@ -196,7 +194,6 @@ Calculates the loss cut price for a position in the specified market.
 | `marketAddress` | \`0x${string}\` | The address of the Chromatic Market contract. |
 | `entryPrice` | `undefined` \| `bigint` | The entry price of the position. |
 | `position` | [`PositionParam`](../interfaces/PositionParam.md) | The position parameters. |
-| `oraclePriceDecimals` | `number` | The number of decimals used for the oracle price. |
 
 #### Returns
 
@@ -206,13 +203,13 @@ A promise that resolves to the loss cut price.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:312](https://github.com/chromatic-protocol/sdk/blob/9e3330a/packages/sdk-viem/src/entities/ChromaticPosition.ts#L312)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:275](https://github.com/chromatic-protocol/sdk/blob/d83cf81/packages/sdk-viem/src/entities/ChromaticPosition.ts#L275)
 
 ___
 
 ### profitStopPrice
 
-▸ **profitStopPrice**(`marketAddress`, `entryPrice`, `position`, `oraclePriceDecimals`): `Promise`<`undefined` \| `bigint`\>
+▸ **profitStopPrice**(`marketAddress`, `entryPrice`, `position`): `Promise`<`undefined` \| `bigint`\>
 
 Calculates the profit stop price for a position in the specified market.
 
@@ -223,7 +220,6 @@ Calculates the profit stop price for a position in the specified market.
 | `marketAddress` | \`0x${string}\` | The address of the Chromatic Market contract. |
 | `entryPrice` | `undefined` \| `bigint` | The entry price of the position. |
 | `position` | [`PositionParam`](../interfaces/PositionParam.md) | The position parameters. |
-| `oraclePriceDecimals` | `number` | The number of decimals used for the oracle price. |
 
 #### Returns
 
@@ -233,4 +229,4 @@ A promise that resolves to the profit stop price.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:287](https://github.com/chromatic-protocol/sdk/blob/9e3330a/packages/sdk-viem/src/entities/ChromaticPosition.ts#L287)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:258](https://github.com/chromatic-protocol/sdk/blob/d83cf81/packages/sdk-viem/src/entities/ChromaticPosition.ts#L258)

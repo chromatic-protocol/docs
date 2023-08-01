@@ -9,7 +9,7 @@ title: BinClosingPosition.sol
 ```solidity
 struct BinClosingPosition {
   uint256 closeVersion;
-  int256 totalLeveragedQty;
+  int256 totalQty;
   uint256 totalEntryAmount;
   uint256 totalMakerMargin;
   uint256 totalTakerMargin;
@@ -22,7 +22,7 @@ _Represents the closing position within an LiquidityBin._
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | closeVersion | uint256 | The oracle version when the position was closed. |
-| totalLeveragedQty | int256 | The total leveraged quantity of the closing position. |
+| totalQty | int256 | The total quantity of the closing position. |
 | totalEntryAmount | uint256 | The total entry amount of the closing position. |
 | totalMakerMargin | uint256 | The total maker margin of the closing position. |
 | totalTakerMargin | uint256 | The total taker margin of the closing position. |

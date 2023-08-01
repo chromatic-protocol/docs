@@ -128,3 +128,11 @@ string INVALID_POSITION_QTY
 
 _Error code indicating that the position quantity is invalid._
 
+### NOT_POSITIVE_PRICE
+
+```solidity
+string NOT_POSITIVE_PRICE
+```
+
+_Error code indicating that the oracle price is not positive._
+

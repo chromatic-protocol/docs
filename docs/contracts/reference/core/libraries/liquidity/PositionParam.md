@@ -10,7 +10,7 @@ title: PositionParam.sol
 struct PositionParam {
   uint256 openVersion;
   uint256 closeVersion;
-  int256 leveragedQty;
+  int256 qty;
   uint256 takerMargin;
   uint256 makerMargin;
   uint256 openTimestamp;
@@ -26,7 +26,7 @@ _A struct representing the parameters of a position._
 | ---- | ---- | ----------- |
 | openVersion | uint256 | The version of the position's open transaction |
 | closeVersion | uint256 | The version of the position's close transaction |
-| leveragedQty | int256 | The leveraged quantity of the position |
+| qty | int256 | The quantity of the position |
 | takerMargin | uint256 | The margin amount provided by the taker |
 | makerMargin | uint256 | The margin amount provided by the maker |
 | openTimestamp | uint256 | The timestamp of the position's open transaction |
@@ -61,7 +61,7 @@ Returns the settle version for the position's entry.
 ### entryPrice
 
 ```solidity
-function entryPrice(struct PositionParam self, struct LpContext ctx) internal view returns (UFixed18)
+function entryPrice(struct PositionParam self, struct LpContext ctx) internal view returns (uint256)
 ```
 
 Calculates the entry price for a PositionParam.
@@ -77,7 +77,7 @@ Calculates the entry price for a PositionParam.
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | UFixed18 | UFixed18 The entry price. |
+  | [0] | uint256 | uint256 The entry price. |
 
 ### entryAmount
 
@@ -170,7 +170,7 @@ Creates a clone of a PositionParam.
 function inverse(struct PositionParam self) internal pure returns (struct PositionParam)
 ```
 
-Creates the inverse of a PositionParam by negating the leveragedQty.
+Creates the inverse of a PositionParam by negating the qty.
 
 - Parameters:
 

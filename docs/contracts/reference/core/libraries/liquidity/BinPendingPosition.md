@@ -9,7 +9,7 @@ title: BinPendingPosition.sol
 ```solidity
 struct BinPendingPosition {
   uint256 openVersion;
-  int256 totalLeveragedQty;
+  int256 totalQty;
   uint256 totalMakerMargin;
   uint256 totalTakerMargin;
   AccruedInterest accruedInterest;
@@ -21,7 +21,7 @@ _Represents a pending position within the LiquidityBin_
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | openVersion | uint256 | The oracle version when the position was opened. |
-| totalLeveragedQty | int256 | The total leveraged quantity of the pending position. |
+| totalQty | int256 | The total quantity of the pending position. |
 | totalMakerMargin | uint256 | The total maker margin of the pending position. |
 | totalTakerMargin | uint256 | The total taker margin of the pending position. |
 | accruedInterest | AccruedInterest | The accumulated interest of the pending position. |
@@ -126,7 +126,7 @@ Calculates the current accrued interest of the pending position.
 ### entryPrice
 
 ```solidity
-function entryPrice(struct BinPendingPosition self, struct LpContext ctx) internal view returns (UFixed18)
+function entryPrice(struct BinPendingPosition self, struct LpContext ctx) internal view returns (uint256)
 ```
 
 Calculates the entry price of the pending position.
@@ -142,5 +142,5 @@ Calculates the entry price of the pending position.
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | UFixed18 | UFixed18 The entry price. |
+  | [0] | uint256 | uint256 The entry price. |
 

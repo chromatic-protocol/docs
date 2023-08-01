@@ -20,7 +20,7 @@ _Error for invalid oracle round_
 struct OracleVersion {
   uint256 version;
   uint256 timestamp;
-  Fixed18 price;
+  int256 price;
 }
 ```
 
@@ -30,7 +30,7 @@ _A singular oracle version with its corresponding data_
 | ---- | ---- | ----------- |
 | version | uint256 | The iterative version |
 | timestamp | uint256 | the timestamp of the oracle update |
-| price | Fixed18 | The oracle price of the corresponding version |
+| price | int256 | The oracle price of the corresponding version |
 
 ### sync
 

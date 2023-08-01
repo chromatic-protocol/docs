@@ -10,18 +10,6 @@ Represents the parameters for opening a position using the ChromaticRouter.
 
 ## Properties
 
-### leverage
-
-• **leverage**: `BigNumberish`
-
-The leverage BPS of the position
-
-#### Defined in
-
-[entities/ChromaticRouter.ts:23](https://github.com/chromatic-protocol/sdk/blob/52142a9/packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts#L23)
-
-___
-
 ### makerMargin
 
 • **makerMargin**: `BigNumberish`
@@ -30,7 +18,7 @@ The margin required for the maker
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:27](https://github.com/chromatic-protocol/sdk/blob/52142a9/packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts#L27)
+[entities/ChromaticRouter.ts:25](https://github.com/chromatic-protocol/sdk/blob/fc7af96/packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts#L25)
 
 ___
 
@@ -42,7 +30,7 @@ The maximum allowable trading fee
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:29](https://github.com/chromatic-protocol/sdk/blob/52142a9/packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts#L29)
+[entities/ChromaticRouter.ts:27](https://github.com/chromatic-protocol/sdk/blob/fc7af96/packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts#L27)
 
 ___
 
@@ -50,11 +38,11 @@ ___
 
 • **quantity**: `BigNumberish`
 
-The quantity of the position, with 4 decimal places
+The quantity of the position
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:21](https://github.com/chromatic-protocol/sdk/blob/52142a9/packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts#L21)
+[entities/ChromaticRouter.ts:21](https://github.com/chromatic-protocol/sdk/blob/fc7af96/packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts#L21)
 
 ___
 
@@ -66,4 +54,4 @@ The margin required for the taker
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:25](https://github.com/chromatic-protocol/sdk/blob/52142a9/packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts#L25)
+[entities/ChromaticRouter.ts:23](https://github.com/chromatic-protocol/sdk/blob/fc7af96/packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts#L23)

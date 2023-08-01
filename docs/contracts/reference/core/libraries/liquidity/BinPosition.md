@@ -8,7 +8,7 @@ title: BinPosition.sol
 
 ```solidity
 struct BinPosition {
-  int256 totalLeveragedQty;
+  int256 totalQty;
   uint256 totalEntryAmount;
   uint256 _totalMakerMargin;
   uint256 _totalTakerMargin;
@@ -21,7 +21,7 @@ _Represents a position in the LiquidityBin_
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| totalLeveragedQty | int256 | The total leveraged quantity of the `LiquidityBin` |
+| totalQty | int256 | The total quantity of the `LiquidityBin` |
 | totalEntryAmount | uint256 | The total entry amount of the `LiquidityBin` |
 | _totalMakerMargin | uint256 | The total maker margin of the `LiquidityBin` |
 | _totalTakerMargin | uint256 | The total taker margin of the `LiquidityBin` |

@@ -11,8 +11,7 @@ struct Position {
   uint256 id;
   uint256 openVersion;
   uint256 closeVersion;
-  int224 qty;
-  uint32 leverage;
+  int256 qty;
   uint256 openTimestamp;
   uint256 closeTimestamp;
   uint256 takerMargin;
@@ -29,8 +28,7 @@ _The Position struct represents a trading position._
 | id | uint256 | The position identifier |
 | openVersion | uint256 | The version of the oracle when the position was opened |
 | closeVersion | uint256 | The version of the oracle when the position was closed |
-| qty | int224 | The quantity of the position |
-| leverage | uint32 | The leverage applied to the position |
+| qty | int256 | The quantity of the position |
 | openTimestamp | uint256 | The timestamp when the position was opened |
 | closeTimestamp | uint256 | The timestamp when the position was closed |
 | takerMargin | uint256 | The amount of collateral that a trader must provide |
@@ -42,32 +40,10 @@ _The Position struct represents a trading position._
 
 Provides functions that operate on the `Position` struct
 
-### leveragedQty
-
-```solidity
-function leveragedQty(struct Position self, struct LpContext ctx) internal pure returns (int256)
-```
-
-Calculates the leveraged quantity of the position
-        based on the position's quantity and leverage
-
-- Parameters:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | self | struct Position | The memory instance of the `Position` struct |
-  | ctx | struct LpContext | The context object for this transaction |
-
-- Return Values:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | [0] | int256 | uint256 The leveraged quantity |
-
 ### entryPrice
 
 ```solidity
-function entryPrice(struct Position self, struct LpContext ctx) internal view returns (UFixed18)
+function entryPrice(struct Position self, struct LpContext ctx) internal view returns (uint256)
 ```
 
 Calculates the entry price of the position based on the position's open oracle version
@@ -86,12 +62,12 @@ _It fetches oracle price from `IOracleProvider`
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | UFixed18 | UFixed18 The entry price |
+  | [0] | uint256 | uint256 The entry price |
 
 ### exitPrice
 
 ```solidity
-function exitPrice(struct Position self, struct LpContext ctx) internal view returns (UFixed18)
+function exitPrice(struct Position self, struct LpContext ctx) internal view returns (uint256)
 ```
 
 Calculates the exit price of the position based on the position's close oracle version
@@ -110,7 +86,7 @@ _It fetches oracle price from `IOracleProvider`
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | UFixed18 | UFixed18 The exit price |
+  | [0] | uint256 | uint256 The exit price |
 
 ### pnl
 
@@ -118,8 +94,7 @@ _It fetches oracle price from `IOracleProvider`
 function pnl(struct Position self, struct LpContext ctx) internal view returns (int256)
 ```
 
-Calculates the profit or loss of the position
-        based on the close oracle version and the leveraged quantity
+Calculates the profit or loss of the position based on the close oracle version and the qty
 
 - Parameters:
 

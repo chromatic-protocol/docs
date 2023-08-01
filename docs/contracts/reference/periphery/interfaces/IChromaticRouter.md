@@ -26,7 +26,7 @@ _Emitted when a new account is created._
 ### openPosition
 
 ```solidity
-function openPosition(address market, int224 qty, uint32 leverage, uint256 takerMargin, uint256 makerMargin, uint256 maxAllowableTradingFee) external returns (struct Position)
+function openPosition(address market, int256 qty, uint256 takerMargin, uint256 makerMargin, uint256 maxAllowableTradingFee) external returns (struct Position)
 ```
 
 _Opens a new position in a ChromaticMarket contract._
@@ -36,8 +36,7 @@ _Opens a new position in a ChromaticMarket contract._
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | market | address | The address of the ChromaticMarket contract. |
-  | qty | int224 | The quantity of the position. |
-  | leverage | uint32 | The leverage of the position. |
+  | qty | int256 | The quantity of the position. |
   | takerMargin | uint256 | The margin amount for the taker. |
   | makerMargin | uint256 | The margin amount for the maker. |
   | maxAllowableTradingFee | uint256 | The maximum allowable trading fee. |

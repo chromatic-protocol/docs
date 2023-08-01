@@ -8,6 +8,18 @@ title: MarketTradeFacet.sol
 
 _A contract that manages trading positions._
 
+### LEVERAGE_DECIMALS
+
+```solidity
+uint256 LEVERAGE_DECIMALS
+```
+
+### LEVERAGE_PRECISION
+
+```solidity
+uint256 LEVERAGE_PRECISION
+```
+
 ### TooSmallTakerMargin
 
 ```solidity
@@ -67,15 +79,6 @@ _Throws an error indicating thatwhen the specified leverage exceeds the maximum 
      Each Oracle Provider has a specific maximum allowable leverage level, which is determined by the DAO.
      The default maximum allowable leverage level is 0, which corresponds to a leverage of up to 10x._
 
-### NotAllowableTakerMargin
-
-```solidity
-error NotAllowableTakerMargin()
-```
-
-_Throws an error indicating that the taker margin value is not within the allowable range based on the quantity and the maximum allowable leverage.
-     The taker margin should be equal to or greater than the product of the absolute quantity and the reciprocal of the maximum allowable leverage, and it should not exceed 100% of the absolute quantity._
-
 ### NotAllowableMakerMargin
 
 ```solidity
@@ -89,12 +92,11 @@ _Throws an error indicating that the maker margin value is not within the allowa
 ### openPosition
 
 ```solidity
-function openPosition(int224 qty, uint32 leverage, uint256 takerMargin, uint256 makerMargin, uint256 maxAllowableTradingFee, bytes data) external returns (struct Position position)
+function openPosition(int256 qty, uint256 takerMargin, uint256 makerMargin, uint256 maxAllowableTradingFee, bytes data) external returns (struct Position position)
 ```
 
 _Throws a `TooSmallTakerMargin` error if the `takerMargin` is smaller than the minimum required margin for the settlement token.
      Throws an `ExceedMaxAllowableLeverage` if the leverage exceeds the maximum allowable leverage.
-     Throws a `NotAllowableTakerMargin` if the taker margin is not within the allowable range based on the absolute quantity and maximum allowable leverage.
      Throws a `NotAllowableMakerMargin` if the maker margin is not within the allowable range based on the absolute quantity and min/max take-profit basis points (BPS).
      Throws an `ExceedMaxAllowableTradingFee` if the total trading fee (including protocol fee) exceeds the maximum allowable trading fee (`maxAllowableTradingFee`).
      Throws a `NotEnoughMarginTransferred` if the margin settlement token balance did not increase by the required margin amount after the callback.
@@ -110,8 +112,7 @@ Requirements:
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | qty | int224 | The quantity of the position. |
-  | leverage | uint32 | The leverage of the position in basis points. |
+  | qty | int256 | The quantity of the position. |
   | takerMargin | uint256 | The margin amount provided by the taker. |
   | makerMargin | uint256 | The margin amount provided by the maker. |
   | maxAllowableTradingFee | uint256 | The maximum allowable trading fee for the position. |

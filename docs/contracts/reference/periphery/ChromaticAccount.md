@@ -190,7 +190,7 @@ Retrieves an array of position IDs owned by this account for the specified marke
 ### openPosition
 
 ```solidity
-function openPosition(address marketAddress, int224 qty, uint32 leverage, uint256 takerMargin, uint256 makerMargin, uint256 maxAllowableTradingFee) external returns (struct Position position)
+function openPosition(address marketAddress, int256 qty, uint256 takerMargin, uint256 makerMargin, uint256 maxAllowableTradingFee) external returns (struct Position position)
 ```
 
 Opens a new position in the specified market.
@@ -202,8 +202,7 @@ _This function can only be called by the chromatic router contract._
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | marketAddress | address | The address of the market. |
-  | qty | int224 | The quantity of the position. |
-  | leverage | uint32 | The leverage of the position. |
+  | qty | int256 | The quantity of the position. |
   | takerMargin | uint256 | The margin required for the taker. |
   | makerMargin | uint256 | The margin required for the maker. |
   | maxAllowableTradingFee | uint256 | The maximum allowable trading fee. |

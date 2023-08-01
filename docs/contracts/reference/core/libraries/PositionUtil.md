@@ -4,36 +4,6 @@ title: PositionUtil.sol
 ---
 # [PositionUtil.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/libraries/PositionUtil.sol)
 
-## QTY_DECIMALS
-
-```solidity
-uint256 QTY_DECIMALS
-```
-
-## LEVERAGE_DECIMALS
-
-```solidity
-uint256 LEVERAGE_DECIMALS
-```
-
-## QTY_PRECISION
-
-```solidity
-uint256 QTY_PRECISION
-```
-
-## LEVERAGE_PRECISION
-
-```solidity
-uint256 LEVERAGE_PRECISION
-```
-
-## QTY_LEVERAGE_PRECISION
-
-```solidity
-uint256 QTY_LEVERAGE_PRECISION
-```
-
 ## PositionUtil
 
 Provides utility functions for managing positions
@@ -65,7 +35,7 @@ _It adds 1 to the `oracleVersion`
 ### settlePrice
 
 ```solidity
-function settlePrice(contract IOracleProvider provider, uint256 oracleVersion) internal view returns (UFixed18)
+function settlePrice(contract IOracleProvider provider, uint256 oracleVersion) internal view returns (uint256)
 ```
 
 Calculates the price of the position based on the `oracleVersion` to settle
@@ -85,12 +55,12 @@ _It calls another overloaded `settlePrice` function
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | UFixed18 | UFixed18 The calculated price to settle |
+  | [0] | uint256 | uint256 The calculated price to settle |
 
 ### settlePrice
 
 ```solidity
-function settlePrice(contract IOracleProvider provider, uint256 oracleVersion, struct IOracleProvider.OracleVersion currentVersion) internal view returns (UFixed18)
+function settlePrice(contract IOracleProvider provider, uint256 oracleVersion, struct IOracleProvider.OracleVersion currentVersion) internal view returns (uint256)
 ```
 
 Calculates the price of the position based on the `oracleVersion` to settle
@@ -114,17 +84,17 @@ _It calculates the price by considering the `settleVersion`
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | UFixed18 | UFixed18 The calculated entry price to settle |
+  | [0] | uint256 | uint256 The calculated entry price to settle |
 
 ### oraclePrice
 
 ```solidity
-function oraclePrice(struct IOracleProvider.OracleVersion oracleVersion) internal pure returns (UFixed18)
+function oraclePrice(struct IOracleProvider.OracleVersion oracleVersion) internal pure returns (uint256)
 ```
 
 Extracts the price value from an `OracleVersion` struct
 
-_If the price is less than 0, it returns 0_
+_If the price is not positive value, it triggers an error with the message `Errors.NOT_POSITIVE_PRICE`._
 
 - Parameters:
 
@@ -136,33 +106,29 @@ _If the price is less than 0, it returns 0_
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | UFixed18 | UFixed18 The price value of `oracleVersion` |
+  | [0] | uint256 | uint256 The price value of `oracleVersion` |
 
 ### pnl
 
 ```solidity
-function pnl(int256 leveragedQty, UFixed18 _entryPrice, UFixed18 _exitPrice) internal pure returns (int256)
+function pnl(int256 qty, uint256 _entryPrice, uint256 _exitPrice) internal pure returns (int256)
 ```
 
-Calculates the profit or loss (PnL) for a position
-        based on the leveraged quantity, entry price, and exit price
+Calculates the profit or loss (PnL) for a position based on the quantity, entry price, and exit price
 
 _It first calculates the price difference (`delta`) between the exit price and the entry price.
-     If the leveraged quantity is negative, indicating short position,
-     it adjusts the `delta` to reflect a negative change.
-     The function then calculates the absolute PnL
-     by multiplying the absolute value of the leveraged quantity
-     with the absolute value of the `delta`, divided by the entry price.
-     Finally, if `delta` is negative, indicating a loss,
-     the absolute PnL is negated to represent a negative value._
+     If the quantity is negative, indicating short position, it adjusts the `delta` to reflect a negative change.
+     The function then calculates the absolute PnL by multiplying the absolute value of the quantity
+         with the absolute value of the `delta`, divided by the entry price.
+     Finally, if `delta` is negative, indicating a loss, the absolute PnL is negated to represent a negative value._
 
 - Parameters:
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | leveragedQty | int256 | The leveraged quantity of the position |
-  | _entryPrice | UFixed18 | The entry price of the position |
-  | _exitPrice | UFixed18 | The exit price of the position |
+  | qty | int256 | The quantity of the position |
+  | _entryPrice | uint256 | The entry price of the position |
+  | _exitPrice | uint256 | The exit price of the position |
 
 - Return Values:
 
@@ -212,17 +178,17 @@ _It ensures that the sign of the current quantity of the bin's position
 ### transactionAmount
 
 ```solidity
-function transactionAmount(int256 leveragedQty, UFixed18 price) internal pure returns (uint256)
+function transactionAmount(int256 qty, uint256 price) internal pure returns (uint256)
 ```
 
-Calculates the transaction amount based on the leveraged quantity and price
+Calculates the transaction amount based on the quantity and price
 
 - Parameters:
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | leveragedQty | int256 | The leveraged quantity of the position |
-  | price | UFixed18 | The price of the position |
+  | qty | int256 | The quantity of the position |
+  | price | uint256 | The price of the position |
 
 - Return Values:
 

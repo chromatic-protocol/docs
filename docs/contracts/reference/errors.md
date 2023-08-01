@@ -25,6 +25,7 @@ _This library provides a set of error codes as string constants for handling exc
 | IRAA | INTEREST_RATE_ALREADY_APPLIED |
 | USP | UNSETTLED_POSITION |
 | IPQ | INVALID_POSITION_QTY |
+| NPP | NOT_POSITIVE_PRICE |
 
 ### NOT_ENOUGH_FREE_LIQUIDITY
 
@@ -131,6 +132,13 @@ string constant INVALID_POSITION_QTY = "IPQ";
 ```
 
 _Error code indicating that the position quantity is invalid._
+### NOT_POSITIVE_PRICE
+
+```solidity
+string constant NOT_POSITIVE_PRICE = "NPP";
+```
+
+_Error code indicating that the oracle price is not positive._
 
 ## CLBToken
 
@@ -488,15 +496,6 @@ error ExceedMaxAllowableLeverage()
 _Throws an error indicating thatwhen the specified leverage exceeds the maximum allowable leverage level set by the Oracle Provider.
      Each Oracle Provider has a specific maximum allowable leverage level, which is determined by the DAO.
      The default maximum allowable leverage level is 0, which corresponds to a leverage of up to 10x._
-
-### NotAllowableTakerMargin
-
-```solidity
-error NotAllowableTakerMargin()
-```
-
-_Throws an error indicating that the taker margin value is not within the allowable range based on the quantity and the maximum allowable leverage.
-     The taker margin should be equal to or greater than the product of the absolute quantity and the reciprocal of the maximum allowable leverage, and it should not exceed 100% of the absolute quantity._
 
 ### NotAllowableMakerMargin
 

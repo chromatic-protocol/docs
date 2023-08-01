@@ -73,7 +73,7 @@ _Emitted when protocol fees are transferred._
 ### openPosition
 
 ```solidity
-function openPosition(int224 qty, uint32 leverage, uint256 takerMargin, uint256 makerMargin, uint256 maxAllowableTradingFee, bytes data) external returns (struct Position)
+function openPosition(int256 qty, uint256 takerMargin, uint256 makerMargin, uint256 maxAllowableTradingFee, bytes data) external returns (struct Position)
 ```
 
 _Opens a new position in the market._
@@ -82,8 +82,7 @@ _Opens a new position in the market._
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | qty | int224 | The quantity of the position. |
-  | leverage | uint32 | The leverage of the position in basis points. |
+  | qty | int256 | The quantity of the position. |
   | takerMargin | uint256 | The margin amount provided by the taker. |
   | makerMargin | uint256 | The margin amount provided by the maker. |
   | maxAllowableTradingFee | uint256 | The maximum allowable trading fee for the position. |

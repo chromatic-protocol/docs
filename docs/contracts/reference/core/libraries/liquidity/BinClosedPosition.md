@@ -23,7 +23,7 @@ _Represents a closed position within an LiquidityBin._
 
 ```solidity
 struct _ClaimWaitingPosition {
-  int256 totalLeveragedQty;
+  int256 totalQty;
   uint256 totalEntryAmount;
   uint256 totalMakerMargin;
   uint256 totalTakerMargin;

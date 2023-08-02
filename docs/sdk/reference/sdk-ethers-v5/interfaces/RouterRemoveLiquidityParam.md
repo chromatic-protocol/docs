@@ -18,7 +18,7 @@ The amount of CLB tokens to remove as liquidity
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:40](https://github.com/chromatic-protocol/sdk/blob/e9ce5d3/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L40)
+[packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts:40](https://github.com/chromatic-protocol/sdk/blob/5887df0/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L40)
 
 ___
 
@@ -30,7 +30,7 @@ The fee rate of the liquidity bin
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:36](https://github.com/chromatic-protocol/sdk/blob/e9ce5d3/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L36)
+[packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts:36](https://github.com/chromatic-protocol/sdk/blob/5887df0/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L36)
 
 ___
 
@@ -42,4 +42,4 @@ The recipient address
 
 #### Defined in
 
-[entities/ChromaticRouter.ts:38](https://github.com/chromatic-protocol/sdk/blob/e9ce5d3/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L38)
+[packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts:38](https://github.com/chromatic-protocol/sdk/blob/5887df0/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L38)

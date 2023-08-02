@@ -24,7 +24,7 @@ Creates a new instance of ChromaticLens.
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:77](https://github.com/chromatic-protocol/sdk/blob/e121579/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L77)
+[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:91](https://github.com/chromatic-protocol/sdk/blob/4d68c91/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L91)
 
 ## Methods
 
@@ -49,7 +49,7 @@ A promise that resolves to an object with mappings between tradingFee and oracle
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:188](https://github.com/chromatic-protocol/sdk/blob/e121579/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L188)
+[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:202](https://github.com/chromatic-protocol/sdk/blob/4d68c91/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L202)
 
 ___
 
@@ -71,7 +71,7 @@ The ChromaticLens contract.
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:90](https://github.com/chromatic-protocol/sdk/blob/e121579/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L90)
+[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:104](https://github.com/chromatic-protocol/sdk/blob/4d68c91/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L104)
 
 ___
 
@@ -95,7 +95,7 @@ A promise that resolves to an array of LiquidityBinResult.
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:101](https://github.com/chromatic-protocol/sdk/blob/e121579/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L101)
+[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:115](https://github.com/chromatic-protocol/sdk/blob/4d68c91/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L115)
 
 ___
 
@@ -120,7 +120,7 @@ A promise that resolves to the LP receipts.
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:269](https://github.com/chromatic-protocol/sdk/blob/e121579/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L269)
+[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:280](https://github.com/chromatic-protocol/sdk/blob/4d68c91/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L280)
 
 ___
 
@@ -145,13 +145,13 @@ A promise that resolves to an array of OwnedLiquidityBinResult.
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:132](https://github.com/chromatic-protocol/sdk/blob/e121579/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L132)
+[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:146](https://github.com/chromatic-protocol/sdk/blob/4d68c91/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L146)
 
 ___
 
 ### pendingLiquidityBatch
 
-▸ **pendingLiquidityBatch**(`marketAddress`, `tradingFeeRates`): `Promise`<{ `0`: `BigNumber` ; `1`: `BigNumber` ; `2`: `BigNumber` ; `[unscopables]`: { `[unscopables]?`: `boolean` ; `length?`: `boolean` ; `[iterator]?`:  ; `concat?`:  ; `copyWithin?`:  ; `entries?`:  ; `every?`:  ; `fill?`:  ; `filter?`:  ; `find?`:  ; `findIndex?`:  ; `flat?`:  ; `flatMap?`:  ; `forEach?`:  ; `includes?`:  ; `indexOf?`:  ; `join?`:  ; `keys?`:  ; `lastIndexOf?`:  ; `map?`:  ; `pop?`:  ; `push?`:  ; `reduce?`:  ; `reduceRight?`:  ; `reverse?`:  ; `shift?`:  ; `slice?`:  ; `some?`:  ; `sort?`:  ; `splice?`:  ; `toLocaleString?`:  ; `toString?`:  ; `unshift?`:  ; `values?`:   } ; `burningCLBTokenAmountRequested`: `BigNumber` ; `length`: ``3`` ; `mintingTokenAmountRequested`: `BigNumber` ; `oracleVersion`: `BigNumber` ; `tradingFeeRate`: `number` = feeRate; `[iterator]`: () => `IterableIterator`<`BigNumber`\> ; `concat`: (...`items`: `ConcatArray`<`BigNumber`\>[]) => `BigNumber`[](...`items`: (`BigNumber` \| `ConcatArray`<`BigNumber`\>)[]) => `BigNumber`[] ; `copyWithin`: (`target`: `number`, `start?`: `number`, `end?`: `number`) => `PendingLiquidityStructOutput` ; `entries`: () => `IterableIterator`<[`number`, `BigNumber`]\> ; `every`: <S\>(`predicate`: (`value`: `BigNumber`, `index`: `number`, `array`: `BigNumber`[]) => value is S, `thisArg?`: `any`) => this is S[](`predicate`: (`value`: `BigNumber`, `index`: `number`, `array`: `BigNumber`[]) => `unknown`, `thisArg?`: `any`) => `boolean` ; `fill`: (`value`: `BigNumber`, `start?`: `number`, `end?`: `number`) => `PendingLiquidityStructOutput` ; `filter`: <S\>(`predicate`: (`value`: `BigNumber`, `index`: `number`, `array`: `BigNumber`[]) => value is S, `thisArg?`: `any`) => `S`[](`predicate`: (`value`: `BigNumber`, `index`: `number`, `array`: `BigNumber`[]) => `unknown`, `thisArg?`: `any`) => `BigNumber`[] ; `find`: <S\>(`predicate`: (`value`: `BigNumber`, `index`: `number`, `obj`: `BigNumber`[]) => value is S, `thisArg?`: `any`) => `S`(`predicate`: (`value`: `BigNumber`, `index`: `number`, `obj`: `BigNumber`[]) => `unknown`, `thisArg?`: `any`) => `BigNumber` ; `findIndex`: (`predicate`: (`value`: `BigNumber`, `index`: `number`, `obj`: `BigNumber`[]) => `unknown`, `thisArg?`: `any`) => `number` ; `flat`: <A, D\>(`this`: `A`, `depth?`: `D`) => `FlatArray`<`A`, `D`\>[] ; `flatMap`: <U, This\>(`callback`: (`this`: `This`, `value`: `BigNumber`, `index`: `number`, `array`: `BigNumber`[]) => `U` \| readonly `U`[], `thisArg?`: `This`) => `U`[] ; `forEach`: (`callbackfn`: (`value`: `BigNumber`, `index`: `number`, `array`: `BigNumber`[]) => `void`, `thisArg?`: `any`) => `void` ; `includes`: (`searchElement`: `BigNumber`, `fromIndex?`: `number`) => `boolean` ; `indexOf`: (`searchElement`: `BigNumber`, `fromIndex?`: `number`) => `number` ; `join`: (`separator?`: `string`) => `string` ; `keys`: () => `IterableIterator`<`number`\> ; `lastIndexOf`: (`searchElement`: `BigNumber`, `fromIndex?`: `number`) => `number` ; `map`: <U\>(`callbackfn`: (`value`: `BigNumber`, `index`: `number`, `array`: `BigNumber`[]) => `U`, `thisArg?`: `any`) => `U`[] ; `pop`: () => `BigNumber` ; `push`: (...`items`: `BigNumber`[]) => `number` ; `reduce`: (`callbackfn`: (`previousValue`: `BigNumber`, `currentValue`: `BigNumber`, `currentIndex`: `number`, `array`: `BigNumber`[]) => `BigNumber`) => `BigNumber`(`callbackfn`: (`previousValue`: `BigNumber`, `currentValue`: `BigNumber`, `currentIndex`: `number`, `array`: `BigNumber`[]) => `BigNumber`, `initialValue`: `BigNumber`) => `BigNumber`<U\>(`callbackfn`: (`previousValue`: `U`, `currentValue`: `BigNumber`, `currentIndex`: `number`, `array`: `BigNumber`[]) => `U`, `initialValue`: `U`) => `U` ; `reduceRight`: (`callbackfn`: (`previousValue`: `BigNumber`, `currentValue`: `BigNumber`, `currentIndex`: `number`, `array`: `BigNumber`[]) => `BigNumber`) => `BigNumber`(`callbackfn`: (`previousValue`: `BigNumber`, `currentValue`: `BigNumber`, `currentIndex`: `number`, `array`: `BigNumber`[]) => `BigNumber`, `initialValue`: `BigNumber`) => `BigNumber`<U\>(`callbackfn`: (`previousValue`: `U`, `currentValue`: `BigNumber`, `currentIndex`: `number`, `array`: `BigNumber`[]) => `U`, `initialValue`: `U`) => `U` ; `reverse`: () => `BigNumber`[] ; `shift`: () => `BigNumber` ; `slice`: (`start?`: `number`, `end?`: `number`) => `BigNumber`[] ; `some`: (`predicate`: (`value`: `BigNumber`, `index`: `number`, `array`: `BigNumber`[]) => `unknown`, `thisArg?`: `any`) => `boolean` ; `sort`: (`compareFn?`: (`a`: `BigNumber`, `b`: `BigNumber`) => `number`) => `PendingLiquidityStructOutput` ; `splice`: (`start`: `number`, `deleteCount?`: `number`) => `BigNumber`[](`start`: `number`, `deleteCount`: `number`, ...`items`: `BigNumber`[]) => `BigNumber`[] ; `toLocaleString`: () => `string` ; `toString`: () => `string` ; `unshift`: (...`items`: `BigNumber`[]) => `number` ; `values`: () => `IterableIterator`<`BigNumber`\>  }[]\>
+▸ **pendingLiquidityBatch**(`marketAddress`, `tradingFeeRates`): `Promise`<[`PendingLiquidityResult`](../interfaces/PendingLiquidityResult.md)[]\>
 
 Retrieves the pending liquidities for a given market and trading fee rates.
 
@@ -164,10 +164,10 @@ Retrieves the pending liquidities for a given market and trading fee rates.
 
 #### Returns
 
-`Promise`<{ `0`: `BigNumber` ; `1`: `BigNumber` ; `2`: `BigNumber` ; `[unscopables]`: { `[unscopables]?`: `boolean` ; `length?`: `boolean` ; `[iterator]?`:  ; `concat?`:  ; `copyWithin?`:  ; `entries?`:  ; `every?`:  ; `fill?`:  ; `filter?`:  ; `find?`:  ; `findIndex?`:  ; `flat?`:  ; `flatMap?`:  ; `forEach?`:  ; `includes?`:  ; `indexOf?`:  ; `join?`:  ; `keys?`:  ; `lastIndexOf?`:  ; `map?`:  ; `pop?`:  ; `push?`:  ; `reduce?`:  ; `reduceRight?`:  ; `reverse?`:  ; `shift?`:  ; `slice?`:  ; `some?`:  ; `sort?`:  ; `splice?`:  ; `toLocaleString?`:  ; `toString?`:  ; `unshift?`:  ; `values?`:   } ; `burningCLBTokenAmountRequested`: `BigNumber` ; `length`: ``3`` ; `mintingTokenAmountRequested`: `BigNumber` ; `oracleVersion`: `BigNumber` ; `tradingFeeRate`: `number` = feeRate; `[iterator]`: () => `IterableIterator`<`BigNumber`\> ; `concat`: (...`items`: `ConcatArray`<`BigNumber`\>[]) => `BigNumber`[](...`items`: (`BigNumber` \| `ConcatArray`<`BigNumber`\>)[]) => `BigNumber`[] ; `copyWithin`: (`target`: `number`, `start?`: `number`, `end?`: `number`) => `PendingLiquidityStructOutput` ; `entries`: () => `IterableIterator`<[`number`, `BigNumber`]\> ; `every`: <S\>(`predicate`: (`value`: `BigNumber`, `index`: `number`, `array`: `BigNumber`[]) => value is S, `thisArg?`: `any`) => this is S[](`predicate`: (`value`: `BigNumber`, `index`: `number`, `array`: `BigNumber`[]) => `unknown`, `thisArg?`: `any`) => `boolean` ; `fill`: (`value`: `BigNumber`, `start?`: `number`, `end?`: `number`) => `PendingLiquidityStructOutput` ; `filter`: <S\>(`predicate`: (`value`: `BigNumber`, `index`: `number`, `array`: `BigNumber`[]) => value is S, `thisArg?`: `any`) => `S`[](`predicate`: (`value`: `BigNumber`, `index`: `number`, `array`: `BigNumber`[]) => `unknown`, `thisArg?`: `any`) => `BigNumber`[] ; `find`: <S\>(`predicate`: (`value`: `BigNumber`, `index`: `number`, `obj`: `BigNumber`[]) => value is S, `thisArg?`: `any`) => `S`(`predicate`: (`value`: `BigNumber`, `index`: `number`, `obj`: `BigNumber`[]) => `unknown`, `thisArg?`: `any`) => `BigNumber` ; `findIndex`: (`predicate`: (`value`: `BigNumber`, `index`: `number`, `obj`: `BigNumber`[]) => `unknown`, `thisArg?`: `any`) => `number` ; `flat`: <A, D\>(`this`: `A`, `depth?`: `D`) => `FlatArray`<`A`, `D`\>[] ; `flatMap`: <U, This\>(`callback`: (`this`: `This`, `value`: `BigNumber`, `index`: `number`, `array`: `BigNumber`[]) => `U` \| readonly `U`[], `thisArg?`: `This`) => `U`[] ; `forEach`: (`callbackfn`: (`value`: `BigNumber`, `index`: `number`, `array`: `BigNumber`[]) => `void`, `thisArg?`: `any`) => `void` ; `includes`: (`searchElement`: `BigNumber`, `fromIndex?`: `number`) => `boolean` ; `indexOf`: (`searchElement`: `BigNumber`, `fromIndex?`: `number`) => `number` ; `join`: (`separator?`: `string`) => `string` ; `keys`: () => `IterableIterator`<`number`\> ; `lastIndexOf`: (`searchElement`: `BigNumber`, `fromIndex?`: `number`) => `number` ; `map`: <U\>(`callbackfn`: (`value`: `BigNumber`, `index`: `number`, `array`: `BigNumber`[]) => `U`, `thisArg?`: `any`) => `U`[] ; `pop`: () => `BigNumber` ; `push`: (...`items`: `BigNumber`[]) => `number` ; `reduce`: (`callbackfn`: (`previousValue`: `BigNumber`, `currentValue`: `BigNumber`, `currentIndex`: `number`, `array`: `BigNumber`[]) => `BigNumber`) => `BigNumber`(`callbackfn`: (`previousValue`: `BigNumber`, `currentValue`: `BigNumber`, `currentIndex`: `number`, `array`: `BigNumber`[]) => `BigNumber`, `initialValue`: `BigNumber`) => `BigNumber`<U\>(`callbackfn`: (`previousValue`: `U`, `currentValue`: `BigNumber`, `currentIndex`: `number`, `array`: `BigNumber`[]) => `U`, `initialValue`: `U`) => `U` ; `reduceRight`: (`callbackfn`: (`previousValue`: `BigNumber`, `currentValue`: `BigNumber`, `currentIndex`: `number`, `array`: `BigNumber`[]) => `BigNumber`) => `BigNumber`(`callbackfn`: (`previousValue`: `BigNumber`, `currentValue`: `BigNumber`, `currentIndex`: `number`, `array`: `BigNumber`[]) => `BigNumber`, `initialValue`: `BigNumber`) => `BigNumber`<U\>(`callbackfn`: (`previousValue`: `U`, `currentValue`: `BigNumber`, `currentIndex`: `number`, `array`: `BigNumber`[]) => `U`, `initialValue`: `U`) => `U` ; `reverse`: () => `BigNumber`[] ; `shift`: () => `BigNumber` ; `slice`: (`start?`: `number`, `end?`: `number`) => `BigNumber`[] ; `some`: (`predicate`: (`value`: `BigNumber`, `index`: `number`, `array`: `BigNumber`[]) => `unknown`, `thisArg?`: `any`) => `boolean` ; `sort`: (`compareFn?`: (`a`: `BigNumber`, `b`: `BigNumber`) => `number`) => `PendingLiquidityStructOutput` ; `splice`: (`start`: `number`, `deleteCount?`: `number`) => `BigNumber`[](`start`: `number`, `deleteCount`: `number`, ...`items`: `BigNumber`[]) => `BigNumber`[] ; `toLocaleString`: () => `string` ; `toString`: () => `string` ; `unshift`: (...`items`: `BigNumber`[]) => `number` ; `values`: () => `IterableIterator`<`BigNumber`\>  }[]\>
+`Promise`<[`PendingLiquidityResult`](../interfaces/PendingLiquidityResult.md)[]\>
 
 A promise that resolves to an array of PendingLiquidity.
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:243](https://github.com/chromatic-protocol/sdk/blob/e121579/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L243)
+[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:257](https://github.com/chromatic-protocol/sdk/blob/4d68c91/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L257)

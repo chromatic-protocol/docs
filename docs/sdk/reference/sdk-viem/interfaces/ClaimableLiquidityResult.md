@@ -18,7 +18,7 @@ The actual amount of CLB tokens burned
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:69](https://github.com/chromatic-protocol/sdk/blob/2297d93/packages/sdk-viem/src/entities/ChromaticLens.ts#L69)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:82](https://github.com/chromatic-protocol/sdk/blob/f6efe54/packages/sdk-viem/src/entities/ChromaticLens.ts#L82)
 
 ___
 
@@ -30,7 +30,7 @@ The amount of CLB tokens requested for burning
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:67](https://github.com/chromatic-protocol/sdk/blob/2297d93/packages/sdk-viem/src/entities/ChromaticLens.ts#L67)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:80](https://github.com/chromatic-protocol/sdk/blob/f6efe54/packages/sdk-viem/src/entities/ChromaticLens.ts#L80)
 
 ___
 
@@ -42,7 +42,7 @@ The amount of settlement tokens equal in value to the burned CLB tokens
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:71](https://github.com/chromatic-protocol/sdk/blob/2297d93/packages/sdk-viem/src/entities/ChromaticLens.ts#L71)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:84](https://github.com/chromatic-protocol/sdk/blob/f6efe54/packages/sdk-viem/src/entities/ChromaticLens.ts#L84)
 
 ___
 
@@ -54,4 +54,4 @@ The amount of settlement tokens requested for minting
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:63](https://github.com/chromatic-protocol/sdk/blob/2297d93/packages/sdk-viem/src/entities/ChromaticLens.ts#L63)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:76](https://github.com/chromatic-protocol/sdk/blob/f6efe54/packages/sdk-viem/src/entities/ChromaticLens.ts#L76)

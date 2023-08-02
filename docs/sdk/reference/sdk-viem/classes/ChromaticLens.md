@@ -24,7 +24,7 @@ Creates a new instance of ChromaticLens.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:82](https://github.com/chromatic-protocol/sdk/blob/2297d93/packages/sdk-viem/src/entities/ChromaticLens.ts#L82)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:95](https://github.com/chromatic-protocol/sdk/blob/f6efe54/packages/sdk-viem/src/entities/ChromaticLens.ts#L95)
 
 ## Methods
 
@@ -49,7 +49,7 @@ A promise that resolves to an object with mappings between tradingFee and oracle
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:196](https://github.com/chromatic-protocol/sdk/blob/2297d93/packages/sdk-viem/src/entities/ChromaticLens.ts#L196)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:209](https://github.com/chromatic-protocol/sdk/blob/f6efe54/packages/sdk-viem/src/entities/ChromaticLens.ts#L209)
 
 ___
 
@@ -71,7 +71,7 @@ The ChromaticLens contract.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:100](https://github.com/chromatic-protocol/sdk/blob/2297d93/packages/sdk-viem/src/entities/ChromaticLens.ts#L100)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:113](https://github.com/chromatic-protocol/sdk/blob/f6efe54/packages/sdk-viem/src/entities/ChromaticLens.ts#L113)
 
 ___
 
@@ -95,7 +95,7 @@ A promise that resolves to an array of LiquidityBinResult.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:111](https://github.com/chromatic-protocol/sdk/blob/2297d93/packages/sdk-viem/src/entities/ChromaticLens.ts#L111)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:124](https://github.com/chromatic-protocol/sdk/blob/f6efe54/packages/sdk-viem/src/entities/ChromaticLens.ts#L124)
 
 ___
 
@@ -120,7 +120,7 @@ A promise that resolves to the LP receipts.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:273](https://github.com/chromatic-protocol/sdk/blob/2297d93/packages/sdk-viem/src/entities/ChromaticLens.ts#L273)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:283](https://github.com/chromatic-protocol/sdk/blob/f6efe54/packages/sdk-viem/src/entities/ChromaticLens.ts#L283)
 
 ___
 
@@ -145,13 +145,13 @@ A promise that resolves to an array of OwnedLiquidityBinResult.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:146](https://github.com/chromatic-protocol/sdk/blob/2297d93/packages/sdk-viem/src/entities/ChromaticLens.ts#L146)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:159](https://github.com/chromatic-protocol/sdk/blob/f6efe54/packages/sdk-viem/src/entities/ChromaticLens.ts#L159)
 
 ___
 
 ### pendingLiquidityBatch
 
-▸ **pendingLiquidityBatch**(`marketAddress`, `tradingFeeRates`): `Promise`<{ `burningCLBTokenAmountRequested`: `bigint` ; `mintingTokenAmountRequested`: `bigint` ; `oracleVersion`: `bigint` ; `tradingFeeRate`: `number` = feeRate }[]\>
+▸ **pendingLiquidityBatch**(`marketAddress`, `tradingFeeRates`): `Promise`<[`PendingLiquidityResult`](../interfaces/PendingLiquidityResult.md)[]\>
 
 Retrieves the pending liquidities for a given market and trading fee rates.
 
@@ -164,10 +164,10 @@ Retrieves the pending liquidities for a given market and trading fee rates.
 
 #### Returns
 
-`Promise`<{ `burningCLBTokenAmountRequested`: `bigint` ; `mintingTokenAmountRequested`: `bigint` ; `oracleVersion`: `bigint` ; `tradingFeeRate`: `number` = feeRate }[]\>
+`Promise`<[`PendingLiquidityResult`](../interfaces/PendingLiquidityResult.md)[]\>
 
 A promise that resolves to an array of PendingLiquidity.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:247](https://github.com/chromatic-protocol/sdk/blob/2297d93/packages/sdk-viem/src/entities/ChromaticLens.ts#L247)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:260](https://github.com/chromatic-protocol/sdk/blob/f6efe54/packages/sdk-viem/src/entities/ChromaticLens.ts#L260)

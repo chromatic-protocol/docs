@@ -14,17 +14,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[utils/helpers.ts:95](https://github.com/chromatic-protocol/sdk/blob/fc7af96/packages/sdk-ethers-v6/src/utils/helpers.ts#L95)
-
-___
-
-### logger
-
-• `Const` **logger**: `any`
-
-#### Defined in
-
-[utils/helpers.ts:23](https://github.com/chromatic-protocol/sdk/blob/fc7af96/packages/sdk-ethers-v6/src/utils/helpers.ts#L23)
+[packages/sdk-ethers-v6/src/utils/helpers.ts:94](https://github.com/chromatic-protocol/sdk/blob/004fa43/packages/sdk-ethers-v6/src/utils/helpers.ts#L94)
 
 ## Functions
 
@@ -50,7 +40,7 @@ ___
 
 #### Defined in
 
-[utils/helpers.ts:39](https://github.com/chromatic-protocol/sdk/blob/fc7af96/packages/sdk-ethers-v6/src/utils/helpers.ts#L39)
+[packages/sdk-ethers-v6/src/utils/helpers.ts:39](https://github.com/chromatic-protocol/sdk/blob/004fa43/packages/sdk-ethers-v6/src/utils/helpers.ts#L39)
 
 ___
 
@@ -70,20 +60,19 @@ ___
 
 #### Defined in
 
-[utils/helpers.ts:25](https://github.com/chromatic-protocol/sdk/blob/fc7af96/packages/sdk-ethers-v6/src/utils/helpers.ts#L25)
+[packages/sdk-ethers-v6/src/utils/helpers.ts:25](https://github.com/chromatic-protocol/sdk/blob/004fa43/packages/sdk-ethers-v6/src/utils/helpers.ts#L25)
 
 ___
 
 ### encodeTokenId
 
-▸ **encodeTokenId**(`tradingFeeRate`, `long?`): `bigint`
+▸ **encodeTokenId**(`tradingFeeRate`): `bigint`
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `tradingFeeRate` | `number` | `undefined` |
-| `long` | `boolean` | `true` |
+| Name | Type |
+| :------ | :------ |
+| `tradingFeeRate` | `number` |
 
 #### Returns
 
@@ -91,7 +80,7 @@ ___
 
 #### Defined in
 
-[utils/helpers.ts:33](https://github.com/chromatic-protocol/sdk/blob/fc7af96/packages/sdk-ethers-v6/src/utils/helpers.ts#L33)
+[packages/sdk-ethers-v6/src/utils/helpers.ts:33](https://github.com/chromatic-protocol/sdk/blob/004fa43/packages/sdk-ethers-v6/src/utils/helpers.ts#L33)
 
 ___
 
@@ -118,4 +107,25 @@ ___
 
 #### Defined in
 
-[utils/helpers.ts:49](https://github.com/chromatic-protocol/sdk/blob/fc7af96/packages/sdk-ethers-v6/src/utils/helpers.ts#L49)
+[packages/sdk-ethers-v6/src/utils/helpers.ts:48](https://github.com/chromatic-protocol/sdk/blob/004fa43/packages/sdk-ethers-v6/src/utils/helpers.ts#L48)
+
+___
+
+### logger
+
+▸ **logger**(`formatter`, `...args`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `formatter` | `any` |
+| `...args` | `any`[] |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+node_modules/@types/debug/index.d.ts:51

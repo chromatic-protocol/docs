@@ -16,3 +16,9 @@ uint256 BPS
 uint256 FEE_RATES_LENGTH
 ```
 
+## PRICE_PRECISION
+
+```solidity
+uint256 PRICE_PRECISION
+```
+

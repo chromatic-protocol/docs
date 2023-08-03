@@ -97,7 +97,7 @@ _Opens a new position in the market._
 ### closePosition
 
 ```solidity
-function closePosition(uint256 positionId) external
+function closePosition(uint256 positionId) external returns (struct Position)
 ```
 
 _Closes a position in the market._
@@ -107,6 +107,12 @@ _Closes a position in the market._
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | positionId | uint256 | The ID of the position to close. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct Position | The closed position. |
 
 ### claimPosition
 

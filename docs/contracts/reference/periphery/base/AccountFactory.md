@@ -8,6 +8,12 @@ title: AccountFactory.sol
 
 _Abstract contract for creating and managing user accounts._
 
+### accountBase
+
+```solidity
+contract ChromaticAccount accountBase
+```
+
 ### constructor
 
 ```solidity

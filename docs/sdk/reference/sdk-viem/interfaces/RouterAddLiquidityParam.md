@@ -18,7 +18,7 @@ The amount to add as liquidity
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:12](https://github.com/chromatic-protocol/sdk/blob/78ec907/packages/sdk-viem/src/entities/ChromaticRouter.ts#L12)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:12](https://github.com/chromatic-protocol/sdk/blob/1c28a0a/packages/sdk-viem/src/entities/ChromaticRouter.ts#L12)
 
 ___
 
@@ -30,4 +30,4 @@ The fee rate of the liquidity bin
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:10](https://github.com/chromatic-protocol/sdk/blob/78ec907/packages/sdk-viem/src/entities/ChromaticRouter.ts#L10)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:10](https://github.com/chromatic-protocol/sdk/blob/1c28a0a/packages/sdk-viem/src/entities/ChromaticRouter.ts#L10)

@@ -24,7 +24,7 @@ Creates a new instance of ChromaticPosition.
 
 #### Defined in
 
-[packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts:75](https://github.com/chromatic-protocol/sdk/blob/c62b112/packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts#L75)
+[packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts:75](https://github.com/chromatic-protocol/sdk/blob/b211966/packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts#L75)
 
 ## Methods
 
@@ -48,7 +48,7 @@ An object containing the contract instances of Lens, Market, and Market Factory.
 
 #### Defined in
 
-[packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts:81](https://github.com/chromatic-protocol/sdk/blob/c62b112/packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts#L81)
+[packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts:81](https://github.com/chromatic-protocol/sdk/blob/b211966/packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts#L81)
 
 ___
 
@@ -73,7 +73,7 @@ A promise that resolves to the interest.
 
 #### Defined in
 
-[packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts:152](https://github.com/chromatic-protocol/sdk/blob/c62b112/packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts#L152)
+[packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts:152](https://github.com/chromatic-protocol/sdk/blob/b211966/packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts#L152)
 
 ___
 
@@ -97,7 +97,7 @@ A promise that resolves to an array of interest rate records.
 
 #### Defined in
 
-[packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts:128](https://github.com/chromatic-protocol/sdk/blob/c62b112/packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts#L128)
+[packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts:128](https://github.com/chromatic-protocol/sdk/blob/b211966/packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts#L128)
 
 ___
 
@@ -123,7 +123,7 @@ A promise that resolves to an object containing the profit stop price and loss c
 
 #### Defined in
 
-[packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts:214](https://github.com/chromatic-protocol/sdk/blob/c62b112/packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts#L214)
+[packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts:214](https://github.com/chromatic-protocol/sdk/blob/b211966/packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts#L214)
 
 ___
 
@@ -152,7 +152,7 @@ A promise that resolves to the PNL value.
 
 #### Defined in
 
-[packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts:191](https://github.com/chromatic-protocol/sdk/blob/c62b112/packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts#L191)
+[packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts:191](https://github.com/chromatic-protocol/sdk/blob/b211966/packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts#L191)
 
 ___
 
@@ -177,7 +177,7 @@ A promise that resolves to an array of positions.
 
 #### Defined in
 
-[packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts:95](https://github.com/chromatic-protocol/sdk/blob/c62b112/packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts#L95)
+[packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts:95](https://github.com/chromatic-protocol/sdk/blob/b211966/packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts#L95)
 
 ___
 
@@ -203,7 +203,7 @@ A promise that resolves to the loss cut price.
 
 #### Defined in
 
-[packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts:270](https://github.com/chromatic-protocol/sdk/blob/c62b112/packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts#L270)
+[packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts:270](https://github.com/chromatic-protocol/sdk/blob/b211966/packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts#L270)
 
 ___
 
@@ -229,4 +229,4 @@ A promise that resolves to the profit stop price.
 
 #### Defined in
 
-[packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts:253](https://github.com/chromatic-protocol/sdk/blob/c62b112/packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts#L253)
+[packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts:253](https://github.com/chromatic-protocol/sdk/blob/b211966/packages/sdk-ethers-v6/src/entities/ChromaticPosition.ts#L253)

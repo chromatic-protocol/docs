@@ -20,7 +20,7 @@ Additionally, it includes the pending bin share from the market's vault
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:18](https://github.com/chromatic-protocol/sdk/blob/12e5eb8/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L18)
+[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:18](https://github.com/chromatic-protocol/sdk/blob/91849c1/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L18)
 
 ___
 
@@ -32,7 +32,7 @@ The available (free) liquidity amount (settlement token) for the specified tradi
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:22](https://github.com/chromatic-protocol/sdk/blob/12e5eb8/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L22)
+[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:22](https://github.com/chromatic-protocol/sdk/blob/91849c1/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L22)
 
 ___
 
@@ -44,7 +44,7 @@ The total liquidity amount (settlement token) for the specified trading fee rate
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:20](https://github.com/chromatic-protocol/sdk/blob/12e5eb8/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L20)
+[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:20](https://github.com/chromatic-protocol/sdk/blob/91849c1/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L20)
 
 ___
 
@@ -56,4 +56,4 @@ The trading fee rate for the liquidity bin
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:12](https://github.com/chromatic-protocol/sdk/blob/12e5eb8/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L12)
+[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:12](https://github.com/chromatic-protocol/sdk/blob/91849c1/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L12)

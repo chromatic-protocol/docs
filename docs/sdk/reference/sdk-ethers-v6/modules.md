@@ -26,6 +26,7 @@ custom_edit_url: null
 - [IPosition](interfaces/IPosition.md)
 - [LiquidityBinResult](interfaces/LiquidityBinResult.md)
 - [OwnedLiquidityBinResult](interfaces/OwnedLiquidityBinResult.md)
+- [PendingLiquidityResult](interfaces/PendingLiquidityResult.md)
 - [PositionParam](interfaces/PositionParam.md)
 - [RouterAddLiquidityParam](interfaces/RouterAddLiquidityParam.md)
 - [RouterOpenPositionParam](interfaces/RouterOpenPositionParam.md)

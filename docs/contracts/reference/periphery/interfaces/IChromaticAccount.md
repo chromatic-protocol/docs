@@ -8,6 +8,93 @@ title: IChromaticAccount.sol
 
 _Interface for the ChromaticAccount contract, which manages user accounts and positions._
 
+### OpenPosition
+
+```solidity
+event OpenPosition(address marketAddress, struct Position position)
+```
+
+_Emitted when a position is opened._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | marketAddress | address | The address of the market. |
+  | position | struct Position | The opened position. |
+
+### ClosePosition
+
+```solidity
+event ClosePosition(address marketAddress, struct Position position)
+```
+
+_Emitted when a position is closed._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | marketAddress | address | The address of the market. |
+  | position | struct Position | The closed position. |
+
+### ClaimPosition
+
+```solidity
+event ClaimPosition(address marketAddress, uint256 entryPrice, uint256 exitPrice, int256 realizedPnl, uint256 interest, struct Position position)
+```
+
+_Emitted when a position is claimed._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | marketAddress | address | The address of the market. |
+  | entryPrice | uint256 | The entry price of the position |
+  | exitPrice | uint256 | The exit price of the position |
+  | realizedPnl | int256 | The profit or loss of the claimed position. |
+  | interest | uint256 | The interest paid for the claimed position. |
+  | position | struct Position | The claimed position. |
+
+### TakeProfit
+
+```solidity
+event TakeProfit(address marketAddress, uint256 entryPrice, uint256 exitPrice, int256 realizedPnl, uint256 interest, struct Position position)
+```
+
+_Emitted when a position is claimed._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | marketAddress | address | The address of the market. |
+  | entryPrice | uint256 | The entry price of the position |
+  | exitPrice | uint256 | The exit price of the position |
+  | realizedPnl | int256 | The profit or loss of the claimed position. |
+  | interest | uint256 | The interest paid for the claimed position. |
+  | position | struct Position | The claimed position. |
+
+### StopLoss
+
+```solidity
+event StopLoss(address marketAddress, uint256 entryPrice, uint256 exitPrice, int256 realizedPnl, uint256 interest, struct Position position)
+```
+
+_Emitted when a position is claimed._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | marketAddress | address | The address of the market. |
+  | entryPrice | uint256 | The entry price of the position |
+  | exitPrice | uint256 | The exit price of the position |
+  | realizedPnl | int256 | The profit or loss of the claimed position. |
+  | interest | uint256 | The interest paid for the claimed position. |
+  | position | struct Position | The liquidated position. |
+
 ### balance
 
 ```solidity

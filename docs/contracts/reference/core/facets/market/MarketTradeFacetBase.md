@@ -41,6 +41,12 @@ _Internal function for claiming a position._
   | recipient | address | The address of the recipient (EOA or account contract) receiving the settlement. |
   | data | bytes | Additional data for the claim position callback. |
 
+### _callClaimPositionCallback
+
+```solidity
+function _callClaimPositionCallback(struct LpContext ctx, struct Position position, int256 realizedPnl, uint256 interest, bytes data, address liquidatorAddress) internal
+```
+
 ### _getPosition
 
 ```solidity

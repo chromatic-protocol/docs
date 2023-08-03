@@ -272,7 +272,7 @@ _Transfers the required margin from the account to the specified vault.
 ### claimPositionCallback
 
 ```solidity
-function claimPositionCallback(uint256 positionId, bytes) external
+function claimPositionCallback(struct Position position, uint256 entryPrice, uint256 exitPrice, int256 realizedPnl, uint256 interest, bytes data) external
 ```
 
 Callback function called after claiming a position.
@@ -281,6 +281,10 @@ Callback function called after claiming a position.
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | positionId | uint256 | The ID of the claimed position. |
-  |  | bytes |  |
+  | position | struct Position | The claimed position. |
+  | entryPrice | uint256 | The entry price of the position |
+  | exitPrice | uint256 | The exit price of the position |
+  | realizedPnl | int256 | The realized position pnl (taker side). |
+  | interest | uint256 | The interest paid for the claimed position. |
+  | data | bytes | Additional data related to the callback. |
 

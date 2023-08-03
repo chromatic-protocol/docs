@@ -127,7 +127,7 @@ Requirements:
 ### closePosition
 
 ```solidity
-function closePosition(uint256 positionId) external
+function closePosition(uint256 positionId) external returns (struct Position closed)
 ```
 
 _This function allows the owner of the position to close it. The position must exist, be owned by the caller,
@@ -144,6 +144,12 @@ _This function allows the owner of the position to close it. The position must e
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | positionId | uint256 | The ID of the position to close. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | closed | struct Position | The closed position. |
 
 ### claimPosition
 

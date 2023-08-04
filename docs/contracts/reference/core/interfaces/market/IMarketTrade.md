@@ -24,10 +24,8 @@ _The OpenPositionInfo struct represents a opened trading position._
 | ---- | ---- | ----------- |
 | id | uint256 | The position identifier |
 | openVersion | uint256 | The version of the oracle when the position was opened |
-| closeVersion |  | The version of the oracle when the position was closed |
 | qty | int256 | The quantity of the position |
 | openTimestamp | uint256 | The timestamp when the position was opened |
-| closeTimestamp |  | The timestamp when the position was closed |
 | takerMargin | uint256 | The amount of collateral that a trader must provide |
 | makerMargin | uint256 | The margin amount provided by the maker. |
 | tradingFee | uint256 | The trading fee associated with the position. |

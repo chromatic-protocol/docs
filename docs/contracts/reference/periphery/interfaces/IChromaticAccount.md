@@ -11,7 +11,7 @@ _Interface for the ChromaticAccount contract, which manages user accounts and po
 ### OpenPosition
 
 ```solidity
-event OpenPosition(struct OpenPositionInfo position, address marketAddress, uint256 positionId)
+event OpenPosition(address marketAddress, uint256 positionId, uint256 openVersion, int256 qty, uint256 openTimestamp, uint256 takerMargin, uint256 makerMargin, uint256 tradingFee)
 ```
 
 _Emitted when a position is opened._
@@ -20,14 +20,19 @@ _Emitted when a position is opened._
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | position | struct OpenPositionInfo | The opened position. |
   | marketAddress | address | The address of the market. |
   | positionId | uint256 | The position identifier |
+  | openVersion | uint256 | The version of the oracle when the position was opened |
+  | qty | int256 | The quantity of the position |
+  | openTimestamp | uint256 | The timestamp when the position was opened |
+  | takerMargin | uint256 | The amount of collateral that a trader must provide |
+  | makerMargin | uint256 | The margin amount provided by the maker. |
+  | tradingFee | uint256 | The trading fee associated with the position. |
 
 ### ClosePosition
 
 ```solidity
-event ClosePosition(struct ClosePositionInfo position, address marketAddress, uint256 positionId)
+event ClosePosition(address marketAddress, uint256 positionId, uint256 closeVersion, uint256 closeTimestamp)
 ```
 
 _Emitted when a position is closed._
@@ -36,14 +41,15 @@ _Emitted when a position is closed._
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | position | struct ClosePositionInfo | The closed position. |
   | marketAddress | address | The address of the market. |
   | positionId | uint256 | The position identifier |
+  | closeVersion | uint256 | The version of the oracle when the position was closed |
+  | closeTimestamp | uint256 | The timestamp when the position was closed |
 
 ### ClaimPosition
 
 ```solidity
-event ClaimPosition(struct ClaimPositionInfo position, address marketAddress, uint256 positionId)
+event ClaimPosition(address marketAddress, uint256 positionId, uint256 entryPrice, uint256 exitPrice, int256 realizedPnl, uint256 interest, bytes4 cause)
 ```
 
 _Emitted when a position is claimed._
@@ -52,9 +58,13 @@ _Emitted when a position is claimed._
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | position | struct ClaimPositionInfo | The claimed position. |
   | marketAddress | address | The address of the market. |
   | positionId | uint256 | The position identifier |
+  | entryPrice | uint256 | The entry price of the position |
+  | exitPrice | uint256 | The exit price of the position |
+  | realizedPnl | int256 | The profit or loss of the claimed position. |
+  | interest | uint256 | The interest paid for the claimed position. |
+  | cause | bytes4 | The description of being claimed. |
 
 ### balance
 

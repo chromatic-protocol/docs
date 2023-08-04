@@ -24,7 +24,7 @@ Creates a new instance of ChromaticLens.
 
 #### Defined in
 
-[packages/sdk-ethers-v6/src/entities/ChromaticLens.ts:91](https://github.com/chromatic-protocol/sdk/blob/c1505b3/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L91)
+[packages/sdk-ethers-v6/src/entities/ChromaticLens.ts:91](https://github.com/chromatic-protocol/sdk/blob/f1c35d9/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L91)
 
 ## Methods
 
@@ -49,7 +49,7 @@ A promise that resolves to an object with mappings between tradingFee and oracle
 
 #### Defined in
 
-[packages/sdk-ethers-v6/src/entities/ChromaticLens.ts:203](https://github.com/chromatic-protocol/sdk/blob/c1505b3/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L203)
+[packages/sdk-ethers-v6/src/entities/ChromaticLens.ts:203](https://github.com/chromatic-protocol/sdk/blob/f1c35d9/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L203)
 
 ___
 
@@ -71,7 +71,7 @@ The ChromaticLens contract.
 
 #### Defined in
 
-[packages/sdk-ethers-v6/src/entities/ChromaticLens.ts:104](https://github.com/chromatic-protocol/sdk/blob/c1505b3/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L104)
+[packages/sdk-ethers-v6/src/entities/ChromaticLens.ts:104](https://github.com/chromatic-protocol/sdk/blob/f1c35d9/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L104)
 
 ___
 
@@ -95,7 +95,7 @@ A promise that resolves to an array of LiquidityBinResult.
 
 #### Defined in
 
-[packages/sdk-ethers-v6/src/entities/ChromaticLens.ts:115](https://github.com/chromatic-protocol/sdk/blob/c1505b3/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L115)
+[packages/sdk-ethers-v6/src/entities/ChromaticLens.ts:115](https://github.com/chromatic-protocol/sdk/blob/f1c35d9/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L115)
 
 ___
 
@@ -120,7 +120,7 @@ A promise that resolves to the LP receipts.
 
 #### Defined in
 
-[packages/sdk-ethers-v6/src/entities/ChromaticLens.ts:281](https://github.com/chromatic-protocol/sdk/blob/c1505b3/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L281)
+[packages/sdk-ethers-v6/src/entities/ChromaticLens.ts:281](https://github.com/chromatic-protocol/sdk/blob/f1c35d9/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L281)
 
 ___
 
@@ -145,7 +145,7 @@ A promise that resolves to an array of OwnedLiquidityBinResult.
 
 #### Defined in
 
-[packages/sdk-ethers-v6/src/entities/ChromaticLens.ts:147](https://github.com/chromatic-protocol/sdk/blob/c1505b3/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L147)
+[packages/sdk-ethers-v6/src/entities/ChromaticLens.ts:147](https://github.com/chromatic-protocol/sdk/blob/f1c35d9/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L147)
 
 ___
 
@@ -170,4 +170,4 @@ A promise that resolves to an array of PendingLiquidity.
 
 #### Defined in
 
-[packages/sdk-ethers-v6/src/entities/ChromaticLens.ts:258](https://github.com/chromatic-protocol/sdk/blob/c1505b3/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L258)
+[packages/sdk-ethers-v6/src/entities/ChromaticLens.ts:258](https://github.com/chromatic-protocol/sdk/blob/f1c35d9/packages/sdk-ethers-v6/src/entities/ChromaticLens.ts#L258)

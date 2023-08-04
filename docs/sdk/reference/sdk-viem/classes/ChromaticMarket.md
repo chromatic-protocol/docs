@@ -24,7 +24,7 @@ Creates a new instance of ChromaticMarket.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticMarket.ts:20](https://github.com/chromatic-protocol/sdk/blob/c760e33/packages/sdk-viem/src/entities/ChromaticMarket.ts#L20)
+[packages/sdk-viem/src/entities/ChromaticMarket.ts:20](https://github.com/chromatic-protocol/sdk/blob/9a97bd0/packages/sdk-viem/src/entities/ChromaticMarket.ts#L20)
 
 ## Methods
 
@@ -48,7 +48,7 @@ A promise that resolves to the CLB token contract address.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticMarket.ts:75](https://github.com/chromatic-protocol/sdk/blob/c760e33/packages/sdk-viem/src/entities/ChromaticMarket.ts#L75)
+[packages/sdk-viem/src/entities/ChromaticMarket.ts:75](https://github.com/chromatic-protocol/sdk/blob/9a97bd0/packages/sdk-viem/src/entities/ChromaticMarket.ts#L75)
 
 ___
 
@@ -73,7 +73,7 @@ A promise that resolves to the CLB token metadata.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticMarket.ts:87](https://github.com/chromatic-protocol/sdk/blob/c760e33/packages/sdk-viem/src/entities/ChromaticMarket.ts#L87)
+[packages/sdk-viem/src/entities/ChromaticMarket.ts:87](https://github.com/chromatic-protocol/sdk/blob/9a97bd0/packages/sdk-viem/src/entities/ChromaticMarket.ts#L87)
 
 ___
 
@@ -98,7 +98,7 @@ An object containing the contract instances.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticMarket.ts:26](https://github.com/chromatic-protocol/sdk/blob/c760e33/packages/sdk-viem/src/entities/ChromaticMarket.ts#L26)
+[packages/sdk-viem/src/entities/ChromaticMarket.ts:26](https://github.com/chromatic-protocol/sdk/blob/9a97bd0/packages/sdk-viem/src/entities/ChromaticMarket.ts#L26)
 
 ___
 
@@ -122,7 +122,7 @@ A promise that resolves to the current price.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticMarket.ts:122](https://github.com/chromatic-protocol/sdk/blob/c760e33/packages/sdk-viem/src/entities/ChromaticMarket.ts#L122)
+[packages/sdk-viem/src/entities/ChromaticMarket.ts:122](https://github.com/chromatic-protocol/sdk/blob/9a97bd0/packages/sdk-viem/src/entities/ChromaticMarket.ts#L122)
 
 ___
 
@@ -146,7 +146,7 @@ A promise that resolves to an array of market addresses and their corresponding 
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticMarket.ts:146](https://github.com/chromatic-protocol/sdk/blob/c760e33/packages/sdk-viem/src/entities/ChromaticMarket.ts#L146)
+[packages/sdk-viem/src/entities/ChromaticMarket.ts:146](https://github.com/chromatic-protocol/sdk/blob/9a97bd0/packages/sdk-viem/src/entities/ChromaticMarket.ts#L146)
 
 ___
 
@@ -170,7 +170,7 @@ A promise that resolves to the market name.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticMarket.ts:134](https://github.com/chromatic-protocol/sdk/blob/c760e33/packages/sdk-viem/src/entities/ChromaticMarket.ts#L134)
+[packages/sdk-viem/src/entities/ChromaticMarket.ts:134](https://github.com/chromatic-protocol/sdk/blob/9a97bd0/packages/sdk-viem/src/entities/ChromaticMarket.ts#L134)
 
 ___
 
@@ -194,7 +194,7 @@ A promise that resolves to the OracleProvider contract instance.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticMarket.ts:110](https://github.com/chromatic-protocol/sdk/blob/c760e33/packages/sdk-viem/src/entities/ChromaticMarket.ts#L110)
+[packages/sdk-viem/src/entities/ChromaticMarket.ts:110](https://github.com/chromatic-protocol/sdk/blob/9a97bd0/packages/sdk-viem/src/entities/ChromaticMarket.ts#L110)
 
 ___
 
@@ -218,4 +218,4 @@ A promise that resolves to the settlement token contract address.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticMarket.ts:64](https://github.com/chromatic-protocol/sdk/blob/c760e33/packages/sdk-viem/src/entities/ChromaticMarket.ts#L64)
+[packages/sdk-viem/src/entities/ChromaticMarket.ts:64](https://github.com/chromatic-protocol/sdk/blob/9a97bd0/packages/sdk-viem/src/entities/ChromaticMarket.ts#L64)

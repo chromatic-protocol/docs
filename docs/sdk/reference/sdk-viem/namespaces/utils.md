@@ -20,7 +20,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/sdk-viem/src/utils/helpers.ts:39](https://github.com/chromatic-protocol/sdk/blob/1c28a0a/packages/sdk-viem/src/utils/helpers.ts#L39)
+[packages/sdk-viem/src/utils/helpers.ts:42](https://github.com/chromatic-protocol/sdk/blob/c760e33/packages/sdk-viem/src/utils/helpers.ts#L42)
 
 ## Variables
 
@@ -30,7 +30,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/sdk-viem/src/utils/helpers.ts:124](https://github.com/chromatic-protocol/sdk/blob/1c28a0a/packages/sdk-viem/src/utils/helpers.ts#L124)
+[packages/sdk-viem/src/utils/helpers.ts:132](https://github.com/chromatic-protocol/sdk/blob/c760e33/packages/sdk-viem/src/utils/helpers.ts#L132)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/utils/helpers.ts:99](https://github.com/chromatic-protocol/sdk/blob/1c28a0a/packages/sdk-viem/src/utils/helpers.ts#L99)
+[packages/sdk-viem/src/utils/helpers.ts:107](https://github.com/chromatic-protocol/sdk/blob/c760e33/packages/sdk-viem/src/utils/helpers.ts#L107)
 
 ## Functions
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/utils/helpers.ts:70](https://github.com/chromatic-protocol/sdk/blob/1c28a0a/packages/sdk-viem/src/utils/helpers.ts#L70)
+[packages/sdk-viem/src/utils/helpers.ts:73](https://github.com/chromatic-protocol/sdk/blob/c760e33/packages/sdk-viem/src/utils/helpers.ts#L73)
 
 ___
 
@@ -86,7 +86,7 @@ asserts client is Client & Object
 
 #### Defined in
 
-[packages/sdk-viem/src/utils/helpers.ts:57](https://github.com/chromatic-protocol/sdk/blob/1c28a0a/packages/sdk-viem/src/utils/helpers.ts#L57)
+[packages/sdk-viem/src/utils/helpers.ts:60](https://github.com/chromatic-protocol/sdk/blob/c760e33/packages/sdk-viem/src/utils/helpers.ts#L60)
 
 ___
 
@@ -106,7 +106,7 @@ asserts client is Client & Object
 
 #### Defined in
 
-[packages/sdk-viem/src/utils/helpers.ts:46](https://github.com/chromatic-protocol/sdk/blob/1c28a0a/packages/sdk-viem/src/utils/helpers.ts#L46)
+[packages/sdk-viem/src/utils/helpers.ts:49](https://github.com/chromatic-protocol/sdk/blob/c760e33/packages/sdk-viem/src/utils/helpers.ts#L49)
 
 ___
 
@@ -126,7 +126,7 @@ asserts client is Client & Object
 
 #### Defined in
 
-[packages/sdk-viem/src/utils/helpers.ts:51](https://github.com/chromatic-protocol/sdk/blob/1c28a0a/packages/sdk-viem/src/utils/helpers.ts#L51)
+[packages/sdk-viem/src/utils/helpers.ts:54](https://github.com/chromatic-protocol/sdk/blob/c760e33/packages/sdk-viem/src/utils/helpers.ts#L54)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/utils/helpers.ts:31](https://github.com/chromatic-protocol/sdk/blob/1c28a0a/packages/sdk-viem/src/utils/helpers.ts#L31)
+[packages/sdk-viem/src/utils/helpers.ts:34](https://github.com/chromatic-protocol/sdk/blob/c760e33/packages/sdk-viem/src/utils/helpers.ts#L34)
 
 ___
 
@@ -166,7 +166,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/utils/helpers.ts:64](https://github.com/chromatic-protocol/sdk/blob/1c28a0a/packages/sdk-viem/src/utils/helpers.ts#L64)
+[packages/sdk-viem/src/utils/helpers.ts:67](https://github.com/chromatic-protocol/sdk/blob/c760e33/packages/sdk-viem/src/utils/helpers.ts#L67)
 
 ___
 
@@ -192,4 +192,4 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/utils/helpers.ts:80](https://github.com/chromatic-protocol/sdk/blob/1c28a0a/packages/sdk-viem/src/utils/helpers.ts#L80)
+[packages/sdk-viem/src/utils/helpers.ts:82](https://github.com/chromatic-protocol/sdk/blob/c760e33/packages/sdk-viem/src/utils/helpers.ts#L82)

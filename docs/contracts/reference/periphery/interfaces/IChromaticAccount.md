@@ -11,7 +11,7 @@ _Interface for the ChromaticAccount contract, which manages user accounts and po
 ### OpenPosition
 
 ```solidity
-event OpenPosition(address marketAddress, uint256 positionId, struct OpenPositionInfo position)
+event OpenPosition(struct OpenPositionInfo position, address marketAddress, uint256 positionId)
 ```
 
 _Emitted when a position is opened._
@@ -20,14 +20,14 @@ _Emitted when a position is opened._
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
+  | position | struct OpenPositionInfo | The opened position. |
   | marketAddress | address | The address of the market. |
   | positionId | uint256 | The position identifier |
-  | position | struct OpenPositionInfo | The opened position. |
 
 ### ClosePosition
 
 ```solidity
-event ClosePosition(address marketAddress, uint256 positionId, struct ClosePositionInfo position)
+event ClosePosition(struct ClosePositionInfo position, address marketAddress, uint256 positionId)
 ```
 
 _Emitted when a position is closed._
@@ -36,14 +36,14 @@ _Emitted when a position is closed._
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
+  | position | struct ClosePositionInfo | The closed position. |
   | marketAddress | address | The address of the market. |
   | positionId | uint256 | The position identifier |
-  | position | struct ClosePositionInfo | The closed position. |
 
 ### ClaimPosition
 
 ```solidity
-event ClaimPosition(address marketAddress, uint256 positionId, struct ClaimPositionInfo position)
+event ClaimPosition(struct ClaimPositionInfo position, address marketAddress, uint256 positionId)
 ```
 
 _Emitted when a position is claimed._
@@ -52,9 +52,9 @@ _Emitted when a position is claimed._
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
+  | position | struct ClaimPositionInfo | The claimed position. |
   | marketAddress | address | The address of the market. |
   | positionId | uint256 | The position identifier |
-  | position | struct ClaimPositionInfo | The claimed position. |
 
 ### balance
 

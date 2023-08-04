@@ -92,7 +92,7 @@ _Throws an error indicating that the maker margin value is not within the allowa
 ### openPosition
 
 ```solidity
-function openPosition(int256 qty, uint256 takerMargin, uint256 makerMargin, uint256 maxAllowableTradingFee, bytes data) external returns (struct Position position)
+function openPosition(int256 qty, uint256 takerMargin, uint256 makerMargin, uint256 maxAllowableTradingFee, bytes data) external returns (struct OpenPositionInfo positionInfo)
 ```
 
 _Throws a `TooSmallTakerMargin` error if the `takerMargin` is smaller than the minimum required margin for the settlement token.
@@ -122,12 +122,12 @@ Requirements:
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | position | struct Position | The opened position. |
+  | positionInfo | struct OpenPositionInfo | The opened position. |
 
 ### closePosition
 
 ```solidity
-function closePosition(uint256 positionId) external returns (struct Position closed)
+function closePosition(uint256 positionId) external returns (struct ClosePositionInfo closed)
 ```
 
 _This function allows the owner of the position to close it. The position must exist, be owned by the caller,
@@ -149,7 +149,7 @@ _This function allows the owner of the position to close it. The position must e
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | closed | struct Position | The closed position. |
+  | closed | struct ClosePositionInfo | The closed position. |
 
 ### claimPosition
 

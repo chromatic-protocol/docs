@@ -11,7 +11,7 @@ _Interface for the ChromaticAccount contract, which manages user accounts and po
 ### OpenPosition
 
 ```solidity
-event OpenPosition(address marketAddress, struct Position position)
+event OpenPosition(address marketAddress, uint256 positionId, struct OpenPositionInfo position)
 ```
 
 _Emitted when a position is opened._
@@ -21,12 +21,13 @@ _Emitted when a position is opened._
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | marketAddress | address | The address of the market. |
-  | position | struct Position | The opened position. |
+  | positionId | uint256 | The position identifier |
+  | position | struct OpenPositionInfo | The opened position. |
 
 ### ClosePosition
 
 ```solidity
-event ClosePosition(address marketAddress, struct Position position)
+event ClosePosition(address marketAddress, uint256 positionId, struct ClosePositionInfo position)
 ```
 
 _Emitted when a position is closed._
@@ -36,12 +37,13 @@ _Emitted when a position is closed._
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | marketAddress | address | The address of the market. |
-  | position | struct Position | The closed position. |
+  | positionId | uint256 | The position identifier |
+  | position | struct ClosePositionInfo | The closed position. |
 
 ### ClaimPosition
 
 ```solidity
-event ClaimPosition(address marketAddress, uint256 entryPrice, uint256 exitPrice, int256 realizedPnl, uint256 interest, struct Position position)
+event ClaimPosition(address marketAddress, uint256 positionId, struct ClaimPositionInfo position)
 ```
 
 _Emitted when a position is claimed._
@@ -51,49 +53,8 @@ _Emitted when a position is claimed._
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | marketAddress | address | The address of the market. |
-  | entryPrice | uint256 | The entry price of the position |
-  | exitPrice | uint256 | The exit price of the position |
-  | realizedPnl | int256 | The profit or loss of the claimed position. |
-  | interest | uint256 | The interest paid for the claimed position. |
-  | position | struct Position | The claimed position. |
-
-### TakeProfit
-
-```solidity
-event TakeProfit(address marketAddress, uint256 entryPrice, uint256 exitPrice, int256 realizedPnl, uint256 interest, struct Position position)
-```
-
-_Emitted when a position is claimed._
-
-- Parameters:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | marketAddress | address | The address of the market. |
-  | entryPrice | uint256 | The entry price of the position |
-  | exitPrice | uint256 | The exit price of the position |
-  | realizedPnl | int256 | The profit or loss of the claimed position. |
-  | interest | uint256 | The interest paid for the claimed position. |
-  | position | struct Position | The claimed position. |
-
-### StopLoss
-
-```solidity
-event StopLoss(address marketAddress, uint256 entryPrice, uint256 exitPrice, int256 realizedPnl, uint256 interest, struct Position position)
-```
-
-_Emitted when a position is claimed._
-
-- Parameters:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | marketAddress | address | The address of the market. |
-  | entryPrice | uint256 | The entry price of the position |
-  | exitPrice | uint256 | The exit price of the position |
-  | realizedPnl | int256 | The profit or loss of the claimed position. |
-  | interest | uint256 | The interest paid for the claimed position. |
-  | position | struct Position | The liquidated position. |
+  | positionId | uint256 | The position identifier |
+  | position | struct ClaimPositionInfo | The claimed position. |
 
 ### balance
 
@@ -174,7 +135,7 @@ Retrieves an array of position IDs owned by this account for the specified marke
 ### openPosition
 
 ```solidity
-function openPosition(address marketAddress, int256 qty, uint256 takerMargin, uint256 makerMargin, uint256 maxAllowableTradingFee) external returns (struct Position)
+function openPosition(address marketAddress, int256 qty, uint256 takerMargin, uint256 makerMargin, uint256 maxAllowableTradingFee) external returns (struct OpenPositionInfo)
 ```
 
 Opens a new position in the specified market.
@@ -193,7 +154,7 @@ Opens a new position in the specified market.
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | struct Position | position The opened position. |
+  | [0] | struct OpenPositionInfo | openPositionInfo The opened position information. |
 
 ### closePosition
 

@@ -25,7 +25,7 @@ _Throws an error indicating that an error occurred during the claim position cal
 ### _claimPosition
 
 ```solidity
-function _claimPosition(struct LpContext ctx, struct Position position, int256 pnl, uint256 usedKeeperFee, address recipient, bytes data) internal returns (uint256 interest)
+function _claimPosition(struct LpContext ctx, struct Position position, int256 pnl, uint256 usedKeeperFee, address recipient, bytes data, bytes4 cause) internal returns (uint256 interest)
 ```
 
 _Internal function for claiming a position._
@@ -40,11 +40,12 @@ _Internal function for claiming a position._
   | usedKeeperFee | uint256 | The amount of the keeper fee used. |
   | recipient | address | The address of the recipient (EOA or account contract) receiving the settlement. |
   | data | bytes | Additional data for the claim position callback. |
+  | cause | bytes4 | The description of being claimed. |
 
 ### _callClaimPositionCallback
 
 ```solidity
-function _callClaimPositionCallback(struct LpContext ctx, struct Position position, int256 realizedPnl, uint256 interest, bytes data, address liquidatorAddress) internal
+function _callClaimPositionCallback(struct LpContext ctx, struct Position position, int256 realizedPnl, uint256 interest, bytes data, address liquidatorAddress, bytes4 cause) internal
 ```
 
 ### _getPosition

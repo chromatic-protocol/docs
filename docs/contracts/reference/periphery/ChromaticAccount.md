@@ -190,7 +190,7 @@ Retrieves an array of position IDs owned by this account for the specified marke
 ### openPosition
 
 ```solidity
-function openPosition(address marketAddress, int256 qty, uint256 takerMargin, uint256 makerMargin, uint256 maxAllowableTradingFee) external returns (struct Position position)
+function openPosition(address marketAddress, int256 qty, uint256 takerMargin, uint256 makerMargin, uint256 maxAllowableTradingFee) external returns (struct OpenPositionInfo position)
 ```
 
 Opens a new position in the specified market.
@@ -211,7 +211,7 @@ _This function can only be called by the chromatic router contract._
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | position | struct Position | position The opened position. |
+  | position | struct OpenPositionInfo | openPositionInfo The opened position information. |
 
 ### closePosition
 
@@ -272,7 +272,7 @@ _Transfers the required margin from the account to the specified vault.
 ### claimPositionCallback
 
 ```solidity
-function claimPositionCallback(struct Position position, uint256 entryPrice, uint256 exitPrice, int256 realizedPnl, uint256 interest, bytes data) external
+function claimPositionCallback(struct Position position, struct ClaimPositionInfo claimInfo, bytes) external
 ```
 
 Callback function called after claiming a position.
@@ -282,9 +282,6 @@ Callback function called after claiming a position.
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | position | struct Position | The claimed position. |
-  | entryPrice | uint256 | The entry price of the position |
-  | exitPrice | uint256 | The exit price of the position |
-  | realizedPnl | int256 | The realized position pnl (taker side). |
-  | interest | uint256 | The interest paid for the claimed position. |
-  | data | bytes | Additional data related to the callback. |
+  | claimInfo | struct ClaimPositionInfo | The pnl related information of the claim |
+  |  | bytes |  |
 

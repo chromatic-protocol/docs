@@ -4,6 +4,100 @@ title: IMarketTrade.sol
 ---
 # [IMarketTrade.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/interfaces/market/IMarketTrade.sol)
 
+## OpenPositionInfo
+
+```solidity
+struct OpenPositionInfo {
+  uint256 id;
+  uint256 openVersion;
+  int256 qty;
+  uint256 openTimestamp;
+  uint256 takerMargin;
+  uint256 makerMargin;
+  uint256 tradingFee;
+}
+```
+
+_The OpenPositionInfo struct represents a opened trading position._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| id | uint256 | The position identifier |
+| openVersion | uint256 | The version of the oracle when the position was opened |
+| closeVersion |  | The version of the oracle when the position was closed |
+| qty | int256 | The quantity of the position |
+| openTimestamp | uint256 | The timestamp when the position was opened |
+| closeTimestamp |  | The timestamp when the position was closed |
+| takerMargin | uint256 | The amount of collateral that a trader must provide |
+| makerMargin | uint256 | The margin amount provided by the maker. |
+| tradingFee | uint256 | The trading fee associated with the position. |
+
+## ClosePositionInfo
+
+```solidity
+struct ClosePositionInfo {
+  uint256 id;
+  uint256 closeVersion;
+  uint256 closeTimestamp;
+}
+```
+
+_The ClosePositionInfo struct represents a closed trading position._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| id | uint256 | The position identifier |
+| closeVersion | uint256 | The version of the oracle when the position was closed |
+| closeTimestamp | uint256 | The timestamp when the position was closed |
+
+## ClaimPositionInfo
+
+```solidity
+struct ClaimPositionInfo {
+  uint256 id;
+  uint256 entryPrice;
+  uint256 exitPrice;
+  int256 realizedPnl;
+  uint256 interest;
+  bytes4 cause;
+}
+```
+
+_The ClaimPositionInfo struct represents a claimed position information._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| id | uint256 | The position identifier |
+| entryPrice | uint256 | The entry price of the position |
+| exitPrice | uint256 | The exit price of the position |
+| realizedPnl | int256 | The profit or loss of the claimed position. |
+| interest | uint256 | The interest paid for the claimed position. |
+| cause | bytes4 | The description of being claimed. |
+
+## CLAIM_USER
+
+```solidity
+bytes4 CLAIM_USER
+```
+
+## CLAIM_KEEPER
+
+```solidity
+bytes4 CLAIM_KEEPER
+```
+
+## CLAIM_TP
+
+```solidity
+bytes4 CLAIM_TP
+```
+
+## CLAIM_SL
+
+```solidity
+bytes4 CLAIM_SL
+```
+
 ## IMarketTrade
 
 _Interface for trading positions in a market._
@@ -73,7 +167,7 @@ _Emitted when protocol fees are transferred._
 ### openPosition
 
 ```solidity
-function openPosition(int256 qty, uint256 takerMargin, uint256 makerMargin, uint256 maxAllowableTradingFee, bytes data) external returns (struct Position)
+function openPosition(int256 qty, uint256 takerMargin, uint256 makerMargin, uint256 maxAllowableTradingFee, bytes data) external returns (struct OpenPositionInfo)
 ```
 
 _Opens a new position in the market._
@@ -92,12 +186,12 @@ _Opens a new position in the market._
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | struct Position | The opened position. |
+  | [0] | struct OpenPositionInfo | The opened position. |
 
 ### closePosition
 
 ```solidity
-function closePosition(uint256 positionId) external returns (struct Position)
+function closePosition(uint256 positionId) external returns (struct ClosePositionInfo)
 ```
 
 _Closes a position in the market._
@@ -112,7 +206,7 @@ _Closes a position in the market._
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | struct Position | The closed position. |
+  | [0] | struct ClosePositionInfo | The closed position. |
 
 ### claimPosition
 

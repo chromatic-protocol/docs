@@ -296,3 +296,15 @@ _Internal function to cancel a Gelato task._
   | registry | mapping(address &#x3D;&gt; mapping(uint256 &#x3D;&gt; bytes32)) | The mapping storing task IDs. |
   | positionId | uint256 | The ID of the position. |
 
+### getLiquidationTaskId
+
+```solidity
+function getLiquidationTaskId(address market, uint256 positionId) external view returns (bytes32 taskId)
+```
+
+### getClaimPositionTaskId
+
+```solidity
+function getClaimPositionTaskId(address market, uint256 positionId) external view returns (bytes32 taskId)
+```
+

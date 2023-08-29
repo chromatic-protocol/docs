@@ -198,3 +198,15 @@ Claims a position in a market.
   | market | address | The address of the market contract. |
   | positionId | uint256 | The ID of the position to be claimed. |
 
+### getLiquidationTaskId
+
+```solidity
+function getLiquidationTaskId(address market, uint256 positionId) external view returns (bytes32)
+```
+
+### getClaimPositionTaskId
+
+```solidity
+function getClaimPositionTaskId(address market, uint256 positionId) external view returns (bytes32)
+```
+

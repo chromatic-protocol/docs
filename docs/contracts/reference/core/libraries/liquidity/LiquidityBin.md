@@ -12,6 +12,7 @@ struct LiquidityBin {
   BinLiquidity _liquidity;
   BinPosition _position;
   BinClosedPosition _closedPosition;
+  mapping(uint256 => struct IMarketLiquidity.LiquidityBinValue) binValueAt;
 }
 ```
 

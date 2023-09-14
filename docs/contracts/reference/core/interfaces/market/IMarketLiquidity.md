@@ -68,6 +68,22 @@ _A struct representing status of the liquidity bin._
 | binValue | uint256 | The current value of the bin. |
 | tradingFeeRate | int16 | The trading fee rate for the liquidity. |
 
+### LiquidityBinValue
+
+```solidity
+struct LiquidityBinValue {
+  uint256 binValue;
+  uint256 clbTokenTotalSupply;
+}
+```
+
+_A struct representing value of the liquidity bin._
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| binValue | uint256 | The value of liquidity bin expressed in amount of settlement token. |
+| clbTokenTotalSupply | uint256 | The total supply amount of the CLB token. |
+
 ### AddLiquidity
 
 ```solidity

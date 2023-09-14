@@ -75,7 +75,23 @@ Initializes the LiquidityPool.
 ### settle
 
 ```solidity
-function settle(struct LiquidityPool self, struct LpContext ctx) internal
+function settle(struct LiquidityPool self, struct LpContext ctx, int16[] feeRates) internal
+```
+
+Settles the liquidity bins in the LiquidityPool.
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LiquidityPool | The reference to the LiquidityPool. |
+  | ctx | struct LpContext | The LpContext object. |
+  | feeRates | int16[] | The feeRate list of liquidity bin to settle. |
+
+### settleAll
+
+```solidity
+function settleAll(struct LiquidityPool self, struct LpContext ctx) internal
 ```
 
 Settles the liquidity bins in the LiquidityPool.
@@ -361,7 +377,7 @@ _This function distributes the earnings among the liquidity bins,
 ### binValue
 
 ```solidity
-function binValue(struct LiquidityPool self, int16 _tradingFeeRate, struct LpContext ctx) internal view returns (uint256 value)
+function binValue(struct LiquidityPool self, struct LpContext ctx, int16 _tradingFeeRate) internal view returns (uint256 value)
 ```
 
 _Retrieves the value of a specific bin in the LiquidityPool storage for the provided trading fee rate._
@@ -371,14 +387,36 @@ _Retrieves the value of a specific bin in the LiquidityPool storage for the prov
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | self | struct LiquidityPool | The reference to the LiquidityPool storage. |
-  | _tradingFeeRate | int16 | The trading fee rate for which to calculate the bin value. |
   | ctx | struct LpContext | The LP context containing relevant information for the calculation. |
+  | _tradingFeeRate | int16 | The trading fee rate for which to calculate the bin value. |
 
 - Return Values:
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | value | uint256 | The value of the specified bin. |
+
+### binValueAt
+
+```solidity
+function binValueAt(struct LiquidityPool self, int16 _tradingFeeRate, uint256 oracleVersion) internal view returns (struct IMarketLiquidity.LiquidityBinValue value)
+```
+
+_Retrieves the value of a specific bin in the LiquidityPool storage at a specific oracle version._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LiquidityPool | The reference to the LiquidityPool storage. |
+  | _tradingFeeRate | int16 | The trading fee rate for which to calculate the bin value. |
+  | oracleVersion | uint256 | The oracle version for which to retrieve the bin value. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | value | struct IMarketLiquidity.LiquidityBinValue | The LiquidityBinValue representing the value of the specified bin at the given oracle version. |
 
 ### pendingLiquidity
 

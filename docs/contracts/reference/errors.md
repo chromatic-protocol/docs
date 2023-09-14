@@ -599,18 +599,6 @@ error NotExistPosition()
 
 _Throws an error indicating that the caller is not the owner of this account contractthat the caller is not the owner of this account contract._
 
-## ChromaticRouter
-
-_A router contract that facilitates liquidity provision and trading on Chromatic._
-
-### NotExistLpReceipt
-
-```solidity
-error NotExistLpReceipt()
-```
-
-_Throws an error indicating that the specified receipt ID does not exist for the liquidity provider in the given market._
-
 ## VerifyCallback
 
 _Abstract contract for verifying callback functions from registered markets._

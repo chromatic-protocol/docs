@@ -50,7 +50,7 @@ A library that provides functions to manage the liquidity within an LiquidityBin
 ### settlePendingLiquidity
 
 ```solidity
-function settlePendingLiquidity(struct BinLiquidity self, struct LpContext ctx, uint256 binValue, uint256 freeLiquidity, uint256 clbTokenId) internal
+function settlePendingLiquidity(struct BinLiquidity self, struct LpContext ctx, uint256 binValue, uint256 freeLiquidity, uint256 clbTokenId, uint256 clbTokenTotalSupply) internal
 ```
 
 Settles the pending liquidity within the BinLiquidity.
@@ -90,6 +90,7 @@ _This function settles pending liquidity in the BinLiquidity storage by performi
   | binValue | uint256 | The current value of the bin. |
   | freeLiquidity | uint256 | The amount of free liquidity available in the bin. |
   | clbTokenId | uint256 | The ID of the CLB token. |
+  | clbTokenTotalSupply | uint256 |  |
 
 ### onAddLiquidity
 
@@ -237,6 +238,12 @@ _If the CLB token total supply is zero, returns zero.
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | [0] | uint256 | The value of the CLB tokens. |
+
+### needSettle
+
+```solidity
+function needSettle(struct BinLiquidity self, struct LpContext ctx) internal returns (bool)
+```
 
 ### pendingLiquidity
 

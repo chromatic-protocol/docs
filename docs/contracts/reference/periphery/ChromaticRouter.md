@@ -40,34 +40,6 @@ _Struct representing the data for an addLiquidityBatch callback._
 | provider | address | The address of the liquidity provider. |
 | amount | uint256 | The amount of tokens being added as liquidity. |
 
-### ClaimLiquidityCallbackData
-
-```solidity
-struct ClaimLiquidityCallbackData {
-  address provider;
-}
-```
-
-_Struct representing the data for a claimLiquidity callback._
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| provider | address | The address of the liquidity provider. |
-
-### ClaimLiquidityBatchCallbackData
-
-```solidity
-struct ClaimLiquidityBatchCallbackData {
-  address provider;
-}
-```
-
-_Struct representing the data for a claimLiquidityBatch callback._
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| provider | address | The address of the liquidity provider. |
-
 ### RemoveLiquidityCallbackData
 
 ```solidity
@@ -100,47 +72,17 @@ _Struct representing the data for a removeLiquidityBatch callback._
 | provider | address | The address of the liquidity provider. |
 | clbTokenAmounts | uint256[] | An array of CLB token amounts being removed. |
 
-### WithdrawLiquidityCallbackData
+### providerMap
 
 ```solidity
-struct WithdrawLiquidityCallbackData {
-  address provider;
-}
+mapping(address => mapping(uint256 => address)) providerMap
 ```
-
-_Struct representing the data for a withdrawLiquidity callback._
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| provider | address | The address of the liquidity provider. |
-
-### WithdrawLiquidityBatchCallbackData
-
-```solidity
-struct WithdrawLiquidityBatchCallbackData {
-  address provider;
-}
-```
-
-_Struct representing the data for a withdrawLiquidityBatch callback._
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| provider | address | The address of the liquidity provider. |
 
 ### receiptIds
 
 ```solidity
 mapping(address => mapping(address => struct EnumerableSet.UintSet)) receiptIds
 ```
-
-### NotExistLpReceipt
-
-```solidity
-error NotExistLpReceipt()
-```
-
-_Throws an error indicating that the specified receipt ID does not exist for the liquidity provider in the given market._
 
 ### constructor
 
@@ -191,7 +133,7 @@ Handles the callback after adding liquidity to the Chromatic protocol.
 ### claimLiquidityCallback
 
 ```solidity
-function claimLiquidityCallback(uint256 receiptId, bytes data) external
+function claimLiquidityCallback(uint256 receiptId, int16, uint256, uint256, bytes) external
 ```
 
 Handles the callback after claiming liquidity from the Chromatic protocol.
@@ -201,12 +143,15 @@ Handles the callback after claiming liquidity from the Chromatic protocol.
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | receiptId | uint256 | The ID of the liquidity claim receipt. |
-  | data | bytes | Additional data associated with the liquidity claim. |
+  |  | int16 |  |
+  |  | uint256 |  |
+  |  | uint256 |  |
+  |  | bytes |  |
 
 ### claimLiquidityBatchCallback
 
 ```solidity
-function claimLiquidityBatchCallback(uint256[] _receiptIds, bytes data) external
+function claimLiquidityBatchCallback(uint256[] _receiptIds, int16[], uint256[], uint256[], bytes) external
 ```
 
 Handles the callback after claiming liquidity from the Chromatic protocol.
@@ -216,7 +161,10 @@ Handles the callback after claiming liquidity from the Chromatic protocol.
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | _receiptIds | uint256[] |  |
-  | data | bytes | Additional data associated with the liquidity claim. |
+  |  | int16[] |  |
+  |  | uint256[] |  |
+  |  | uint256[] |  |
+  |  | bytes |  |
 
 ### removeLiquidityCallback
 
@@ -253,7 +201,7 @@ Handles the callback after removing liquidity from the Chromatic protocol.
 ### withdrawLiquidityCallback
 
 ```solidity
-function withdrawLiquidityCallback(uint256 receiptId, bytes data) external
+function withdrawLiquidityCallback(uint256 receiptId, int16, uint256, uint256, bytes) external
 ```
 
 Handles the callback after withdrawing liquidity from the Chromatic protocol.
@@ -263,12 +211,15 @@ Handles the callback after withdrawing liquidity from the Chromatic protocol.
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | receiptId | uint256 | The ID of the liquidity withdrawal receipt. |
-  | data | bytes | Additional data associated with the liquidity withdrawal. |
+  |  | int16 |  |
+  |  | uint256 |  |
+  |  | uint256 |  |
+  |  | bytes |  |
 
 ### withdrawLiquidityBatchCallback
 
 ```solidity
-function withdrawLiquidityBatchCallback(uint256[] _receiptIds, bytes data) external
+function withdrawLiquidityBatchCallback(uint256[] _receiptIds, int16[], uint256[], uint256[], bytes) external
 ```
 
 Handles the callback after withdrawing liquidity from the Chromatic protocol.
@@ -278,7 +229,10 @@ Handles the callback after withdrawing liquidity from the Chromatic protocol.
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | _receiptIds | uint256[] |  |
-  | data | bytes | Additional data associated with the liquidity withdrawal. |
+  |  | int16[] |  |
+  |  | uint256[] |  |
+  |  | uint256[] |  |
+  |  | bytes |  |
 
 ### openPosition
 
@@ -365,8 +319,7 @@ function claimLiquidity(address market, uint256 receiptId) external
 
 Claims liquidity from a ChromaticMarket contract.
 
-_This function allows the liquidity provider to claim their liquidity by calling the `claimLiquidity` function in the specified market contract.
-     Throws a `NotExistLpReceipt` error if the specified receipt ID does not exist for the liquidity provider in the given market._
+_This function allows the liquidity provider to claim their liquidity by calling the `claimLiquidity` function in the specified market contract._
 
 - Parameters:
 
@@ -406,8 +359,7 @@ function withdrawLiquidity(address market, uint256 receiptId) external
 
 Withdraws liquidity from a ChromaticMarket contract.
 
-_This function allows the liquidity provider to withdraw their liquidity by calling the `withdrawLiquidity` function in the specified market contract.
-     Throws a `NotExistLpReceipt` error if the specified receipt ID does not exist for the liquidity provider in the given market._
+_This function allows the liquidity provider to withdraw their liquidity by calling the `withdrawLiquidity` function in the specified market contract._
 
 - Parameters:
 

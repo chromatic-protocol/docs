@@ -51,7 +51,7 @@ _Retrieves the available (free) liquidity amount for a specific trading fee rate
 ### getBinValues
 
 ```solidity
-function getBinValues(int16[] tradingFeeRates) external view returns (uint256[])
+function getBinValues(int16[] tradingFeeRates) external view returns (uint256[] values)
 ```
 
 _Retrieves the values of a specific trading fee rate's bins in the liquidity pool.
@@ -67,7 +67,29 @@ _Retrieves the values of a specific trading fee rate's bins in the liquidity poo
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | uint256[] |  |
+  | values | uint256[] | The value list of the bins for the specified trading fee rates. |
+
+### getBinValuesAt
+
+```solidity
+function getBinValuesAt(uint256 oracleVersion, int16[] tradingFeeRates) external view returns (struct IMarketLiquidity.LiquidityBinValue[] values)
+```
+
+_Retrieves the values of specific trading fee rates' bins in the liquidity pool at a specific oracle version.
+     The value of a bin represents the total valuation of the liquidity in the bin._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | oracleVersion | uint256 | The oracle version for which to retrieve the bin values. |
+  | tradingFeeRates | int16[] | The list of trading fee rates for which to retrieve the bin values. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | values | struct IMarketLiquidity.LiquidityBinValue[] | The array of LiquidityBinValue representing the values of the bins for the specified trading fee rates and oracle version. |
 
 ### getLpReceipt
 
@@ -88,6 +110,26 @@ _Throws a `NotExistLpReceipt` error if the liquidity receipt does not exist._
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | receipt | struct LpReceipt | receipt The liquidity receipt with the specified ID. |
+
+### getLpReceipts
+
+```solidity
+function getLpReceipts(uint256[] receiptIds) external view returns (struct LpReceipt[] receipts)
+```
+
+_Throws a `NotExistLpReceipt` error if the liquidity receipt does not exist._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | receiptIds | uint256[] | The ID list of the liquidity receipt to retrieve. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | receipts | struct LpReceipt[] | receipts The liquidity receipt list with the specified IDs. |
 
 ### pendingLiquidity
 

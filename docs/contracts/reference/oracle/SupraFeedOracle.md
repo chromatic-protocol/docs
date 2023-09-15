@@ -1,44 +1,37 @@
 ---
-id: ChainlinkFeedOracle
-title: ChainlinkFeedOracle.sol
+id: SupraFeedOracle
+title: SupraFeedOracle.sol
 ---
-# [ChainlinkFeedOracle.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/oracle/ChainlinkFeedOracle.sol)
+# [SupraFeedOracle.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/oracle/SupraFeedOracle.sol)
 
-## ChainlinkFeedOracle
+## SupraFeedOracle
 
-Chainlink implementation of the IOracle interface.
-
-_One instance per Chainlink price feed should be deployed. Multiple products may use the same
-     ChainlinkOracle instance if their payoff functions are based on the same underlying oracle.
-     This implementation only support non-negative prices._
-
-### UnableToSyncError
+### PriceFeedNotExist
 
 ```solidity
-error UnableToSyncError()
+error PriceFeedNotExist()
 ```
 
-### aggregator
+### feed
 
 ```solidity
-ChainlinkAggregator aggregator
+SupraSValueFeed feed
 ```
 
-_Chainlink feed aggregator address_
+_Supra feed address (https://supraoracles.com/docs/price-feeds/networks)_
 
-### Phase
+### pairIndex
 
 ```solidity
-struct Phase {
-  uint128 startingVersion;
-  uint128 startingRoundId;
-}
+uint64 pairIndex
 ```
+
+_The index of supra trading pair (https://supraoracles.com/docs/price-feeds/trading-pairs)_
 
 ### constructor
 
 ```solidity
-constructor(ChainlinkAggregator aggregator_) public
+constructor(SupraSValueFeed feed_, uint64 pairIndex_, string description_) public
 ```
 
 Initializes the contract state
@@ -47,12 +40,14 @@ Initializes the contract state
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | aggregator_ | ChainlinkAggregator | Chainlink price feed aggregator |
+  | feed_ | SupraSValueFeed | Supra address (https://supraoracles.com/docs/price-feeds/networks) |
+  | pairIndex_ | uint64 | The index of supra trading pair (https://supraoracles.com/docs/price-feeds/trading-pairs) |
+  | description_ | string | The description of the Oracle Provider('ETH/USD', 'BTC/USD'...) |
 
 ### sync
 
 ```solidity
-function sync() external returns (struct IOracleProvider.OracleVersion)
+function sync() public returns (struct IOracleProvider.OracleVersion)
 ```
 
 Checks for a new price and updates the internal phase annotation state accordingly

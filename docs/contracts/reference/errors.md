@@ -545,6 +545,22 @@ _One instance per Chainlink price feed should be deployed. Multiple products may
 error UnableToSyncError()
 ```
 
+## PythFeedOracle
+
+### PriceFeedNotExist
+
+```solidity
+error PriceFeedNotExist()
+```
+
+## SupraFeedOracle
+
+### PriceFeedNotExist
+
+```solidity
+error PriceFeedNotExist()
+```
+
 ## IOracleProvider
 
 ### InvalidOracleRound

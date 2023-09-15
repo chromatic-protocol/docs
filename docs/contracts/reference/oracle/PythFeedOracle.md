@@ -1,44 +1,37 @@
 ---
-id: ChainlinkFeedOracle
-title: ChainlinkFeedOracle.sol
+id: PythFeedOracle
+title: PythFeedOracle.sol
 ---
-# [ChainlinkFeedOracle.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/oracle/ChainlinkFeedOracle.sol)
+# [PythFeedOracle.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/oracle/PythFeedOracle.sol)
 
-## ChainlinkFeedOracle
+## PythFeedOracle
 
-Chainlink implementation of the IOracle interface.
-
-_One instance per Chainlink price feed should be deployed. Multiple products may use the same
-     ChainlinkOracle instance if their payoff functions are based on the same underlying oracle.
-     This implementation only support non-negative prices._
-
-### UnableToSyncError
+### PriceFeedNotExist
 
 ```solidity
-error UnableToSyncError()
+error PriceFeedNotExist()
 ```
 
-### aggregator
+### pyth
 
 ```solidity
-ChainlinkAggregator aggregator
+contract AbstractPyth pyth
 ```
 
-_Chainlink feed aggregator address_
+_Pyth address (https://docs.pyth.network/documentation/pythnet-price-feeds/evm)_
 
-### Phase
+### priceFeedId
 
 ```solidity
-struct Phase {
-  uint128 startingVersion;
-  uint128 startingRoundId;
-}
+bytes32 priceFeedId
 ```
+
+_The id of pyth price feed (https://pyth.network/developers/price-feed-ids#pyth-evm-mainnet)_
 
 ### constructor
 
 ```solidity
-constructor(ChainlinkAggregator aggregator_) public
+constructor(contract AbstractPyth pyth_, bytes32 priceFeedId_, string description_) public
 ```
 
 Initializes the contract state
@@ -47,12 +40,14 @@ Initializes the contract state
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | aggregator_ | ChainlinkAggregator | Chainlink price feed aggregator |
+  | pyth_ | contract AbstractPyth | Pyth address (https://docs.pyth.network/documentation/pythnet-price-feeds/evm) |
+  | priceFeedId_ | bytes32 | The id of pyth price feed (https://pyth.network/developers/price-feed-ids#pyth-evm-mainnet) |
+  | description_ | string | The description of the Oracle Provider('ETH/USD', 'BTC/USD'...) |
 
 ### sync
 
 ```solidity
-function sync() external returns (struct IOracleProvider.OracleVersion)
+function sync() public returns (struct IOracleProvider.OracleVersion)
 ```
 
 Checks for a new price and updates the internal phase annotation state accordingly

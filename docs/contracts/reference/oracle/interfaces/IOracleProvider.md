@@ -101,3 +101,17 @@ Retrieves the description of the Oracle Provider.
   | ---- | ---- | ----------- |
   | [0] | string | A string representing the description of the Oracle Provider. |
 
+### oracleProviderName
+
+```solidity
+function oracleProviderName() external view returns (string)
+```
+
+Retrieves the name of the Oracle Provider.
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | string | A string representing the name of the Oracle Provider. |
+

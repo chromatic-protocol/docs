@@ -12,7 +12,6 @@ struct LiquidityBin {
   BinLiquidity _liquidity;
   BinPosition _position;
   BinClosedPosition _closedPosition;
-  mapping(uint256 => struct IMarketLiquidity.LiquidityBinValue) binValueAt;
 }
 ```
 
@@ -305,7 +304,7 @@ _This function withdraws liquidity from the bin by calling the `onWithdrawLiquid
 ### pendingLiquidity
 
 ```solidity
-function pendingLiquidity(struct LiquidityBin self) internal view returns (struct IMarketLiquidity.PendingLiquidity)
+function pendingLiquidity(struct LiquidityBin self) internal view returns (struct PendingLiquidity)
 ```
 
 _Retrieves the pending liquidity information from a LiquidityBin._
@@ -320,12 +319,12 @@ _Retrieves the pending liquidity information from a LiquidityBin._
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | struct IMarketLiquidity.PendingLiquidity | pendingLiquidity An instance of IMarketLiquidity.PendingLiquidity representing the pending liquidity information. |
+  | [0] | struct PendingLiquidity | pendingLiquidity An instance of PendingLiquidity representing the pending liquidity information. |
 
 ### claimableLiquidity
 
 ```solidity
-function claimableLiquidity(struct LiquidityBin self, uint256 oracleVersion) internal view returns (struct IMarketLiquidity.ClaimableLiquidity)
+function claimableLiquidity(struct LiquidityBin self, uint256 oracleVersion) internal view returns (struct ClaimableLiquidity)
 ```
 
 _Retrieves the claimable liquidity information for a specific oracle version from a LiquidityBin._
@@ -341,5 +340,45 @@ _Retrieves the claimable liquidity information for a specific oracle version fro
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | struct IMarketLiquidity.ClaimableLiquidity | claimableLiquidity An instance of IMarketLiquidity.ClaimableLiquidity representing the claimable liquidity information. |
+  | [0] | struct ClaimableLiquidity | claimableLiquidity An instance of ClaimableLiquidity representing the claimable liquidity information. |
+
+### pendingPosition
+
+```solidity
+function pendingPosition(struct LiquidityBin self) internal view returns (struct PendingPosition)
+```
+
+_Retrieves the pending position information from a LiquidityBin._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LiquidityBin | The reference to the LiquidityBin struct. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct PendingPosition | pendingPosition An instance of PendingPosition representing the pending position information. |
+
+### closingPosition
+
+```solidity
+function closingPosition(struct LiquidityBin self) internal view returns (struct ClosingPosition)
+```
+
+_Retrieves the closing position information from a LiquidityBin._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LiquidityBin | The reference to the LiquidityBin struct. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct ClosingPosition | closingPosition An instance of ClosingPosition representing the closing position information. |
 

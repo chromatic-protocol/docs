@@ -2,7 +2,7 @@
 id: Types
 title: Types.sol
 ---
-# [Types.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/base/gelato/Types.sol)
+# [Types.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/automation/gelato/Types.sol)
 
 ## Module
 

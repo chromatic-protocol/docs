@@ -396,32 +396,10 @@ _Retrieves the value of a specific bin in the LiquidityPool storage for the prov
   | ---- | ---- | ----------- |
   | value | uint256 | The value of the specified bin. |
 
-### binValueAt
-
-```solidity
-function binValueAt(struct LiquidityPool self, int16 _tradingFeeRate, uint256 oracleVersion) internal view returns (struct IMarketLiquidity.LiquidityBinValue value)
-```
-
-_Retrieves the value of a specific bin in the LiquidityPool storage at a specific oracle version._
-
-- Parameters:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | self | struct LiquidityPool | The reference to the LiquidityPool storage. |
-  | _tradingFeeRate | int16 | The trading fee rate for which to calculate the bin value. |
-  | oracleVersion | uint256 | The oracle version for which to retrieve the bin value. |
-
-- Return Values:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | value | struct IMarketLiquidity.LiquidityBinValue | The LiquidityBinValue representing the value of the specified bin at the given oracle version. |
-
 ### pendingLiquidity
 
 ```solidity
-function pendingLiquidity(struct LiquidityPool self, int16 tradingFeeRate) internal view returns (struct IMarketLiquidity.PendingLiquidity)
+function pendingLiquidity(struct LiquidityPool self, int16 tradingFeeRate) internal view returns (struct PendingLiquidity)
 ```
 
 _Retrieves the pending liquidity information for a specific trading fee rate from a LiquidityPool._
@@ -437,12 +415,12 @@ _Retrieves the pending liquidity information for a specific trading fee rate fro
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | struct IMarketLiquidity.PendingLiquidity | pendingLiquidity An instance of IMarketLiquidity.PendingLiquidity representing the pending liquidity information. |
+  | [0] | struct PendingLiquidity | pendingLiquidity An instance of PendingLiquidity representing the pending liquidity information. |
 
 ### claimableLiquidity
 
 ```solidity
-function claimableLiquidity(struct LiquidityPool self, int16 tradingFeeRate, uint256 oracleVersion) internal view returns (struct IMarketLiquidity.ClaimableLiquidity)
+function claimableLiquidity(struct LiquidityPool self, int16 tradingFeeRate, uint256 oracleVersion) internal view returns (struct ClaimableLiquidity)
 ```
 
 _Retrieves the claimable liquidity information for a specific trading fee rate and oracle version from a LiquidityPool._
@@ -459,12 +437,12 @@ _Retrieves the claimable liquidity information for a specific trading fee rate a
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | struct IMarketLiquidity.ClaimableLiquidity | claimableLiquidity An instance of IMarketLiquidity.ClaimableLiquidity representing the claimable liquidity information. |
+  | [0] | struct ClaimableLiquidity | claimableLiquidity An instance of ClaimableLiquidity representing the claimable liquidity information. |
 
 ### liquidityBinStatuses
 
 ```solidity
-function liquidityBinStatuses(struct LiquidityPool self, struct LpContext ctx) internal view returns (struct IMarketLiquidity.LiquidityBinStatus[])
+function liquidityBinStatuses(struct LiquidityPool self, struct LpContext ctx) internal view returns (struct LiquidityBinStatus[])
 ```
 
 _Retrieves the liquidity bin statuses for the LiquidityPool using the provided context._
@@ -480,5 +458,47 @@ _Retrieves the liquidity bin statuses for the LiquidityPool using the provided c
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | struct IMarketLiquidity.LiquidityBinStatus[] | stats An array of IMarketLiquidity.LiquidityBinStatus representing the liquidity bin statuses. |
+  | [0] | struct LiquidityBinStatus[] | stats An array of LiquidityBinStatus representing the liquidity bin statuses. |
+
+### pendingPosition
+
+```solidity
+function pendingPosition(struct LiquidityPool self, int16 tradingFeeRate) internal view returns (struct PendingPosition)
+```
+
+_Retrieves the pending position information for a specific trading fee rate from a LiquidityPool._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LiquidityPool | The reference to the LiquidityPool struct. |
+  | tradingFeeRate | int16 | The trading fee rate for which to retrieve the pending position. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct PendingPosition | pendingPositin An instance of PendingPositin representing the pending position information. |
+
+### closingPosition
+
+```solidity
+function closingPosition(struct LiquidityPool self, int16 tradingFeeRate) internal view returns (struct ClosingPosition)
+```
+
+_Retrieves the closing position information for a specific trading fee rate from a LiquidityPool._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct LiquidityPool | The reference to the LiquidityPool struct. |
+  | tradingFeeRate | int16 | The trading fee rate for which to retrieve the pending position. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct ClosingPosition | closingPositin An instance of ClosingPositin representing the closing position information. |
 

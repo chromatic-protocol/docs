@@ -1,12 +1,25 @@
 ---
-id: IChromaticLiquidator
-title: IChromaticLiquidator.sol
+id: GelatoLiquidator
+title: GelatoLiquidator.sol
 ---
-# [IChromaticLiquidator.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/interfaces/IChromaticLiquidator.sol)
+# [GelatoLiquidator.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/automation/GelatoLiquidator.sol)
 
-## IChromaticLiquidator
+## GelatoLiquidator
 
-_Interface for the Chromatic Liquidator contract._
+_A contract that handles the liquidation and claiming of positions in Chromatic markets.
+     It extends the AutomateReady contracts and implements the ILiquidator interface._
+
+### liquidationInterval
+
+```solidity
+uint256 liquidationInterval
+```
+
+### claimInterval
+
+```solidity
+uint256 claimInterval
+```
 
 ### UpdateLiquidationInterval
 
@@ -35,6 +48,22 @@ Emitted when the claim task interval is updated.
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | interval | uint256 | The new claim task interval. |
+
+### constructor
+
+```solidity
+constructor(contract IChromaticMarketFactory _factory, address _automate, address opsProxyFactory) public
+```
+
+_Constructor function._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _factory | contract IChromaticMarketFactory | The address of the Chromatic Market Factory contract. |
+  | _automate | address | The address of the Gelato Automate contract. |
+  | opsProxyFactory | address | The address of the Ops Proxy Factory contract. |
 
 ### updateLiquidationInterval
 
@@ -72,6 +101,8 @@ function createLiquidationTask(uint256 positionId) external
 
 Creates a liquidation task for a given position.
 
+_Can only be called by a registered market._
+
 - Parameters:
 
   | Name | Type | Description |
@@ -86,6 +117,8 @@ function cancelLiquidationTask(uint256 positionId) external
 
 Cancels a liquidation task for a given position.
 
+_Can only be called by a registered market._
+
 - Parameters:
 
   | Name | Type | Description |
@@ -95,18 +128,18 @@ Cancels a liquidation task for a given position.
 ### resolveLiquidation
 
 ```solidity
-function resolveLiquidation(address market, uint256 positionId) external view returns (bool canExec, bytes execPayload)
+function resolveLiquidation(address _market, uint256 positionId) external view returns (bool canExec, bytes execPayload)
 ```
 
 Resolves the liquidation of a position.
 
-_This function is called by the Gelato automation system._
+_This function is called by the automation system._
 
 - Parameters:
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | market | address | The address of the market contract. |
+  | _market | address |  |
   | positionId | uint256 | The ID of the position to be liquidated. |
 
 - Return Values:
@@ -116,21 +149,6 @@ _This function is called by the Gelato automation system._
   | canExec | bool | Whether the liquidation can be executed. |
   | execPayload | bytes | The encoded function call to execute the liquidation. |
 
-### liquidate
-
-```solidity
-function liquidate(address market, uint256 positionId) external
-```
-
-Liquidates a position in a market.
-
-- Parameters:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | market | address | The address of the market contract. |
-  | positionId | uint256 | The ID of the position to be liquidated. |
-
 ### createClaimPositionTask
 
 ```solidity
@@ -138,6 +156,8 @@ function createClaimPositionTask(uint256 positionId) external
 ```
 
 Creates a claim position task for a given position.
+
+_Can only be called by a registered market._
 
 - Parameters:
 
@@ -153,6 +173,8 @@ function cancelClaimPositionTask(uint256 positionId) external
 
 Cancels a claim position task for a given position.
 
+_Can only be called by a registered market._
+
 - Parameters:
 
   | Name | Type | Description |
@@ -162,18 +184,18 @@ Cancels a claim position task for a given position.
 ### resolveClaimPosition
 
 ```solidity
-function resolveClaimPosition(address market, uint256 positionId) external view returns (bool canExec, bytes execPayload)
+function resolveClaimPosition(address _market, uint256 positionId) external view returns (bool canExec, bytes execPayload)
 ```
 
 Resolves the claim of a position.
 
-_This function is called by the Gelato automation system._
+_This function is called by the automation system._
 
 - Parameters:
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | market | address | The address of the market contract. |
+  | _market | address |  |
   | positionId | uint256 | The ID of the position to be claimed. |
 
 - Return Values:
@@ -183,30 +205,53 @@ _This function is called by the Gelato automation system._
   | canExec | bool | Whether the claim can be executed. |
   | execPayload | bytes | The encoded function call to execute the claim. |
 
-### claimPosition
+### _createTask
 
 ```solidity
-function claimPosition(address market, uint256 positionId) external
+function _createTask(mapping(address => mapping(uint256 => bytes32)) registry, uint256 positionId, function (address,uint256) view external returns (bool,bytes) resolve, uint256 interval) internal
 ```
 
-Claims a position in a market.
+_Internal function to create a Gelato task for liquidation or claim position._
 
 - Parameters:
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | market | address | The address of the market contract. |
-  | positionId | uint256 | The ID of the position to be claimed. |
+  | registry | mapping(address &#x3D;&gt; mapping(uint256 &#x3D;&gt; bytes32)) | The mapping to store task IDs. |
+  | positionId | uint256 | The ID of the position. |
+  | resolve | function (address,uint256) view external returns (bool,bytes) | The resolve function to be called by the Gelato automation system. |
+  | interval | uint256 | The interval between task executions. |
+
+### _cancelTask
+
+```solidity
+function _cancelTask(mapping(address => mapping(uint256 => bytes32)) registry, uint256 positionId) internal
+```
+
+_Internal function to cancel a Gelato task._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | registry | mapping(address &#x3D;&gt; mapping(uint256 &#x3D;&gt; bytes32)) | The mapping storing task IDs. |
+  | positionId | uint256 | The ID of the position. |
 
 ### getLiquidationTaskId
 
 ```solidity
-function getLiquidationTaskId(address market, uint256 positionId) external view returns (bytes32)
+function getLiquidationTaskId(address market, uint256 positionId) external view returns (bytes32 taskId)
 ```
 
 ### getClaimPositionTaskId
 
 ```solidity
-function getClaimPositionTaskId(address market, uint256 positionId) external view returns (bytes32)
+function getClaimPositionTaskId(address market, uint256 positionId) external view returns (bytes32 taskId)
+```
+
+### _getFeeInfo
+
+```solidity
+function _getFeeInfo() internal view returns (uint256 fee, address feePayee)
 ```
 

@@ -140,6 +140,26 @@ Calculates the unrealized profit or loss for a liquidity bin position.
   | ---- | ---- | ----------- |
   | [0] | int256 | int256 The unrealized profit or loss. |
 
+### pendingPosition
+
+```solidity
+function pendingPosition(struct BinPosition self) internal view returns (struct PendingPosition)
+```
+
+_Retrieves the pending position information._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct BinPosition | The reference to the BinPosition struct. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct PendingPosition | pendingPosition An instance of PendingPosition representing the pending position information. |
+
 ### currentInterest
 
 ```solidity

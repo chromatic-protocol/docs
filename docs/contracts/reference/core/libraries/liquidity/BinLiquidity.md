@@ -9,7 +9,7 @@ title: BinLiquidity.sol
 ```solidity
 struct BinLiquidity {
   uint256 total;
-  struct IMarketLiquidity.PendingLiquidity _pending;
+  struct PendingLiquidity _pending;
   mapping(uint256 => struct _ClaimMinting) _claimMintings;
   mapping(uint256 => struct _ClaimBurning) _claimBurnings;
   struct DoubleEndedQueue.Bytes32Deque _burningVersions;
@@ -248,7 +248,7 @@ function needSettle(struct BinLiquidity self, struct LpContext ctx) internal ret
 ### pendingLiquidity
 
 ```solidity
-function pendingLiquidity(struct BinLiquidity self) internal view returns (struct IMarketLiquidity.PendingLiquidity)
+function pendingLiquidity(struct BinLiquidity self) internal view returns (struct PendingLiquidity)
 ```
 
 _Retrieves the pending liquidity information._
@@ -263,12 +263,12 @@ _Retrieves the pending liquidity information._
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | struct IMarketLiquidity.PendingLiquidity | pendingLiquidity An instance of IMarketLiquidity.PendingLiquidity representing the pending liquidity information. |
+  | [0] | struct PendingLiquidity | pendingLiquidity An instance of PendingLiquidity representing the pending liquidity information. |
 
 ### claimableLiquidity
 
 ```solidity
-function claimableLiquidity(struct BinLiquidity self, uint256 oracleVersion) internal view returns (struct IMarketLiquidity.ClaimableLiquidity)
+function claimableLiquidity(struct BinLiquidity self, uint256 oracleVersion) internal view returns (struct ClaimableLiquidity)
 ```
 
 _Retrieves the claimable liquidity information for a specific oracle version._
@@ -284,5 +284,5 @@ _Retrieves the claimable liquidity information for a specific oracle version._
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | struct IMarketLiquidity.ClaimableLiquidity | claimableLiquidity An instance of IMarketLiquidity.ClaimableLiquidity representing the claimable liquidity information. |
+  | [0] | struct ClaimableLiquidity | claimableLiquidity An instance of ClaimableLiquidity representing the claimable liquidity information. |
 

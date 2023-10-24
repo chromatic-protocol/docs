@@ -78,6 +78,20 @@ Emitted when the keeper fee payer address is set.
   | ---- | ---- | ----------- |
   | keeperFeePayer | address | The keeper fee payer address. |
 
+### SetMarketSettlement
+
+```solidity
+event SetMarketSettlement(address marketSettlement)
+```
+
+Emitted when the market settlement task address is set.
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | marketSettlement | address | The market settlement task address. |
+
 ### MarketCreated
 
 ```solidity
@@ -164,6 +178,20 @@ Returns the address of the keeper fee payer.
   | ---- | ---- | ----------- |
   | [0] | address | The address of the keeper fee payer. |
 
+### marketSettlement
+
+```solidity
+function marketSettlement() external view returns (address)
+```
+
+Returns the address of the market settlement task.
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | address | The address of the market settlement task. |
+
 ### updateDao
 
 ```solidity
@@ -233,6 +261,20 @@ Sets the keeper fee payer address.
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | _keeperFeePayer | address | The keeper fee payer address. |
+
+### setMarketSettlement
+
+```solidity
+function setMarketSettlement(address _marketSettlement) external
+```
+
+Sets the market settlement task address.
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _marketSettlement | address | The market settlement task address. |
 
 ### getMarkets
 

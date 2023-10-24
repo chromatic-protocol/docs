@@ -44,7 +44,7 @@ _Retrieves the OracleVersion for the specified oracle version in the given Chrom
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | market | contract IChromaticMarket | The address of the Chromatic market contract. |
-  | version | uint256 | An oracle versions. |
+  | version | uint256 | An oracle version. |
 
 - Return Values:
 
@@ -97,7 +97,7 @@ _Retrieves the CLB token balances for the specified owner in the given Chromatic
 ### pendingLiquidity
 
 ```solidity
-function pendingLiquidity(contract IChromaticMarket market, int16 tradingFeeRate) external view returns (struct IMarketLiquidity.PendingLiquidity)
+function pendingLiquidity(contract IChromaticMarket market, int16 tradingFeeRate) external view returns (struct PendingLiquidity)
 ```
 
 _Retrieves the pending liquidity information for a specific trading fee rate in the given Chromatic market._
@@ -113,12 +113,12 @@ _Retrieves the pending liquidity information for a specific trading fee rate in 
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | struct IMarketLiquidity.PendingLiquidity | pendingLiquidity An instance of IChromaticMarket.PendingLiquidity representing the pending liquidity information. |
+  | [0] | struct PendingLiquidity | pendingLiquidity An instance of PendingLiquidity representing the pending liquidity information. |
 
 ### pendingLiquidityBatch
 
 ```solidity
-function pendingLiquidityBatch(contract IChromaticMarket market, int16[] tradingFeeRates) external view returns (struct IMarketLiquidity.PendingLiquidity[])
+function pendingLiquidityBatch(contract IChromaticMarket market, int16[] tradingFeeRates) external view returns (struct PendingLiquidity[])
 ```
 
 _Retrieves the pending liquidity information for a list of trading fee rates in the given Chromatic market._
@@ -134,12 +134,12 @@ _Retrieves the pending liquidity information for a list of trading fee rates in 
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | struct IMarketLiquidity.PendingLiquidity[] | pendingLiquidityList An array of IChromaticMarket.PendingLiquidity representing the pending liquidity information for each trading fee rate. |
+  | [0] | struct PendingLiquidity[] | pendingLiquidityList An array of PendingLiquidity representing the pending liquidity information for each trading fee rate. |
 
 ### claimableLiquidity
 
 ```solidity
-function claimableLiquidity(contract IChromaticMarket market, int16 tradingFeeRate, uint256 _oracleVersion) external view returns (struct IMarketLiquidity.ClaimableLiquidity)
+function claimableLiquidity(contract IChromaticMarket market, int16 tradingFeeRate, uint256 _oracleVersion) external view returns (struct ClaimableLiquidity)
 ```
 
 _Retrieves the claimable liquidity information for a specific trading fee rate and oracle version from the given Chromatic Market._
@@ -156,12 +156,12 @@ _Retrieves the claimable liquidity information for a specific trading fee rate a
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | struct IMarketLiquidity.ClaimableLiquidity | claimableLiquidity An instance of IChromaticMarket.ClaimableLiquidity representing the claimable liquidity information. |
+  | [0] | struct ClaimableLiquidity | claimableLiquidity An instance of ClaimableLiquidity representing the claimable liquidity information. |
 
 ### claimableLiquidityBatch
 
 ```solidity
-function claimableLiquidityBatch(contract IChromaticMarket market, int16[] tradingFeeRates, uint256 _oracleVersion) external view returns (struct IMarketLiquidity.ClaimableLiquidity[])
+function claimableLiquidityBatch(contract IChromaticMarket market, int16[] tradingFeeRates, uint256 _oracleVersion) external view returns (struct ClaimableLiquidity[])
 ```
 
 _Retrieves the claimable liquidity information for a list of trading fee rates and a specific oracle version from the given Chromatic Market._
@@ -178,12 +178,12 @@ _Retrieves the claimable liquidity information for a list of trading fee rates a
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | struct IMarketLiquidity.ClaimableLiquidity[] | claimableLiquidityList An array of IChromaticMarket.ClaimableLiquidity representing the claimable liquidity information for each trading fee rate and the oracle version. |
+  | [0] | struct ClaimableLiquidity[] | claimableLiquidityList An array of ClaimableLiquidity representing the claimable liquidity information for each trading fee rate and the oracle version. |
 
 ### liquidityBinStatuses
 
 ```solidity
-function liquidityBinStatuses(contract IChromaticMarket market) external view returns (struct IMarketLiquidity.LiquidityBinStatus[])
+function liquidityBinStatuses(contract IChromaticMarket market) external view returns (struct LiquidityBinStatus[])
 ```
 
 _Retrieves the liquidity bin statuses for the specified Chromatic Market._
@@ -198,5 +198,5 @@ _Retrieves the liquidity bin statuses for the specified Chromatic Market._
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | struct IMarketLiquidity.LiquidityBinStatus[] | statuses An array of LiquidityBinStatus representing the liquidity bin statuses. |
+  | [0] | struct LiquidityBinStatus[] | statuses An array of LiquidityBinStatus representing the liquidity bin statuses. |
 

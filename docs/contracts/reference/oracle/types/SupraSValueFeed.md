@@ -11,7 +11,7 @@ title: SupraSValueFeed.sol
 ### getPrice
 
 ```solidity
-function getPrice(SupraSValueFeed self, uint64 pareIndex) internal view returns (uint256 round, uint256 decimal, uint256 timestamp, uint256 price)
+function getPrice(SupraSValueFeed self, uint64 pareIndex) internal view returns (uint256 decimal, uint256 timestamp, uint256 price)
 ```
 
 ### bytesToUint256

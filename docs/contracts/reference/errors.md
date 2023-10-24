@@ -189,6 +189,14 @@ error AlreadySetKeeperFeePayer()
 
 _Throws an error indicating that the keeper fee payer address is already set._
 
+### AlreadySetMarketSettlement
+
+```solidity
+error AlreadySetMarketSettlement()
+```
+
+_Throws an error indicating that the market settlement task address is already set._
+
 ### NotRegisteredOracleProvider
 
 ```solidity
@@ -234,6 +242,14 @@ error OnlyAccessableByMarket()
 
 _Throws an error indicating that the caller is not a registered market._
 
+### OnlyAccessableByEarningDistributor
+
+```solidity
+error OnlyAccessableByEarningDistributor()
+```
+
+_Throws an error indicating that the caller is not the Vault earning distribute contract._
+
 ### NotEnoughBalance
 
 ```solidity
@@ -249,22 +265,6 @@ error NotEnoughFeePaid()
 ```
 
 _Throws an error indicating that the recipient has not paid the sufficient flash loan fee._
-
-### ExistMakerEarningDistributionTask
-
-```solidity
-error ExistMakerEarningDistributionTask()
-```
-
-_Throws an error indicating that a maker earning distribution task already exists._
-
-### ExistMarketEarningDistributionTask
-
-```solidity
-error ExistMarketEarningDistributionTask()
-```
-
-_Throws an error indicating that a market earning distribution task already exists._
 
 ## KeeperFeePayer
 
@@ -302,9 +302,7 @@ error InvalidSwapValue()
 
 _Throws an error indicating that the swap value for the Uniswap trade is invalid._
 
-## Liquidator
-
-_An abstract contract for liquidation functionality in the Chromatic protocol._
+## LiquidatorBase
 
 ### OnlyAccessableByDao
 
@@ -321,6 +319,58 @@ error OnlyAccessableByMarket()
 ```
 
 _Throws an error indicating that the caller is not a registered market._
+
+## Mate2MarketSettlement
+
+### OnlyAccessableByDao
+
+```solidity
+error OnlyAccessableByDao()
+```
+
+_Throws an error indicating that the caller is not the DAO._
+
+### OnlyAccessableByFactoryOrDao
+
+```solidity
+error OnlyAccessableByFactoryOrDao()
+```
+
+_Throws an error indicating that the caller is neither the chromatic factory contract nor the DAO._
+
+### ExistMarketSettlementTask
+
+```solidity
+error ExistMarketSettlementTask()
+```
+
+_Throws an error indicating that a market settlement task already exists._
+
+## VaultEarningDistributorBase
+
+### OnlyAccessableByVault
+
+```solidity
+error OnlyAccessableByVault()
+```
+
+_Throws an error indicating that the caller is not the chromatch vault contract._
+
+### ExistMakerEarningDistributionTask
+
+```solidity
+error ExistMakerEarningDistributionTask()
+```
+
+_Throws an error indicating that a maker earning distribution task already exists._
+
+### ExistMarketEarningDistributionTask
+
+```solidity
+error ExistMarketEarningDistributionTask()
+```
+
+_Throws an error indicating that a market earning distribution task already exists._
 
 ## MarketDiamondCutFacet
 
@@ -553,14 +603,6 @@ error UnableToSyncError()
 error PriceFeedNotExist()
 ```
 
-## SupraFeedOracle
-
-### PriceFeedNotExist
-
-```solidity
-error PriceFeedNotExist()
-```
-
 ## IOracleProvider
 
 ### InvalidOracleRound
@@ -627,3 +669,50 @@ error NotMarket()
 
 _Throws an error indicating that the caller is not a registered market._
 
+## Custom Error Selectors
+| Signature | Error name |
+| ---- | ---- |
+|0x1353f3f1|OnlyAccessableByMarket()|
+|0x808ca14f|OnlyAccessableByDao()|
+|0xb209caed|AlreadySetLiquidator()|
+|0xb661034d|AlreadySetVault()|
+|0x85295cee|AlreadySetKeeperFeePayer()|
+|0x19b72bf5|AlreadySetMarketSettlement()|
+|0x3c9b5739|NotRegisteredOracleProvider()|
+|0x12a5f552|NotRegisteredSettlementToken()|
+|0xde70de22|ExistMarket()|
+|0x6119ddb9|OnlyAccessableByFactoryOrDao()|
+|0x6d0340d7|OnlyAccessableByEarningDistributor()|
+|0xad3a8b9e|NotEnoughBalance()|
+|0x3244470d|NotEnoughFeePaid()|
+|0x0a73bac7|KeeperFeeTransferFailure()|
+|0x33017967|InvalidSwapValue()|
+|0xc671c2bd|ExistMarketSettlementTask()|
+|0x6c7e0fa5|OnlyAccessableByVault()|
+|0xf953ee45|ExistMakerEarningDistributionTask()|
+|0x3d8ff6d7|ExistMarketEarningDistributionTask()|
+|0x5660035a|OnlyAccessableByLiquidator()|
+|0x33fceb32|AlreadyClosedPosition()|
+|0x22b76217|NotClaimablePosition()|
+|0x22313ae9|TooSmallAmount()|
+|0xd54b6688|NotClaimableLpReceipt()|
+|0xcc93170c|NotWithdrawableLpReceipt()|
+|0x35c67ed1|InvalidLpReceiptAction()|
+|0xa5bde9fe|InvalidTransferredTokenAmount()|
+|0xc47b3480|NotExistLpReceipt()|
+|0xc9b05689|TooSmallTakerMargin()|
+|0x65f10725|NotEnoughMarginTransferred()|
+|0x39218f3b|NotPermitted()|
+|0x444f42ff|ExceedMaxAllowableTradingFee()|
+|0xa4c6cd8a|ExceedMaxAllowableLeverage()|
+|0xd6b3c14c|NotAllowableMakerMargin()|
+|0x5690b016|NotExistPosition()|
+|0x7a5f85be|ClaimPositionCallbackError()|
+|0x192105d7|InitializationFunctionReverted(address _initializationContractAddress, bytes _calldata)|
+|0x68e7727f|UnableToSyncError()|
+|0x3d8461ae|PriceFeedNotExist()|
+|0x52347554|InvalidOracleRound()|
+|0x91655201|NotRouter()|
+|0x30cd7471|NotOwner()|
+|0x0dc149f0|AlreadyInitialized()|
+|0xc4bbea69|NotMarket()|

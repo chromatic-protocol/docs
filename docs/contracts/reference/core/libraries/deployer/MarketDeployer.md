@@ -32,7 +32,7 @@ Library for deploying a ChromaticMarket contract
 ### deploy
 
 ```solidity
-function deploy(struct MarketDeployer self, address oracleProvider, address settlementToken, address marketDiamondCutFacet, address marketLoupeFacet, address marketStateFacet, address marketLiquidityFacet, address marketLiquidityLensFacet, address marketTradeFacet, address marketLiquidateFacet, address marketSettleFacet) external returns (address market)
+function deploy(struct MarketDeployer self, address oracleProvider, address settlementToken, address marketDiamondCutFacet, address marketLoupeFacet, address marketStateFacet, address marketLiquidityFacet, address marketLensFacet, address marketTradeFacet, address marketLiquidateFacet, address marketSettleFacet) external returns (address market)
 ```
 
 Deploys a ChromaticMarket contract
@@ -48,7 +48,7 @@ Deploys a ChromaticMarket contract
   | marketLoupeFacet | address | The market loupe facet address. |
   | marketStateFacet | address | The market state facet address. |
   | marketLiquidityFacet | address | The market liquidity facet address. |
-  | marketLiquidityLensFacet | address | The market liquidity lens facet address. |
+  | marketLensFacet | address | The market liquidity lens facet address. |
   | marketTradeFacet | address | The market trade facet address. |
   | marketLiquidateFacet | address | The market liquidate facet address. |
   | marketSettleFacet | address | The market settle facet address. |

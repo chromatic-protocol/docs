@@ -21,6 +21,12 @@ contract IChromaticMarketFactory factory
 contract IKeeperFeePayer keeperFeePayer
 ```
 
+### earningDistributor
+
+```solidity
+contract IVaultEarningDistributor earningDistributor
+```
+
 ### makerBalances
 
 ```solidity
@@ -69,18 +75,6 @@ mapping(address => uint256) pendingDeposits
 mapping(address => uint256) pendingWithdrawals
 ```
 
-### makerEarningDistributionTaskIds
-
-```solidity
-mapping(address => bytes32) makerEarningDistributionTaskIds
-```
-
-### marketEarningDistributionTaskIds
-
-```solidity
-mapping(address => bytes32) marketEarningDistributionTaskIds
-```
-
 ### OnlyAccessableByFactoryOrDao
 
 ```solidity
@@ -97,6 +91,14 @@ error OnlyAccessableByMarket()
 
 _Throws an error indicating that the caller is not a registered market._
 
+### OnlyAccessableByEarningDistributor
+
+```solidity
+error OnlyAccessableByEarningDistributor()
+```
+
+_Throws an error indicating that the caller is not the Vault earning distribute contract._
+
 ### NotEnoughBalance
 
 ```solidity
@@ -112,22 +114,6 @@ error NotEnoughFeePaid()
 ```
 
 _Throws an error indicating that the recipient has not paid the sufficient flash loan fee._
-
-### ExistMakerEarningDistributionTask
-
-```solidity
-error ExistMakerEarningDistributionTask()
-```
-
-_Throws an error indicating that a maker earning distribution task already exists._
-
-### ExistMarketEarningDistributionTask
-
-```solidity
-error ExistMarketEarningDistributionTask()
-```
-
-_Throws an error indicating that a market earning distribution task already exists._
 
 ### onlyFactoryOrDao
 
@@ -147,10 +133,19 @@ modifier onlyMarket()
 _Modifier to restrict access to only the Market contract.
      Throws an `OnlyAccessableByMarket` error if the caller is not a registered market._
 
+### onlyEarningDistributor
+
+```solidity
+modifier onlyEarningDistributor()
+```
+
+_Modifier to restrict access to only the Vault earning distribute contract.
+     Throws an `OnlyAccessableByEarningDistributor` error if the caller is not the Vault earning distribute contract._
+
 ### constructor
 
 ```solidity
-constructor(contract IChromaticMarketFactory _factory, address _automate, address opsProxyFactory) public
+constructor(contract IChromaticMarketFactory _factory, contract IVaultEarningDistributor _earningDistributor) public
 ```
 
 _Constructs a new ChromaticVault instance._
@@ -160,8 +155,15 @@ _Constructs a new ChromaticVault instance._
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | _factory | contract IChromaticMarketFactory | The address of the Chromatic Market Factory contract. |
-  | _automate | address | The address of the Gelato Automate contract. |
-  | opsProxyFactory | address | The address of the OpsProxyFactory contract. |
+  | _earningDistributor | contract IVaultEarningDistributor | The address of the Vault earning distribute contract. |
+
+### _checkMarket
+
+```solidity
+function _checkMarket() internal view
+```
+
+_This function can only be called by the modifier onlyMarket._
 
 ### onOpenPosition
 
@@ -374,41 +376,6 @@ _The pending share of earnings is calculated based on the bin balance, maker bal
   | ---- | ---- | ----------- |
   | [0] | uint256 | The pending share of earnings for the specified bin. |
 
-### resolveMakerEarningDistribution
-
-```solidity
-function resolveMakerEarningDistribution(address token) external view returns (bool canExec, bytes execPayload)
-```
-
-Resolves the maker earning distribution for a specific token.
-
-- Parameters:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | token | address | The address of the settlement token. |
-
-- Return Values:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | canExec | bool | True if the distribution can be executed, otherwise False. |
-  | execPayload | bytes | The payload for executing the distribution. |
-
-### distributeMakerEarning
-
-```solidity
-function distributeMakerEarning(address token) external
-```
-
-Distributes the maker earning for a token to the each markets.
-
-- Parameters:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | token | address | The address of the settlement token. |
-
 ### createMakerEarningDistributionTask
 
 ```solidity
@@ -416,9 +383,6 @@ function createMakerEarningDistributionTask(address token) external virtual
 ```
 
 Creates a maker earning distribution task for a token.
-
-_This function can only be called by the Chromatic factory contract or the DAO.
-     Throws an `ExistMakerEarningDistributionTask` error if a maker earning distribution task already exists for the token._
 
 - Parameters:
 
@@ -429,7 +393,7 @@ _This function can only be called by the Chromatic factory contract or the DAO.
 ### cancelMakerEarningDistributionTask
 
 ```solidity
-function cancelMakerEarningDistributionTask(address token) external virtual
+function cancelMakerEarningDistributionTask(address token) external
 ```
 
 Cancels a maker earning distribution task for a token.
@@ -440,13 +404,13 @@ Cancels a maker earning distribution task for a token.
   | ---- | ---- | ----------- |
   | token | address | The address of the settlement token. |
 
-### _distributeMakerEarning
+### distributeMakerEarning
 
 ```solidity
-function _distributeMakerEarning(address token, uint256 fee) internal
+function distributeMakerEarning(address token, uint256 fee, address keeper) external
 ```
 
-_Internal function to distribute the maker earning for a token to the each markets._
+Distributes the maker earning for a token to the each markets.
 
 - Parameters:
 
@@ -454,41 +418,7 @@ _Internal function to distribute the maker earning for a token to the each marke
   | ---- | ---- | ----------- |
   | token | address | The address of the settlement token. |
   | fee | uint256 | The keeper fee amount. |
-
-### resolveMarketEarningDistribution
-
-```solidity
-function resolveMarketEarningDistribution(address market) external view returns (bool canExec, bytes execPayload)
-```
-
-Resolves the market earning distribution for a market.
-
-- Parameters:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | market | address | The address of the market. |
-
-- Return Values:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | canExec | bool | True if the distribution can be executed. |
-  | execPayload | bytes | The payload for executing the distribution. |
-
-### distributeMarketEarning
-
-```solidity
-function distributeMarketEarning(address market) external
-```
-
-Distributes the market earning for a market to the each bins.
-
-- Parameters:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | market | address | The address of the market. |
+  | keeper | address | The keeper address to receive fee. |
 
 ### createMarketEarningDistributionTask
 
@@ -497,9 +427,6 @@ function createMarketEarningDistributionTask(address market) external virtual
 ```
 
 Creates a market earning distribution task for a market.
-
-_This function can only be called by the Chromatic factory contract or the DAO.
-     Throws an `ExistMarketEarningDistributionTask` error if a market earning distribution task already exists for the market._
 
 - Parameters:
 
@@ -510,7 +437,7 @@ _This function can only be called by the Chromatic factory contract or the DAO.
 ### cancelMarketEarningDistributionTask
 
 ```solidity
-function cancelMarketEarningDistributionTask(address market) external virtual
+function cancelMarketEarningDistributionTask(address market) external
 ```
 
 Cancels a market earning distribution task for a market.
@@ -521,13 +448,13 @@ Cancels a market earning distribution task for a market.
   | ---- | ---- | ----------- |
   | market | address | The address of the market. |
 
-### _distributeMarketEarning
+### distributeMarketEarning
 
 ```solidity
-function _distributeMarketEarning(address market, uint256 fee) internal
+function distributeMarketEarning(address market, uint256 fee, address keeper) external
 ```
 
-_Internal function to distribute the market earning for a market to the each bins._
+Distributes the market earning for a market to the each bins.
 
 - Parameters:
 
@@ -535,22 +462,5 @@ _Internal function to distribute the market earning for a market to the each bin
   | ---- | ---- | ----------- |
   | market | address | The address of the market. |
   | fee | uint256 | The fee amount. |
-
-### _resolverModuleArg
-
-```solidity
-function _resolverModuleArg(bytes _resolverData) internal view returns (bytes)
-```
-
-### _timeModuleArg
-
-```solidity
-function _timeModuleArg(uint256 _startTime, uint256 _interval) internal pure returns (bytes)
-```
-
-### _proxyModuleArg
-
-```solidity
-function _proxyModuleArg() internal pure returns (bytes)
-```
+  | keeper | address | The keeper address to receive fee. |
 

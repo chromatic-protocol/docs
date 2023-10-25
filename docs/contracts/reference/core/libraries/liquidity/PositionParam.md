@@ -31,8 +31,8 @@ _A struct representing the parameters of a position._
 | makerMargin | uint256 | The margin amount provided by the maker |
 | openTimestamp | uint256 | The timestamp of the position's open transaction |
 | closeTimestamp | uint256 | The timestamp of the position's close transaction |
-| _entryVersionCache | IOracleProvider.OracleVersion | Caches the settle oracle version for the position's entry |
-| _exitVersionCache | IOracleProvider.OracleVersion | Caches the settle oracle version for the position's exit |
+| _entryVersionCache | IOracleProvider.OracleVersion | Caches the settled oracle version for the position's entry |
+| _exitVersionCache | IOracleProvider.OracleVersion | Caches the settled oracle version for the position's exit |
 
 ## PositionParamLib
 
@@ -44,7 +44,7 @@ Library for manipulating PositionParam struct.
 function entryVersion(struct PositionParam self) internal pure returns (uint256)
 ```
 
-Returns the settle version for the position's entry.
+Returns the settled version for the position's entry.
 
 - Parameters:
 
@@ -106,7 +106,7 @@ Calculates the entry amount for a PositionParam.
 function entryOracleVersion(struct PositionParam self, struct LpContext ctx) internal view returns (struct IOracleProvider.OracleVersion)
 ```
 
-Retrieves the settle oracle version for the position's entry.
+Retrieves the settled oracle version for the position's entry.
 
 - Parameters:
 

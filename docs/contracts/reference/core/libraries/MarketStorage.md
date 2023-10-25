@@ -12,7 +12,7 @@ struct MarketStorage {
   contract IOracleProvider oracleProvider;
   contract IERC20Metadata settlementToken;
   contract ICLBToken clbToken;
-  contract IChromaticLiquidator liquidator;
+  contract ILiquidator liquidator;
   contract IChromaticVault vault;
   contract IKeeperFeePayer keeperFeePayer;
   struct LiquidityPool liquidityPool;

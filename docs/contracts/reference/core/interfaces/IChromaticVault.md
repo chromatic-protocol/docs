@@ -56,6 +56,18 @@ _Emitted when market earning is distributed._
   | usedKeeperFee | uint256 | The amount of keeper fee used. |
   | marketBalance | uint256 | The balance of the market. |
 
+### pendingMakerEarnings
+
+```solidity
+function pendingMakerEarnings(address token) external view returns (uint256)
+```
+
+### pendingMarketEarnings
+
+```solidity
+function pendingMarketEarnings(address market) external view returns (uint256)
+```
+
 ### createMakerEarningDistributionTask
 
 ```solidity
@@ -84,6 +96,22 @@ Cancels a maker earning distribution task for a token.
   | ---- | ---- | ----------- |
   | token | address | The address of the settlement token. |
 
+### distributeMakerEarning
+
+```solidity
+function distributeMakerEarning(address token, uint256 fee, address keeper) external
+```
+
+Distributes the maker earning for a token to the each markets.
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token. |
+  | fee | uint256 | The keeper fee amount. |
+  | keeper | address | The keeper address to receive fee. |
+
 ### createMarketEarningDistributionTask
 
 ```solidity
@@ -111,4 +139,20 @@ Cancels a market earning distribution task for a market.
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | market | address | The address of the market. |
+
+### distributeMarketEarning
+
+```solidity
+function distributeMarketEarning(address market, uint256 fee, address keeper) external
+```
+
+Distributes the market earning for a market to the each bins.
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the market. |
+  | fee | uint256 | The fee amount. |
+  | keeper | address | The keeper address to receive fee. |
 

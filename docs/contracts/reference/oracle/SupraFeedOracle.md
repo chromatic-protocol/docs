@@ -6,12 +6,6 @@ title: SupraFeedOracle.sol
 
 ## SupraFeedOracle
 
-### PriceFeedNotExist
-
-```solidity
-error PriceFeedNotExist()
-```
-
 ### feed
 
 ```solidity
@@ -47,7 +41,7 @@ Initializes the contract state
 ### sync
 
 ```solidity
-function sync() public returns (struct IOracleProvider.OracleVersion)
+function sync() public returns (struct IOracleProvider.OracleVersion oracleVersion)
 ```
 
 Checks for a new price and updates the internal phase annotation state accordingly
@@ -63,7 +57,7 @@ _`sync` is expected to be called soon after a phase update occurs in the underly
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | struct IOracleProvider.OracleVersion | The current oracle version after sync |
+  | oracleVersion | struct IOracleProvider.OracleVersion | The current oracle version after sync |
 
 ### currentVersion
 

@@ -65,7 +65,7 @@ _Returns the CLB token contract for the market._
 ### liquidator
 
 ```solidity
-function liquidator() external view returns (contract IChromaticLiquidator _liquidator)
+function liquidator() external view returns (contract ILiquidator _liquidator)
 ```
 
 _Returns the liquidator contract for the market._
@@ -74,7 +74,7 @@ _Returns the liquidator contract for the market._
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | _liquidator | contract IChromaticLiquidator | The liquidator contract. |
+  | _liquidator | contract ILiquidator | The liquidator contract. |
 
 ### vault
 

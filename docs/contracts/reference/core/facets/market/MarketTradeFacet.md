@@ -174,23 +174,3 @@ _Claims the position by transferring the available funds to the recipient.
   | recipient | address | The address of the recipient of the claimed position. |
   | data | bytes | Additional data for the claim callback. |
 
-### getPositions
-
-```solidity
-function getPositions(uint256[] positionIds) external view returns (struct Position[] _positions)
-```
-
-_Retrieves multiple positions by their IDs._
-
-- Parameters:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | positionIds | uint256[] | The IDs of the positions to retrieve. |
-
-- Return Values:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | _positions | struct Position[] |  |
-

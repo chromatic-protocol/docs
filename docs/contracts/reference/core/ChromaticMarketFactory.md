@@ -48,6 +48,14 @@ address treasury
 
 Returns the address of the DAO treasury.
 
+### marketSettlement
+
+```solidity
+address marketSettlement
+```
+
+Returns the address of the market settlement task.
+
 ### OnlyAccessableByDao
 
 ```solidity
@@ -79,6 +87,14 @@ error AlreadySetKeeperFeePayer()
 ```
 
 _Throws an error indicating that the keeper fee payer address is already set._
+
+### AlreadySetMarketSettlement
+
+```solidity
+error AlreadySetMarketSettlement()
+```
+
+_Throws an error indicating that the market settlement task address is already set._
 
 ### NotRegisteredOracleProvider
 
@@ -148,6 +164,14 @@ _Initializes the ChromaticMarketFactory contract._
   | _marketTradeFacet | address | The market trade facet address. |
   | _marketLiquidateFacet | address | The market liquidate facet address. |
   | _marketSettleFacet | address | The market settle facet address. |
+
+### _checkDao
+
+```solidity
+function _checkDao() internal view
+```
+
+_This function can only be called by the modifier onlyDao._
 
 ### updateDao
 
@@ -231,6 +255,23 @@ _This function can only be called by the DAO address.
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | _keeperFeePayer | address | The keeper fee payer address. |
+
+### setMarketSettlement
+
+```solidity
+function setMarketSettlement(address _marketSettlement) external
+```
+
+Sets the market settlement task address.
+
+_This function can only be called by the DAO address.
+     Throws an `AlreadySetMarketSettlement` error if the market settlement task address has already been set._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _marketSettlement | address | The market settlement task address. |
 
 ### getMarkets
 

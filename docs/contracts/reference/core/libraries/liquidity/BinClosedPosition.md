@@ -133,6 +133,26 @@ Returns the total taker margin for a liquidity bin closed position.
   | ---- | ---- | ----------- |
   | [0] | uint256 | uint256 The total taker margin. |
 
+### closingPosition
+
+```solidity
+function closingPosition(struct BinClosedPosition self) internal view returns (struct ClosingPosition)
+```
+
+_Retrieves the closing position information._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct BinClosedPosition | The reference to the BinClosedPosition struct. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | struct ClosingPosition | closingPosition An instance of ClosingPosition representing the closing position information. |
+
 ### currentInterest
 
 ```solidity

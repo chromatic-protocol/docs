@@ -24,7 +24,7 @@ Creates a new instance of ChromaticMarketFactory.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:26](https://github.com/chromatic-protocol/sdk/blob/952dc51/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L26)
+[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:26](https://github.com/chromatic-protocol/sdk/blob/e39d23c/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L26)
 
 ## Methods
 
@@ -47,7 +47,7 @@ An object containing the contract instance of the Market Factory.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:49](https://github.com/chromatic-protocol/sdk/blob/952dc51/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L49)
+[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:49](https://github.com/chromatic-protocol/sdk/blob/e39d23c/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L49)
 
 ___
 
@@ -71,7 +71,7 @@ A promise that resolves to the current interest rate.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:88](https://github.com/chromatic-protocol/sdk/blob/952dc51/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L88)
+[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:88](https://github.com/chromatic-protocol/sdk/blob/e39d23c/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L88)
 
 ___
 
@@ -95,7 +95,7 @@ A promise that resolves to an array of market information.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:99](https://github.com/chromatic-protocol/sdk/blob/952dc51/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L99)
+[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:99](https://github.com/chromatic-protocol/sdk/blob/e39d23c/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L99)
 
 ___
 
@@ -119,7 +119,7 @@ A Promise that resolves to an object containing the oracle properties
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:124](https://github.com/chromatic-protocol/sdk/blob/952dc51/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L124)
+[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:124](https://github.com/chromatic-protocol/sdk/blob/e39d23c/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L124)
 
 ___
 
@@ -137,4 +137,4 @@ A promise that resolves to an array of settlement tokens.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:66](https://github.com/chromatic-protocol/sdk/blob/952dc51/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L66)
+[packages/sdk-viem/src/entities/ChromaticMarketFactory.ts:66](https://github.com/chromatic-protocol/sdk/blob/e39d23c/packages/sdk-viem/src/entities/ChromaticMarketFactory.ts#L66)

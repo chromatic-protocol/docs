@@ -33,17 +33,12 @@ export const deployedAddress: DeployedAddress = {
     "ChromaticRouter": "0x63ecE4C05B8fB272D16844E96702Ea2f26370982",
     "ChromaticVault": "0xA901DA770A472Caf6E6698261BB02ea58C5d3235"
   },
-  "anvil_mantle": {
-    "ChromaticLens": "0xdFdE6B33f13de2CA1A75A6F7169f50541B14f75b",
-    "ChromaticMarketFactory": "0x2b5A4e5493d4a54E717057B127cf0C000C876f9B",
-    "ChromaticRouter": "0x63fea6E447F120B8Faf85B53cdaD8348e645D80E",
-    "ChromaticVault": "0x5133BBdfCCa3Eb4F739D599ee4eC45cBCD0E16c5"
-  },
   "arbitrum_goerli": {
     "ChromaticLens": "0x684d2ae59f3c863a55E89E39838Cb0E4d43eF78c",
     "ChromaticMarketFactory": "0x9dC7D734A59febe5c3DEe8615dbF9d2081BD9F5c",
     "ChromaticRouter": "0x3049A7a2A004E1C77Bc15fF802c86B458d830499",
     "ChromaticVault": "0x9357Cbd2A5069f5C40b3a8E8B821C69b8045BC52",
-    "TestSettlementToken": "0x73e7aee5a708029fa6DC208437DA1429a944E6FA"
+    "cBTC": "0xD968052A0444597371Aa702b7166BC137E42Ac0B",
+    "cETH": "0x73e7aee5a708029fa6DC208437DA1429a944E6FA"
   }
 }

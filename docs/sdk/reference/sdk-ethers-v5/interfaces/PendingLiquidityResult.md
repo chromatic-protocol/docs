@@ -18,7 +18,7 @@ The amount of pending CLB tokens requested for burning
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:33](https://github.com/chromatic-protocol/sdk/blob/5521523/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L33)
+[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:33](https://github.com/chromatic-protocol/sdk/blob/3c3ce86/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L33)
 
 ___
 
@@ -30,7 +30,7 @@ The amount of pending settlement token for minting
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:31](https://github.com/chromatic-protocol/sdk/blob/5521523/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L31)
+[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:31](https://github.com/chromatic-protocol/sdk/blob/3c3ce86/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L31)
 
 ___
 
@@ -42,7 +42,7 @@ The oracle version for pending liquidity
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:29](https://github.com/chromatic-protocol/sdk/blob/5521523/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L29)
+[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:29](https://github.com/chromatic-protocol/sdk/blob/3c3ce86/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L29)
 
 ___
 
@@ -54,4 +54,4 @@ The trading fee rate for the liquidity bin
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:35](https://github.com/chromatic-protocol/sdk/blob/5521523/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L35)
+[packages/sdk-ethers-v5/src/entities/ChromaticLens.ts:35](https://github.com/chromatic-protocol/sdk/blob/3c3ce86/packages/sdk-ethers-v5/src/entities/ChromaticLens.ts#L35)

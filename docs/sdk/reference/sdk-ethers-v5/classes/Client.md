@@ -25,7 +25,7 @@ Creates a new instance of the Client class.
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/Client.ts:24](https://github.com/chromatic-protocol/sdk/blob/3c3ce86/packages/sdk-ethers-v5/src/Client.ts#L24)
+[packages/sdk-ethers-v5/src/Client.ts:24](https://github.com/chromatic-protocol/sdk/blob/ef8569b/packages/sdk-ethers-v5/src/Client.ts#L24)
 
 ## Properties
 
@@ -37,7 +37,7 @@ The name of the chain.
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/Client.ts:24](https://github.com/chromatic-protocol/sdk/blob/3c3ce86/packages/sdk-ethers-v5/src/Client.ts#L24)
+[packages/sdk-ethers-v5/src/Client.ts:24](https://github.com/chromatic-protocol/sdk/blob/ef8569b/packages/sdk-ethers-v5/src/Client.ts#L24)
 
 ## Accessors
 
@@ -53,7 +53,7 @@ The provider associated with the client.
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/Client.ts:38](https://github.com/chromatic-protocol/sdk/blob/3c3ce86/packages/sdk-ethers-v5/src/Client.ts#L38)
+[packages/sdk-ethers-v5/src/Client.ts:38](https://github.com/chromatic-protocol/sdk/blob/ef8569b/packages/sdk-ethers-v5/src/Client.ts#L38)
 
 ___
 
@@ -69,7 +69,7 @@ The signer associated with the client.
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/Client.ts:31](https://github.com/chromatic-protocol/sdk/blob/3c3ce86/packages/sdk-ethers-v5/src/Client.ts#L31)
+[packages/sdk-ethers-v5/src/Client.ts:31](https://github.com/chromatic-protocol/sdk/blob/ef8569b/packages/sdk-ethers-v5/src/Client.ts#L31)
 
 ## Methods
 
@@ -87,7 +87,7 @@ An instance of the ChromaticAccount class.
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/Client.ts:101](https://github.com/chromatic-protocol/sdk/blob/3c3ce86/packages/sdk-ethers-v5/src/Client.ts#L101)
+[packages/sdk-ethers-v5/src/Client.ts:101](https://github.com/chromatic-protocol/sdk/blob/ef8569b/packages/sdk-ethers-v5/src/Client.ts#L101)
 
 ___
 
@@ -105,7 +105,7 @@ An instance of the ChromaticLens class.
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/Client.ts:61](https://github.com/chromatic-protocol/sdk/blob/3c3ce86/packages/sdk-ethers-v5/src/Client.ts#L61)
+[packages/sdk-ethers-v5/src/Client.ts:61](https://github.com/chromatic-protocol/sdk/blob/ef8569b/packages/sdk-ethers-v5/src/Client.ts#L61)
 
 ___
 
@@ -123,7 +123,7 @@ An instance of the ChromaticMarket class.
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/Client.ts:77](https://github.com/chromatic-protocol/sdk/blob/3c3ce86/packages/sdk-ethers-v5/src/Client.ts#L77)
+[packages/sdk-ethers-v5/src/Client.ts:77](https://github.com/chromatic-protocol/sdk/blob/ef8569b/packages/sdk-ethers-v5/src/Client.ts#L77)
 
 ___
 
@@ -141,7 +141,7 @@ An instance of the ChromaticMarketFactory class.
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/Client.ts:69](https://github.com/chromatic-protocol/sdk/blob/3c3ce86/packages/sdk-ethers-v5/src/Client.ts#L69)
+[packages/sdk-ethers-v5/src/Client.ts:69](https://github.com/chromatic-protocol/sdk/blob/ef8569b/packages/sdk-ethers-v5/src/Client.ts#L69)
 
 ___
 
@@ -159,7 +159,7 @@ An instance of the ChromaticPosition class.
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/Client.ts:85](https://github.com/chromatic-protocol/sdk/blob/3c3ce86/packages/sdk-ethers-v5/src/Client.ts#L85)
+[packages/sdk-ethers-v5/src/Client.ts:85](https://github.com/chromatic-protocol/sdk/blob/ef8569b/packages/sdk-ethers-v5/src/Client.ts#L85)
 
 ___
 
@@ -177,7 +177,7 @@ An instance of the ChromaticRouter class.
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/Client.ts:93](https://github.com/chromatic-protocol/sdk/blob/3c3ce86/packages/sdk-ethers-v5/src/Client.ts#L93)
+[packages/sdk-ethers-v5/src/Client.ts:93](https://github.com/chromatic-protocol/sdk/blob/ef8569b/packages/sdk-ethers-v5/src/Client.ts#L93)
 
 ___
 
@@ -199,4 +199,4 @@ Sets the signer or provider for the client.
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/Client.ts:46](https://github.com/chromatic-protocol/sdk/blob/3c3ce86/packages/sdk-ethers-v5/src/Client.ts#L46)
+[packages/sdk-ethers-v5/src/Client.ts:46](https://github.com/chromatic-protocol/sdk/blob/ef8569b/packages/sdk-ethers-v5/src/Client.ts#L46)

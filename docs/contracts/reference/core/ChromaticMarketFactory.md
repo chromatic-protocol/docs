@@ -506,7 +506,7 @@ _This function can only be called by the DAO and registered oracle providers._
 ### registerSettlementToken
 
 ```solidity
-function registerSettlementToken(address token, uint256 minimumMargin, uint256 interestRate, uint256 flashLoanFeeRate, uint256 earningDistributionThreshold, uint24 uniswapFeeTier) external
+function registerSettlementToken(address token, address oracleProvider, uint256 minimumMargin, uint256 interestRate, uint256 flashLoanFeeRate, uint256 earningDistributionThreshold, uint24 uniswapFeeTier) external
 ```
 
 Registers a new settlement token.
@@ -518,6 +518,7 @@ _This function can only be called by the DAO address._
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | token | address | The address of the settlement token to register. |
+  | oracleProvider | address | The oracle provider address for the settlement token. |
   | minimumMargin | uint256 | The minimum margin for the settlement token. |
   | interestRate | uint256 | The interest rate for the settlement token. |
   | flashLoanFeeRate | uint256 | The flash loan fee rate for the settlement token. |
@@ -557,6 +558,43 @@ Checks if a settlement token is registered.
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | [0] | bool | True if the settlement token is registered, false otherwise. |
+
+### getSettlementTokenOracleProvider
+
+```solidity
+function getSettlementTokenOracleProvider(address token) external view returns (address)
+```
+
+Gets the oracle provider address for a settlement token.
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | address | The oracle provider address for the settlement token. |
+
+### setSettlementTokenOracleProvider
+
+```solidity
+function setSettlementTokenOracleProvider(address token, address oracleProvider) external
+```
+
+Sets the oracle provider address for a settlement token.
+
+_This function can only be called by the DAO address._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token. |
+  | oracleProvider | address | The new oracle provider address for the settlement token. |
 
 ### getMinimumMargin
 

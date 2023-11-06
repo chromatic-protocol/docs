@@ -9,6 +9,7 @@ title: SettlementTokenRegistry.sol
 ```solidity
 struct SettlementTokenRegistry {
   EnumerableSet.AddressSet _tokens;
+  mapping(address => address) _oracleProviders;
   mapping(address => InterestRate.Record[]) _interestRateRecords;
   mapping(address => uint256) _minimumMargins;
   mapping(address => uint256) _flashLoanFeeRates;
@@ -22,6 +23,7 @@ _A registry for managing settlement tokens and their associated parameters._
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | _tokens | EnumerableSet.AddressSet | Set of registered settlement tokens |
+| _oracleProviders | mapping(address &#x3D;&gt; address) | Mapping of settlement tokens to their oracle provider address |
 | _interestRateRecords | mapping(address &#x3D;&gt; InterestRate.Record[]) | Mapping of settlement tokens to their interest rate records |
 | _minimumMargins | mapping(address &#x3D;&gt; uint256) | Mapping of settlement tokens to their minimum margins |
 | _flashLoanFeeRates | mapping(address &#x3D;&gt; uint256) | Mapping of settlement tokens to their flash loan fee rates |
@@ -52,7 +54,7 @@ _Throws an error with the code `Errors.UNREGISTERED_TOKEN` if the settlement tok
 ### register
 
 ```solidity
-function register(struct SettlementTokenRegistry self, address token, uint256 minimumMargin, uint256 interestRate, uint256 flashLoanFeeRate, uint256 earningDistributionThreshold, uint24 uniswapFeeTier) internal
+function register(struct SettlementTokenRegistry self, address token, address oracleProvider, uint256 minimumMargin, uint256 interestRate, uint256 flashLoanFeeRate, uint256 earningDistributionThreshold, uint24 uniswapFeeTier) internal
 ```
 
 Registers a token in the settlement token registry.
@@ -65,6 +67,7 @@ _Throws an error with the code `Errors.ALREADY_REGISTERED_TOKEN` if the settleme
   | ---- | ---- | ----------- |
   | self | struct SettlementTokenRegistry | The SettlementTokenRegistry storage. |
   | token | address | The address of the token to register. |
+  | oracleProvider | address | The oracle provider address for the token. |
   | minimumMargin | uint256 | The minimum margin for the token. |
   | interestRate | uint256 | The initial interest rate for the token. |
   | flashLoanFeeRate | uint256 | The flash loan fee rate for the token. |
@@ -111,6 +114,43 @@ Checks if a token is registered in the settlement token registry.
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | [0] | bool | bool Whether the token is registered. |
+
+### getOracleProvider
+
+```solidity
+function getOracleProvider(struct SettlementTokenRegistry self, address token) internal view returns (address)
+```
+
+Retrieves the oracle provider address for a asettlement token.
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct SettlementTokenRegistry | The SettlementTokenRegistry storage. |
+  | token | address | The address of the asettlement token. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | address | address The oralce provider address for the asettlement token. |
+
+### setOracleProvider
+
+```solidity
+function setOracleProvider(struct SettlementTokenRegistry self, address token, address oracleProvider) internal
+```
+
+Sets the oracle provider address for asettlement token.
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | self | struct SettlementTokenRegistry | The SettlementTokenRegistry storage. |
+  | token | address | The address of the settlement token. |
+  | oracleProvider | address | The new oracle provider address for the settlement token. |
 
 ### getMinimumMargin
 

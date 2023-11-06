@@ -11,7 +11,7 @@ _Interface for the Settlement Token Registry contract._
 ### SettlementTokenRegistered
 
 ```solidity
-event SettlementTokenRegistered(address token, uint256 minimumMargin, uint256 interestRate, uint256 flashLoanFeeRate, uint256 earningDistributionThreshold, uint24 uniswapFeeTier)
+event SettlementTokenRegistered(address token, address oracleProvider, uint256 minimumMargin, uint256 interestRate, uint256 flashLoanFeeRate, uint256 earningDistributionThreshold, uint24 uniswapFeeTier)
 ```
 
 _Emitted when a new settlement token is registered._
@@ -21,11 +21,27 @@ _Emitted when a new settlement token is registered._
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | token | address | The address of the registered settlement token. |
+  | oracleProvider | address | The oracle provider address for the settlement token. |
   | minimumMargin | uint256 | The minimum margin for the markets using this settlement token. |
   | interestRate | uint256 | The interest rate for the settlement token. |
   | flashLoanFeeRate | uint256 | The flash loan fee rate for the settlement token. |
   | earningDistributionThreshold | uint256 | The earning distribution threshold for the settlement token. |
   | uniswapFeeTier | uint24 | The Uniswap fee tier for the settlement token. |
+
+### SetSettlementTokenOracleProvider
+
+```solidity
+event SetSettlementTokenOracleProvider(address token, address oracleProvider)
+```
+
+_Emitted when the oracle provider address for a settlement token is set._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token. |
+  | oracleProvider | address | The oracle provider address for the settlement token. |
 
 ### SetMinimumMargin
 
@@ -122,7 +138,7 @@ _Emitted when the last interest rate record is removed for a settlement token._
 ### registerSettlementToken
 
 ```solidity
-function registerSettlementToken(address token, uint256 minimumMargin, uint256 interestRate, uint256 flashLoanFeeRate, uint256 earningDistributionThreshold, uint24 uniswapFeeTier) external
+function registerSettlementToken(address token, address oracleProvider, uint256 minimumMargin, uint256 interestRate, uint256 flashLoanFeeRate, uint256 earningDistributionThreshold, uint24 uniswapFeeTier) external
 ```
 
 Registers a new settlement token.
@@ -132,6 +148,7 @@ Registers a new settlement token.
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | token | address | The address of the settlement token to register. |
+  | oracleProvider | address | The oracle provider address for the settlement token. |
   | minimumMargin | uint256 | The minimum margin for the settlement token. |
   | interestRate | uint256 | The interest rate for the settlement token. |
   | flashLoanFeeRate | uint256 | The flash loan fee rate for the settlement token. |
@@ -171,6 +188,41 @@ Checks if a settlement token is registered.
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | [0] | bool | True if the settlement token is registered, false otherwise. |
+
+### getSettlementTokenOracleProvider
+
+```solidity
+function getSettlementTokenOracleProvider(address token) external view returns (address)
+```
+
+Gets the oracle provider address for a settlement token.
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | address | The oracle provider address for the settlement token. |
+
+### setSettlementTokenOracleProvider
+
+```solidity
+function setSettlementTokenOracleProvider(address token, address oracleProvider) external
+```
+
+Sets the oracle provider address for a settlement token.
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | token | address | The address of the settlement token. |
+  | oracleProvider | address | The new oracle provider address for the settlement token. |
 
 ### getMinimumMargin
 

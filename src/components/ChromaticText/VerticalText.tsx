@@ -103,11 +103,11 @@ export const VerticalText = (props: VerticalTextProps) => {
             align: 'left',
             textBaseline: 'alphabetic',
             fontFamily: '"Source Code Pro", Helvetica, sans-serif',
-            fontSize: 150, //50
+            fontSize: 140, //50
             fontWeight: 'bold',
+            letterSpacing: -4,
             fill: '#ffffff',
             stroke: '#01d27e',
-            letterSpacing: -4,
             ...textStyles
             // strokeThickness: 5,
             // dropShadow: true,

@@ -97,7 +97,7 @@ function StartingGuide() {
             </div>
           </div>
           <div>
-            <p className="mb-20 text-xl leading-normal md:max-w-[80%] opacity-50 mx-auto primary-lighter">
+            <p className="mb-20 text-xl leading-normal md:max-w-[80%] opacity-50 mx-auto primary-lighter font-sans">
               The first properly designed decentralized perpetual futures protocol that provides
               permissionless, trustless, and unopinionated building blocks. It enables participants
               in the DeFi ecosystem to create balanced two-sided markets exposed to oracle price

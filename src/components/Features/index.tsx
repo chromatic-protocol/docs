@@ -86,7 +86,9 @@ function Feature({ title, titleWidth, Svg, description }: FeatureItem) {
             filter={isDark && 'invert(1)'}
           />
         </div>
-        <p className="mt-5 lg:mt-10 mb-2 text-lg max-w-[580px] primary-lighter">{description}</p>
+        <p className="mt-5 lg:mt-10 mb-2 text-xl max-w-[580px] primary-lighter font-sans">
+          {description}
+        </p>
       </div>
     </div>
   )

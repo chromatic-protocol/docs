@@ -4,6 +4,7 @@
 * work well for content-centric websites.
 */
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -107,7 +108,10 @@ html[data-theme='dark'] {
 .font-mono {
   @apply tracking-tight;
   word-spacing: -0.1em;
-  /* letter-spacing: -0.26px !important; */
+}
+.font-sans {
+  @apply tracking-normal;
+  word-spacing: 0em;
 }
 
 .btn {
@@ -132,7 +136,7 @@ html[data-theme='dark'] {
 /* Landing page */
 .landing-page {
   .p {
-    @apply leading-normal text-lg;
+    @apply leading-normal text-lg font-sans;
   }
   .article {
     @apply flex flex-col items-center justify-center;
@@ -215,7 +219,7 @@ html[data-theme='dark'] {
 
 /* Footer */
 .footer {
-  @apply font-mono font-medium py-20;
+  @apply font-sans font-medium py-20;
   @apply flex items-center justify-center border-t;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   .wrapper {

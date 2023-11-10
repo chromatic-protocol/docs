@@ -83,7 +83,8 @@ const config = {
       image: 'img/tiwtter-card.png',
       colorMode: {
         defaultMode: 'dark',
-        disableSwitch: true
+        disableSwitch: true,
+        respectPrefersColorScheme: false
       },
       navbar: {
         // title: 'CHROMATIC',

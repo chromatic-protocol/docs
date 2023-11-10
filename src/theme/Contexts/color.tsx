@@ -17,7 +17,7 @@ export type Color = (typeof Colors)[keyof typeof Colors]
 
 function useContextValue(): ContextValue {
   // landing default color mode
-  const [color, setColorState] = useState<Color>(Colors.light)
+  const [color, setColorState] = useState<Color>(Colors.dark)
 
   const setColor = useCallback((newColor: Color | null) => {
     setColorState(newColor)

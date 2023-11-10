@@ -115,7 +115,7 @@ html[data-theme='dark'] {
 }
 
 .btn {
-  @apply font-mono font-semibold inline-flex items-center justify-center rounded-full hover:no-underline;
+  @apply font-sans font-semibold inline-flex items-center justify-center rounded-full hover:no-underline;
   @apply px-5;
   &.btn-black {
     @apply text-white;
@@ -238,7 +238,7 @@ html[data-theme='dark'] {
     @apply w-full md:max-w-[200px];
     @apply flex flex-col;
     .footer-title {
-      @apply h-5 font-bold text-xl font-mono text-white mb-7 md:mb-10 mt-1;
+      @apply h-5 font-bold text-xl text-white mb-7 md:mb-10 mt-1;
       @apply w-1/4 min-w-[200px] md:w-auto md:min-w-0;
     }
     .footer-items {

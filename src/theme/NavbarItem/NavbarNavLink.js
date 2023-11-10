@@ -49,7 +49,9 @@ export default function NavbarNavLink({
               <div>
                 <p className={`m-0 text-lg  ${isButton ? 'inverted' : 'primary'}`}>{label}</p>
                 {description && (
-                  <p className="mt-2 mb-0 text-base opacity-50 primary">{description}</p>
+                  <p className="mt-2 mb-0 font-sans text-base font-medium opacity-50 primary">
+                    {description}
+                  </p>
                 )}
               </div>
             </div>

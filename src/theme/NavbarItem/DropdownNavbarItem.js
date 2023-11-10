@@ -59,7 +59,7 @@ function DropdownNavbarItemDesktop({
         aria-expanded={showDropdown}
         role="button"
         href={props.to ? undefined : '#'}
-        className={clsx('navbar__link flex items-center gap-1', className)}
+        className={clsx('navbar__link flex items-center gap-1 font-sans font-semibold', className)}
         {...props}
         onClick={props.to ? undefined : (e) => e.preventDefault()}
         onKeyDown={(e) => {
@@ -72,7 +72,7 @@ function DropdownNavbarItemDesktop({
         {props.children ?? props.label}
       </NavbarNavLink>
       <ul
-        className={`flex items-stretch font-mono !font-semibold dropdown__menu p-5 rounded-xl border-solid border-2 shadow-none background border`}
+        className={`flex items-stretch font-sans !font-semibold dropdown__menu p-5 rounded-xl border-solid border-2 shadow-none background border`}
       >
         <div className="pt-4 pl-2 w-[220px]">
           {props.label && <p className="m-0 text-lg uppercase primary">{props.label}</p>}

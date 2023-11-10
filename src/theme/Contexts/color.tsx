@@ -19,27 +19,37 @@ function useContextValue(): ContextValue {
   const breakpoints = {
     mobile: 1024
   }
+
   const mobileColor = Colors.light
   const pcColor = Colors.dark
 
-  // landing default color mode
-  // const [color, setColorState] = useState<Color>(Colors.dark)
-  const [color, setColorState] = useState<Color>(getColorMode(window.innerWidth))
+  // State for color mode
+  const [color, setColorState] = useState<Color>(getColorMode(getWindowWidth()))
 
-  function getColorMode(windowWidth: number): Color {
-    return windowWidth < breakpoints.mobile ? mobileColor : pcColor
+  // Function to get the window width or a default value if window is not available
+  function getWindowWidth(): number {
+    return typeof window !== 'undefined' ? window.innerWidth : 1024
   }
 
+  // Function to determine color mode based on window width
+  function getColorMode(windowWidth: number): Color {
+    return windowWidth <= breakpoints.mobile ? mobileColor : pcColor
+  }
+
+  // Event listener to update color mode when the window is resized
   useEffect(() => {
     const handleResize = () => {
-      const newColor = getColorMode(window.innerWidth)
+      const newColor = getColorMode(getWindowWidth())
       setColorState(newColor)
     }
 
-    window.addEventListener('resize', handleResize)
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', handleResize)
 
-    return () => {
-      window.removeEventListener('resize', handleResize)
+      // Clean up the event listener when the component unmounts
+      return () => {
+        window.removeEventListener('resize', handleResize)
+      }
     }
   }, [mobileColor, pcColor])
 

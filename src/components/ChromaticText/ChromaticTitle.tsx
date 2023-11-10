@@ -13,7 +13,7 @@ const texts = [
 
 export function ChromaticTitle(props) {
   const width = 2016
-  const height = 128
+  const height = 140
   const { color } = useColor()
   const isDark = color === 'dark'
 

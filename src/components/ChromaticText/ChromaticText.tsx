@@ -8,7 +8,6 @@ export type ChromaticTextProps = {
   height: number
   y?: number
   fill?: string | string[]
-  gradient?: boolean
 }
 
 function prepareParameters(
@@ -33,7 +32,7 @@ function prepareParameters(
 }
 
 export const ChromaticText = (props: ChromaticTextProps) => {
-  const { texts, width, height, fill, gradient } = props
+  const { texts, width, height, fill } = props
   const textInterval = props.textInterval ?? 2800
 
   const [text, setText] = useState(texts[0])

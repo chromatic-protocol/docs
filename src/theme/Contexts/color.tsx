@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useContext, useMemo, type ReactNode } from 'react'
+import React, { useEffect, useState, useCallback, useContext, useMemo, type ReactNode } from 'react'
 import { useLocalPathname, useColorMode } from '@docusaurus/theme-common/internal'
 
 type ContextValue = {
@@ -17,15 +17,31 @@ export type Color = (typeof Colors)[keyof typeof Colors]
 
 function useContextValue(): ContextValue {
   const breakpoints = {
-    mobile: '1024px'
+    mobile: 1024
   }
   const mobileColor = Colors.light
   const pcColor = Colors.dark
-  const isMobile = window.innerWidth < parseInt(breakpoints.mobile)
 
   // landing default color mode
   // const [color, setColorState] = useState<Color>(Colors.dark)
-  const [color, setColorState] = useState<Color>(isMobile ? mobileColor : pcColor)
+  const [color, setColorState] = useState<Color>(getColorMode(window.innerWidth))
+
+  function getColorMode(windowWidth: number): Color {
+    return windowWidth < breakpoints.mobile ? mobileColor : pcColor
+  }
+
+  useEffect(() => {
+    const handleResize = () => {
+      const newColor = getColorMode(window.innerWidth)
+      setColorState(newColor)
+    }
+
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [mobileColor, pcColor])
 
   const setColor = useCallback((newColor: Color | null) => {
     setColorState(newColor)

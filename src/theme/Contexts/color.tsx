@@ -16,8 +16,16 @@ const Colors = {
 export type Color = (typeof Colors)[keyof typeof Colors]
 
 function useContextValue(): ContextValue {
+  const breakpoints = {
+    mobile: '1024px'
+  }
+  const mobileColor = Colors.light
+  const pcColor = Colors.dark
+  const isMobile = window.innerWidth < parseInt(breakpoints.mobile)
+
   // landing default color mode
-  const [color, setColorState] = useState<Color>(Colors.dark)
+  // const [color, setColorState] = useState<Color>(Colors.dark)
+  const [color, setColorState] = useState<Color>(isMobile ? mobileColor : pcColor)
 
   const setColor = useCallback((newColor: Color | null) => {
     setColorState(newColor)

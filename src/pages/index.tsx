@@ -58,7 +58,7 @@ function IconArrowButton({ label, icon, to = '', href = '', onClick = null, ...p
 // Limitless Trading Pairs
 function Intro() {
   return (
-    <section>
+    <section className="hidden lg:block">
       <article className="h-[calc(100vh-70px)] min-h-[400px] lg:min-h-[800px] text-center article">
         <div className="">
           <div className="relative flex items-center justify-center">
@@ -214,15 +214,15 @@ function Contents() {
     <main className={`font-mono landing-page ${color} background`}>
       <Intro />
       <Trigger
-        onUp={setColor('light')}
-        onDown={setColor('dark')}
+        onUp={setColor('dark')}
+        onDown={setColor('light')}
         offset={'-20vh'}
         {...triggerProps}
       />
       <StartingGuide />
       <Trigger
-        onUp={setColor('dark')}
-        onDown={setColor('light')}
+        onUp={setColor('light')}
+        onDown={setColor('dark')}
         offset={'-25vh'}
         {...triggerProps}
       />

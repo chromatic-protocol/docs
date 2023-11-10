@@ -657,6 +657,18 @@ error NotExistPosition()
 
 _Throws an error indicating that the caller is not the owner of this account contractthat the caller is not the owner of this account contract._
 
+## AccountFactory
+
+_Abstract contract for creating and managing user accounts._
+
+### OnlyAccessableByDao
+
+```solidity
+error OnlyAccessableByDao()
+```
+
+_Throws an error indicating that the caller is not the DAO._
+
 ## VerifyCallback
 
 _Abstract contract for verifying callback functions from registered markets._

@@ -258,6 +258,33 @@ _Opens a new position in a ChromaticMarket contract._
   | ---- | ---- | ----------- |
   | [0] | struct OpenPositionInfo | position The new position. |
 
+### _openPosition
+
+```solidity
+function _openPosition(address market, int256 qty, uint256 takerMargin, uint256 makerMargin, uint256 maxAllowableTradingFee) internal returns (struct OpenPositionInfo openPositionInfo)
+```
+
+### _calcUsdPrice
+
+```solidity
+function _calcUsdPrice(address market, uint256 amount) internal view returns (uint256)
+```
+
+_Calculates the price in USD for a specified amount of the settlement token in a ChromaticMarket._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the ChromaticMarket contract. |
+  | amount | uint256 | The amount of the settlement token. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint256 | The price in USD as an int256. |
+
 ### closePosition
 
 ```solidity

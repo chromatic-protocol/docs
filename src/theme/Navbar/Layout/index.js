@@ -38,13 +38,14 @@ export default function NavbarLayout({ children }) {
           'navbar',
           'navbar--fixed-top',
           'h-[70px] px-4 md:px-10 shadow-none',
+          'fixed top-0 right-0 bottom-0 left-0 backdrop-blur-xl bg-transparent',
           hideOnScroll && [styles.navbarHideable, !isNavbarVisible && styles.navbarHidden],
           {
             'navbar--dark': style === 'dark',
             'navbar--primary': style === 'primary',
             'navbar-sidebar--show': mobileSidebar.shown
           }
-        ) + ` ${color} background`
+        ) + ` ${color} background-translucent`
       }
     >
       {children}

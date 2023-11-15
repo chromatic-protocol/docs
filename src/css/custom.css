@@ -23,6 +23,10 @@
   &.background {
     background-color: #030303;
   }
+  .background-translucent,
+  &.background-translucent {
+    background-color: rgba(3, 3, 3, 0.5);
+  }
   .inverted-background {
     background-color: #ffffff;
   }
@@ -53,7 +57,10 @@
   &.background {
     background-color: #ffffff;
   }
-
+  .background-translucent,
+  &.background-translucent {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
   .inverted-background {
     background-color: #030303;
   }
@@ -103,6 +110,20 @@ html[data-theme='dark'] {
   --ifm-background-color: #030303;
   --ifm-background-surface-color: #030303;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.bg-gradient-chrm {
+  @apply relative;
+  &::after {
+    content: '';
+    @apply w-full h-full absolute left-0 top-0 right-0 bottom-0;
+    @apply overflow-visible bg-no-repeat bg-cover;
+    background-image: url('/static/img/bg-gradient-chrm.png');
+    background-position: bottom;
+  }
+  &.bg-flip::after {
+    transform: scaleY(-1);
+  }
 }
 
 .font-mono {

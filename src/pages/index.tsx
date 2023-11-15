@@ -58,7 +58,7 @@ function IconArrowButton({ label, icon, to = '', href = '', onClick = null, ...p
 // Limitless Trading Pairs
 function Intro() {
   return (
-    <section className="hidden lg:block">
+    <section className="hidden lg:block bg-gradient-chrm bg-flip pt-[70px]">
       <article className="h-[calc(100vh-70px)] min-h-[400px] lg:min-h-[800px] text-center article">
         <div className="">
           <div className="relative flex items-center justify-center">
@@ -170,7 +170,7 @@ function StartingGuide() {
 function Article() {
   return (
     <>
-      <section className="pt-[220px] pb-[120px]">
+      <section className="pt-[220px] pb-[120px] bg-gradient-chrm">
         <article className="article">
           <div className="wrapper">
             <div className="box border-lighter">

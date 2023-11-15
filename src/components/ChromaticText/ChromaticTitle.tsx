@@ -33,7 +33,8 @@ export function ChromaticTitle(props) {
         y={0}
         width={width}
         height={height}
-        fill={isDark ? ['#ff4f44', '#fe8b63', '#95ed60', '#a6d85b'] : '#030303'}
+        // fill={isDark ? '#ffffff' : '#030303'}
+        fill={isDark ? ['#ff4f44', '#fe8b63', '#a6d85b', '#95ed60'] : '#030303'}
       />
     </Stage>
   )

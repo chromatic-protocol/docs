@@ -14,6 +14,23 @@ _Abstract contract for creating and managing user accounts._
 contract ChromaticAccount accountBase
 ```
 
+### OnlyAccessableByDao
+
+```solidity
+error OnlyAccessableByDao()
+```
+
+_Throws an error indicating that the caller is not the DAO._
+
+### onlyDao
+
+```solidity
+modifier onlyDao()
+```
+
+_Modifier to restrict access to only the DAO.
+     Throws an `OnlyAccessableByDao` error if the caller is not the DAO._
+
 ### constructor
 
 ```solidity

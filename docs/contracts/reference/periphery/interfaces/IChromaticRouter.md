@@ -8,6 +8,24 @@ title: IChromaticRouter.sol
 
 _Interface for the ChromaticRouter contract._
 
+### OpenPosition
+
+```solidity
+event OpenPosition(address marketAddress, address trader, address account, uint256 tradingFee, uint256 tradingFeeUSD)
+```
+
+_Emitted when a position is opened._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | marketAddress | address | The address of the market. |
+  | trader | address | The owner of The account |
+  | account | address | The account The address of the account opening the position. |
+  | tradingFee | uint256 | The trading fee associated with the position. |
+  | tradingFeeUSD | uint256 | The trading fee in USD |
+
 ### AccountCreated
 
 ```solidity

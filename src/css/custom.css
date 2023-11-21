@@ -113,15 +113,15 @@ html[data-theme='dark'] {
 }
 
 .bg-gradient-chrm {
-  @apply relative;
-  &::after {
+  @apply relative z-0;
+  &::before {
     content: '';
-    @apply w-full h-full absolute left-0 top-0 right-0 bottom-0;
+    @apply w-full h-full absolute left-0 top-0 right-0 bottom-0 z-[-1];
     @apply overflow-visible bg-no-repeat bg-cover;
     background-image: url('/static/img/bg-gradient-chrm.png');
     background-position: bottom;
   }
-  &.bg-flip::after {
+  &.bg-flip::before {
     transform: scaleY(-1);
   }
 }

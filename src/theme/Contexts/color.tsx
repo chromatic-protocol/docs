@@ -36,7 +36,6 @@ function useContextValue(): ContextValue {
     return windowWidth <= breakpoints.mobile ? mobileColor : pcColor
   }
 
-  // Event listener to update color mode when the window is resized
   useEffect(() => {
     const updateColorMode = () => {
       const newColor = getColorMode(getWindowWidth())

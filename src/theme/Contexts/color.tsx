@@ -70,7 +70,6 @@ function useContextValue(): ContextValue {
     // Check if running on the client side before updating color mode
     if (typeof window !== 'undefined') {
       window.addEventListener('resize', updateColorMode)
-      updateColorMode()
 
       // Clean up the event listener when the component unmounts
       return () => {

@@ -20,9 +20,9 @@ function useContextValue(): ContextValue {
   const breakpoints = {
     mobile: 1024
   }
-
+  const isBrowser = useIsBrowser()
   function isMobile() {
-    if (!useIsBrowser()) return false
+    if (!isBrowser) return false
     let check = false
     if (navigator) {
       const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera

@@ -283,7 +283,7 @@ html[data-theme='dark'] {
     @apply max-md:duration-0;
   }
   .search-dropdown {
-    @apply shadow-none border-2 border-solid rounded-xl font-mono text-base;
+    @apply shadow-none border border-solid rounded-xl font-mono text-base;
     @apply max-md:max-h-[40vh] max-md:overflow-auto;
     @apply bg-white border-black;
     .search-suggestion {

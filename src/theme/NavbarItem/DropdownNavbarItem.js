@@ -72,7 +72,7 @@ function DropdownNavbarItemDesktop({
         {props.children ?? props.label}
       </NavbarNavLink>
       <ul
-        className={`flex items-stretch font-sans !font-semibold dropdown__menu p-5 rounded-xl border-solid border-2 shadow-none background border`}
+        className={`flex items-stretch font-sans !font-semibold dropdown__menu p-5 rounded-xl border-solid shadow-none background border`}
       >
         <div className="pt-4 pl-2 w-[220px]">
           {props.label && <p className="m-0 text-lg uppercase primary">{props.label}</p>}

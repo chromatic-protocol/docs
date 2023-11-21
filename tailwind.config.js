@@ -9,7 +9,7 @@ const monospace = (function () {
 })()
 
 export const content = ['./src/**/*.{js,jsx,ts,tsx}']
-export const darkMode = ['class']
+export const darkMode = ['class', '[data-theme="dark"]']
 export const theme = {
   extend: {
     fontFamily: {

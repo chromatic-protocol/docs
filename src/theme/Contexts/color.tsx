@@ -38,20 +38,22 @@ function useContextValue(): ContextValue {
 
   // Event listener to update color mode when the window is resized
   useEffect(() => {
-    const handleResize = () => {
+    const updateColorMode = () => {
       const newColor = getColorMode(getWindowWidth())
       setColorState(newColor)
     }
 
+    // Check if running on the client side before updating color mode
     if (typeof window !== 'undefined') {
-      window.addEventListener('resize', handleResize)
+      window.addEventListener('resize', updateColorMode)
+      updateColorMode()
 
       // Clean up the event listener when the component unmounts
       return () => {
-        window.removeEventListener('resize', handleResize)
+        window.removeEventListener('resize', updateColorMode)
       }
     }
-  }, [mobileColor, pcColor])
+  }, [])
 
   const setColor = useCallback((newColor: Color | null) => {
     setColorState(newColor)

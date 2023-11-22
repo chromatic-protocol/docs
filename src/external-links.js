@@ -5,8 +5,8 @@ const CHROMATIC_LINKS = {
   medium: 'https://medium.com/@chromatic-protocol',
   gitbook: 'https://chromatic.gitbook.io/docs',
   twitter: 'https://twitter.com/chromatic_perp',
-  // discord: '',
-  // telegram: '',
+  discord: 'https://discord.com/invite/NPhCtVthCV',
+  zealy: 'https://zealy.io/c/chromatic/questboard',
   github: 'https://github.com/chromatic-protocol',
   githubContracts: 'https://github.com/chromatic-protocol/contracts',
   githubSDK: 'https://github.com/chromatic-protocol/sdk'

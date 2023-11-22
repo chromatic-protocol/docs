@@ -13,7 +13,8 @@ export const darkMode = ['class', '[data-theme="dark"]']
 export const theme = {
   extend: {
     fontFamily: {
-      mono: ['Source Code Pro', monospace]
+      mono: ['Source Code Pro', monospace],
+      sans: ['Work Sans', 'sans-serif']
     },
     colors: {
       current: 'currentColor',

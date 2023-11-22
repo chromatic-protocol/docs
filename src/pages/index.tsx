@@ -58,7 +58,7 @@ function IconArrowButton({ label, icon, to = '', href = '', onClick = null, ...p
 // Limitless Trading Pairs
 function Intro() {
   return (
-    <section>
+    <section className="hidden lg:block bg-gradient-chrm bg-flip pt-[70px]">
       <article className="h-[calc(100vh-70px)] min-h-[400px] lg:min-h-[800px] text-center article">
         <div className="">
           <div className="relative flex items-center justify-center">
@@ -97,7 +97,7 @@ function StartingGuide() {
             </div>
           </div>
           <div>
-            <p className="mb-20 text-xl leading-normal md:max-w-[80%] opacity-50 mx-auto primary-lighter">
+            <p className="mb-20 text-xl leading-normal md:max-w-[80%] opacity-50 mx-auto primary-lighter font-sans">
               The first properly designed decentralized perpetual futures protocol that provides
               permissionless, trustless, and unopinionated building blocks. It enables participants
               in the DeFi ecosystem to create balanced two-sided markets exposed to oracle price
@@ -170,7 +170,7 @@ function StartingGuide() {
 function Article() {
   return (
     <>
-      <section className="pt-[220px] pb-[120px]">
+      <section className="pt-[220px] pb-[120px] bg-gradient-chrm">
         <article className="article">
           <div className="wrapper">
             <div className="box border-lighter">
@@ -214,15 +214,15 @@ function Contents() {
     <main className={`font-mono landing-page ${color} background`}>
       <Intro />
       <Trigger
-        onUp={setColor('light')}
-        onDown={setColor('dark')}
+        onUp={setColor('dark')}
+        onDown={setColor('light')}
         offset={'-20vh'}
         {...triggerProps}
       />
       <StartingGuide />
       <Trigger
-        onUp={setColor('dark')}
-        onDown={setColor('light')}
+        onUp={setColor('light')}
+        onDown={setColor('dark')}
         offset={'-25vh'}
         {...triggerProps}
       />

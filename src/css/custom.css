@@ -4,6 +4,7 @@
 * work well for content-centric websites.
 */
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,6 +22,10 @@
   .background,
   &.background {
     background-color: #030303;
+  }
+  .background-translucent,
+  &.background-translucent {
+    background-color: rgba(3, 3, 3, 0.5);
   }
   .inverted-background {
     background-color: #ffffff;
@@ -52,7 +57,10 @@
   &.background {
     background-color: #ffffff;
   }
-
+  .background-translucent,
+  &.background-translucent {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
   .inverted-background {
     background-color: #030303;
   }
@@ -104,14 +112,31 @@ html[data-theme='dark'] {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+.bg-gradient-chrm {
+  @apply relative z-0;
+  &::before {
+    content: '';
+    @apply w-full h-full absolute left-0 top-0 right-0 bottom-0 z-[-1];
+    @apply overflow-visible bg-no-repeat bg-cover;
+    background-image: url('/static/img/bg-gradient-chrm.png');
+    background-position: bottom;
+  }
+  &.bg-flip::before {
+    transform: scaleY(-1);
+  }
+}
+
 .font-mono {
   @apply tracking-tight;
   word-spacing: -0.1em;
-  /* letter-spacing: -0.26px !important; */
+}
+.font-sans {
+  @apply tracking-normal;
+  word-spacing: 0em;
 }
 
 .btn {
-  @apply font-mono font-semibold inline-flex items-center justify-center rounded-full hover:no-underline;
+  @apply font-sans font-semibold inline-flex items-center justify-center rounded-full hover:no-underline;
   @apply px-5;
   &.btn-black {
     @apply text-white;
@@ -132,7 +157,7 @@ html[data-theme='dark'] {
 /* Landing page */
 .landing-page {
   .p {
-    @apply leading-normal text-lg;
+    @apply leading-normal text-lg font-sans;
   }
   .article {
     @apply flex flex-col items-center justify-center;
@@ -166,13 +191,14 @@ html[data-theme='dark'] {
   @apply flex items-center h-12;
   &::after {
     @apply border-0 inline-block w-4 h-4 top-auto transform-none fill-current m-0;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M2.47 4.97a.75.75 0 0 1 1.06 0L8 9.44l4.47-4.47a.75.75 0 1 1 1.06 1.06l-5 5a.75.75 0 0 1-1.06 0l-5-5a.75.75 0 0 1 0-1.06Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M4 6a.5.5 0 0 0-.354.854l4 4a.5.5 0 0 0 .708 0l4-4A.5.5 0 0 0 12 6H4Z' clip-rule='evenodd'/%3E%3C/svg%3E%0A");
+    filter: none;
   }
 }
 .menu__link--sublist-caret:after,
 .menu__caret:before {
   background-size: cover;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M13.53 11.03a.75.75 0 0 1-1.06 0L8 6.56l-4.47 4.47a.75.75 0 1 1-1.06-1.06l5-5a.75.75 0 0 1 1.06 0l5 5a.75.75 0 0 1 0 1.06Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M4 6a.5.5 0 0 0-.354.854l4 4a.5.5 0 0 0 .708 0l4-4A.5.5 0 0 0 12 6H4Z' clip-rule='evenodd'/%3E%3C/svg%3E%0A");
   filter: none;
 }
 .navbar__inner {
@@ -180,11 +206,11 @@ html[data-theme='dark'] {
 }
 .dark {
   .dropdown > .navbar__link::after {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M2.47 4.97a.75.75 0 0 1 1.06 0L8 9.44l4.47-4.47a.75.75 0 1 1 1.06 1.06l-5 5a.75.75 0 0 1-1.06 0l-5-5a.75.75 0 0 1 0-1.06Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M4 6a.5.5 0 0 0-.354.854l4 4a.5.5 0 0 0 .708 0l4-4A.5.5 0 0 0 12 6H4Z' clip-rule='evenodd'/%3E%3C/svg%3E%0A");
   }
   .menu__link--sublist-caret:after,
   .menu__caret:before {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M13.53 11.03a.75.75 0 0 1-1.06 0L8 6.56l-4.47 4.47a.75.75 0 1 1-1.06-1.06l5-5a.75.75 0 0 1 1.06 0l5 5a.75.75 0 0 1 0 1.06Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M4 6a.5.5 0 0 0-.354.854l4 4a.5.5 0 0 0 .708 0l4-4A.5.5 0 0 0 12 6H4Z' clip-rule='evenodd'/%3E%3C/svg%3E%0A");
   }
   .navbar-sidebar {
     .menu__list .menu__list-item a {
@@ -215,7 +241,7 @@ html[data-theme='dark'] {
 
 /* Footer */
 .footer {
-  @apply font-mono font-medium py-20;
+  @apply font-sans font-medium py-20;
   @apply flex items-center justify-center border-t;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   .wrapper {
@@ -234,7 +260,7 @@ html[data-theme='dark'] {
     @apply w-full md:max-w-[200px];
     @apply flex flex-col;
     .footer-title {
-      @apply h-5 font-bold text-xl font-mono text-white mb-7 md:mb-10 mt-1;
+      @apply h-5 font-bold text-xl text-white mb-7 md:mb-10 mt-1;
       @apply w-1/4 min-w-[200px] md:w-auto md:min-w-0;
     }
     .footer-items {
@@ -258,7 +284,7 @@ html[data-theme='dark'] {
     @apply max-md:duration-0;
   }
   .search-dropdown {
-    @apply shadow-none border-2 border-solid rounded-xl font-mono text-base;
+    @apply shadow-none border border-solid rounded-xl font-mono text-base;
     @apply max-md:max-h-[40vh] max-md:overflow-auto;
     @apply bg-white border-black;
     .search-suggestion {

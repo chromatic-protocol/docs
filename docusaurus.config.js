@@ -83,7 +83,8 @@ const config = {
       image: 'img/tiwtter-card.png',
       colorMode: {
         defaultMode: 'dark',
-        disableSwitch: true
+        disableSwitch: true,
+        respectPrefersColorScheme: false
       },
       navbar: {
         // title: 'CHROMATIC',
@@ -154,19 +155,19 @@ const config = {
                 description: 'external link to twitter',
                 href: CHROMATIC_LINKS.twitter,
                 icon: 'twitter'
+              },
+              {
+                label: 'Discord',
+                description: 'external link to discord',
+                href: CHROMATIC_LINKS.discord,
+                icon: 'discord'
+              },
+              {
+                label: 'Zealy',
+                description: 'external link to zealy',
+                href: CHROMATIC_LINKS.discord,
+                icon: 'zealy'
               }
-              // {
-              //   label: 'Discord',
-              //   description: 'external link to discord',
-              //   href: CHROMATIC_LINKS.discord,
-              //   icon: 'discord'
-              // },
-              // {
-              //   label: 'Telegram',
-              //   description: 'external link to telegram',
-              //   href: CHROMATIC_LINKS.telegram,
-              //   icon: 'telegram'
-              // }
             ]
           },
           {
@@ -246,15 +247,15 @@ const config = {
               {
                 label: 'Twitter',
                 href: CHROMATIC_LINKS.twitter
+              },
+              {
+                label: 'Discord',
+                href: CHROMATIC_LINKS.discord
+              },
+              {
+                label: 'Zealy',
+                href: CHROMATIC_LINKS.zealy
               }
-              // {
-              //   label: 'Discord',
-              //   href: CHROMATIC_LINKS.discord
-              // },
-              // {
-              //   label: 'Telegram',
-              //   href: CHROMATIC_LINKS.telegram
-              // }
             ]
           }
         ]

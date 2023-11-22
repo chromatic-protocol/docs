@@ -13,7 +13,7 @@ const texts = [
 
 export function ChromaticTitle(props) {
   const width = 2016
-  const height = 128
+  const height = 140
   const { color } = useColor()
   const isDark = color === 'dark'
 
@@ -24,7 +24,7 @@ export function ChromaticTitle(props) {
       className="flex-auto !h-auto max-w-full flex items-center"
       options={{
         autoDensity: true,
-        backgroundColor: 0xffffff,
+        backgroundColor: 0x030303,
         backgroundAlpha: 0
       }}
     >
@@ -33,7 +33,8 @@ export function ChromaticTitle(props) {
         y={0}
         width={width}
         height={height}
-        fill={isDark ? '#ffffff' : '#030303'}
+        // fill={isDark ? '#ffffff' : '#030303'}
+        fill={isDark ? ['#ff4f44', '#fe8b63', '#a6d85b', '#95ed60'] : '#030303'}
       />
     </Stage>
   )

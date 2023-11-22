@@ -7,7 +7,7 @@ export type ChromaticTextProps = {
   width: number
   height: number
   y?: number
-  fill?: string
+  fill?: string | string[]
 }
 
 function prepareParameters(
@@ -80,7 +80,8 @@ export const ChromaticText = (props: ChromaticTextProps) => {
           textStyles={{
             fontSize: width / 16,
             fill: fill,
-            fontWeight: '900'
+            fontWeight: '900',
+            fillGradientType: 1
             // ...props.textStyles
           }}
         />

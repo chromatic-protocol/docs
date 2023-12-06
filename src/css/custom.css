@@ -30,7 +30,7 @@
   .inverted-background {
     background-color: #ffffff;
   }
-  .hover:hover {
+  .enabled:hover:hover {
     * {
       color: #030303;
     }
@@ -64,7 +64,7 @@
   .inverted-background {
     background-color: #030303;
   }
-  .hover:hover {
+  .enabled:hover:hover {
     * {
       color: #ffffff;
     }
@@ -136,18 +136,18 @@ html[data-theme='dark'] {
 }
 
 .btn {
-  @apply font-sans font-semibold inline-flex items-center justify-center rounded-full hover:no-underline;
+  @apply font-sans font-semibold inline-flex items-center justify-center rounded-full enabled:hover:no-underline;
   @apply px-5;
   &.btn-black {
     @apply text-white;
   }
   &.btn-black-line {
     @apply bg-transparent border border-solid border-black/30 text-black fill-black;
-    @apply hover:bg-black hover:text-white hover:fill-white transition-colors;
+    @apply enabled:hover:bg-black enabled:hover:text-white enabled:hover:fill-white transition-colors;
   }
   &.btn-white-line {
     @apply bg-transparent border border-solid border-white/30 text-white fill-white;
-    @apply hover:bg-white hover:text-black hover:fill-black transition-colors;
+    @apply enabled:hover:bg-white enabled:hover:text-black enabled:hover:fill-black transition-colors;
   }
   &.btn-base {
     @apply h-[38px];
@@ -214,7 +214,7 @@ html[data-theme='dark'] {
   }
   .navbar-sidebar {
     .menu__list .menu__list-item a {
-      @apply hover:bg-white/10;
+      @apply enabled:hover:bg-white/10;
     }
   }
 }

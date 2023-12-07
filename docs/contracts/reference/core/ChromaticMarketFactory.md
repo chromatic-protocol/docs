@@ -384,7 +384,7 @@ Returns vPoolA Amplification coefficient of virtual future pool, precise value_
 ### registerOracleProvider
 
 ```solidity
-function registerOracleProvider(address oracleProvider, struct IOracleProviderRegistry.OracleProviderProperties properties) external
+function registerOracleProvider(address oracleProvider, struct OracleProviderProperties properties) external
 ```
 
 Registers an oracle provider.
@@ -396,7 +396,7 @@ _This function can only be called by the DAO address._
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | oracleProvider | address | The address of the oracle provider to register. |
-  | properties | struct IOracleProviderRegistry.OracleProviderProperties | The properties of the oracle provider. |
+  | properties | struct OracleProviderProperties | The properties of the oracle provider. |
 
 ### unregisterOracleProvider
 
@@ -451,7 +451,7 @@ Checks if an oracle provider is registered.
 ### getOracleProviderProperties
 
 ```solidity
-function getOracleProviderProperties(address oracleProvider) external view returns (struct IOracleProviderRegistry.OracleProviderProperties)
+function getOracleProviderProperties(address oracleProvider) external view returns (struct OracleProviderProperties)
 ```
 
 Retrieves the properties of an oracle provider.
@@ -466,7 +466,7 @@ Retrieves the properties of an oracle provider.
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | struct IOracleProviderRegistry.OracleProviderProperties | The properties of the oracle provider. |
+  | [0] | struct OracleProviderProperties | The properties of the oracle provider. |
 
 ### updateTakeProfitBPSRange
 

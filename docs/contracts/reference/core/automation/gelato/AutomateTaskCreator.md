@@ -9,37 +9,22 @@ title: AutomateTaskCreator.sol
 _Inherit this contract to allow your smart contract
 to be a task creator and create tasks._
 
-### fundsOwner
+### gelato1Balance
 
 ```solidity
-address fundsOwner
-```
-
-### taskTreasury
-
-```solidity
-contract ITaskTreasuryUpgradable taskTreasury
+contract IGelato1Balance gelato1Balance
 ```
 
 ### constructor
 
 ```solidity
-constructor(address _automate, address _fundsOwner, address opsTaskFactory) internal
+constructor(address _automate) internal
 ```
 
-### withdrawFunds
+### _depositFunds1Balance
 
 ```solidity
-function withdrawFunds(uint256 _amount, address _token) external
-```
-
-@dev
-Withdraw funds from this contract's Gelato balance to fundsOwner.
-
-### _depositFunds
-
-```solidity
-function _depositFunds(uint256 _amount, address _token) internal
+function _depositFunds1Balance(uint256 _amount, address _token, address _sponsor) internal
 ```
 
 ### _createTask
@@ -60,12 +45,6 @@ function _cancelTask(bytes32 _taskId) internal
 function _resolverModuleArg(address _resolverAddress, bytes _resolverData) internal pure returns (bytes)
 ```
 
-### _timeModuleArg
-
-```solidity
-function _timeModuleArg(uint256 _startTime, uint256 _interval) internal pure returns (bytes)
-```
-
 ### _proxyModuleArg
 
 ```solidity
@@ -76,5 +55,35 @@ function _proxyModuleArg() internal pure returns (bytes)
 
 ```solidity
 function _singleExecModuleArg() internal pure returns (bytes)
+```
+
+### _web3FunctionModuleArg
+
+```solidity
+function _web3FunctionModuleArg(string _web3FunctionHash, bytes _web3FunctionArgsHex) internal pure returns (bytes)
+```
+
+### _timeTriggerModuleArg
+
+```solidity
+function _timeTriggerModuleArg(uint128 _start, uint128 _interval) internal pure returns (bytes)
+```
+
+### _cronTriggerModuleArg
+
+```solidity
+function _cronTriggerModuleArg(string _expression) internal pure returns (bytes)
+```
+
+### _eventTriggerModuleArg
+
+```solidity
+function _eventTriggerModuleArg(address _address, bytes32[][] _topics, uint256 _blockConfirmations) internal pure returns (bytes)
+```
+
+### _blockTriggerModuleArg
+
+```solidity
+function _blockTriggerModuleArg() internal pure returns (bytes)
 ```
 

@@ -8,28 +8,10 @@ title: IOracleProviderRegistry.sol
 
 _Interface for the Oracle Provider Registry contract._
 
-### OracleProviderProperties
-
-```solidity
-struct OracleProviderProperties {
-  uint32 minTakeProfitBPS;
-  uint32 maxTakeProfitBPS;
-  uint8 leverageLevel;
-}
-```
-
-_The OracleProviderProperties struct represents properties of the oracle provider._
-
-| Name | Type | Description |
-| ---- | ---- | ----------- |
-| minTakeProfitBPS | uint32 | The minimum take-profit basis points. |
-| maxTakeProfitBPS | uint32 | The maximum take-profit basis points. |
-| leverageLevel | uint8 | The leverage level of the oracle provider. |
-
 ### OracleProviderRegistered
 
 ```solidity
-event OracleProviderRegistered(address oracleProvider, struct IOracleProviderRegistry.OracleProviderProperties properties)
+event OracleProviderRegistered(address oracleProvider, struct OracleProviderProperties properties)
 ```
 
 _Emitted when a new oracle provider is registered._
@@ -39,7 +21,7 @@ _Emitted when a new oracle provider is registered._
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | oracleProvider | address | The address of the registered oracle provider. |
-  | properties | struct IOracleProviderRegistry.OracleProviderProperties | The properties of the registered oracle provider. |
+  | properties | struct OracleProviderProperties | The properties of the registered oracle provider. |
 
 ### OracleProviderUnregistered
 
@@ -89,7 +71,7 @@ _Emitted when the level of an oracle provider is set._
 ### registerOracleProvider
 
 ```solidity
-function registerOracleProvider(address oracleProvider, struct IOracleProviderRegistry.OracleProviderProperties properties) external
+function registerOracleProvider(address oracleProvider, struct OracleProviderProperties properties) external
 ```
 
 Registers an oracle provider.
@@ -99,7 +81,7 @@ Registers an oracle provider.
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | oracleProvider | address | The address of the oracle provider to register. |
-  | properties | struct IOracleProviderRegistry.OracleProviderProperties | The properties of the oracle provider. |
+  | properties | struct OracleProviderProperties | The properties of the oracle provider. |
 
 ### unregisterOracleProvider
 
@@ -152,7 +134,7 @@ Checks if an oracle provider is registered.
 ### getOracleProviderProperties
 
 ```solidity
-function getOracleProviderProperties(address oracleProvider) external view returns (struct IOracleProviderRegistry.OracleProviderProperties)
+function getOracleProviderProperties(address oracleProvider) external view returns (struct OracleProviderProperties)
 ```
 
 Retrieves the properties of an oracle provider.
@@ -167,7 +149,7 @@ Retrieves the properties of an oracle provider.
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | struct IOracleProviderRegistry.OracleProviderProperties | The properties of the oracle provider. |
+  | [0] | struct OracleProviderProperties | The properties of the oracle provider. |
 
 ### updateTakeProfitBPSRange
 

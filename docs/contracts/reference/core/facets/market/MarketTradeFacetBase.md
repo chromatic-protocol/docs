@@ -45,7 +45,7 @@ _Internal function for claiming a position._
 ### _callClaimPositionCallback
 
 ```solidity
-function _callClaimPositionCallback(struct LpContext ctx, struct Position position, int256 realizedPnl, uint256 interest, bytes data, address liquidatorAddress, bytes4 cause) internal
+function _callClaimPositionCallback(struct LpContext ctx, struct Position position, int256 realizedPnl, uint256 interest, bytes data, bytes4 cause) internal
 ```
 
 ### _getPosition

@@ -165,14 +165,6 @@ error OnlyAccessableByDao()
 
 _Throws an error indicating that the caller is not the DAO._
 
-### AlreadySetLiquidator
-
-```solidity
-error AlreadySetLiquidator()
-```
-
-_Throws an error indicating that the chromatic liquidator address is already set._
-
 ### AlreadySetVault
 
 ```solidity
@@ -180,14 +172,6 @@ error AlreadySetVault()
 ```
 
 _Throws an error indicating that the chromatic vault address is already set._
-
-### AlreadySetKeeperFeePayer
-
-```solidity
-error AlreadySetKeeperFeePayer()
-```
-
-_Throws an error indicating that the keeper fee payer address is already set._
 
 ### AlreadySetMarketSettlement
 
@@ -225,6 +209,14 @@ _Throws an error indicating that a market already exists for the given oracle pr
 
 _A contract that implements the ChromaticVault interface
      and provides functionality for managing positions, liquidity, and fees in Chromatic markets._
+
+### OnlyAccessableByDao
+
+```solidity
+error OnlyAccessableByDao()
+```
+
+_Throws an error indicating that the caller is not the DAO._
 
 ### OnlyAccessableByFactoryOrDao
 
@@ -301,6 +293,16 @@ error InvalidSwapValue()
 ```
 
 _Throws an error indicating that the swap value for the Uniswap trade is invalid._
+
+## GelatoVaultEarningDistributor
+
+### OnlyAccessableByDao
+
+```solidity
+error OnlyAccessableByDao()
+```
+
+_Throws an error indicating that the caller is not the DAO._
 
 ## LiquidatorBase
 
@@ -686,9 +688,7 @@ _Throws an error indicating that the caller is not a registered market._
 | ---- | ---- |
 |0x1353f3f1|OnlyAccessableByMarket()|
 |0x808ca14f|OnlyAccessableByDao()|
-|0xb209caed|AlreadySetLiquidator()|
 |0xb661034d|AlreadySetVault()|
-|0x85295cee|AlreadySetKeeperFeePayer()|
 |0x19b72bf5|AlreadySetMarketSettlement()|
 |0x3c9b5739|NotRegisteredOracleProvider()|
 |0x12a5f552|NotRegisteredSettlementToken()|

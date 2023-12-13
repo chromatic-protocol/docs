@@ -15,12 +15,6 @@ _A contract that implements the ChromaticVault interface
 contract IChromaticMarketFactory factory
 ```
 
-### keeperFeePayer
-
-```solidity
-contract IKeeperFeePayer keeperFeePayer
-```
-
 ### earningDistributor
 
 ```solidity
@@ -75,6 +69,14 @@ mapping(address => uint256) pendingDeposits
 mapping(address => uint256) pendingWithdrawals
 ```
 
+### OnlyAccessableByDao
+
+```solidity
+error OnlyAccessableByDao()
+```
+
+_Throws an error indicating that the caller is not the DAO._
+
 ### OnlyAccessableByFactoryOrDao
 
 ```solidity
@@ -114,6 +116,15 @@ error NotEnoughFeePaid()
 ```
 
 _Throws an error indicating that the recipient has not paid the sufficient flash loan fee._
+
+### onlyDao
+
+```solidity
+modifier onlyDao()
+```
+
+_Modifier to restrict access to only the DAO.
+     Throws an `OnlyAccessableByDao` error if the caller is not the DAO._
 
 ### onlyFactoryOrDao
 
@@ -375,6 +386,20 @@ _The pending share of earnings is calculated based on the bin balance, maker bal
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | [0] | uint256 | The pending share of earnings for the specified bin. |
+
+### migrateEarningDistributionTasks
+
+```solidity
+function migrateEarningDistributionTasks(contract IVaultEarningDistributor oldEarningDistributor) external
+```
+
+### setVaultEarningDistributor
+
+```solidity
+function setVaultEarningDistributor(address _earningDistributor) external
+```
+
+_This function can only be called by the DAO address._
 
 ### createMakerEarningDistributionTask
 

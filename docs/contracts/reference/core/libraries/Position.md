@@ -16,6 +16,7 @@ struct Position {
   uint256 closeTimestamp;
   uint256 takerMargin;
   address owner;
+  address liquidator;
   BinMargin[] _binMargins;
   uint8 _feeProtocol;
 }
@@ -33,6 +34,7 @@ _The Position struct represents a trading position._
 | closeTimestamp | uint256 | The timestamp when the position was closed |
 | takerMargin | uint256 | The amount of collateral that a trader must provide |
 | owner | address | The owner of the position, usually it is the account address of trader |
+| liquidator | address | The liquidator contract address |
 | _binMargins | BinMargin[] | The bin margins for the position, it represents the amount of collateral for each bin |
 | _feeProtocol | uint8 | The protocol fee for the market |
 

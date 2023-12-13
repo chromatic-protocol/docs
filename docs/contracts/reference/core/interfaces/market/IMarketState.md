@@ -79,20 +79,6 @@ _Returns the CLB token contract for the market._
   | ---- | ---- | ----------- |
   | [0] | contract ICLBToken | The CLB token contract. |
 
-### liquidator
-
-```solidity
-function liquidator() external view returns (contract ILiquidator)
-```
-
-_Returns the liquidator contract for the market._
-
-- Return Values:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | [0] | contract ILiquidator | The liquidator contract. |
-
 ### vault
 
 ```solidity
@@ -106,20 +92,6 @@ _Returns the vault contract for the market._
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | [0] | contract IChromaticVault | The vault contract. |
-
-### keeperFeePayer
-
-```solidity
-function keeperFeePayer() external view returns (contract IKeeperFeePayer)
-```
-
-_Returns the keeper fee payer contract for the market._
-
-- Return Values:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | [0] | contract IKeeperFeePayer | The keeper fee payer contract. |
 
 ### feeProtocol
 

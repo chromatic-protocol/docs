@@ -28,6 +28,18 @@ address dedicatedMsgSender
 address ETH
 ```
 
+### CancelTaskSucceeded
+
+```solidity
+event CancelTaskSucceeded(bytes32 taskId)
+```
+
+### CancelTaskFailed
+
+```solidity
+event CancelTaskFailed(bytes32 taskId)
+```
+
 ### onlyDedicatedMsgSender
 
 ```solidity
@@ -41,7 +53,7 @@ the functions with this modifier.
 ### constructor
 
 ```solidity
-constructor(address _automate, address _taskCreator, address opsProxyFactory) internal
+constructor(address _automate, address _taskCreator) internal
 ```
 
 @dev

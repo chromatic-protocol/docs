@@ -18,10 +18,27 @@ mapping(address => bytes32) makerEarningDistributionTaskIds
 mapping(address => bytes32) marketEarningDistributionTaskIds
 ```
 
+### OnlyAccessableByDao
+
+```solidity
+error OnlyAccessableByDao()
+```
+
+_Throws an error indicating that the caller is not the DAO._
+
+### onlyDao
+
+```solidity
+modifier onlyDao()
+```
+
+_Modifier to restrict access to only the DAO.
+     Throws an `OnlyAccessableByDao` error if the caller is not the DAO._
+
 ### constructor
 
 ```solidity
-constructor(contract IChromaticMarketFactory _factory, address _automate, address opsProxyFactory) public
+constructor(contract IChromaticMarketFactory _factory, address _automate) public
 ```
 
 ### createMakerEarningDistributionTask
@@ -40,6 +57,12 @@ _This function can only be called by the Chromatic factory contract or the DAO.
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | token | address | The address of the settlement token. |
+
+### cancelGelatoTask
+
+```solidity
+function cancelGelatoTask(bytes32 taskId) external
+```
 
 ### cancelMakerEarningDistributionTask
 
@@ -140,10 +163,10 @@ function _getFeeInfo() internal view returns (uint256 fee, address feePayee)
 function _resolverModuleArg(bytes _resolverData) internal view returns (bytes)
 ```
 
-### _timeModuleArg
+### _timeTriggerModuleArg
 
 ```solidity
-function _timeModuleArg(uint256 _startTime, uint256 _interval) internal pure returns (bytes)
+function _timeTriggerModuleArg(uint256 _startTime, uint256 _interval) internal pure returns (bytes)
 ```
 
 ### _proxyModuleArg

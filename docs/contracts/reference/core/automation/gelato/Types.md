@@ -9,9 +9,22 @@ title: Types.sol
 ```solidity
 enum Module {
   RESOLVER,
-  TIME,
+  DEPRECATED_TIME,
   PROXY,
-  SINGLE_EXEC
+  SINGLE_EXEC,
+  WEB3_FUNCTION,
+  TRIGGER
+}
+```
+
+## TriggerType
+
+```solidity
+enum TriggerType {
+  TIME,
+  CRON,
+  EVENT,
+  BLOCK
 }
 ```
 
@@ -50,24 +63,18 @@ function getFeeDetails() external view returns (uint256, address)
 function gelato() external view returns (address payable)
 ```
 
-### taskTreasury
+### taskModuleAddresses
 
 ```solidity
-function taskTreasury() external view returns (contract ITaskTreasuryUpgradable)
+function taskModuleAddresses(enum Module) external view returns (address)
 ```
 
-## ITaskTreasuryUpgradable
+## IProxyModule
 
-### depositFunds
-
-```solidity
-function depositFunds(address receiver, address token, uint256 amount) external payable
-```
-
-### withdrawFunds
+### opsProxyFactory
 
 ```solidity
-function withdrawFunds(address payable receiver, address token, uint256 amount) external
+function opsProxyFactory() external view returns (address)
 ```
 
 ## IOpsProxyFactory
@@ -76,5 +83,27 @@ function withdrawFunds(address payable receiver, address token, uint256 amount) 
 
 ```solidity
 function getProxyOf(address account) external view returns (address, bool)
+```
+
+## IGelato1Balance
+
+### depositNative
+
+```solidity
+function depositNative(address _sponsor) external payable
+```
+
+### depositToken
+
+```solidity
+function depositToken(address _sponsor, address _token, uint256 _amount) external
+```
+
+## IGelato
+
+### feeCollector
+
+```solidity
+function feeCollector() external view returns (address)
 ```
 

@@ -9,50 +9,30 @@ title: GelatoLiquidator.sol
 _A contract that handles the liquidation and claiming of positions in Chromatic markets.
      It extends the AutomateReady contracts and implements the ILiquidator interface._
 
-### liquidationInterval
+### waitPositionClaim
 
 ```solidity
-uint256 liquidationInterval
+uint256 waitPositionClaim
 ```
 
-### claimInterval
+### WaitPositionClaimUpdated
 
 ```solidity
-uint256 claimInterval
+event WaitPositionClaimUpdated(uint256 waitingTime)
 ```
 
-### UpdateLiquidationInterval
-
-```solidity
-event UpdateLiquidationInterval(uint256 interval)
-```
-
-Emitted when the liquidation task interval is updated.
+Emitted when the waiting time of the claim task is updated.
 
 - Parameters:
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | interval | uint256 | The new liquidation task interval. |
-
-### UpdateClaimInterval
-
-```solidity
-event UpdateClaimInterval(uint256 interval)
-```
-
-Emitted when the claim task interval is updated.
-
-- Parameters:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | interval | uint256 | The new claim task interval. |
+  | waitingTime | uint256 | The new waiting time of the claim task. |
 
 ### constructor
 
 ```solidity
-constructor(contract IChromaticMarketFactory _factory, address _automate, address opsProxyFactory) public
+constructor(contract IChromaticMarketFactory _factory, address _automate) public
 ```
 
 _Constructor function._
@@ -63,35 +43,20 @@ _Constructor function._
   | ---- | ---- | ----------- |
   | _factory | contract IChromaticMarketFactory | The address of the Chromatic Market Factory contract. |
   | _automate | address | The address of the Gelato Automate contract. |
-  | opsProxyFactory | address | The address of the Ops Proxy Factory contract. |
 
-### updateLiquidationInterval
+### updateWaitPositionClaim
 
 ```solidity
-function updateLiquidationInterval(uint256 interval) external
+function updateWaitPositionClaim(uint256 waitingTime) external
 ```
 
-Updates the liquidation task interval.
+Updates the waiting time of the claim task.
 
 - Parameters:
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | interval | uint256 | The new liquidation task interval. |
-
-### updateClaimInterval
-
-```solidity
-function updateClaimInterval(uint256 interval) external
-```
-
-Updates the claim task interval.
-
-- Parameters:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | interval | uint256 | The new claim task interval. |
+  | waitingTime | uint256 | The new waiting time of the claim task. |
 
 ### createLiquidationTask
 
@@ -205,22 +170,11 @@ _This function is called by the automation system._
   | canExec | bool | Whether the claim can be executed. |
   | execPayload | bytes | The encoded function call to execute the claim. |
 
-### _createTask
+### cancelGelatoTask
 
 ```solidity
-function _createTask(mapping(address => mapping(uint256 => bytes32)) registry, uint256 positionId, function (address,uint256) view external returns (bool,bytes) resolve, uint256 interval) internal
+function cancelGelatoTask(bytes32 taskId) external
 ```
-
-_Internal function to create a Gelato task for liquidation or claim position._
-
-- Parameters:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | registry | mapping(address &#x3D;&gt; mapping(uint256 &#x3D;&gt; bytes32)) | The mapping to store task IDs. |
-  | positionId | uint256 | The ID of the position. |
-  | resolve | function (address,uint256) view external returns (bool,bytes) | The resolve function to be called by the Gelato automation system. |
-  | interval | uint256 | The interval between task executions. |
 
 ### _cancelTask
 

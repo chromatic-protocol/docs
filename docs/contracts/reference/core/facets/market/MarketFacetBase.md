@@ -39,15 +39,6 @@ modifier onlyDao()
 _Modifier to restrict access to only the DAO.
      Throws an `OnlyAccessableByDao` error if the caller is not the DAO._
 
-### onlyLiquidator
-
-```solidity
-modifier onlyLiquidator()
-```
-
-_Modifier to restrict access to only the liquidator contract.
-     Throws an `OnlyAccessableByLiquidator` error if the caller is not the chromatic liquidator contract._
-
 ### onlyVault
 
 ```solidity

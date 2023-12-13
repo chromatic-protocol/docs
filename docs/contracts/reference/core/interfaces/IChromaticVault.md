@@ -56,6 +56,27 @@ _Emitted when market earning is distributed._
   | usedKeeperFee | uint256 | The amount of keeper fee used. |
   | marketBalance | uint256 | The balance of the market. |
 
+### VaultEarningDistributorSet
+
+```solidity
+event VaultEarningDistributorSet(address vaultEarningDistributor, address oldVaultEarningDistributor)
+```
+
+Emitted when the vault earning distributor address is set.
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | vaultEarningDistributor | address | The vault earning distributor address. |
+  | oldVaultEarningDistributor | address | The old vault earning distributor address. |
+
+### setVaultEarningDistributor
+
+```solidity
+function setVaultEarningDistributor(address _earningDistributor) external
+```
+
 ### pendingMakerEarnings
 
 ```solidity

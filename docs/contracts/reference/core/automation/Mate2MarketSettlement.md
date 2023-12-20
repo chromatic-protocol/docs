@@ -203,3 +203,9 @@ function balanceOfUpkeepTreasury() external view returns (uint256)
 function withdrawUpkeepTreasuryFunds(address payable _receiver, uint256 _amount) external
 ```
 
+### cancelUpkeep
+
+```solidity
+function cancelUpkeep(uint256 upkeepId) external
+```
+

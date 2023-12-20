@@ -14,7 +14,7 @@ struct MarketStorage {
   contract ICLBToken clbToken;
   contract IChromaticVault vault;
   struct LiquidityPool liquidityPool;
-  uint8 feeProtocol;
+  uint16 protocolFeeRate;
 }
 ```
 

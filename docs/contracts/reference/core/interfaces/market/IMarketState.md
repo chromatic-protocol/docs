@@ -8,20 +8,20 @@ title: IMarketState.sol
 
 _Interface for accessing the state of a market contract._
 
-### SetFeeProtocol
+### ProtocolFeeRateSet
 
 ```solidity
-event SetFeeProtocol(uint8 feeProtocolOld, uint8 feeProtocolNew)
+event ProtocolFeeRateSet(uint16 protocolFeeRateOld, uint16 protocolFeeRateNew)
 ```
 
-Emitted when the protocol fee is changed by the market
+Emitted when the protocol fee rate is changed by the market
 
 - Parameters:
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | feeProtocolOld | uint8 | The previous value of the protocol fee |
-  | feeProtocolNew | uint8 | The updated value of the protocol fee |
+  | protocolFeeRateOld | uint16 | The previous value of the protocol fee rate |
+  | protocolFeeRateNew | uint16 | The updated value of the protocol fee rate |
 
 ### factory
 
@@ -93,31 +93,31 @@ _Returns the vault contract for the market._
   | ---- | ---- | ----------- |
   | [0] | contract IChromaticVault | The vault contract. |
 
-### feeProtocol
+### protocolFeeRate
 
 ```solidity
-function feeProtocol() external view returns (uint8)
+function protocolFeeRate() external view returns (uint16)
 ```
 
-Returns the denominator of the protocol's % share of the fees
+Returns the protocol fee rate
 
 - Return Values:
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | uint8 | The protocol fee for the market |
+  | [0] | uint16 | The protocol fee rate for the market |
 
-### setFeeProtocol
+### setProtocolFeeRate
 
 ```solidity
-function setFeeProtocol(uint8 _feeProtocol) external
+function setProtocolFeeRate(uint16 _protocolFeeRate) external
 ```
 
-Set the denominator of the protocol's % share of the fees
+Set the new protocol fee rate
 
 - Parameters:
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | _feeProtocol | uint8 | new protocol fee for the market |
+  | _protocolFeeRate | uint16 | new protocol fee rate for the market |
 

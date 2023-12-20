@@ -173,14 +173,6 @@ error AlreadySetVault()
 
 _Throws an error indicating that the chromatic vault address is already set._
 
-### AlreadySetMarketSettlement
-
-```solidity
-error AlreadySetMarketSettlement()
-```
-
-_Throws an error indicating that the market settlement task address is already set._
-
 ### NotRegisteredOracleProvider
 
 ```solidity
@@ -294,16 +286,6 @@ error InvalidSwapValue()
 
 _Throws an error indicating that the swap value for the Uniswap trade is invalid._
 
-## GelatoVaultEarningDistributor
-
-### OnlyAccessableByDao
-
-```solidity
-error OnlyAccessableByDao()
-```
-
-_Throws an error indicating that the caller is not the DAO._
-
 ## LiquidatorBase
 
 ### OnlyAccessableByDao
@@ -349,6 +331,14 @@ error ExistMarketSettlementTask()
 _Throws an error indicating that a market settlement task already exists._
 
 ## VaultEarningDistributorBase
+
+### OnlyAccessableByDao
+
+```solidity
+error OnlyAccessableByDao()
+```
+
+_Throws an error indicating that the caller is not the DAO._
 
 ### OnlyAccessableByVault
 
@@ -689,7 +679,6 @@ _Throws an error indicating that the caller is not a registered market._
 |0x1353f3f1|OnlyAccessableByMarket()|
 |0x808ca14f|OnlyAccessableByDao()|
 |0xb661034d|AlreadySetVault()|
-|0x19b72bf5|AlreadySetMarketSettlement()|
 |0x3c9b5739|NotRegisteredOracleProvider()|
 |0x12a5f552|NotRegisteredSettlementToken()|
 |0xde70de22|ExistMarket()|

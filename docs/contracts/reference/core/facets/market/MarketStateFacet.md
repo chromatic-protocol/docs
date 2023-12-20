@@ -76,31 +76,31 @@ _Returns the vault contract for the market._
   | ---- | ---- | ----------- |
   | _vault | contract IChromaticVault | The vault contract. |
 
-### feeProtocol
+### protocolFeeRate
 
 ```solidity
-function feeProtocol() external view returns (uint8 _feeProtocol)
+function protocolFeeRate() external view returns (uint16 _protocolFeeRate)
 ```
 
-Returns the denominator of the protocol's % share of the fees
+Returns the protocol fee rate
 
 - Return Values:
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | _feeProtocol | uint8 | The protocol fee for the market |
+  | _protocolFeeRate | uint16 | The protocol fee rate for the market |
 
-### setFeeProtocol
+### setProtocolFeeRate
 
 ```solidity
-function setFeeProtocol(uint8 _feeProtocol) external
+function setProtocolFeeRate(uint16 _protocolFeeRate) external
 ```
 
-Set the denominator of the protocol's % share of the fees
+Set the new protocol fee rate
 
 - Parameters:
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | _feeProtocol | uint8 | new protocol fee for the market |
+  | _protocolFeeRate | uint16 | new protocol fee rate for the market |
 

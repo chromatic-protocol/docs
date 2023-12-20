@@ -20,10 +20,43 @@ _Storage struct for deploying a ChromaticMarket contract_
 struct Parameters {
   address oracleProvider;
   address settlementToken;
+  uint16 protocolFeeRate;
 }
 ```
 
 _Struct for storing deployment parameters_
+
+## DeployArgs
+
+```solidity
+struct DeployArgs {
+  address oracleProvider;
+  address settlementToken;
+  address marketDiamondCutFacet;
+  address marketLoupeFacet;
+  address marketStateFacet;
+  address marketLiquidityFacet;
+  address marketLensFacet;
+  address marketTradeFacet;
+  address marketLiquidateFacet;
+  address marketSettleFacet;
+  uint16 protocolFeeRate;
+}
+```
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| oracleProvider | address | The address of the oracle provider |
+| settlementToken | address | The address of the settlement token |
+| marketDiamondCutFacet | address | The market diamond cut facet address. |
+| marketLoupeFacet | address | The market loupe facet address. |
+| marketStateFacet | address | The market state facet address. |
+| marketLiquidityFacet | address | The market liquidity facet address. |
+| marketLensFacet | address | The market liquidity lens facet address. |
+| marketTradeFacet | address | The market trade facet address. |
+| marketLiquidateFacet | address | The market liquidate facet address. |
+| marketSettleFacet | address | The market settle facet address. |
+| protocolFeeRate | uint16 | The protocol fee rate for the market. |
 
 ## MarketDeployerLib
 
@@ -32,7 +65,7 @@ Library for deploying a ChromaticMarket contract
 ### deploy
 
 ```solidity
-function deploy(struct MarketDeployer self, address oracleProvider, address settlementToken, address marketDiamondCutFacet, address marketLoupeFacet, address marketStateFacet, address marketLiquidityFacet, address marketLensFacet, address marketTradeFacet, address marketLiquidateFacet, address marketSettleFacet) external returns (address market)
+function deploy(struct MarketDeployer self, struct DeployArgs args) external returns (address market)
 ```
 
 Deploys a ChromaticMarket contract
@@ -42,16 +75,7 @@ Deploys a ChromaticMarket contract
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | self | struct MarketDeployer | The MarketDeployer storage |
-  | oracleProvider | address | The address of the oracle provider |
-  | settlementToken | address | The address of the settlement token |
-  | marketDiamondCutFacet | address | The market diamond cut facet address. |
-  | marketLoupeFacet | address | The market loupe facet address. |
-  | marketStateFacet | address | The market state facet address. |
-  | marketLiquidityFacet | address | The market liquidity facet address. |
-  | marketLensFacet | address | The market liquidity lens facet address. |
-  | marketTradeFacet | address | The market trade facet address. |
-  | marketLiquidateFacet | address | The market liquidate facet address. |
-  | marketSettleFacet | address | The market settle facet address. |
+  | args | struct DeployArgs | The arguments for deploy |
 
 - Return Values:
 

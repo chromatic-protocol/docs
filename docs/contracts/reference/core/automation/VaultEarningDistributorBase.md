@@ -12,6 +12,14 @@ title: VaultEarningDistributorBase.sol
 contract IChromaticMarketFactory factory
 ```
 
+### OnlyAccessableByDao
+
+```solidity
+error OnlyAccessableByDao()
+```
+
+_Throws an error indicating that the caller is not the DAO._
+
 ### OnlyAccessableByVault
 
 ```solidity
@@ -35,6 +43,15 @@ error ExistMarketEarningDistributionTask()
 ```
 
 _Throws an error indicating that a market earning distribution task already exists._
+
+### onlyDao
+
+```solidity
+modifier onlyDao()
+```
+
+_Modifier to restrict access to only the DAO.
+     Throws an `OnlyAccessableByDao` error if the caller is not the DAO._
 
 ### onlyVault
 

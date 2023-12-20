@@ -17,8 +17,8 @@ struct Position {
   uint256 takerMargin;
   address owner;
   address liquidator;
+  uint16 _protocolFeeRate;
   BinMargin[] _binMargins;
-  uint8 _feeProtocol;
 }
 ```
 
@@ -36,7 +36,7 @@ _The Position struct represents a trading position._
 | owner | address | The owner of the position, usually it is the account address of trader |
 | liquidator | address | The liquidator contract address |
 | _binMargins | BinMargin[] | The bin margins for the position, it represents the amount of collateral for each bin |
-| _feeProtocol | uint8 | The protocol fee for the market |
+| _protocolFeeRate | uint16 | The protocol fee rate for the market |
 
 ## PositionLib
 

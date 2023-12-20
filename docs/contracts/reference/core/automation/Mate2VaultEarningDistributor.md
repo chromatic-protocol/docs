@@ -200,3 +200,9 @@ Resolves the market earning distribution for a market.
 function _getFeeInfo() internal view returns (uint256 fee, address feePayee)
 ```
 
+### cancelUpkeep
+
+```solidity
+function cancelUpkeep(uint256 upkeepId) external
+```
+

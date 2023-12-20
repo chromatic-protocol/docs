@@ -56,6 +56,14 @@ address marketSettlement
 
 Returns the address of the market settlement task.
 
+### defaultProtocolFeeRate
+
+```solidity
+uint16 defaultProtocolFeeRate
+```
+
+Returns the default protocol fee rate.
+
 ### OnlyAccessableByDao
 
 ```solidity
@@ -71,14 +79,6 @@ error AlreadySetVault()
 ```
 
 _Throws an error indicating that the chromatic vault address is already set._
-
-### AlreadySetMarketSettlement
-
-```solidity
-error AlreadySetMarketSettlement()
-```
-
-_Throws an error indicating that the market settlement task address is already set._
 
 ### NotRegisteredOracleProvider
 
@@ -189,22 +189,53 @@ _This function can only be called by the DAO address._
   | ---- | ---- | ----------- |
   | _treasury | address | The new DAO treasury address. |
 
-### setLiquidator
+### updateLiquidator
 
 ```solidity
-function setLiquidator(address _liquidator) external
+function updateLiquidator(address _liquidator) external
 ```
 
-Sets the liquidator address.
+Updates the liquidator address.
 
-_This function can only be called by the DAO address.
-     Throws an `AlreadySetLiquidator` error if the liquidator address has already been set._
+_This function can only be called by the DAO address._
 
 - Parameters:
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | _liquidator | address | The liquidator address. |
+  | _liquidator | address | The new liquidator address. |
+
+### updateKeeperFeePayer
+
+```solidity
+function updateKeeperFeePayer(address _keeperFeePayer) external
+```
+
+Updates the keeper fee payer address.
+
+_This function can only be called by the DAO address._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _keeperFeePayer | address | The new keeper fee payer address. |
+
+### updateDefaultProtocolFeeRate
+
+```solidity
+function updateDefaultProtocolFeeRate(uint16 _defaultProtocolFeeRate) external
+```
+
+Updates the default protocl fee rate.
+
+_This function can only be called by the DAO address._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _defaultProtocolFeeRate | uint16 | The new default protocol fee rate. |
 
 ### setVault
 
@@ -223,13 +254,13 @@ _This function can only be called by the DAO address.
   | ---- | ---- | ----------- |
   | _vault | address | The vault address. |
 
-### setKeeperFeePayer
+### updateMarketSettlement
 
 ```solidity
-function setKeeperFeePayer(address _keeperFeePayer) external
+function updateMarketSettlement(address _marketSettlement) external
 ```
 
-Sets the keeper fee payer address.
+Updates the market settlement task address.
 
 _This function can only be called by the DAO address._
 
@@ -237,24 +268,7 @@ _This function can only be called by the DAO address._
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | _keeperFeePayer | address | The keeper fee payer address. |
-
-### setMarketSettlement
-
-```solidity
-function setMarketSettlement(address _marketSettlement) external
-```
-
-Sets the market settlement task address.
-
-_This function can only be called by the DAO address.
-     Throws an `AlreadySetMarketSettlement` error if the market settlement task address has already been set._
-
-- Parameters:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | _marketSettlement | address | The market settlement task address. |
+  | _marketSettlement | address | The new market settlement task address. |
 
 ### getMarkets
 
@@ -353,7 +367,7 @@ _This function creates a new market using the specified oracle provider and sett
 ### parameters
 
 ```solidity
-function parameters() external view returns (address oracleProvider, address settlementToken)
+function parameters() external view returns (address oracleProvider, address settlementToken, uint16 protocolFeeRate)
 ```
 
 Get the parameters to be used in constructing the market, set transiently during market creation.
@@ -361,6 +375,7 @@ Get the parameters to be used in constructing the market, set transiently during
 _Called by the market constructor to fetch the parameters of the market
 Returns underlyingAsset The underlying asset of the market
 Returns settlementToken The settlement token of the market
+Returns protocolFeeRate The protocol fee rate of the market
 Returns vPoolCapacity Capacity of virtual future pool
 Returns vPoolA Amplification coefficient of virtual future pool, precise value_
 

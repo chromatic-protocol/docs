@@ -8,10 +8,10 @@ title: IChromaticMarketFactory.sol
 
 _Interface for the Chromatic Market Factory contract._
 
-### UpdateDao
+### DaoUpdated
 
 ```solidity
-event UpdateDao(address dao)
+event DaoUpdated(address daoOld, address daoNew)
 ```
 
 Emitted when the DAO address is updated.
@@ -20,12 +20,13 @@ Emitted when the DAO address is updated.
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | dao | address | The new DAO address. |
+  | daoOld | address | The old DAO address. |
+  | daoNew | address | The new DAO address. |
 
-### UpdateTreasury
+### TreasuryUpdated
 
 ```solidity
-event UpdateTreasury(address treasury)
+event TreasuryUpdated(address treasuryOld, address treasuryNew)
 ```
 
 Emitted when the DAO treasury address is updated.
@@ -34,26 +35,58 @@ Emitted when the DAO treasury address is updated.
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | treasury | address | The new DAO treasury address. |
+  | treasuryOld | address | The old DAO treasury address. |
+  | treasuryNew | address | The new DAO treasury address. |
 
-### SetLiquidator
+### LiquidatorUpdated
 
 ```solidity
-event SetLiquidator(address liquidator)
+event LiquidatorUpdated(address liquidatorOld, address liquidatorNew)
 ```
 
-Emitted when the liquidator address is set.
+Emitted when the liquidator address is updated.
 
 - Parameters:
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | liquidator | address | The liquidator address. |
+  | liquidatorOld | address | The old liquidator address. |
+  | liquidatorNew | address | The new liquidator address. |
 
-### SetVault
+### KeeperFeePayerUpdated
 
 ```solidity
-event SetVault(address vault)
+event KeeperFeePayerUpdated(address keeperFeePayerOld, address keeperFeePayerNew)
+```
+
+Emitted when the keeper fee payer address is updated.
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | keeperFeePayerOld | address | The old keeper fee payer address. |
+  | keeperFeePayerNew | address | The new keeper fee payer address. |
+
+### DefaultProtocolFeeRateUpdated
+
+```solidity
+event DefaultProtocolFeeRateUpdated(uint16 defaultProtocolFeeRateOld, uint16 defaultProtocolFeeRateNew)
+```
+
+Emitted when the default protocol fee rate is updated.
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | defaultProtocolFeeRateOld | uint16 | The old default protocol fee rate. |
+  | defaultProtocolFeeRateNew | uint16 | The new default protocol fee rate. |
+
+### VaultSet
+
+```solidity
+event VaultSet(address vault)
 ```
 
 Emitted when the vault address is set.
@@ -64,33 +97,20 @@ Emitted when the vault address is set.
   | ---- | ---- | ----------- |
   | vault | address | The vault address. |
 
-### SetKeeperFeePayer
+### MarketSettlementUpdated
 
 ```solidity
-event SetKeeperFeePayer(address keeperFeePayer)
+event MarketSettlementUpdated(address marketSettlementOld, address marketSettlementNew)
 ```
 
-Emitted when the keeper fee payer address is set.
+Emitted when the market settlement task address is updated.
 
 - Parameters:
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | keeperFeePayer | address | The keeper fee payer address. |
-
-### SetMarketSettlement
-
-```solidity
-event SetMarketSettlement(address marketSettlement)
-```
-
-Emitted when the market settlement task address is set.
-
-- Parameters:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | marketSettlement | address | The market settlement task address. |
+  | marketSettlementOld | address | The old market settlement task address. |
+  | marketSettlementNew | address | The new market settlement task address. |
 
 ### MarketCreated
 
@@ -192,6 +212,20 @@ Returns the address of the market settlement task.
   | ---- | ---- | ----------- |
   | [0] | address | The address of the market settlement task. |
 
+### defaultProtocolFeeRate
+
+```solidity
+function defaultProtocolFeeRate() external view returns (uint16)
+```
+
+Returns the default protocol fee rate.
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | uint16 | The default protocol fee rate. |
+
 ### updateDao
 
 ```solidity
@@ -220,19 +254,47 @@ Updates the DAO treasury address.
   | ---- | ---- | ----------- |
   | _treasury | address | The new DAO treasury address. |
 
-### setLiquidator
+### updateLiquidator
 
 ```solidity
-function setLiquidator(address _liquidator) external
+function updateLiquidator(address _liquidator) external
 ```
 
-Sets the liquidator address.
+Updates the liquidator address.
 
 - Parameters:
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | _liquidator | address | The liquidator address. |
+  | _liquidator | address | The new liquidator address. |
+
+### updateKeeperFeePayer
+
+```solidity
+function updateKeeperFeePayer(address _keeperFeePayer) external
+```
+
+Updates the keeper fee payer address.
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _keeperFeePayer | address | The new keeper fee payer address. |
+
+### updateDefaultProtocolFeeRate
+
+```solidity
+function updateDefaultProtocolFeeRate(uint16 _defaultProtocolFeeRate) external
+```
+
+Updates the default protocl fee rate.
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _defaultProtocolFeeRate | uint16 | The new default protocol fee rate. |
 
 ### setVault
 
@@ -248,33 +310,19 @@ Sets the vault address.
   | ---- | ---- | ----------- |
   | _vault | address | The vault address. |
 
-### setKeeperFeePayer
+### updateMarketSettlement
 
 ```solidity
-function setKeeperFeePayer(address _keeperFeePayer) external
+function updateMarketSettlement(address _marketSettlement) external
 ```
 
-Sets the keeper fee payer address.
+Updates the market settlement task address.
 
 - Parameters:
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | _keeperFeePayer | address | The keeper fee payer address. |
-
-### setMarketSettlement
-
-```solidity
-function setMarketSettlement(address _marketSettlement) external
-```
-
-Sets the market settlement task address.
-
-- Parameters:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | _marketSettlement | address | The market settlement task address. |
+  | _marketSettlement | address | The new market settlement task address. |
 
 ### getMarkets
 

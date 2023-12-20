@@ -33,7 +33,7 @@ uint256 TRADING_FEE_RATE_PRECISION
 ### tradingFee
 
 ```solidity
-function tradingFee(struct BinMargin self, uint8 _feeProtocol) internal pure returns (uint256)
+function tradingFee(struct BinMargin self, uint16 _protocolFeeRate) internal pure returns (uint256)
 ```
 
 Calculates the trading fee based on the margin amount and the trading fee rate.
@@ -43,7 +43,7 @@ Calculates the trading fee based on the margin amount and the trading fee rate.
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | self | struct BinMargin | The BinMargin struct |
-  | _feeProtocol | uint8 | The protocol fee for the market |
+  | _protocolFeeRate | uint16 | The protocol fee rate for the market |
 
 - Return Values:
 
@@ -54,7 +54,7 @@ Calculates the trading fee based on the margin amount and the trading fee rate.
 ### protocolFee
 
 ```solidity
-function protocolFee(struct BinMargin self, uint8 _feeProtocol) internal pure returns (uint256)
+function protocolFee(struct BinMargin self, uint16 _protocolFeeRate) internal pure returns (uint256)
 ```
 
 Calculates the protocol fee based on the margin amount and the trading fee rate.
@@ -64,7 +64,7 @@ Calculates the protocol fee based on the margin amount and the trading fee rate.
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | self | struct BinMargin | The BinMargin struct |
-  | _feeProtocol | uint8 | The protocol fee for the market |
+  | _protocolFeeRate | uint16 | The protocol fee rate for the market |
 
 - Return Values:
 

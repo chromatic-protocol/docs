@@ -263,3 +263,9 @@ function getClaimPositionUpkeepId(address market, uint256 positionId) public vie
 function _getFeeInfo() internal view returns (uint256 fee, address feePayee)
 ```
 
+### cancelUpkeep
+
+```solidity
+function cancelUpkeep(uint256 upkeepId) external
+```
+

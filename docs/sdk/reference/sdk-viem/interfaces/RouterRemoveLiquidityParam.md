@@ -18,7 +18,7 @@ The amount of CLB tokens to remove as liquidity
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:38](https://github.com/chromatic-protocol/sdk/blob/b74e472/packages/sdk-viem/src/entities/ChromaticRouter.ts#L38)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:38](https://github.com/chromatic-protocol/sdk/blob/cf510b0/packages/sdk-viem/src/entities/ChromaticRouter.ts#L38)
 
 ___
 
@@ -30,7 +30,7 @@ The fee rate of the liquidity bin
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:34](https://github.com/chromatic-protocol/sdk/blob/b74e472/packages/sdk-viem/src/entities/ChromaticRouter.ts#L34)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:34](https://github.com/chromatic-protocol/sdk/blob/cf510b0/packages/sdk-viem/src/entities/ChromaticRouter.ts#L34)
 
 ___
 
@@ -42,4 +42,4 @@ The recipient address
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:36](https://github.com/chromatic-protocol/sdk/blob/b74e472/packages/sdk-viem/src/entities/ChromaticRouter.ts#L36)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:36](https://github.com/chromatic-protocol/sdk/blob/cf510b0/packages/sdk-viem/src/entities/ChromaticRouter.ts#L36)

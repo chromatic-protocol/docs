@@ -31,3 +31,26 @@ custom_edit_url: null
 - [RouterAddLiquidityParam](interfaces/RouterAddLiquidityParam.md)
 - [RouterOpenPositionParam](interfaces/RouterOpenPositionParam.md)
 - [RouterRemoveLiquidityParam](interfaces/RouterRemoveLiquidityParam.md)
+
+## Variables
+
+### deployedAddress
+
+• `Const` **deployedAddress**: `DeployedAddress`
+
+Deployed Address of contracts
+mapping of "chainName" to collection of contract name to deployed address
+
+**`Remarks`**
+
+use with helper functions using this constant object
+
+getDeployedAddress
+getDeployedContract
+getAllDeployedContracts
+getDeployedContractNames
+getChainNames
+
+#### Defined in
+
+[packages/sdk-ethers-v5/src/gen/deployedAddress.ts:23](https://github.com/chromatic-protocol/sdk/blob/cf510b0/packages/sdk-ethers-v5/src/gen/deployedAddress.ts#L23)

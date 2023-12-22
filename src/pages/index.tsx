@@ -233,7 +233,7 @@ function Contents() {
           isOpen={true}
           onClose={onClose}
           title="Testnet Launch"
-          message="Arbitrum Goerli testnet app will be activated shortly!"
+          message="Arbitrum Sepolia testnet app will be activated shortly!"
         />
       )} */}
     </main>

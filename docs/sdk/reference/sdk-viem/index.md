@@ -33,16 +33,16 @@ Here's an example of setting up the Client:
 
 ```ts
 import { createWalletClient, custom, getAccount, createPublicClient, http } from 'viem'
-import { arbitrumGoerli, arbitrum } from 'viem/chains'
+import { arbitrumSepolia, arbitrum } from 'viem/chains'
 import { Client } from "@chromatic-protocol/sdk-viem"
 
 const publicClient = createPublicClient({ 
-  chain: arbitrumGoerli,  // or arbitrum
+  chain: arbitrumSepolia,  // or arbitrum
   transport: http()
 })
 
 const walletClient = createWalletClient({
-  chain: arbitrumGoerli,  // or arbitrum
+  chain: arbitrumSepolia,  // or arbitrum
   transport: custom(window.ethereum)
 })
 

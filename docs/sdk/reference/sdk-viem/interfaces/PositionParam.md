@@ -18,7 +18,7 @@ The timestamp when the position was claimed
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:25](https://github.com/chromatic-protocol/sdk/blob/cf510b0/packages/sdk-viem/src/entities/ChromaticPosition.ts#L25)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:26](https://github.com/chromatic-protocol/sdk/blob/c1f851c/packages/sdk-viem/src/entities/ChromaticPosition.ts#L26)
 
 ___
 
@@ -30,7 +30,7 @@ The position identifier
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:17](https://github.com/chromatic-protocol/sdk/blob/cf510b0/packages/sdk-viem/src/entities/ChromaticPosition.ts#L17)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:18](https://github.com/chromatic-protocol/sdk/blob/c1f851c/packages/sdk-viem/src/entities/ChromaticPosition.ts#L18)
 
 ___
 
@@ -42,7 +42,7 @@ The amount of maker's margin
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:21](https://github.com/chromatic-protocol/sdk/blob/cf510b0/packages/sdk-viem/src/entities/ChromaticPosition.ts#L21)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:22](https://github.com/chromatic-protocol/sdk/blob/c1f851c/packages/sdk-viem/src/entities/ChromaticPosition.ts#L22)
 
 ___
 
@@ -54,7 +54,7 @@ The timestamp when the position was opened
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:23](https://github.com/chromatic-protocol/sdk/blob/cf510b0/packages/sdk-viem/src/entities/ChromaticPosition.ts#L23)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:24](https://github.com/chromatic-protocol/sdk/blob/c1f851c/packages/sdk-viem/src/entities/ChromaticPosition.ts#L24)
 
 ___
 
@@ -66,7 +66,7 @@ The quantity of the position
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:27](https://github.com/chromatic-protocol/sdk/blob/cf510b0/packages/sdk-viem/src/entities/ChromaticPosition.ts#L27)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:28](https://github.com/chromatic-protocol/sdk/blob/c1f851c/packages/sdk-viem/src/entities/ChromaticPosition.ts#L28)
 
 ___
 
@@ -78,4 +78,4 @@ The amount of collateral that a trader must provide
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:19](https://github.com/chromatic-protocol/sdk/blob/cf510b0/packages/sdk-viem/src/entities/ChromaticPosition.ts#L19)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:20](https://github.com/chromatic-protocol/sdk/blob/c1f851c/packages/sdk-viem/src/entities/ChromaticPosition.ts#L20)

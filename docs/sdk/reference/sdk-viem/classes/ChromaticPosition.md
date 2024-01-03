@@ -24,7 +24,7 @@ Creates a new instance of ChromaticPosition.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:82](https://github.com/chromatic-protocol/sdk/blob/c1f851c/packages/sdk-viem/src/entities/ChromaticPosition.ts#L82)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:82](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-viem/src/entities/ChromaticPosition.ts#L82)
 
 ## Methods
 
@@ -48,7 +48,7 @@ An object containing the contract instances of Lens, Market, and Market Factory.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:88](https://github.com/chromatic-protocol/sdk/blob/c1f851c/packages/sdk-viem/src/entities/ChromaticPosition.ts#L88)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:88](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-viem/src/entities/ChromaticPosition.ts#L88)
 
 ___
 
@@ -73,7 +73,7 @@ A promise that resolves to the interest.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:171](https://github.com/chromatic-protocol/sdk/blob/c1f851c/packages/sdk-viem/src/entities/ChromaticPosition.ts#L171)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:171](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-viem/src/entities/ChromaticPosition.ts#L171)
 
 ___
 
@@ -97,7 +97,7 @@ A promise that resolves to an array of interest rate records.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:140](https://github.com/chromatic-protocol/sdk/blob/c1f851c/packages/sdk-viem/src/entities/ChromaticPosition.ts#L140)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:140](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-viem/src/entities/ChromaticPosition.ts#L140)
 
 ___
 
@@ -123,7 +123,7 @@ A promise that resolves to an object containing the profit stop price and loss c
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:227](https://github.com/chromatic-protocol/sdk/blob/c1f851c/packages/sdk-viem/src/entities/ChromaticPosition.ts#L227)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:227](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-viem/src/entities/ChromaticPosition.ts#L227)
 
 ___
 
@@ -152,7 +152,7 @@ A promise that resolves to the PNL value.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:204](https://github.com/chromatic-protocol/sdk/blob/c1f851c/packages/sdk-viem/src/entities/ChromaticPosition.ts#L204)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:204](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-viem/src/entities/ChromaticPosition.ts#L204)
 
 ___
 
@@ -177,7 +177,7 @@ A promise that resolves to an array of positions.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:102](https://github.com/chromatic-protocol/sdk/blob/c1f851c/packages/sdk-viem/src/entities/ChromaticPosition.ts#L102)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:102](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-viem/src/entities/ChromaticPosition.ts#L102)
 
 ___
 
@@ -203,7 +203,7 @@ A promise that resolves to the loss cut price.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:283](https://github.com/chromatic-protocol/sdk/blob/c1f851c/packages/sdk-viem/src/entities/ChromaticPosition.ts#L283)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:283](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-viem/src/entities/ChromaticPosition.ts#L283)
 
 ___
 
@@ -229,4 +229,4 @@ A promise that resolves to the profit stop price.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:266](https://github.com/chromatic-protocol/sdk/blob/c1f851c/packages/sdk-viem/src/entities/ChromaticPosition.ts#L266)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:266](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-viem/src/entities/ChromaticPosition.ts#L266)

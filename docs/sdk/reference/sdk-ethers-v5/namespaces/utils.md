@@ -14,7 +14,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/utils/helpers.ts:102](https://github.com/chromatic-protocol/sdk/blob/c1f851c/packages/sdk-ethers-v5/src/utils/helpers.ts#L102)
+[packages/sdk-ethers-v5/src/utils/helpers.ts:102](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-ethers-v5/src/utils/helpers.ts#L102)
 
 ## Functions
 
@@ -40,7 +40,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/utils/helpers.ts:43](https://github.com/chromatic-protocol/sdk/blob/c1f851c/packages/sdk-ethers-v5/src/utils/helpers.ts#L43)
+[packages/sdk-ethers-v5/src/utils/helpers.ts:43](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-ethers-v5/src/utils/helpers.ts#L43)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/utils/helpers.ts:29](https://github.com/chromatic-protocol/sdk/blob/c1f851c/packages/sdk-ethers-v5/src/utils/helpers.ts#L29)
+[packages/sdk-ethers-v5/src/utils/helpers.ts:29](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-ethers-v5/src/utils/helpers.ts#L29)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/utils/helpers.ts:37](https://github.com/chromatic-protocol/sdk/blob/c1f851c/packages/sdk-ethers-v5/src/utils/helpers.ts#L37)
+[packages/sdk-ethers-v5/src/utils/helpers.ts:37](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-ethers-v5/src/utils/helpers.ts#L37)
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/utils/helpers.ts:53](https://github.com/chromatic-protocol/sdk/blob/c1f851c/packages/sdk-ethers-v5/src/utils/helpers.ts#L53)
+[packages/sdk-ethers-v5/src/utils/helpers.ts:53](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-ethers-v5/src/utils/helpers.ts#L53)
 
 ___
 

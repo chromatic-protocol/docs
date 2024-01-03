@@ -53,4 +53,4 @@ getChainNames
 
 #### Defined in
 
-[packages/sdk-ethers-v6/src/gen/deployedAddress.ts:23](https://github.com/chromatic-protocol/sdk/blob/c1f851c/packages/sdk-ethers-v6/src/gen/deployedAddress.ts#L23)
+[packages/sdk-ethers-v6/src/gen/deployedAddress.ts:23](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-ethers-v6/src/gen/deployedAddress.ts#L23)

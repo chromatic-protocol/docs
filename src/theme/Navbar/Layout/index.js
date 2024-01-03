@@ -45,7 +45,7 @@ export default function NavbarLayout({ children }) {
             'navbar--primary': style === 'primary',
             'navbar-sidebar--show': mobileSidebar.shown
           }
-        ) + ` ${color} background-translucent`
+        ) + ` ${color}`
       }
     >
       {children}

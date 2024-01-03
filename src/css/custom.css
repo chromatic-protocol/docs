@@ -126,6 +126,14 @@ html[data-theme='dark'] {
   }
 }
 
+.bg-main-top {
+  @apply bg-cover bg-fixed;
+  background-image: url('/static/img/bg-main-top.png');
+  background-position-y: 60%;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
 .font-mono {
   @apply tracking-tight;
   word-spacing: -0.1em;

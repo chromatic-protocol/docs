@@ -55,10 +55,21 @@ function IconArrowButton({ label, icon, to = '', href = '', onClick = null, ...p
   )
 }
 
+// function scrollFadeEffect(backgroundSelector) {
+//   const background = document.querySelector(backgroundSelector)
+
+//   window.addEventListener('scroll', function () {
+//     const opacity = 1 - window.scrollY / (this.window.innerHeight - 400)
+//     background.style.opacity = opacity < 0 ? 0 : opacity
+//   })
+// }
+
 // Limitless Trading Pairs
 function Intro() {
+  // scrollFadeEffect('.bg-main-top')
+
   return (
-    <section className="hidden lg:block pt-[70px] bg-main-top">
+    <section className="hidden lg:block pt-[70px]">
       <article className="h-[calc(100vh-70px)] min-h-[400px] lg:min-h-[800px] text-center article">
         <div className="">
           <div className="relative flex items-center justify-center">
@@ -92,8 +103,14 @@ function StartingGuide() {
             <p className="mb-8 text-2xl uppercase lg:text-4xl md:mb-12 primary">
               See the future on
             </p>
-            <div className="max-w-[910px] mx-auto px-4">
-              <Svg fill={color === 'dark' ? '#FFFFFF' : '#000000'} role="img" />
+            <div className="max-w-[910px] h-[60px] mx-auto px-4 relative">
+              <span className="w-[720px] glitch primary">
+                <Svg fill="#FC1A1A" role="img" className="effect d" />
+                <Svg fill="#1AFD19" role="img" className="effect c" />
+                <Svg fill="#1afdfe" role="img" className="effect b" />
+                <Svg fill="#fc1aff" role="img" className="effect a" />
+                <Svg fill={color === 'dark' ? '#FFFFFF' : '#000000'} role="img" />
+              </span>
             </div>
           </div>
           <div>

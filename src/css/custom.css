@@ -247,6 +247,103 @@ html[data-theme='dark'] {
   }
 }
 
+.glitch-effect {
+  @apply text-[100px] uppercase absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &::before,
+  &::after {
+    @apply text-[100px] uppercase block absolute top-0 left-0;
+    content: 'CHROMATIC';
+  }
+  &::before {
+    animation: glitch 0.3s linear infinite;
+    color: #fc1aff;
+    z-index: -2;
+  }
+  &::after {
+    animation: glitch 0.3s linear infinite reverse;
+    color: #1afdfe;
+    z-index: -2;
+  }
+}
+.glitch {
+  @apply absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .effect,
+  .effect {
+    @apply text-[100px] uppercase block absolute top-0 left-0;
+    z-index: -2;
+    &.a {
+      animation: glitch1 0.3s linear infinite;
+    }
+    &.b {
+      animation: glitch1 0.3s linear infinite reverse;
+    }
+    &.c {
+      animation: glitch2 0.3s linear infinite reverse;
+    }
+    &.d {
+      animation: glitch2 0.3s linear infinite reverse;
+    }
+  }
+}
+@keyframes glitch1 {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  20% {
+    top: -4px;
+    left: -4px;
+  }
+  40% {
+    top: 4px;
+    left: 4px;
+  }
+  60% {
+    top: -4px;
+    left: 4px;
+  }
+  80% {
+    top: 4px;
+    left: -4px;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+@keyframes glitch2 {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  20% {
+    top: 2px;
+    left: 2px;
+  }
+  40% {
+    top: -2px;
+    left: -2px;
+  }
+  60% {
+    top: 2px;
+    left: -2px;
+  }
+  80% {
+    top: -2px;
+    left: 2px;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
 /* Footer */
 .footer {
   @apply font-sans font-medium py-20;

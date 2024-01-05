@@ -86,14 +86,14 @@ function StartingGuide() {
 
   return (
     <section className="pb-[180px]">
-      <article className="h-[100vh] text-center article">
+      <article className="min-h-[100vh] pt-[70px] text-center article">
         <div className="flex flex-col justify-between gap-12 md:gap-14 wrapper">
-          <div className="">
+          <div className="mt-10 lg:mt-0">
             <p className="mb-8 text-2xl uppercase lg:text-4xl md:mb-12 primary">
               See the future on
             </p>
-            <div className="h-[60px] mx-auto px-4 relative">
-              <span className="w-4/5 max-w-[720px] glitch primary">
+            <div className="h-10 lg:h-[60px] mx-auto relative">
+              <span className="w-[calc(100%-40px)] max-w-[720px] glitch primary">
                 <Svg fill="#fc1aff" role="img" className="effect a" />
                 <Svg fill="#1afdfe" role="img" className="effect b" />
                 <Svg fill="#1AFD19" role="img" className="effect c" />

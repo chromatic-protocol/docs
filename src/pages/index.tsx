@@ -144,7 +144,7 @@ function StartingGuide() {
         <div className="wrapper">
           <h2 className="mb-10 title primary-lighter">Development</h2>
           <div className="flex flex-wrap items-stretch gap-5 lg:flex-nowrap">
-            <div className="box lg:min-h-[420px] border-lighter">
+            <div className="box lg:w-1/2 lg:min-h-[420px] border-lighter">
               <div>
                 <div className="hidden lg:block h-[50px] sub-title">
                   <TypingEffect text="Github" delay={38} className="primary" />
@@ -161,7 +161,7 @@ function StartingGuide() {
                 <IconArrowButton label="View Github" icon="github" href={CHROMATIC_LINKS.github} />
               </div>
             </div>
-            <div className="box lg:min-h-[420px] border-lighter">
+            <div className="box lg:w-1/2 lg:min-h-[420px] border-lighter">
               <div>
                 <div className="hidden lg:block h-[50px] sub-title">
                   <TypingEffect text="SDK" delay={38} className="primary" />

@@ -247,27 +247,6 @@ html[data-theme='dark'] {
   }
 }
 
-.glitch-effect {
-  @apply text-[100px] uppercase absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  &::before,
-  &::after {
-    @apply text-[100px] uppercase block absolute top-0 left-0;
-    content: 'CHROMATIC';
-  }
-  &::before {
-    animation: glitch 0.3s linear infinite;
-    color: #fc1aff;
-    z-index: -2;
-  }
-  &::after {
-    animation: glitch 0.3s linear infinite reverse;
-    color: #1afdfe;
-    z-index: -2;
-  }
-}
 .glitch {
   @apply absolute;
   top: 50%;
@@ -278,16 +257,16 @@ html[data-theme='dark'] {
     @apply text-[100px] uppercase block absolute top-0 left-0;
     z-index: -2;
     &.a {
-      animation: glitch1 0.3s linear infinite;
+      animation: glitch1 0.4s linear infinite;
     }
     &.b {
-      animation: glitch1 0.3s linear infinite reverse;
+      animation: glitch1 0.4s linear infinite reverse;
     }
     &.c {
-      animation: glitch2 0.3s linear infinite reverse;
+      animation: glitch2 0.6s linear infinite;
     }
     &.d {
-      animation: glitch2 0.3s linear infinite reverse;
+      animation: glitch2 0.6s linear infinite reverse;
     }
   }
 }

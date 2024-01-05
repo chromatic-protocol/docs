@@ -126,6 +126,14 @@ html[data-theme='dark'] {
   }
 }
 
+.bg-main-top {
+  @apply bg-cover bg-fixed;
+  background-image: url('/static/img/bg-main-top.png');
+  background-position-y: 60%;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
 .font-mono {
   @apply tracking-tight;
   word-spacing: -0.1em;
@@ -236,6 +244,82 @@ html[data-theme='dark'] {
   }
   .btn.h-7 {
     @apply hidden;
+  }
+}
+
+.glitch {
+  @apply absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .effect,
+  .effect {
+    @apply text-[100px] uppercase block absolute top-0 left-0;
+    z-index: -2;
+    &.a {
+      animation: glitch1 0.4s linear infinite;
+    }
+    &.b {
+      animation: glitch1 0.4s linear infinite reverse;
+    }
+    &.c {
+      animation: glitch2 0.6s linear infinite;
+    }
+    &.d {
+      animation: glitch2 0.6s linear infinite reverse;
+    }
+  }
+}
+@keyframes glitch1 {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  20% {
+    top: -4px;
+    left: -4px;
+  }
+  40% {
+    top: 4px;
+    left: 4px;
+  }
+  60% {
+    top: -4px;
+    left: 4px;
+  }
+  80% {
+    top: 4px;
+    left: -4px;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+@keyframes glitch2 {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  20% {
+    top: 2px;
+    left: 2px;
+  }
+  40% {
+    top: -2px;
+    left: -2px;
+  }
+  60% {
+    top: 2px;
+    left: -2px;
+  }
+  80% {
+    top: -2px;
+    left: 2px;
+  }
+  100% {
+    top: 0;
+    left: 0;
   }
 }
 

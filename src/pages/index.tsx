@@ -58,7 +58,7 @@ function IconArrowButton({ label, icon, to = '', href = '', onClick = null, ...p
 // Limitless Trading Pairs
 function Intro() {
   return (
-    <section className="hidden lg:block bg-gradient-chrm bg-flip pt-[70px]">
+    <section className="hidden lg:block pt-[70px]">
       <article className="h-[calc(100vh-70px)] min-h-[400px] lg:min-h-[800px] text-center article">
         <div className="">
           <div className="relative flex items-center justify-center">
@@ -86,14 +86,20 @@ function StartingGuide() {
 
   return (
     <section className="pb-[180px]">
-      <article className="h-[100vh] text-center article">
+      <article className="min-h-[100vh] pt-[70px] text-center article">
         <div className="flex flex-col justify-between gap-12 md:gap-14 wrapper">
-          <div className="">
+          <div className="mt-10 lg:mt-0">
             <p className="mb-8 text-2xl uppercase lg:text-4xl md:mb-12 primary">
               See the future on
             </p>
-            <div className="max-w-[910px] mx-auto px-4">
-              <Svg fill={color === 'dark' ? '#FFFFFF' : '#000000'} role="img" />
+            <div className="h-10 lg:h-[60px] mx-auto relative">
+              <span className="w-[calc(100%-40px)] max-w-[720px] glitch primary">
+                <Svg fill="#fc1aff" role="img" className="effect a" />
+                <Svg fill="#1afdfe" role="img" className="effect b" />
+                <Svg fill="#1AFD19" role="img" className="effect c" />
+                <Svg fill="#FC1A1A" role="img" className="effect d" />
+                <Svg fill={color === 'dark' ? '#FFFFFF' : '#000000'} role="img" />
+              </span>
             </div>
           </div>
           <div>
@@ -117,11 +123,28 @@ function StartingGuide() {
           </div>
         </div>
       </article>
-      <article className="mt-20 article">
+      <article className="text-center article mt-[180px]">
+        <div className="wrapper">
+          <h2 className="title primary-lighter">Roadmap</h2>
+          <img
+            src={require('@site/static/img/roadmap.png').default}
+            title="roadmap"
+            className="w-[680px]"
+          />
+          <div className="mt-12">
+            <IconArrowButton
+              label="Roadmap"
+              href="https://medium.com/@chromatic-protocol/chromatic-protocol-roadmap-and-reward-programs-6e3f4990843e"
+              icon="medium"
+            />
+          </div>
+        </div>
+      </article>
+      <article className="mt-[360px] article">
         <div className="wrapper">
           <h2 className="mb-10 title primary-lighter">Development</h2>
           <div className="flex flex-wrap items-stretch gap-5 lg:flex-nowrap">
-            <div className="box lg:min-h-[420px] border-lighter">
+            <div className="box lg:w-1/2 lg:min-h-[420px] border-lighter">
               <div>
                 <div className="hidden lg:block h-[50px] sub-title">
                   <TypingEffect text="Github" delay={38} className="primary" />
@@ -138,7 +161,7 @@ function StartingGuide() {
                 <IconArrowButton label="View Github" icon="github" href={CHROMATIC_LINKS.github} />
               </div>
             </div>
-            <div className="box lg:min-h-[420px] border-lighter">
+            <div className="box lg:w-1/2 lg:min-h-[420px] border-lighter">
               <div>
                 <div className="hidden lg:block h-[50px] sub-title">
                   <TypingEffect text="SDK" delay={38} className="primary" />

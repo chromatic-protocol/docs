@@ -55,19 +55,8 @@ function IconArrowButton({ label, icon, to = '', href = '', onClick = null, ...p
   )
 }
 
-// function scrollFadeEffect(backgroundSelector) {
-//   const background = document.querySelector(backgroundSelector)
-
-//   window.addEventListener('scroll', function () {
-//     const opacity = 1 - window.scrollY / (this.window.innerHeight - 400)
-//     background.style.opacity = opacity < 0 ? 0 : opacity
-//   })
-// }
-
 // Limitless Trading Pairs
 function Intro() {
-  // scrollFadeEffect('.bg-main-top')
-
   return (
     <section className="hidden lg:block pt-[70px]">
       <article className="h-[calc(100vh-70px)] min-h-[400px] lg:min-h-[800px] text-center article">
@@ -105,10 +94,10 @@ function StartingGuide() {
             </p>
             <div className="max-w-[910px] h-[60px] mx-auto px-4 relative">
               <span className="w-[720px] glitch primary">
-                <Svg fill="#FC1A1A" role="img" className="effect d" />
-                <Svg fill="#1AFD19" role="img" className="effect c" />
-                <Svg fill="#1afdfe" role="img" className="effect b" />
                 <Svg fill="#fc1aff" role="img" className="effect a" />
+                <Svg fill="#1afdfe" role="img" className="effect b" />
+                <Svg fill="#1AFD19" role="img" className="effect c" />
+                <Svg fill="#FC1A1A" role="img" className="effect d" />
                 <Svg fill={color === 'dark' ? '#FFFFFF' : '#000000'} role="img" />
               </span>
             </div>
@@ -134,7 +123,24 @@ function StartingGuide() {
           </div>
         </div>
       </article>
-      <article className="mt-20 article">
+      <article className="text-center article mt-[180px]">
+        <div className="wrapper">
+          <h2 className="title primary-lighter">Roadmap</h2>
+          <img
+            src={require('@site/static/img/roadmap.png').default}
+            title="roadmap"
+            className="w-[680px]"
+          />
+          <div className="mt-12">
+            <IconArrowButton
+              label="Roadmap"
+              href="https://medium.com/@chromatic-protocol/chromatic-protocol-roadmap-and-reward-programs-6e3f4990843e"
+              icon="medium"
+            />
+          </div>
+        </div>
+      </article>
+      <article className="mt-[360px] article">
         <div className="wrapper">
           <h2 className="mb-10 title primary-lighter">Development</h2>
           <div className="flex flex-wrap items-stretch gap-5 lg:flex-nowrap">

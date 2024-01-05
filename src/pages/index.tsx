@@ -92,8 +92,8 @@ function StartingGuide() {
             <p className="mb-8 text-2xl uppercase lg:text-4xl md:mb-12 primary">
               See the future on
             </p>
-            <div className="max-w-[910px] h-[60px] mx-auto px-4 relative">
-              <span className="w-[720px] glitch primary">
+            <div className="h-[60px] mx-auto px-4 relative">
+              <span className="w-4/5 max-w-[720px] glitch primary">
                 <Svg fill="#fc1aff" role="img" className="effect a" />
                 <Svg fill="#1afdfe" role="img" className="effect b" />
                 <Svg fill="#1AFD19" role="img" className="effect c" />

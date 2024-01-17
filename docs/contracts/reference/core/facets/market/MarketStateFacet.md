@@ -90,17 +90,101 @@ Returns the protocol fee rate
   | ---- | ---- | ----------- |
   | _protocolFeeRate | uint16 | The protocol fee rate for the market |
 
-### setProtocolFeeRate
+### updateProtocolFeeRate
 
 ```solidity
-function setProtocolFeeRate(uint16 _protocolFeeRate) external
+function updateProtocolFeeRate(uint16 _protocolFeeRate) external
 ```
 
-Set the new protocol fee rate
+Update the new protocol fee rate
 
 - Parameters:
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | _protocolFeeRate | uint16 | new protocol fee rate for the market |
+
+### positionMode
+
+```solidity
+function positionMode() external view returns (enum PositionMode _positionMode)
+```
+
+Returns the position mode
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _positionMode | enum PositionMode | The position mode for the market |
+
+### updatePositionMode
+
+```solidity
+function updatePositionMode(enum PositionMode _positionMode) external
+```
+
+Update the new position mode
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _positionMode | enum PositionMode | new position mode for the market |
+
+### liquidityMode
+
+```solidity
+function liquidityMode() external view returns (enum LiquidityMode _liquidityMode)
+```
+
+Returns the liquidity mode
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _liquidityMode | enum LiquidityMode | The liquidity mode for the market |
+
+### updateLiquidityMode
+
+```solidity
+function updateLiquidityMode(enum LiquidityMode _liquidityMode) external
+```
+
+Update the new liquidity mode
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _liquidityMode | enum LiquidityMode | new liquidity mode for the market |
+
+### displayMode
+
+```solidity
+function displayMode() external view returns (enum DisplayMode _displayMode)
+```
+
+Returns the display mode
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _displayMode | enum DisplayMode | The display mode for the market |
+
+### updateDisplayMode
+
+```solidity
+function updateDisplayMode(enum DisplayMode _displayMode) external
+```
+
+Update the new display mode
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _displayMode | enum DisplayMode | new display mode for the market |
 

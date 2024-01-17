@@ -89,6 +89,18 @@ _Throws an error indicating that the maker margin value is not within the allowa
      The maker margin must fall within the range calculated based on the absolute quantity of the position and the specified minimum/maximum take-profit basis points (BPS) set by the Oracle Provider.
      The default range for the minimum/maximum take-profit basis points is 10% to 1000%._
 
+### OpenPositionDisabled
+
+```solidity
+error OpenPositionDisabled()
+```
+
+### ClosePositionDisabled
+
+```solidity
+error ClosePositionDisabled()
+```
+
 ### openPosition
 
 ```solidity
@@ -173,4 +185,26 @@ _Claims the position by transferring the available funds to the recipient.
   | positionId | uint256 | The ID of the position to claim. |
   | recipient | address | The address of the recipient of the claimed position. |
   | data | bytes | Additional data for the claim callback. |
+
+### _newPosition
+
+```solidity
+function _newPosition(struct LpContext ctx, int256 qty, uint256 takerMargin, uint16 protocolFeeRate, address liquidator) internal returns (struct Position)
+```
+
+### _requireOpenPositionEnabled
+
+```solidity
+function _requireOpenPositionEnabled(struct MarketStorage ms) internal view virtual
+```
+
+_Throws if open position is disabled._
+
+### _requireClosePositionEnabled
+
+```solidity
+function _requireClosePositionEnabled(struct MarketStorage ms) internal view virtual
+```
+
+_Throws if close position is disabled._
 

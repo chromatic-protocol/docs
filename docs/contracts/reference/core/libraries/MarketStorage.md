@@ -15,6 +15,9 @@ struct MarketStorage {
   contract IChromaticVault vault;
   struct LiquidityPool liquidityPool;
   uint16 protocolFeeRate;
+  enum PositionMode positionMode;
+  enum LiquidityMode liquidityMode;
+  enum DisplayMode displayMode;
 }
 ```
 

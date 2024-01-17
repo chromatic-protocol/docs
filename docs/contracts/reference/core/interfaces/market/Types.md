@@ -28,6 +28,39 @@ bytes4 CLAIM_TP
 bytes4 CLAIM_SL
 ```
 
+## PositionMode
+
+```solidity
+enum PositionMode {
+  Normal,
+  OpenDisabled,
+  CloseDisabled,
+  Suspended
+}
+```
+
+## LiquidityMode
+
+```solidity
+enum LiquidityMode {
+  Normal,
+  AddDisabled,
+  RemoveDisabled,
+  Suspended
+}
+```
+
+## DisplayMode
+
+```solidity
+enum DisplayMode {
+  Normal,
+  Suspended,
+  Deprecating,
+  Deprecated
+}
+```
+
 ## OpenPositionInfo
 
 ```solidity

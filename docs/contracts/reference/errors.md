@@ -466,6 +466,18 @@ error InvalidTransferredTokenAmount()
 _Throws an error indicating that the transferred token amount is invalid.
      This error is thrown when the transferred token amount does not match the expected amount._
 
+### AddLiquidityDisabled
+
+```solidity
+error AddLiquidityDisabled()
+```
+
+### RemoveLiquidityDisabled
+
+```solidity
+error RemoveLiquidityDisabled()
+```
+
 ## MarketLiquidityFacetBase
 
 ### NotExistLpReceipt
@@ -548,6 +560,18 @@ error NotAllowableMakerMargin()
 _Throws an error indicating that the maker margin value is not within the allowable range based on the absolute quantity and the specified minimum/maximum take-profit basis points (BPS).
      The maker margin must fall within the range calculated based on the absolute quantity of the position and the specified minimum/maximum take-profit basis points (BPS) set by the Oracle Provider.
      The default range for the minimum/maximum take-profit basis points is 10% to 1000%._
+
+### OpenPositionDisabled
+
+```solidity
+error OpenPositionDisabled()
+```
+
+### ClosePositionDisabled
+
+```solidity
+error ClosePositionDisabled()
+```
 
 ## MarketTradeFacetBase
 
@@ -700,6 +724,8 @@ _Throws an error indicating that the caller is not a registered market._
 |0xcc93170c|NotWithdrawableLpReceipt()|
 |0x35c67ed1|InvalidLpReceiptAction()|
 |0xa5bde9fe|InvalidTransferredTokenAmount()|
+|0x862d206b|AddLiquidityDisabled()|
+|0x3e67bf30|RemoveLiquidityDisabled()|
 |0xc47b3480|NotExistLpReceipt()|
 |0xc9b05689|TooSmallTakerMargin()|
 |0x65f10725|NotEnoughMarginTransferred()|
@@ -707,6 +733,8 @@ _Throws an error indicating that the caller is not a registered market._
 |0x444f42ff|ExceedMaxAllowableTradingFee()|
 |0xa4c6cd8a|ExceedMaxAllowableLeverage()|
 |0xd6b3c14c|NotAllowableMakerMargin()|
+|0x33720687|OpenPositionDisabled()|
+|0x2872ba49|ClosePositionDisabled()|
 |0x5690b016|NotExistPosition()|
 |0x7a5f85be|ClaimPositionCallbackError()|
 |0x192105d7|InitializationFunctionReverted(address _initializationContractAddress, bytes _calldata)|

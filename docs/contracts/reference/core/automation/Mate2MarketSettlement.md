@@ -6,6 +6,12 @@ title: Mate2MarketSettlement.sol
 
 ## Mate2MarketSettlement
 
+### DEFAULT_UPKEEP_GAS_LIMIT
+
+```solidity
+uint32 DEFAULT_UPKEEP_GAS_LIMIT
+```
+
 ### factory
 
 ```solidity
@@ -18,10 +24,22 @@ contract IChromaticMarketFactory factory
 contract IMate2AutomationRegistry automate
 ```
 
+### upkeepGasLimit
+
+```solidity
+uint32 upkeepGasLimit
+```
+
 ### marketSettlementUpkeepIds
 
 ```solidity
 mapping(address => uint256) marketSettlementUpkeepIds
+```
+
+### UpkeepGasLimitUpdated
+
+```solidity
+event UpkeepGasLimitUpdated(uint32 gasLimitOld, uint32 gasLimitNew)
 ```
 
 ### OnlyAccessableByDao
@@ -207,5 +225,11 @@ function withdrawUpkeepTreasuryFunds(address payable _receiver, uint256 _amount)
 
 ```solidity
 function cancelUpkeep(uint256 upkeepId) external
+```
+
+### updateUpkeepGasLimit
+
+```solidity
+function updateUpkeepGasLimit(uint32 gasLimit) external
 ```
 

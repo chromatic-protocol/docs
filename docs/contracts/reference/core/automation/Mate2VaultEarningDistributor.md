@@ -6,10 +6,22 @@ title: Mate2VaultEarningDistributor.sol
 
 ## Mate2VaultEarningDistributor
 
+### DEFAULT_UPKEEP_GAS_LIMIT
+
+```solidity
+uint32 DEFAULT_UPKEEP_GAS_LIMIT
+```
+
 ### automate
 
 ```solidity
 contract IMate2AutomationRegistry automate
+```
+
+### upkeepGasLimit
+
+```solidity
+uint32 upkeepGasLimit
 ```
 
 ### makerEarningDistributionUpkeepIds
@@ -31,6 +43,12 @@ enum UpkeepType {
   MakerEarningDistribution,
   MarketEarningDistribution
 }
+```
+
+### UpkeepGasLimitUpdated
+
+```solidity
+event UpkeepGasLimitUpdated(uint32 gasLimitOld, uint32 gasLimitNew)
 ```
 
 ### constructor
@@ -204,5 +222,11 @@ function _getFeeInfo() internal view returns (uint256 fee, address feePayee)
 
 ```solidity
 function cancelUpkeep(uint256 upkeepId) external
+```
+
+### updateUpkeepGasLimit
+
+```solidity
+function updateUpkeepGasLimit(uint32 gasLimit) external
 ```
 

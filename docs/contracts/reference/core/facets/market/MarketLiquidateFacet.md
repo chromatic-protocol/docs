@@ -82,10 +82,31 @@ _Checks if a position is eligible for liquidation._
   | ---- | ---- | ----------- |
   | _liquidate | bool | A boolean indicating if the position is eligible for liquidation. |
 
+### checkLiquidationWithOracleVersion
+
+```solidity
+function checkLiquidationWithOracleVersion(uint256 positionId, struct IOracleProvider.OracleVersion oracleVersion) external view returns (bool _liquidate)
+```
+
+_Checks if a position is eligible for liquidation._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | positionId | uint256 | The ID of the position to check. |
+  | oracleVersion | struct IOracleProvider.OracleVersion | The oracle version data for liquidation check. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | _liquidate | bool | A boolean indicating if the position is eligible for liquidation. |
+
 ### _checkLiquidation
 
 ```solidity
-function _checkLiquidation(struct LpContext ctx, struct Position position) internal view returns (bool _liquidate, int256 _pnl)
+function _checkLiquidation(struct LpContext ctx, struct Position position, struct IOracleProvider.OracleVersion oracleVersion) internal view returns (bool _liquidate, int256 _pnl)
 ```
 
 _Internal function for checking if a position should be liquidated._
@@ -96,6 +117,7 @@ _Internal function for checking if a position should be liquidated._
   | ---- | ---- | ----------- |
   | ctx | struct LpContext | The LpContext containing the current oracle version and synchronization information. |
   | position | struct Position | The Position object representing the position to be checked. |
+  | oracleVersion | struct IOracleProvider.OracleVersion | The oracle version data for liquidation check. |
 
 - Return Values:
 

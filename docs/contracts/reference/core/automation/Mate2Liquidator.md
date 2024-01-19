@@ -9,10 +9,22 @@ title: Mate2Liquidator.sol
 _A contract that handles the liquidation and claiming of positions in Chromatic markets.
      It implements the ILiquidator and the IMate2Automation interface._
 
+### DEFAULT_UPKEEP_GAS_LIMIT
+
+```solidity
+uint32 DEFAULT_UPKEEP_GAS_LIMIT
+```
+
 ### automate
 
 ```solidity
 contract IMate2AutomationRegistry automate
+```
+
+### upkeepGasLimit
+
+```solidity
+uint32 upkeepGasLimit
 ```
 
 ### UpkeepType
@@ -22,6 +34,12 @@ enum UpkeepType {
   LiquidatePosition,
   ClaimPosition
 }
+```
+
+### UpkeepGasLimitUpdated
+
+```solidity
+event UpkeepGasLimitUpdated(uint32 gasLimitOld, uint32 gasLimitNew)
 ```
 
 ### constructor
@@ -267,5 +285,11 @@ function _getFeeInfo() internal view returns (uint256 fee, address feePayee)
 
 ```solidity
 function cancelUpkeep(uint256 upkeepId) external
+```
+
+### updateUpkeepGasLimit
+
+```solidity
+function updateUpkeepGasLimit(uint32 gasLimit) external
 ```
 

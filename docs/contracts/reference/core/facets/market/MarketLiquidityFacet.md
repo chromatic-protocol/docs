@@ -50,6 +50,18 @@ error InvalidTransferredTokenAmount()
 _Throws an error indicating that the transferred token amount is invalid.
      This error is thrown when the transferred token amount does not match the expected amount._
 
+### AddLiquidityDisabled
+
+```solidity
+error AddLiquidityDisabled()
+```
+
+### RemoveLiquidityDisabled
+
+```solidity
+error RemoveLiquidityDisabled()
+```
+
 ### addLiquidity
 
 ```solidity
@@ -226,6 +238,22 @@ _Distributes earning to the liquidity bins._
   | ---- | ---- | ----------- |
   | earning | uint256 | The amount of earning to distribute. |
   | marketBalance | uint256 | The balance of the market. |
+
+### _requireAddLiquidityEnabled
+
+```solidity
+function _requireAddLiquidityEnabled(struct MarketStorage ms) internal view virtual
+```
+
+_Throws if add liquidity is disabled._
+
+### _requireRemoveLiquidityEnabled
+
+```solidity
+function _requireRemoveLiquidityEnabled(struct MarketStorage ms) internal view virtual
+```
+
+_Throws if remove liquidity is disabled._
 
 ### onERC1155Received
 

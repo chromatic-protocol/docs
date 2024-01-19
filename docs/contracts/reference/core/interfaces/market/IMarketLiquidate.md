@@ -64,6 +64,27 @@ _Checks if a position is eligible for liquidation._
   | ---- | ---- | ----------- |
   | [0] | bool | A boolean indicating if the position is eligible for liquidation. |
 
+### checkLiquidationWithOracleVersion
+
+```solidity
+function checkLiquidationWithOracleVersion(uint256 positionId, struct IOracleProvider.OracleVersion oracleVersion) external view returns (bool)
+```
+
+_Checks if a position is eligible for liquidation._
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | positionId | uint256 | The ID of the position to check. |
+  | oracleVersion | struct IOracleProvider.OracleVersion | The oracle version data for liquidation check. |
+
+- Return Values:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | [0] | bool | A boolean indicating if the position is eligible for liquidation. |
+
 ### liquidate
 
 ```solidity

@@ -18,7 +18,7 @@ The bin margins for the position, it represents the amount of collateral for eac
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:57](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-viem/src/entities/ChromaticPosition.ts#L57)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:57](https://github.com/chromatic-protocol/sdk/blob/144961d/packages/sdk-viem/src/entities/ChromaticPosition.ts#L57)
 
 ___
 
@@ -30,7 +30,7 @@ The protocol fee rate for the market
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:60](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-viem/src/entities/ChromaticPosition.ts#L60)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:60](https://github.com/chromatic-protocol/sdk/blob/144961d/packages/sdk-viem/src/entities/ChromaticPosition.ts#L60)
 
 ___
 
@@ -42,7 +42,7 @@ The timestamp when the position was claimed
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:68](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-viem/src/entities/ChromaticPosition.ts#L68)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:68](https://github.com/chromatic-protocol/sdk/blob/144961d/packages/sdk-viem/src/entities/ChromaticPosition.ts#L68)
 
 ___
 
@@ -54,7 +54,7 @@ The price of the underlying asset when position was closed.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:64](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-viem/src/entities/ChromaticPosition.ts#L64)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:64](https://github.com/chromatic-protocol/sdk/blob/144961d/packages/sdk-viem/src/entities/ChromaticPosition.ts#L64)
 
 ___
 
@@ -66,7 +66,7 @@ The timestamp when the position was closed
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:51](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-viem/src/entities/ChromaticPosition.ts#L51)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:51](https://github.com/chromatic-protocol/sdk/blob/144961d/packages/sdk-viem/src/entities/ChromaticPosition.ts#L51)
 
 ___
 
@@ -78,7 +78,7 @@ The version of the oracle when the position was closed
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:45](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-viem/src/entities/ChromaticPosition.ts#L45)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:45](https://github.com/chromatic-protocol/sdk/blob/144961d/packages/sdk-viem/src/entities/ChromaticPosition.ts#L45)
 
 ___
 
@@ -90,7 +90,7 @@ The position identifier
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:41](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-viem/src/entities/ChromaticPosition.ts#L41)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:41](https://github.com/chromatic-protocol/sdk/blob/144961d/packages/sdk-viem/src/entities/ChromaticPosition.ts#L41)
 
 ___
 
@@ -102,7 +102,7 @@ The amount of maker's margin
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:62](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-viem/src/entities/ChromaticPosition.ts#L62)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:62](https://github.com/chromatic-protocol/sdk/blob/144961d/packages/sdk-viem/src/entities/ChromaticPosition.ts#L62)
 
 ___
 
@@ -114,7 +114,7 @@ The price of the underlying asset when position was opened.
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:66](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-viem/src/entities/ChromaticPosition.ts#L66)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:66](https://github.com/chromatic-protocol/sdk/blob/144961d/packages/sdk-viem/src/entities/ChromaticPosition.ts#L66)
 
 ___
 
@@ -126,7 +126,7 @@ The timestamp when the position was opened
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:49](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-viem/src/entities/ChromaticPosition.ts#L49)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:49](https://github.com/chromatic-protocol/sdk/blob/144961d/packages/sdk-viem/src/entities/ChromaticPosition.ts#L49)
 
 ___
 
@@ -138,7 +138,7 @@ The version of the oracle when the position was opened
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:43](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-viem/src/entities/ChromaticPosition.ts#L43)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:43](https://github.com/chromatic-protocol/sdk/blob/144961d/packages/sdk-viem/src/entities/ChromaticPosition.ts#L43)
 
 ___
 
@@ -150,7 +150,7 @@ The owner of the position, usually it is the account address of trader
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:55](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-viem/src/entities/ChromaticPosition.ts#L55)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:55](https://github.com/chromatic-protocol/sdk/blob/144961d/packages/sdk-viem/src/entities/ChromaticPosition.ts#L55)
 
 ___
 
@@ -162,7 +162,7 @@ The quantity of the position
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:47](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-viem/src/entities/ChromaticPosition.ts#L47)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:47](https://github.com/chromatic-protocol/sdk/blob/144961d/packages/sdk-viem/src/entities/ChromaticPosition.ts#L47)
 
 ___
 
@@ -174,4 +174,4 @@ The amount of collateral that a trader must provide
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticPosition.ts:53](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-viem/src/entities/ChromaticPosition.ts#L53)
+[packages/sdk-viem/src/entities/ChromaticPosition.ts:53](https://github.com/chromatic-protocol/sdk/blob/144961d/packages/sdk-viem/src/entities/ChromaticPosition.ts#L53)

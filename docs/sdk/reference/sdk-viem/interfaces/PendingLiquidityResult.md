@@ -18,7 +18,7 @@ The amount of pending CLB tokens requested for burning
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:44](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-viem/src/entities/ChromaticLens.ts#L44)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:44](https://github.com/chromatic-protocol/sdk/blob/144961d/packages/sdk-viem/src/entities/ChromaticLens.ts#L44)
 
 ___
 
@@ -30,7 +30,7 @@ The amount of pending settlement token for minting
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:42](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-viem/src/entities/ChromaticLens.ts#L42)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:42](https://github.com/chromatic-protocol/sdk/blob/144961d/packages/sdk-viem/src/entities/ChromaticLens.ts#L42)
 
 ___
 
@@ -42,7 +42,7 @@ The oracle version for pending liquidity
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:40](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-viem/src/entities/ChromaticLens.ts#L40)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:40](https://github.com/chromatic-protocol/sdk/blob/144961d/packages/sdk-viem/src/entities/ChromaticLens.ts#L40)
 
 ___
 
@@ -54,4 +54,4 @@ The trading fee rate for the liquidity bin
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:46](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-viem/src/entities/ChromaticLens.ts#L46)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:46](https://github.com/chromatic-protocol/sdk/blob/144961d/packages/sdk-viem/src/entities/ChromaticLens.ts#L46)

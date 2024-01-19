@@ -34,6 +34,26 @@ custom_edit_url: null
 
 ## Variables
 
+### MIN\_GAS\_LIMIT\_SETTLE\_ALL
+
+• `Const` **MIN\_GAS\_LIMIT\_SETTLE\_ALL**: `BigNumber`
+
+#### Defined in
+
+[packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts:43](https://github.com/chromatic-protocol/sdk/blob/144961d/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L43)
+
+___
+
+### MIN\_GAS\_LIMIT\_SETTLE\_HALF
+
+• `Const` **MIN\_GAS\_LIMIT\_SETTLE\_HALF**: `BigNumber`
+
+#### Defined in
+
+[packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts:44](https://github.com/chromatic-protocol/sdk/blob/144961d/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L44)
+
+___
+
 ### deployedAddress
 
 • `Const` **deployedAddress**: `DeployedAddress`
@@ -53,4 +73,44 @@ getChainNames
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/gen/deployedAddress.ts:23](https://github.com/chromatic-protocol/sdk/blob/4d74715/packages/sdk-ethers-v5/src/gen/deployedAddress.ts#L23)
+[packages/sdk-ethers-v5/src/gen/deployedAddress.ts:23](https://github.com/chromatic-protocol/sdk/blob/144961d/packages/sdk-ethers-v5/src/gen/deployedAddress.ts#L23)
+
+## Functions
+
+### adjustMakerGasLimit
+
+▸ **adjustMakerGasLimit**(`gas`): `BigNumberish`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `gas` | `BigNumberish` |
+
+#### Returns
+
+`BigNumberish`
+
+#### Defined in
+
+[packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts:49](https://github.com/chromatic-protocol/sdk/blob/144961d/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L49)
+
+___
+
+### adjustTakerGasLimit
+
+▸ **adjustTakerGasLimit**(`gas`): `BigNumberish`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `gas` | `BigNumberish` |
+
+#### Returns
+
+`BigNumberish`
+
+#### Defined in
+
+[packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts:46](https://github.com/chromatic-protocol/sdk/blob/144961d/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L46)

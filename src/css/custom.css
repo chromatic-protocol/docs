@@ -174,7 +174,7 @@ html[data-theme='dark'] {
     @apply w-full max-w-[1160px] px-4 md:px-10;
   }
   .title {
-    @apply text-2xl text-center font-mono font-semibold uppercase opacity-50;
+    @apply text-2xl text-center font-mono font-bold uppercase opacity-50 pl-[0.3em];
     letter-spacing: 0.3em !important;
   }
   .sub-title {

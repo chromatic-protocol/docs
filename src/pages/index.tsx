@@ -125,11 +125,11 @@ function StartingGuide() {
       </article>
       <article className="text-center article mt-[180px]">
         <div className="wrapper">
-          <h2 className="title primary-lighter">Roadmap</h2>
+          <h2 className="title primary-lighter mb-[60px]">Roadmap</h2>
           <img
             src={require('@site/static/img/roadmap.png').default}
             title="roadmap"
-            className="w-[680px]"
+            className="w-[520px]"
           />
           <div className="mt-12">
             <IconArrowButton

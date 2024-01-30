@@ -15,6 +15,12 @@ _A contract that handles the liquidation and claiming of positions in Chromatic 
 uint32 DEFAULT_UPKEEP_GAS_LIMIT
 ```
 
+### DEFAULT_WAIT_POSITION_CLAIM
+
+```solidity
+uint256 DEFAULT_WAIT_POSITION_CLAIM
+```
+
 ### automate
 
 ```solidity
@@ -25,6 +31,12 @@ contract IMate2AutomationRegistry automate
 
 ```solidity
 uint32 upkeepGasLimit
+```
+
+### waitPositionClaim
+
+```solidity
+uint256 waitPositionClaim
 ```
 
 ### UpkeepType
@@ -40,6 +52,12 @@ enum UpkeepType {
 
 ```solidity
 event UpkeepGasLimitUpdated(uint32 gasLimitOld, uint32 gasLimitNew)
+```
+
+### WaitPositionClaimUpdated
+
+```solidity
+event WaitPositionClaimUpdated(uint256 waitPositionClaimOld, uint256 waitPositionClaimNew)
 ```
 
 ### constructor
@@ -172,7 +190,7 @@ _This function is called by the automation system._
 ### _registerUpkeep
 
 ```solidity
-function _registerUpkeep(mapping(address => mapping(uint256 => uint256)) registry, uint256 positionId, enum Mate2Liquidator.UpkeepType upkeepType) internal
+function _registerUpkeep(mapping(address => mapping(uint256 => uint256)) registry, uint256 positionId, enum Mate2Liquidator.UpkeepType upkeepType, uint256 executableTime) internal
 ```
 
 _Internal function to create a Mate2 upkeep for liquidation or claim position._
@@ -184,6 +202,7 @@ _Internal function to create a Mate2 upkeep for liquidation or claim position._
   | registry | mapping(address &#x3D;&gt; mapping(uint256 &#x3D;&gt; uint256)) | The mapping to store task IDs. |
   | positionId | uint256 | The ID of the position. |
   | upkeepType | enum Mate2Liquidator.UpkeepType |  |
+  | executableTime | uint256 | The upkeep executable time. |
 
 ### _cancelUpkeep
 
@@ -291,5 +310,11 @@ function cancelUpkeep(uint256 upkeepId) external
 
 ```solidity
 function updateUpkeepGasLimit(uint32 gasLimit) external
+```
+
+### updateWaitPositionClaim
+
+```solidity
+function updateWaitPositionClaim(uint256 _waitPositionClaim) external
 ```
 

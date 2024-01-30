@@ -6,6 +6,12 @@ title: MarketTradeFacetBase.sol
 
 ## MarketTradeFacetBase
 
+### CLAIM_POSITION_CALLBACK_GASLIMIT
+
+```solidity
+uint32 CLAIM_POSITION_CALLBACK_GASLIMIT
+```
+
 ### NotExistPosition
 
 ```solidity

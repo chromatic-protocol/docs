@@ -6,30 +6,6 @@ title: MarketFacetBase.sol
 
 ## MarketFacetBase
 
-### OnlyAccessableByDao
-
-```solidity
-error OnlyAccessableByDao()
-```
-
-_Throws an error indicating that the caller is not the DAO._
-
-### OnlyAccessableByLiquidator
-
-```solidity
-error OnlyAccessableByLiquidator()
-```
-
-_Throws an error indicating that the caller is not the chromatic liquidator contract._
-
-### OnlyAccessableByVault
-
-```solidity
-error OnlyAccessableByVault()
-```
-
-_Throws an error indicating that the caller is not the chromatch vault contract._
-
 ### onlyDao
 
 ```solidity
@@ -47,6 +23,12 @@ modifier onlyVault()
 
 _Modifier to restrict a function to be called only by the vault contract.
      Throws an `OnlyAccessableByVault` error if the caller is not the chromatic vault contract._
+
+### withTradingLock
+
+```solidity
+modifier withTradingLock()
+```
 
 ### newLpContext
 

@@ -8,22 +8,6 @@ title: MarketLiquidateFacet.sol
 
 _A contract that manages liquidations._
 
-### AlreadyClosedPosition
-
-```solidity
-error AlreadyClosedPosition()
-```
-
-_Throws an error indicating that the position has already been closed._
-
-### NotClaimablePosition
-
-```solidity
-error NotClaimablePosition()
-```
-
-_Throws an error indicating that the position is not claimable._
-
 ### claimPosition
 
 ```solidity

@@ -91,12 +91,6 @@ function getReceipt(struct LpReceiptStorage self, uint256 receiptId) internal vi
 function deleteReceipt(struct LpReceiptStorage self, uint256 receiptId) internal
 ```
 
-### deleteReceipts
-
-```solidity
-function deleteReceipts(struct LpReceiptStorage self, uint256[] receiptIds) internal
-```
-
 ## PositionStorageLib
 
 ### POSITION_STORAGE_POSITION

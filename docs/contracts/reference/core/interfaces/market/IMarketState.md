@@ -8,66 +8,6 @@ title: IMarketState.sol
 
 _Interface for accessing the state of a market contract._
 
-### ProtocolFeeRateUpdated
-
-```solidity
-event ProtocolFeeRateUpdated(uint16 protocolFeeRateOld, uint16 protocolFeeRateNew)
-```
-
-Emitted when the protocol fee rate of the market is changed
-
-- Parameters:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | protocolFeeRateOld | uint16 | The previous value of the protocol fee rate |
-  | protocolFeeRateNew | uint16 | The updated value of the protocol fee rate |
-
-### PositionModeUpdated
-
-```solidity
-event PositionModeUpdated(enum PositionMode positionModeOld, enum PositionMode positionModeNew)
-```
-
-Emitted when the position mode of the market is changed
-
-- Parameters:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | positionModeOld | enum PositionMode | The previous value of the position mode |
-  | positionModeNew | enum PositionMode | The updated value of the position mode |
-
-### LiquidityModeUpdated
-
-```solidity
-event LiquidityModeUpdated(enum LiquidityMode liquidityModeOld, enum LiquidityMode liquidityModeNew)
-```
-
-Emitted when the liquidity mode of the market is changed
-
-- Parameters:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | liquidityModeOld | enum LiquidityMode | The previous value of the liquidity mode |
-  | liquidityModeNew | enum LiquidityMode | The updated value of the liquidity mode |
-
-### DisplayModeUpdated
-
-```solidity
-event DisplayModeUpdated(enum DisplayMode displayModeOld, enum DisplayMode displayModeNew)
-```
-
-Emitted when the display mode of the market is changed
-
-- Parameters:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | displayModeOld | enum DisplayMode | The previous value of the display mode |
-  | displayModeNew | enum DisplayMode | The updated value of the display mode |
-
 ### factory
 
 ```solidity

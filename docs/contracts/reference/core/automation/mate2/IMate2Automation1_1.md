@@ -1,10 +1,31 @@
 ---
-id: IMate2Automation
-title: IMate2Automation.sol
+id: IMate2Automation1_1
+title: IMate2Automation1_1.sol
 ---
-# [IMate2Automation.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/automation/mate2/IMate2Automation.sol)
+# [IMate2Automation1_1.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/automation/mate2/IMate2Automation1_1.sol)
 
-## IMate2Automation
+## ExtraModule
+
+```solidity
+enum ExtraModule {
+  None,
+  Echo,
+  Pyth
+}
+```
+
+## PythOffchainPrice
+
+```solidity
+struct PythOffchainPrice {
+  uint256 publishTime;
+  int64 price;
+  int32 expo;
+  bytes vaa;
+}
+```
+
+## IMate2Automation1_1
 
 ### catchErr
 
@@ -15,7 +36,7 @@ event catchErr(string _name, string _err)
 ### checkUpkeep
 
 ```solidity
-function checkUpkeep(bytes checkData) external view returns (bool upkeepNeeded, bytes performData)
+function checkUpkeep(bytes checkData, bytes extraData) external view returns (bool upkeepNeeded, bytes performData)
 ```
 
 method that is simulated by the keepers to see if any work actually
@@ -31,6 +52,7 @@ method._
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | checkData | bytes | specified in the upkeep registration so it is always the same for a registered upkeep. This can easily be broken down into specific arguments using `abi.decode`, so multiple upkeeps can be registered on the same contract and easily differentiated by the contract. |
+  | extraData | bytes | passed by keeper for passing offchain data |
 
 - Return Values:
 

@@ -35,9 +35,11 @@ struct DeployArgs {
   address marketDiamondCutFacet;
   address marketLoupeFacet;
   address marketStateFacet;
-  address marketLiquidityFacet;
+  address marketAddLiquidityFacet;
+  address marketRemoveLiquidityFacet;
   address marketLensFacet;
-  address marketTradeFacet;
+  address marketTradeOpenPositionFacet;
+  address marketTradeClosePositionFacet;
   address marketLiquidateFacet;
   address marketSettleFacet;
   uint16 protocolFeeRate;
@@ -51,9 +53,11 @@ struct DeployArgs {
 | marketDiamondCutFacet | address | The market diamond cut facet address. |
 | marketLoupeFacet | address | The market loupe facet address. |
 | marketStateFacet | address | The market state facet address. |
-| marketLiquidityFacet | address | The market liquidity facet address. |
+| marketAddLiquidityFacet | address | The market liquidity facet address for adding and claiming. |
+| marketRemoveLiquidityFacet | address | The market liquidity facet address for removing and withdrawing. |
 | marketLensFacet | address | The market liquidity lens facet address. |
-| marketTradeFacet | address | The market trade facet address. |
+| marketTradeOpenPositionFacet | address | The market trade facet address for opending positions. |
+| marketTradeClosePositionFacet | address | The market trade facet address for closing and claiming positions. |
 | marketLiquidateFacet | address | The market liquidate facet address. |
 | marketSettleFacet | address | The market settle facet address. |
 | protocolFeeRate | uint16 | The protocol fee rate for the market. |

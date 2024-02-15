@@ -177,3 +177,15 @@ Distributes the market earning for a market to the each bins.
   | fee | uint256 | The fee amount. |
   | keeper | address | The keeper address to receive fee. |
 
+### acquireTradingLock
+
+```solidity
+function acquireTradingLock() external
+```
+
+### releaseTradingLock
+
+```solidity
+function releaseTradingLock() external
+```
+

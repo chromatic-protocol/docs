@@ -250,6 +250,18 @@ error NotEnoughFeePaid()
 
 _Throws an error indicating that the recipient has not paid the sufficient flash loan fee._
 
+### TradingLockAlreadyAcquired
+
+```solidity
+error TradingLockAlreadyAcquired()
+```
+
+### NotTradingLockOwner
+
+```solidity
+error NotTradingLockOwner()
+```
+
 ## KeeperFeePayer
 
 _A contract that pays keeper fees using a Uniswap router._
@@ -330,6 +342,30 @@ error ExistMarketSettlementTask()
 
 _Throws an error indicating that a market settlement task already exists._
 
+### InsufficientKeeperFee
+
+```solidity
+error InsufficientKeeperFee()
+```
+
+_Throws an error indicating that the keeper fee is insufficient_
+
+### PayKeeperFeeFailed
+
+```solidity
+error PayKeeperFeeFailed()
+```
+
+_Throws an error indicating that the payment of the keeper fee has failed._
+
+### EthTransferFailed
+
+```solidity
+error EthTransferFailed()
+```
+
+_Throws an error indicating that the transfer of Ether has failed._
+
 ## VaultEarningDistributorBase
 
 ### OnlyAccessableByDao
@@ -364,17 +400,7 @@ error ExistMarketEarningDistributionTask()
 
 _Throws an error indicating that a market earning distribution task already exists._
 
-## MarketDiamondCutFacet
-
-### OnlyAccessableByFactoryOrDao
-
-```solidity
-error OnlyAccessableByFactoryOrDao()
-```
-
-_Throws an error indicating that the caller is nether the chormatic factory contract nor the DAO._
-
-## MarketFacetBase
+## IMarketErrors
 
 ### OnlyAccessableByDao
 
@@ -383,6 +409,14 @@ error OnlyAccessableByDao()
 ```
 
 _Throws an error indicating that the caller is not the DAO._
+
+### OnlyAccessableByFactoryOrDao
+
+```solidity
+error OnlyAccessableByFactoryOrDao()
+```
+
+_Throws an error indicating that the caller is nether the chormatic factory contract nor the DAO._
 
 ### OnlyAccessableByLiquidator
 
@@ -400,30 +434,6 @@ error OnlyAccessableByVault()
 
 _Throws an error indicating that the caller is not the chromatch vault contract._
 
-## MarketLiquidateFacet
-
-_A contract that manages liquidations._
-
-### AlreadyClosedPosition
-
-```solidity
-error AlreadyClosedPosition()
-```
-
-_Throws an error indicating that the position has already been closed._
-
-### NotClaimablePosition
-
-```solidity
-error NotClaimablePosition()
-```
-
-_Throws an error indicating that the position is not claimable._
-
-## MarketLiquidityFacet
-
-_Contract for managing liquidity in a market._
-
 ### TooSmallAmount
 
 ```solidity
@@ -432,6 +442,14 @@ error TooSmallAmount()
 
 _Throws an error indicating that the amount of liquidity is too small.
      This error is thrown when attempting to remove liquidity with an amount of zero._
+
+### NotExistLpReceipt
+
+```solidity
+error NotExistLpReceipt()
+```
+
+_Throws an error indicating that the specified liquidity receipt does not exist._
 
 ### NotClaimableLpReceipt
 
@@ -466,6 +484,12 @@ error InvalidTransferredTokenAmount()
 _Throws an error indicating that the transferred token amount is invalid.
      This error is thrown when the transferred token amount does not match the expected amount._
 
+### DuplicatedTradingFeeRate
+
+```solidity
+error DuplicatedTradingFeeRate()
+```
+
 ### AddLiquidityDisabled
 
 ```solidity
@@ -477,20 +501,6 @@ error AddLiquidityDisabled()
 ```solidity
 error RemoveLiquidityDisabled()
 ```
-
-## MarketLiquidityFacetBase
-
-### NotExistLpReceipt
-
-```solidity
-error NotExistLpReceipt()
-```
-
-_Throws an error indicating that the specified liquidity receipt does not exist._
-
-## MarketTradeFacet
-
-_A contract that manages trading positions._
 
 ### TooSmallTakerMargin
 
@@ -516,22 +526,6 @@ error NotPermitted()
 ```
 
 _Throws an error indicating that the caller is not permitted to perform the action as they are not the owner of the position._
-
-### AlreadyClosedPosition
-
-```solidity
-error AlreadyClosedPosition()
-```
-
-_Throws an error indicating that the position has already been closed and cannot be closed again._
-
-### NotClaimablePosition
-
-```solidity
-error NotClaimablePosition()
-```
-
-_Throws an error indicating that the position cannot be claimed as it is not eligible for claim in the current oracle version._
 
 ### ExceedMaxAllowableTradingFee
 
@@ -561,20 +555,6 @@ _Throws an error indicating that the maker margin value is not within the allowa
      The maker margin must fall within the range calculated based on the absolute quantity of the position and the specified minimum/maximum take-profit basis points (BPS) set by the Oracle Provider.
      The default range for the minimum/maximum take-profit basis points is 10% to 1000%._
 
-### OpenPositionDisabled
-
-```solidity
-error OpenPositionDisabled()
-```
-
-### ClosePositionDisabled
-
-```solidity
-error ClosePositionDisabled()
-```
-
-## MarketTradeFacetBase
-
 ### NotExistPosition
 
 ```solidity
@@ -590,6 +570,34 @@ error ClaimPositionCallbackError()
 ```
 
 _Throws an error indicating that an error occurred during the claim position callback._
+
+### AlreadyClosedPosition
+
+```solidity
+error AlreadyClosedPosition()
+```
+
+_Throws an error indicating that the position has already been closed._
+
+### NotClaimablePosition
+
+```solidity
+error NotClaimablePosition()
+```
+
+_Throws an error indicating that the position is not claimable._
+
+### OpenPositionDisabled
+
+```solidity
+error OpenPositionDisabled()
+```
+
+### ClosePositionDisabled
+
+```solidity
+error ClosePositionDisabled()
+```
 
 ## InitializationFunctionReverted
 
@@ -617,6 +625,12 @@ error UnableToSyncError()
 
 ```solidity
 error PriceFeedNotExist()
+```
+
+### WrongData
+
+```solidity
+error WrongData()
 ```
 
 ## IOracleProvider
@@ -710,36 +724,43 @@ _Throws an error indicating that the caller is not a registered market._
 |0x6d0340d7|OnlyAccessableByEarningDistributor()|
 |0xad3a8b9e|NotEnoughBalance()|
 |0x3244470d|NotEnoughFeePaid()|
+|0x1d380aa1|TradingLockAlreadyAcquired()|
+|0x859ea5ee|NotTradingLockOwner()|
 |0x0a73bac7|KeeperFeeTransferFailure()|
 |0x33017967|InvalidSwapValue()|
 |0xc671c2bd|ExistMarketSettlementTask()|
+|0x2eeda15c|InsufficientKeeperFee()|
+|0xc0314164|PayKeeperFeeFailed()|
+|0x6d963f88|EthTransferFailed()|
 |0x6c7e0fa5|OnlyAccessableByVault()|
 |0xf953ee45|ExistMakerEarningDistributionTask()|
 |0x3d8ff6d7|ExistMarketEarningDistributionTask()|
 |0x5660035a|OnlyAccessableByLiquidator()|
-|0x33fceb32|AlreadyClosedPosition()|
-|0x22b76217|NotClaimablePosition()|
 |0x22313ae9|TooSmallAmount()|
+|0xc47b3480|NotExistLpReceipt()|
 |0xd54b6688|NotClaimableLpReceipt()|
 |0xcc93170c|NotWithdrawableLpReceipt()|
 |0x35c67ed1|InvalidLpReceiptAction()|
 |0xa5bde9fe|InvalidTransferredTokenAmount()|
+|0x5852c23d|DuplicatedTradingFeeRate()|
 |0x862d206b|AddLiquidityDisabled()|
 |0x3e67bf30|RemoveLiquidityDisabled()|
-|0xc47b3480|NotExistLpReceipt()|
 |0xc9b05689|TooSmallTakerMargin()|
 |0x65f10725|NotEnoughMarginTransferred()|
 |0x39218f3b|NotPermitted()|
 |0x444f42ff|ExceedMaxAllowableTradingFee()|
 |0xa4c6cd8a|ExceedMaxAllowableLeverage()|
 |0xd6b3c14c|NotAllowableMakerMargin()|
-|0x33720687|OpenPositionDisabled()|
-|0x2872ba49|ClosePositionDisabled()|
 |0x5690b016|NotExistPosition()|
 |0x7a5f85be|ClaimPositionCallbackError()|
+|0x33fceb32|AlreadyClosedPosition()|
+|0x22b76217|NotClaimablePosition()|
+|0x33720687|OpenPositionDisabled()|
+|0x2872ba49|ClosePositionDisabled()|
 |0x192105d7|InitializationFunctionReverted(address _initializationContractAddress, bytes _calldata)|
 |0x68e7727f|UnableToSyncError()|
 |0x3d8461ae|PriceFeedNotExist()|
+|0x036896be|WrongData()|
 |0x52347554|InvalidOracleRound()|
 |0x91655201|NotRouter()|
 |0x30cd7471|NotOwner()|

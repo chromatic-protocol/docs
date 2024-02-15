@@ -39,7 +39,7 @@ Cancels a settlement task for a given market.
 ### resolveSettlement
 
 ```solidity
-function resolveSettlement(address market) external view returns (bool canExec, bytes execPayload)
+function resolveSettlement(address market, bytes extraData) external view returns (bool canExec, bytes execPayload)
 ```
 
 Resolves the settlement of a market.
@@ -51,6 +51,7 @@ _This function is called by the automation system._
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | market | address | The address of the market contract. |
+  | extraData | bytes | passed by keeper for passing offchain data |
 
 - Return Values:
 
@@ -72,4 +73,34 @@ Settles a market.
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | market | address | The address of the market contract. |
+
+### updatePrice
+
+```solidity
+function updatePrice(address market, bytes extraData) external
+```
+
+Updates the price using off-chain data.
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the market contract. |
+  | extraData | bytes | passed by keeper for passing offchain data |
+
+### withdraw
+
+```solidity
+function withdraw(address recipient, uint256 amount) external
+```
+
+Withdraws a specified amount of funds from the contract to a recipient address.
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | recipient | address | The address that will receive the withdrawn funds. |
+  | amount | uint256 | The amount of funds to be withdrawn. |
 

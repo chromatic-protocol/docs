@@ -121,20 +121,20 @@ Checks if a token is registered in the settlement token registry.
 function getOracleProvider(struct SettlementTokenRegistry self, address token) internal view returns (address)
 ```
 
-Retrieves the oracle provider address for a asettlement token.
+Retrieves the oracle provider address for a settlement token.
 
 - Parameters:
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | self | struct SettlementTokenRegistry | The SettlementTokenRegistry storage. |
-  | token | address | The address of the asettlement token. |
+  | token | address | The address of the settlement token. |
 
 - Return Values:
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | address | address The oralce provider address for the asettlement token. |
+  | [0] | address | address The oralce provider address for the settlement token. |
 
 ### setOracleProvider
 
@@ -142,7 +142,7 @@ Retrieves the oracle provider address for a asettlement token.
 function setOracleProvider(struct SettlementTokenRegistry self, address token, address oracleProvider) internal
 ```
 
-Sets the oracle provider address for asettlement token.
+Sets the oracle provider address for a settlement token.
 
 - Parameters:
 
@@ -158,20 +158,20 @@ Sets the oracle provider address for asettlement token.
 function getMinimumMargin(struct SettlementTokenRegistry self, address token) internal view returns (uint256)
 ```
 
-Retrieves the minimum margin for a asettlement token.
+Retrieves the minimum margin for a settlement token.
 
 - Parameters:
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | self | struct SettlementTokenRegistry | The SettlementTokenRegistry storage. |
-  | token | address | The address of the asettlement token. |
+  | token | address | The address of the settlement token. |
 
 - Return Values:
 
   | Name | Type | Description |
   | ---- | ---- | ----------- |
-  | [0] | uint256 | uint256 The minimum margin for the asettlement token. |
+  | [0] | uint256 | uint256 The minimum margin for the settlement token. |
 
 ### setMinimumMargin
 
@@ -179,7 +179,7 @@ Retrieves the minimum margin for a asettlement token.
 function setMinimumMargin(struct SettlementTokenRegistry self, address token, uint256 minimumMargin) internal
 ```
 
-Sets the minimum margin for asettlement token.
+Sets the minimum margin for a settlement token.
 
 - Parameters:
 

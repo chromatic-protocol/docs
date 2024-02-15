@@ -69,6 +69,12 @@ mapping(address => uint256) pendingDeposits
 mapping(address => uint256) pendingWithdrawals
 ```
 
+### _tradingLockOwner
+
+```solidity
+address _tradingLockOwner
+```
+
 ### OnlyAccessableByDao
 
 ```solidity
@@ -117,6 +123,18 @@ error NotEnoughFeePaid()
 
 _Throws an error indicating that the recipient has not paid the sufficient flash loan fee._
 
+### TradingLockAlreadyAcquired
+
+```solidity
+error TradingLockAlreadyAcquired()
+```
+
+### NotTradingLockOwner
+
+```solidity
+error NotTradingLockOwner()
+```
+
 ### onlyDao
 
 ```solidity
@@ -135,15 +153,6 @@ modifier onlyFactoryOrDao()
 _Modifier to restrict access to only the factory or the DAO.
      Throws an `OnlyAccessableByFactoryOrDao` error if the caller is nether the chormatic factory contract nor the DAO._
 
-### onlyMarket
-
-```solidity
-modifier onlyMarket()
-```
-
-_Modifier to restrict access to only the Market contract.
-     Throws an `OnlyAccessableByMarket` error if the caller is not a registered market._
-
 ### onlyEarningDistributor
 
 ```solidity
@@ -152,6 +161,18 @@ modifier onlyEarningDistributor()
 
 _Modifier to restrict access to only the Vault earning distribute contract.
      Throws an `OnlyAccessableByEarningDistributor` error if the caller is not the Vault earning distribute contract._
+
+### requireUnacquiredTradingLock
+
+```solidity
+modifier requireUnacquiredTradingLock()
+```
+
+### requireTradingLock
+
+```solidity
+modifier requireTradingLock()
+```
 
 ### constructor
 
@@ -167,14 +188,6 @@ _Constructs a new ChromaticVault instance._
   | ---- | ---- | ----------- |
   | _factory | contract IChromaticMarketFactory | The address of the Chromatic Market Factory contract. |
   | _earningDistributor | contract IVaultEarningDistributor | The address of the Vault earning distribute contract. |
-
-### _checkMarket
-
-```solidity
-function _checkMarket() internal view
-```
-
-_This function can only be called by the modifier onlyMarket._
 
 ### onOpenPosition
 
@@ -488,4 +501,34 @@ Distributes the market earning for a market to the each bins.
   | market | address | The address of the market. |
   | fee | uint256 | The fee amount. |
   | keeper | address | The keeper address to receive fee. |
+
+### acquireTradingLock
+
+```solidity
+function acquireTradingLock() external
+```
+
+### releaseTradingLock
+
+```solidity
+function releaseTradingLock() external
+```
+
+### _requireUnacquiredTradingLock
+
+```solidity
+function _requireUnacquiredTradingLock() internal view
+```
+
+### _requireTradingLock
+
+```solidity
+function _requireTradingLock() internal view
+```
+
+### _checkMarket
+
+```solidity
+function _checkMarket() internal view
+```
 

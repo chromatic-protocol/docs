@@ -61,6 +61,12 @@ _This function returns the array of supported trading fee rates,
   | ---- | ---- | ----------- |
   | [0] | uint16[36] | tradingFeeRates The array of supported trading fee rates. |
 
+### feeRateIndex
+
+```solidity
+function feeRateIndex(uint16 feeRate) internal pure returns (uint256)
+```
+
 ### tokenIds
 
 ```solidity

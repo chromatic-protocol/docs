@@ -24,7 +24,7 @@ uint256 DEFAULT_WAIT_POSITION_CLAIM
 ### automate
 
 ```solidity
-contract IMate2AutomationRegistry automate
+contract IMate2AutomationRegistry1_1 automate
 ```
 
 ### upkeepGasLimit
@@ -110,7 +110,7 @@ _Can only be called by a registered market._
 ### resolveLiquidation
 
 ```solidity
-function resolveLiquidation(address _market, uint256 positionId) public view returns (bool canExec, bytes execPayload)
+function resolveLiquidation(address _market, uint256 positionId, bytes extraData) public view returns (bool canExec, bytes execPayload)
 ```
 
 Resolves the liquidation of a position.
@@ -123,6 +123,7 @@ _This function is called by the automation system._
   | ---- | ---- | ----------- |
   | _market | address |  |
   | positionId | uint256 | The ID of the position to be liquidated. |
+  | extraData | bytes | passed by keeper for passing offchain data |
 
 - Return Values:
 
@@ -166,7 +167,7 @@ _Can only be called by a registered market._
 ### resolveClaimPosition
 
 ```solidity
-function resolveClaimPosition(address _market, uint256 positionId) public view returns (bool canExec, bytes execPayload)
+function resolveClaimPosition(address _market, uint256 positionId, bytes extraData) public view returns (bool canExec, bytes execPayload)
 ```
 
 Resolves the claim of a position.
@@ -179,6 +180,7 @@ _This function is called by the automation system._
   | ---- | ---- | ----------- |
   | _market | address |  |
   | positionId | uint256 | The ID of the position to be claimed. |
+  | extraData | bytes | passed by keeper for passing offchain data |
 
 - Return Values:
 
@@ -222,7 +224,7 @@ _Internal function to cancel a Mate2 upkeep._
 ### checkUpkeep
 
 ```solidity
-function checkUpkeep(bytes checkData) external view returns (bool upkeepNeeded, bytes performData)
+function checkUpkeep(bytes checkData, bytes extraData) external view returns (bool upkeepNeeded, bytes performData)
 ```
 
 method that is simulated by the keepers to see if any work actually
@@ -238,6 +240,7 @@ method._
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | checkData | bytes | specified in the upkeep registration so it is always the same for a registered upkeep. This can easily be broken down into specific arguments using `abi.decode`, so multiple upkeeps can be registered on the same contract and easily differentiated by the contract. |
+  | extraData | bytes | passed by keeper for passing offchain data |
 
 - Return Values:
 

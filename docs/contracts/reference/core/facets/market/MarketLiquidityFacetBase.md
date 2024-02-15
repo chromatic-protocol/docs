@@ -6,14 +6,6 @@ title: MarketLiquidityFacetBase.sol
 
 ## MarketLiquidityFacetBase
 
-### NotExistLpReceipt
-
-```solidity
-error NotExistLpReceipt()
-```
-
-_Throws an error indicating that the specified liquidity receipt does not exist._
-
 ### _getLpReceipt
 
 ```solidity
@@ -43,4 +35,10 @@ _Creates a new liquidity receipt._
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | [0] | struct LpReceipt | The new liquidity receipt. |
+
+### _requireFeeRatesUniqueness
+
+```solidity
+function _requireFeeRatesUniqueness(int16[] tradingFeeRates) internal pure
+```
 

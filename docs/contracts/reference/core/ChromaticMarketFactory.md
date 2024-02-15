@@ -131,7 +131,7 @@ _Modifier to ensure that the specified oracle provider is registered.
 ### constructor
 
 ```solidity
-constructor(address _marketDiamondCutFacet, address _marketLoupeFacet, address _marketStateFacet, address _marketLiquidityFacet, address _marketLiquidityLensFacet, address _marketTradeFacet, address _marketLiquidateFacet, address _marketSettleFacet) public
+constructor(address _marketDiamondCutFacet, address _marketLoupeFacet, address _marketStateFacet, address _marketAddLiquidityFacet, address _marketRemoveLiquidityFacet, address _marketLiquidityLensFacet, address _marketTradeOpenPositionFacet, address _marketTradeClosePositionFacet, address _marketLiquidateFacet, address _marketSettleFacet) public
 ```
 
 _Initializes the ChromaticMarketFactory contract._
@@ -143,9 +143,11 @@ _Initializes the ChromaticMarketFactory contract._
   | _marketDiamondCutFacet | address | The market diamond cut facet address. |
   | _marketLoupeFacet | address | The market loupe facet address. |
   | _marketStateFacet | address | The market state facet address. |
-  | _marketLiquidityFacet | address | The market liquidity facet address. |
+  | _marketAddLiquidityFacet | address | The market liquidity facet address for adding and claiming liquidity. |
+  | _marketRemoveLiquidityFacet | address | The market liquidity facet address for removing and withdrawing liquidity. |
   | _marketLiquidityLensFacet | address | The market liquidity lens facet address. |
-  | _marketTradeFacet | address | The market trade facet address. |
+  | _marketTradeOpenPositionFacet | address | The market trade facet address for opening positions. |
+  | _marketTradeClosePositionFacet | address | The market trade facet address for closing and claiming positions. |
   | _marketLiquidateFacet | address | The market liquidate facet address. |
   | _marketSettleFacet | address | The market settle facet address. |
 

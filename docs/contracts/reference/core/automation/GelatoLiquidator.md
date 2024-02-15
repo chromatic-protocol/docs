@@ -93,7 +93,7 @@ _Can only be called by a registered market._
 ### resolveLiquidation
 
 ```solidity
-function resolveLiquidation(address _market, uint256 positionId) external view returns (bool canExec, bytes execPayload)
+function resolveLiquidation(address _market, uint256 positionId, bytes) external view returns (bool canExec, bytes execPayload)
 ```
 
 Resolves the liquidation of a position.
@@ -106,6 +106,7 @@ _This function is called by the automation system._
   | ---- | ---- | ----------- |
   | _market | address |  |
   | positionId | uint256 | The ID of the position to be liquidated. |
+  |  | bytes |  |
 
 - Return Values:
 
@@ -149,7 +150,7 @@ _Can only be called by a registered market._
 ### resolveClaimPosition
 
 ```solidity
-function resolveClaimPosition(address _market, uint256 positionId) external view returns (bool canExec, bytes execPayload)
+function resolveClaimPosition(address _market, uint256 positionId, bytes) external view returns (bool canExec, bytes execPayload)
 ```
 
 Resolves the claim of a position.
@@ -162,6 +163,7 @@ _This function is called by the automation system._
   | ---- | ---- | ----------- |
   | _market | address |  |
   | positionId | uint256 | The ID of the position to be claimed. |
+  |  | bytes |  |
 
 - Return Values:
 

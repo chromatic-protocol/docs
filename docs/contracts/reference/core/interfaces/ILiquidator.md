@@ -39,7 +39,7 @@ Cancels a liquidation task for a given position.
 ### resolveLiquidation
 
 ```solidity
-function resolveLiquidation(address market, uint256 positionId) external view returns (bool canExec, bytes execPayload)
+function resolveLiquidation(address market, uint256 positionId, bytes extraData) external view returns (bool canExec, bytes execPayload)
 ```
 
 Resolves the liquidation of a position.
@@ -52,6 +52,7 @@ _This function is called by the automation system._
   | ---- | ---- | ----------- |
   | market | address | The address of the market contract. |
   | positionId | uint256 | The ID of the position to be liquidated. |
+  | extraData | bytes | passed by keeper for passing offchain data |
 
 - Return Values:
 
@@ -106,7 +107,7 @@ Cancels a claim position task for a given position.
 ### resolveClaimPosition
 
 ```solidity
-function resolveClaimPosition(address market, uint256 positionId) external view returns (bool canExec, bytes execPayload)
+function resolveClaimPosition(address market, uint256 positionId, bytes extraData) external view returns (bool canExec, bytes execPayload)
 ```
 
 Resolves the claim of a position.
@@ -119,6 +120,7 @@ _This function is called by the automation system._
   | ---- | ---- | ----------- |
   | market | address | The address of the market contract. |
   | positionId | uint256 | The ID of the position to be claimed. |
+  | extraData | bytes | passed by keeper for passing offchain data |
 
 - Return Values:
 

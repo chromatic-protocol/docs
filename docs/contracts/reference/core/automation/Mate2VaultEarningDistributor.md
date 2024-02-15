@@ -15,7 +15,7 @@ uint32 DEFAULT_UPKEEP_GAS_LIMIT
 ### automate
 
 ```solidity
-contract IMate2AutomationRegistry automate
+contract IMate2AutomationRegistry1_1 automate
 ```
 
 ### upkeepGasLimit
@@ -60,7 +60,7 @@ constructor(contract IChromaticMarketFactory _factory, address _automate) public
 ### checkUpkeep
 
 ```solidity
-function checkUpkeep(bytes checkData) external view returns (bool upkeepNeeded, bytes performData)
+function checkUpkeep(bytes checkData, bytes) external view returns (bool upkeepNeeded, bytes performData)
 ```
 
 method that is simulated by the keepers to see if any work actually
@@ -76,6 +76,7 @@ method._
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | checkData | bytes | specified in the upkeep registration so it is always the same for a registered upkeep. This can easily be broken down into specific arguments using `abi.decode`, so multiple upkeeps can be registered on the same contract and easily differentiated by the contract. |
+  |  | bytes |  |
 
 - Return Values:
 

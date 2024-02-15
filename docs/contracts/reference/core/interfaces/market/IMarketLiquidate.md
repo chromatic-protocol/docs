@@ -8,42 +8,6 @@ title: IMarketLiquidate.sol
 
 _Interface for liquidating and claiming positions in a market._
 
-### ClaimPositionByKeeper
-
-```solidity
-event ClaimPositionByKeeper(address account, int256 pnl, uint256 interest, uint256 usedKeeperFee, struct Position position)
-```
-
-_Emitted when a position is claimed by keeper._
-
-- Parameters:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | account | address | The address of the account claiming the position. |
-  | pnl | int256 | The profit or loss of the claimed position. |
-  | interest | uint256 | The interest paid for the claimed position. |
-  | usedKeeperFee | uint256 | The amount of keeper fee used for the liquidation. |
-  | position | struct Position | The claimed position. |
-
-### Liquidate
-
-```solidity
-event Liquidate(address account, int256 pnl, uint256 interest, uint256 usedKeeperFee, struct Position position)
-```
-
-_Emitted when a position is liquidated._
-
-- Parameters:
-
-  | Name | Type | Description |
-  | ---- | ---- | ----------- |
-  | account | address | The address of the account being liquidated. |
-  | pnl | int256 | The profit or loss of the claimed position. |
-  | interest | uint256 | The interest paid for the claimed position. |
-  | usedKeeperFee | uint256 | The amount of keeper fee used for the liquidation. |
-  | position | struct Position | The liquidated position. |
-
 ### checkLiquidation
 
 ```solidity

@@ -6,14 +6,6 @@ title: MarketDiamondCutFacet.sol
 
 ## MarketDiamondCutFacet
 
-### OnlyAccessableByFactoryOrDao
-
-```solidity
-error OnlyAccessableByFactoryOrDao()
-```
-
-_Throws an error indicating that the caller is nether the chormatic factory contract nor the DAO._
-
 ### onlyFactoryOrDao
 
 ```solidity

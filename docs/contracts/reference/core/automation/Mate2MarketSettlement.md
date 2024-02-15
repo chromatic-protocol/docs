@@ -21,7 +21,7 @@ contract IChromaticMarketFactory factory
 ### automate
 
 ```solidity
-contract IMate2AutomationRegistry automate
+contract IMate2AutomationRegistry1_1 automate
 ```
 
 ### upkeepGasLimit
@@ -66,6 +66,30 @@ error ExistMarketSettlementTask()
 
 _Throws an error indicating that a market settlement task already exists._
 
+### InsufficientKeeperFee
+
+```solidity
+error InsufficientKeeperFee()
+```
+
+_Throws an error indicating that the keeper fee is insufficient_
+
+### PayKeeperFeeFailed
+
+```solidity
+error PayKeeperFeeFailed()
+```
+
+_Throws an error indicating that the payment of the keeper fee has failed._
+
+### EthTransferFailed
+
+```solidity
+error EthTransferFailed()
+```
+
+_Throws an error indicating that the transfer of Ether has failed._
+
 ### onlyDao
 
 ```solidity
@@ -93,7 +117,7 @@ constructor(contract IChromaticMarketFactory _factory, address _automate) public
 ### checkUpkeep
 
 ```solidity
-function checkUpkeep(bytes checkData) external view returns (bool upkeepNeeded, bytes performData)
+function checkUpkeep(bytes checkData, bytes extraData) external view returns (bool upkeepNeeded, bytes performData)
 ```
 
 method that is simulated by the keepers to see if any work actually
@@ -109,6 +133,7 @@ method._
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | checkData | bytes | specified in the upkeep registration so it is always the same for a registered upkeep. This can easily be broken down into specific arguments using `abi.decode`, so multiple upkeeps can be registered on the same contract and easily differentiated by the contract. |
+  | extraData | bytes | passed by keeper for passing offchain data |
 
 - Return Values:
 
@@ -175,7 +200,7 @@ Cancels a settlement task for a given market.
 ### resolveSettlement
 
 ```solidity
-function resolveSettlement(address market) public view returns (bool canExec, bytes execPayload)
+function resolveSettlement(address market, bytes extraData) public view returns (bool canExec, bytes execPayload)
 ```
 
 Resolves the settlement of a market.
@@ -187,6 +212,7 @@ _This function is called by the automation system._
   | Name | Type | Description |
   | ---- | ---- | ----------- |
   | market | address | The address of the market contract. |
+  | extraData | bytes | passed by keeper for passing offchain data |
 
 - Return Values:
 
@@ -232,4 +258,50 @@ function cancelUpkeep(uint256 upkeepId) external
 ```solidity
 function updateUpkeepGasLimit(uint32 gasLimit) external
 ```
+
+### updatePrice
+
+```solidity
+function updatePrice(address market, bytes extraData) public
+```
+
+Updates the price using off-chain data.
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | market | address | The address of the market contract. |
+  | extraData | bytes | passed by keeper for passing offchain data |
+
+### receive
+
+```solidity
+receive() external payable
+```
+
+_Fallback function to receive ETH payments._
+
+### fallback
+
+```solidity
+fallback() external payable
+```
+
+_Fallback function to receive ETH payments._
+
+### withdraw
+
+```solidity
+function withdraw(address recipient, uint256 amount) external
+```
+
+Withdraws a specified amount of funds from the contract to a recipient address.
+
+- Parameters:
+
+  | Name | Type | Description |
+  | ---- | ---- | ----------- |
+  | recipient | address | The address that will receive the withdrawn funds. |
+  | amount | uint256 | The amount of funds to be withdrawn. |
 

@@ -1,15 +1,24 @@
 ---
-id: IMate2AutomationRegistry
-title: IMate2AutomationRegistry.sol
+id: IMate2AutomationRegistry1_1
+title: IMate2AutomationRegistry1_1.sol
 ---
-# [IMate2AutomationRegistry.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/automation/mate2/IMate2AutomationRegistry.sol)
+# [IMate2AutomationRegistry1_1.sol](https://github.com/chromatic-protocol/contracts/tree/main/contracts/core/automation/mate2/IMate2AutomationRegistry1_1.sol)
 
-## IMate2AutomationRegistry
+## ExtraData
+
+```solidity
+struct ExtraData {
+  enum ExtraModule extraModule;
+  bytes extraParam;
+}
+```
+
+## IMate2AutomationRegistry1_1
 
 ### registerUpkeep
 
 ```solidity
-function registerUpkeep(address target, uint32 gasLimit, address admin, bool useTreasury, bool singleExec, bytes checkData) external returns (uint256 id)
+function registerUpkeep(address target, uint32 gasLimit, address admin, bool useTreasury, bool singleExec, bytes checkData, enum ExtraModule extraModule, bytes extraParam) external returns (uint256 id)
 ```
 
 ### cancelUpkeep
@@ -45,7 +54,7 @@ function updateCheckData(uint256 id, bytes newCheckData) external
 ### getUpkeep
 
 ```solidity
-function getUpkeep(uint256 id) external view returns (address target, uint32 executeGas, bytes checkData, address lastKeeper, address admin, uint64 maxValidBlocknumber, uint256 amountSpent, bool useTreasury, bool singleExec, bool paused)
+function getUpkeep(uint256 id) external view returns (address target, uint32 executeGas, bytes checkData, struct ExtraData extraData, address lastKeeper, address admin, uint64 maxValidBlocknumber, uint256 amountSpent, bool[3] flags)
 ```
 
 ### getUpkeepTreasury
@@ -57,7 +66,7 @@ function getUpkeepTreasury() external view returns (address)
 ### checkUpkeep
 
 ```solidity
-function checkUpkeep(uint256 upkeepId, address from) external view returns (bytes performData, uint256 maxLinkPayment, uint256 gasLimit)
+function checkUpkeep(uint256 upkeepId, address from, bytes extraData) external view returns (bytes performData, uint256 maxPayment, uint256 gasLimit)
 ```
 
 ### getPerformUpkeepFee

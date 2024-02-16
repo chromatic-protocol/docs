@@ -18,7 +18,7 @@ The margin required for the maker
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts:26](https://github.com/chromatic-protocol/sdk/blob/47cfb13/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L26)
+[packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts:26](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L26)
 
 ___
 
@@ -30,7 +30,7 @@ The maximum allowable trading fee
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts:28](https://github.com/chromatic-protocol/sdk/blob/47cfb13/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L28)
+[packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts:28](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L28)
 
 ___
 
@@ -42,7 +42,7 @@ The quantity of the position
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts:22](https://github.com/chromatic-protocol/sdk/blob/47cfb13/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L22)
+[packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts:22](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L22)
 
 ___
 
@@ -54,4 +54,4 @@ The margin required for the taker
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts:24](https://github.com/chromatic-protocol/sdk/blob/47cfb13/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L24)
+[packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts:24](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-ethers-v5/src/entities/ChromaticRouter.ts#L24)

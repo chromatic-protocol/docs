@@ -177,8 +177,7 @@ const config = {
           // launch app
           {
             href: CHROMATIC_LINKS.app,
-            // href: '#none',
-            label: 'Testnet App',
+            label: 'Launch App',
             isButton: true,
             position: 'right'
           }
@@ -197,7 +196,7 @@ const config = {
         },
         links: [
           {
-            title: 'Testnet Apps',
+            title: 'Launch App',
             items: [
               {
                 label: 'Trade',
@@ -207,7 +206,10 @@ const config = {
               {
                 label: 'Pools',
                 href: CHROMATIC_LINKS.appPool
-                // href: '#none'
+              },
+              {
+                label: 'Airdrop',
+                href: CHROMATIC_LINKS.appAirdrop
               }
             ]
           },

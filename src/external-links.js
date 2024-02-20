@@ -1,7 +1,9 @@
 const CHROMATIC_LINKS = {
-  app: 'https://testnet.chromatic.finance',
-  appTrade: 'https://testnet.chromatic.finance/trade',
-  appPool: 'https://testnet.chromatic.finance/pool',
+  app: 'https://app.chromatic.finance',
+  appTrade: 'https://app.chromatic.finance/trade',
+  appPool: 'https://app.chromatic.finance/pools',
+  appAirdrop: 'https://app.chromatic.finance/airdrop',
+  testnet: 'https://testnet.chromatic.finance',
   medium: 'https://medium.com/@chromatic-protocol',
   gitbook: 'https://chromatic.gitbook.io/docs',
   twitter: 'https://twitter.com/chromatic_perp',

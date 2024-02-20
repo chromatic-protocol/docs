@@ -111,7 +111,7 @@ function StartingGuide() {
             </p>
             <div className="flex flex-wrap justify-center gap-5 md:gap-10">
               <IconArrowButton
-                label="Testnet App"
+                label="Launch App"
                 // href={null}
                 // onClick={onOpen}
                 href={CHROMATIC_LINKS.app}

@@ -73,11 +73,6 @@ export default function NavbarNavLink({
           backgroundColor: isButton ? primaryColor : undefined,
           color: isButton ? invertedColor : primaryColor
         }}
-        // onClick={() => {
-        //   if (label === 'Testnet App') {
-        //     onOpen()
-        //   }
-        // }}
       />
     )
   }

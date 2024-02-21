@@ -40,7 +40,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:9499](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L9499)
+[packages/sdk-viem/src/gen/index.ts:9499](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L9499)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:1530](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L1530)
+[packages/sdk-viem/src/gen/index.ts:1530](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L1530)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:1740](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L1740)
+[packages/sdk-viem/src/gen/index.ts:1740](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L1740)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:1928](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L1928)
+[packages/sdk-viem/src/gen/index.ts:1928](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L1928)
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:1938](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L1938)
+[packages/sdk-viem/src/gen/index.ts:1938](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L1938)
 
 ___
 
@@ -120,7 +120,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:222](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L222)
+[packages/sdk-viem/src/gen/index.ts:222](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L222)
 
 ___
 
@@ -141,7 +141,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:850](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L850)
+[packages/sdk-viem/src/gen/index.ts:850](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L850)
 
 ___
 
@@ -164,7 +164,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:860](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L860)
+[packages/sdk-viem/src/gen/index.ts:860](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L860)
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:1948](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L1948)
+[packages/sdk-viem/src/gen/index.ts:1948](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L1948)
 
 ___
 
@@ -198,7 +198,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:2309](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L2309)
+[packages/sdk-viem/src/gen/index.ts:2309](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L2309)
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:2319](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L2319)
+[packages/sdk-viem/src/gen/index.ts:2319](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L2319)
 
 ___
 
@@ -234,7 +234,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:873](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L873)
+[packages/sdk-viem/src/gen/index.ts:873](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L873)
 
 ___
 
@@ -255,7 +255,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:1286](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L1286)
+[packages/sdk-viem/src/gen/index.ts:1286](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L1286)
 
 ___
 
@@ -278,7 +278,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:1296](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L1296)
+[packages/sdk-viem/src/gen/index.ts:1296](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L1296)
 
 ___
 
@@ -288,7 +288,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:7](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L7)
+[packages/sdk-viem/src/gen/index.ts:7](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L7)
 
 ___
 
@@ -298,7 +298,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:2328](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L2328)
+[packages/sdk-viem/src/gen/index.ts:2328](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L2328)
 
 ___
 
@@ -308,7 +308,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:3441](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L3441)
+[packages/sdk-viem/src/gen/index.ts:3441](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L3441)
 
 ___
 
@@ -318,7 +318,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:9369](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L9369)
+[packages/sdk-viem/src/gen/index.ts:9369](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L9369)
 
 ___
 
@@ -328,7 +328,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:3524](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L3524)
+[packages/sdk-viem/src/gen/index.ts:3524](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L3524)
 
 ___
 
@@ -338,7 +338,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:3647](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L3647)
+[packages/sdk-viem/src/gen/index.ts:3647](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L3647)
 
 ___
 
@@ -348,7 +348,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:9553](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L9553)
+[packages/sdk-viem/src/gen/index.ts:9553](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L9553)
 
 ___
 
@@ -358,7 +358,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:3729](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L3729)
+[packages/sdk-viem/src/gen/index.ts:3729](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L3729)
 
 ___
 
@@ -368,7 +368,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:4252](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L4252)
+[packages/sdk-viem/src/gen/index.ts:4252](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L4252)
 
 ___
 
@@ -378,7 +378,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:4332](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L4332)
+[packages/sdk-viem/src/gen/index.ts:4332](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L4332)
 
 ___
 
@@ -388,7 +388,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:4772](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L4772)
+[packages/sdk-viem/src/gen/index.ts:4772](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L4772)
 
 ___
 
@@ -398,7 +398,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:5522](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L5522)
+[packages/sdk-viem/src/gen/index.ts:5522](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L5522)
 
 ___
 
@@ -408,7 +408,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:6019](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L6019)
+[packages/sdk-viem/src/gen/index.ts:6019](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L6019)
 
 ___
 
@@ -418,7 +418,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:6459](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L6459)
+[packages/sdk-viem/src/gen/index.ts:6459](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L6459)
 
 ___
 
@@ -428,7 +428,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:7005](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L7005)
+[packages/sdk-viem/src/gen/index.ts:7005](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L7005)
 
 ___
 
@@ -438,7 +438,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:7455](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L7455)
+[packages/sdk-viem/src/gen/index.ts:7455](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L7455)
 
 ___
 
@@ -448,7 +448,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:7988](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L7988)
+[packages/sdk-viem/src/gen/index.ts:7988](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L7988)
 
 ___
 
@@ -458,7 +458,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:8459](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L8459)
+[packages/sdk-viem/src/gen/index.ts:8459](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L8459)
 
 ___
 
@@ -468,7 +468,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:8899](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L8899)
+[packages/sdk-viem/src/gen/index.ts:8899](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L8899)
 
 ___
 
@@ -478,7 +478,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/gen/index.ts:1305](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/gen/index.ts#L1305)
+[packages/sdk-viem/src/gen/index.ts:1305](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/gen/index.ts#L1305)
 
 ## Functions
 
@@ -498,7 +498,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:48](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/entities/ChromaticRouter.ts#L48)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:48](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/entities/ChromaticRouter.ts#L48)
 
 ___
 
@@ -518,4 +518,4 @@ ___
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticRouter.ts:45](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-viem/src/entities/ChromaticRouter.ts#L45)
+[packages/sdk-viem/src/entities/ChromaticRouter.ts:45](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/entities/ChromaticRouter.ts#L45)

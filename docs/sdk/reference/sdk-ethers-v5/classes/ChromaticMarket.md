@@ -24,7 +24,7 @@ Creates a new instance of ChromaticMarket.
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts:22](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L22)
+[packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts:22](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L22)
 
 ## Methods
 
@@ -48,7 +48,7 @@ A promise that resolves to the CLB token instance.
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts:57](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L57)
+[packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts:57](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L57)
 
 ___
 
@@ -73,7 +73,7 @@ A promise that resolves to the CLB token metadata.
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts:72](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L72)
+[packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts:72](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L72)
 
 ___
 
@@ -95,7 +95,7 @@ An object containing the contract instances.
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts:28](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L28)
+[packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts:28](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L28)
 
 ___
 
@@ -119,7 +119,7 @@ A promise that resolves to the current price.
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts:111](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L111)
+[packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts:111](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L111)
 
 ___
 
@@ -143,7 +143,7 @@ A promise that resolves to an array of market addresses and their corresponding 
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts:134](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L134)
+[packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts:134](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L134)
 
 ___
 
@@ -167,7 +167,7 @@ A promise that resolves to the market name.
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts:123](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L123)
+[packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts:123](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L123)
 
 ___
 
@@ -191,7 +191,7 @@ A promise that resolves to the OracleProvider contract instance.
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts:95](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L95)
+[packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts:95](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L95)
 
 ___
 
@@ -215,4 +215,4 @@ A promise that resolves to the settlement token instance.
 
 #### Defined in
 
-[packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts:43](https://github.com/chromatic-protocol/sdk/blob/28b8987/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L43)
+[packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts:43](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-ethers-v5/src/entities/ChromaticMarket.ts#L43)

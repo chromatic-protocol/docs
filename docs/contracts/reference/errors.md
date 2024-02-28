@@ -13,7 +13,7 @@ _This library provides a set of error codes as string constants for handling exc
 | NEFL | NOT_ENOUGH_FREE_LIQUIDITY |
 | TSA | TOO_SMALL_AMOUNT |
 | IOV | INVALID_ORACLE_VERSION |
-| IOV | EXCEED_MARGIN_RANGE |
+| EMR | EXCEED_MARGIN_RANGE |
 | UTFR | UNSUPPORTED_TRADING_FEE_RATE |
 | ARO | ALREADY_REGISTERED_ORACLE_PROVIDER |
 | ART | ALREADY_REGISTERED_TOKEN |
@@ -51,7 +51,7 @@ _Error code indicating that the provided oracle version is invalid or unsupporte
 ### EXCEED_MARGIN_RANGE
 
 ```solidity
-string constant EXCEED_MARGIN_RANGE = "IOV";
+string constant EXCEED_MARGIN_RANGE = "EMR";
 ```
 
 _Error code indicating that the specified value exceeds the allowed margin range when claim a position._

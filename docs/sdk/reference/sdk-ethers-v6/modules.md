@@ -40,7 +40,7 @@ custom_edit_url: null
 
 #### Defined in
 
-[packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts:42](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts#L42)
+[packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts:42](https://github.com/chromatic-protocol/sdk/blob/e269c27/packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts#L42)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts:43](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts#L43)
+[packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts:43](https://github.com/chromatic-protocol/sdk/blob/e269c27/packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts#L43)
 
 ___
 
@@ -73,7 +73,7 @@ getChainNames
 
 #### Defined in
 
-[packages/sdk-ethers-v6/src/gen/deployedAddress.ts:23](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-ethers-v6/src/gen/deployedAddress.ts#L23)
+[packages/sdk-ethers-v6/src/gen/deployedAddress.ts:23](https://github.com/chromatic-protocol/sdk/blob/e269c27/packages/sdk-ethers-v6/src/gen/deployedAddress.ts#L23)
 
 ## Functions
 
@@ -93,7 +93,7 @@ getChainNames
 
 #### Defined in
 
-[packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts:48](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts#L48)
+[packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts:48](https://github.com/chromatic-protocol/sdk/blob/e269c27/packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts#L48)
 
 ___
 
@@ -113,4 +113,4 @@ ___
 
 #### Defined in
 
-[packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts:45](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts#L45)
+[packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts:45](https://github.com/chromatic-protocol/sdk/blob/e269c27/packages/sdk-ethers-v6/src/entities/ChromaticRouter.ts#L45)

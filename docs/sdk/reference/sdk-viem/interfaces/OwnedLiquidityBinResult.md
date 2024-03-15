@@ -20,7 +20,7 @@ Additionally, it includes the pending bin share from the market's vault
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:73](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/entities/ChromaticLens.ts#L73)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:73](https://github.com/chromatic-protocol/sdk/blob/e269c27/packages/sdk-viem/src/entities/ChromaticLens.ts#L73)
 
 ___
 
@@ -32,7 +32,7 @@ The balance of CLB tokens owned by the owner for the specified trading fee rate
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:59](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/entities/ChromaticLens.ts#L59)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:59](https://github.com/chromatic-protocol/sdk/blob/e269c27/packages/sdk-viem/src/entities/ChromaticLens.ts#L59)
 
 ___
 
@@ -44,7 +44,7 @@ The total supply of CLB tokens for the specified trading fee rate
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:61](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/entities/ChromaticLens.ts#L61)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:61](https://github.com/chromatic-protocol/sdk/blob/e269c27/packages/sdk-viem/src/entities/ChromaticLens.ts#L61)
 
 ___
 
@@ -58,7 +58,7 @@ Additionally, it includes the pending bin share from the market's vault
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:67](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/entities/ChromaticLens.ts#L67)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:67](https://github.com/chromatic-protocol/sdk/blob/e269c27/packages/sdk-viem/src/entities/ChromaticLens.ts#L67)
 
 ___
 
@@ -70,7 +70,7 @@ The available (free) liquidity amount (settlement token) for the specified tradi
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:57](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/entities/ChromaticLens.ts#L57)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:57](https://github.com/chromatic-protocol/sdk/blob/e269c27/packages/sdk-viem/src/entities/ChromaticLens.ts#L57)
 
 ___
 
@@ -82,7 +82,7 @@ The total liquidity amount (settlement token) for the specified trading fee rate
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:55](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/entities/ChromaticLens.ts#L55)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:55](https://github.com/chromatic-protocol/sdk/blob/e269c27/packages/sdk-viem/src/entities/ChromaticLens.ts#L55)
 
 ___
 
@@ -94,4 +94,4 @@ The trading fee rate for the liquidity bin
 
 #### Defined in
 
-[packages/sdk-viem/src/entities/ChromaticLens.ts:53](https://github.com/chromatic-protocol/sdk/blob/ba212bd/packages/sdk-viem/src/entities/ChromaticLens.ts#L53)
+[packages/sdk-viem/src/entities/ChromaticLens.ts:53](https://github.com/chromatic-protocol/sdk/blob/e269c27/packages/sdk-viem/src/entities/ChromaticLens.ts#L53)
